@@ -1,0 +1,4602 @@
+{
+ "subject": "Botany",
+ "topics": [
+  {
+   "id": "bot-basic",
+   "name": "Basic Components of Life",
+   "weight": 2,
+   "concepts": [
+    "Amino acids join by peptide bonds (–CO–NH–) with loss of water [repeat]",
+    "Disaccharides: sucrose (glucose + fructose), maltose (glucose + glucose), lactose (glucose + galactose) [repeat]",
+    "Sucrose is non-reducing: both anomeric carbons are used in the glycosidic bond",
+    "Starch: α-glucose (α-1,4 + α-1,6); cellulose: β-1,4 glucose, unbranched",
+    "Oleic acid (C18:1) is unsaturated; stearic and palmitic acids are saturated [repeat]",
+    "Lipids dissolve in non-polar solvents (ether, chloroform), not in water [repeat]",
+    "Haemoglobin is a transport protein; keratin and collagen are structural proteins [repeat]",
+    "Protein levels: primary = sequence; secondary = α-helix/β-sheet; tertiary = 3-D fold; quaternary = subunits",
+    "Enzymes lower activation energy; they do not change ΔG or equilibrium",
+    "Coenzyme: loosely bound organic cofactor; prosthetic group: tightly bound",
+    "Lock-and-key: Fischer; induced fit: Koshland; Km = [S] at Vmax/2",
+    "Competitive inhibitor resembles substrate: malonate vs succinate dehydrogenase",
+    "Mg in chlorophyll; Fe in cytochromes; Mo in nitrogenase and nitrate reductase; Zn in carbonic anhydrase"
+   ]
+  },
+  {
+   "id": "bot-cell",
+   "name": "Cell Biology",
+   "weight": 5,
+   "concepts": [
+    "Prokaryote: naked circular DNA in nucleoid, 70S ribosomes, no membrane organelles [repeat]",
+    "Cell theory: Schleiden & Schwann; 'omnis cellula e cellula': Virchow",
+    "Huxley: protoplasm is the physical basis of life [repeat]",
+    "Fluid mosaic model: Singer & Nicolson (1972); exocytosis releases vesicle contents outside [repeat]",
+    "Middle lamella: Ca and Mg pectate; plasmodesmata link neighbouring cells",
+    "Mitochondria and chloroplasts are semi-autonomous: own DNA and 70S ribosomes [repeat]",
+    "Marker enzymes: succinate dehydrogenase (mitochondria), acid phosphatase (lysosome), catalase (peroxisome) [repeat]",
+    "Ribosome and centriole lack a membrane; ribosome = rRNA + protein; 70S = 50S + 30S, 80S = 60S + 40S [repeat]",
+    "SER: lipid/steroid synthesis; RER: protein synthesis; Golgi: glycosylation and packaging; lysosome: suicidal bag",
+    "Centromere: metacentric V, submetacentric L, acrocentric J, telocentric I (rod) [repeat]",
+    "Satellite lies beyond secondary constriction; nucleolar organiser sits at secondary constriction [repeat]",
+    "Prophase I order: leptotene, zygotene (synapsis), pachytene (crossing over, bivalent = 4 chromatids), diplotene, diakinesis [repeat]",
+    "Homologues separate at anaphase I; sister chromatids at anaphase II [repeat]",
+    "Cell plate forms from Golgi vesicles at the phragmoplast [repeat]",
+    "Mitosis keeps chromosome number and gives identical cells; meiosis halves it and gives variation [repeat]",
+    "Cell cycle: G1 → S (DNA replication) → G2 → M; non-dividing cells sit in G0"
+   ]
+  },
+  {
+   "id": "bot-genetics",
+   "name": "Genetics",
+   "weight": 6,
+   "concepts": [
+    "Central dogma: DNA → mRNA (transcription) → protein (translation); RNA → DNA is reverse transcription [repeat]",
+    "RNA has uracil and ribose; DNA has thymine and deoxyribose [repeat]",
+    "Chargaff: A = T, G = C, so (A+G)/(T+C) = 1 [repeat]",
+    "Genetic code: triplet, universal, degenerate, non-overlapping; AUG start; UAA, UAG, UGA stop [repeat]",
+    "Replication is semi-conservative (Meselson & Stahl); Okazaki fragments on lagging strand, joined by ligase [repeat]",
+    "Nucleotide = nucleoside + phosphate [repeat]",
+    "Test cross Tt × tt gives 1:1; dihybrid test cross gives 1:1:1:1 [repeat]",
+    "Tall × tall giving 3:1 means both parents heterozygous [repeat]",
+    "Incomplete dominance: F2 phenotypic = genotypic ratio 1:2:1 (Mirabilis) [repeat]",
+    "ABO: three alleles (Iᴬ, Iᴮ, i); Iᴬ and Iᴮ codominant, both dominant over i [repeat]",
+    "Gamete types = 2ⁿ, n = number of heterozygous gene pairs [repeat]",
+    "Complete linkage gives only parental types; crossing over gives recombinants; 1% recombination = 1 map unit [repeat]",
+    "Colour blindness and haemophilia: X-linked recessive, criss-cross inheritance [repeat]",
+    "Benzer: cistron = unit of function, recon = recombination, muton = mutation [repeat]",
+    "Down: trisomy 21; Edward: trisomy 18; Patau: trisomy 13; Turner: 45,XO; Klinefelter: 47,XXY [repeat]",
+    "Kappa particles in Paramecium: cytoplasmic inheritance [repeat]"
+   ]
+  },
+  {
+   "id": "bot-physiology",
+   "name": "Plant Physiology",
+   "weight": 6,
+   "concepts": [
+    "DPD = OP − TP; fully turgid cell has DPD zero; water moves to higher DPD (lower Ψw)",
+    "Ψw = Ψs + Ψp; pure water Ψw = 0; excess fertiliser causes exosmosis and wilting [repeat]",
+    "Ascent of sap: cohesion–tension theory (Dixon & Joly); guttation through hydathodes",
+    "Stomata open by K⁺ influx into guard cells; ABA closes them",
+    "Chlorophyll absorbs blue and red most, reflects green; action spectrum = rate vs wavelength [repeat]",
+    "PS I: P700; PS II: P680; O₂ comes from photolysis of water at PS II [repeat]",
+    "Cyclic photophosphorylation: only ATP, no NADPH, no O₂ [repeat]",
+    "C3 first stable product 3-PGA; one glucose needs 18 ATP + 12 NADPH [repeat]",
+    "C4: PEP is the CO₂ acceptor, OAA first product, Kranz anatomy [repeat]",
+    "Photorespiration involves chloroplast, peroxisome and mitochondrion",
+    "Glycolysis in cytoplasm, net 2 ATP + 2 NADH; link reaction is oxidative decarboxylation [repeat]",
+    "Krebs: 2 turns/glucose, 6 NADH, 2 FADH₂, 2 ATP; first product citric acid",
+    "Cytochromes carry electrons in both photosynthesis and respiration; O₂ is the final acceptor in ETS [repeat]",
+    "RQ: carbohydrate 1, fat ≈ 0.7, organic acids > 1, anaerobic infinite",
+    "Gibberellin: bolting, malting (α-amylase); cytokinin: delays senescence, breaks apical dominance [repeat]",
+    "Auxin: apical dominance, rooting (IBA), 2,4-D weedicide; epigeal: hypocotyl grows, hypogeal: epicotyl grows"
+   ]
+  },
+  {
+   "id": "bot-developmental",
+   "name": "Developmental Botany",
+   "weight": 2,
+   "concepts": [
+    "Autogamy: same flower; geitonogamy: another flower of same plant; xenogamy: another plant [repeat]",
+    "Cleistogamous flowers never open, so they are always self-pollinated [repeat]",
+    "Protandry: anthers mature first (sunflower); protogyny: stigma matures first [repeat]",
+    "Microspore mother cell → 4 microspores (pollen); usually shed at 2-celled stage",
+    "Tapetum is the innermost anther wall layer that nourishes developing pollen [repeat]",
+    "Embryo sac develops from the functional (chalazal) megaspore; 7-celled, 8-nucleate [repeat]",
+    "Double fertilisation (Nawaschin): syngamy + triple fusion; 5 nuclei involved",
+    "Angiosperm endosperm is triploid (2 polar nuclei + 1 male gamete); gymnosperm endosperm is haploid [repeat]",
+    "Endosperm ploidy = 2 × (female gamete ploidy) + male gamete ploidy [repeat]",
+    "Coconut water is free-nuclear endosperm; pea and gram seeds are non-endospermic",
+    "Monocot embryo: scutellum (cotyledon), coleoptile covers plumule, coleorhiza covers radicle",
+    "Banana is propagated by suckers; apomixis = seed without fertilisation [repeat]"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "bot-001",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "The lock-and-key model of enzyme action was proposed by",
+   "o": [
+    "Daniel Koshland",
+    "Emil Fischer",
+    "Eduard Buchner",
+    "James Sumner"
+   ],
+   "a": 1,
+   "x": "Fischer (1894) proposed the rigid lock-and-key model; Koshland later proposed the induced-fit model.",
+   "trap": "Koshland is picked by confusing induced fit with lock-and-key.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "bot-002",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Malonate inhibits succinate dehydrogenase. This is an example of",
+   "o": [
+    "Non-competitive inhibition",
+    "Competitive inhibition",
+    "Feedback inhibition",
+    "Allosteric activation"
+   ],
+   "a": 1,
+   "x": "Malonate resembles succinate in structure and competes for the same active site.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "bot-003",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Km (Michaelis constant) of an enzyme is the substrate concentration at which the reaction velocity is",
+   "o": [
+    "Equal to the maximum velocity",
+    "One-fourth of the maximum velocity",
+    "Zero",
+    "Half of the maximum velocity"
+   ],
+   "a": 3,
+   "x": "By definition, at [S] = Km, v = Vmax/2. A low Km means high affinity for substrate.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "bot-004",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Cellulose is a polymer of",
+   "o": [
+    "α-D-glucose joined by α-1,4 glycosidic bonds",
+    "α-D-glucose with α-1,6 branches",
+    "β-D-fructose joined by β-2,1 bonds",
+    "β-D-glucose joined by β-1,4 glycosidic bonds"
+   ],
+   "a": 3,
+   "x": "Cellulose is an unbranched chain of β-glucose with β-1,4 links; starch uses α-glucose.",
+   "trap": "α-1,4 is starch (amylose), not cellulose.",
+   "s": "Carbohydrates"
+  },
+  {
+   "id": "bot-005",
+   "topic": "bot-basic",
+   "d": 3,
+   "q": "Enzymes that remove groups from substrates by a mechanism other than hydrolysis, leaving a double bond, are",
+   "o": [
+    "Hydrolases",
+    "Ligases",
+    "Lyases",
+    "Transferases"
+   ],
+   "a": 2,
+   "x": "Lyases (e.g. aldolase, fumarase) break bonds without water, forming double bonds; hydrolases use water.",
+   "trap": "Ligases sound similar but join molecules using ATP.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "bot-040",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Molybdenum is essential for the activity of",
+   "o": [
+    "RuBisCO",
+    "Carbonic anhydrase",
+    "Nitrogenase and nitrate reductase",
+    "Catalase"
+   ],
+   "a": 2,
+   "x": "Mo is a component of nitrogenase and nitrate reductase in nitrogen metabolism.",
+   "trap": "Carbonic anhydrase needs zinc, not molybdenum.",
+   "s": "Minerals"
+  },
+  {
+   "id": "bot-006",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "The fluid mosaic model of the plasma membrane was given by",
+   "o": [
+    "Danielli and Davson",
+    "Robertson",
+    "Singer and Nicolson",
+    "Schleiden and Schwann"
+   ],
+   "a": 2,
+   "x": "Singer and Nicolson (1972): lipid bilayer with proteins floating in it.",
+   "trap": "Danielli–Davson gave the older sandwich model.",
+   "s": "Cell membrane"
+  },
+  {
+   "id": "bot-007",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The 70S ribosome of a prokaryote is made of subunits",
+   "o": [
+    "60S and 40S",
+    "50S and 30S",
+    "40S and 30S",
+    "50S and 20S"
+   ],
+   "a": 1,
+   "x": "Svedberg units are not additive; 50S + 30S form 70S.",
+   "trap": "60S + 40S is the eukaryotic 80S ribosome.",
+   "s": "Ribosome"
+  },
+  {
+   "id": "bot-008",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Which organelle is semi-autonomous?",
+   "o": [
+    "Lysosome",
+    "Golgi body",
+    "Mitochondrion",
+    "Endoplasmic reticulum"
+   ],
+   "a": 2,
+   "x": "Mitochondria (like chloroplasts) have their own DNA and 70S ribosomes.",
+   "s": "Mitochondria",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-009",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The glyoxylate cycle, which converts fats into carbohydrates in germinating oily seeds, occurs in",
+   "o": [
+    "Lysosomes",
+    "Leaf peroxisomes",
+    "Ribosomes",
+    "Glyoxysomes"
+   ],
+   "a": 3,
+   "x": "Glyoxysomes are specialised microbodies in fatty seeds (e.g. castor) containing isocitrate lyase and malate synthase.",
+   "trap": "Leaf peroxisomes are involved in photorespiration, not the glyoxylate cycle.",
+   "s": "Cell inclusions"
+  },
+  {
+   "id": "bot-010",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Crossing over takes place during",
+   "o": [
+    "Pachytene",
+    "Leptotene",
+    "Zygotene",
+    "Diplotene"
+   ],
+   "a": 0,
+   "x": "Exchange of segments between non-sister chromatids occurs at pachytene.",
+   "trap": "Diplotene is chosen because chiasmata become visible then.",
+   "s": "Amitosis, mitosis and meiosis"
+  },
+  {
+   "id": "bot-011",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Synaptonemal complex is formed during",
+   "o": [
+    "Zygotene",
+    "Leptotene",
+    "Diplotene",
+    "Diakinesis"
+   ],
+   "a": 0,
+   "x": "Homologous chromosomes pair (synapsis) at zygotene, held by the synaptonemal complex.",
+   "trap": "Pachytene/diplotene is confused with synapsis.",
+   "s": "Amitosis, mitosis and meiosis"
+  },
+  {
+   "id": "bot-012",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "In mitosis, the centromere splits and sister chromatids move apart during",
+   "o": [
+    "Prophase",
+    "Anaphase",
+    "Metaphase",
+    "Telophase"
+   ],
+   "a": 1,
+   "x": "At anaphase the centromeres divide and chromatids are pulled to opposite poles.",
+   "s": "Amitosis, mitosis and meiosis"
+  },
+  {
+   "id": "bot-013",
+   "topic": "bot-cell",
+   "d": 3,
+   "q": "If a meiocyte has 2C DNA in G1, the DNA content of each daughter cell at the end of meiosis I is",
+   "o": [
+    "1C",
+    "2C",
+    "4C",
+    "0.5C"
+   ],
+   "a": 1,
+   "x": "S phase doubles 2C to 4C; meiosis I halves it, so each cell has 2C. Meiosis II gives 1C.",
+   "trap": "1C is picked because chromosome number halves in meiosis I.",
+   "s": "Cell division and its significance"
+  },
+  {
+   "id": "bot-014",
+   "topic": "bot-cell",
+   "d": 3,
+   "q": "Minimum number of meiotic divisions needed to produce 100 seeds in an angiosperm is",
+   "o": [
+    "100",
+    "200",
+    "125",
+    "50"
+   ],
+   "a": 2,
+   "x": "100 megaspore mother cells need 100 meioses; 100 pollen grains need 25 meioses (4 per meiosis). 100 + 25 = 125.",
+   "trap": "100 forgets the pollen; 200 counts one meiosis per pollen.",
+   "s": "Cell division and its significance"
+  },
+  {
+   "id": "bot-038",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "Cell A has Ψs = −0.8 MPa and Ψp = +0.3 MPa; cell B has Ψs = −0.6 MPa and Ψp = +0.3 MPa. Water will move",
+   "o": [
+    "From B to A",
+    "From A to B",
+    "Equally in both directions with no net flow",
+    "From A to B and then back"
+   ],
+   "a": 0,
+   "x": "Ψw(A) = −0.8 + 0.3 = −0.5 MPa; Ψw(B) = −0.6 + 0.3 = −0.3 MPa. Water flows to lower Ψw, so B → A.",
+   "trap": "Picking A → B by comparing Ψs magnitudes the wrong way.",
+   "s": "Water relations: water potential"
+  },
+  {
+   "id": "bot-039",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Opening of stomata is associated with",
+   "o": [
+    "Efflux of K⁺ ions from guard cells",
+    "Influx of K⁺ ions into guard cells",
+    "Conversion of sugar into starch in guard cells",
+    "Rise of abscisic acid in guard cells"
+   ],
+   "a": 1,
+   "x": "K⁺ (with malate) enters guard cells, lowers Ψw, water enters, cells turn turgid and the pore opens.",
+   "trap": "ABA closes stomata, not opens them.",
+   "s": "Transpiration"
+  },
+  {
+   "id": "bot-041",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Photolysis of water and evolution of oxygen are associated with",
+   "o": [
+    "Photosystem I",
+    "Calvin cycle",
+    "Cyclic photophosphorylation",
+    "Photosystem II"
+   ],
+   "a": 3,
+   "x": "The oxygen-evolving complex is on the PS II side; cyclic flow involves only PS I and releases no O₂.",
+   "s": "Photosystem I and II"
+  },
+  {
+   "id": "bot-042",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The reaction centre of photosystem I is",
+   "o": [
+    "P680",
+    "P660",
+    "P730",
+    "P700"
+   ],
+   "a": 3,
+   "x": "PS I has P700; PS II has P680.",
+   "trap": "P680 belongs to PS II.",
+   "s": "Photosystem I and II"
+  },
+  {
+   "id": "bot-043",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "The primary CO₂ acceptor in mesophyll cells of C4 plants is",
+   "o": [
+    "Phosphoenolpyruvate (PEP)",
+    "Ribulose-1,5-bisphosphate (RuBP)",
+    "Oxaloacetate (OAA)",
+    "3-phosphoglycerate (PGA)"
+   ],
+   "a": 0,
+   "x": "PEP carboxylase fixes CO₂ onto PEP forming oxaloacetate, the first stable product.",
+   "trap": "OAA is the first product, not the acceptor.",
+   "s": "Hatch–Slack pathway (C₄ cycle)",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-044",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "To synthesise one molecule of glucose through the Calvin cycle, the ATP and NADPH required are",
+   "o": [
+    "12 ATP and 18 NADPH",
+    "6 ATP and 6 NADPH",
+    "18 ATP and 12 NADPH",
+    "24 ATP and 12 NADPH"
+   ],
+   "a": 2,
+   "x": "Each CO₂ needs 3 ATP + 2 NADPH; glucose needs 6 CO₂: 18 ATP and 12 NADPH.",
+   "trap": "Swapping the numbers (12 ATP, 18 NADPH).",
+   "s": "Calvin–Benson cycle (C₃ cycle)"
+  },
+  {
+   "id": "bot-045",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "Photorespiration involves the cooperation of",
+   "o": [
+    "Chloroplast, glyoxysome and mitochondrion",
+    "Chloroplast, lysosome and Golgi body",
+    "Mitochondrion, ribosome and nucleus",
+    "Chloroplast, peroxisome and mitochondrion"
+   ],
+   "a": 3,
+   "x": "RuBisCO oxygenation in chloroplast forms glycolate; it is processed in peroxisome and glycine to serine in mitochondrion.",
+   "trap": "Glyoxysome is confused with peroxisome.",
+   "s": "Photorespiration"
+  },
+  {
+   "id": "bot-046",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "Number of NADH produced in the Krebs cycle (excluding the link reaction) from one molecule of glucose is",
+   "o": [
+    "3",
+    "8",
+    "10",
+    "6"
+   ],
+   "a": 3,
+   "x": "One glucose gives 2 acetyl-CoA; each turn yields 3 NADH, so 2 × 3 = 6.",
+   "trap": "3 counts only one turn; 8 adds the link reaction's 2 NADH.",
+   "s": "Oxidative decarboxylation and Krebs (TCA) cycle"
+  },
+  {
+   "id": "bot-047",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Respiratory quotient is less than one when the respiratory substrate is",
+   "o": [
+    "Glucose",
+    "Fat",
+    "Malic acid",
+    "Oxalic acid"
+   ],
+   "a": 1,
+   "x": "Fats are poor in oxygen, so O₂ used exceeds CO₂ released (tripalmitin RQ ≈ 0.7).",
+   "trap": "Organic acids give RQ more than one.",
+   "s": "Types of respiration"
+  },
+  {
+   "id": "bot-048",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Bolting (sudden stem elongation before flowering) in rosette plants such as cabbage is caused by",
+   "o": [
+    "Abscisic acid",
+    "Gibberellin",
+    "Ethylene",
+    "Cytokinin"
+   ],
+   "a": 1,
+   "x": "Gibberellins cause internode elongation and bolting in rosette plants.",
+   "s": "Plant growth promotors: gibberellins",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-049",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "In a short-day plant kept on a short-day cycle, flowering is prevented if the long dark period is interrupted by a brief flash of",
+   "o": [
+    "Far-red light",
+    "Green light",
+    "Nothing; interruption has no effect",
+    "Red light"
+   ],
+   "a": 3,
+   "x": "Red light converts Pr to Pfr, breaking the critical dark period; far-red given after it reverses the effect.",
+   "trap": "Far-red reverses the night-break; it does not cause it.",
+   "s": "Plant growth (photoperiodism; not named in 2026 syllabus)"
+  },
+  {
+   "id": "bot-050",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "A dihybrid test cross (AaBb × aabb) gives the phenotypic ratio",
+   "o": [
+    "1:1:1:1",
+    "9:3:3:1",
+    "3:1",
+    "1:2:1"
+   ],
+   "a": 0,
+   "x": "AaBb forms 4 gamete types equally; aabb contributes only ab, so four phenotypes 1:1:1:1.",
+   "trap": "9:3:3:1 is the F2 selfing ratio.",
+   "s": "Laws of inheritance",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-051",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "In a monohybrid cross showing incomplete dominance (e.g. Mirabilis jalapa), the F2 phenotypic ratio is",
+   "o": [
+    "3:1",
+    "1:2:1",
+    "9:7",
+    "1:1"
+   ],
+   "a": 1,
+   "x": "Heterozygotes are intermediate (pink), so red:pink:white = 1:2:1.",
+   "trap": "3:1 applies only to complete dominance.",
+   "s": "Incomplete dominance",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-052",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "Two white-flowered varieties of sweet pea crossed give purple F1. On selfing F1, the F2 ratio of purple to white is",
+   "o": [
+    "9:3:4",
+    "12:3:1",
+    "15:1",
+    "9:7"
+   ],
+   "a": 3,
+   "x": "Complementary genes: purple needs both dominant C and P; 9 C_P_ purple, 7 white.",
+   "trap": "9:3:4 is recessive epistasis.",
+   "s": "Laws of inheritance"
+  },
+  {
+   "id": "bot-053",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "Test cross of AB/ab gave AB 420, ab 430, Ab 75 and aB 75. The distance between genes A and B is",
+   "o": [
+    "15 map units",
+    "7.5 map units",
+    "85 map units",
+    "30 map units"
+   ],
+   "a": 0,
+   "x": "Recombinants = 75 + 75 = 150 of 1000; 150/1000 × 100 = 15 cM.",
+   "trap": "7.5 uses only one recombinant class.",
+   "s": "Concept and types of linkage"
+  },
+  {
+   "id": "bot-054",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "XX-female / XY-male sex determination in plants is found in",
+   "o": [
+    "Pisum sativum",
+    "Melandrium album",
+    "Zea mays",
+    "Oryza sativa"
+   ],
+   "a": 1,
+   "x": "Melandrium is dioecious; males are XY and females XX. Pea, maize and rice have no sex chromosomes.",
+   "s": "Sex-linked inheritance"
+  },
+  {
+   "id": "bot-055",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Colchicine induces polyploidy because it",
+   "o": [
+    "Breaks chromosomes",
+    "Inhibits spindle formation",
+    "Causes DNA replication twice",
+    "Fuses two nuclei"
+   ],
+   "a": 1,
+   "x": "Without a spindle, duplicated chromosomes cannot separate, so the chromosome set doubles.",
+   "s": "Polyploidy (origin, types and significance)"
+  },
+  {
+   "id": "bot-056",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Insertion or deletion of a single base in the coding region of a gene causes",
+   "o": [
+    "Transition",
+    "Frameshift mutation",
+    "Transversion",
+    "Silent mutation"
+   ],
+   "a": 1,
+   "x": "The reading frame of triplets shifts from that point onward.",
+   "trap": "Transition/transversion are substitutions, not insertions.",
+   "s": "Concept and types (gene and chromosomal mutations)"
+  },
+  {
+   "id": "bot-057",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A DNA segment of 1000 base pairs contains 300 adenine. The total number of hydrogen bonds in it is",
+   "o": [
+    "2700",
+    "2300",
+    "3000",
+    "2000"
+   ],
+   "a": 0,
+   "x": "A–T pairs = 300 (2 bonds each = 600); G–C pairs = 700 (3 bonds each = 2100); total 2700.",
+   "trap": "2300 swaps 2 and 3 bonds between the pair types.",
+   "s": "Composition, structure and functions of DNA and RNA"
+  },
+  {
+   "id": "bot-058",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The semi-conservative mode of DNA replication was experimentally proved by",
+   "o": [
+    "Meselson and Stahl",
+    "Watson and Crick",
+    "Hershey and Chase",
+    "Avery, MacLeod and McCarty"
+   ],
+   "a": 0,
+   "x": "Meselson and Stahl (1958) grew E. coli in ¹⁵N then ¹⁴N and separated DNA by density.",
+   "trap": "Watson and Crick proposed the model but did not prove it.",
+   "s": "DNA replication"
+  },
+  {
+   "id": "bot-059",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Which codon is NOT a stop codon?",
+   "o": [
+    "UAA",
+    "UAG",
+    "UGA",
+    "UGG"
+   ],
+   "a": 3,
+   "x": "UGG codes for tryptophan; UAA, UAG and UGA are termination codons.",
+   "trap": "UGA looks like UGG but is a stop codon.",
+   "s": "Genetic code"
+  },
+  {
+   "id": "bot-060",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "In eukaryotes, mRNA (hnRNA) is transcribed by",
+   "o": [
+    "RNA polymerase II",
+    "RNA polymerase I",
+    "RNA polymerase III",
+    "DNA polymerase III"
+   ],
+   "a": 0,
+   "x": "Pol I makes rRNA, Pol II makes hnRNA/mRNA, Pol III makes tRNA and 5S rRNA.",
+   "s": "Concept of central dogma"
+  },
+  {
+   "id": "botB-001",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Adjacent amino acids in a polypeptide chain are linked by",
+   "o": [
+    "Glycosidic bonds",
+    "Phosphodiester bonds",
+    "Peptide bonds",
+    "Ester bonds"
+   ],
+   "a": 2,
+   "x": "The –COOH of one amino acid joins the –NH₂ of the next with loss of water, forming a –CO–NH– peptide bond.",
+   "s": "Protein & enzymes",
+   "trap": "Glycosidic bonds link sugars, not amino acids.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-002",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Which pair consists only of disaccharides?",
+   "o": [
+    "Glucose and fructose",
+    "Starch and glycogen",
+    "Sucrose and lactose",
+    "Ribose and galactose"
+   ],
+   "a": 2,
+   "x": "Sucrose (glucose + fructose) and lactose (glucose + galactose) are disaccharides; glucose, fructose, ribose, galactose are monosaccharides.",
+   "s": "Carbohydrates",
+   "trap": "Starch and glycogen are polysaccharides.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-003",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Oleic acid differs from stearic acid in that oleic acid",
+   "o": [
+    "Has a 12-carbon chain",
+    "Is a saturated fatty acid",
+    "Has one C=C double bond in its chain",
+    "Contains a nitrogen atom"
+   ],
+   "a": 2,
+   "x": "Both are C18 fatty acids; oleic acid (C18:1) has one cis double bond, so it is unsaturated and liquid at room temperature; stearic acid is saturated.",
+   "s": "Lipids",
+   "trap": "Students call oleic acid saturated because it is common in fats.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-004",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Lipids are generally",
+   "o": [
+    "Insoluble in water but soluble in ether and chloroform",
+    "Soluble in water but insoluble in ether",
+    "Equally soluble in water and ether",
+    "Insoluble in both water and organic solvents"
+   ],
+   "a": 0,
+   "x": "Lipids are non-polar (hydrophobic), so they dissolve in non-polar organic solvents and not in water.",
+   "s": "Lipids",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-005",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Which of the following is a transport protein?",
+   "o": [
+    "Keratin",
+    "Collagen",
+    "Haemoglobin",
+    "Insulin"
+   ],
+   "a": 2,
+   "x": "Haemoglobin carries O₂; keratin and collagen are structural proteins; insulin is a hormone.",
+   "s": "Protein & enzymes",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-006",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "A non-protein organic cofactor that is loosely attached to the apoenzyme is called",
+   "o": [
+    "Prosthetic group",
+    "Holoenzyme",
+    "Coenzyme",
+    "Metal activator"
+   ],
+   "a": 2,
+   "x": "Coenzymes (e.g. NAD⁺) bind loosely; prosthetic groups (e.g. haem) bind tightly; apoenzyme + cofactor = holoenzyme.",
+   "s": "Protein & enzymes",
+   "trap": "Prosthetic group is also organic but tightly bound."
+  },
+  {
+   "id": "botB-007",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Magnesium is a structural component of",
+   "o": [
+    "Cytochrome",
+    "Carotene",
+    "Cellulose",
+    "Chlorophyll"
+   ],
+   "a": 3,
+   "x": "Mg²⁺ sits at the centre of the porphyrin ring of chlorophyll; cytochromes contain iron.",
+   "s": "Minerals",
+   "trap": "Cytochromes have an iron (haem) centre, not magnesium."
+  },
+  {
+   "id": "botB-008",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "The α-helix and β-pleated sheet of a protein are features of its",
+   "o": [
+    "Secondary structure",
+    "Primary structure",
+    "Tertiary structure",
+    "Quaternary structure"
+   ],
+   "a": 0,
+   "x": "Secondary structure is local folding held by hydrogen bonds; primary is the amino acid sequence.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "botB-009",
+   "topic": "bot-basic",
+   "d": 3,
+   "q": "Sucrose is a non-reducing sugar because",
+   "o": [
+    "It contains only fructose units",
+    "It is a polysaccharide",
+    "It has no hydroxyl groups",
+    "The reducing groups of both glucose and fructose are used in the glycosidic bond"
+   ],
+   "a": 3,
+   "x": "The bond joins C1 of glucose to C2 of fructose, so no free aldehyde or ketone group is left to reduce Benedict's reagent.",
+   "s": "Carbohydrates",
+   "trap": "Maltose and lactose keep one free reducing end; sucrose does not."
+  },
+  {
+   "id": "botB-010",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Enzymes increase the rate of a reaction by",
+   "o": [
+    "Raising the activation energy",
+    "Changing the equilibrium constant",
+    "Lowering the activation energy",
+    "Making ΔG more negative"
+   ],
+   "a": 2,
+   "x": "Enzymes provide an alternative path with lower activation energy; ΔG and equilibrium are unchanged.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "botB-011",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Mitochondria are called semi-autonomous because they",
+   "o": [
+    "Have their own DNA and 70S ribosomes but depend on nuclear genes for most proteins",
+    "Divide only when the nucleus divides",
+    "Make all of their own proteins",
+    "Lack an inner membrane"
+   ],
+   "a": 0,
+   "x": "Mitochondrial DNA codes for a few proteins; most mitochondrial proteins are coded by nuclear genes and imported.",
+   "s": "Mitochondria",
+   "trap": "'Autonomous' would mean making all their own proteins.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-012",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The marker enzyme of mitochondria is",
+   "o": [
+    "Succinate dehydrogenase",
+    "Acid phosphatase",
+    "Catalase",
+    "Glucose-6-phosphatase"
+   ],
+   "a": 0,
+   "x": "Succinate dehydrogenase sits in the inner mitochondrial membrane. Acid phosphatase marks lysosomes, catalase peroxisomes, glucose-6-phosphatase ER.",
+   "s": "Mitochondria",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-013",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "The genetic material of a bacterial cell is",
+   "o": [
+    "Linear DNA wound on histones inside a nucleus",
+    "Circular RNA in the cytoplasm",
+    "Linear DNA enclosed by a nuclear envelope",
+    "A naked circular DNA lying in the nucleoid"
+   ],
+   "a": 3,
+   "x": "Prokaryotes lack a nuclear membrane; their single circular DNA (without true histones) lies in the nucleoid region.",
+   "s": "Prokaryotic and eukaryotic cells",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-014",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Which pair of cell organelles is NOT bounded by a membrane?",
+   "o": [
+    "Lysosome and vacuole",
+    "Mitochondrion and chloroplast",
+    "Ribosome and centriole",
+    "Golgi body and endoplasmic reticulum"
+   ],
+   "a": 2,
+   "x": "Ribosomes (rRNA + protein) and centrioles (microtubules) have no membrane; mitochondria and chloroplasts have two.",
+   "s": "Ribosome",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-015",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Ribosomes are chemically made of",
+   "o": [
+    "DNA and proteins",
+    "rRNA and proteins",
+    "Lipids and proteins",
+    "rRNA only"
+   ],
+   "a": 1,
+   "x": "Each ribosomal subunit is a complex of rRNA and many proteins (ribonucleoprotein).",
+   "s": "Ribosome",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-016",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Release of secretory material from a cell when vesicles fuse with the plasma membrane is",
+   "o": [
+    "Exocytosis",
+    "Pinocytosis",
+    "Plasmolysis",
+    "Osmosis"
+   ],
+   "a": 0,
+   "x": "In exocytosis, vesicle membrane fuses with the plasma membrane and the contents are discharged outside.",
+   "s": "Cell membrane",
+   "trap": "Pinocytosis takes fluid in, not out.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-017",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Protoplasm was described as 'the physical basis of life' by",
+   "o": [
+    "Robert Hooke",
+    "Rudolf Virchow",
+    "Robert Brown",
+    "T.H. Huxley"
+   ],
+   "a": 3,
+   "x": "Huxley (1868) called protoplasm the physical basis of life. Hooke named cells; Brown discovered the nucleus.",
+   "s": "Cell theory",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-018",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "At anaphase, a telocentric chromosome appears",
+   "o": [
+    "V-shaped",
+    "L-shaped",
+    "I-shaped (rod-like)",
+    "X-shaped"
+   ],
+   "a": 2,
+   "x": "With the centromere at the tip, there is only one arm, so it is pulled as a rod. Metacentric is V, submetacentric L.",
+   "s": "Chromosomes",
+   "trap": "V-shape belongs to metacentric chromosomes.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-019",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "A chromosome with its centromere exactly in the middle and two equal arms is",
+   "o": [
+    "Submetacentric",
+    "Metacentric",
+    "Acrocentric",
+    "Telocentric"
+   ],
+   "a": 1,
+   "x": "Metacentric = median centromere, equal arms; submetacentric slightly off-centre; acrocentric near the end; telocentric at the end.",
+   "s": "Chromosomes",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-020",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The knob-like part of a chromosome beyond the secondary constriction is the",
+   "o": [
+    "Satellite",
+    "Telomere",
+    "Centromere",
+    "Chromomere"
+   ],
+   "a": 0,
+   "x": "A chromosome bearing a satellite is a SAT chromosome; the secondary constriction there is the nucleolar organiser.",
+   "s": "Chromosomes",
+   "trap": "Telomere is the tip of every chromosome, not this knob.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-021",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The nucleolar organiser region of a chromosome is located at the",
+   "o": [
+    "Primary constriction",
+    "Telomere",
+    "Kinetochore",
+    "Secondary constriction"
+   ],
+   "a": 3,
+   "x": "rRNA genes at the secondary constriction (NOR) organise the nucleolus; the primary constriction is the centromere.",
+   "s": "Chromosomes",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-022",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Homologous chromosomes separate from each other during",
+   "o": [
+    "Anaphase II",
+    "Metaphase I",
+    "Anaphase I",
+    "Prophase II"
+   ],
+   "a": 2,
+   "x": "Disjunction of homologues occurs at anaphase I, halving the chromosome number; chromatids separate at anaphase II.",
+   "s": "Amitosis, mitosis and meiosis",
+   "trap": "Anaphase II separates sister chromatids, not homologues.",
+   "yrs": [
+    2078,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-023",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Sister chromatids move to opposite poles in meiosis during",
+   "o": [
+    "Anaphase I",
+    "Anaphase II",
+    "Telophase I",
+    "Diakinesis"
+   ],
+   "a": 1,
+   "x": "Centromeres split only at anaphase II; in anaphase I each homologue still has two chromatids joined at the centromere.",
+   "s": "Amitosis, mitosis and meiosis",
+   "yrs": [
+    2078,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-024",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Cell plate formation in a dividing plant cell is initiated by vesicles derived from",
+   "o": [
+    "Golgi bodies",
+    "Lysosomes",
+    "Centrioles",
+    "The nucleolus"
+   ],
+   "a": 0,
+   "x": "Golgi vesicles collect at the phragmoplast and fuse to form the cell plate, which becomes the middle lamella.",
+   "s": "Cell division and its significance",
+   "trap": "Plant cells have no centrioles.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-025",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "A bivalent at pachytene contains",
+   "o": [
+    "2 chromatids and 1 centromere",
+    "4 chromatids and 4 centromeres",
+    "2 chromatids and 2 centromeres",
+    "4 chromatids and 2 centromeres"
+   ],
+   "a": 3,
+   "x": "Two paired homologues, each with 2 sister chromatids on one centromere: 4 chromatids (a tetrad) and 2 centromeres.",
+   "s": "Amitosis, mitosis and meiosis",
+   "trap": "Counting one centromere per chromatid gives 4.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-026",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "A feature of mitosis that distinguishes it from meiosis is that mitosis",
+   "o": [
+    "Involves synapsis of homologues",
+    "Produces four daughter cells",
+    "Keeps the chromosome number and gives genetically identical cells",
+    "Includes crossing over"
+   ],
+   "a": 2,
+   "x": "Mitosis is equational: daughter cells are identical to the parent. Synapsis, crossing over and four cells belong to meiosis.",
+   "s": "Amitosis, mitosis and meiosis",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-027",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "'Omnis cellula e cellula' (every cell arises from a pre-existing cell) was given by",
+   "o": [
+    "Schleiden and Schwann",
+    "Rudolf Virchow",
+    "Robert Hooke",
+    "Singer and Nicolson"
+   ],
+   "a": 1,
+   "x": "Virchow (1855) added this to the cell theory of Schleiden and Schwann.",
+   "s": "Cell theory",
+   "trap": "Schleiden and Schwann gave the original cell theory."
+  },
+  {
+   "id": "botB-028",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "The middle lamella is mainly composed of",
+   "o": [
+    "Calcium and magnesium pectate",
+    "Cellulose",
+    "Suberin",
+    "Lignin"
+   ],
+   "a": 0,
+   "x": "The middle lamella cements adjacent cells together with Ca and Mg pectates.",
+   "s": "Cell wall",
+   "trap": "Cellulose is the main component of primary and secondary walls."
+  },
+  {
+   "id": "botB-029",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Cytoplasmic strands that connect adjacent plant cells through their walls are",
+   "o": [
+    "Pits",
+    "Desmosomes",
+    "Tonoplasts",
+    "Plasmodesmata"
+   ],
+   "a": 3,
+   "x": "Plasmodesmata pass through the cell walls and form the symplast; desmosomes are animal cell junctions.",
+   "s": "Cell wall"
+  },
+  {
+   "id": "botB-030",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Lysosomes are called 'suicidal bags' because they",
+   "o": [
+    "Produce ATP",
+    "Store starch",
+    "Contain hydrolytic enzymes that can digest the cell itself",
+    "Synthesise proteins"
+   ],
+   "a": 2,
+   "x": "Rupture of lysosomes releases acid hydrolases that cause autolysis of the cell.",
+   "s": "Lysosome"
+  },
+  {
+   "id": "botB-031",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Glycosylation of proteins and packaging of secretory products mainly occur in the",
+   "o": [
+    "Ribosome",
+    "Golgi body",
+    "Lysosome",
+    "Mitochondrion"
+   ],
+   "a": 1,
+   "x": "Golgi cisternae modify proteins from the RER (glycosylation) and pack them into vesicles.",
+   "s": "Golgi body"
+  },
+  {
+   "id": "botB-032",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Smooth endoplasmic reticulum is mainly concerned with synthesis of",
+   "o": [
+    "Lipids and steroids",
+    "Proteins",
+    "Carbohydrates by photosynthesis",
+    "ATP"
+   ],
+   "a": 0,
+   "x": "SER lacks ribosomes and makes lipids/steroids; RER bears ribosomes and makes proteins.",
+   "s": "Endoplasmic reticulum (ER)",
+   "trap": "Protein synthesis is the job of rough ER."
+  },
+  {
+   "id": "botB-033",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "In a chloroplast, the enzymes of the Calvin cycle are located in the",
+   "o": [
+    "Thylakoid lumen",
+    "Outer membrane",
+    "Intermembrane space",
+    "Stroma"
+   ],
+   "a": 3,
+   "x": "Light reactions occur on thylakoid membranes; CO₂ fixation (RuBisCO and Calvin enzymes) occurs in the stroma.",
+   "s": "Chloroplasts"
+  },
+  {
+   "id": "botB-034",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "The axoneme of a eukaryotic flagellum shows microtubules arranged as",
+   "o": [
+    "9 + 0",
+    "9 + 1",
+    "9 + 2",
+    "3 + 9"
+   ],
+   "a": 2,
+   "x": "Nine peripheral doublets surround two central singlets; the basal body has a 9 + 0 triplet pattern.",
+   "s": "Cilia and flagella",
+   "trap": "9 + 0 is the basal body/centriole."
+  },
+  {
+   "id": "botB-035",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Direct division of the nucleus without formation of spindle or chromosomes is",
+   "o": [
+    "Mitosis",
+    "Amitosis",
+    "Meiosis",
+    "Endomitosis"
+   ],
+   "a": 1,
+   "x": "In amitosis the nucleus simply elongates and constricts into two (e.g. some algae, yeast).",
+   "s": "Amitosis, mitosis and meiosis"
+  },
+  {
+   "id": "botB-036",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "DNA replication takes place in which phase of the cell cycle?",
+   "o": [
+    "S phase",
+    "G1 phase",
+    "G2 phase",
+    "M phase"
+   ],
+   "a": 0,
+   "x": "DNA content doubles (2C → 4C) in the synthesis (S) phase of interphase.",
+   "s": "Concept of cell cycle"
+  },
+  {
+   "id": "botB-037",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Cells that permanently stop dividing, such as mature nerve cells, remain in",
+   "o": [
+    "G2 phase",
+    "S phase",
+    "M phase",
+    "G0 phase"
+   ],
+   "a": 3,
+   "x": "Cells exit G1 into the quiescent G0 stage and stay metabolically active without dividing.",
+   "s": "Concept of cell cycle"
+  },
+  {
+   "id": "botB-038",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Terminalisation of chiasmata is completed during",
+   "o": [
+    "Zygotene",
+    "Pachytene",
+    "Diakinesis",
+    "Leptotene"
+   ],
+   "a": 2,
+   "x": "Chiasmata appear at diplotene and move to the chromosome ends, finishing at diakinesis.",
+   "s": "Amitosis, mitosis and meiosis",
+   "trap": "Diplotene is when chiasmata first become visible."
+  },
+  {
+   "id": "botB-039",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "A root-tip cell has 2n = 16. The number of chromatids at metaphase of mitosis is",
+   "o": [
+    "16",
+    "32",
+    "8",
+    "64"
+   ],
+   "a": 1,
+   "x": "Each of the 16 chromosomes has two sister chromatids at metaphase: 16 × 2 = 32.",
+   "s": "Cell division and its significance",
+   "trap": "16 counts chromosomes, not chromatids."
+  },
+  {
+   "id": "botB-040",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Synthesis of DNA on an RNA template is called",
+   "o": [
+    "Reverse transcription",
+    "Transcription",
+    "Translation",
+    "Replication"
+   ],
+   "a": 0,
+   "x": "Reverse transcriptase (found in retroviruses) copies RNA into DNA, the reverse of transcription.",
+   "s": "Concept of central dogma",
+   "trap": "Transcription is DNA → RNA.",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-041",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The step mRNA → polypeptide in the central dogma is",
+   "o": [
+    "Transcription, in the nucleus",
+    "Replication, in the nucleus",
+    "Reverse transcription, in the cytoplasm",
+    "Translation, on ribosomes"
+   ],
+   "a": 3,
+   "x": "Translation decodes mRNA codons into an amino acid chain on ribosomes.",
+   "s": "Concept of central dogma",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-042",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Which nitrogen base is found in RNA but not in DNA?",
+   "o": [
+    "Thymine",
+    "Cytosine",
+    "Uracil",
+    "Adenine"
+   ],
+   "a": 2,
+   "x": "RNA uses uracil in place of thymine; A, G and C occur in both.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "Thymine is the DNA-only base.",
+   "yrs": [
+    2078,
+    2079
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-043",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Where the DNA template strand has adenine, the base placed in the mRNA during transcription is",
+   "o": [
+    "Thymine",
+    "Uracil",
+    "Adenine",
+    "Guanine"
+   ],
+   "a": 1,
+   "x": "RNA polymerase pairs A on DNA with U in RNA, because RNA has no thymine.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "Thymine would be correct only in DNA replication.",
+   "yrs": [
+    2078,
+    2079
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-044",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "A double-stranded DNA has 30% guanine. The percentage of thymine is",
+   "o": [
+    "20%",
+    "30%",
+    "40%",
+    "70%"
+   ],
+   "a": 0,
+   "x": "G = C = 30%, so A + T = 100 − 60 = 40%, and A = T = 20%.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "40% is A + T together, not thymine alone.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-045",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "In any double-stranded DNA, which ratio is always equal to one?",
+   "o": [
+    "(A + T)/(G + C)",
+    "A/C",
+    "G/T",
+    "(A + G)/(T + C)"
+   ],
+   "a": 3,
+   "x": "Since A = T and G = C, purines = pyrimidines, so (A + G)/(T + C) = 1. (A + T)/(G + C) varies by species.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "(A + T)/(G + C) is species-specific, not 1.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-046",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "A bacterium can make a human protein from an inserted human gene because the genetic code is",
+   "o": [
+    "Overlapping",
+    "Ambiguous",
+    "Universal",
+    "Non-degenerate"
+   ],
+   "a": 2,
+   "x": "The same codons specify the same amino acids in nearly all organisms, so genes work across species.",
+   "s": "Genetic code",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-047",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Okazaki fragments are formed on",
+   "o": [
+    "The leading strand during DNA replication",
+    "The lagging strand during DNA replication",
+    "mRNA during transcription",
+    "Both strands equally"
+   ],
+   "a": 1,
+   "x": "DNA polymerase works only 5' → 3', so the strand running the other way is copied in short pieces (Okazaki fragments).",
+   "s": "DNA replication",
+   "trap": "The leading strand is made continuously.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-048",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The enzyme that joins Okazaki fragments is",
+   "o": [
+    "DNA ligase",
+    "Helicase",
+    "Primase",
+    "Topoisomerase"
+   ],
+   "a": 0,
+   "x": "Ligase seals the nicks between fragments; helicase unwinds, primase makes RNA primers.",
+   "s": "DNA replication",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-049",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "A nucleotide differs from a nucleoside in having",
+   "o": [
+    "A nitrogen base",
+    "A pentose sugar",
+    "A glycosidic bond",
+    "A phosphate group"
+   ],
+   "a": 3,
+   "x": "Nucleoside = base + sugar; nucleotide = base + sugar + phosphate.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-050",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "A monohybrid test cross (Tt × tt) gives the phenotypic ratio",
+   "o": [
+    "3 : 1",
+    "1 : 2 : 1",
+    "1 : 1",
+    "All tall"
+   ],
+   "a": 2,
+   "x": "Tt gives T and t gametes equally; tt gives only t, so Tt : tt = 1 : 1.",
+   "s": "Laws of inheritance",
+   "trap": "3 : 1 comes from selfing Tt, not test crossing.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-051",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Two tall pea plants are crossed and one-fourth of the offspring are dwarf. The parents are",
+   "o": [
+    "TT × Tt",
+    "Tt × Tt",
+    "TT × tt",
+    "Tt × tt"
+   ],
+   "a": 1,
+   "x": "Dwarf (tt) appears in 1/4 only when both parents carry t: Tt × Tt gives 1 TT : 2 Tt : 1 tt.",
+   "s": "Laws of inheritance",
+   "trap": "Tt × tt gives half dwarf, not one-fourth.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-052",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "In which type of inheritance are the F2 phenotypic and genotypic ratios the same?",
+   "o": [
+    "Incomplete dominance",
+    "Complete dominance",
+    "Complementary gene interaction",
+    "Duplicate gene interaction"
+   ],
+   "a": 0,
+   "x": "With incomplete dominance the heterozygote has its own phenotype, so both ratios are 1 : 2 : 1.",
+   "s": "Incomplete dominance",
+   "trap": "Complete dominance gives 3 : 1 phenotypic but 1 : 2 : 1 genotypic.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-053",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The ABO blood group in humans is controlled by",
+   "o": [
+    "Three different genes",
+    "Two alleles of a single gene",
+    "Many genes with additive effects",
+    "Three alleles of a single gene"
+   ],
+   "a": 3,
+   "x": "One gene (I) has three alleles: Iᴬ, Iᴮ and i (multiple alleles); a person carries any two.",
+   "s": "Co-dominance",
+   "trap": "Three blood antigens make students think of three genes.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-054",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A man heterozygous for blood group A (Iᴬi) marries a woman heterozygous for group B (Iᴮi). The chance that their child has group O is",
+   "o": [
+    "1/2",
+    "0",
+    "1/4",
+    "3/4"
+   ],
+   "a": 2,
+   "x": "Child is ii only if each parent passes i: 1/2 × 1/2 = 1/4. Children can be AB, A, B or O, each 1/4.",
+   "s": "Co-dominance",
+   "trap": "0 is chosen by thinking A and B parents cannot have an O child.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-055",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "A person of blood group AB shows both A and B antigens on red cells. This is an example of",
+   "o": [
+    "Incomplete dominance",
+    "Co-dominance",
+    "Epistasis",
+    "Pleiotropy"
+   ],
+   "a": 1,
+   "x": "Iᴬ and Iᴮ are both fully expressed in the heterozygote: co-dominance. Incomplete dominance would give a blend.",
+   "s": "Co-dominance",
+   "trap": "Incomplete dominance gives an intermediate, not both traits.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-056",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "How many kinds of gametes are produced by a plant of genotype AaBbCcDD?",
+   "o": [
+    "8",
+    "16",
+    "6",
+    "4"
+   ],
+   "a": 0,
+   "x": "Only three gene pairs are heterozygous: 2³ = 8. DD gives only D.",
+   "s": "Laws of inheritance",
+   "trap": "16 wrongly counts DD as heterozygous.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-057",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "An organism carrying two identical alleles of a gene (e.g. TT or tt) is",
+   "o": [
+    "Heterozygous",
+    "Hemizygous",
+    "A hybrid",
+    "Homozygous"
+   ],
+   "a": 3,
+   "x": "Homozygous = identical alleles; heterozygous (hybrid) = different alleles (Tt).",
+   "s": "General terminology",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-058",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "When genes lie so close that only parental combinations appear in the progeny, it is called",
+   "o": [
+    "Incomplete linkage",
+    "Independent assortment",
+    "Complete linkage",
+    "Crossing over"
+   ],
+   "a": 2,
+   "x": "No crossing over occurs between them, so recombinants are absent (e.g. male Drosophila).",
+   "s": "Concept and types of linkage",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-059",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Crossing over is significant mainly because it",
+   "o": [
+    "Doubles the chromosome number",
+    "Produces new combinations of genes",
+    "Prevents mutation",
+    "Keeps linked genes together"
+   ],
+   "a": 1,
+   "x": "Exchange between non-sister chromatids recombines alleles, adding variation; it is also used to map genes.",
+   "s": "Concept and significance of crossing over"
+  },
+  {
+   "id": "botB-060",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A colour-blind man marries a woman with normal vision whose father was colour-blind. The chance that any son of theirs is colour-blind is",
+   "o": [
+    "50%",
+    "25%",
+    "0%",
+    "100%"
+   ],
+   "a": 0,
+   "x": "Woman is a carrier (XᶜX). Sons take their X from the mother, so half the sons get Xᶜ: 50%.",
+   "s": "Color blindness in humans",
+   "trap": "25% is the chance of a colour-blind son among all children.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-061",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "A white-eyed female Drosophila (XʷXʷ) is crossed with a red-eyed male (XᵂY). The F1 males are",
+   "o": [
+    "All red-eyed",
+    "Half red, half white",
+    "All with mixed eye colour",
+    "All white-eyed"
+   ],
+   "a": 3,
+   "x": "Sons get their only X from the mother (Xʷ), so all are white-eyed; daughters (XᵂXʷ) are red: criss-cross inheritance.",
+   "s": "Eye color in Drosophila melanogaster",
+   "trap": "Students assume sons resemble the father."
+  },
+  {
+   "id": "botB-062",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Haemophilia in humans is inherited as",
+   "o": [
+    "An autosomal dominant trait",
+    "A Y-linked trait",
+    "An X-linked recessive trait",
+    "An autosomal recessive trait"
+   ],
+   "a": 2,
+   "x": "The gene is on the X chromosome and recessive, so males (XʰY) are mostly affected.",
+   "s": "Sex-linked inheritance"
+  },
+  {
+   "id": "botB-063",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Kappa particles transmitted through the cytoplasm of Paramecium illustrate",
+   "o": [
+    "Sex-linked inheritance",
+    "Extranuclear (cytoplasmic) inheritance",
+    "Polygenic inheritance",
+    "Co-dominance"
+   ],
+   "a": 1,
+   "x": "Kappa particles in the cytoplasm pass on the 'killer' trait without following Mendelian nuclear ratios.",
+   "s": "Genetic material: introduction",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-064",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "According to Benzer, the cistron, recon and muton are units of, respectively,",
+   "o": [
+    "Function, recombination, mutation",
+    "Recombination, function, mutation",
+    "Mutation, recombination, function",
+    "Function, mutation, recombination"
+   ],
+   "a": 0,
+   "x": "Cistron codes one polypeptide (function); recon is the smallest unit of recombination; muton the smallest unit that can mutate.",
+   "s": "Mutation & polyploidy: concept and types",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-065",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The ultimate source of new genetic variation is",
+   "o": [
+    "Recombination",
+    "Independent assortment",
+    "Natural selection",
+    "Mutation"
+   ],
+   "a": 3,
+   "x": "Only mutation creates new alleles; recombination reshuffles existing ones; selection acts on variation.",
+   "s": "Importance of mutation",
+   "trap": "Recombination reshuffles alleles but does not create new ones.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-066",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Replacement of a purine by a pyrimidine in DNA is called",
+   "o": [
+    "Transition",
+    "Frameshift mutation",
+    "Transversion",
+    "Inversion"
+   ],
+   "a": 2,
+   "x": "Transversion: purine ⇄ pyrimidine. Transition: purine → purine or pyrimidine → pyrimidine.",
+   "s": "Concept and types (gene and chromosomal mutations)",
+   "trap": "Transition is the same-class swap."
+  },
+  {
+   "id": "botB-067",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Down's syndrome is caused by",
+   "o": [
+    "Monosomy of the X chromosome",
+    "Trisomy of chromosome 21",
+    "An extra X chromosome in males",
+    "Trisomy of chromosome 18"
+   ],
+   "a": 1,
+   "x": "Down's syndrome is 47, +21. XO is Turner's, XXY is Klinefelter's, trisomy 18 is Edward's.",
+   "s": "Genetic disorders",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-068",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The karyotype 45, XO (44 + XO) is found in",
+   "o": [
+    "Turner's syndrome",
+    "Klinefelter's syndrome",
+    "Down's syndrome",
+    "Edward's syndrome"
+   ],
+   "a": 0,
+   "x": "Turner's females lack one X (monosomy); Klinefelter's males are 47, XXY.",
+   "s": "Genetic disorders",
+   "trap": "Klinefelter's also involves sex chromosomes but has an extra X.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-069",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Edward's syndrome is due to trisomy of chromosome",
+   "o": [
+    "13",
+    "21",
+    "X",
+    "18"
+   ],
+   "a": 3,
+   "x": "Edward's = trisomy 18; Patau's = trisomy 13; Down's = trisomy 21.",
+   "s": "Genetic disorders",
+   "trap": "13 is Patau's syndrome.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-070",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Which disorder is caused by a gene mutation rather than a change in chromosome number?",
+   "o": [
+    "Down's syndrome",
+    "Turner's syndrome",
+    "Albinism",
+    "Klinefelter's syndrome"
+   ],
+   "a": 2,
+   "x": "Albinism is an autosomal recessive gene defect (no melanin); the others are aneuploidies.",
+   "s": "Genetic disorders",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-071",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Triticale, the first man-made cereal, is",
+   "o": [
+    "An autotetraploid of wheat",
+    "An allopolyploid of wheat and rye",
+    "A haploid of rye",
+    "An aneuploid of barley"
+   ],
+   "a": 1,
+   "x": "Triticale combines chromosome sets of wheat (Triticum) and rye (Secale) and is doubled to be fertile: allopolyploid.",
+   "s": "Polyploidy (origin, types and significance)"
+  },
+  {
+   "id": "botB-072",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "In Mendel's dihybrid F2 (AaBb × AaBb), the number of the 16 combinations that are homozygous for both genes is",
+   "o": [
+    "4",
+    "1",
+    "2",
+    "9"
+   ],
+   "a": 0,
+   "x": "AABB, AAbb, aaBB and aabb: 4 of 16.",
+   "s": "Laws of inheritance",
+   "trap": "1 counts only the double recessive."
+  },
+  {
+   "id": "botB-073",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Excess chemical fertiliser around the roots makes a plant wilt because",
+   "o": [
+    "Roots absorb too much water and burst",
+    "Fertiliser blocks the stomata",
+    "Fertiliser stops photosynthesis directly",
+    "The soil solution becomes hypertonic and water leaves root cells"
+   ],
+   "a": 3,
+   "x": "A concentrated soil solution has lower water potential than root cells, so water moves out (exosmosis) and cells plasmolyse.",
+   "s": "Water relations: osmosis and its types, plasmolysis",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-074",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Shrinkage of the protoplast away from the cell wall in a hypertonic solution is",
+   "o": [
+    "Imbibition",
+    "Deplasmolysis",
+    "Plasmolysis",
+    "Guttation"
+   ],
+   "a": 2,
+   "x": "Water leaves by exosmosis and the protoplast pulls away from the wall; deplasmolysis is the reverse in water.",
+   "s": "Water relations: osmosis and its types, plasmolysis",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-075",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "The diffusion pressure deficit (DPD) of a fully turgid cell is",
+   "o": [
+    "Maximum",
+    "Zero",
+    "Equal to its osmotic pressure",
+    "Equal to twice its turgor pressure"
+   ],
+   "a": 1,
+   "x": "DPD = OP − TP; at full turgor TP = OP, so DPD = 0 and the cell takes in no more water.",
+   "s": "Water relations: diffusion pressure deficit",
+   "trap": "Maximum DPD is for a flaccid cell (TP = 0)."
+  },
+  {
+   "id": "botB-076",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The water potential of pure water at atmospheric pressure is",
+   "o": [
+    "Zero",
+    "Negative",
+    "Positive",
+    "Infinite"
+   ],
+   "a": 0,
+   "x": "Pure water is the reference with Ψw = 0; adding solutes makes Ψw negative.",
+   "s": "Water relations: water potential"
+  },
+  {
+   "id": "botB-077",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "A cell has osmotic pressure 12 atm and turgor pressure 4 atm. Its DPD is",
+   "o": [
+    "16 atm",
+    "3 atm",
+    "48 atm",
+    "8 atm"
+   ],
+   "a": 3,
+   "x": "DPD = OP − TP = 12 − 4 = 8 atm.",
+   "s": "Water relations: diffusion pressure deficit",
+   "trap": "16 adds the pressures instead of subtracting."
+  },
+  {
+   "id": "botB-078",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Swelling of dry seeds when soaked in water is mainly due to",
+   "o": [
+    "Plasmolysis",
+    "Guttation",
+    "Imbibition",
+    "Transpiration"
+   ],
+   "a": 2,
+   "x": "Hydrophilic colloids (proteins, cellulose, starch) adsorb water and swell; imbibition precedes germination.",
+   "s": "Imbibition"
+  },
+  {
+   "id": "botB-079",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Loss of water in liquid form through hydathodes at leaf margins is",
+   "o": [
+    "Transpiration",
+    "Guttation",
+    "Bleeding",
+    "Imbibition"
+   ],
+   "a": 1,
+   "x": "Guttation occurs at night or early morning under high root pressure; transpiration loses water as vapour.",
+   "s": "Guttation"
+  },
+  {
+   "id": "botB-080",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The most widely accepted theory of ascent of sap in tall trees is the",
+   "o": [
+    "Cohesion–tension theory",
+    "Root pressure theory",
+    "Capillarity theory",
+    "Relay pump theory"
+   ],
+   "a": 0,
+   "x": "Dixon and Joly: transpiration pull plus cohesion of water molecules lifts the xylem column.",
+   "s": "Ascent of sap",
+   "trap": "Root pressure is too small to lift water up tall trees."
+  },
+  {
+   "id": "botB-081",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Chlorophyll a absorbs light most strongly in the",
+   "o": [
+    "Green region",
+    "Yellow region",
+    "Green and yellow regions",
+    "Blue and red regions"
+   ],
+   "a": 3,
+   "x": "Its absorption spectrum peaks near 430 nm (blue) and 662 nm (red); green light is reflected.",
+   "s": "Photosynthetic pigments",
+   "trap": "Leaves look green because green is reflected, not absorbed.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-082",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "A graph showing the rate of photosynthesis at different wavelengths of light is called the",
+   "o": [
+    "Absorption spectrum",
+    "Emission spectrum",
+    "Action spectrum",
+    "Red drop"
+   ],
+   "a": 2,
+   "x": "Absorption spectrum shows light absorbed by a pigment; action spectrum shows the photosynthetic rate.",
+   "s": "Photosynthetic pigments",
+   "trap": "Absorption spectrum plots absorbance, not rate.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-083",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The oxygen released during photosynthesis comes from",
+   "o": [
+    "Carbon dioxide",
+    "Water",
+    "Glucose",
+    "Chlorophyll"
+   ],
+   "a": 1,
+   "x": "Ruben and Kamen used ¹⁸O to show that O₂ comes from photolysis of water at photosystem II.",
+   "s": "Light-dependent reactions",
+   "trap": "CO₂ is chosen because it contains oxygen too.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-084",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "The Calvin cycle is called the C₃ cycle because",
+   "o": [
+    "Its first stable product, 3-phosphoglycerate, has three carbons",
+    "It uses three ATP per CO₂",
+    "Its CO₂ acceptor has three carbons",
+    "It has three stages"
+   ],
+   "a": 0,
+   "x": "RuBisCO joins CO₂ to RuBP (5C) to give two molecules of 3-PGA (3C), the first stable product.",
+   "s": "Calvin–Benson cycle (C₃ cycle)",
+   "trap": "RuBP, the acceptor, has five carbons, not three.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-085",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Photophosphorylation means",
+   "o": [
+    "Breakdown of ATP into ADP",
+    "Reduction of NADP⁺",
+    "Fixation of CO₂",
+    "Synthesis of ATP from ADP and Pi using light energy"
+   ],
+   "a": 3,
+   "x": "Light-driven electron flow builds a proton gradient that drives ATP synthase: ADP + Pi → ATP.",
+   "s": "Light-dependent reactions",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-086",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Cyclic photophosphorylation produces",
+   "o": [
+    "ATP and NADPH",
+    "NADPH and O₂",
+    "ATP only",
+    "ATP, NADPH and O₂"
+   ],
+   "a": 2,
+   "x": "Only PS I works and electrons return to it, so no water splits (no O₂) and no NADP⁺ is reduced.",
+   "s": "Light-dependent reactions",
+   "trap": "Non-cyclic flow makes ATP, NADPH and O₂.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-087",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Conversion of pyruvate to acetyl-CoA is an example of",
+   "o": [
+    "Reductive carboxylation",
+    "Oxidative decarboxylation",
+    "Hydrolysis",
+    "Isomerisation"
+   ],
+   "a": 1,
+   "x": "Pyruvate loses CO₂ (decarboxylation) and is oxidised as NAD⁺ is reduced to NADH.",
+   "s": "Oxidative decarboxylation and Krebs (TCA) cycle",
+   "trap": "Carboxylation adds CO₂; here CO₂ is removed.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-088",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Which stage of aerobic respiration takes place outside the mitochondria?",
+   "o": [
+    "Glycolysis",
+    "Krebs cycle",
+    "Electron transport system",
+    "Link reaction"
+   ],
+   "a": 0,
+   "x": "Glycolysis runs in the cytoplasm (cytosol); the rest occur in the mitochondrial matrix or inner membrane.",
+   "s": "Glycolysis",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-089",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Net gain of ATP by substrate-level phosphorylation in glycolysis of one glucose is",
+   "o": [
+    "4",
+    "36",
+    "8",
+    "2"
+   ],
+   "a": 3,
+   "x": "4 ATP are made but 2 are used in the early steps, so the net gain is 2 ATP (plus 2 NADH).",
+   "s": "Glycolysis",
+   "trap": "4 is the gross, not the net.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-090",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "In alcoholic fermentation by yeast, pyruvic acid is converted into",
+   "o": [
+    "Lactic acid",
+    "Acetyl-CoA",
+    "Ethanol and CO₂",
+    "Citric acid"
+   ],
+   "a": 2,
+   "x": "Pyruvate is decarboxylated to acetaldehyde, which is reduced to ethanol; CO₂ is released.",
+   "s": "Anaerobic respiration and its mechanism",
+   "trap": "Lactic acid is formed in muscle, not yeast."
+  },
+  {
+   "id": "botB-091",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The final electron acceptor in the mitochondrial electron transport system is",
+   "o": [
+    "NAD⁺",
+    "Oxygen",
+    "Cytochrome c",
+    "FAD"
+   ],
+   "a": 1,
+   "x": "Cytochrome oxidase passes electrons to O₂, which takes up H⁺ to form water.",
+   "s": "Electron transport system and oxidative phosphorylation"
+  },
+  {
+   "id": "botB-092",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "The respiratory quotient of anaerobic respiration is",
+   "o": [
+    "Infinity",
+    "Zero",
+    "One",
+    "0.7"
+   ],
+   "a": 0,
+   "x": "RQ = CO₂ released / O₂ used; CO₂ is released but no O₂ is used, so RQ is infinite.",
+   "s": "Types of respiration",
+   "trap": "Zero would need no CO₂ release."
+  },
+  {
+   "id": "botB-093",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Cytochromes act as electron carriers in",
+   "o": [
+    "Photosynthesis only",
+    "Respiration only",
+    "Neither process",
+    "Both photosynthesis and respiration"
+   ],
+   "a": 3,
+   "x": "Cytochrome b₆f links PS II and PS I in chloroplasts; cytochromes b, c, a, a₃ work in the mitochondrial ETS.",
+   "s": "Electron transport system and oxidative phosphorylation",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-094",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "In malting of barley, gibberellin acts by",
+   "o": [
+    "Closing stomata",
+    "Causing epinasty",
+    "Inducing α-amylase synthesis in the aleurone layer",
+    "Inhibiting seed germination"
+   ],
+   "a": 2,
+   "x": "GA from the embryo signals the aleurone layer to make α-amylase, which digests endosperm starch into sugars.",
+   "s": "Plant growth promotors: gibberellins"
+  },
+  {
+   "id": "botB-095",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Cut flowers and leafy vegetables stay fresh longer when sprayed with",
+   "o": [
+    "Ethylene",
+    "Cytokinin",
+    "Abscisic acid",
+    "2,4-D"
+   ],
+   "a": 1,
+   "x": "Cytokinins delay senescence by keeping protein and chlorophyll from breaking down (Richmond–Lang effect).",
+   "s": "Plant growth promotors: cytokinins",
+   "trap": "Ethylene speeds up senescence and ripening.",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-096",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The hormone that promotes growth of lateral buds and so counteracts apical dominance is",
+   "o": [
+    "Cytokinin",
+    "Auxin",
+    "Abscisic acid",
+    "Ethylene"
+   ],
+   "a": 0,
+   "x": "Auxin from the apex suppresses lateral buds; cytokinin promotes their growth.",
+   "s": "Plant growth promotors: cytokinins",
+   "trap": "Auxin causes apical dominance; it does not counteract it.",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-097",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Apical dominance in plants is caused by",
+   "o": [
+    "Cytokinin produced by roots",
+    "Gibberellin produced by leaves",
+    "Ethylene produced by fruits",
+    "Auxin produced by the apical bud"
+   ],
+   "a": 3,
+   "x": "Auxin moving down from the shoot tip inhibits lateral bud growth; removing the apex releases them.",
+   "s": "Plant growth promotors: auxin"
+  },
+  {
+   "id": "botB-098",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "2,4-D is commonly used as",
+   "o": [
+    "A fruit-ripening agent",
+    "An inducer of seed dormancy",
+    "A weedicide against broad-leaved weeds",
+    "A stomata-closing agent"
+   ],
+   "a": 2,
+   "x": "At high concentration this synthetic auxin kills dicot weeds while cereals (monocots) are less affected.",
+   "s": "Plant growth promotors: auxin"
+  },
+  {
+   "id": "botB-099",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "In hypogeal germination (e.g. pea), the cotyledons remain below the soil because",
+   "o": [
+    "The hypocotyl elongates rapidly",
+    "The epicotyl elongates while the hypocotyl does not",
+    "The radicle does not grow",
+    "The seed coat never splits"
+   ],
+   "a": 1,
+   "x": "In hypogeal germination the epicotyl pushes the plumule up; in epigeal (bean, castor) the hypocotyl lifts the cotyledons.",
+   "s": "Seed germination and types",
+   "trap": "Hypocotyl elongation gives epigeal germination."
+  },
+  {
+   "id": "botB-100",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Dormancy caused by a hard, impermeable seed coat is broken by",
+   "o": [
+    "Scarification",
+    "Vernalisation",
+    "Treatment with abscisic acid",
+    "Storing the seeds dry"
+   ],
+   "a": 0,
+   "x": "Scratching or acid-treating the coat (scarification) lets water and O₂ in; ABA promotes dormancy.",
+   "s": "Seed dormancy",
+   "trap": "ABA induces dormancy, not breaks it."
+  },
+  {
+   "id": "botB-101",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Germination of seeds while still attached to the parent plant, as in Rhizophora, is",
+   "o": [
+    "Epigeal germination",
+    "Parthenocarpy",
+    "Apomixis",
+    "Vivipary"
+   ],
+   "a": 3,
+   "x": "Mangroves like Rhizophora show vivipary, an adaptation to saline, marshy soil.",
+   "s": "Seed germination and types"
+  },
+  {
+   "id": "botB-102",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Kranz anatomy is characteristic of the leaves of",
+   "o": [
+    "C₃ plants such as wheat",
+    "CAM plants such as cactus",
+    "C₄ plants such as maize",
+    "Submerged hydrophytes"
+   ],
+   "a": 2,
+   "x": "Kranz anatomy: bundle sheath cells with many chloroplasts ringed by mesophyll, typical of C₄ plants (maize, sugarcane).",
+   "s": "Hatch–Slack pathway (C₄ cycle)"
+  },
+  {
+   "id": "botB-103",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Bacterial photosynthesis differs from plant photosynthesis in that bacteria",
+   "o": [
+    "Release more oxygen than plants",
+    "Do not release oxygen, as they use donors like H₂S instead of water",
+    "Use chlorophyll a and two photosystems",
+    "Fix CO₂ without any light"
+   ],
+   "a": 1,
+   "x": "Purple and green sulphur bacteria use bacteriochlorophyll and H₂S as the electron donor, so photosynthesis is anoxygenic.",
+   "s": "Concept of bacterial photosynthesis"
+  },
+  {
+   "id": "botB-104",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The first product formed in the Krebs cycle is",
+   "o": [
+    "Citric acid",
+    "Oxaloacetic acid",
+    "Succinic acid",
+    "Pyruvic acid"
+   ],
+   "a": 0,
+   "x": "Acetyl-CoA (2C) joins oxaloacetate (4C) to form citric acid (6C), so it is also called the citric acid cycle.",
+   "s": "Oxidative decarboxylation and Krebs (TCA) cycle",
+   "trap": "Oxaloacetate is the acceptor, not the first product."
+  },
+  {
+   "id": "botB-105",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "Transfer of pollen from one flower to the stigma of another flower on the same plant is",
+   "o": [
+    "Xenogamy",
+    "Autogamy",
+    "Cleistogamy",
+    "Geitonogamy"
+   ],
+   "a": 3,
+   "x": "Geitonogamy is functionally cross-pollination but genetically self-pollination; xenogamy is between different plants.",
+   "s": "Pollination and its types",
+   "trap": "Xenogamy needs a different plant.",
+   "yrs": [
+    2078,
+    2079,
+    2081
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-106",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "Cleistogamous flowers ensure",
+   "o": [
+    "Cross-pollination by insects",
+    "Pollination by wind",
+    "Self-pollination, because they never open",
+    "Pollination by water"
+   ],
+   "a": 2,
+   "x": "Cleistogamous flowers (e.g. Commelina, Viola, Oxalis) stay closed, so anthers shed pollen directly on the stigma.",
+   "s": "Pollination and its types",
+   "yrs": [
+    2078,
+    2079,
+    2081
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-107",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "In sunflower the anthers mature before the stigma of the same flower is receptive. This condition is",
+   "o": [
+    "Protogyny",
+    "Protandry",
+    "Self-incompatibility",
+    "Cleistogamy"
+   ],
+   "a": 1,
+   "x": "Protandry (anthers first) is a dichogamy that favours cross-pollination; protogyny is stigma first.",
+   "s": "Pollination and its types",
+   "trap": "Protogyny is the reverse order.",
+   "yrs": [
+    2078,
+    2079,
+    2081
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-108",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "The endosperm of a typical angiosperm is",
+   "o": [
+    "Triploid, formed by fusion of a male gamete with two polar nuclei",
+    "Diploid, formed by fusion of egg and male gamete",
+    "Haploid, formed from the female gametophyte",
+    "Tetraploid, formed from the nucellus"
+   ],
+   "a": 0,
+   "x": "Triple fusion (male gamete + secondary nucleus) gives the 3n primary endosperm nucleus.",
+   "s": "Types and functions of endosperms",
+   "trap": "2n describes the zygote/embryo; haploid endosperm is in gymnosperms.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-109",
+   "topic": "bot-developmental",
+   "d": 3,
+   "q": "A tetraploid (4n) plant is pollinated by a diploid (2n) plant. The ploidy of the embryo and endosperm will be",
+   "o": [
+    "3n and 4n",
+    "4n and 6n",
+    "6n and 3n",
+    "3n and 5n"
+   ],
+   "a": 3,
+   "x": "Egg and each polar nucleus are 2n; male gamete is n. Embryo = 2n + n = 3n; endosperm = 2n + 2n + n = 5n.",
+   "s": "Fertilization",
+   "trap": "4n forgets that both polar nuclei come from the tetraploid mother.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-110",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "In which plant is the endosperm haploid?",
+   "o": [
+    "Maize",
+    "Castor",
+    "Pinus",
+    "Coconut"
+   ],
+   "a": 2,
+   "x": "In gymnosperms the endosperm is the female gametophyte formed before fertilisation, so it is n.",
+   "s": "Types and functions of endosperms",
+   "trap": "Maize and coconut have triploid endosperm."
+  },
+  {
+   "id": "botB-111",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "The liquid endosperm of coconut (coconut water) is an example of",
+   "o": [
+    "Cellular endosperm",
+    "Free-nuclear endosperm",
+    "Helobial endosperm",
+    "Ruminate endosperm"
+   ],
+   "a": 1,
+   "x": "Free nuclear divisions occur without walls; the white kernel is the cellular part.",
+   "s": "Types and functions of endosperms"
+  },
+  {
+   "id": "botB-112",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "Seeds in which the endosperm is fully used up by the developing embryo, as in pea and gram, are called",
+   "o": [
+    "Non-endospermic (exalbuminous)",
+    "Endospermic (albuminous)",
+    "Perispermic",
+    "Parthenocarpic"
+   ],
+   "a": 0,
+   "x": "In pea and gram the cotyledons absorb the endosperm; castor and maize keep it (albuminous).",
+   "s": "Types and functions of endosperms"
+  },
+  {
+   "id": "botB-113",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "The embryo sac (female gametophyte) of angiosperms develops from",
+   "o": [
+    "A microspore",
+    "The tapetum",
+    "A synergid",
+    "A functional megaspore"
+   ],
+   "a": 3,
+   "x": "Of the four megaspores formed by meiosis, usually the chalazal one survives and forms the embryo sac.",
+   "s": "Sporogenesis and gametogenesis in angiosperms",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-114",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "A mature Polygonum-type embryo sac is",
+   "o": [
+    "8-celled and 8-nucleate",
+    "7-celled and 7-nucleate",
+    "7-celled and 8-nucleate",
+    "4-celled and 8-nucleate"
+   ],
+   "a": 2,
+   "x": "3 antipodals + egg apparatus (egg + 2 synergids) + 1 central cell with 2 polar nuclei: 7 cells, 8 nuclei.",
+   "s": "Sporogenesis and gametogenesis in angiosperms",
+   "trap": "8-celled forgets that the central cell has two nuclei.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-115",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "The main function of the tapetum in the anther is to",
+   "o": [
+    "Help in dehiscence of the anther",
+    "Nourish the developing microspores",
+    "Protect the anther from the outside",
+    "Form the pollen tube"
+   ],
+   "a": 1,
+   "x": "The tapetum, the innermost wall layer, supplies food and materials (e.g. sporopollenin precursors) to pollen.",
+   "s": "Sporogenesis and gametogenesis in angiosperms",
+   "trap": "Endothecium, not tapetum, helps in dehiscence.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-116",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "Double fertilisation in angiosperms was discovered by",
+   "o": [
+    "S.G. Nawaschin",
+    "Strasburger",
+    "Amici",
+    "P. Maheshwari"
+   ],
+   "a": 0,
+   "x": "Nawaschin (1898) observed it in Lilium and Fritillaria. Amici discovered the pollen tube.",
+   "s": "Fertilization"
+  },
+  {
+   "id": "botB-117",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "In a grass embryo, the single shield-shaped cotyledon is called the",
+   "o": [
+    "Coleoptile",
+    "Coleorhiza",
+    "Epiblast",
+    "Scutellum"
+   ],
+   "a": 3,
+   "x": "The scutellum absorbs food from the endosperm; the coleoptile sheathes the plumule, the coleorhiza the radicle.",
+   "s": "Structure of monocot and dicot embryo",
+   "trap": "Coleoptile is the plumule sheath."
+  },
+  {
+   "id": "botB-118",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "Banana is commonly propagated vegetatively by",
+   "o": [
+    "Bulbils",
+    "Leaf buds",
+    "Suckers",
+    "Runners"
+   ],
+   "a": 2,
+   "x": "Suckers arise from the underground stem and grow into new plants; banana fruits are seedless.",
+   "s": "Asexual reproduction",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-119",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "The number of pollen grains formed from one microspore mother cell is",
+   "o": [
+    "1",
+    "4",
+    "2",
+    "8"
+   ],
+   "a": 1,
+   "x": "Each microspore mother cell undergoes meiosis to give a tetrad of 4 microspores (pollen).",
+   "s": "Sporogenesis and gametogenesis in angiosperms"
+  },
+  {
+   "id": "botB-120",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "In most angiosperms, the pollen grain is shed at the",
+   "o": [
+    "2-celled stage (vegetative + generative cell)",
+    "1-celled stage",
+    "3-celled stage",
+    "4-celled stage"
+   ],
+   "a": 0,
+   "x": "In about 60–70% of species pollen is shed 2-celled; the generative cell divides later in the pollen tube.",
+   "s": "Sporogenesis and gametogenesis in angiosperms",
+   "trap": "3-celled shedding occurs in fewer species (e.g. grasses)."
+  },
+  {
+   "id": "botB-121",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "Formation of seeds without fertilisation is called",
+   "o": [
+    "Parthenocarpy",
+    "Polyembryony",
+    "Vivipary",
+    "Apomixis"
+   ],
+   "a": 3,
+   "x": "Apomixis gives seeds asexually; parthenocarpy gives seedless fruit without fertilisation.",
+   "s": "Asexual reproduction",
+   "trap": "Parthenocarpy produces fruit, not seeds."
+  },
+  {
+   "id": "botB-122",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "A cell with Ψs = −1.0 MPa and Ψp = +0.4 MPa is placed in a solution of Ψ = −0.8 MPa. Water will",
+   "o": [
+    "Move into the cell",
+    "Not move at all",
+    "Move out of the cell",
+    "Move in, then the cell bursts"
+   ],
+   "a": 2,
+   "x": "Ψw(cell) = −1.0 + 0.4 = −0.6 MPa, higher than −0.8 MPa of the solution, so water flows out to the lower potential.",
+   "s": "Water relations: water potential",
+   "trap": "Comparing only Ψs (−1.0 < −0.8) suggests water enters."
+  },
+  {
+   "id": "botB-123",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "Total CO₂ molecules released from one glucose in the link reaction plus the Krebs cycle is",
+   "o": [
+    "4",
+    "6",
+    "2",
+    "3"
+   ],
+   "a": 1,
+   "x": "Link reaction: 1 CO₂ per pyruvate × 2 = 2; Krebs: 2 CO₂ per turn × 2 turns = 4; total 6.",
+   "s": "Oxidative decarboxylation and Krebs (TCA) cycle",
+   "trap": "4 counts only the Krebs cycle."
+  },
+  {
+   "id": "botB-124",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "For oxalic acid respiring as 2(COOH)₂ + O₂ → 4CO₂ + 2H₂O, the respiratory quotient is",
+   "o": [
+    "4",
+    "0.25",
+    "1",
+    "2"
+   ],
+   "a": 0,
+   "x": "RQ = CO₂ released / O₂ used = 4/1 = 4. Organic acids, being rich in oxygen, give RQ above one.",
+   "s": "Types of respiration",
+   "trap": "0.25 inverts the ratio (O₂/CO₂)."
+  },
+  {
+   "id": "botB-125",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "In the F2 of a trihybrid cross (AaBbCc × AaBbCc), the proportion of offspring with genotype AABBCC is",
+   "o": [
+    "1/27",
+    "1/8",
+    "1/16",
+    "1/64"
+   ],
+   "a": 3,
+   "x": "Each gene gives AA with probability 1/4: (1/4)³ = 1/64.",
+   "s": "Laws of inheritance",
+   "trap": "1/27 wrongly uses 1/3 per gene."
+  },
+  {
+   "id": "botB-126",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A DNA molecule of 1000 base pairs has 20% adenine. The number of guanine bases in it is",
+   "o": [
+    "300",
+    "400",
+    "600",
+    "200"
+   ],
+   "a": 2,
+   "x": "A = T = 20% so G = C = 30% of 2000 bases = 600.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "300 takes 30% of 1000 instead of 2000 bases.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-127",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "Genes A and B are 20 map units apart. In a test cross AB/ab × ab/ab, the percentage of Ab offspring is",
+   "o": [
+    "20%",
+    "10%",
+    "40%",
+    "80%"
+   ],
+   "a": 1,
+   "x": "20 map units = 20% recombinants, shared equally between Ab and aB: 10% each.",
+   "s": "Concept and types of linkage",
+   "trap": "20% is the total of both recombinant classes."
+  },
+  {
+   "id": "botB-128",
+   "topic": "bot-cell",
+   "d": 3,
+   "q": "A meiocyte with 2n = 20 at pachytene shows",
+   "o": [
+    "10 bivalents and 40 chromatids",
+    "20 bivalents and 40 chromatids",
+    "10 bivalents and 20 chromatids",
+    "20 bivalents and 80 chromatids"
+   ],
+   "a": 0,
+   "x": "20 chromosomes pair into 10 bivalents; each chromosome has 2 chromatids: 20 × 2 = 40.",
+   "s": "Amitosis, mitosis and meiosis",
+   "trap": "20 chromatids forgets replication in S phase.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-129",
+   "topic": "bot-developmental",
+   "d": 3,
+   "q": "In an angiosperm with 2n = 24, the chromosome numbers in the endosperm and an antipodal cell are",
+   "o": [
+    "24 and 12",
+    "36 and 24",
+    "12 and 36",
+    "36 and 12"
+   ],
+   "a": 3,
+   "x": "Endosperm is 3n = 36; antipodals are part of the haploid embryo sac, n = 12.",
+   "s": "Fertilization",
+   "trap": "24 is the nucellus or embryo, not the endosperm.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-130",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Griffith's experiment, in which heat-killed virulent pneumococci changed live harmless ones into virulent forms, demonstrated",
+   "o": [
+    "Transformation",
+    "Transduction",
+    "Conjugation",
+    "Mutation"
+   ],
+   "a": 0,
+   "x": "A 'transforming principle' from the dead S-strain changed R-strain bacteria into S-strain; Avery and colleagues later showed it was DNA.",
+   "s": "Genetic material: introduction",
+   "trap": "Transduction needs a bacteriophage as carrier."
+  },
+  {
+   "id": "botB-131",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Hershey and Chase grew bacteriophages with ³²P and ³⁵S and found that",
+   "o": [
+    "Only ³⁵S-labelled protein entered the bacteria, so protein is the genetic material",
+    "Both labels entered equally",
+    "Only ³²P-labelled DNA entered the bacteria, so DNA is the genetic material",
+    "Neither label entered the bacteria"
+   ],
+   "a": 2,
+   "x": "³²P labels DNA and ³⁵S labels protein. After infection and blending, radioactive phosphorus was inside the bacteria while sulphur stayed in the empty coats outside.",
+   "s": "Genetic material: introduction",
+   "trap": "³⁵S marks the protein coat, which stays outside."
+  },
+  {
+   "id": "botB-132",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "In the Watson–Crick (B-form) DNA, the distance between two adjacent base pairs is",
+   "o": [
+    "3.4 nm",
+    "2.0 nm",
+    "0.34 nm",
+    "0.034 nm"
+   ],
+   "a": 2,
+   "x": "Each turn is 3.4 nm long and has 10 base pairs, so adjacent pairs are 0.34 nm apart; the helix is 2 nm wide.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "3.4 nm is the length of a full turn."
+  },
+  {
+   "id": "botB-133",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A B-form DNA double helix is 68 nm long. The number of base pairs in it is",
+   "o": [
+    "20",
+    "200",
+    "680",
+    "2000"
+   ],
+   "a": 1,
+   "x": "Base pairs = length ÷ 0.34 nm = 68 ÷ 0.34 = 200 (that is 20 complete turns).",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "20 is the number of turns, not base pairs."
+  },
+  {
+   "id": "botB-134",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The most abundant type of RNA in a cell is",
+   "o": [
+    "mRNA",
+    "tRNA",
+    "rRNA",
+    "snRNA"
+   ],
+   "a": 2,
+   "x": "rRNA makes up about 80% of cellular RNA because every ribosome is built around it; mRNA is only a few percent.",
+   "s": "Composition, structure and functions of DNA and RNA",
+   "trap": "mRNA is the most talked-about, not the most abundant."
+  },
+  {
+   "id": "botB-135",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The enzyme that unwinds the DNA double helix at the replication fork by breaking hydrogen bonds is",
+   "o": [
+    "Helicase",
+    "DNA ligase",
+    "Primase",
+    "DNA polymerase"
+   ],
+   "a": 0,
+   "x": "Helicase separates the strands; primase lays RNA primers, DNA polymerase extends them and ligase seals the nicks.",
+   "s": "DNA replication",
+   "trap": "Ligase joins fragments; it does not unwind."
+  },
+  {
+   "id": "botB-136",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "DNA polymerase can add nucleotides only to a free 3′-OH end. Therefore new DNA strands always grow in the direction",
+   "o": [
+    "3′ → 5′",
+    "Both directions on each strand",
+    "Only from the centromere outward",
+    "5′ → 3′"
+   ],
+   "a": 3,
+   "x": "Each new nucleotide is joined to the 3′-OH of the previous one, so synthesis runs 5′ → 3′; this is why the lagging strand forms Okazaki fragments.",
+   "s": "DNA replication"
+  },
+  {
+   "id": "botB-137",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "Bacteria with only ¹⁵N-DNA are grown in a ¹⁴N medium for two generations. The proportion of hybrid (¹⁵N/¹⁴N) DNA molecules is",
+   "o": [
+    "100%",
+    "25%",
+    "50%",
+    "0%"
+   ],
+   "a": 2,
+   "x": "Generation 1: both molecules hybrid. Generation 2: each hybrid gives one hybrid and one light molecule, so 2 of 4 = 50% hybrid (semi-conservative replication).",
+   "s": "DNA replication",
+   "trap": "100% is the answer after only one generation.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-138",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The central dogma of molecular biology (DNA → RNA → protein) was proposed by",
+   "o": [
+    "Gregor Mendel",
+    "Meselson and Stahl",
+    "Hershey and Chase",
+    "Francis Crick"
+   ],
+   "a": 3,
+   "x": "Crick (1958) stated that genetic information flows from DNA to RNA to protein; Temin and Baltimore later found reverse transcription.",
+   "s": "Concept of central dogma",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-139",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "The genetic code is called degenerate because",
+   "o": [
+    "Most amino acids are coded by more than one codon",
+    "One codon codes for several amino acids",
+    "Codons overlap",
+    "The code differs between organisms"
+   ],
+   "a": 0,
+   "x": "61 sense codons code for only 20 amino acids, so most amino acids have several codons (e.g. leucine has 6). Each codon is still unambiguous.",
+   "s": "Genetic code",
+   "trap": "One codon for many amino acids would be ambiguity, which does not occur."
+  },
+  {
+   "id": "botB-140",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Of the 64 codons, the number that code for amino acids is",
+   "o": [
+    "61",
+    "64",
+    "60",
+    "20"
+   ],
+   "a": 0,
+   "x": "Three codons (UAA, UAG, UGA) are stop signals, leaving 61 sense codons; AUG both codes for methionine and starts translation.",
+   "s": "Genetic code",
+   "trap": "64 forgets the three stop codons."
+  },
+  {
+   "id": "botB-141",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "The coding region of an mRNA, from the start codon up to and including the stop codon, has 453 nucleotides. The polypeptide formed has",
+   "o": [
+    "151 amino acids",
+    "453 amino acids",
+    "150 amino acids",
+    "149 amino acids"
+   ],
+   "a": 2,
+   "x": "453 ÷ 3 = 151 codons; the stop codon adds no amino acid, so 151 − 1 = 150 amino acids.",
+   "s": "Genetic code",
+   "trap": "151 counts the stop codon as an amino acid."
+  },
+  {
+   "id": "botB-142",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "A cross between an F1 hybrid and either of its parents is a",
+   "o": [
+    "Reciprocal cross",
+    "Back cross",
+    "Dihybrid cross",
+    "Monohybrid cross"
+   ],
+   "a": 1,
+   "x": "Any F1 × parent cross is a back cross; when the parent used is the homozygous recessive one, the back cross is also a test cross.",
+   "s": "General terminology",
+   "trap": "Test cross is only the recessive-parent case."
+  },
+  {
+   "id": "botB-143",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Mendel's law of segregation (purity of gametes) states that",
+   "o": [
+    "Alleles of different genes assort independently",
+    "The two alleles of a gene separate during gamete formation, so each gamete gets only one",
+    "Dominant alleles mask recessive ones in the F1",
+    "Linked genes are inherited together"
+   ],
+   "a": 1,
+   "x": "Alleles stay unmixed in the hybrid and separate at meiosis, so every gamete is pure for one allele of each gene.",
+   "s": "Laws of inheritance",
+   "trap": "Independent assortment is the second law, about two genes."
+  },
+  {
+   "id": "botB-144",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "In a cross AaBb × aaBb (independent genes), the fraction of offspring with genotype aabb is",
+   "o": [
+    "1/16",
+    "1/4",
+    "3/16",
+    "1/8"
+   ],
+   "a": 3,
+   "x": "Aa × aa gives aa with probability 1/2; Bb × Bb gives bb with probability 1/4; 1/2 × 1/4 = 1/8.",
+   "s": "Laws of inheritance",
+   "trap": "1/16 assumes both parents are AaBb."
+  },
+  {
+   "id": "botB-145",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "When AaBbCc is self-pollinated (independent genes, complete dominance), the fraction of offspring showing all three dominant traits is",
+   "o": [
+    "27/64",
+    "1/64",
+    "9/64",
+    "3/64"
+   ],
+   "a": 0,
+   "x": "Each gene gives the dominant phenotype with probability 3/4; (3/4)³ = 27/64.",
+   "s": "Laws of inheritance",
+   "trap": "1/64 is the fraction homozygous for all three."
+  },
+  {
+   "id": "botB-146",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Two heterozygous tall pea plants (Tt × Tt) give 800 offspring. The expected number of heterozygous tall offspring is",
+   "o": [
+    "600",
+    "200",
+    "800",
+    "400"
+   ],
+   "a": 3,
+   "x": "Tt × Tt gives 1 TT : 2 Tt : 1 tt; heterozygotes are 2/4 of 800 = 400.",
+   "s": "Laws of inheritance",
+   "trap": "600 counts all tall plants, including TT.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-147",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "In snapdragon, red × white gives pink F1. A pink plant crossed with a white plant gives",
+   "o": [
+    "All pink",
+    "1 pink : 1 white",
+    "1 red : 2 pink : 1 white",
+    "3 pink : 1 white"
+   ],
+   "a": 1,
+   "x": "Pink (Rr) × white (rr) gives Rr and rr in equal numbers: 1 pink : 1 white.",
+   "s": "Incomplete dominance",
+   "trap": "1:2:1 is pink × pink."
+  },
+  {
+   "id": "botB-148",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A child has blood group O and the mother has group A. The father CANNOT have blood group",
+   "o": [
+    "A",
+    "B",
+    "O",
+    "AB"
+   ],
+   "a": 3,
+   "x": "An O child is ii, so each parent must pass an i allele. Fathers of group A (Iᴬi), B (Iᴮi) or O (ii) can; an AB father (IᴬIᴮ) has no i.",
+   "s": "Co-dominance",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-149",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Parents with blood groups AB and O can have children with blood group",
+   "o": [
+    "AB or O only",
+    "A, B, AB or O",
+    "O only",
+    "A or B only"
+   ],
+   "a": 3,
+   "x": "IᴬIᴮ × ii gives Iᴬi (group A) or Iᴮi (group B), each with probability 1/2; no child can be AB or O.",
+   "s": "Co-dominance",
+   "trap": "Children do not simply copy the parents' groups.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-150",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Crossing over takes place between",
+   "o": [
+    "Non-sister chromatids of homologous chromosomes",
+    "Sister chromatids of the same chromosome",
+    "Non-homologous chromosomes",
+    "Two chromatids of different bivalents"
+   ],
+   "a": 0,
+   "x": "At pachytene, segments are exchanged between non-sister chromatids of a bivalent, giving recombinant chromatids.",
+   "s": "Concept and significance of crossing over",
+   "trap": "Sister chromatids are identical, so exchange gives nothing new."
+  },
+  {
+   "id": "botB-151",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "A haemophilic man marries a woman who is neither haemophilic nor a carrier. Their children will be",
+   "o": [
+    "All sons haemophilic",
+    "All daughters carriers and all sons normal",
+    "Half the daughters haemophilic",
+    "All children normal and non-carriers"
+   ],
+   "a": 1,
+   "x": "The father passes his Xʰ to every daughter (carriers) and his Y to every son; sons get a normal X from the mother.",
+   "s": "Sex-linked inheritance",
+   "trap": "Fathers never pass their X to sons."
+  },
+  {
+   "id": "botB-152",
+   "topic": "bot-genetics",
+   "d": 3,
+   "q": "A woman with normal vision whose father was colour-blind marries a colour-blind man. The probability that their daughter is colour-blind is",
+   "o": [
+    "1/4",
+    "0",
+    "1/2",
+    "1"
+   ],
+   "a": 2,
+   "x": "She is a carrier (XᶜX). Daughters receive Xᶜ from the father and Xᶜ or X from the mother, so 1/2 are colour-blind.",
+   "s": "Color blindness in humans",
+   "trap": "1/4 is the chance for any child, not for a daughter.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-153",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Genes on the non-homologous part of the Y chromosome, passed only from father to son, are",
+   "o": [
+    "X-linked recessive genes",
+    "Holandric genes",
+    "Autosomal genes",
+    "Sex-limited genes"
+   ],
+   "a": 1,
+   "x": "Holandric (Y-linked) genes, such as the one usually cited for hypertrichosis of the ear, appear only in males and pass straight from father to son.",
+   "s": "Concepts and patterns of sex-linked inheritance"
+  },
+  {
+   "id": "botB-154",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "Reversal of a chromosome segment by 180° is called",
+   "o": [
+    "Translocation",
+    "Duplication",
+    "Deletion",
+    "Inversion"
+   ],
+   "a": 3,
+   "x": "Inversion changes gene order within one chromosome; translocation moves a segment to a non-homologous chromosome.",
+   "s": "Concept and types (gene and chromosomal mutations)"
+  },
+  {
+   "id": "botB-155",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Sickle-cell anaemia results from",
+   "o": [
+    "Deletion of a whole chromosome",
+    "Trisomy of chromosome 21",
+    "A frameshift that stops globin synthesis",
+    "A single base substitution that replaces glutamic acid with valine in β-globin"
+   ],
+   "a": 3,
+   "x": "Codon GAG changes to GUG, so the sixth amino acid of β-globin becomes valine instead of glutamic acid; it is a point mutation.",
+   "s": "Concept and types (gene and chromosomal mutations)"
+  },
+  {
+   "id": "botB-156",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "A plant species has 2n = 24. A trisomic plant of this species has how many chromosomes in its somatic cells?",
+   "o": [
+    "36",
+    "23",
+    "26",
+    "25"
+   ],
+   "a": 3,
+   "x": "Trisomy (2n + 1) adds one extra chromosome: 24 + 1 = 25. 36 would be triploid (3n).",
+   "s": "Causes and examples of genetic disorders",
+   "trap": "36 confuses trisomy with triploidy.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-157",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Cultivated banana and seedless watermelon are seedless mainly because they are",
+   "o": [
+    "Triploid",
+    "Tetraploid",
+    "Haploid",
+    "Diploid"
+   ],
+   "a": 0,
+   "x": "With three chromosome sets, homologues cannot pair evenly in meiosis, gametes are unbalanced and seeds fail to form.",
+   "s": "Polyploidy (origin, types and significance)",
+   "trap": "Tetraploids are usually fertile."
+  },
+  {
+   "id": "botB-158",
+   "topic": "bot-genetics",
+   "d": 1,
+   "q": "The karyotype of a person with Klinefelter's syndrome is",
+   "o": [
+    "47, XXY",
+    "45, XO",
+    "47, XX + 21",
+    "47, XYY"
+   ],
+   "a": 0,
+   "x": "Klinefelter males have an extra X (44 + XXY): tall, sterile, with small testes. 45, XO is Turner's syndrome.",
+   "s": "Causes and examples of genetic disorders",
+   "trap": "45, XO is Turner's syndrome.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-159",
+   "topic": "bot-genetics",
+   "d": 2,
+   "q": "Albinism is caused by a lack of the enzyme",
+   "o": [
+    "Phenylalanine hydroxylase",
+    "Lactase",
+    "Amylase",
+    "Tyrosinase"
+   ],
+   "a": 3,
+   "x": "Tyrosinase converts tyrosine towards melanin; an autosomal recessive defect leaves skin, hair and eyes without pigment.",
+   "s": "Causes and examples of genetic disorders",
+   "trap": "Phenylalanine hydroxylase is missing in phenylketonuria."
+  },
+  {
+   "id": "botB-160",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "For a fully flaccid cell, the diffusion pressure deficit (DPD) equals its",
+   "o": [
+    "Osmotic pressure",
+    "Turgor pressure",
+    "Wall pressure",
+    "Zero"
+   ],
+   "a": 0,
+   "x": "DPD = OP − TP. In a flaccid cell TP = 0, so DPD = OP, its maximum value.",
+   "s": "Water relations: diffusion pressure deficit",
+   "trap": "Zero is the DPD of a fully turgid cell."
+  },
+  {
+   "id": "botB-161",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Entry of water into a cell placed in a hypotonic solution is",
+   "o": [
+    "Exosmosis",
+    "Plasmolysis",
+    "Endosmosis",
+    "Guttation"
+   ],
+   "a": 2,
+   "x": "Water moves into the cell, which has a lower water potential than the hypotonic solution; the opposite outflow is exosmosis.",
+   "s": "Water relations: osmosis and its types, plasmolysis"
+  },
+  {
+   "id": "botB-162",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "In a plasmolysed cell, the space between the cell wall and the shrunken protoplast is filled with",
+   "o": [
+    "The external hypertonic solution",
+    "Pure water",
+    "Air",
+    "Cell sap from the vacuole"
+   ],
+   "a": 0,
+   "x": "The cell wall is freely permeable, so the outside solution passes through it and fills the gap; the plasma membrane is the selective barrier.",
+   "s": "Water relations: osmosis and its types, plasmolysis"
+  },
+  {
+   "id": "botB-163",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "A flaccid cell (Ψp = 0) with Ψs = −0.7 MPa is placed in pure water until it stops gaining water. Its pressure potential is then",
+   "o": [
+    "+0.7 MPa",
+    "0 MPa",
+    "−0.7 MPa",
+    "+1.4 MPa"
+   ],
+   "a": 0,
+   "x": "At equilibrium Ψw(cell) = Ψw(pure water) = 0, so Ψp = 0 − (−0.7) = +0.7 MPa (ignoring dilution of the sap).",
+   "s": "Water relations: water potential",
+   "trap": "0 MPa is the starting value, before water enters."
+  },
+  {
+   "id": "botB-164",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The pressure exerted by the cell wall on the protoplast, equal and opposite to turgor pressure, is",
+   "o": [
+    "Osmotic pressure",
+    "Wall pressure",
+    "Root pressure",
+    "Imbibition pressure"
+   ],
+   "a": 1,
+   "x": "When a turgid protoplast presses on the wall (turgor pressure), the elastic wall pushes back with an equal wall pressure.",
+   "s": "Water relations: wall pressure"
+  },
+  {
+   "id": "botB-165",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Most of the water lost by transpiration from a leafy plant escapes through",
+   "o": [
+    "Cuticle",
+    "Stomata",
+    "Lenticels",
+    "Hydathodes"
+   ],
+   "a": 1,
+   "x": "Stomatal transpiration accounts for about 90% of water loss; cuticular and lenticular transpiration are minor. Hydathodes give guttation.",
+   "s": "Transpiration",
+   "trap": "Hydathodes release liquid water (guttation), not vapour."
+  },
+  {
+   "id": "botB-166",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Which condition decreases the rate of transpiration?",
+   "o": [
+    "Strong wind",
+    "High temperature",
+    "High atmospheric humidity",
+    "Bright light"
+   ],
+   "a": 2,
+   "x": "Humid air lowers the water-vapour gradient between the leaf and air, so less water diffuses out; wind, heat and light all increase transpiration.",
+   "s": "Transpiration"
+  },
+  {
+   "id": "botB-167",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The cohesion–tension (transpiration pull) theory of ascent of sap was proposed by",
+   "o": [
+    "Blackman",
+    "Singer and Nicolson",
+    "Hatch and Slack",
+    "Dixon and Joly"
+   ],
+   "a": 3,
+   "x": "Dixon and Joly (1894) explained that transpiration pulls a continuous water column held together by cohesion and adhesion in xylem.",
+   "s": "Ascent of sap"
+  },
+  {
+   "id": "botB-168",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Root pressure, seen as sap oozing from a freshly cut stem, results from",
+   "o": [
+    "Active absorption of mineral ions by roots, drawing water in osmotically",
+    "Transpiration pull from the leaves",
+    "Capillarity in narrow vessels",
+    "Imbibition by the cell walls of root hairs"
+   ],
+   "a": 0,
+   "x": "Root cells pump ions into the xylem using ATP; water follows by osmosis and builds a positive pressure that pushes sap up.",
+   "s": "Absorption",
+   "trap": "Transpiration pull is a tension, not a pressure from below."
+  },
+  {
+   "id": "botB-169",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Leaves droop on a hot afternoon but recover by evening. This temporary wilting occurs because",
+   "o": [
+    "The soil has no water left at all",
+    "Roots absorb too much water",
+    "Stomata stay closed all day",
+    "Water lost by transpiration exceeds water absorbed"
+   ],
+   "a": 3,
+   "x": "In incipient or temporary wilting, transpiration briefly outruns absorption; when transpiration falls in the evening, cells regain turgor.",
+   "s": "Wilting",
+   "trap": "No soil water would cause permanent wilting."
+  },
+  {
+   "id": "botB-170",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Carotenoids help photosynthesis by",
+   "o": [
+    "Acting as the reaction centre of photosystem I",
+    "Fixing CO₂ in the stroma",
+    "Absorbing extra wavelengths and protecting chlorophyll from photo-oxidation",
+    "Splitting water to release oxygen"
+   ],
+   "a": 2,
+   "x": "Carotenes and xanthophylls are accessory pigments: they pass absorbed blue-green light energy to chlorophyll a and quench excess energy.",
+   "s": "Photosynthetic pigments"
+  },
+  {
+   "id": "botB-171",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Chlorophyll b differs from chlorophyll a in having",
+   "o": [
+    "No magnesium",
+    "No phytol tail",
+    "An iron atom in place of magnesium",
+    "An aldehyde (–CHO) group in place of a methyl (–CH₃) group"
+   ],
+   "a": 3,
+   "x": "Both have a Mg-porphyrin head and phytol tail; chlorophyll a carries –CH₃ and chlorophyll b carries –CHO at the same position.",
+   "s": "Photosynthetic pigments",
+   "trap": "Iron sits in haem, not in chlorophyll."
+  },
+  {
+   "id": "botB-172",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Non-cyclic photophosphorylation",
+   "o": [
+    "Uses both PS I and PS II and yields ATP, NADPH and O₂",
+    "Uses only PS I and yields only ATP",
+    "Uses only PS II and yields only NADPH",
+    "Occurs in the stroma and fixes CO₂"
+   ],
+   "a": 0,
+   "x": "Electrons flow from water through PS II and PS I to NADP⁺ (Z-scheme), giving ATP, NADPH and O₂. Cyclic flow uses PS I and gives ATP only.",
+   "s": "Light-dependent reactions",
+   "trap": "PS I alone with only ATP is cyclic flow."
+  },
+  {
+   "id": "botB-173",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "To release one molecule of O₂ by photolysis of water, the number of electrons removed is",
+   "o": [
+    "2",
+    "4",
+    "1",
+    "8"
+   ],
+   "a": 1,
+   "x": "2H₂O → 4H⁺ + 4e⁻ + O₂; the oxygen-evolving complex of PS II passes the four electrons to P680.",
+   "s": "Light-dependent reactions",
+   "trap": "2 electrons release only half an O₂ molecule.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-174",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "How many turns of the Calvin cycle are needed to make one molecule of glucose?",
+   "o": [
+    "1",
+    "3",
+    "6",
+    "12"
+   ],
+   "a": 2,
+   "x": "Each turn fixes one CO₂; glucose has 6 carbons, so 6 turns (using 18 ATP and 12 NADPH).",
+   "s": "Calvin–Benson cycle (C₃ cycle)",
+   "trap": "12 is the NADPH count."
+  },
+  {
+   "id": "botB-175",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "In C₄ plants, the Calvin cycle takes place in the chloroplasts of",
+   "o": [
+    "Bundle sheath cells",
+    "Mesophyll cells",
+    "Epidermal cells",
+    "Guard cells"
+   ],
+   "a": 0,
+   "x": "Mesophyll cells fix CO₂ into C₄ acids, which release CO₂ in the bundle sheath, where RuBisCO and the Calvin cycle work.",
+   "s": "Hatch–Slack pathway (C₄ cycle)",
+   "trap": "Mesophyll cells only make the C₄ acid."
+  },
+  {
+   "id": "botB-176",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Photorespiration occurs because RuBisCO",
+   "o": [
+    "Cannot bind CO₂ at all",
+    "Works only in the dark",
+    "Is found only in C₄ plants",
+    "Also acts as an oxygenase when O₂ is high and CO₂ is low"
+   ],
+   "a": 3,
+   "x": "RuBisCO can add O₂ to RuBP, forming phosphoglycolate, which is recycled through peroxisome and mitochondrion with loss of CO₂.",
+   "s": "Photorespiration"
+  },
+  {
+   "id": "botB-177",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Photorespiration is negligible in",
+   "o": [
+    "C₃ plants such as wheat",
+    "C₄ plants such as sugarcane",
+    "All plants on hot days",
+    "Shade plants"
+   ],
+   "a": 1,
+   "x": "C₄ plants concentrate CO₂ around RuBisCO in the bundle sheath, so its oxygenase activity is suppressed.",
+   "s": "Photorespiration",
+   "trap": "Hot days increase photorespiration in C₃ plants."
+  },
+  {
+   "id": "botB-178",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The law of limiting factors in photosynthesis was given by",
+   "o": [
+    "Calvin",
+    "Blackman",
+    "Hill",
+    "Mitchell"
+   ],
+   "a": 1,
+   "x": "Blackman (1905): when a process depends on several factors, its rate is limited by the factor nearest its minimum value.",
+   "s": "Factors affecting photosynthesis"
+  },
+  {
+   "id": "botB-179",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "In bright light, warming a plant from 15 °C to 25 °C increases photosynthesis, but in dim light it does not. This shows that in dim light",
+   "o": [
+    "Temperature is the limiting factor",
+    "CO₂ is never limiting",
+    "Light is the limiting factor",
+    "Photosynthesis has stopped"
+   ],
+   "a": 2,
+   "x": "By Blackman's law, raising a non-limiting factor has no effect; in dim light, light itself limits the rate, so warmth adds nothing.",
+   "s": "Factors affecting photosynthesis",
+   "trap": "Temperature limits only in bright light here."
+  },
+  {
+   "id": "botB-180",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Fruits and vegetables keep longer in cold storage because low temperature",
+   "o": [
+    "Stops photosynthesis",
+    "Kills all their cells",
+    "Slows respiration and enzyme activity",
+    "Increases water loss"
+   ],
+   "a": 2,
+   "x": "Respiration is enzyme-driven; cooling slows it, so stored food is used up more slowly and decay is delayed.",
+   "s": "Factors affecting respiration"
+  },
+  {
+   "id": "botB-181",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "The chemiosmotic theory of ATP synthesis was given by",
+   "o": [
+    "Hans Krebs",
+    "Peter Mitchell",
+    "Melvin Calvin",
+    "Blackman"
+   ],
+   "a": 1,
+   "x": "Mitchell proposed that electron transport pumps H⁺ across the inner membrane and the H⁺ flowing back through ATP synthase drives ATP formation.",
+   "s": "Electron transport system and oxidative phosphorylation"
+  },
+  {
+   "id": "botB-182",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "FADH₂ yields less ATP than NADH in the electron transport system because FADH₂",
+   "o": [
+    "Passes its electrons in at complex II, bypassing one proton-pumping step",
+    "Is oxidised in the cytoplasm",
+    "Gives its electrons directly to oxygen",
+    "Is not oxidised at all"
+   ],
+   "a": 0,
+   "x": "NADH enters at complex I; FADH₂ enters through complex II, which pumps no protons, so fewer H⁺ are moved and less ATP results.",
+   "s": "Electron transport system and oxidative phosphorylation"
+  },
+  {
+   "id": "botB-183",
+   "topic": "bot-physiology",
+   "d": 3,
+   "q": "In aerobic respiration of one glucose, the net ATP formed by substrate-level phosphorylation is",
+   "o": [
+    "2",
+    "6",
+    "4",
+    "38"
+   ],
+   "a": 2,
+   "x": "Glycolysis gives a net 2 ATP and the Krebs cycle 2 (one GTP/ATP per turn × 2 turns); 2 + 2 = 4.",
+   "s": "Mechanism of aerobic respiration",
+   "trap": "2 counts only glycolysis."
+  },
+  {
+   "id": "botB-184",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "A shoot bends towards unilateral light because auxin",
+   "o": [
+    "Collects on the lit side and makes those cells elongate more",
+    "Collects on the shaded side and makes those cells elongate more",
+    "Is destroyed on both sides equally",
+    "Moves to the roots"
+   ],
+   "a": 1,
+   "x": "Light causes auxin to move laterally to the shaded side; faster elongation there curves the stem towards light (phototropism).",
+   "s": "Plant growth promotors: auxin"
+  },
+  {
+   "id": "botB-185",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Gibberellins were first discovered from the fungus Gibberella fujikuroi, which causes",
+   "o": [
+    "Late blight of potato",
+    "Foolish seedling (bakanae) disease of rice",
+    "Rust of wheat",
+    "Red rot of sugarcane"
+   ],
+   "a": 1,
+   "x": "Kurosawa found that infected rice seedlings grow abnormally tall because the fungus secretes gibberellin.",
+   "s": "Plant growth promotors: gibberellins"
+  },
+  {
+   "id": "botB-186",
+   "topic": "bot-physiology",
+   "d": 1,
+   "q": "Kinetin, the first cytokinin discovered, was isolated by Skoog and Miller from",
+   "o": [
+    "Corn kernels",
+    "Autoclaved herring sperm DNA",
+    "Rice seedlings infected with fungus",
+    "Coconut milk"
+   ],
+   "a": 1,
+   "x": "Kinetin (6-furfurylaminopurine) was obtained from degraded herring sperm DNA; zeatin, the first natural cytokinin, came from maize.",
+   "s": "Plant growth promotors: cytokinins",
+   "trap": "Zeatin came from corn, not kinetin."
+  },
+  {
+   "id": "botB-187",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "In tissue culture, a high cytokinin-to-auxin ratio in the medium favours",
+   "o": [
+    "Shoot formation",
+    "Root formation",
+    "Callus death",
+    "Seed formation"
+   ],
+   "a": 0,
+   "x": "Skoog and Miller showed high cytokinin : auxin gives shoots, high auxin : cytokinin gives roots, and balanced levels give callus.",
+   "s": "Plant growth promotors: cytokinins",
+   "trap": "High auxin, not cytokinin, favours roots."
+  },
+  {
+   "id": "botB-188",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Which seed shows epigeal germination?",
+   "o": [
+    "Pea",
+    "Castor",
+    "Maize",
+    "Gram"
+   ],
+   "a": 1,
+   "x": "In epigeal germination the hypocotyl elongates and lifts the cotyledons above ground (castor, bean, cotton). Pea, gram and maize are hypogeal.",
+   "s": "Seed germination and types"
+  },
+  {
+   "id": "botB-189",
+   "topic": "bot-physiology",
+   "d": 2,
+   "q": "Keeping moist seeds at low temperature for some weeks to break their dormancy is called",
+   "o": [
+    "Scarification",
+    "Stratification",
+    "Vernalisation",
+    "Imbibition"
+   ],
+   "a": 1,
+   "x": "Cold, moist stratification removes inhibitors and ends embryo dormancy; scarification breaks a hard seed coat.",
+   "s": "Seed dormancy",
+   "trap": "Vernalisation is cold treatment to induce flowering."
+  },
+  {
+   "id": "botB-190",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "The cell theory was formulated by",
+   "o": [
+    "Singer and Nicolson",
+    "Schleiden and Schwann",
+    "Watson and Crick",
+    "Robert Hooke"
+   ],
+   "a": 1,
+   "x": "Schleiden (plants, 1838) and Schwann (animals, 1839) stated that all living things are made of cells; Virchow added that cells come from cells.",
+   "s": "Cell theory",
+   "trap": "Hooke only named the cell."
+  },
+  {
+   "id": "botB-191",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Which structure is present in both prokaryotic and eukaryotic cells?",
+   "o": [
+    "Nuclear envelope",
+    "Mitochondrion",
+    "Ribosome",
+    "Golgi body"
+   ],
+   "a": 2,
+   "x": "All cells need ribosomes to make proteins (70S in prokaryotes, 80S in eukaryotic cytoplasm); membrane-bound organelles are absent in prokaryotes.",
+   "s": "Concept of prokaryotic and eukaryotic cells"
+  },
+  {
+   "id": "botB-192",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Histone proteins packing DNA into nucleosomes are absent in",
+   "o": [
+    "Plant cells",
+    "Bacteria",
+    "Animal cells",
+    "Fungal cells"
+   ],
+   "a": 1,
+   "x": "Eukaryotic DNA wraps around histone octamers to form nucleosomes; bacterial DNA is naked and lies in the nucleoid.",
+   "s": "Concept of prokaryotic and eukaryotic cells",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-193",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The secondary wall of a plant cell is laid down",
+   "o": [
+    "Inside the primary wall after the cell stops enlarging",
+    "Outside the middle lamella",
+    "Before the primary wall",
+    "Only in dividing cells"
+   ],
+   "a": 0,
+   "x": "Order from outside: middle lamella → primary wall → secondary wall. The thick, often lignified secondary wall is added inside once growth stops.",
+   "s": "Cell wall"
+  },
+  {
+   "id": "botB-194",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Movement of ions across a membrane against their concentration gradient using ATP is",
+   "o": [
+    "Simple diffusion",
+    "Active transport",
+    "Osmosis",
+    "Facilitated diffusion"
+   ],
+   "a": 1,
+   "x": "Carrier pumps such as the Na⁺/K⁺ pump spend ATP to move solutes uphill; diffusion and osmosis go downhill without energy.",
+   "s": "Cell membrane"
+  },
+  {
+   "id": "botB-195",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Folds of the inner mitochondrial membrane are called",
+   "o": [
+    "Thylakoids",
+    "Cisternae",
+    "Cristae",
+    "Grana"
+   ],
+   "a": 2,
+   "x": "Cristae increase the surface for the electron transport chain and ATP synthase; thylakoids and grana belong to chloroplasts.",
+   "s": "Mitochondria"
+  },
+  {
+   "id": "botB-196",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The stalked F₁ particles (oxysomes) that make ATP are located on the",
+   "o": [
+    "Outer mitochondrial membrane",
+    "Inner mitochondrial membrane",
+    "Mitochondrial matrix only",
+    "Intermembrane space"
+   ],
+   "a": 1,
+   "x": "F₀–F₁ ATP synthase sits in the inner membrane with the F₁ head projecting into the matrix.",
+   "s": "Mitochondria"
+  },
+  {
+   "id": "botB-197",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Stacks of thylakoids inside a chloroplast are called",
+   "o": [
+    "Stroma",
+    "Cristae",
+    "Grana",
+    "Cisternae"
+   ],
+   "a": 2,
+   "x": "Thylakoids pile up like coins to form grana, linked by stroma lamellae; the light reactions occur on their membranes.",
+   "s": "Chloroplasts"
+  },
+  {
+   "id": "botB-198",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Mitochondria and chloroplasts are believed to have arisen from free-living prokaryotes. This idea is the",
+   "o": [
+    "Cell theory",
+    "Fluid mosaic model",
+    "Endosymbiotic theory",
+    "Theory of spontaneous generation"
+   ],
+   "a": 2,
+   "x": "Their own circular DNA, 70S ribosomes and double membranes support the idea that they were once engulfed bacteria.",
+   "s": "Chloroplasts"
+  },
+  {
+   "id": "botB-199",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Rough endoplasmic reticulum is mainly concerned with",
+   "o": [
+    "Synthesis of lipids and steroids",
+    "Photosynthesis",
+    "Synthesis of proteins for secretion and membranes",
+    "Digestion of worn-out organelles"
+   ],
+   "a": 2,
+   "x": "Ribosomes on RER make proteins that enter its lumen for folding and transport to the Golgi; smooth ER makes lipids.",
+   "s": "Endoplasmic reticulum (ER)",
+   "trap": "Lipid and steroid synthesis is smooth ER."
+  },
+  {
+   "id": "botB-200",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "In plant cells, the Golgi apparatus occurs as many scattered units called",
+   "o": [
+    "Lysosomes",
+    "Spherosomes",
+    "Dictyosomes",
+    "Glyoxysomes"
+   ],
+   "a": 2,
+   "x": "Each dictyosome is a stack of flattened cisternae; they supply vesicles for the cell plate and cell-wall polysaccharides.",
+   "s": "Golgi body"
+  },
+  {
+   "id": "botB-201",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Lysosomal hydrolytic enzymes work best at",
+   "o": [
+    "Acidic pH (about 5)",
+    "Neutral pH (7)",
+    "Alkaline pH (about 9)",
+    "Any pH equally"
+   ],
+   "a": 0,
+   "x": "A proton pump keeps the lysosome interior acidic; its acid hydrolases (proteases, lipases, nucleases) are active there.",
+   "s": "Lysosome"
+  },
+  {
+   "id": "botB-202",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "The nucleolus is the site of synthesis of",
+   "o": [
+    "rRNA and ribosomal subunits",
+    "DNA",
+    "Lipids",
+    "mRNA only"
+   ],
+   "a": 0,
+   "x": "The nucleolus forms at the nucleolar organiser; it transcribes rRNA and assembles it with proteins into ribosomal subunits.",
+   "s": "Nucleus"
+  },
+  {
+   "id": "botB-203",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "The basal body of a cilium has microtubules arranged as",
+   "o": [
+    "Nine peripheral triplets with none in the centre (9 + 0)",
+    "Nine doublets with two central singlets (9 + 2)",
+    "Nine doublets only",
+    "Two central singlets only"
+   ],
+   "a": 0,
+   "x": "Basal bodies, like centrioles, have a 9 + 0 triplet arrangement; the axoneme growing from them is 9 + 2.",
+   "s": "Cilia and flagella",
+   "trap": "9 + 2 is the axoneme, not the basal body."
+  },
+  {
+   "id": "botB-204",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Raphides, needle-shaped crystals in plant cells such as those of Colocasia, are made of",
+   "o": [
+    "Calcium oxalate",
+    "Calcium carbonate",
+    "Silica",
+    "Starch"
+   ],
+   "a": 0,
+   "x": "Raphides are bundles of calcium oxalate needles; cystoliths of Ficus leaves are calcium carbonate.",
+   "s": "Cell inclusions",
+   "trap": "Calcium carbonate forms cystoliths."
+  },
+  {
+   "id": "botB-205",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Aleurone grains stored in seeds are made of",
+   "o": [
+    "Starch",
+    "Fat",
+    "Protein",
+    "Cellulose"
+   ],
+   "a": 2,
+   "x": "Aleurone grains are protein bodies, e.g. in the aleurone layer of cereals, which secretes amylase during germination.",
+   "s": "Cell inclusions"
+  },
+  {
+   "id": "botB-206",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "A cell in G₁ has 2C DNA. Its DNA content in G₂ is",
+   "o": [
+    "2C",
+    "1C",
+    "4C",
+    "8C"
+   ],
+   "a": 2,
+   "x": "DNA doubles during S phase, so G₂ cells have 4C; the chromosome number stays the same.",
+   "s": "Concept of cell cycle"
+  },
+  {
+   "id": "botB-207",
+   "topic": "bot-cell",
+   "d": 1,
+   "q": "Chromosomes are best counted and studied at",
+   "o": [
+    "Prophase",
+    "Anaphase",
+    "Metaphase",
+    "Telophase"
+   ],
+   "a": 2,
+   "x": "At metaphase chromosomes are maximally condensed and lined up on the equatorial plate, so their number and shape are clearest.",
+   "s": "Amitosis, mitosis and meiosis"
+  },
+  {
+   "id": "botB-208",
+   "topic": "bot-cell",
+   "d": 2,
+   "q": "Chiasmata first become visible during",
+   "o": [
+    "Leptotene",
+    "Zygotene",
+    "Pachytene",
+    "Diplotene"
+   ],
+   "a": 3,
+   "x": "Crossing over happens at pachytene, but homologues begin to separate at diplotene, revealing the chiasmata where exchange occurred.",
+   "s": "Amitosis, mitosis and meiosis",
+   "trap": "Crossing over is at pachytene; chiasmata are seen later."
+  },
+  {
+   "id": "botB-209",
+   "topic": "bot-cell",
+   "d": 3,
+   "q": "A cell with 2n = 18 completes meiosis I. Each daughter cell has",
+   "o": [
+    "9 chromosomes with 18 chromatids",
+    "18 chromosomes with 18 chromatids",
+    "9 chromosomes with 9 chromatids",
+    "18 chromosomes with 36 chromatids"
+   ],
+   "a": 0,
+   "x": "Homologues separate at anaphase I, so each cell gets n = 9 chromosomes, but each still has two sister chromatids: 18 chromatids.",
+   "s": "Amitosis, mitosis and meiosis",
+   "trap": "9 chromatids forgets chromatids separate only in meiosis II.",
+   "yrs": [
+    2078,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botB-210",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Inulin, stored in tubers of dahlia, is a polymer of",
+   "o": [
+    "Glucose",
+    "Fructose",
+    "Galactose",
+    "Ribose"
+   ],
+   "a": 1,
+   "x": "Inulin is a fructan, a polysaccharide of fructose units; starch, glycogen and cellulose are glucose polymers.",
+   "s": "Carbohydrates",
+   "trap": "Most storage polysaccharides are glucose, but not inulin."
+  },
+  {
+   "id": "botB-211",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "Glucose and fructose are both C₆H₁₂O₆, but fructose is a",
+   "o": [
+    "Aldose",
+    "Pentose",
+    "Disaccharide",
+    "Ketose"
+   ],
+   "a": 3,
+   "x": "Glucose has an aldehyde group (aldohexose); fructose has a keto group at C-2 (ketohexose).",
+   "s": "Carbohydrates"
+  },
+  {
+   "id": "botB-212",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Phospholipids form the bilayer of cell membranes because each molecule has",
+   "o": [
+    "A hydrophilic phosphate head and hydrophobic fatty-acid tails",
+    "Only hydrophilic groups",
+    "Only hydrophobic groups",
+    "A ring structure like cholesterol"
+   ],
+   "a": 0,
+   "x": "Amphipathic phospholipids turn their heads towards water and tails inwards, forming a bilayer spontaneously.",
+   "s": "Lipids"
+  },
+  {
+   "id": "botB-213",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "A simple fat (triglyceride) is formed from",
+   "o": [
+    "Three glycerols and one fatty acid",
+    "Amino acids and glycerol",
+    "Glucose and fatty acids",
+    "One glycerol and three fatty acids"
+   ],
+   "a": 3,
+   "x": "Three fatty acids form ester bonds with the three –OH groups of glycerol, releasing three water molecules.",
+   "s": "Lipids"
+  },
+  {
+   "id": "botB-214",
+   "topic": "bot-basic",
+   "d": 3,
+   "q": "Deficiency symptoms of nitrogen and magnesium appear first in older leaves because these elements are",
+   "o": [
+    "Immobile and fixed in older leaves",
+    "Not needed by young leaves",
+    "Absorbed only by old leaves",
+    "Mobile and moved to younger leaves"
+   ],
+   "a": 3,
+   "x": "Mobile nutrients (N, P, K, Mg) are withdrawn from older leaves to growing parts, so old leaves turn yellow first; immobile Ca shows in young leaves.",
+   "s": "Minerals"
+  },
+  {
+   "id": "botB-215",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Zinc is needed for the synthesis of auxin because it is required to make its precursor",
+   "o": [
+    "Tryptophan",
+    "Tyrosine",
+    "Methionine",
+    "Glycine"
+   ],
+   "a": 0,
+   "x": "IAA is made from the amino acid tryptophan, and zinc is needed for tryptophan synthesis; zinc deficiency causes little-leaf and rosetting.",
+   "s": "Minerals"
+  },
+  {
+   "id": "botB-216",
+   "topic": "bot-basic",
+   "d": 1,
+   "q": "An apoenzyme together with its cofactor forms the",
+   "o": [
+    "Coenzyme",
+    "Isoenzyme",
+    "Holoenzyme",
+    "Prosthetic group"
+   ],
+   "a": 2,
+   "x": "Apoenzyme (protein part) + cofactor (metal ion, coenzyme or prosthetic group) = active holoenzyme.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "botB-217",
+   "topic": "bot-basic",
+   "d": 2,
+   "q": "Ribozymes are biological catalysts made of",
+   "o": [
+    "Protein",
+    "DNA",
+    "Lipid",
+    "RNA"
+   ],
+   "a": 3,
+   "x": "Ribozymes are catalytic RNAs, e.g. the peptidyl transferase activity of ribosomal RNA; they show that not all enzymes are proteins.",
+   "s": "Protein & enzymes"
+  },
+  {
+   "id": "botB-218",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "Bryophyllum reproduces vegetatively by",
+   "o": [
+    "Suckers",
+    "Bulbils on the inflorescence",
+    "Adventitious buds on the leaf margins",
+    "Runners"
+   ],
+   "a": 2,
+   "x": "Notches on Bryophyllum leaf margins bear adventitious buds that grow into new plantlets.",
+   "s": "Asexual reproduction"
+  },
+  {
+   "id": "botB-219",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "Of the four megaspores formed by meiosis in most angiosperms,",
+   "o": [
+    "All four form embryo sacs",
+    "The chalazal one is functional and the other three degenerate",
+    "The micropylar one is functional and the other three degenerate",
+    "Two fuse to form the egg"
+   ],
+   "a": 1,
+   "x": "In monosporic (Polygonum-type) development, the chalazal megaspore enlarges into the embryo sac; the three nearer the micropyle degenerate.",
+   "s": "Sporogenesis and gametogenesis in angiosperms",
+   "trap": "The micropylar megaspore usually degenerates.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botB-220",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "The filiform apparatus, which guides the pollen tube into the embryo sac, is found in the",
+   "o": [
+    "Antipodal cells",
+    "Egg cell",
+    "Central cell",
+    "Synergids"
+   ],
+   "a": 3,
+   "x": "Finger-like wall ingrowths at the micropylar tip of the synergids secrete chemicals that attract the pollen tube.",
+   "s": "Sporogenesis and gametogenesis in angiosperms"
+  },
+  {
+   "id": "botB-221",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "Pollination by water, as in Vallisneria, is called",
+   "o": [
+    "Anemophily",
+    "Entomophily",
+    "Zoophily",
+    "Hydrophily"
+   ],
+   "a": 3,
+   "x": "Vallisneria male flowers float to the surface and reach the female flowers on long stalks; water carries the pollen.",
+   "s": "Pollination and its types",
+   "yrs": [
+    2078,
+    2079,
+    2081
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-222",
+   "topic": "bot-developmental",
+   "d": 2,
+   "q": "Wind-pollinated flowers usually have",
+   "o": [
+    "Bright petals and nectar",
+    "Sticky pollen and strong scent",
+    "Large, heavy pollen grains",
+    "Light, dry pollen and large feathery stigmas"
+   ],
+   "a": 3,
+   "x": "Anemophilous flowers (maize, grasses) produce plenty of light, smooth pollen and expose feathery stigmas to catch it; colour, scent and nectar are wasted.",
+   "s": "Pollination and its types",
+   "trap": "Bright petals and nectar suit insect pollination.",
+   "yrs": [
+    2078,
+    2079,
+    2081
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botB-223",
+   "topic": "bot-developmental",
+   "d": 1,
+   "q": "In a monocot (grass) embryo, the protective sheath covering the plumule is the",
+   "o": [
+    "Coleorhiza",
+    "Scutellum",
+    "Epiblast",
+    "Coleoptile"
+   ],
+   "a": 3,
+   "x": "The coleoptile sheathes the plumule; the coleorhiza sheathes the radicle; the scutellum is the single cotyledon.",
+   "s": "Structure of monocot and dicot embryo",
+   "trap": "Coleorhiza covers the radicle."
+  },
+  {
+   "id": "botB-224",
+   "topic": "bot-developmental",
+   "d": 3,
+   "q": "A synergid of an angiosperm has 8 chromosomes. The endosperm and zygote will have, respectively,",
+   "o": [
+    "16 and 24",
+    "24 and 16",
+    "8 and 16",
+    "24 and 8"
+   ],
+   "a": 1,
+   "x": "Synergids are haploid, so n = 8. Endosperm is 3n = 24 (two polar nuclei + one male gamete); the zygote is 2n = 16.",
+   "s": "Types and functions of endosperms",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  }
+ ]
+}

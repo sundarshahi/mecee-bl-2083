@@ -1,0 +1,4965 @@
+{
+ "subject": "Physics",
+ "topics": [
+  {
+   "id": "phy-mechanics",
+   "name": "Mechanics",
+   "weight": 10,
+   "concepts": [
+    "Dimensions: angular momentum and h [ML²T⁻¹]; viscosity η [ML⁻¹T⁻¹]; work, torque [ML²T⁻²] [repeat]",
+    "Error in Z = AᵃBᵇ: ΔZ/Z = a ΔA/A + b ΔB/B; g = 4π²L/T² gives ΔL/L + 2ΔT/T",
+    "Candela is the SI base unit of luminous intensity; lumen = flux, lux = illuminance [repeat]",
+    "Round trip at v₁ and v₂: average speed 2v₁v₂/(v₁ + v₂) [repeat]",
+    "Projectile: R = u²sin2θ/g; KE at top = K cos²θ (θ from horizontal) [repeat]",
+    "Equal KE: p = √(2mK) ∝ √m; impulse = Δp; equal masses in elastic head-on collision swap velocities [repeat]",
+    "Limiting friction μN; angle of repose tanθ = μ",
+    "Torque produces angular acceleration: τ = Iα; P = τω; no torque → Iω constant [repeat]",
+    "Rod: I = ML²/12 about centre, ML²/3 about end; K = L/√12 about centre",
+    "Floating at interface: ρ = sum of (fraction × liquid density); stable ship needs metacentre above CG [repeat]",
+    "Heating: liquid viscosity falls, gas viscosity rises; Young's modulus falls [repeat]",
+    "Water–glass angle of contact acute → concave meniscus, rise h = 2T cosθ/(rρg); mercury convex [repeat]",
+    "Stokes F = 6πηrv; Poiseuille Q ∝ r⁴; Bernoulli ΔP = ½ρ(v₂² − v₁²)",
+    "Vertical circle: v_top ≥ √(gr), v_bottom ≥ √(5gr); SHM v_max = Aω at mean position",
+    "Escape velocity √(2gR) = 11.2 km/s, independent of body's mass, ∝ R at fixed density; g_h ≈ g(1 − 2h/R) [repeat]",
+    "Y = FL/(AΔL); energy density ½ stress × strain; Poisson's ratio = lateral/longitudinal strain"
+   ]
+  },
+  {
+   "id": "phy-heat",
+   "name": "Heat and thermodynamics",
+   "weight": 7,
+   "concepts": [
+    "Zeroth law defines temperature; F = 9C/5 + 32, a 1°C difference = 1.8°F = 1 K",
+    "Stefan–Boltzmann E = σT⁴: doubling T gives 16× radiation [repeat]",
+    "Pyrometer for furnaces; mercury freezes at −39°C; platinum thermometer uses R = R₀(1 + αθ)",
+    "Conduction H = KAΔθ/L; Sun's heat reaches Earth by radiation",
+    "α : β : γ = 1 : 2 : 3; a hole in a heated plate grows; γ_real = γ_apparent + γ_vessel",
+    "Heating a liquid with an immersed solid: upthrust falls (liquid expands more), apparent weight rises [repeat]",
+    "Water densest at 4°C; triple point 273.16 K",
+    "Q = mcΔθ, Q = mL; ice L = 336 J/g; steam burns worse (latent heat)",
+    "Mixture: heat lost = heat gained; check if all ice melts before finding final temperature",
+    "Kinetic theory P = ⅓ρc²; mean KE per molecule (3/2)kT, same for all gases at same T",
+    "v_rms = √(3RT/M) ∝ √(T/M): H₂ is 4× faster than O₂",
+    "First law Q = ΔU + W; isochoric W = 0; cyclic ΔU = 0; Cp − Cv = R",
+    "Adiabatic PV^γ = constant, Q = 0, gas cools on expansion; adiabatic slope = γ × isothermal",
+    "Carnot η = 1 − T₂/T₁; refrigerator COP = T₂/(T₁ − T₂)",
+    "Entropy ΔS = Q/T (kelvin); isolated irreversible process: entropy increases; Kelvin–Planck forbids 100% engines"
+   ]
+  },
+  {
+   "id": "phy-waves-optics",
+   "name": "Waves and optics",
+   "weight": 8,
+   "concepts": [
+    "v = fλ; sound in solids > liquids > gases; none in vacuum",
+    "Laplace: v = √(γP/ρ) (adiabatic); v ∝ √T, independent of pressure",
+    "Phase difference = (2π/λ) × path difference",
+    "Nodes λ/2 apart; closed pipe v/4L odd harmonics only; open pipe v/2L all harmonics",
+    "String: v = √(T/μ), n loops have n + 1 nodes",
+    "Doppler f' = f(v ± v₀)/(v ∓ vₛ); echo from cliff: f(v + u)/(v − u) [repeat]",
+    "Pitch ↔ frequency, loudness ↔ amplitude, quality ↔ overtones; +10 dB = 10× intensity",
+    "Intensity ∝ amplitude²; I_max/I_min = (a₁ + a₂)²/(a₁ − a₂)² [repeat]",
+    "Mirror 1/v + 1/u = 1/f; convex mirror image always virtual, erect, diminished",
+    "Apparent depth = real depth/n; layers add: Σ t/n [repeat]",
+    "n depends on wavelength, material, temperature, not on angle of incidence; frequency never changes on refraction [repeat]",
+    "Lens maker 1/f = (n − 1)(1/R₁ − 1/R₂): equiconvex R = 20 cm, n = 1.5 → +5 D [repeat]",
+    "Dispersive power ω = (n_v − n_r)/(n_y − 1); achromat ω₁/f₁ + ω₂/f₂ = 0",
+    "YDSE β = λD/d; in a medium β/n; dark fringe at odd multiples of λ/2",
+    "Single slit first minimum a sinθ = λ; grating d sinθ = nλ; resolving power ∝ D/λ",
+    "Polaroid passes I₀/2 of unpolarised light; Malus I = I₀cos²θ; Brewster tan θp = n, rays at 90°"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "phy-001",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "The dimensional formula of Planck's constant is",
+   "o": [
+    "[ML²T⁻²]",
+    "[MLT⁻¹]",
+    "[ML²T⁻³]",
+    "[ML²T⁻¹]"
+   ],
+   "a": 3,
+   "x": "h = E/ν = [ML²T⁻²]/[T⁻¹] = [ML²T⁻¹], the same as angular momentum.",
+   "trap": "[ML²T⁻²] is energy; students forget to divide by frequency.",
+   "s": "Physical quantities, vectors and scalars",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phy-002",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "Which pair of quantities has the same dimensions?",
+   "o": [
+    "Force and impulse",
+    "Momentum and energy",
+    "Stress and strain",
+    "Work and torque"
+   ],
+   "a": 3,
+   "x": "Both are force × distance, [ML²T⁻²]. Impulse is [MLT⁻¹] while force is [MLT⁻²]; strain is dimensionless.",
+   "s": "Physical quantities, vectors and scalars",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phy-003",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "The radius of a sphere is measured with a 2% error. The maximum percentage error in its volume is",
+   "o": [
+    "6%",
+    "2%",
+    "4%",
+    "8%"
+   ],
+   "a": 0,
+   "x": "V ∝ r³, so ΔV/V = 3(Δr/r) = 3 × 2% = 6%.",
+   "trap": "8% comes from cubing 2; the error is multiplied by the power.",
+   "s": "Physical quantities, vectors and scalars"
+  },
+  {
+   "id": "phy-004",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "A ball is thrown vertically upward at 20 m/s. Its maximum height is (g = 10 m/s²)",
+   "o": [
+    "10 m",
+    "20 m",
+    "40 m",
+    "2 m"
+   ],
+   "a": 1,
+   "x": "H = u²/2g = 400/20 = 20 m.",
+   "trap": "40 m comes from forgetting the 2 in u²/2g.",
+   "s": "Kinematics"
+  },
+  {
+   "id": "phy-005",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "For the same launch speed, a projectile fired at 30° has the same horizontal range as one fired at",
+   "o": [
+    "45°",
+    "15°",
+    "60°",
+    "75°"
+   ],
+   "a": 2,
+   "x": "R = u²sin2θ/g and sin60° = sin120°, so angles θ and 90° − θ give equal ranges.",
+   "s": "Kinematics"
+  },
+  {
+   "id": "phy-006",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "A car moving at 20 m/s brakes uniformly and stops in 4 s. The distance covered while braking is",
+   "o": [
+    "80 m",
+    "20 m",
+    "160 m",
+    "40 m"
+   ],
+   "a": 3,
+   "x": "s = (u + v)t/2 = (20 + 0) × 4/2 = 40 m.",
+   "trap": "80 m uses s = ut, ignoring the deceleration.",
+   "s": "Kinematics"
+  },
+  {
+   "id": "phy-007",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "Newton's first law of motion gives the concept of",
+   "o": [
+    "Inertia",
+    "Energy",
+    "Gravitation",
+    "Power"
+   ],
+   "a": 0,
+   "x": "A body stays at rest or in uniform motion unless an external force acts on it; this property is inertia.",
+   "s": "Dynamics"
+  },
+  {
+   "id": "phy-008",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "A 50 kg person stands on a weighing scale in a lift accelerating upward at 2 m/s². The scale reads (g = 10 m/s²)",
+   "o": [
+    "600 N",
+    "500 N",
+    "400 N",
+    "100 N"
+   ],
+   "a": 0,
+   "x": "Apparent weight R = m(g + a) = 50 × 12 = 600 N.",
+   "trap": "400 N is the reading for downward acceleration.",
+   "s": "Dynamics"
+  },
+  {
+   "id": "phy-009",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "A 4 kg gun fires a 20 g bullet at 500 m/s. The recoil speed of the gun is",
+   "o": [
+    "25 m/s",
+    "2.5 m/s",
+    "0.25 m/s",
+    "5 m/s"
+   ],
+   "a": 1,
+   "x": "Momentum conservation: 4 × v = 0.02 × 500 = 10, so v = 2.5 m/s.",
+   "trap": "25 m/s comes from writing 20 g as 0.2 kg.",
+   "s": "Dynamics"
+  },
+  {
+   "id": "phy-010",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "If the linear momentum of a body is doubled, its kinetic energy becomes",
+   "o": [
+    "4 times",
+    "2 times",
+    "8 times",
+    "√2 times"
+   ],
+   "a": 0,
+   "x": "KE = p²/2m, so KE ∝ p²; doubling p gives 4 times the KE.",
+   "s": "Dynamics",
+   "yrs": [
+    2080,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phy-011",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "A pump lifts 100 kg of water through a height of 10 m in 20 s. Its power is (g = 10 m/s²)",
+   "o": [
+    "50 W",
+    "5000 W",
+    "200 W",
+    "500 W"
+   ],
+   "a": 3,
+   "x": "P = mgh/t = 100 × 10 × 10/20 = 500 W.",
+   "s": "Dynamics"
+  },
+  {
+   "id": "phy-012",
+   "topic": "phy-mechanics",
+   "d": 3,
+   "q": "The maximum safe speed of a car on an unbanked circular road of radius 40 m with friction coefficient 0.25 is (g = 10 m/s²)",
+   "o": [
+    "20 m/s",
+    "10 m/s",
+    "5 m/s",
+    "100 m/s"
+   ],
+   "a": 1,
+   "x": "Friction supplies the centripetal force: μmg = mv²/r, so v = √(μrg) = √(0.25 × 40 × 10) = √100 = 10 m/s.",
+   "trap": "100 m/s comes from forgetting the square root.",
+   "s": "Circular and periodic motion"
+  },
+  {
+   "id": "phy-013",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "The escape velocity from the Earth's surface is about",
+   "o": [
+    "7.9 km/s",
+    "9.8 km/s",
+    "11.2 km/s",
+    "3.0 km/s"
+   ],
+   "a": 2,
+   "x": "vₑ = √(2gR) ≈ 11.2 km/s. 7.9 km/s is the orbital speed of a satellite near the surface; vₑ = √2 × orbital speed.",
+   "trap": "7.9 km/s is orbital velocity, not escape velocity.",
+   "s": "Gravity",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-014",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "At a height equal to the Earth's radius above its surface, the acceleration due to gravity becomes",
+   "o": [
+    "g/2",
+    "g/9",
+    "g/√2",
+    "g/4"
+   ],
+   "a": 3,
+   "x": "g' = gR²/(R + h)² = gR²/(2R)² = g/4.",
+   "trap": "g/2 assumes g falls linearly with height.",
+   "s": "Gravity",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-015",
+   "topic": "phy-mechanics",
+   "d": 3,
+   "q": "If the orbital radius of a planet around the Sun becomes 4 times, its period of revolution becomes",
+   "o": [
+    "4 times",
+    "8 times",
+    "16 times",
+    "2 times"
+   ],
+   "a": 1,
+   "x": "Kepler's third law: T² ∝ r³, so T ∝ r^(3/2) = 4^(3/2) = 8.",
+   "trap": "16 times comes from squaring instead of using the 3/2 power.",
+   "s": "Gravity"
+  },
+  {
+   "id": "phy-016",
+   "topic": "phy-mechanics",
+   "d": 3,
+   "q": "A spinning skater pulls in her arms so that her moment of inertia is halved. Her rotational kinetic energy",
+   "o": [
+    "Remains the same",
+    "Is halved",
+    "Doubles",
+    "Becomes four times"
+   ],
+   "a": 2,
+   "x": "No external torque, so L = Iω is constant. KE = L²/2I, so halving I doubles the KE (the extra energy comes from her muscles).",
+   "trap": "'Same': confusing conservation of angular momentum with conservation of KE.",
+   "s": "Rotational dynamics"
+  },
+  {
+   "id": "phy-017",
+   "topic": "phy-mechanics",
+   "d": 3,
+   "q": "For a solid sphere (I = ⅖mR²) rolling without slipping, the fraction of its total kinetic energy that is rotational is",
+   "o": [
+    "2/5",
+    "2/7",
+    "5/7",
+    "1/2"
+   ],
+   "a": 1,
+   "x": "KE_rot = ½(⅖mR²)ω² = mv²/5; total = mv²/2 + mv²/5 = 7mv²/10; fraction = (1/5)/(7/10) = 2/7.",
+   "trap": "5/7 is the translational fraction; 2/5 is from I = ⅖mR².",
+   "s": "Rotational dynamics"
+  },
+  {
+   "id": "phy-018",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "The Young's modulus of a perfectly rigid body is",
+   "o": [
+    "Zero",
+    "Unity",
+    "Infinite",
+    "Dependent on the load"
+   ],
+   "a": 2,
+   "x": "Y = stress/strain. A perfectly rigid body has zero strain under any stress, so Y is infinite.",
+   "trap": "Zero: students link 'no deformation' with a zero modulus.",
+   "s": "Elasticity"
+  },
+  {
+   "id": "phy-019",
+   "topic": "phy-mechanics",
+   "d": 3,
+   "q": "A wire stretches by 1 mm under a load. A wire of the same material, twice as long and of twice the radius, under the same load stretches by",
+   "o": [
+    "1 mm",
+    "0.5 mm",
+    "2 mm",
+    "0.25 mm"
+   ],
+   "a": 1,
+   "x": "ΔL = FL/(πr²Y). L doubles (×2) and r² becomes 4 times (÷4): ΔL = 1 × 2/4 = 0.5 mm.",
+   "s": "Elasticity"
+  },
+  {
+   "id": "phy-020",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "Bernoulli's theorem is based on the conservation of",
+   "o": [
+    "Mass",
+    "Energy",
+    "Linear momentum",
+    "Angular momentum"
+   ],
+   "a": 1,
+   "x": "P + ½ρv² + ρgh = constant: pressure energy, kinetic energy and potential energy per unit volume add to a constant.",
+   "trap": "Mass is the basis of the equation of continuity, not Bernoulli.",
+   "s": "Fluid statics and dynamics"
+  },
+  {
+   "id": "phy-021",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "Water flows at 2 m/s through a pipe of cross-section 4 cm². Where the cross-section narrows to 1 cm², its speed is",
+   "o": [
+    "8 m/s",
+    "0.5 m/s",
+    "4 m/s",
+    "16 m/s"
+   ],
+   "a": 0,
+   "x": "Continuity: A₁v₁ = A₂v₂ → 4 × 2 = 1 × v₂, so v₂ = 8 m/s.",
+   "s": "Fluid statics and dynamics"
+  },
+  {
+   "id": "phy-022",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "A small steel ball falls through glycerine with terminal velocity v. A ball of the same material with twice the radius has terminal velocity",
+   "o": [
+    "4v",
+    "2v",
+    "8v",
+    "v/2"
+   ],
+   "a": 0,
+   "x": "Stokes' law gives v_t = 2r²(ρ − σ)g/9η, so v_t ∝ r²; doubling r gives 4v.",
+   "s": "Fluid statics and dynamics",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-023",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "The excess pressure inside a soap bubble of radius r and surface tension T is",
+   "o": [
+    "2T/r",
+    "T/r",
+    "4T/r",
+    "8T/r"
+   ],
+   "a": 2,
+   "x": "A soap bubble has two free surfaces, so excess pressure = 2 × 2T/r = 4T/r.",
+   "trap": "2T/r is for a liquid drop, which has only one surface.",
+   "s": "Fluid statics and dynamics"
+  },
+  {
+   "id": "phy-024",
+   "topic": "phy-heat",
+   "d": 1,
+   "q": "The temperature at which the Celsius and Fahrenheit scales give the same reading is",
+   "o": [
+    "40°",
+    "−40°",
+    "−32°",
+    "0°"
+   ],
+   "a": 1,
+   "x": "F = 9C/5 + 32. Put F = C: C − 9C/5 = 32 → −4C/5 = 32 → C = −40.",
+   "s": "Heat flow and thermometers",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-025",
+   "topic": "phy-heat",
+   "d": 1,
+   "q": "If α is the coefficient of linear expansion of a solid, its coefficient of cubical expansion is",
+   "o": [
+    "2α",
+    "α/3",
+    "3α",
+    "α³"
+   ],
+   "a": 2,
+   "x": "α : β : γ = 1 : 2 : 3, so γ = 3α (β = 2α is the areal coefficient).",
+   "s": "Thermal expansion"
+  },
+  {
+   "id": "phy-026",
+   "topic": "phy-heat",
+   "d": 3,
+   "q": "200 g of water at 80°C is mixed with 100 g of water at 20°C. Neglecting heat loss, the final temperature is",
+   "o": [
+    "50°C",
+    "40°C",
+    "70°C",
+    "60°C"
+   ],
+   "a": 3,
+   "x": "Heat lost = heat gained: 200(80 − θ) = 100(θ − 20) → 16000 + 2000 = 300θ → θ = 60°C.",
+   "trap": "50°C is the simple average, ignoring the unequal masses.",
+   "s": "Quantity of heat"
+  },
+  {
+   "id": "phy-027",
+   "topic": "phy-heat",
+   "d": 2,
+   "q": "The heat needed to melt 10 g of ice at 0°C into water at 0°C is (latent heat of fusion = 336 J/g)",
+   "o": [
+    "336 J",
+    "4200 J",
+    "33600 J",
+    "3360 J"
+   ],
+   "a": 3,
+   "x": "Q = mL = 10 × 336 = 3360 J; temperature stays constant during melting.",
+   "s": "Quantity of heat"
+  },
+  {
+   "id": "phy-028",
+   "topic": "phy-heat",
+   "d": 2,
+   "q": "If the absolute temperature of a gas becomes 4 times, the rms speed of its molecules becomes",
+   "o": [
+    "2 times",
+    "4 times",
+    "16 times",
+    "√2 times"
+   ],
+   "a": 0,
+   "x": "v_rms = √(3RT/M), so v_rms ∝ √T; √4 = 2.",
+   "s": "Ideal gas"
+  },
+  {
+   "id": "phy-029",
+   "topic": "phy-heat",
+   "d": 2,
+   "q": "A gas at 27°C is heated at constant pressure until its volume doubles. Its final temperature is",
+   "o": [
+    "54°C",
+    "327°C",
+    "600°C",
+    "300°C"
+   ],
+   "a": 1,
+   "x": "Charles' law V ∝ T in kelvin: T₂ = 2 × 300 K = 600 K = 327°C.",
+   "trap": "54°C doubles the Celsius value; gas laws need kelvin.",
+   "s": "Ideal gas"
+  },
+  {
+   "id": "phy-030",
+   "topic": "phy-heat",
+   "d": 1,
+   "q": "The ratio of specific heats γ = Cp/Cv for a monatomic ideal gas is",
+   "o": [
+    "5/3",
+    "7/5",
+    "4/3",
+    "3/2"
+   ],
+   "a": 0,
+   "x": "Monatomic: Cv = 3R/2, Cp = 5R/2, so γ = 5/3. A diatomic gas has 7/5.",
+   "trap": "7/5 is for a diatomic gas.",
+   "s": "Ideal gas"
+  },
+  {
+   "id": "phy-031",
+   "topic": "phy-heat",
+   "d": 1,
+   "q": "In an isothermal expansion of an ideal gas, which quantity is zero?",
+   "o": [
+    "Work done by the gas",
+    "Heat absorbed by the gas",
+    "Change in internal energy",
+    "Change in pressure"
+   ],
+   "a": 2,
+   "x": "Internal energy of an ideal gas depends only on temperature. T constant ⇒ ΔU = 0, so heat absorbed equals work done.",
+   "s": "First law of thermodynamics"
+  },
+  {
+   "id": "phy-032",
+   "topic": "phy-heat",
+   "d": 3,
+   "q": "A Carnot engine works between 527°C and 127°C. Its efficiency is",
+   "o": [
+    "76%",
+    "24%",
+    "80%",
+    "50%"
+   ],
+   "a": 3,
+   "x": "Use kelvin: T₁ = 800 K, T₂ = 400 K. η = 1 − T₂/T₁ = 1 − 400/800 = 50%.",
+   "trap": "76% comes from 1 − 127/527, using Celsius.",
+   "s": "Second law of thermodynamics"
+  },
+  {
+   "id": "phy-033",
+   "topic": "phy-heat",
+   "d": 2,
+   "q": "If the absolute temperature of a black body is doubled, the total power it radiates becomes",
+   "o": [
+    "2 times",
+    "16 times",
+    "4 times",
+    "8 times"
+   ],
+   "a": 1,
+   "x": "Stefan–Boltzmann law: E = σT⁴, so 2⁴ = 16 times.",
+   "s": "Heat flow and thermometers",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-034",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "In simple harmonic motion, the acceleration of the particle is maximum at",
+   "o": [
+    "The mean position",
+    "Halfway between mean and extreme",
+    "All points equally",
+    "The extreme positions"
+   ],
+   "a": 3,
+   "x": "a = −ω²x, so |a| is largest where |x| is largest, at the extremes. Velocity is maximum at the mean position.",
+   "trap": "Mean position: that is where velocity, not acceleration, is maximum.",
+   "s": "Circular and periodic motion"
+  },
+  {
+   "id": "phy-035",
+   "topic": "phy-mechanics",
+   "d": 2,
+   "q": "If the length of a simple pendulum is increased to 4 times, its time period becomes",
+   "o": [
+    "4 times",
+    "Half",
+    "2 times",
+    "16 times"
+   ],
+   "a": 2,
+   "x": "T = 2π√(l/g), so T ∝ √l; √4 = 2.",
+   "s": "Circular and periodic motion"
+  },
+  {
+   "id": "phy-036",
+   "topic": "phy-mechanics",
+   "d": 1,
+   "q": "If the amplitude of a simple harmonic oscillator is doubled, its total energy becomes",
+   "o": [
+    "2 times",
+    "Half",
+    "4 times",
+    "Unchanged"
+   ],
+   "a": 2,
+   "x": "E = ½mω²A², so E ∝ A²; doubling A gives 4 times the energy.",
+   "s": "Circular and periodic motion"
+  },
+  {
+   "id": "phy-037",
+   "topic": "phy-waves-optics",
+   "d": 1,
+   "q": "Sound waves in air are",
+   "o": [
+    "Longitudinal",
+    "Transverse",
+    "Electromagnetic",
+    "Both transverse and longitudinal"
+   ],
+   "a": 0,
+   "x": "Air particles vibrate along the direction of travel, forming compressions and rarefactions. Gases cannot support transverse waves.",
+   "s": "Wave motion"
+  },
+  {
+   "id": "phy-038",
+   "topic": "phy-waves-optics",
+   "d": 2,
+   "q": "The fundamental frequency of an 85 cm long pipe closed at one end is (speed of sound = 340 m/s)",
+   "o": [
+    "200 Hz",
+    "50 Hz",
+    "100 Hz",
+    "400 Hz"
+   ],
+   "a": 2,
+   "x": "Closed pipe: L = λ/4, so f = v/4L = 340/(4 × 0.85) = 100 Hz.",
+   "trap": "200 Hz uses the open-pipe formula v/2L.",
+   "s": "Stationary waves"
+  },
+  {
+   "id": "phy-039",
+   "topic": "phy-waves-optics",
+   "d": 1,
+   "q": "Two tuning forks of 256 Hz and 260 Hz are sounded together. The number of beats heard per second is",
+   "o": [
+    "4",
+    "2",
+    "8",
+    "258"
+   ],
+   "a": 0,
+   "x": "Beat frequency = |f₁ − f₂| = 260 − 256 = 4 per second.",
+   "s": "Acoustic phenomena"
+  },
+  {
+   "id": "phy-040",
+   "topic": "phy-waves-optics",
+   "d": 3,
+   "q": "A source of frequency 500 Hz moves towards a stationary observer at 30 m/s. If the speed of sound is 330 m/s, the observed frequency is",
+   "o": [
+    "550 Hz",
+    "545 Hz",
+    "458 Hz",
+    "500 Hz"
+   ],
+   "a": 0,
+   "x": "Source approaching: f' = f·v/(v − vₛ) = 500 × 330/300 = 550 Hz.",
+   "trap": "545 Hz uses the moving-observer formula f(v + v₀)/v.",
+   "s": "Acoustic phenomena",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phy-041",
+   "topic": "phy-waves-optics",
+   "d": 3,
+   "q": "The tension in a stretched string is increased by 44%, with length and mass unchanged. Its fundamental frequency increases by",
+   "o": [
+    "44%",
+    "22%",
+    "20%",
+    "12%"
+   ],
+   "a": 2,
+   "x": "f ∝ √T. New f = √1.44 × f = 1.2f, an increase of 20%.",
+   "trap": "22% halves 44%, treating the square root as a simple halving.",
+   "s": "Stationary waves"
+  },
+  {
+   "id": "phy-042",
+   "topic": "phy-waves-optics",
+   "d": 2,
+   "q": "An object is placed at the centre of curvature of a concave mirror. Its image is",
+   "o": [
+    "Real, inverted, same size, at the centre of curvature",
+    "Virtual, erect, magnified, behind the mirror",
+    "Real, inverted, diminished, at the focus",
+    "Real, inverted, magnified, beyond the centre of curvature"
+   ],
+   "a": 0,
+   "x": "With u = 2f the mirror formula gives v = 2f and magnification −1: a real, inverted, same-size image at C.",
+   "s": "Reflection, refraction and dispersion"
+  },
+  {
+   "id": "phy-043",
+   "topic": "phy-waves-optics",
+   "d": 2,
+   "q": "An object is placed 30 cm from a convex lens of focal length 20 cm. The image is formed",
+   "o": [
+    "12 cm from the lens, on the other side",
+    "60 cm from the lens, on the same side",
+    "10 cm from the lens, on the other side",
+    "60 cm from the lens, on the other side"
+   ],
+   "a": 3,
+   "x": "1/v − 1/u = 1/f with u = −30: 1/v = 1/20 − 1/30 = 1/60, so v = +60 cm, a real image on the other side.",
+   "trap": "12 cm comes from adding 1/20 + 1/30 with a wrong sign.",
+   "s": "Reflection, refraction and dispersion"
+  },
+  {
+   "id": "phy-044",
+   "topic": "phy-waves-optics",
+   "d": 1,
+   "q": "The power of a convex lens of focal length 50 cm is",
+   "o": [
+    "−2 D",
+    "+2 D",
+    "+0.5 D",
+    "+50 D"
+   ],
+   "a": 1,
+   "x": "P = 1/f (metres) = 1/0.5 = +2 D; positive for a converging lens.",
+   "trap": "+0.5 D forgets that power is the reciprocal of f in metres.",
+   "s": "Reflection, refraction and dispersion"
+  },
+  {
+   "id": "phy-045",
+   "topic": "phy-waves-optics",
+   "d": 2,
+   "q": "The critical angle for light going from a medium of refractive index √2 into air is",
+   "o": [
+    "30°",
+    "60°",
+    "90°",
+    "45°"
+   ],
+   "a": 3,
+   "x": "sin C = 1/μ = 1/√2, so C = 45°.",
+   "s": "Reflection, refraction and dispersion"
+  },
+  {
+   "id": "phy-046",
+   "topic": "phy-waves-optics",
+   "d": 1,
+   "q": "When white light passes through a glass prism, the colour deviated the most is",
+   "o": [
+    "Red",
+    "Violet",
+    "Green",
+    "Yellow"
+   ],
+   "a": 1,
+   "x": "Refractive index of glass is largest for the shortest wavelength (violet), so violet deviates most and red least.",
+   "s": "Reflection, refraction and dispersion"
+  },
+  {
+   "id": "phy-047",
+   "topic": "phy-waves-optics",
+   "d": 3,
+   "q": "In Young's double-slit experiment, λ = 600 nm, slit separation = 1 mm and slit–screen distance = 1 m. The fringe width is",
+   "o": [
+    "0.06 mm",
+    "6 mm",
+    "0.6 mm",
+    "1.2 mm"
+   ],
+   "a": 2,
+   "x": "β = λD/d = (600 × 10⁻⁹ × 1)/(1 × 10⁻³) = 6 × 10⁻⁴ m = 0.6 mm.",
+   "s": "Interference",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-048",
+   "topic": "phy-waves-optics",
+   "d": 1,
+   "q": "The phenomenon that shows light waves are transverse is",
+   "o": [
+    "Interference",
+    "Polarisation",
+    "Diffraction",
+    "Reflection"
+   ],
+   "a": 1,
+   "x": "Only transverse waves can be polarised. Interference and diffraction also occur with longitudinal waves such as sound.",
+   "s": "Diffraction and polarization",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-049",
+   "topic": "phy-waves-optics",
+   "d": 2,
+   "q": "Light falls on glass of refractive index √3 at the polarising (Brewster) angle. The angle of incidence is",
+   "o": [
+    "30°",
+    "60°",
+    "45°",
+    "90°"
+   ],
+   "a": 1,
+   "x": "Brewster's law: tan θp = μ = √3, so θp = 60°.",
+   "s": "Diffraction and polarization"
+  },
+  {
+   "id": "phy-050",
+   "topic": "phy-waves-optics",
+   "d": 3,
+   "q": "A convex lens of focal length 10 cm is placed in contact with a concave lens of focal length 20 cm. The combination behaves as a",
+   "o": [
+    "Convex lens of focal length 20 cm",
+    "Concave lens of focal length 20 cm",
+    "Convex lens of focal length 30 cm",
+    "Convex lens of focal length 6.7 cm"
+   ],
+   "a": 0,
+   "x": "1/F = 1/f₁ + 1/f₂ = 1/10 − 1/20 = 1/20, so F = +20 cm (converging).",
+   "trap": "6.7 cm treats both lenses as positive, ignoring the concave sign.",
+   "s": "Reflection, refraction and dispersion",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-001",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 1,
+   "q": "The SI unit of luminous intensity is",
+   "o": [
+    "Lumen",
+    "Lux",
+    "Watt per steradian",
+    "Candela"
+   ],
+   "a": 3,
+   "x": "The candela (cd) is one of the seven SI base units. Lumen is the unit of luminous flux and lux of illuminance.",
+   "trap": "Lumen: it measures luminous flux, not intensity.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-002",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 1,
+   "q": "Which of the following is a scalar quantity?",
+   "o": [
+    "Electric field",
+    "Momentum",
+    "Electric potential",
+    "Torque"
+   ],
+   "a": 2,
+   "x": "Potential (work per unit charge) has magnitude only. Field, momentum and torque all have direction.",
+   "trap": "Electric field and potential are confused because both describe the same charge.",
+   "yrs": [
+    2080,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-003",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "The dimensional formula of the coefficient of viscosity is",
+   "o": [
+    "[MLT⁻¹]",
+    "[ML⁻¹T⁻²]",
+    "[ML²T⁻¹]",
+    "[ML⁻¹T⁻¹]"
+   ],
+   "a": 3,
+   "x": "F = ηA(dv/dx), so η = F/(A·dv/dx) = [MLT⁻²]/([L²][T⁻¹]) = [ML⁻¹T⁻¹].",
+   "trap": "[ML⁻¹T⁻²] is pressure/stress; students forget the velocity gradient.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-004",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "The length of a simple pendulum is measured with a 2% error and its period with a 1% error. The maximum percentage error in g is",
+   "o": [
+    "4%",
+    "3%",
+    "1%",
+    "5%"
+   ],
+   "a": 0,
+   "x": "g = 4π²L/T², so Δg/g = ΔL/L + 2ΔT/T = 2% + 2 × 1% = 4%.",
+   "trap": "3%: adding the errors without doubling the error in T."
+  },
+  {
+   "id": "phyA-005",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 1,
+   "q": "The number of significant figures in 0.05020 is",
+   "o": [
+    "3",
+    "5",
+    "6",
+    "4"
+   ],
+   "a": 3,
+   "x": "Leading zeros do not count; the digits 5, 0, 2 and the trailing 0 after the decimal point do: 4 significant figures.",
+   "trap": "3: dropping the trailing zero, which is significant after a decimal point."
+  },
+  {
+   "id": "phyA-006",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 1,
+   "q": "Two forces of 3 N and 4 N act at a point at right angles to each other. The magnitude of their resultant is",
+   "o": [
+    "7 N",
+    "1 N",
+    "5 N",
+    "12 N"
+   ],
+   "a": 2,
+   "x": "R = √(3² + 4²) = √25 = 5 N.",
+   "trap": "7 N: adding magnitudes as if the forces were parallel."
+  },
+  {
+   "id": "phyA-007",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "The angle between the vectors A = î + ĵ and B = î − ĵ is",
+   "o": [
+    "0°",
+    "90°",
+    "45°",
+    "60°"
+   ],
+   "a": 1,
+   "x": "A·B = (1)(1) + (1)(−1) = 0, so the vectors are perpendicular."
+  },
+  {
+   "id": "phyA-008",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A man drives to work at 60 km/h and returns along the same road at 40 km/h. His average speed for the round trip is",
+   "o": [
+    "48 km/h",
+    "50 km/h",
+    "52 km/h",
+    "45 km/h"
+   ],
+   "a": 0,
+   "x": "Equal distances: v_avg = 2v₁v₂/(v₁ + v₂) = 2 × 60 × 40/100 = 48 km/h.",
+   "trap": "50 km/h: taking the simple mean, but more time is spent at the slower speed.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-009",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A projectile is launched at 45° to the horizontal with kinetic energy K. Its kinetic energy at the highest point is",
+   "o": [
+    "Zero",
+    "K",
+    "K/4",
+    "K/2"
+   ],
+   "a": 3,
+   "x": "At the top only the horizontal velocity u cos45° remains: KE = K cos²45° = K/2.",
+   "trap": "Zero: forgetting the horizontal velocity does not vanish at the top.",
+   "yrs": [
+    2080,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-010",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 3,
+   "q": "A ball is thrown with kinetic energy E in a direction making 30° with the vertical. Its kinetic energy at the highest point is",
+   "o": [
+    "3E/4",
+    "E/2",
+    "E/4",
+    "Zero"
+   ],
+   "a": 2,
+   "x": "Angle with the horizontal = 60°. At the top KE = E cos²60° = E/4.",
+   "trap": "3E/4: using cos²30° with the angle measured from the vertical.",
+   "yrs": [
+    2080,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-011",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 1,
+   "q": "The slope of a velocity–time graph gives",
+   "o": [
+    "Displacement",
+    "Acceleration",
+    "Velocity",
+    "Momentum"
+   ],
+   "a": 1,
+   "x": "Slope = Δv/Δt = acceleration. The area under the v–t graph gives displacement.",
+   "trap": "Displacement: that is the area under the graph, not its slope."
+  },
+  {
+   "id": "phyA-012",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A stone dropped from rest falls freely. The distances it covers in the 1st, 2nd and 3rd seconds are in the ratio",
+   "o": [
+    "1 : 3 : 5",
+    "1 : 2 : 3",
+    "1 : 4 : 9",
+    "1 : 1 : 1"
+   ],
+   "a": 0,
+   "x": "Distance in the nth second = g(2n − 1)/2, giving 5 m, 15 m, 25 m: ratio 1 : 3 : 5.",
+   "trap": "1 : 4 : 9 is the ratio of total distances after 1, 2, 3 s."
+  },
+  {
+   "id": "phyA-013",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A ball is thrown horizontally at 10 m/s from the top of a 45 m high tower. It lands at a horizontal distance of (g = 10 m/s²)",
+   "o": [
+    "45 m",
+    "15 m",
+    "90 m",
+    "30 m"
+   ],
+   "a": 3,
+   "x": "Fall time t = √(2h/g) = √9 = 3 s; horizontal distance = 10 × 3 = 30 m."
+  },
+  {
+   "id": "phyA-014",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 1,
+   "q": "A body falling through air reaches its terminal velocity when",
+   "o": [
+    "Its acceleration equals g",
+    "Air resistance becomes zero",
+    "The net force on it becomes zero",
+    "Its weight becomes zero"
+   ],
+   "a": 2,
+   "x": "Air resistance grows with speed until it balances weight (minus upthrust); net force and acceleration become zero, so speed stays constant."
+  },
+  {
+   "id": "phyA-015",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "Two bodies of masses 4 kg and 16 kg have equal kinetic energies. The ratio of their linear momenta is",
+   "o": [
+    "1 : 4",
+    "1 : 2",
+    "4 : 1",
+    "2 : 1"
+   ],
+   "a": 1,
+   "x": "p = √(2mK); with equal K, p ∝ √m: √4 : √16 = 1 : 2.",
+   "trap": "1 : 4: taking p ∝ m and forgetting the square root.",
+   "yrs": [
+    2080,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-016",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A 5 kg block rests on a rough horizontal floor with coefficient of static friction 0.4. The least horizontal force that just starts it moving is (g = 10 m/s²)",
+   "o": [
+    "20 N",
+    "2 N",
+    "50 N",
+    "12.5 N"
+   ],
+   "a": 0,
+   "x": "Limiting friction = μmg = 0.4 × 5 × 10 = 20 N."
+  },
+  {
+   "id": "phyA-017",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 1,
+   "q": "The angle of repose θ and the coefficient of static friction μ are related by",
+   "o": [
+    "μ = sin θ",
+    "μ = cos θ",
+    "μ = cot θ",
+    "μ = tan θ"
+   ],
+   "a": 3,
+   "x": "On the incline at repose, mg sinθ = μ mg cosθ, so μ = tan θ.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-018",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A 0.2 kg ball hits a wall normally at 10 m/s and rebounds with the same speed. The impulse on the ball is",
+   "o": [
+    "2 N s",
+    "Zero",
+    "4 N s",
+    "1 N s"
+   ],
+   "a": 2,
+   "x": "Impulse = Δp = m(v − (−v)) = 0.2 × 20 = 4 N s.",
+   "trap": "Zero: treating rebound speed as no change, but velocity reverses."
+  },
+  {
+   "id": "phyA-019",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "In a perfectly elastic head-on collision, a moving ball strikes an identical ball at rest. After the collision",
+   "o": [
+    "Both move together with half the initial velocity",
+    "The first ball stops and the second moves with the first ball's velocity",
+    "Both balls stop",
+    "The first ball rebounds with the same speed and the second stays at rest"
+   ],
+   "a": 1,
+   "x": "Equal masses in an elastic head-on collision exchange velocities (momentum and KE both conserved).",
+   "trap": "'Move together': that happens only in a perfectly inelastic collision."
+  },
+  {
+   "id": "phyA-020",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A 2 kg body moving at 6 m/s hits and sticks to a 4 kg body at rest. Their common velocity is",
+   "o": [
+    "2 m/s",
+    "3 m/s",
+    "1.5 m/s",
+    "4 m/s"
+   ],
+   "a": 0,
+   "x": "Momentum conserved: 2 × 6 = (2 + 4)v, so v = 12/6 = 2 m/s."
+  },
+  {
+   "id": "phyA-021",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A force of 10 N moves a body 5 m along a line making 60° with the force. The work done is",
+   "o": [
+    "50 J",
+    "43.3 J",
+    "Zero",
+    "25 J"
+   ],
+   "a": 3,
+   "x": "W = Fs cosθ = 10 × 5 × cos60° = 25 J.",
+   "trap": "43.3 J uses sin60° instead of cos60°."
+  },
+  {
+   "id": "phyA-022",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 1,
+   "q": "A rigid body is in rotational equilibrium when",
+   "o": [
+    "The net force on it is zero",
+    "It moves with constant speed",
+    "The net torque on it about any point is zero",
+    "Its angular velocity is maximum"
+   ],
+   "a": 2,
+   "x": "Translational equilibrium needs ΣF = 0; rotational equilibrium needs Στ = 0.",
+   "trap": "'Net force zero' is the condition for translational, not rotational, equilibrium."
+  },
+  {
+   "id": "phyA-023",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 1,
+   "q": "A net external torque acting on a rigid body produces",
+   "o": [
+    "Uniform angular velocity",
+    "Angular acceleration",
+    "No change in angular momentum",
+    "Linear acceleration of its centre only"
+   ],
+   "a": 1,
+   "x": "τ = Iα: torque is the rotational analogue of force and causes angular acceleration.",
+   "trap": "Uniform angular velocity needs zero net torque.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-024",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 1,
+   "q": "The moment of inertia of a uniform rod of mass M and length L about a perpendicular axis through one end is",
+   "o": [
+    "ML²/3",
+    "ML²/12",
+    "ML²/2",
+    "ML²"
+   ],
+   "a": 0,
+   "x": "I_centre = ML²/12; parallel-axis: I_end = ML²/12 + M(L/2)² = ML²/3.",
+   "trap": "ML²/12 is about the centre, not the end."
+  },
+  {
+   "id": "phyA-025",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 2,
+   "q": "The radius of gyration of a uniform rod of length L about a perpendicular axis through its centre is",
+   "o": [
+    "L/√3",
+    "L/2",
+    "L/12",
+    "L/(2√3)"
+   ],
+   "a": 3,
+   "x": "I = MK² = ML²/12, so K = L/√12 = L/(2√3).",
+   "trap": "L/√3 is about an end."
+  },
+  {
+   "id": "phyA-026",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 3,
+   "q": "A uniform rod of mass 3 kg and length 2 m rotates at 2 rad/s about a perpendicular axis through its centre. Its rotational kinetic energy is",
+   "o": [
+    "4 J",
+    "8 J",
+    "2 J",
+    "1 J"
+   ],
+   "a": 2,
+   "x": "I = ML²/12 = 3 × 4/12 = 1 kg m²; KE = ½Iω² = ½ × 1 × 4 = 2 J.",
+   "trap": "8 J uses I = ML²/3 (axis through an end)."
+  },
+  {
+   "id": "phyA-027",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 1,
+   "q": "The power delivered by a torque τ to a body rotating with angular velocity ω is",
+   "o": [
+    "τ/ω",
+    "τω",
+    "½τω²",
+    "τω²"
+   ],
+   "a": 1,
+   "x": "Rotational analogue of P = Fv: P = τω."
+  },
+  {
+   "id": "phyA-028",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 2,
+   "q": "A floating ship is in stable equilibrium when its metacentre is",
+   "o": [
+    "Above its centre of gravity",
+    "Below its centre of gravity",
+    "At its centre of gravity",
+    "At its centre of buoyancy"
+   ],
+   "a": 0,
+   "x": "If the metacentre lies above the centre of gravity, a tilt creates a restoring couple; below it the couple overturns the ship.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-029",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 2,
+   "q": "A solid cube floats at the boundary between oil (density 800 kg/m³) and water (1000 kg/m³), with half its volume in each liquid. The density of the cube is",
+   "o": [
+    "800 kg/m³",
+    "1000 kg/m³",
+    "1800 kg/m³",
+    "900 kg/m³"
+   ],
+   "a": 3,
+   "x": "Weight = total upthrust: ρV g = (V/2)(800)g + (V/2)(1000)g, so ρ = 900 kg/m³.",
+   "trap": "1800: adding the densities without halving.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-030",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 1,
+   "q": "When the temperature rises, the viscosity of",
+   "o": [
+    "Both a gas and a liquid increase",
+    "Both a gas and a liquid decrease",
+    "A gas increases and a liquid decreases",
+    "A gas decreases and a liquid increases"
+   ],
+   "a": 2,
+   "x": "Liquid viscosity falls as cohesive forces weaken; gas viscosity rises as faster molecules transfer more momentum between layers.",
+   "trap": "'Both decrease': applying the liquid rule to gases.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-031",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 2,
+   "q": "Water in a clean glass capillary tube forms a meniscus that is",
+   "o": [
+    "Convex, because the angle of contact is obtuse",
+    "Concave, because the angle of contact is acute",
+    "Flat, because the angle of contact is 90°",
+    "Concave, because the angle of contact is obtuse"
+   ],
+   "a": 1,
+   "x": "Adhesion (water–glass) exceeds cohesion, so θ < 90°, the surface curves up at the walls (concave) and water rises. Mercury is the convex case.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-032",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 2,
+   "q": "Water rises 4 cm in a capillary tube. In a tube of the same glass with half the radius, it rises",
+   "o": [
+    "8 cm",
+    "2 cm",
+    "4 cm",
+    "16 cm"
+   ],
+   "a": 0,
+   "x": "h = 2T cosθ/(rρg) ∝ 1/r, so halving r doubles h: 8 cm.",
+   "trap": "16 cm: treating h ∝ 1/r²."
+  },
+  {
+   "id": "phyA-033",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 2,
+   "q": "By Poiseuille's equation, if the radius of a tube is doubled with the same pressure difference, the volume of liquid flowing per second becomes",
+   "o": [
+    "2 times",
+    "4 times",
+    "8 times",
+    "16 times"
+   ],
+   "a": 3,
+   "x": "Q = πPr⁴/(8ηl) ∝ r⁴, so 2⁴ = 16 times."
+  },
+  {
+   "id": "phyA-034",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 1,
+   "q": "By Stokes' law, the viscous drag on a small sphere of radius r moving at speed v through a fluid of viscosity η is",
+   "o": [
+    "4πηrv",
+    "6πηr²v",
+    "6πηrv",
+    "πηrv/6"
+   ],
+   "a": 2,
+   "x": "Stokes' law: F = 6πηrv (small sphere, streamline flow)."
+  },
+  {
+   "id": "phyA-035",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 3,
+   "q": "Water (ρ = 1000 kg/m³) flows through a horizontal pipe. Where its speed rises from 2 m/s to 4 m/s, the pressure falls by",
+   "o": [
+    "2000 Pa",
+    "6000 Pa",
+    "12000 Pa",
+    "1000 Pa"
+   ],
+   "a": 1,
+   "x": "Bernoulli: ΔP = ½ρ(v₂² − v₁²) = ½ × 1000 × (16 − 4) = 6000 Pa.",
+   "trap": "2000 Pa uses ½ρ(v₂ − v₁)² instead of the difference of squares."
+  },
+  {
+   "id": "phyA-036",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "A stone tied to a string is whirled in a vertical circle of radius 2.5 m. The least speed at the top for the string to stay taut is (g = 10 m/s²)",
+   "o": [
+    "5 m/s",
+    "25 m/s",
+    "2.5 m/s",
+    "7.1 m/s"
+   ],
+   "a": 0,
+   "x": "At the top, with tension just zero, mg = mv²/r, so v = √(gr) = √25 = 5 m/s."
+  },
+  {
+   "id": "phyA-037",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "The minimum speed at the lowest point for a body on a string to complete a vertical circle of radius r is",
+   "o": [
+    "√(gr)",
+    "√(2gr)",
+    "√(3gr)",
+    "√(5gr)"
+   ],
+   "a": 3,
+   "x": "Top needs v² = gr; energy: v_bottom² = gr + 2g(2r) = 5gr.",
+   "trap": "√(gr) is the minimum at the top, not the bottom."
+  },
+  {
+   "id": "phyA-038",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "A particle executes SHM given by x = 0.05 sin(10t) metre. Its maximum speed is",
+   "o": [
+    "5 m/s",
+    "0.05 m/s",
+    "0.5 m/s",
+    "50 m/s"
+   ],
+   "a": 2,
+   "x": "v_max = Aω = 0.05 × 10 = 0.5 m/s."
+  },
+  {
+   "id": "phyA-039",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 1,
+   "q": "In simple harmonic motion, the speed of the particle is maximum at",
+   "o": [
+    "The extreme positions",
+    "The mean position",
+    "Halfway between mean and extreme",
+    "Every point equally"
+   ],
+   "a": 1,
+   "x": "v = ω√(A² − x²) is largest at x = 0 (mean position) and zero at the extremes.",
+   "trap": "Extreme positions: there acceleration, not speed, is maximum."
+  },
+  {
+   "id": "phyA-040",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 1,
+   "q": "If the mass hung on a spring is made four times, the period of oscillation",
+   "o": [
+    "Doubles",
+    "Halves",
+    "Becomes four times",
+    "Stays the same"
+   ],
+   "a": 0,
+   "x": "T = 2π√(m/k) ∝ √m: √4 = 2."
+  },
+  {
+   "id": "phyA-041",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 1,
+   "q": "In forced oscillations, resonance occurs when",
+   "o": [
+    "The damping is maximum",
+    "The amplitude becomes zero",
+    "The driving frequency is twice the natural frequency",
+    "The driving frequency equals the natural frequency"
+   ],
+   "a": 3,
+   "x": "At resonance the driver matches the natural frequency, energy transfer is greatest and amplitude peaks."
+  },
+  {
+   "id": "phyA-042",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "A simple pendulum has a period of 2 s on Earth. On a planet where g is one-fourth of Earth's value, its period is",
+   "o": [
+    "1 s",
+    "8 s",
+    "4 s",
+    "0.5 s"
+   ],
+   "a": 2,
+   "x": "T ∝ 1/√g; g ÷ 4 gives T × 2 = 4 s.",
+   "trap": "1 s: thinking a smaller g makes the pendulum faster."
+  },
+  {
+   "id": "phyA-043",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 3,
+   "q": "A planet has the same density as the Earth but twice its radius. The escape velocity from it is (Earth: 11.2 km/s)",
+   "o": [
+    "11.2 km/s",
+    "22.4 km/s",
+    "15.8 km/s",
+    "5.6 km/s"
+   ],
+   "a": 1,
+   "x": "v_e = √(2GM/R) = R√(8πGρ/3) ∝ R at fixed density, so 2 × 11.2 = 22.4 km/s.",
+   "trap": "15.8 km/s: taking v_e ∝ √R instead of v_e ∝ R at fixed density.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-044",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 1,
+   "q": "The escape velocity of a body from the Earth does NOT depend on",
+   "o": [
+    "The mass of the body",
+    "The mass of the Earth",
+    "The radius of the Earth",
+    "The gravitational constant"
+   ],
+   "a": 0,
+   "x": "v_e = √(2GM/R): the projectile's own mass cancels.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-045",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 2,
+   "q": "Taking R = 6400 km, the height above the Earth's surface at which g becomes 1% less than at the surface is about",
+   "o": [
+    "64 km",
+    "16 km",
+    "3.2 km",
+    "32 km"
+   ],
+   "a": 3,
+   "x": "For h ≪ R, g_h = g(1 − 2h/R); 2h/R = 0.01 gives h = 32 km.",
+   "trap": "64 km uses the depth formula g(1 − d/R).",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-046",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 2,
+   "q": "A satellite orbits just above the Earth's surface. To escape from the Earth, its speed must be multiplied by",
+   "o": [
+    "2",
+    "1/√2",
+    "√2",
+    "4"
+   ],
+   "a": 2,
+   "x": "Orbital speed √(gR) and escape speed √(2gR): ratio √2."
+  },
+  {
+   "id": "phyA-047",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 1,
+   "q": "When a metal wire is heated, its Young's modulus",
+   "o": [
+    "Increases",
+    "Decreases",
+    "Remains unchanged",
+    "Becomes zero"
+   ],
+   "a": 1,
+   "x": "Heating weakens interatomic forces, so the same stress produces more strain: Y falls with temperature.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-048",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 1,
+   "q": "The elastic potential energy stored per unit volume of a stretched wire is",
+   "o": [
+    "½ × stress × strain",
+    "stress × strain",
+    "½ × stress / strain",
+    "stress / strain"
+   ],
+   "a": 0,
+   "x": "U/V = ½ × stress × strain = ½Y(strain)².",
+   "trap": "stress/strain is Young's modulus, not energy density."
+  },
+  {
+   "id": "phyA-049",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 1,
+   "q": "Poisson's ratio is the ratio of",
+   "o": [
+    "Longitudinal strain to lateral strain",
+    "Stress to strain",
+    "Volume strain to shear strain",
+    "Lateral strain to longitudinal strain"
+   ],
+   "a": 3,
+   "x": "σ = lateral strain/longitudinal strain; dimensionless."
+  },
+  {
+   "id": "phyA-050",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 3,
+   "q": "A wire 2 m long with cross-section 1 mm² stretches by 1 mm under a load of 100 N. Its Young's modulus is",
+   "o": [
+    "2 × 10⁸ N/m²",
+    "1 × 10¹¹ N/m²",
+    "2 × 10¹¹ N/m²",
+    "2 × 10⁹ N/m²"
+   ],
+   "a": 2,
+   "x": "Y = FL/(AΔL) = (100 × 2)/(10⁻⁶ × 10⁻³) = 2 × 10¹¹ N/m².",
+   "trap": "2 × 10⁸: converting mm² to 10⁻³ m² instead of 10⁻⁶ m².",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-051",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "A metal sphere hangs fully immersed in a liquid. When the whole system is heated, the apparent weight of the sphere increases because",
+   "o": [
+    "The metal expands more than the liquid, so the upthrust rises",
+    "The liquid expands more than the metal, so the upthrust falls",
+    "The mass of the sphere increases on heating",
+    "The density of the liquid increases on heating"
+   ],
+   "a": 1,
+   "x": "Upthrust = V_sphere × ρ_liquid × g. Liquids expand far more than metals, so ρ_liquid falls faster than V grows: upthrust drops, apparent weight rises.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-052",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 1,
+   "q": "Water has its maximum density at",
+   "o": [
+    "4°C",
+    "0°C",
+    "100°C",
+    "−4°C"
+   ],
+   "a": 0,
+   "x": "Anomalous expansion: water contracts from 0°C to 4°C and expands above 4°C, so density peaks at 4°C.",
+   "trap": "0°C: ice floats, but liquid water is densest at 4°C."
+  },
+  {
+   "id": "phyA-053",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "A metal plate with a circular hole in it is heated. The hole",
+   "o": [
+    "Becomes smaller",
+    "Stays the same size",
+    "First shrinks, then grows",
+    "Becomes larger"
+   ],
+   "a": 3,
+   "x": "Every linear dimension, including the hole's diameter, expands in proportion: the hole grows as if it were made of the metal.",
+   "trap": "'Smaller': imagining the metal expands into the hole."
+  },
+  {
+   "id": "phyA-054",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "The coefficient of real expansion of a liquid equals",
+   "o": [
+    "Coefficient of apparent expansion − coefficient of cubical expansion of the vessel",
+    "Coefficient of apparent expansion × coefficient of cubical expansion of the vessel",
+    "Coefficient of apparent expansion + coefficient of cubical expansion of the vessel",
+    "Coefficient of apparent expansion only"
+   ],
+   "a": 2,
+   "x": "The vessel also expands, hiding part of the liquid's expansion: γ_real = γ_apparent + γ_vessel.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-055",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "A steel rod 1 m long (α = 1.2 × 10⁻⁵ /°C) is heated from 20°C to 120°C. Its length increases by",
+   "o": [
+    "0.12 mm",
+    "1.2 mm",
+    "12 mm",
+    "2.4 mm"
+   ],
+   "a": 1,
+   "x": "ΔL = LαΔθ = 1 × 1.2 × 10⁻⁵ × 100 = 1.2 × 10⁻³ m = 1.2 mm."
+  },
+  {
+   "id": "phyA-056",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "The triple point of water, where ice, water and vapour coexist, is at",
+   "o": [
+    "273.16 K",
+    "273.15 K",
+    "0 K",
+    "373.16 K"
+   ],
+   "a": 0,
+   "x": "The triple point is 273.16 K (0.01°C, about 611 Pa). 273.15 K is 0°C, the ordinary melting point.",
+   "trap": "273.15 K: that is 0°C, 0.01 K below the triple point."
+  },
+  {
+   "id": "phyA-057",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "The heat needed to raise 2 kg of water from 20°C to 70°C is (c = 4200 J/kg K)",
+   "o": [
+    "210 kJ",
+    "840 kJ",
+    "42 kJ",
+    "420 kJ"
+   ],
+   "a": 3,
+   "x": "Q = mcΔθ = 2 × 4200 × 50 = 420 000 J = 420 kJ."
+  },
+  {
+   "id": "phyA-058",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "The heat capacity of a body is the heat needed to",
+   "o": [
+    "Raise the temperature of 1 kg of it by 1 K",
+    "Melt the whole body at its melting point",
+    "Raise the temperature of the whole body by 1 K",
+    "Raise the temperature of an equal mass of water by 1 K"
+   ],
+   "a": 2,
+   "x": "Heat capacity = mc (J/K) refers to the whole body; specific heat capacity refers to unit mass.",
+   "trap": "'1 kg by 1 K' defines specific heat capacity."
+  },
+  {
+   "id": "phyA-059",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 3,
+   "q": "10 g of ice at 0°C is mixed with 10 g of water at 80°C. The final temperature is (L = 336 J/g, c = 4.2 J/g°C)",
+   "o": [
+    "40°C",
+    "0°C",
+    "20°C",
+    "10°C"
+   ],
+   "a": 1,
+   "x": "Melting all the ice needs 10 × 336 = 3360 J; water cooling 80→0°C gives 10 × 4.2 × 80 = 3360 J. All ice just melts; mixture at 0°C.",
+   "trap": "40°C: averaging the temperatures and ignoring latent heat.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-060",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "A scald from steam at 100°C is more severe than one from water at 100°C because",
+   "o": [
+    "Steam gives out its latent heat of vaporisation when it condenses on the skin",
+    "Steam is at a higher temperature than the water",
+    "Steam has a lower specific heat capacity",
+    "Steam conducts heat better than water"
+   ],
+   "a": 0,
+   "x": "Each gram of condensing steam releases about 2260 J before it even starts cooling as water."
+  },
+  {
+   "id": "phyA-061",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "Food cooks faster in a pressure cooker because",
+   "o": [
+    "The increased pressure lowers the boiling point of water",
+    "Steam carries less latent heat at high pressure",
+    "The cooker reduces the specific heat of food",
+    "The increased pressure raises the boiling point of water"
+   ],
+   "a": 3,
+   "x": "Boiling point rises with pressure (about 120°C inside a cooker), so food is cooked at a higher temperature.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-062",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 2,
+   "q": "A 100 g calorimeter is made of a material of specific heat 0.84 J/g°C. Its water equivalent is (c_water = 4.2 J/g°C)",
+   "o": [
+    "84 g",
+    "5 g",
+    "20 g",
+    "420 g"
+   ],
+   "a": 2,
+   "x": "Water equivalent = mc/c_w = 100 × 0.84/4.2 = 20 g."
+  },
+  {
+   "id": "phyA-063",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 1,
+   "q": "The zeroth law of thermodynamics leads to the concept of",
+   "o": [
+    "Internal energy",
+    "Temperature",
+    "Entropy",
+    "Heat"
+   ],
+   "a": 1,
+   "x": "If A and B are each in thermal equilibrium with C, they are with each other: they share a common property, temperature.",
+   "trap": "Internal energy comes from the first law; entropy from the second."
+  },
+  {
+   "id": "phyA-064",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 2,
+   "q": "Heat flows through a rod at rate H. If both its length and its cross-sectional area are doubled (same material, same end temperatures), the rate becomes",
+   "o": [
+    "H",
+    "2H",
+    "4H",
+    "H/2"
+   ],
+   "a": 0,
+   "x": "H = KAΔθ/L; doubling A and L leaves A/L, and hence H, unchanged.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-065",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 2,
+   "q": "Two black bodies are at 300 K and 600 K. The ratio of energy each radiates per unit area per second is",
+   "o": [
+    "1 : 2",
+    "1 : 4",
+    "1 : 8",
+    "1 : 16"
+   ],
+   "a": 3,
+   "x": "Stefan's law E = σT⁴: (300/600)⁴ = 1/16.",
+   "trap": "1 : 2: using E ∝ T.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-066",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 1,
+   "q": "By Stefan–Boltzmann law, the total energy radiated per second per unit area by a black body is proportional to",
+   "o": [
+    "T",
+    "T²",
+    "T⁴",
+    "1/T"
+   ],
+   "a": 2,
+   "x": "E = σT⁴ with T in kelvin; σ = 5.67 × 10⁻⁸ W m⁻² K⁻⁴.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-067",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 1,
+   "q": "The most suitable instrument for measuring the temperature of a furnace at about 2000°C is",
+   "o": [
+    "A mercury-in-glass thermometer",
+    "A radiation pyrometer",
+    "An alcohol-in-glass thermometer",
+    "A clinical thermometer"
+   ],
+   "a": 1,
+   "x": "A radiation thermometer reads the radiation emitted, needing no contact, so it works far above the range of liquid-in-glass thermometers."
+  },
+  {
+   "id": "phyA-068",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 2,
+   "q": "A mercury-in-glass thermometer cannot be used to measure",
+   "o": [
+    "Temperatures below about −39°C",
+    "Room temperature",
+    "Body temperature",
+    "The boiling point of water at 1 atm"
+   ],
+   "a": 0,
+   "x": "Mercury freezes at about −39°C; below that an alcohol or resistance thermometer is used."
+  },
+  {
+   "id": "phyA-069",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 1,
+   "q": "A platinum resistance thermometer works on the principle that",
+   "o": [
+    "Mercury expands uniformly with temperature",
+    "A heated junction of two metals produces an emf",
+    "A hot body emits radiation proportional to T⁴",
+    "The electrical resistance of a metal changes with temperature"
+   ],
+   "a": 3,
+   "x": "R_θ = R₀(1 + αθ); measuring R gives θ. The emf principle is the thermocouple; T⁴ is the radiation thermometer."
+  },
+  {
+   "id": "phyA-070",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 1,
+   "q": "Heat from the Sun reaches the Earth by",
+   "o": [
+    "Conduction",
+    "Convection",
+    "Radiation",
+    "Both conduction and convection"
+   ],
+   "a": 2,
+   "x": "Space is nearly a vacuum; only radiation (electromagnetic waves) needs no medium."
+  },
+  {
+   "id": "phyA-071",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 2,
+   "q": "If the power radiated by a black body becomes 81 times, its absolute temperature becomes",
+   "o": [
+    "9 times",
+    "3 times",
+    "81 times",
+    "27 times"
+   ],
+   "a": 1,
+   "x": "P ∝ T⁴: T = 81^(1/4) = 3 times.",
+   "trap": "9 times: taking the square root instead of the fourth root."
+  },
+  {
+   "id": "phyA-072",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 2,
+   "q": "A temperature rise of 10°C is equal to a rise on the Fahrenheit scale of",
+   "o": [
+    "18°F",
+    "50°F",
+    "10°F",
+    "32°F"
+   ],
+   "a": 0,
+   "x": "One Celsius degree = 9/5 Fahrenheit degrees, so 10 × 9/5 = 18°F. The +32 applies to readings, not differences.",
+   "trap": "50°F: converting the reading 10°C, not the difference.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-073",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 1,
+   "q": "The average translational kinetic energy of an ideal-gas molecule at absolute temperature T is",
+   "o": [
+    "(1/2)kT",
+    "(3/2)RT",
+    "kT",
+    "(3/2)kT"
+   ],
+   "a": 3,
+   "x": "Kinetic theory: ½m⟨c²⟩ = (3/2)kT per molecule; (3/2)RT is per mole.",
+   "trap": "(3/2)RT is per mole, not per molecule."
+  },
+  {
+   "id": "phyA-074",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 2,
+   "q": "At the same temperature, the rms speeds of hydrogen (H₂) and oxygen (O₂) molecules are in the ratio",
+   "o": [
+    "1 : 4",
+    "16 : 1",
+    "4 : 1",
+    "1 : 16"
+   ],
+   "a": 2,
+   "x": "v_rms ∝ 1/√M: √(32/2) = √16 = 4, so H₂ : O₂ = 4 : 1.",
+   "trap": "16 : 1: forgetting the square root."
+  },
+  {
+   "id": "phyA-075",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 1,
+   "q": "The pressure of an ideal gas of density ρ whose molecules have rms speed c is",
+   "o": [
+    "½ρc²",
+    "⅓ρc²",
+    "ρc²",
+    "⅔ρc²"
+   ],
+   "a": 1,
+   "x": "Kinetic theory: P = ⅓ρc²."
+  },
+  {
+   "id": "phyA-076",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 3,
+   "q": "The rms speed of gas molecules at 27°C is v. It becomes 2v at",
+   "o": [
+    "927°C",
+    "108°C",
+    "327°C",
+    "1200°C"
+   ],
+   "a": 0,
+   "x": "v ∝ √T, so T must become 4 × 300 K = 1200 K = 927°C.",
+   "trap": "327°C (600 K): doubling T instead of making it four times; 1200°C forgets to convert from kelvin."
+  },
+  {
+   "id": "phyA-077",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 1,
+   "q": "At constant temperature, 6 L of a gas at 2 atm is compressed to 3 L. Its new pressure is",
+   "o": [
+    "1 atm",
+    "3 atm",
+    "6 atm",
+    "4 atm"
+   ],
+   "a": 3,
+   "x": "Boyle's law: P₁V₁ = P₂V₂, so P₂ = 2 × 6/3 = 4 atm.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-078",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 2,
+   "q": "At the same temperature, the average translational kinetic energy per molecule of different ideal gases is",
+   "o": [
+    "Greater for heavier molecules",
+    "Greater for lighter molecules",
+    "The same for all gases",
+    "Proportional to the molecular mass"
+   ],
+   "a": 2,
+   "x": "Mean KE = (3/2)kT depends only on T. Lighter molecules move faster, but their KE is the same.",
+   "trap": "'Lighter molecules': confusing KE with rms speed."
+  },
+  {
+   "id": "phyA-079",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 1,
+   "q": "In an isochoric (constant-volume) process, the work done by the gas is",
+   "o": [
+    "Maximum",
+    "Zero",
+    "Equal to the heat supplied",
+    "Equal to PV"
+   ],
+   "a": 1,
+   "x": "W = PΔV and ΔV = 0, so W = 0; all heat goes to internal energy.",
+   "trap": "'Equal to the heat supplied': true of an isothermal process, not isochoric."
+  },
+  {
+   "id": "phyA-080",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 2,
+   "q": "When an ideal gas expands adiabatically, its temperature",
+   "o": [
+    "Falls, because the work is done at the expense of internal energy",
+    "Rises, because it does work",
+    "Stays constant, because no heat enters",
+    "Stays constant, because pressure falls"
+   ],
+   "a": 0,
+   "x": "Q = 0, so ΔU = −W; positive work by the gas lowers U and hence T.",
+   "trap": "'Stays constant': mixing up adiabatic (Q = 0) with isothermal (ΔT = 0).",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-081",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 1,
+   "q": "For one mole of an ideal gas, Mayer's relation is",
+   "o": [
+    "Cp + Cv = R",
+    "Cp/Cv = R",
+    "Cv − Cp = R",
+    "Cp − Cv = R"
+   ],
+   "a": 3,
+   "x": "At constant pressure extra heat does work PΔV = RΔT, so Cp exceeds Cv by R."
+  },
+  {
+   "id": "phyA-082",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 2,
+   "q": "A gas expands at a constant pressure of 2 × 10⁵ Pa from 1 L to 3 L. The work done by the gas is",
+   "o": [
+    "200 J",
+    "600 J",
+    "400 J",
+    "4 × 10⁵ J"
+   ],
+   "a": 2,
+   "x": "W = PΔV = 2 × 10⁵ × 2 × 10⁻³ = 400 J.",
+   "trap": "4 × 10⁵ J: forgetting 1 L = 10⁻³ m³."
+  },
+  {
+   "id": "phyA-083",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 1,
+   "q": "100 J of heat is supplied to a gas, which does 40 J of work. The change in its internal energy is",
+   "o": [
+    "140 J",
+    "60 J",
+    "40 J",
+    "100 J"
+   ],
+   "a": 1,
+   "x": "First law: ΔU = Q − W = 100 − 40 = 60 J.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-084",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 3,
+   "q": "A monatomic ideal gas (γ = 5/3) is compressed adiabatically to one-eighth of its volume. Its pressure becomes",
+   "o": [
+    "32 times",
+    "8 times",
+    "16 times",
+    "64 times"
+   ],
+   "a": 0,
+   "x": "PV^γ = constant: P₂/P₁ = 8^(5/3) = 2⁵ = 32.",
+   "trap": "8 times: applying Boyle's law to an adiabatic change."
+  },
+  {
+   "id": "phyA-085",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 2,
+   "q": "On a P–V diagram, at the same point the slope of an adiabatic curve is",
+   "o": [
+    "Equal to the slope of the isothermal",
+    "1/γ times the slope of the isothermal",
+    "Zero",
+    "γ times the slope of the isothermal"
+   ],
+   "a": 3,
+   "x": "Isothermal dP/dV = −P/V; adiabatic dP/dV = −γP/V. Since γ > 1, the adiabatic is steeper."
+  },
+  {
+   "id": "phyA-086",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 1,
+   "q": "In a complete cyclic process, the change in internal energy of the system is",
+   "o": [
+    "Equal to the work done",
+    "Equal to the heat absorbed",
+    "Zero",
+    "Always negative"
+   ],
+   "a": 2,
+   "x": "Internal energy is a state function; the system returns to its initial state, so ΔU = 0 and Q = W."
+  },
+  {
+   "id": "phyA-087",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 2,
+   "q": "The coefficient of performance of a Carnot refrigerator working between 270 K and 300 K is",
+   "o": [
+    "10",
+    "9",
+    "0.9",
+    "0.1"
+   ],
+   "a": 1,
+   "x": "COP = T_cold/(T_hot − T_cold) = 270/30 = 9.",
+   "trap": "10: using T_hot/(T_hot − T_cold), which is for a heat pump."
+  },
+  {
+   "id": "phyA-088",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 1,
+   "q": "In an irreversible process taking place in an isolated system, the total entropy",
+   "o": [
+    "Increases",
+    "Decreases",
+    "Remains constant",
+    "Becomes zero"
+   ],
+   "a": 0,
+   "x": "Second law: entropy of an isolated system never decreases; it stays constant only for reversible processes."
+  },
+  {
+   "id": "phyA-089",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 1,
+   "q": "The efficiency of a Carnot engine could be 100% only if",
+   "o": [
+    "The source were at 0 K",
+    "Source and sink were at the same temperature",
+    "The working substance were an ideal gas",
+    "The sink were at 0 K"
+   ],
+   "a": 3,
+   "x": "η = 1 − T₂/T₁ = 1 only when T₂ = 0 K, which cannot be reached."
+  },
+  {
+   "id": "phyA-090",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 1,
+   "q": "In a four-stroke petrol engine, useful work is done on the piston during the",
+   "o": [
+    "Intake stroke",
+    "Compression stroke",
+    "Power (expansion) stroke",
+    "Exhaust stroke"
+   ],
+   "a": 2,
+   "x": "The spark ignites the compressed mixture; the hot gas expands and pushes the piston in the power stroke."
+  },
+  {
+   "id": "phyA-091",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 1,
+   "q": "The Kelvin–Planck statement of the second law says that",
+   "o": [
+    "Heat flows spontaneously from cold to hot bodies",
+    "No engine working in a cycle can convert all the heat it absorbs into work",
+    "Energy can be neither created nor destroyed",
+    "The internal energy of an ideal gas depends only on temperature"
+   ],
+   "a": 1,
+   "x": "Some heat must always be rejected to a sink. 'Energy conserved' is the first law."
+  },
+  {
+   "id": "phyA-092",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 2,
+   "q": "A Carnot engine has an efficiency of 25% with its sink at 27°C. The temperature of its source is",
+   "o": [
+    "127°C",
+    "400°C",
+    "36°C",
+    "108°C"
+   ],
+   "a": 0,
+   "x": "η = 1 − T₂/T₁: 0.25 = 1 − 300/T₁, so T₁ = 400 K = 127°C.",
+   "trap": "400°C: forgetting to convert 400 K to Celsius."
+  },
+  {
+   "id": "phyA-093",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 3,
+   "q": "1 kg of ice melts at 0°C (L = 3.36 × 10⁵ J/kg). The change in its entropy is about",
+   "o": [
+    "336 J/K",
+    "3.36 × 10⁵ J/K",
+    "92 J/K",
+    "1231 J/K"
+   ],
+   "a": 3,
+   "x": "ΔS = Q/T = 3.36 × 10⁵/273 ≈ 1231 J/K (T in kelvin).",
+   "trap": "3.36 × 10⁵ J/K: forgetting to divide by the absolute temperature."
+  },
+  {
+   "id": "phyA-094",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 1,
+   "q": "A sound wave of frequency 500 Hz travels at 340 m/s. Its wavelength is",
+   "o": [
+    "1.47 m",
+    "6.8 m",
+    "0.68 m",
+    "0.068 m"
+   ],
+   "a": 2,
+   "x": "λ = v/f = 340/500 = 0.68 m.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-095",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 1,
+   "q": "Laplace corrected Newton's formula for the speed of sound in air by assuming that sound propagates",
+   "o": [
+    "Isothermally",
+    "Adiabatically",
+    "Isobarically",
+    "At constant volume"
+   ],
+   "a": 1,
+   "x": "Compressions and rarefactions are too fast for heat exchange, so the process is adiabatic: v = √(γP/ρ).",
+   "trap": "Isothermally: that was Newton's assumption, which gave about 280 m/s."
+  },
+  {
+   "id": "phyA-096",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 2,
+   "q": "The speed of sound in air is 332 m/s at 0°C. At 273°C it is about",
+   "o": [
+    "470 m/s",
+    "664 m/s",
+    "332 m/s",
+    "235 m/s"
+   ],
+   "a": 0,
+   "x": "v ∝ √T: T doubles from 273 K to 546 K, so v = 332√2 ≈ 470 m/s.",
+   "trap": "664 m/s: treating v ∝ T.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-097",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 1,
+   "q": "Sound travels fastest in",
+   "o": [
+    "Water",
+    "Air",
+    "Vacuum",
+    "Steel"
+   ],
+   "a": 3,
+   "x": "Speed is greatest in solids (high elasticity), then liquids, then gases; sound cannot travel in a vacuum."
+  },
+  {
+   "id": "phyA-098",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 2,
+   "q": "At constant temperature, the speed of sound in a gas is unaffected by a change in its",
+   "o": [
+    "Temperature",
+    "Humidity",
+    "Pressure",
+    "Molecular mass"
+   ],
+   "a": 2,
+   "x": "v = √(γP/ρ); at constant T, P/ρ stays constant, so changing pressure changes nothing.",
+   "trap": "Humidity does change it: moist air is less dense, so sound is faster."
+  },
+  {
+   "id": "phyA-099",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 2,
+   "q": "Two points on a progressive wave are a quarter of a wavelength apart. Their phase difference is",
+   "o": [
+    "π",
+    "π/2",
+    "π/4",
+    "2π"
+   ],
+   "a": 1,
+   "x": "Phase difference = (2π/λ) × path difference = (2π/λ)(λ/4) = π/2.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-100",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 3,
+   "q": "A progressive wave is y = 0.02 sin(100πt − 0.5πx) in SI units. Its speed is",
+   "o": [
+    "200 m/s",
+    "50 m/s",
+    "100 m/s",
+    "0.02 m/s"
+   ],
+   "a": 0,
+   "x": "v = ω/k = 100π/0.5π = 200 m/s."
+  },
+  {
+   "id": "phyA-101",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 1,
+   "q": "In a stationary wave, the distance between two consecutive nodes is",
+   "o": [
+    "λ",
+    "λ/4",
+    "2λ",
+    "λ/2"
+   ],
+   "a": 3,
+   "x": "Nodes repeat every half wavelength; a node and the next antinode are λ/4 apart.",
+   "trap": "λ/4 is node-to-antinode."
+  },
+  {
+   "id": "phyA-102",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 1,
+   "q": "A pipe closed at one end can produce",
+   "o": [
+    "Only even harmonics",
+    "All harmonics",
+    "Only odd harmonics",
+    "Only the fundamental"
+   ],
+   "a": 2,
+   "x": "Closed end is a node, open end an antinode: f = nv/4L with n = 1, 3, 5, … An open pipe gives all harmonics."
+  },
+  {
+   "id": "phyA-103",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 2,
+   "q": "The fundamental frequency of an open pipe is 200 Hz. If one end is closed, the fundamental becomes",
+   "o": [
+    "400 Hz",
+    "100 Hz",
+    "200 Hz",
+    "50 Hz"
+   ],
+   "a": 1,
+   "x": "Open: v/2L; closed: v/4L, half as much: 100 Hz.",
+   "trap": "400 Hz: thinking closing the pipe raises pitch."
+  },
+  {
+   "id": "phyA-104",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 3,
+   "q": "The first overtone of an open pipe 50 cm long is (speed of sound 340 m/s)",
+   "o": [
+    "680 Hz",
+    "340 Hz",
+    "510 Hz",
+    "1020 Hz"
+   ],
+   "a": 0,
+   "x": "Fundamental v/2L = 340/1 = 340 Hz; first overtone = second harmonic = 680 Hz.",
+   "trap": "340 Hz is the fundamental, not the first overtone."
+  },
+  {
+   "id": "phyA-105",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 2,
+   "q": "A string fixed at both ends vibrates in its third harmonic. The number of nodes, including the two ends, is",
+   "o": [
+    "3",
+    "2",
+    "6",
+    "4"
+   ],
+   "a": 3,
+   "x": "Third harmonic has 3 loops; n loops need n + 1 nodes = 4."
+  },
+  {
+   "id": "phyA-106",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 2,
+   "q": "A string has tension 100 N and mass per unit length 0.01 kg/m. The speed of transverse waves on it is",
+   "o": [
+    "10 m/s",
+    "1000 m/s",
+    "100 m/s",
+    "10⁴ m/s"
+   ],
+   "a": 2,
+   "x": "v = √(T/μ) = √(100/0.01) = √10⁴ = 100 m/s.",
+   "trap": "10⁴ m/s: forgetting the square root."
+  },
+  {
+   "id": "phyA-107",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 3,
+   "q": "A car moving at 20 m/s towards a cliff sounds its 500 Hz horn. The frequency of the echo heard by the driver is (speed of sound 340 m/s)",
+   "o": [
+    "531 Hz",
+    "562.5 Hz",
+    "500 Hz",
+    "444 Hz"
+   ],
+   "a": 1,
+   "x": "Cliff acts as a source receiving and re-emitting; driver is both moving source and observer: f' = f(v + u)/(v − u) = 500 × 360/320 = 562.5 Hz.",
+   "trap": "531 Hz: applying only one Doppler shift.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-108",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 2,
+   "q": "An observer moves at 34 m/s towards a stationary source of 400 Hz. The frequency heard is (speed of sound 340 m/s)",
+   "o": [
+    "440 Hz",
+    "444 Hz",
+    "360 Hz",
+    "400 Hz"
+   ],
+   "a": 0,
+   "x": "Observer approaching: f' = f(v + v₀)/v = 400 × 374/340 = 440 Hz.",
+   "trap": "444 Hz uses the moving-source formula v/(v − v₀).",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-109",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 2,
+   "q": "In still air, there is NO change in the observed frequency when",
+   "o": [
+    "The source moves towards a stationary observer",
+    "The observer moves away from a stationary source",
+    "Source and observer move towards each other",
+    "Source and observer move in the same direction with the same velocity"
+   ],
+   "a": 3,
+   "x": "With no relative motion between source and observer (and still air), f' = f(v − u)/(v − u) = f.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-110",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 1,
+   "q": "The pitch of a sound depends mainly on its",
+   "o": [
+    "Amplitude",
+    "Intensity",
+    "Frequency",
+    "Speed"
+   ],
+   "a": 2,
+   "x": "Higher frequency gives higher pitch. Loudness depends on amplitude/intensity.",
+   "trap": "Amplitude decides loudness, not pitch."
+  },
+  {
+   "id": "phyA-111",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 1,
+   "q": "The quality (timbre) of a musical note depends on",
+   "o": [
+    "Its frequency only",
+    "The number and relative intensities of its overtones",
+    "Its amplitude only",
+    "The speed of sound in air"
+   ],
+   "a": 1,
+   "x": "Two instruments playing the same pitch and loudness differ in the overtones present; that gives quality."
+  },
+  {
+   "id": "phyA-112",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 2,
+   "q": "If the intensity of a sound increases 100 times, its intensity level increases by",
+   "o": [
+    "20 dB",
+    "100 dB",
+    "2 dB",
+    "10 dB"
+   ],
+   "a": 0,
+   "x": "ΔL = 10 log₁₀(I₂/I₁) = 10 log₁₀100 = 20 dB."
+  },
+  {
+   "id": "phyA-113",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 1,
+   "q": "Two sound waves of the same frequency have amplitudes in the ratio 1 : 2. Their intensities are in the ratio",
+   "o": [
+    "1 : 2",
+    "1 : √2",
+    "2 : 1",
+    "1 : 4"
+   ],
+   "a": 3,
+   "x": "Intensity ∝ (amplitude)²: (1/2)² = 1/4.",
+   "trap": "1 : 2: taking I ∝ A.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-114",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 3,
+   "q": "Two coherent waves with intensities in the ratio 9 : 1 interfere. The ratio of maximum to minimum intensity is",
+   "o": [
+    "9 : 1",
+    "10 : 8",
+    "4 : 1",
+    "3 : 1"
+   ],
+   "a": 2,
+   "x": "Amplitude ratio = √9 : 1 = 3 : 1. I_max/I_min = (3 + 1)²/(3 − 1)² = 16/4 = 4.",
+   "trap": "9 : 1: using the intensity ratio directly.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-115",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 1,
+   "q": "Two light sources are coherent when they have",
+   "o": [
+    "The same amplitude only",
+    "The same frequency and a constant phase difference",
+    "The same intensity only",
+    "A randomly changing phase difference"
+   ],
+   "a": 1,
+   "x": "Sustained interference needs a fixed phase relation; equal amplitude only improves contrast."
+  },
+  {
+   "id": "phyA-116",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 2,
+   "q": "A Young's double-slit apparatus is moved from air into water (refractive index 4/3). The fringe width",
+   "o": [
+    "Becomes three-quarters of its value in air",
+    "Becomes four-thirds of its value in air",
+    "Is unchanged",
+    "Becomes zero"
+   ],
+   "a": 0,
+   "x": "β = λD/d and λ in water = λ/n, so β becomes β/(4/3) = 3β/4.",
+   "trap": "Four-thirds: multiplying by n instead of dividing."
+  },
+  {
+   "id": "phyA-117",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 1,
+   "q": "In an interference pattern, a dark fringe occurs where the path difference is",
+   "o": [
+    "A whole multiple of λ",
+    "Zero",
+    "An odd multiple of λ/4",
+    "An odd multiple of λ/2"
+   ],
+   "a": 3,
+   "x": "Destructive interference: path difference = (2n + 1)λ/2, so waves meet out of phase.",
+   "trap": "Whole multiples of λ give bright fringes."
+  },
+  {
+   "id": "phyA-118",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 2,
+   "q": "In Young's double-slit experiment, the slit separation is halved and the slit–screen distance doubled. The fringe width becomes",
+   "o": [
+    "2 times",
+    "Unchanged",
+    "4 times",
+    "One-quarter"
+   ],
+   "a": 2,
+   "x": "β = λD/d: D × 2 and d ÷ 2 give β × 4.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-119",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "An object is placed 15 cm in front of a concave mirror of focal length 10 cm. The image is formed",
+   "o": [
+    "6 cm behind the mirror",
+    "30 cm in front of the mirror",
+    "30 cm behind the mirror",
+    "6 cm in front of the mirror"
+   ],
+   "a": 1,
+   "x": "1/v + 1/u = 1/f (real positive): 1/v = 1/10 − 1/15 = 1/30, v = 30 cm, real, in front.",
+   "trap": "6 cm comes from adding 1/10 + 1/15."
+  },
+  {
+   "id": "phyA-120",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 1,
+   "q": "For a real object, a convex mirror always forms an image that is",
+   "o": [
+    "Virtual, erect and diminished",
+    "Real, inverted and diminished",
+    "Virtual, erect and magnified",
+    "Real, inverted and magnified"
+   ],
+   "a": 0,
+   "x": "A diverging mirror gives a virtual, upright, smaller image behind it for any object position (hence rear-view mirrors)."
+  },
+  {
+   "id": "phyA-121",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "A coin lies at the bottom of a tank of water 12 cm deep (refractive index 4/3). Seen from directly above, it appears raised by",
+   "o": [
+    "9 cm",
+    "4 cm",
+    "16 cm",
+    "3 cm"
+   ],
+   "a": 3,
+   "x": "Apparent depth = 12/(4/3) = 9 cm, so the coin appears raised by 12 − 9 = 3 cm.",
+   "trap": "9 cm is the apparent depth, not the rise."
+  },
+  {
+   "id": "phyA-122",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 3,
+   "q": "A vessel holds 8 cm of water (n = 4/3) with a 6 cm layer of an immiscible liquid (n = 1.5) floating on it. Viewed from directly above, a mark on the bottom appears to be below the top surface by",
+   "o": [
+    "14 cm",
+    "7 cm",
+    "10 cm",
+    "12 cm"
+   ],
+   "a": 2,
+   "x": "Apparent depth = Σ tᵢ/nᵢ = 6/1.5 + 8/(4/3) = 4 + 6 = 10 cm.",
+   "trap": "14 cm is the real depth.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-123",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "The refractive index of a given piece of glass does NOT depend on",
+   "o": [
+    "The wavelength of light",
+    "The angle of incidence",
+    "The temperature of the glass",
+    "The material of the glass"
+   ],
+   "a": 1,
+   "x": "n = sin i / sin r stays the same for every angle of incidence; it does change with wavelength (dispersion), material and temperature.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-124",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 1,
+   "q": "When light passes from air into glass, the quantity that does NOT change is its",
+   "o": [
+    "Frequency",
+    "Speed",
+    "Wavelength",
+    "Direction (for oblique incidence)"
+   ],
+   "a": 0,
+   "x": "Frequency is fixed by the source; speed and wavelength both fall by the factor n."
+  },
+  {
+   "id": "phyA-125",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 1,
+   "q": "Total internal reflection can occur when light travels",
+   "o": [
+    "From air to glass at any angle",
+    "From glass to air at an angle smaller than the critical angle",
+    "From air to water at an angle greater than 45°",
+    "From glass to air at an angle of incidence greater than the critical angle"
+   ],
+   "a": 3,
+   "x": "TIR needs denser → rarer medium and i > C."
+  },
+  {
+   "id": "phyA-126",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "An equiconvex lens of glass (n = 1.5) has both radii of curvature 20 cm. Its power is",
+   "o": [
+    "+2.5 D",
+    "+10 D",
+    "+5 D",
+    "+0.05 D"
+   ],
+   "a": 2,
+   "x": "1/f = (n − 1)(1/R₁ − 1/R₂) = 0.5 × (2/20) = 1/20 cm⁻¹; f = 20 cm = 0.2 m, P = +5 D.",
+   "trap": "+0.05 D: leaving f in centimetres.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-127",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 3,
+   "q": "A convex glass lens (n = 1.5) has focal length 20 cm in air. Immersed in water (n = 4/3), its focal length becomes",
+   "o": [
+    "20 cm",
+    "80 cm",
+    "26.7 cm",
+    "40 cm"
+   ],
+   "a": 1,
+   "x": "f_w/f_a = (1.5 − 1)/(1.5/(4/3) − 1) = 0.5/0.125 = 4, so f_w = 80 cm.",
+   "trap": "26.7 cm: multiplying by n_water instead of using the lens maker's formula.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-128",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 1,
+   "q": "The dispersive power of a transparent material is",
+   "o": [
+    "(n_v − n_r)/(n_y − 1)",
+    "(n_v + n_r)/(n_y − 1)",
+    "(n_y − 1)/(n_v − n_r)",
+    "n_v − n_r"
+   ],
+   "a": 0,
+   "x": "ω = angular dispersion/mean deviation = (n_v − n_r)/(n_y − 1); a dimensionless ratio.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-129",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "Two thin lenses of dispersive powers ω₁, ω₂ and focal lengths f₁, f₂ in contact form an achromatic combination when",
+   "o": [
+    "ω₁f₁ + ω₂f₂ = 0",
+    "ω₁/f₁ = ω₂/f₂",
+    "f₁ + f₂ = 0",
+    "ω₁/f₁ + ω₂/f₂ = 0"
+   ],
+   "a": 3,
+   "x": "Achromatism needs zero change of combined power with colour: ω₁P₁ + ω₂P₂ = 0, i.e. ω₁/f₁ + ω₂/f₂ = 0 (one lens convex, one concave)."
+  },
+  {
+   "id": "phyA-130",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 1,
+   "q": "Chromatic aberration in a lens is caused by",
+   "o": [
+    "Rays far from the axis focusing differently from rays near it",
+    "Reflection at the lens surfaces",
+    "The refractive index, and so the focal length, being different for different colours",
+    "The lens being too thin"
+   ],
+   "a": 2,
+   "x": "n depends on wavelength, so violet focuses closer than red. Marginal vs paraxial focusing is spherical aberration.",
+   "trap": "Marginal-ray focusing describes spherical aberration.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-131",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 1,
+   "q": "The Sun looks reddish at sunrise and sunset mainly because",
+   "o": [
+    "Red light is refracted more than blue light",
+    "Blue light is scattered out more along the long path through the atmosphere",
+    "The Sun is cooler in the morning and evening",
+    "The atmosphere absorbs red light less than it emits it"
+   ],
+   "a": 1,
+   "x": "Scattering ∝ 1/λ⁴; at low Sun the path is long, blue is scattered away, and the transmitted light is red-rich.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyA-132",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 2,
+   "q": "In single-slit diffraction with slit width a, the first minimum lies at angle θ given by",
+   "o": [
+    "a sin θ = λ",
+    "a sin θ = λ/2",
+    "a sin θ = 3λ/2",
+    "a cos θ = λ"
+   ],
+   "a": 0,
+   "x": "The slit splits into two halves whose wavelets cancel in pairs when a sinθ = λ.",
+   "trap": "λ/2: confusing it with the path difference for a dark fringe in double-slit interference.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-133",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 1,
+   "q": "Diffraction of a wave is most noticeable when the size of the aperture or obstacle is",
+   "o": [
+    "Much larger than the wavelength",
+    "Zero",
+    "Unrelated to the wavelength",
+    "Comparable to the wavelength"
+   ],
+   "a": 3,
+   "x": "Bending is significant only when the gap is of the order of λ; sound (long λ) diffracts round doors, light hardly does."
+  },
+  {
+   "id": "phyA-134",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 3,
+   "q": "A diffraction grating has 5000 lines per cm. For light of wavelength 500 nm, the first-order maximum occurs at sin θ =",
+   "o": [
+    "0.5",
+    "0.025",
+    "0.25",
+    "0.1"
+   ],
+   "a": 2,
+   "x": "d = 1/5000 cm = 2 × 10⁻⁶ m; d sinθ = nλ gives sinθ = 5 × 10⁻⁷/2 × 10⁻⁶ = 0.25."
+  },
+  {
+   "id": "phyA-135",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 2,
+   "q": "The resolving power of a telescope can be increased by",
+   "o": [
+    "Using an objective of smaller aperture",
+    "Using an objective of larger aperture",
+    "Using light of longer wavelength",
+    "Using an eyepiece of longer focal length"
+   ],
+   "a": 1,
+   "x": "Resolving power ∝ D/λ (limit θ = 1.22λ/D): larger D or shorter λ."
+  },
+  {
+   "id": "phyA-136",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 1,
+   "q": "Unpolarised light of intensity I₀ passes through an ideal polaroid. The transmitted intensity is",
+   "o": [
+    "I₀/2",
+    "I₀",
+    "I₀/4",
+    "Zero"
+   ],
+   "a": 0,
+   "x": "A polaroid passes only the component along its axis; averaging cos²θ over all directions gives ½."
+  },
+  {
+   "id": "phyA-137",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 1,
+   "q": "When light falls on glass at the Brewster (polarising) angle, the reflected and refracted rays are",
+   "o": [
+    "Parallel to each other",
+    "At 45° to each other",
+    "Both completely unpolarised",
+    "Perpendicular to each other"
+   ],
+   "a": 3,
+   "x": "Brewster's law tan θp = n implies θp + r = 90°, so the rays are at 90°; the reflected ray is completely plane-polarised."
+  },
+  {
+   "id": "phyA-138",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 3,
+   "q": "Unpolarised light of intensity I₀ passes through two ideal polaroids whose axes are at 60°. The emerging intensity is",
+   "o": [
+    "I₀/4",
+    "I₀/2",
+    "I₀/8",
+    "3I₀/8"
+   ],
+   "a": 2,
+   "x": "First polaroid: I₀/2. Malus: (I₀/2)cos²60° = (I₀/2)(1/4) = I₀/8.",
+   "trap": "I₀/4: forgetting the first polaroid halves unpolarised light."
+  },
+  {
+   "id": "phyA-139",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A spring of force constant 200 N/m stores 0.25 J of elastic potential energy. Its extension is",
+   "o": [
+    "0.25 cm",
+    "5 cm",
+    "2.5 cm",
+    "50 cm"
+   ],
+   "a": 1,
+   "x": "U = ½kx², so x = √(2U/k) = √(0.5/200) = √0.0025 = 0.05 m = 5 cm.",
+   "trap": "0.25 cm: computing 2U/k and forgetting the square root.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-140",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 2,
+   "q": "In single-slit diffraction, the intensity of the first secondary maximum compared with the central maximum is about",
+   "o": [
+    "4.5%",
+    "50%",
+    "25%",
+    "11%"
+   ],
+   "a": 0,
+   "x": "Secondary maxima fall off fast: I₁/I₀ ≈ 4/(9π²) ≈ 0.045, and the next ≈ 4/(25π²) ≈ 0.016. Almost all light is in the central band.",
+   "trap": "50%: assuming all bright fringes are similar, as in double-slit interference.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-141",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 3,
+   "q": "A compound microscope has an objective of focal length 1 cm and an eyepiece of focal length 5 cm, 10 cm apart. For the final image at infinity (relaxed eye), the object must be placed from the objective at",
+   "o": [
+    "1.11 cm",
+    "1.5 cm",
+    "2 cm",
+    "1.25 cm"
+   ],
+   "a": 3,
+   "x": "Final image at infinity: the objective's image lies at the eyepiece focus, so v = 10 − 5 = 5 cm. 1/u = 1/5 − 1/1 gives u = −1.25 cm.",
+   "trap": "1.11 cm: taking the objective's image distance as the full 10 cm separation.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-142",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "Arranged in increasing order of size, the energy units are",
+   "o": [
+    "Erg, electron volt, joule, calorie",
+    "Electron volt, joule, erg, calorie",
+    "Electron volt, erg, joule, calorie",
+    "Electron volt, erg, calorie, joule"
+   ],
+   "a": 2,
+   "x": "1 eV = 1.6 × 10⁻¹⁹ J, 1 erg = 10⁻⁷ J, 1 cal ≈ 4.2 J. So eV < erg < J < cal.",
+   "trap": "Placing the calorie below the joule; 1 calorie is about 4.2 J.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-143",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "A steel measuring tape is correct at 30°C. Used at 10°C, it reads exactly 50.00 cm for a rod. The true length of the rod is",
+   "o": [
+    "Slightly more than 50.00 cm",
+    "Slightly less than 50.00 cm",
+    "Exactly 50.00 cm",
+    "Impossible to compare without the rod's α"
+   ],
+   "a": 1,
+   "x": "At 10°C the tape has contracted, so each marked centimetre is shorter than a true centimetre. 50 shrunken marks cover less than 50 true cm.",
+   "trap": "Thinking a contracted tape reads low; it actually reads high.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-144",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "An object moves towards a plane mirror with speed v along a line making angle θ with the normal. The speed of its image relative to the object is",
+   "o": [
+    "2v cos θ",
+    "2v sin θ",
+    "v cos θ",
+    "2v"
+   ],
+   "a": 0,
+   "x": "The component along the mirror (v sin θ) is the same for object and image; the normal component v cos θ is reversed. Relative velocity = 2v cos θ.",
+   "trap": "2v: doubling the full speed instead of only the normal component.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-145",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 2,
+   "q": "If the Earth began to spin faster about its axis, the weight of a body at the equator would",
+   "o": [
+    "Increase",
+    "Remain unchanged",
+    "Increase and then decrease",
+    "Decrease"
+   ],
+   "a": 3,
+   "x": "Effective g = g − ω²R cos²λ. At the equator (λ = 0) a larger ω takes more of g for the centripetal force, so the weight falls. At the poles it is unchanged.",
+   "trap": "Remain unchanged: true only at the poles.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-146",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 1,
+   "q": "The handle of a door is fixed at the edge farthest from the hinges so that",
+   "o": [
+    "A small torque produces a large force",
+    "The door gains more linear momentum",
+    "A small force produces a large torque",
+    "The door's moment of inertia is reduced"
+   ],
+   "a": 2,
+   "x": "Torque τ = r × F. The largest perpendicular distance r from the hinge axis gives the needed turning effect with the least force.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-147",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 1,
+   "q": "Two cars of masses M₁ and M₂ go round circular tracks of radii r₁ and r₂, each completing one round in the same time. The ratio of their angular speeds ω₁ : ω₂ is",
+   "o": [
+    "r₁ : r₂",
+    "1 : 1",
+    "r₂ : r₁",
+    "M₁ : M₂"
+   ],
+   "a": 1,
+   "x": "ω = 2π/T depends only on the time period. Equal periods give equal angular speeds, whatever the masses or radii.",
+   "trap": "r₁ : r₂ confuses angular speed with linear speed v = ωr.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-148",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 3,
+   "q": "A thin disc of radius R has a central hole of radius r. It rests flat on a liquid of surface tension T. The total surface tension force on it is",
+   "o": [
+    "2πT(R + r)",
+    "2πT(R − r)",
+    "2πRT",
+    "4πRT"
+   ],
+   "a": 0,
+   "x": "The liquid surface touches the disc along two edges: the outer rim (2πR) and the rim of the hole (2πr). F = T × total length = 2πT(R + r).",
+   "trap": "2πT(R − r): subtracting the hole's edge instead of adding it.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-149",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A boat of mass 1 × 10⁷ kg, initially at rest, is pushed by a constant net force of 5 × 10⁴ N through 4 m. Its speed then is",
+   "o": [
+    "0.04 m/s",
+    "0.4 m/s",
+    "2 m/s",
+    "0.2 m/s"
+   ],
+   "a": 3,
+   "x": "Work–energy theorem: Fs = ½mv², so v = √(2Fs/m) = √(2 × 5 × 10⁴ × 4/10⁷) = √0.04 = 0.2 m/s.",
+   "trap": "0.04 m/s is v², not v.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-150",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 1,
+   "q": "As the temperature of a liquid rises, its surface tension",
+   "o": [
+    "Increases",
+    "Stays the same",
+    "Decreases",
+    "Increases, then decreases"
+   ],
+   "a": 2,
+   "x": "Molecular cohesion weakens on heating, so surface tension falls, becoming zero at the critical temperature. Hot water cleans better for this reason.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-151",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 3,
+   "q": "At a depth d below the Earth's surface, g falls to one-third of its surface value. Taking the Earth's radius as R, d equals",
+   "o": [
+    "R/3",
+    "2R/3",
+    "3R/4",
+    "(√3 − 1)R"
+   ],
+   "a": 1,
+   "x": "Inside the Earth g_d = g(1 − d/R). Setting 1 − d/R = 1/3 gives d = 2R/3.",
+   "trap": "(√3 − 1)R is the height (not depth) where g becomes g/3.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-152",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 1,
+   "q": "The first law of thermodynamics, dQ = dU + dW, is a statement of the conservation of",
+   "o": [
+    "Energy",
+    "Mass",
+    "Momentum",
+    "Entropy"
+   ],
+   "a": 0,
+   "x": "Heat supplied goes partly into internal energy and partly into work done: no energy is created or lost.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-153",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "Three students measure g as 7.12, 7.13 and 7.12 m/s². These readings are",
+   "o": [
+    "Accurate and precise",
+    "Accurate but not precise",
+    "Neither accurate nor precise",
+    "Precise but not accurate"
+   ],
+   "a": 3,
+   "x": "The values agree closely with each other (precise) but are far from the true 9.8 m/s² (not accurate), pointing to a systematic error.",
+   "trap": "Close agreement among readings shows precision, not accuracy.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-154",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "A body of mass m moves on a string in a vertical circle of radius r. Its kinetic energy at the lowest point exceeds that at the highest point by",
+   "o": [
+    "mgr",
+    "4mgr",
+    "2mgr",
+    "½mgr"
+   ],
+   "a": 2,
+   "x": "Between top and bottom the body falls through the diameter 2r, so by energy conservation ΔKE = mg(2r) = 2mgr. Also v_bottom² − v_top² = 4gr.",
+   "trap": "4mgr: forgetting the ½ in ½m(v_bottom² − v_top²).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-155",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "When a metal disc is heated, its moment of inertia about its own axis",
+   "o": [
+    "Decreases",
+    "Increases",
+    "Stays the same",
+    "Becomes zero"
+   ],
+   "a": 1,
+   "x": "Expansion increases the radius while the mass stays the same, and I = ½MR², so I increases (and ω falls if it is spinning freely).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-156",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 3,
+   "q": "A particle in SHM of amplitude A and period T starts from the mean position. The least time to reach x = A/2 is",
+   "o": [
+    "T/12",
+    "T/6",
+    "T/8",
+    "T/4"
+   ],
+   "a": 0,
+   "x": "x = A sin(2πt/T). A/2 = A sin(2πt/T) gives 2πt/T = π/6, so t = T/12.",
+   "trap": "T/6 is the time from the extreme position to A/2.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-157",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 2,
+   "q": "When an observer moves towards a stationary source of sound in still air, the observed frequency rises because",
+   "o": [
+    "The wavelength of the sound decreases",
+    "The source vibrates faster",
+    "The speed of sound in air increases",
+    "The speed of the waves relative to the observer increases"
+   ],
+   "a": 3,
+   "x": "The wavelength is unchanged (the source is still). Moving towards it, the observer meets more wavefronts per second: f' = (v + v₀)/λ.",
+   "trap": "Wavelength changes only when the source moves.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-158",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "The width of a notebook is measured with a metre scale having millimetre divisions. The correctly recorded reading is",
+   "o": [
+    "21 cm",
+    "21.03 cm",
+    "21.0 cm",
+    "0.2 m"
+   ],
+   "a": 2,
+   "x": "Least count 1 mm = 0.1 cm, so the reading is recorded to one decimal place in cm. 21 cm drops a significant figure; 21.03 cm claims precision the scale lacks.",
+   "trap": "21 cm looks equal but hides the 0.1 cm precision.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-159",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 1,
+   "q": "For measuring temperatures below 1 K, the thermometer generally used is the",
+   "o": [
+    "Radiation pyrometer",
+    "Magnetic thermometer",
+    "Mercury-in-glass thermometer",
+    "Clinical thermometer"
+   ],
+   "a": 1,
+   "x": "A magnetic thermometer uses the susceptibility of a paramagnetic salt (Curie's law, χ ∝ 1/T), which works at very low temperatures. Pyrometers are for very high ones.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-160",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 1,
+   "q": "The dimensional formula of surface tension is",
+   "o": [
+    "[MT⁻²]",
+    "[MLT⁻²]",
+    "[ML⁻¹T⁻²]",
+    "[ML²T⁻²]"
+   ],
+   "a": 0,
+   "x": "Surface tension = force/length = [MLT⁻²]/[L] = [MT⁻²]. [ML⁻¹T⁻²] is pressure.",
+   "trap": "[ML⁻¹T⁻²] is the formula for pressure or stress.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-161",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "The product 2.5 × 1.25, written to the correct number of significant figures, is",
+   "o": [
+    "3.125",
+    "3.13",
+    "3",
+    "3.1"
+   ],
+   "a": 3,
+   "x": "In multiplication the answer keeps as many significant figures as the least precise factor: 2.5 has two, so 3.125 → 3.1.",
+   "trap": "3.13 keeps three figures, set by 1.25 instead of 2.5."
+  },
+  {
+   "id": "phyA-162",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 3,
+   "q": "In the relation F = ax + bt², F is force, x is displacement and t is time. The dimensions of a/b are",
+   "o": [
+    "[LT⁻²]",
+    "[MT⁻²]",
+    "[L⁻¹T²]",
+    "[L⁻¹T⁻²]"
+   ],
+   "a": 2,
+   "x": "a = F/x = [MT⁻²]; b = F/t² = [MLT⁻⁴]. a/b = [MT⁻²]/[MLT⁻⁴] = [L⁻¹T²].",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-163",
+   "topic": "phy-mechanics",
+   "s": "Physical quantities, vectors and scalars",
+   "d": 2,
+   "q": "Two forces of 5 N and 3 N act at a point in any directions. Their resultant can NOT be",
+   "o": [
+    "2 N",
+    "1 N",
+    "5 N",
+    "8 N"
+   ],
+   "a": 1,
+   "x": "The resultant lies between the difference and the sum: 5 − 3 = 2 N to 5 + 3 = 8 N. 1 N is outside this range.",
+   "trap": "2 N looks too small, but it is the minimum, with the forces opposite."
+  },
+  {
+   "id": "phyA-164",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 1,
+   "q": "The area under a velocity–time graph gives the",
+   "o": [
+    "Displacement",
+    "Acceleration",
+    "Velocity",
+    "Jerk"
+   ],
+   "a": 0,
+   "x": "Area = ∫v dt = displacement. The slope of the v–t graph gives acceleration.",
+   "trap": "Acceleration is the slope, not the area."
+  },
+  {
+   "id": "phyA-165",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A body starts from rest with a uniform acceleration of 2 m/s². The distance it covers in the 5th second is",
+   "o": [
+    "25 m",
+    "10 m",
+    "16 m",
+    "9 m"
+   ],
+   "a": 3,
+   "x": "sₙ = u + a(2n − 1)/2 = 0 + 2 × 9/2 = 9 m. (25 m is the total in 5 s; 16 m in 4 s.)",
+   "trap": "25 m is the distance covered in all five seconds."
+  },
+  {
+   "id": "phyA-166",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A projectile is launched at 45° to the horizontal. The ratio of its horizontal range to its maximum height is",
+   "o": [
+    "1 : 1",
+    "2 : 1",
+    "4 : 1",
+    "1 : 4"
+   ],
+   "a": 2,
+   "x": "R = u² sin 2θ/g = u²/g; H = u² sin²θ/2g = u²/4g. So R/H = 4. In general R = 4H/tan θ."
+  },
+  {
+   "id": "phyA-167",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 2,
+   "q": "A ball is projected at 20 m/s at 30° above the horizontal. Its time of flight is (g = 10 m/s²)",
+   "o": [
+    "4 s",
+    "2 s",
+    "1 s",
+    "3.5 s"
+   ],
+   "a": 1,
+   "x": "T = 2u sin θ/g = 2 × 20 × 0.5/10 = 2 s.",
+   "trap": "4 s uses u instead of u sin θ."
+  },
+  {
+   "id": "phyA-168",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 1,
+   "q": "Two trains move towards each other on parallel tracks at 54 km/h and 36 km/h. The speed of one relative to the other is",
+   "o": [
+    "25 m/s",
+    "5 m/s",
+    "15 m/s",
+    "90 m/s"
+   ],
+   "a": 0,
+   "x": "Moving towards each other, relative speed = 54 + 36 = 90 km/h = 90/3.6 = 25 m/s.",
+   "trap": "5 m/s subtracts the speeds, which applies to the same direction."
+  },
+  {
+   "id": "phyA-169",
+   "topic": "phy-mechanics",
+   "s": "Kinematics",
+   "d": 3,
+   "q": "A stone is dropped from rest from a height of 80 m. The time it takes to fall the last 35 m is (g = 10 m/s²)",
+   "o": [
+    "2 s",
+    "3 s",
+    "0.5 s",
+    "1 s"
+   ],
+   "a": 3,
+   "x": "Total time: 80 = 5t², t = 4 s. Time to fall the first 45 m: 45 = 5t², t = 3 s. Last 35 m takes 4 − 3 = 1 s."
+  },
+  {
+   "id": "phyA-170",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 1,
+   "q": "The area under a force–time graph gives the",
+   "o": [
+    "Work done",
+    "Power",
+    "Impulse (change in momentum)",
+    "Acceleration"
+   ],
+   "a": 2,
+   "x": "Impulse = ∫F dt = Δp. The area under a force–displacement graph would give work.",
+   "trap": "Work is the area under force–displacement, not force–time."
+  },
+  {
+   "id": "phyA-171",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 2,
+   "q": "A car moves at a steady 20 m/s against total resistive forces of 500 N. The power delivered by its engine is",
+   "o": [
+    "25 kW",
+    "10 kW",
+    "2.5 kW",
+    "1 kW"
+   ],
+   "a": 1,
+   "x": "At steady speed the driving force equals the resistance. P = Fv = 500 × 20 = 10 000 W = 10 kW."
+  },
+  {
+   "id": "phyA-172",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 3,
+   "q": "A 10 kg block on a rough horizontal floor (μ_k = 0.2) is pulled by a horizontal force of 50 N. Its acceleration is (g = 10 m/s²)",
+   "o": [
+    "3 m/s²",
+    "5 m/s²",
+    "2 m/s²",
+    "7 m/s²"
+   ],
+   "a": 0,
+   "x": "Friction = μmg = 0.2 × 10 × 10 = 20 N. Net force 50 − 20 = 30 N, a = 30/10 = 3 m/s².",
+   "trap": "5 m/s² ignores friction."
+  },
+  {
+   "id": "phyA-173",
+   "topic": "phy-mechanics",
+   "s": "Dynamics",
+   "d": 3,
+   "q": "A bomb of mass 3 kg at rest explodes into two pieces of 1 kg and 2 kg. The 1 kg piece moves at 20 m/s. The total kinetic energy produced is",
+   "o": [
+    "200 J",
+    "400 J",
+    "600 J",
+    "300 J"
+   ],
+   "a": 3,
+   "x": "Momentum: 1 × 20 = 2v, v = 10 m/s. KE = ½ × 1 × 20² + ½ × 2 × 10² = 200 + 100 = 300 J.",
+   "trap": "200 J counts only the lighter piece."
+  },
+  {
+   "id": "phyA-174",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 1,
+   "q": "The moment of inertia of a rigid body does NOT depend on its",
+   "o": [
+    "Mass",
+    "Distribution of mass about the axis",
+    "Angular velocity",
+    "Position of the axis of rotation"
+   ],
+   "a": 2,
+   "x": "I = Σmr² depends on the mass and how far it lies from the chosen axis, not on how fast the body turns."
+  },
+  {
+   "id": "phyA-175",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 1,
+   "q": "In rotational motion, the quantity that plays the role that mass plays in linear motion is",
+   "o": [
+    "Torque",
+    "Moment of inertia",
+    "Angular momentum",
+    "Angular velocity"
+   ],
+   "a": 1,
+   "x": "Moment of inertia measures resistance to change in rotational motion, as mass measures resistance to change in linear motion (τ = Iα vs F = ma).",
+   "trap": "Torque is the analogue of force, not mass."
+  },
+  {
+   "id": "phyA-176",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 2,
+   "q": "The ratio of the moment of inertia of a uniform rod about a perpendicular axis through one end to that about a parallel axis through its centre is",
+   "o": [
+    "4 : 1",
+    "2 : 1",
+    "3 : 1",
+    "1 : 4"
+   ],
+   "a": 0,
+   "x": "I_end = ML²/3 and I_centre = ML²/12. Ratio = (1/3)/(1/12) = 4."
+  },
+  {
+   "id": "phyA-177",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 3,
+   "q": "A uniform rod of mass 3 kg and length 2 m is free to turn about a perpendicular axis through its centre. A torque of 2 N m gives it an angular acceleration of",
+   "o": [
+    "0.5 rad/s²",
+    "6 rad/s²",
+    "1 rad/s²",
+    "2 rad/s²"
+   ],
+   "a": 3,
+   "x": "I = ML²/12 = 3 × 4/12 = 1 kg m². α = τ/I = 2/1 = 2 rad/s².",
+   "trap": "0.5 rad/s² uses I = ML²/3 about the end."
+  },
+  {
+   "id": "phyA-178",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 2,
+   "q": "A constant torque of 5 N m turns a wheel through 2 complete revolutions. The work done by the torque is about",
+   "o": [
+    "10 J",
+    "31.4 J",
+    "62.8 J",
+    "20 J"
+   ],
+   "a": 2,
+   "x": "W = τθ with θ in radians: 2 revolutions = 4π rad. W = 5 × 4π ≈ 62.8 J.",
+   "trap": "10 J uses θ = 2 instead of 4π radians."
+  },
+  {
+   "id": "phyA-179",
+   "topic": "phy-mechanics",
+   "s": "Rotational dynamics",
+   "d": 3,
+   "q": "If the Earth contracted to half its present radius with no change in mass, the length of a day would become",
+   "o": [
+    "12 hours",
+    "6 hours",
+    "48 hours",
+    "96 hours"
+   ],
+   "a": 1,
+   "x": "Angular momentum Iω is conserved and I ∝ R². Halving R makes I one-fourth, so ω becomes 4 times and the day 24/4 = 6 h.",
+   "trap": "12 hours takes I ∝ R instead of R²."
+  },
+  {
+   "id": "phyA-180",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 1,
+   "q": "The orbital speed of a satellite moving just above the Earth's surface is about",
+   "o": [
+    "7.9 km/s",
+    "11.2 km/s",
+    "3.1 km/s",
+    "1.6 km/s"
+   ],
+   "a": 0,
+   "x": "v₀ = √(gR) = √(9.8 × 6.4 × 10⁶) ≈ 7.9 km/s. 11.2 km/s (√2 times larger) is the escape velocity.",
+   "trap": "11.2 km/s is the escape velocity."
+  },
+  {
+   "id": "phyA-181",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 2,
+   "q": "Taking the gravitational potential energy as zero at infinity, a mass m at a height equal to the Earth's radius R above the surface has potential energy",
+   "o": [
+    "−GMm/R",
+    "+GMm/2R",
+    "−GMm/4R",
+    "−GMm/2R"
+   ],
+   "a": 3,
+   "x": "U = −GMm/r with r measured from the Earth's centre: r = R + R = 2R, so U = −GMm/2R.",
+   "trap": "−GMm/4R uses r² as for force or field."
+  },
+  {
+   "id": "phyA-182",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 1,
+   "q": "The period of revolution of a geostationary satellite is",
+   "o": [
+    "12 hours",
+    "1 hour",
+    "24 hours",
+    "27 days"
+   ],
+   "a": 2,
+   "x": "It turns with the Earth, west to east in the equatorial plane, so it stays above one point; its period equals the Earth's rotation period."
+  },
+  {
+   "id": "phyA-183",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 2,
+   "q": "An astronaut inside a satellite orbiting the Earth feels weightless because",
+   "o": [
+    "There is no gravity at that height",
+    "Both the astronaut and the satellite are falling freely with the same acceleration",
+    "The Moon's pull cancels the Earth's pull",
+    "The satellite is outside the atmosphere"
+   ],
+   "a": 1,
+   "x": "Gravity there is still strong (g only slightly less). Both fall towards the Earth with the same acceleration, so the floor pushes nothing on the astronaut.",
+   "trap": "Gravity does not vanish at orbital height; g is still about 90% of its surface value in low orbit."
+  },
+  {
+   "id": "phyA-184",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 2,
+   "q": "A planet has twice the mass and twice the radius of the Earth. The acceleration due to gravity on its surface is (g = Earth's value)",
+   "o": [
+    "g/2",
+    "g",
+    "2g",
+    "g/4"
+   ],
+   "a": 0,
+   "x": "g = GM/R². Mass ×2, R² ×4: g' = 2/4 × g = g/2.",
+   "trap": "g forgets that the radius enters squared."
+  },
+  {
+   "id": "phyA-185",
+   "topic": "phy-mechanics",
+   "s": "Gravity",
+   "d": 1,
+   "q": "The acceleration due to gravity at the centre of the Earth is",
+   "o": [
+    "Maximum",
+    "Equal to its surface value",
+    "Infinite",
+    "Zero"
+   ],
+   "a": 3,
+   "x": "At depth d, g' = g(1 − d/R). At the centre d = R, so g' = 0: the pulls of the surrounding mass cancel.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-186",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 1,
+   "q": "A body moves in a circle of radius 5 m at a steady speed of 10 m/s. Its centripetal acceleration is",
+   "o": [
+    "2 m/s²",
+    "50 m/s²",
+    "20 m/s²",
+    "0"
+   ],
+   "a": 2,
+   "x": "a = v²/r = 100/5 = 20 m/s², directed towards the centre.",
+   "trap": "0: the speed is constant, but the direction keeps changing."
+  },
+  {
+   "id": "phyA-187",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "A curved road of radius 40 m is to be banked so that a car at 20 m/s needs no friction. The angle of banking is (g = 10 m/s²)",
+   "o": [
+    "30°",
+    "45°",
+    "60°",
+    "15°"
+   ],
+   "a": 1,
+   "x": "tan θ = v²/rg = 400/(40 × 10) = 1, so θ = 45°."
+  },
+  {
+   "id": "phyA-188",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 2,
+   "q": "A 0.5 kg stone on a string moves in a vertical circle of radius 1 m. At the lowest point its speed is 4 m/s. The tension in the string there is (g = 10 m/s²)",
+   "o": [
+    "13 N",
+    "8 N",
+    "3 N",
+    "5 N"
+   ],
+   "a": 0,
+   "x": "At the bottom T − mg = mv²/r: T = 0.5 × 10 + 0.5 × 16/1 = 5 + 8 = 13 N.",
+   "trap": "3 N subtracts the weight; at the bottom gravity adds to the needed tension."
+  },
+  {
+   "id": "phyA-189",
+   "topic": "phy-mechanics",
+   "s": "Circular and periodic motion",
+   "d": 3,
+   "q": "A particle executes SHM of amplitude A. When its displacement is A/2, the fraction of its total energy that is kinetic is",
+   "o": [
+    "1/2",
+    "1/4",
+    "1/3",
+    "3/4"
+   ],
+   "a": 3,
+   "x": "PE = ½kx² = ¼ of ½kA² at x = A/2. KE = 1 − ¼ = ¾ of the total.",
+   "trap": "1/4 is the potential energy fraction."
+  },
+  {
+   "id": "phyA-190",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 1,
+   "q": "The hydraulic lift and hydraulic brakes work on",
+   "o": [
+    "Bernoulli's theorem",
+    "Stokes' law",
+    "Pascal's law",
+    "Archimedes' principle"
+   ],
+   "a": 2,
+   "x": "Pressure applied to an enclosed liquid is passed equally to all parts, so a small force on a small piston gives a large force on a large piston."
+  },
+  {
+   "id": "phyA-191",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 1,
+   "q": "The pressure due to water alone at a depth of 10 m in a lake is (ρ = 1000 kg/m³, g = 10 m/s²)",
+   "o": [
+    "1 × 10⁴ Pa",
+    "1 × 10⁵ Pa",
+    "1 × 10³ Pa",
+    "2 × 10⁵ Pa"
+   ],
+   "a": 1,
+   "x": "P = hρg = 10 × 1000 × 10 = 10⁵ Pa, about one atmosphere. Adding the air above gives about 2 × 10⁵ Pa in total.",
+   "trap": "2 × 10⁵ Pa adds atmospheric pressure; the question asks for water alone."
+  },
+  {
+   "id": "phyA-192",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 1,
+   "q": "The excess pressure inside a small liquid drop of radius r and surface tension T is",
+   "o": [
+    "2T/r",
+    "4T/r",
+    "T/r",
+    "T/2r"
+   ],
+   "a": 0,
+   "x": "A drop has one free surface: ΔP = 2T/r. A soap bubble has two surfaces, giving 4T/r.",
+   "trap": "4T/r is for a soap bubble with two surfaces."
+  },
+  {
+   "id": "phyA-193",
+   "topic": "phy-mechanics",
+   "s": "Fluid statics and dynamics",
+   "d": 3,
+   "q": "A glass capillary tube is dipped in water inside a satellite in orbit (weightless). The water",
+   "o": [
+    "Does not rise at all",
+    "Rises to the same height as on Earth",
+    "Overflows from the top as a fountain",
+    "Rises to the top of the tube without overflowing"
+   ],
+   "a": 3,
+   "x": "With g effectively zero, nothing limits the rise (h ∝ 1/g), so water climbs to the end. There the meniscus adjusts its curvature, so it does not overflow.",
+   "trap": "Overflow never happens: the meniscus flattens at the top."
+  },
+  {
+   "id": "phyA-194",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 1,
+   "q": "Stress has the same dimensions as",
+   "o": [
+    "Force",
+    "Strain",
+    "Pressure",
+    "Work"
+   ],
+   "a": 2,
+   "x": "Stress = force/area, which is also the definition of pressure: [ML⁻¹T⁻²]. Strain is dimensionless."
+  },
+  {
+   "id": "phyA-195",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 1,
+   "q": "The only modulus of elasticity that liquids and gases possess is the",
+   "o": [
+    "Young's modulus",
+    "Bulk modulus",
+    "Modulus of rigidity",
+    "Poisson's ratio"
+   ],
+   "a": 1,
+   "x": "Fluids cannot keep a fixed shape or length, so they have no Young's or shear modulus, but they resist compression."
+  },
+  {
+   "id": "phyA-196",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 1,
+   "q": "Poisson's ratio has",
+   "o": [
+    "No unit and no dimensions",
+    "The unit N/m²",
+    "The unit N/m",
+    "The dimensions of stress"
+   ],
+   "a": 0,
+   "x": "It is lateral strain ÷ longitudinal strain, a ratio of two pure numbers."
+  },
+  {
+   "id": "phyA-197",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 2,
+   "q": "A wire stretches by 2 mm when a load of 100 N hangs from it. The elastic potential energy stored in it is",
+   "o": [
+    "0.2 J",
+    "200 J",
+    "0.05 J",
+    "0.1 J"
+   ],
+   "a": 3,
+   "x": "U = ½ × F × extension = ½ × 100 × 0.002 = 0.1 J.",
+   "trap": "0.2 J forgets the ½."
+  },
+  {
+   "id": "phyA-198",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 2,
+   "q": "A wire can bear a maximum load W before breaking. Another wire of the same material with twice the radius can bear",
+   "o": [
+    "2W",
+    "W",
+    "4W",
+    "W/2"
+   ],
+   "a": 2,
+   "x": "Breaking stress is a property of the material. Breaking load = stress × area, and area ∝ r², so it becomes 4W.",
+   "trap": "2W takes area ∝ r."
+  },
+  {
+   "id": "phyA-199",
+   "topic": "phy-mechanics",
+   "s": "Elasticity",
+   "d": 3,
+   "q": "A wire of cross-section 1 mm² and Young's modulus 2 × 10¹¹ N/m² carries a load of 200 N. The longitudinal strain is",
+   "o": [
+    "1 × 10⁻⁵",
+    "1 × 10⁻³",
+    "2 × 10⁻³",
+    "1 × 10⁻⁶"
+   ],
+   "a": 1,
+   "x": "Stress = 200/10⁻⁶ = 2 × 10⁸ N/m². Strain = stress/Y = 2 × 10⁸/2 × 10¹¹ = 10⁻³.",
+   "trap": "1 × 10⁻⁵ forgets to convert mm² to m².",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-200",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 1,
+   "q": "Mechanical transverse waves can NOT travel through",
+   "o": [
+    "Gases",
+    "Solids",
+    "Stretched strings",
+    "The surface of water"
+   ],
+   "a": 0,
+   "x": "Transverse waves need a restoring force against shear (rigidity). Gases have none, so sound in air is longitudinal only."
+  },
+  {
+   "id": "phyA-201",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 3,
+   "q": "The speed of sound in air at 0 °C is v. It becomes 2v at",
+   "o": [
+    "273 °C",
+    "546 °C",
+    "1092 °C",
+    "819 °C"
+   ],
+   "a": 3,
+   "x": "v ∝ √T. For 2v, T must be 4 × 273 = 1092 K = 819 °C.",
+   "trap": "1092 is the answer in kelvin, not °C.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-202",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 2,
+   "q": "A sound wave of frequency 500 Hz travels at 350 m/s. Two points 35 cm apart along its path differ in phase by",
+   "o": [
+    "π/2",
+    "2π",
+    "π",
+    "π/4"
+   ],
+   "a": 2,
+   "x": "λ = v/f = 350/500 = 0.7 m. Δφ = 2πΔx/λ = 2π × 0.35/0.7 = π.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-203",
+   "topic": "phy-waves-optics",
+   "s": "Wave motion",
+   "d": 2,
+   "q": "At the same temperature and pressure, sound travels slightly faster in humid air than in dry air because humid air",
+   "o": [
+    "Has a higher density",
+    "Has a lower density",
+    "Has a higher pressure",
+    "Has a lower temperature"
+   ],
+   "a": 1,
+   "x": "Water vapour (M = 18) is lighter than air (M ≈ 29), so humid air is less dense and v = √(γP/ρ) rises.",
+   "trap": "Many think moist air is heavier; water vapour is lighter than dry air."
+  },
+  {
+   "id": "phyA-204",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 1,
+   "q": "In a stationary wave, the distance between a node and the next antinode is",
+   "o": [
+    "λ/4",
+    "λ/2",
+    "λ",
+    "2λ"
+   ],
+   "a": 0,
+   "x": "Nodes are λ/2 apart and antinodes lie midway between them, so node to antinode is λ/4.",
+   "trap": "λ/2 is node to node."
+  },
+  {
+   "id": "phyA-205",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 1,
+   "q": "The frequencies of the first three harmonics of a pipe open at both ends are in the ratio",
+   "o": [
+    "1 : 3 : 5",
+    "1 : 4 : 9",
+    "1 : 2 : 4",
+    "1 : 2 : 3"
+   ],
+   "a": 3,
+   "x": "An open pipe gives all harmonics: f, 2f, 3f. A closed pipe gives only odd ones: 1 : 3 : 5.",
+   "trap": "1 : 3 : 5 is for a pipe closed at one end."
+  },
+  {
+   "id": "phyA-206",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 2,
+   "q": "A string 0.5 m long, fixed at both ends, carries transverse waves at 200 m/s. Its fundamental frequency is",
+   "o": [
+    "400 Hz",
+    "100 Hz",
+    "200 Hz",
+    "50 Hz"
+   ],
+   "a": 2,
+   "x": "In the fundamental, L = λ/2, so λ = 1 m and f = v/λ = 200 Hz.",
+   "trap": "400 Hz takes λ = L."
+  },
+  {
+   "id": "phyA-207",
+   "topic": "phy-waves-optics",
+   "s": "Stationary waves",
+   "d": 3,
+   "q": "A pipe closed at one end has length L. An open pipe with the same fundamental frequency must have length",
+   "o": [
+    "L",
+    "2L",
+    "L/2",
+    "4L"
+   ],
+   "a": 1,
+   "x": "Closed: f = v/4L. Open: f = v/2L′. Equal when 2L′ = 4L, so L′ = 2L.",
+   "trap": "L/2 inverts the relation."
+  },
+  {
+   "id": "phyA-208",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 2,
+   "q": "The intensity of a sound is 10⁻⁶ W/m². Taking the threshold intensity as 10⁻¹² W/m², its intensity level is",
+   "o": [
+    "60 dB",
+    "6 dB",
+    "106 dB",
+    "600 dB"
+   ],
+   "a": 0,
+   "x": "β = 10 log(I/I₀) = 10 log(10⁶) = 60 dB.",
+   "trap": "6 dB forgets the factor 10 (that is in bels)."
+  },
+  {
+   "id": "phyA-209",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 1,
+   "q": "The distance from a small source of sound is doubled. The intensity of the sound becomes",
+   "o": [
+    "Half",
+    "Double",
+    "Unchanged",
+    "One-fourth"
+   ],
+   "a": 3,
+   "x": "A point source spreads its power over 4πr², so I ∝ 1/r².",
+   "trap": "Half takes I ∝ 1/r."
+  },
+  {
+   "id": "phyA-210",
+   "topic": "phy-waves-optics",
+   "s": "Acoustic phenomena",
+   "d": 2,
+   "q": "A 500 Hz source moves away from a stationary observer at 30 m/s. The frequency heard is about (speed of sound 330 m/s)",
+   "o": [
+    "550 Hz",
+    "545 Hz",
+    "458 Hz",
+    "455 Hz"
+   ],
+   "a": 2,
+   "x": "Source receding: f′ = f v/(v + v_s) = 500 × 330/360 ≈ 458 Hz.",
+   "trap": "550 Hz uses the formula for an approaching source.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyA-211",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 3,
+   "q": "An object is placed 20 cm in front of a convex mirror of focal length 20 cm. The image is",
+   "o": [
+    "Real, 10 cm in front, half the size",
+    "Virtual, 10 cm behind the mirror, half the size",
+    "Virtual, 20 cm behind, same size",
+    "At infinity"
+   ],
+   "a": 1,
+   "x": "Real-is-positive: f = −20 cm (convex), u = +20 cm. 1/v = 1/f − 1/u = −1/20 − 1/20 = −1/10, so v = −10 cm (virtual, behind). m = −v/u = ½.",
+   "trap": "At infinity applies to an object at the focus of a concave mirror."
+  },
+  {
+   "id": "phyA-212",
+   "topic": "phy-waves-optics",
+   "s": "Reflection, refraction and dispersion",
+   "d": 2,
+   "q": "A prism of angle 60° gives a minimum deviation of 30°. Its refractive index is",
+   "o": [
+    "√2",
+    "√3",
+    "1.5",
+    "2"
+   ],
+   "a": 0,
+   "x": "n = sin((A + δm)/2)/sin(A/2) = sin 45°/sin 30° = 0.707/0.5 = √2."
+  },
+  {
+   "id": "phyA-213",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 1,
+   "q": "The interference of light gives evidence for its",
+   "o": [
+    "Particle nature",
+    "Transverse nature",
+    "Electromagnetic nature only",
+    "Wave nature"
+   ],
+   "a": 3,
+   "x": "Only waves can add to give bright and dark fringes. Transverse nature is shown by polarisation, not interference.",
+   "trap": "Polarisation, not interference, shows light is transverse."
+  },
+  {
+   "id": "phyA-214",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 1,
+   "q": "In Young's double-slit experiment, at the centre of the third bright fringe (not counting the central one) the path difference is",
+   "o": [
+    "3λ/2",
+    "5λ/2",
+    "3λ",
+    "6λ"
+   ],
+   "a": 2,
+   "x": "Bright fringes occur where path difference = nλ. For n = 3 it is 3λ. Odd multiples of λ/2 give dark fringes.",
+   "trap": "5λ/2 is the condition for the third dark fringe."
+  },
+  {
+   "id": "phyA-215",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 2,
+   "q": "In Young's experiment, λ = 500 nm, slit separation 0.5 mm and screen distance 1 m. The distance of the second bright fringe from the centre is",
+   "o": [
+    "1 mm",
+    "2 mm",
+    "0.5 mm",
+    "4 mm"
+   ],
+   "a": 1,
+   "x": "y = nλD/d = 2 × 500 × 10⁻⁹ × 1/(0.5 × 10⁻³) = 2 × 10⁻³ m = 2 mm.",
+   "trap": "1 mm is one fringe width."
+  },
+  {
+   "id": "phyA-216",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 2,
+   "q": "If white light is used in Young's double-slit experiment, the central fringe is",
+   "o": [
+    "White, with coloured fringes on both sides",
+    "Dark",
+    "Violet",
+    "Red"
+   ],
+   "a": 0,
+   "x": "At the centre the path difference is zero for every colour, so all colours are bright together and give white. Elsewhere fringes of different λ separate."
+  },
+  {
+   "id": "phyA-217",
+   "topic": "phy-waves-optics",
+   "s": "Interference",
+   "d": 2,
+   "q": "In Young's experiment the fringe width is 0.6 mm with light of 600 nm. Using 400 nm light, everything else unchanged, the fringe width becomes",
+   "o": [
+    "0.9 mm",
+    "0.6 mm",
+    "0.27 mm",
+    "0.4 mm"
+   ],
+   "a": 3,
+   "x": "β = λD/d ∝ λ. β′ = 0.6 × 400/600 = 0.4 mm.",
+   "trap": "0.9 mm uses the inverse ratio.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-218",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 1,
+   "q": "We can hear a person talking round the corner of a building but cannot see them, mainly because",
+   "o": [
+    "Sound travels faster than light",
+    "Light is a transverse wave",
+    "Sound wavelengths are comparable to the size of the obstacle, light wavelengths are far smaller",
+    "Sound is reflected but light is not"
+   ],
+   "a": 2,
+   "x": "Diffraction is noticeable when the obstacle is comparable to the wavelength: sound ≈ 1 m, light ≈ 5 × 10⁻⁷ m.",
+   "trap": "Sound is far slower than light, not faster."
+  },
+  {
+   "id": "phyA-219",
+   "topic": "phy-waves-optics",
+   "s": "Diffraction and polarization",
+   "d": 2,
+   "q": "The Brewster (polarising) angle for light reflected from water of refractive index 1.33 is about",
+   "o": [
+    "37°",
+    "53°",
+    "45°",
+    "60°"
+   ],
+   "a": 1,
+   "x": "tan θp = n = 1.33, so θp ≈ 53°. The refracted ray then travels at 90° − 53° = 37° to the normal.",
+   "trap": "37° is the angle of refraction at Brewster incidence."
+  },
+  {
+   "id": "phyA-220",
+   "topic": "phy-heat",
+   "s": "Heat flow and thermometers",
+   "d": 2,
+   "q": "A copper rod (k = 400 W/m K) of length 0.5 m and cross-section 1 cm² has its ends at 100 °C and 0 °C. In steady state the rate of heat flow is",
+   "o": [
+    "8 W",
+    "80 W",
+    "0.8 W",
+    "800 W"
+   ],
+   "a": 0,
+   "x": "H = kAΔT/L = 400 × 10⁻⁴ × 100/0.5 = 8 W.",
+   "trap": "80 W forgets 1 cm² = 10⁻⁴ m², not 10⁻³ m²."
+  },
+  {
+   "id": "phyA-221",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 1,
+   "q": "If α is the coefficient of linear expansion, the coefficient of superficial (area) expansion of the solid is",
+   "o": [
+    "α",
+    "3α",
+    "α²",
+    "2α"
+   ],
+   "a": 3,
+   "x": "Area involves two lengths: β = 2α. Volume involves three: γ = 3α.",
+   "trap": "3α is the cubical coefficient."
+  },
+  {
+   "id": "phyA-222",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "A bimetallic strip of brass and iron (α_brass > α_iron) is heated. It bends with",
+   "o": [
+    "Iron on the outer (convex) side",
+    "Neither side, it stays straight",
+    "Brass on the outer (convex) side",
+    "Brass on the inner side, then straightens"
+   ],
+   "a": 2,
+   "x": "Brass expands more, so it becomes the longer, outer side of the curve. This is used in thermostats and fire alarms."
+  },
+  {
+   "id": "phyA-223",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 2,
+   "q": "1 L of a liquid with coefficient of cubical expansion 1 × 10⁻³ /°C is warmed by 50 °C. Its volume increases by about",
+   "o": [
+    "5 mL",
+    "50 mL",
+    "500 mL",
+    "150 mL"
+   ],
+   "a": 1,
+   "x": "ΔV = Vγ Δθ = 1000 mL × 10⁻³ × 50 = 50 mL.",
+   "trap": "150 mL multiplies by 3, but γ is already the cubical coefficient."
+  },
+  {
+   "id": "phyA-224",
+   "topic": "phy-heat",
+   "s": "Thermal expansion",
+   "d": 3,
+   "q": "A pendulum clock with a metal pendulum rod keeps correct time at 20 °C. On a hot day it",
+   "o": [
+    "Loses time, because the pendulum lengthens and its period increases",
+    "Gains time, because the pendulum lengthens",
+    "Gains time, because the period decreases",
+    "Keeps correct time, because g is unchanged"
+   ],
+   "a": 0,
+   "x": "T = 2π√(l/g). Expansion lengthens l, so each swing takes longer and the clock runs slow (loses time).",
+   "trap": "A longer period means fewer ticks per hour: the clock loses."
+  },
+  {
+   "id": "phyA-225",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "Water is used as the coolant in car radiators mainly because it has a",
+   "o": [
+    "Low boiling point",
+    "High density",
+    "Low specific heat capacity",
+    "High specific heat capacity"
+   ],
+   "a": 3,
+   "x": "High c means each kilogram absorbs a lot of heat for a small rise in temperature."
+  },
+  {
+   "id": "phyA-226",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "The heat released when 5 g of steam at 100 °C condenses to water at 100 °C is (latent heat of vaporisation = 2260 J/g)",
+   "o": [
+    "452 J",
+    "2260 J",
+    "11 300 J",
+    "1680 J"
+   ],
+   "a": 2,
+   "x": "Q = mL = 5 × 2260 = 11 300 J; temperature does not change during condensation."
+  },
+  {
+   "id": "phyA-227",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 3,
+   "q": "The heat needed to change 10 g of ice at −10 °C into water at 0 °C is (c_ice = 2.1 J/g °C, L = 336 J/g)",
+   "o": [
+    "3360 J",
+    "3570 J",
+    "210 J",
+    "3780 J"
+   ],
+   "a": 1,
+   "x": "Warm the ice: 10 × 2.1 × 10 = 210 J. Melt it: 10 × 336 = 3360 J. Total 3570 J.",
+   "trap": "3360 J forgets to warm the ice to 0 °C first."
+  },
+  {
+   "id": "phyA-228",
+   "topic": "phy-heat",
+   "s": "Quantity of heat",
+   "d": 1,
+   "q": "Water boils below 100 °C at the top of a high mountain because",
+   "o": [
+    "The atmospheric pressure there is lower",
+    "The air there is colder",
+    "Gravity there is weaker",
+    "The air there has less oxygen"
+   ],
+   "a": 0,
+   "x": "Water boils when its vapour pressure equals the outside pressure. Lower pressure is reached at a lower temperature.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-229",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 1,
+   "q": "Boltzmann's constant k is related to the gas constant R and Avogadro's number N_A by",
+   "o": [
+    "k = RN_A",
+    "k = N_A/R",
+    "k = R + N_A",
+    "k = R/N_A"
+   ],
+   "a": 3,
+   "x": "k is the gas constant per molecule: 8.31/(6.02 × 10²³) ≈ 1.38 × 10⁻²³ J/K."
+  },
+  {
+   "id": "phyA-230",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 2,
+   "q": "2 mol of an ideal gas at 300 K occupy 0.0249 m³. Its pressure is (R = 8.3 J/mol K)",
+   "o": [
+    "1 × 10⁵ Pa",
+    "4 × 10⁵ Pa",
+    "2 × 10⁵ Pa",
+    "2 × 10³ Pa"
+   ],
+   "a": 2,
+   "x": "P = nRT/V = 2 × 8.3 × 300/0.0249 = 2 × 10⁵ Pa.",
+   "trap": "1 × 10⁵ Pa forgets n = 2."
+  },
+  {
+   "id": "phyA-231",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 1,
+   "q": "For a diatomic ideal gas at room temperature, γ = Cp/Cv is",
+   "o": [
+    "5/3",
+    "7/5",
+    "4/3",
+    "9/7"
+   ],
+   "a": 1,
+   "x": "Five degrees of freedom: Cv = 5R/2, Cp = 7R/2, γ = 1.4. 5/3 is for a monatomic gas.",
+   "trap": "5/3 is the monatomic value."
+  },
+  {
+   "id": "phyA-232",
+   "topic": "phy-heat",
+   "s": "Ideal gas",
+   "d": 2,
+   "q": "At constant temperature, the volume of a gas is reduced by 20%. Its pressure increases by",
+   "o": [
+    "25%",
+    "20%",
+    "80%",
+    "16%"
+   ],
+   "a": 0,
+   "x": "Boyle: P₁V₁ = P₂(0.8V₁), so P₂ = 1.25P₁, an increase of 25%.",
+   "trap": "20% assumes the changes are equal and opposite.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyA-233",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 1,
+   "q": "When an ideal gas is heated at constant volume, all the heat supplied",
+   "o": [
+    "Does external work",
+    "Is lost to the surroundings",
+    "Is shared equally between work and internal energy",
+    "Increases its internal energy"
+   ],
+   "a": 3,
+   "x": "dW = PdV = 0 at constant volume, so by the first law dQ = dU."
+  },
+  {
+   "id": "phyA-234",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 3,
+   "q": "One mole of an ideal gas at 300 K expands isothermally to twice its volume. The work done by the gas is about (R = 8.31 J/mol K, ln 2 = 0.693)",
+   "o": [
+    "2493 J",
+    "831 J",
+    "1728 J",
+    "3456 J"
+   ],
+   "a": 2,
+   "x": "W = nRT ln(V₂/V₁) = 1 × 8.31 × 300 × 0.693 ≈ 1728 J.",
+   "trap": "2493 J is nRT, forgetting the ln 2."
+  },
+  {
+   "id": "phyA-235",
+   "topic": "phy-heat",
+   "s": "First law of thermodynamics",
+   "d": 3,
+   "q": "Heat is supplied to a monatomic ideal gas at constant pressure. The fraction of this heat used in doing external work is",
+   "o": [
+    "3/5",
+    "2/5",
+    "2/3",
+    "1"
+   ],
+   "a": 1,
+   "x": "Q = nCpΔT = (5/2)nRΔT; W = PΔV = nRΔT. W/Q = 1/(5/2) = 2/5. The other 3/5 raises the internal energy.",
+   "trap": "3/5 is the fraction going into internal energy."
+  },
+  {
+   "id": "phyA-236",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 1,
+   "q": "The Clausius statement of the second law of thermodynamics says that",
+   "o": [
+    "Heat cannot by itself flow from a colder body to a hotter one",
+    "Energy can be neither created nor destroyed",
+    "Two bodies in equilibrium with a third are in equilibrium with each other",
+    "The entropy of a perfect crystal at 0 K is zero"
+   ],
+   "a": 0,
+   "x": "A refrigerator moves heat from cold to hot only because external work is supplied. The other options are the first, zeroth and third laws."
+  },
+  {
+   "id": "phyA-237",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 1,
+   "q": "The efficiency of a Carnot engine depends on",
+   "o": [
+    "The working substance used",
+    "The size of the engine",
+    "The amount of heat supplied",
+    "Only the temperatures of the source and the sink"
+   ],
+   "a": 3,
+   "x": "η = 1 − T₂/T₁. Any reversible engine between the same two temperatures has the same efficiency, whatever the working substance."
+  },
+  {
+   "id": "phyA-238",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 2,
+   "q": "A heat engine of efficiency 40% absorbs 500 J of heat from its source in each cycle. The heat it rejects to the sink per cycle is",
+   "o": [
+    "200 J",
+    "500 J",
+    "300 J",
+    "100 J"
+   ],
+   "a": 2,
+   "x": "Work = 0.4 × 500 = 200 J. Heat rejected = 500 − 200 = 300 J.",
+   "trap": "200 J is the work done, not the heat rejected."
+  },
+  {
+   "id": "phyA-239",
+   "topic": "phy-heat",
+   "s": "Second law of thermodynamics",
+   "d": 2,
+   "q": "A refrigerator takes 300 J of heat from its cold interior using 100 J of electrical work. The heat it gives out to the room is",
+   "o": [
+    "200 J",
+    "400 J",
+    "300 J",
+    "100 J"
+   ],
+   "a": 1,
+   "x": "Energy conservation: heat to room = heat taken + work done = 300 + 100 = 400 J. Its COP is 300/100 = 3.",
+   "trap": "300 J forgets that the work also ends up as heat in the room."
+  }
+ ]
+}

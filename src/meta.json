@@ -1,0 +1,114 @@
+{
+  "examDate": "2026-10-31",
+  "neg": 0.25,
+  "facts": [
+    {
+      "k": "Exam name",
+      "v": "Medical Education Common Entrance Examination – Bachelor Level (MECEE-BL), run by the Medical Education Commission (MEC).",
+      "url": "https://mec.gov.np/en/syllabus"
+    },
+    {
+      "k": "Date",
+      "v": "MBBS: Saturday 31 Oct 2026 (Kartik 14, 2083), 11:00 to 14:00. BDS: 1 Nov. Admit cards on entrance.mec.gov.np.",
+      "url": "https://edusanjal.com/admission/medical-education-common-entrance-examination-bachelor-level-programs-mecee-bl-/"
+    },
+    {
+      "k": "Paper",
+      "v": "200 single-best-answer MCQs, 4 options, 3 hours, OMR sheet. Physics 50, Chemistry 50, Zoology 40, Botany 40, MAT 20.",
+      "url": "https://mec.gov.np/en/syllabus"
+    },
+    {
+      "k": "Negative marking",
+      "v": "−0.25 for each wrong answer, 0 for a blank (since 2082). A blind guess is about break-even; if you can rule out one option, answer.",
+      "url": "https://mec.gov.np/en/syllabus"
+    },
+    {
+      "k": "Pass mark",
+      "v": "50th percentile of candidates, not 50% of marks. 2082: about 18,181 sat, pass cutoff 52.25, top score 185.",
+      "url": "https://www.educatenepal.com/news/detail/mecee-bl-mbbs-results-published"
+    },
+    {
+      "k": "Question mix",
+      "v": "About 50% recall, 30% understanding, 20% application. Stems are 60 words or fewer.",
+      "url": "https://media.edusanjal.com/c/New%20Syllabus%20MECEE-BL%20Entrance%20Examination.pdf"
+    },
+    {
+      "k": "Units by weight",
+      "v": "Physical Chemistry 17, Organic Chemistry 17, Human Biology 15, Modern Physics 12, Mechanics 10, Inorganic Chemistry 10, Biodiversity 9, Current Electricity & Magnetism 9.",
+      "url": "https://media.edusanjal.com/c/New%20Syllabus%20MECEE-BL%20Entrance%20Examination.pdf"
+    },
+    {
+      "k": "Score needed",
+      "v": "Open-merit scholarship seats have recently gone to about rank 290 (roughly 140–145 marks). A score of 160–180 is a top-100 range. These are unofficial estimates from cut-off reports.",
+      "url": "https://www.shyamsundarbaitha.com.np/2025/04/cee-mbbs-program-cut-off-ranks-scores.html"
+    }
+  ],
+  "sources": [
+    {
+      "name": "MEC (official)",
+      "cost": "Free",
+      "what": "Syllabus, notices, admit cards. MEC does not publish past papers.",
+      "url": "https://mec.gov.np/en/syllabus"
+    },
+    {
+      "name": "Ambition Guru",
+      "cost": "Free posts",
+      "what": "Free past questions, model questions and solutions posted on their Facebook page; the app adds mock tests and live classes.",
+      "url": "https://www.facebook.com/agmedicalentrancepreparation"
+    },
+    {
+      "name": "Ambition Guru website and app",
+      "cost": "Free and paid",
+      "what": "Some free mock tests in the app; live classes and the full MCQ bank are paid.",
+      "url": "https://ambitionguru.com"
+    },
+    {
+      "name": "Vibrant MBBS",
+      "cost": "Free posts",
+      "what": "Free past questions, question banks and solutions posted on their Facebook page.",
+      "url": "https://www.facebook.com/vibrantmbbs"
+    },
+    {
+      "name": "Online Vibrant",
+      "cost": "Some free",
+      "what": "Mock tests and older IOM/KU/BPKIHS papers from Vibrant.",
+      "url": "https://onlinevibrant.com"
+    },
+    {
+      "name": "CEE Preparation",
+      "cost": "Free account",
+      "what": "Timed mocks and memory-based past questions.",
+      "url": "https://ceepreparation.com/cee-past-questions"
+    },
+    {
+      "name": "ExamsNepal",
+      "cost": "Free · some paid",
+      "what": "Free CEE PCB mocks and topic tests.",
+      "url": "https://www.examsnepal.com/free_exams.php"
+    },
+    {
+      "name": "Entrance Nepal",
+      "cost": "Free lectures",
+      "what": "Question-answer discussions on YouTube; app has 200-mark timed mocks.",
+      "url": "https://www.entrancenepal.edu.np"
+    },
+    {
+      "name": "The Hitesh Sir",
+      "cost": "Free · paid courses",
+      "what": "Free CEE model tests and a memory-based CEE 2082 mock.",
+      "url": "https://www.thehiteshsir.com"
+    },
+    {
+      "name": "Cave Study",
+      "cost": "Free",
+      "what": "Model question sets and cut-off analyses.",
+      "url": "https://cavestudy.com"
+    },
+    {
+      "name": "AKM Biology",
+      "cost": "Free videos",
+      "what": "Biology lessons and memory-based question series on YouTube.",
+      "url": "https://www.youtube.com/@akmbiologyofficial"
+    }
+  ]
+}

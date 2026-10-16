@@ -1,0 +1,1217 @@
+<title>MECEE-BL 2083</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap">
+<style>
+/* Layout: a calm phone app for long study sessions. Grey-green paper (no pure white), charcoal ink (no pure black),
+   one muted teal accent, soft gold only for rewards. One 480px column; a floating tab bar; bottom sheets for feedback.
+   Calm by day, Calm night from 18:00 to 06:00 (or chosen in Settings). Gentle motion only. */
+:root{
+  --bg:#E8ECE7; --card:#F4F6F2; --ink:#29312E; --muted:#636E69; --line:#D7DDD6; --soft:#E2E7E0;
+  --acc:#3D766F; --acc-2:#DAE8E4; --on-acc:#F4F6F2; --flame:#C27A55;
+  --gold:#BF9248; --gold-2:#EFE6D3; --gold-ink:#6E521C;
+  --ok:#4C8960; --ok-2:#DFEBE0; --ok-ink:#2E6640; --bad:#B4675C; --bad-2:#F1E2DE; --bad-ink:#8A4238;
+  --bar:rgba(244,246,242,.97); --shadow:0 1px 2px rgb(41 49 46/.05),0 4px 14px rgb(41 49 46/.05); --scrim:rgb(30 36 34/.35);
+  --f:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+:root[data-look="night"]{
+  color-scheme:dark;
+  --bg:#1A1E1D; --card:#222826; --ink:#D3D9D5; --muted:#97A19C; --line:#313836; --soft:#29302D;
+  --acc:#85B3AA; --acc-2:#2A3936; --on-acc:#1A1E1D; --flame:#D49674;
+  --gold:#CDAC6C; --gold-2:#36301F; --gold-ink:#D9BE88;
+  --ok:#85B992; --ok-2:#233229; --ok-ink:#A4CDAD; --bad:#D29286; --bad-2:#382824; --bad-ink:#E1ADA3;
+  --bar:rgba(34,40,38,.97); --shadow:0 1px 2px rgb(0 0 0/.25); --scrim:rgb(0 0 0/.5);
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font:500 17px/1.6 var(--f);padding-inline:16px;padding-block:0 calc(110px + env(safe-area-inset-bottom,0px));transition:background .4s,color .4s}
+button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
+a{color:var(--acc)}
+:focus-visible{outline:2.5px solid var(--acc);outline-offset:2px;border-radius:10px}
+h1,h2,h3{margin:0;line-height:1.2;font-weight:800;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:26px} h2{font-size:21px} h3{font-size:18px}
+p{margin:0}
+.tn{font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)} .small{font-size:14.5px;line-height:1.5}
+.lab{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap} .between{justify-content:space-between}
+.stack{display:grid;gap:12px}
+#app{max-width:480px;margin:0 auto}
+main{display:flex;flex-direction:column;gap:14px;padding-top:calc(14px + env(safe-area-inset-top,0px))}
+main.enter{animation:enter .35s var(--ease)}
+@keyframes enter{from{opacity:0;transform:translateY(6px)}}
+
+.card{background:var(--card);border-radius:22px;padding:16px;box-shadow:var(--shadow)}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:52px;border-radius:16px;background:var(--acc);color:var(--on-acc);font-weight:800;font-size:16.5px;transition:transform .15s var(--ease),opacity .2s;text-align:center;text-decoration:none;padding:0 14px}
+.btn:active{transform:scale(.98)}
+.btn.sec{background:var(--soft);color:var(--ink)}
+.btn.ok{background:var(--ok);color:var(--on-acc)} .btn.bad{background:var(--bad);color:var(--on-acc)}
+.btn.sm{min-height:40px;font-size:14px;border-radius:12px;width:auto;padding:0 14px}
+.btn[disabled]{opacity:.4;pointer-events:none}
+.grid2b{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:8px 12px;min-height:46px;width:100%}
+textarea{min-height:170px;font-size:14px;line-height:1.5}
+label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
+.kbd{font-size:11px;border:1px solid currentColor;border-radius:4px;padding:0 4px;opacity:.6}
+
+/* hud */
+.hud{display:flex;align-items:center;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:999px;background:var(--card);box-shadow:var(--shadow);font-weight:800;font-size:15px;white-space:nowrap}
+.pill svg{width:18px;height:18px}
+.grow{flex:1}
+.brand{font-weight:800;font-size:15px}
+.brand small{display:block;font-size:11.5px;color:var(--muted);font-weight:600}
+
+/* home */
+.hero{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center}
+.ring{width:96px;height:96px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .trk{stroke:var(--soft)} .ring .val{stroke:var(--acc);transition:stroke-dashoffset 1s var(--ease)}
+.ring b{position:absolute;inset:0;display:grid;place-content:center;text-align:center;font-size:23px;line-height:1}
+.ring b small{font-size:11px;color:var(--muted);font-weight:700;margin-top:4px}
+.cta{min-height:66px;border-radius:20px;justify-content:space-between;padding:0 18px;text-align:left;font-size:17px}
+.cta small{display:block;font-size:12px;font-weight:600;opacity:.85}
+.cta .go{width:36px;height:36px;border-radius:50%;background:rgb(255 255 255/.18);display:grid;place-items:center;flex:none}
+.score{font-size:42px;font-weight:800;line-height:1;letter-spacing:-.02em}
+.track{position:relative;height:10px;border-radius:999px;background:var(--soft);margin-top:12px}
+.track .fill{position:absolute;inset:0 auto 0 0;border-radius:999px;background:var(--acc);transition:width 1s var(--ease)}
+.track .band{position:absolute;top:-5px;bottom:-5px;border-radius:6px;background:var(--ok-2);border:1.5px solid var(--ok)}
+.axis{position:relative;height:16px;font-size:11px;color:var(--muted);margin-top:6px}
+.axis span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.axis span:first-child{transform:none} .axis span:last-child{transform:translateX(-100%)}
+.quest{display:grid;grid-template-columns:42px 1fr auto;gap:12px;align-items:center;padding-block:12px}
+.quest + .quest{border-top:1px solid var(--line)}
+.qi{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;flex:none}
+.qi svg{width:20px;height:20px}
+.mini{height:6px;border-radius:999px;background:var(--soft);margin-top:6px;overflow:hidden}
+.mini i{display:block;height:100%;border-radius:999px;transition:width .8s var(--ease)}
+.xp{font-weight:800;font-size:12.5px;color:var(--gold-ink);background:var(--gold-2);padding:3px 8px;border-radius:999px;white-space:nowrap}
+.xp.done{color:var(--ok-ink);background:var(--ok-2)}
+.note{border-radius:18px;padding:12px 14px;background:var(--gold-2);color:var(--ink);font-size:14.5px;line-height:1.5}
+.note b{color:var(--gold-ink)}
+.quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
+.quick .btn{min-height:56px;font-size:14.5px;border-radius:16px;flex-direction:column;gap:0;line-height:1.25}
+.quick .btn small{font-weight:600;font-size:12px;color:var(--muted)}
+
+/* segmented */
+.seg{display:flex;gap:4px;background:var(--soft);border-radius:14px;padding:4px;overflow-x:auto;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg button{flex:1;padding:8px 10px;border-radius:10px;font-weight:700;font-size:14px;color:var(--muted);white-space:nowrap;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+
+/* path */
+.unitband{border-radius:22px;padding:16px;background:var(--acc);color:var(--on-acc);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.unitband small{display:block;font-size:12px;font-weight:700;opacity:.85;letter-spacing:.06em}
+.unitband b{font-size:19px;line-height:1.25}
+.road{display:grid;gap:22px;padding:8px 0 4px}
+.lvl{display:grid;justify-items:center;gap:6px;width:170px;justify-self:center}
+.lvl.l{transform:translateX(-62px)} .lvl.r{transform:translateX(62px)}
+@media (max-width:380px){.lvl.l{transform:translateX(-44px)} .lvl.r{transform:translateX(44px)}}
+.node{width:76px;height:76px;border-radius:50%;position:relative;display:grid;place-items:center;transition:transform .2s var(--ease)}
+.node:active{transform:scale(.94)}
+.node svg.pr{position:absolute;inset:0;width:76px;height:76px;transform:rotate(-90deg)}
+.node .core{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--card);box-shadow:var(--shadow);color:var(--muted)}
+.node .core svg{width:26px;height:26px}
+.node.s3 .core{background:var(--gold);color:var(--on-acc)}
+.node.cur .core{background:var(--acc);color:var(--on-acc)}
+.node.weak .core{background:var(--bad);color:var(--on-acc)}
+.node.boss{border-radius:26px} .node.boss .core{width:72px;height:72px;border-radius:24px;background:var(--ink);color:var(--gold)}
+.lvl .t{font-size:14px;font-weight:700;text-align:center;line-height:1.25}
+.lvl .s{font-size:12.5px;color:var(--muted);text-align:center;line-height:1.3}
+.stars{display:inline-flex;gap:2px}
+.stars svg{width:14px;height:14px}
+
+/* question */
+.qtop{display:flex;align-items:center;gap:12px}
+.close{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;color:var(--muted);background:var(--card);box-shadow:var(--shadow);flex:none}
+.qprog{flex:1;height:10px;border-radius:999px;background:var(--card);overflow:hidden;box-shadow:inset 0 0 0 1px var(--line)}
+.qprog i{display:block;height:100%;border-radius:999px;background:var(--ok);transition:width .5s var(--ease)}
+.combo{font-weight:800;color:var(--gold-ink);font-size:14px;white-space:nowrap}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tag{font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--card);box-shadow:var(--shadow);line-height:1.4}
+.tag.rep{background:var(--gold-2);color:var(--gold-ink);box-shadow:none}
+.stem{font-size:20px;font-weight:600;line-height:1.5;white-space:pre-line}
+.opts{display:grid;gap:10px}
+.opt{display:grid;grid-template-columns:34px 1fr auto;gap:12px;align-items:center;text-align:left;width:100%;min-height:58px;padding:10px 14px;border-radius:18px;background:var(--card);box-shadow:var(--shadow);font-size:16.5px;font-weight:600;line-height:1.4;transition:transform .15s var(--ease),box-shadow .2s,background .2s}
+.opt:active{transform:scale(.99)}
+.opt[disabled]{cursor:default}
+.opt .k{width:34px;height:34px;border-radius:11px;background:var(--soft);display:grid;place-items:center;font-weight:800;font-size:14px;color:var(--muted);transition:background .2s,color .2s}
+.opt .m{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase}
+.opt[aria-pressed="true"]{box-shadow:var(--shadow),inset 0 0 0 2px var(--acc)} .opt[aria-pressed="true"] .k{background:var(--acc);color:var(--on-acc)}
+.opt.right{background:var(--ok-2);box-shadow:inset 0 0 0 2px var(--ok)} .opt.right .k{background:var(--ok);color:var(--on-acc)} .opt.right .m{color:var(--ok-ink)}
+.opt.wrong{background:var(--bad-2);box-shadow:inset 0 0 0 2px var(--bad)} .opt.wrong .k{background:var(--bad);color:var(--on-acc)} .opt.wrong .m{color:var(--bad-ink)}
+.why{display:flex;flex-wrap:wrap;gap:6px}
+.why button{background:var(--card);border-radius:999px;padding:6px 12px;font-size:13.5px;font-weight:700;transition:background .2s,color .2s}
+.why button[aria-pressed="true"]{background:var(--acc);color:var(--on-acc)}
+.ai{white-space:pre-wrap;font-size:14.5px;padding:10px 12px;border-radius:14px;background:var(--card);margin:0}
+ul.cpts{margin:0;padding-left:1.1rem;display:grid;gap:6px;font-size:15px;line-height:1.5}
+
+/* sheets and bars */
+.scrim{position:fixed;inset:0;background:var(--scrim);z-index:30;animation:fade .25s var(--ease)}
+@keyframes fade{from{opacity:0}}
+.sheet{position:fixed;left:50%;bottom:0;transform:translateX(-50%);width:min(480px,100%);z-index:31;max-height:82vh;overflow-y:auto;background:var(--card);border-radius:26px 26px 0 0;padding:20px 18px calc(20px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;box-shadow:0 -10px 30px rgb(0 0 0/.12)}
+.sheet.anim{animation:up .4s var(--ease)}
+@keyframes up{from{transform:translate(-50%,100%)}}
+.sheet.good{background:var(--ok-2)} .sheet.badd{background:var(--bad-2)}
+.sheet .v{font-size:22px;font-weight:800} .sheet.good .v{color:var(--ok-ink)} .sheet.badd .v{color:var(--bad-ink)}
+.sheet .grab{width:40px;height:5px;border-radius:9px;background:var(--line);align-self:center;margin-top:-8px}
+.abar{position:fixed;left:50%;transform:translateX(-50%);width:min(480px,100%);bottom:0;z-index:20;padding:12px 16px calc(14px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line)}
+.abar .in{display:grid;grid-auto-flow:column;grid-auto-columns:1fr;gap:10px}
+.tabs{position:fixed;left:50%;transform:translateX(-50%);width:min(452px,calc(100% - 28px));bottom:calc(14px + env(safe-area-inset-bottom,0px));height:68px;border-radius:24px;background:var(--bar);box-shadow:0 10px 30px rgb(0 0 0/.12),0 0 0 1px var(--line);display:grid;grid-template-columns:repeat(5,1fr);padding:6px;z-index:20;transition:opacity .25s,transform .3s var(--ease)}
+.tabs.hide{opacity:0;pointer-events:none;transform:translate(-50%,24px)}
+.tabs .ind{position:absolute;top:6px;bottom:6px;left:6px;width:calc((100% - 12px)/5);border-radius:18px;background:var(--acc-2);transition:transform .4s var(--ease)}
+.tabs button{position:relative;z-index:1;display:grid;justify-items:center;align-content:center;gap:2px;font-size:11.5px;font-weight:700;color:var(--muted);transition:color .25s}
+.tabs button svg{width:24px;height:24px}
+.tabs .fi{display:none}
+.tabs button[aria-current="page"]{color:var(--acc)}
+.tabs button[aria-current="page"] .fi{display:block} .tabs button[aria-current="page"] .ol{display:none}
+.xpfloat{position:fixed;top:calc(18px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:40;font-weight:800;color:var(--gold-ink);background:var(--gold-2);padding:6px 14px;border-radius:999px;pointer-events:none;animation:fl 1.6s var(--ease) forwards}
+@keyframes fl{0%{opacity:0;transform:translate(-50%,8px)}15%{opacity:1;transform:translate(-50%,0)}80%{opacity:1}100%{opacity:0;transform:translate(-50%,-10px)}}
+#toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(96px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:14px;z-index:45;font-size:14.5px;max-width:calc(100% - 32px);font-weight:600}
+
+/* exam */
+.ebar{display:flex;align-items:center;gap:10px}
+.clock{font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}
+.clock.low{color:var(--bad-ink)}
+.omr{display:grid;grid-template-columns:repeat(auto-fill,minmax(42px,1fr));gap:6px}
+.omr button{background:var(--soft);border-radius:10px;height:40px;font-weight:700;font-size:13px;position:relative}
+.omr button.a{background:var(--acc);color:var(--on-acc)}
+.omr button.cur{box-shadow:inset 0 0 0 2px var(--ink)}
+.omr button.fl::after{content:"";position:absolute;top:4px;right:4px;width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.omr button.r{background:var(--ok-2);color:var(--ok-ink)} .omr button.w{background:var(--bad-2);color:var(--bad-ink)}
+.omr .sec{grid-column:1/-1;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-top:4px}
+.series{display:grid;grid-template-columns:48px 1fr auto;gap:12px;align-items:center}
+.sno{width:48px;height:48px;border-radius:16px;display:grid;place-items:center;font-weight:800;font-size:18px;background:var(--acc-2);color:var(--acc)}
+.sno.best{background:var(--gold-2);color:var(--gold-ink)}
+
+/* progress */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tile{border-radius:18px;padding:12px 8px;text-align:center;background:var(--card);box-shadow:var(--shadow)}
+.tile b{display:block;font-size:23px;font-weight:800;font-variant-numeric:tabular-nums}
+.sbar{display:grid;grid-template-columns:6.2rem 1fr 4.4rem;gap:10px;align-items:center;font-size:14.5px}
+.sbar .mini{margin:0;height:8px}
+.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.bdg{display:grid;justify-items:center;gap:6px;font-size:12px;font-weight:700;text-align:center;line-height:1.25}
+.bdg span{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:var(--gold-2);color:var(--gold-ink)}
+.bdg svg{width:26px;height:26px}
+.bdg.off{color:var(--muted)} .bdg.off span{background:var(--soft);color:var(--muted);opacity:.7}
+.bars14{display:grid;grid-template-columns:repeat(14,1fr);gap:4px;align-items:end;height:80px}
+.bars14 div{background:var(--acc);border-radius:4px 4px 0 0;min-height:3px}
+.bars14 div.z{background:var(--soft)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 6px;border-bottom:1.5px solid var(--line);white-space:nowrap}
+td{padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap}
+.chip.strong{background:var(--ok-2);color:var(--ok-ink)} .chip.shaky{background:var(--gold-2);color:var(--gold-ink)} .chip.weak{background:var(--bad-2);color:var(--bad-ink)} .chip.new{background:var(--soft);color:var(--muted)}
+details summary{cursor:pointer;font-weight:700;list-style:none}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";float:right;color:var(--muted);font-weight:800}
+details[open] summary::after{content:"–"}
+details[open] summary{margin-bottom:10px}
+.src{display:grid;gap:2px;padding-block:10px;border-top:1px solid var(--line)}
+.src:first-child{border-top:0;padding-top:0}
+.empty{padding:22px;text-align:center;border:1.5px dashed var(--line);border-radius:18px;display:grid;gap:8px;justify-items:center}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
+
+<div id="app">
+  <main id="view" aria-live="polite"></main>
+</div>
+<div id="overlay"></div>
+<div id="abar"></div>
+<nav class="tabs" id="tabs" aria-label="Sections">
+  <span class="ind" id="ind"></span>
+  <button data-act="tab" data-tab="home"><svg class="ol" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="currentColor"/></svg>Home</button>
+  <button data-act="tab" data-tab="path"><svg class="ol" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 18H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5" fill="none" stroke="currentColor" stroke-width="2"/></svg><svg class="fi" viewBox="0 0 24 24"><circle cx="6" cy="18" r="3" fill="currentColor"/><circle cx="18" cy="6" r="3" fill="currentColor"/><path d="M8.5 18H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Path</button>
+  <button data-act="tab" data-tab="exams"><svg class="ol" viewBox="0 0 24 24"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v15.5l-3-2-3 2-3-2-3 2V5A1.5 1.5 0 0 1 7 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v15.5l-3-2-3 2-3-2-3 2V5A1.5 1.5 0 0 1 7 3.5z" fill="currentColor"/></svg>Exams</button>
+  <button data-act="tab" data-tab="notes"><svg class="ol" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="currentColor"/></svg>Notes</button>
+  <button data-act="tab" data-tab="progress"><svg class="ol" viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></svg>Progress</button>
+</nav>
+
+<script id="bank" type="application/json">__BANK__</script>
+<script>
+"use strict";
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const DAY = 864e5, PACE = 54, L = "ABCD";
+const RAW = JSON.parse(document.getElementById("bank").textContent);
+const SUBJ = [{k:"Physics",m:50},{k:"Chemistry",m:50},{k:"Zoology",m:40},{k:"Botany",m:40},{k:"MAT",m:20}];
+const SC = Object.fromEntries(SUBJ.map(s => [s.k, s]));
+const TOP = {}, TOPS_BY = {};
+for (const f of RAW.subjects) {
+  const sum = f.topics.reduce((a, t) => a + t.weight, 0) || 1;
+  TOPS_BY[f.subject] = f.topics.map(t => (TOP[t.id] = {...t, subject: f.subject, w: t.weight * SC[f.subject].m / sum}));
+}
+const SERIES = RAW.series || [];
+// a study day runs 04:00 to 04:00, so late-night practice counts for the day it belongs to
+const dayKey = (t = Date.now()) => new Date(t - 4 * 3600e3).toLocaleDateString("en-CA");
+const yrs = q => q.yrs && q.yrs.length ? `Asked ${q.yrs.join(", ")}` : "";
+const ICON = {
+  flame: '<path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-4-1-6 1-9z" fill="var(--flame)"/>',
+  bolt: '<path d="M13 2 4 14h7l-1 8 9-12h-7z" fill="var(--gold)"/>',
+  star: '<path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="currentColor"/>',
+  play: '<path d="M8 5v14l11-7z" fill="currentColor"/>',
+  bang: '<path d="M12 5v9M12 18v1" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>',
+  check: '<path d="M5 12l4 4 10-10" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>',
+  clock: '<circle cx="12" cy="13" r="8" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 9v4l3 2" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" fill="none"/>',
+  cup: '<path d="M7 4h10v4a5 5 0 0 1-10 0z" fill="currentColor"/><path d="M7 6H4a3 3 0 0 0 3 4M17 6h3a3 3 0 0 1-3 4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M10 14h4v3h-4zM8 19h8v2H8z" fill="currentColor"/>',
+  eye: '<path d="M2 12s3.6-6 10-6 10 6 10 6-3.6 6-10 6S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.6" fill="currentColor"/>',
+  moon: '<path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" fill="currentColor"/>',
+  repeat: '<path d="M4 12a7 7 0 0 1 12-5l2 2M20 12a7 7 0 0 1-12 5l-2-2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M18 4v5h-5M6 20v-5h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+  book: '<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="none" stroke="currentColor" stroke-width="2"/>',
+  lock: '<rect x="6" y="11" width="12" height="9" rx="2" fill="currentColor"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3" stroke="currentColor" stroke-width="2.2" fill="none"/>',
+  arrow: '<path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>',
+  x: '<path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>'
+};
+const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="${size}" aria-hidden="true">${ICON[k]}</svg>`;
+
+/* ── state: localStorage first, mirrored to the viewer's private db doc when available ── */
+const KEY = "cee150.v1", MKEY = "cee150.mock";
+const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:170, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
+  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[]});
+function loadLocal() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {} return blank(); }
+let S = loadLocal();
+if (S.target < 160) S.target = 170;
+let QS = [], QI = {};
+function rebuild() {
+  QS = [];
+  for (const f of RAW.subjects) for (const q of f.questions) QS.push({...q, subject: f.subject, src: "bank"});
+  for (const q of S.custom) if (TOP[q.topic]) QS.push({...q, subject: TOP[q.topic].subject});
+  QI = Object.fromEntries(QS.map(q => [q.id, q]));
+}
+rebuild();
+
+let userCap = null, groupState = null, lastLeague = "";
+let db = null, uid = null, syncT = null, syncing = false, dirty = false, customDirty = false;
+function save(custom) {
+  S.updated = Date.now();
+  if (S.log.length > 1500) S.log = S.log.slice(-1500); // ponytail: aggregates live in th/it; the raw log only feeds speed + activity
+  const d = dayKey(); if (!S.proj[d] && answered() > 0) { S.proj[d] = Math.round(project().tot); const ks = Object.keys(S.proj).sort(); if (ks.length > 30) delete S.proj[ks[0]]; }
+  try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+  if (custom) customDirty = true;
+  if (db) { dirty = true; clearTimeout(syncT); syncT = setTimeout(flush, 4000); }
+}
+async function flush() {
+  if (!db || !dirty || syncing) return;
+  syncing = true; dirty = false;
+  const {custom, ...rest} = S;
+  try {
+    await db.doc(`data/users/${uid}/state`).set({updated: S.updated, json: JSON.stringify(rest)});
+    if (customDirty) {
+      // ponytail: one db document holds 256 KiB, so added questions are split into ~150 KiB chunks
+      const chunks = []; let cur = [];
+      for (const q of custom) { cur.push(q); if (JSON.stringify(cur).length > 150000) { chunks.push(cur); cur = []; } }
+      if (cur.length || !chunks.length) chunks.push(cur);
+      for (let i = 0; i < chunks.length; i++) await db.doc(`data/users/${uid}/custom-${i}`).set({json: JSON.stringify(chunks[i])});
+      await db.doc(`data/users/${uid}/custom`).set({n: chunks.length});
+      customDirty = false;
+    }
+    const lk = `${S.wk.w}:${S.wk.xp}:${S.streak.n}`;
+    if (S.group && lk !== lastLeague) { await db.doc(`league/${uid}`).set({w: S.wk.w, xp: S.wk.xp, streak: S.streak.n, updated: Date.now()}); lastLeague = lk; }
+  } catch (e) { dirty = true; }
+  syncing = false;
+}
+document.addEventListener("visibilitychange", () => { if (document.hidden) flush(); });
+(async () => {
+  if (!window.claude) return;
+  try {
+    const [d, u] = await Promise.all([claude.use("db"), claude.use("user")]);
+    uid = u && await u.id(); userCap = u;
+    if (!d || !uid) return;
+    const [st, cu] = await Promise.all([d.doc(`data/users/${uid}/state`).get(), d.doc(`data/users/${uid}/custom`).get()]);
+    db = d;
+    if (st.exists && (st.data().updated || 0) > S.updated) {
+      S = Object.assign(blank(), JSON.parse(st.data().json));
+      const cd = cu.exists ? cu.data() : {};
+      if (cd.json) S.custom = JSON.parse(cd.json);
+      else { S.custom = []; for (let i = 0; i < (cd.n || 0); i++) { const c = await d.doc(`data/users/${uid}/custom-${i}`).get(); if (c.exists) S.custom.push(...JSON.parse(c.data().json || "[]")); } }
+      try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+      rebuild(); applyLook(); if (!pr && !mk) render();
+    } else if (S.updated > (st.exists ? st.data().updated || 0 : 0)) { dirty = true; customDirty = true; flush(); }
+  } catch (e) { db = null; }
+})();
+let sample = null;
+(async () => { if (window.claude) { try { sample = await claude.use("sample"); } catch (e) {} if (sample && !mk && !pr) render(); } })();
+
+/* ── look: Calm by day, Calm night 18:00–06:00 unless chosen ── */
+function applyLook() {
+  const h = new Date().getHours();
+  const night = S.look === "night" || (S.look === "auto" && (h >= 18 || h < 6));
+  document.documentElement.dataset.look = night ? "night" : "calm";
+}
+applyLook(); setInterval(applyLook, 60e3);
+
+/* ── psychometrics: Elo-style Rasch estimate per unit and per subject, with a 4-option guessing floor ── */
+const BD = {1:-1, 2:0, 3:1}, PRIOR = -0.6, TYP = 0.3;
+const sig = x => 1 / (1 + Math.exp(-x));
+const P = (t, b) => 0.25 + 0.75 * sig(1.5 * (t - b));
+const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
+// accuracy needed on attempted questions to reach the target with negative marking: net = p − neg(1 − p)
+const goalP = () => clamp((S.target / 200 + S.neg) / (1 + S.neg), 0.5, 0.97);
+function thetaOf(tid) {
+  const s = S.th[TOP[tid].subject], t = S.th[tid];
+  const st = s ? s.t : PRIOR;
+  if (!t) return st;
+  const w = t.n / (t.n + 4);
+  return w * t.t + (1 - w) * st;
+}
+const pTopic = tid => P(thetaOf(tid), TYP);
+function stars(tid) {
+  const o = S.th[tid]; if (!o || o.n < 4) return 0;
+  const p = pTopic(tid), g = goalP();
+  return p >= g ? 3 : p >= g - 0.12 ? 2 : p >= g - 0.25 ? 1 : 0;
+}
+function today() { const d = dayKey(); if (S.t.d !== d) S.t = {d, right: 0, fixed: 0, rep: 0, exam: 0, q: {}}; return S.t; }
+function touchStreak() {
+  const d = dayKey(), st = S.streak;
+  if (st.last === d) return;
+  const gap = st.last ? Math.round((new Date(d) - new Date(st.last)) / DAY) : 99;
+  if (gap === 1) st.n++;
+  else if (gap === 2 && st.freeze > 0) { st.freeze--; st.n++; toast("A streak freeze saved your streak."); }
+  else st.n = 1;
+  st.last = d; st.best = Math.max(st.best, st.n);
+  if (st.n % 7 === 0 && st.freeze < 2) { st.freeze++; toast("7 days in a row. You earned a streak freeze."); }
+}
+let xpQueue = 0;
+// study weeks start on Sunday, as in Nepal
+const weekKey = () => { const d = new Date(dayKey() + "T12:00:00"); d.setDate(d.getDate() - d.getDay()); return d.toLocaleDateString("en-CA"); };
+function addXP(n) { if (n > 0) { S.xp += n; xpQueue += n; const w = weekKey(); if (S.wk.w !== w) S.wk = {w, xp: 0}; S.wk.xp += n; } }
+function record(q, ok, sure, secs, mode = "practice") {
+  const b = BD[q.d] || 0, r = ok ? (sure ? 1 : 0.7) : 0;
+  const init = thetaOf(q.topic), before = stars(q.topic);
+  for (const key of [q.topic, q.subject]) {
+    const o = S.th[key] || {t: key === q.topic ? init : PRIOR, n: 0, c: 0};
+    const K = Math.max(0.12, 0.9 / (1 + 0.06 * o.n));
+    o.t = clamp(o.t + K * (r - P(o.t, b)), -3, 3); o.n++; o.c = (o.c || 0) + (ok ? 1 : 0);
+    S.th[key] = o;
+  }
+  // successive relearning: missed → same session, then 1, 3, 7, 14 days; retired after a clean run
+  const now = Date.now(), I = [0, 1, 3, 7, 14];
+  const it = S.it[q.id] || {n: 0, c: 0, box: -1, mis: 0};
+  const first = it.n === 0, wasMistake = it.mis > 0 && it.box === 0;
+  it.n++;
+  if (ok) { it.c++; it.box = !sure ? 1 : first ? 3 : it.box >= 4 ? 5 : it.box + 1; }
+  else { it.box = 0; if (sure) it.mis++; }
+  it.due = it.box === 5 ? 0 : it.box === 0 ? now + 10 * 60e3 : now + I[it.box] * DAY;
+  it.last = now; it.ok = ok; it.sure = sure;
+  S.it[q.id] = it;
+  S.log.push([now, q.id, ok ? 1 : 0, sure ? 1 : 0, Math.round(secs)]);
+  const d = dayKey(); S.days[d] = (S.days[d] || 0) + 1;
+  // rewards follow learning, not time: XP only for right answers and for units moving up
+  const t = today();
+  if (ok) { t.right++; if (q.rep) t.rep++; addXP(mode === "exam" ? 4 : sure ? 10 : 5); }
+  if (ok && wasMistake) { t.fixed++; S.fixed++; }
+  const after = stars(q.topic), had = S.stars[q.topic] || 0;
+  if (after > had) { addXP(25 * (after - had)); S.stars[q.topic] = after; if (mode !== "exam") toast(`${TOP[q.topic].name}: ${after} ${after === 1 ? "star" : "stars"}`); }
+  touchStreak();
+  checkQuests();
+}
+function project() {
+  const by = {}; let tot = 0;
+  for (const s of SUBJ) {
+    let m = 0;
+    for (const t of TOPS_BY[s.k] || []) { const p = pTopic(t.id); m += t.w * (p - S.neg * (1 - p)); }
+    by[s.k] = Math.max(0, m); tot += by[s.k];
+  }
+  return {tot, by};
+}
+const answered = () => Object.values(S.it).reduce((a, i) => a + i.n, 0);
+const gain = t => t.w * Math.max(0, goalP() - pTopic(t.id)) * (1 + S.neg);
+const ranked = () => Object.values(TOP).map(t => ({t, g: gain(t)})).sort((a, b) => b.g - a.g);
+const dueList = (pool = QS) => { const now = Date.now(); return pool.filter(q => { const i = S.it[q.id]; return i && i.box >= 0 && i.box < 5 && i.due <= now; }); };
+const misList = () => QS.filter(q => (S.it[q.id] || {}).mis > 0 && (S.it[q.id] || {}).box < 5);
+function level(tid) {
+  const o = S.th[tid];
+  if (!o || o.n < 2) return ["new", "Not tested"];
+  const p = pTopic(tid), g = goalP();
+  return p >= g ? ["strong", "Strong"] : p >= g - 0.2 ? ["shaky", "Shaky"] : ["weak", "Weak"];
+}
+
+/* ── game layer ── */
+const LEVELS = [[0, "Aspirant"], [200, "Learner"], [600, "Reader"], [1200, "Solver"], [2000, "Achiever"], [3000, "Intern"], [4500, "Resident"], [6500, "Registrar"], [9000, "Consultant"], [12000, "Topper"]];
+function lvl() { let i = 0; while (i + 1 < LEVELS.length && S.xp >= LEVELS[i + 1][0]) i++; const next = LEVELS[i + 1]; return {n: i + 1, name: LEVELS[i][1], from: LEVELS[i][0], to: next ? next[0] : null}; }
+function phaseGoal() { const d = daysLeft(), ph = phaseOf(d); return ph == null ? 120 : PHASES[ph].q || 40; }
+function quests() {
+  const t = today(), fixQuest = misList().length > 0 || t.fixed > 0;
+  return [
+    {id: "right", name: "Get 40 right", need: 40, val: t.right, xp: 50, icon: "check", c: "acc"},
+    fixQuest ? {id: "fix", name: "Fix 5 confident mistakes", need: 5, val: t.fixed, xp: 40, icon: "bang", c: "bad"}
+             : {id: "rep", name: "20 right on repeated questions", need: 20, val: t.rep, xp: 40, icon: "repeat", c: "bad"},
+    {id: "exam", name: "Finish a sprint or exam", need: 1, val: t.exam, xp: 60, icon: "clock", c: "gold"}
+  ];
+}
+function checkQuests() {
+  const t = today();
+  for (const q of quests()) if (q.val >= q.need && !t.q[q.id]) { t.q[q.id] = 1; addXP(q.xp); toast(`Quest done: ${q.name}. +${q.xp} XP`); }
+}
+const BADGES = [
+  {id: "streak7", name: "7-day streak", icon: "flame", ok: () => S.streak.best >= 7},
+  {id: "master1", name: "First unit mastered", icon: "star", ok: () => Object.values(S.stars).some(v => v >= 3)},
+  {id: "a100", name: "100 answers", icon: "check", ok: () => answered() >= 100},
+  {id: "a500", name: "500 answers", icon: "check", ok: () => answered() >= 500},
+  {id: "fix50", name: "50 mistakes fixed", icon: "bang", ok: () => S.fixed >= 50},
+  {id: "allu", name: "Every unit tried", icon: "book", ok: () => Object.keys(TOP).every(id => (S.th[id] || {}).n >= 2)},
+  {id: "s150", name: "150 in a paper", icon: "cup", ok: () => S.mocks.some(m => m.n >= 100 && m.scaled >= 150)},
+  {id: "s170", name: "170 in a paper", icon: "cup", ok: () => S.mocks.some(m => m.n >= 100 && m.scaled >= 170)}
+];
+
+/* ── session builder: due reviews first, then units ranked by marks-to-gain, items near 70% success, interleaved ── */
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+function interleave(ids) {
+  const out = [], rest = [...ids];
+  while (rest.length) {
+    const prev = out.length ? QI[out[out.length - 1]].topic : null;
+    let k = rest.findIndex(id => QI[id].topic !== prev); if (k < 0) k = 0;
+    out.push(rest.splice(k, 1)[0]);
+  }
+  return out;
+}
+function buildSession(n, f = {}) {
+  let pool = QS.filter(q => (!f.subject || q.subject === f.subject) && (!f.topic || q.topic === f.topic));
+  if (f.kind === "placement") {
+    const ids = Object.values(TOP).map(t => { const c = pool.filter(q => q.topic === t.id); return (c.find(q => q.d === 2 && !S.it[q.id]) || c.find(q => !S.it[q.id]) || c[0] || {}).id; }).filter(Boolean);
+    return interleave(shuffle(ids));
+  }
+  if (f.kind === "mis") return shuffle(misList().map(q => q.id)).slice(0, n);
+  if (f.kind === "repeat") {
+    pool = pool.filter(q => q.rep > 0);
+    const fresh = pool.filter(q => !S.it[q.id] || !S.it[q.id].ok).sort((a, b) => (b.rep - a.rep) || (Math.random() - 0.5));
+    return interleave(fresh.slice(0, n).map(q => q.id));
+  }
+  if (f.kind === "warmup") return shuffle(pool.filter(q => !S.it[q.id]).map(q => q.id)).slice(0, n);
+  const due = dueList(pool).sort((a, b) => (S.it[b.id].mis - S.it[a.id].mis) || (S.it[a.id].due - S.it[b.id].due));
+  const out = due.slice(0, f.kind === "review" ? n : Math.round(n * 0.4)).map(q => q.id);
+  if (f.kind === "review") return interleave(out);
+  const used = new Set(out);
+  let tops = [...new Set(pool.map(q => q.topic))].map(id => ({id, p: gain(TOP[id]) + ((S.th[id] || {}).n < 3 ? TOP[id].w * 0.25 : 0) + 0.05}));
+  while (out.length < n && tops.length) {
+    let r = Math.random() * tops.reduce((a, t) => a + t.p, 0), t = tops[0];
+    for (const x of tops) { r -= x.p; if (r <= 0) { t = x; break; } }
+    const th = thetaOf(t.id);
+    const cand = pool.filter(q => q.topic === t.id && !used.has(q.id))
+      .map(q => ({q, s: (S.it[q.id] ? 0.6 : 0) + Math.abs(P(th, BD[q.d] || 0) - 0.7) - (q.rep ? 0.05 * Math.min(q.rep, 4) : 0) + Math.random() * 0.08}))
+      .sort((a, b) => a.s - b.s);
+    if (!cand.length) { tops = tops.filter(x => x !== t); continue; }
+    used.add(cand[0].q.id); out.push(cand[0].q.id);
+  }
+  return interleave(out);
+}
+
+/* ── practice run ── */
+let pr = null, mk = null, tab = "home", flt = {subj: "", q: ""}, pathSubj = null, importDraft = null, confirmReset = false, aiState = {}, unitSheet = null, eyeSheet = null;
+const LABELS = {smart: "Smart session", review: "Review due", placement: "Placement check", mis: "Confident mistakes", repeat: "Repeated questions", warmup: "Warm-up"};
+function startPractice(kind, opts = {}) {
+  if (mk && !mk.result) { go("exams"); toast("Finish or submit the running exam first."); return; }
+  const qs = buildSession(opts.n || 20, {kind, ...opts});
+  if (!qs.length) { toast(kind === "review" ? "Nothing is due for review right now." : "No new questions left there. Try a smart session."); return; }
+  const label = kind === "topic" || kind === "warmup" ? (kind === "warmup" ? "Warm-up · " : "") + TOP[opts.topic]?.name : kind === "subject" ? opts.subject : (LABELS[kind] || "Practice") + (kind === "repeat" && opts.subject ? " · " + opts.subject : "");
+  pr = {kind, label, topic: opts.topic, qs, ord: qs.map(() => shuffle([0,1,2,3])), i: 0, sel: null, done: false, res: [], seen: new Set(), t0: Date.now(), before: project().tot, xp0: S.xp, stars0: {...S.stars}, end: false, combo: 0, best: 0, anim: false};
+  unitSheet = null; tab = "practice"; render(true); scrollTo(0, 0);
+}
+function answer(sure) {
+  if (!pr || pr.done || pr.sel == null) return;
+  const id = pr.qs[pr.i], q = QI[id], ok = pr.ord[pr.i][pr.sel] === q.a;
+  const retry = pr.seen.has(id);
+  const secs = Math.min(300, (Date.now() - pr.t0) / 1000);
+  if (!retry) { record(q, ok, sure, secs); pr.res.push({id, ok, sure, secs}); pr.seen.add(id); save(); }
+  else if (ok) addXP(2);
+  if (!ok && !retry) { pr.qs.push(id); pr.ord.push(shuffle([0,1,2,3])); }
+  pr.combo = ok ? pr.combo + 1 : 0; pr.best = Math.max(pr.best, pr.combo);
+  pr.done = true; pr.retry = retry; pr.anim = false; pr.why = null;
+  haptic(ok ? 12 : [25, 40, 25]);
+  render(); showXP();
+}
+function nextQ() {
+  if (!pr) return;
+  pr.i++; pr.sel = null; pr.done = false; pr.retry = false; pr.t0 = Date.now();
+  if (pr.i >= pr.qs.length) { pr.end = true; save(); }
+  render(); scrollTo(0, 0);
+}
+function showXP() {
+  if (!xpQueue) return;
+  const n = xpQueue; xpQueue = 0;
+  const el = document.createElement("div"); el.className = "xpfloat"; el.textContent = `+${n} XP`;
+  document.body.append(el); setTimeout(() => el.remove(), 1700);
+}
+const haptic = p => { try { if (navigator.vibrate && navigator.userActivation?.hasBeenActive) navigator.vibrate(p); } catch (e) {} };
+
+/* ── exams: fixed series papers, subject boss rounds, random quick rounds ── */
+function buildPaper(scale, only) {
+  const ids = [];
+  const seen = new Set(S.mocks.flatMap(m => m.ids || []));
+  for (const s of SUBJ) {
+    if (only && s.k !== only) continue;
+    const need = Math.round(s.m * scale);
+    const pool = QS.filter(q => q.subject === s.k && q.src === "bank");
+    const cnt = {}; pool.forEach(q => cnt[q.topic] = (cnt[q.topic] || 0) + 1);
+    // weighted sampling without replacement (Efraimidis–Spirakis): units appear in proportion to their exam weight
+    const keyed = pool.map(q => ({id: q.id, k: Math.pow(Math.random(), 1 / ((TOP[q.topic].w / cnt[q.topic]) * (seen.has(q.id) ? 0.3 : 1)))}));
+    keyed.sort((a, b) => b.k - a.k);
+    ids.push(...keyed.slice(0, need).map(x => x.id));
+  }
+  return ids;
+}
+// More series on demand: official count per unit; questions least used in your earlier papers first, repeated topics next.
+// ponytail: ~9 fully fresh papers fit in the bank; after that the least-seen questions return, which doubles as spaced review
+function makeSeries() {
+  const used = {};
+  const papers = [...SERIES.filter((_, k) => S.mocks.some(m => m.series === k)).map(x => x.ids), ...S.xs.map(x => x.ids), ...S.mocks.map(m => m.ids || [])];
+  papers.forEach(ids => ids.forEach(id => used[id] = (used[id] || 0) + 1));
+  const ids = [];
+  for (const sj of SUBJ) for (const t of TOPS_BY[sj.k] || []) {
+    const pool = QS.filter(q => q.topic === t.id && q.src === "bank")
+      .map(q => ({id: q.id, k: (used[q.id] || 0) * 10 - (q.rep || 0) + Math.random()})).sort((a, b) => a.k - b.k);
+    ids.push(...pool.slice(0, t.weight).map(x => x.id));
+  }
+  const name = `Series ${SERIES.length + S.xs.length + 1}`;
+  S.xs.push({name, ids, fresh: ids.filter(id => !used[id]).length}); save();
+  return S.xs.length - 1;
+}
+
+function startExam(qs, label, series) {
+  if (mk && !mk.result) { go("exams"); toast("Finish or submit the running exam first."); return; }
+  pr = null; unitSheet = null;
+  mk = {label, series, qs, ord: qs.map(() => shuffle([0,1,2,3])), ans: {}, flag: {}, i: 0, start: 0, dur: Math.round(qs.length * PACE), confirm: false, result: null, pre: qs.length >= 100};
+  if (!mk.pre) mk.start = Date.now();
+  saveMock(); go("exams");
+}
+const saveMock = () => { try { localStorage.setItem(MKEY, JSON.stringify(mk)); } catch (e) {} };
+try { const m = JSON.parse(localStorage.getItem(MKEY)); if (m && !m.result && m.qs.every(id => QI[id])) mk = m; } catch (e) {}
+const left = () => mk && mk.start ? Math.max(0, Math.round(mk.dur - (Date.now() - mk.start) / 1000)) : mk ? mk.dur : 0;
+function submitExam() {
+  if (!mk || mk.result) return;
+  const used = Math.min(mk.dur, (Date.now() - mk.start) / 1000);
+  const n = Object.keys(mk.ans).length || 1;
+  const by = {}; let right = 0, wrong = 0, blank = 0;
+  const xp0 = S.xp;
+  mk.qs.forEach((id, i) => {
+    const q = QI[id]; if (!q) return;
+    const b = by[q.subject] || (by[q.subject] = [0, 0, 0]);
+    if (mk.ans[i] == null) { blank++; b[2]++; return; }
+    const ok = mk.ord[i][mk.ans[i]] === q.a;
+    ok ? (right++, b[0]++) : (wrong++, b[1]++);
+    record(q, ok, true, used / n, "exam");
+  });
+  today().exam++; checkQuests();
+  const net = right - S.neg * wrong;
+  mk.result = {right, wrong, blank, net, scaled: net / mk.qs.length * 200, by, used, xp: S.xp - xp0};
+  S.mocks.push({ts: Date.now(), label: mk.label, series: mk.series, n: mk.qs.length, right, wrong, blank, net, scaled: mk.result.scaled, mins: Math.round(used / 60), ids: mk.series == null ? mk.qs : undefined});
+  if (S.mocks.length > 40) S.mocks = S.mocks.slice(-40);
+  save(); saveMock(); render(); showXP(); scrollTo(0, 0);
+}
+setInterval(() => {
+  if (!mk || mk.result || !mk.start) return;
+  const s = left(), el = $("#clock");
+  if (el) { el.textContent = fmtT(s); el.classList.toggle("low", s < 300); }
+  if (s <= 0) submitExam();
+}, 1000);
+const fmtT = s => `${Math.floor(s / 3600)}:${String(Math.floor(s / 60) % 60).padStart(2, "0")}:${String(Math.floor(s % 60)).padStart(2, "0")}`;
+
+/* ── eye breaks: every 25 active minutes, 20 seconds looking far away ── */
+let activeSec = 0, lastInput = Date.now();
+["pointerdown", "keydown"].forEach(e => document.addEventListener(e, () => lastInput = Date.now(), {passive: true}));
+setInterval(() => {
+  if (document.hidden || Date.now() - lastInput > 120e3) return;
+  activeSec += 15;
+  if (activeSec >= 25 * 60 && !eyeSheet && !(mk && !mk.result && mk.start) && !(pr && pr.done)) startEye();
+}, 15e3);
+
+/* ── study group: opt-in weekly XP board for people the app is shared with; stores ids only ── */
+async function loadGroup(force) {
+  if (!db || !S.group || (groupState && !force && Date.now() - groupState.at < 60e3)) return;
+  groupState = {...(groupState || {rows: []}), at: Date.now(), busy: true};
+  try {
+    const w = weekKey(), snap = await db.collection("league").limit(200).get();
+    const rows = snap.docs.map(d => ({id: d.id, ...d.data()})).filter(r => r.w === w).sort((a, b) => b.xp - a.xp).slice(0, 30);
+    const ps = userCap && rows.length ? await userCap.profiles(rows.map(r => r.id)) : {};
+    groupState = {rows: rows.map(r => ({...r, name: (ps[r.id] && ps[r.id].name) || "Friend", me: r.id === uid})), at: Date.now()};
+  } catch (e) { groupState = {rows: [], at: Date.now(), err: true}; }
+  if (tab === "progress") render();
+}
+
+/* ── views ── */
+const chip = tid => { const [c, t] = level(tid); return `<span class="chip ${c}">${t}</span>`; };
+const starRow = (n, size = 14) => `<span class="stars" aria-label="${n} of 3 stars">${[1,2,3].map(i => `<svg viewBox="0 0 24 24" width="${size}" height="${size}"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="${i <= n ? "var(--gold)" : "var(--line)"}"/></svg>`).join("")}</span>`;
+function daysLeft() { if (!S.examDate) return null; return Math.ceil((new Date(S.examDate + "T07:00:00") - new Date(dayKey() + "T07:00:00")) / DAY); }
+const phaseOf = d => d == null ? null : d <= 0 ? 3 : d <= 3 ? 2 : d <= 9 ? 1 : 0;
+const PHASES = [
+  {n: "Repair weeks", q: 120, txt: "Placement check first, then the heavy units you are weakest in. Read a unit's notes after every miss."},
+  {n: "Speed week", q: 150, txt: "A full series paper every second day; smart sessions on the others. Aim for under 54 seconds a question."},
+  {n: "Revise", q: 80, txt: "Review due questions, confident mistakes and repeated questions. Read notes. No new chapters."},
+  {n: "Exam day", q: 0, txt: "Read notes lightly, then rest. In the hall, answer what you know first, then come back for the rest."}
+];
+const hud = () => `<div class="hud">
+  <div class="brand">MECEE-BL 2083<small>MBBS · 200 Q · 3 h</small></div><span class="grow"></span>
+  <span class="pill tn" title="Days in a row">${svg("flame", 18)}${S.streak.n || 0}</span>
+  <span class="pill tn" title="XP">${svg("bolt", 18)}${S.xp.toLocaleString()}</span></div>`;
+
+function vHome() {
+  const d = daysLeft(), ph = phaseOf(d), n = answered(), pj = project(), due = dueList().length, done = S.days[dayKey()] || 0;
+  const goal = phaseGoal(), mis = misList().length, top = ranked()[0].t, t = today();
+  const h = new Date().getHours(), late = h >= 23 || h < 5;
+  const wk = S.proj[new Date(Date.now() - 7 * DAY - 4 * 3600e3).toLocaleDateString("en-CA")], first = S.proj[Object.keys(S.proj).sort()[0]];
+  const delta = n > 0 && (wk ?? first) != null ? Math.round(pj.tot - (wk ?? first)) : null, since = wk != null ? "this week" : "since you started";
+  const pct = x => clamp(x / 200 * 100, 0, 100);
+  const goalMet = done >= goal;
+  const nextSeries = SERIES.findIndex((_, k) => !S.mocks.some(m => m.series === k));
+  const eyeIn = Math.max(1, Math.ceil((25 * 60 - activeSec) / 60));
+  return `${hud()}
+  <div><p class="muted small">${d == null ? "Set your exam date in Progress" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to MECEE-BL` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
+  ${late ? `<div class="note row" style="flex-wrap:nowrap"><span style="color:var(--gold-ink)">${svg("moon", 22)}</span><span>It's late. Sleep is when today's practice turns into memory. Your streak is safe until 4 am.</span></div>` : ""}
+  ${n < 20 ? `<div class="card stack">
+    <span class="lab">Start here</span><h2>Placement check</h2>
+    <p class="small muted">One question from each of the ${Object.keys(TOP).length} syllabus units. It finds the units costing you marks, so everything after targets them. After choosing, tap “I'm sure” or “Not sure”: that separates real knowledge from lucky guesses.</p>
+    <button class="btn" data-act="start" data-kind="placement">Start placement check</button></div>` : ""}
+  <div class="card hero">
+    <div class="ring"><svg viewBox="0 0 36 36"><circle class="trk" cx="18" cy="18" r="15" fill="none" stroke-width="4"/><circle class="val" cx="18" cy="18" r="15" fill="none" stroke-width="4" stroke-linecap="round" stroke-dasharray="94.25" stroke-dashoffset="${(94.25 * (1 - Math.min(1, done / Math.max(goal, 1)))).toFixed(1)}"/></svg><b class="tn">${done}<small>of ${goal}</small></b></div>
+    <div><h3>${goalMet ? "Today's goal done" : "Today's goal"}</h3><p class="small muted" style="margin-top:4px">${goalMet ? "Anything more is a bonus. Rest your eyes between sessions." : `${goal - done} more questions today${S.streak.n ? ` keeps your ${S.streak.n}-day streak` : " starts a streak"}.`}${S.streak.freeze ? ` ${S.streak.freeze} streak ${S.streak.freeze === 1 ? "freeze" : "freezes"} saved.` : ""}</p></div>
+  </div>
+  <button class="btn cta" data-act="start" data-kind="smart"><span><small>${n < 20 ? "Or jump in" : "Next up · most marks to gain"}</small>${esc(top.name)} and mixed review</span><span class="go">${svg("arrow")}</span></button>
+  <div class="quick">
+    <button class="btn sec" data-act="start" data-kind="review" ${due ? "" : "disabled"}>Review due<small>${due} waiting</small></button>
+    <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>asked in past papers</small></button>
+    ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Confident mistakes<small>${mis} to fix</small></button>` : ""}
+    ${nextSeries >= 0 ? `<button class="btn sec" data-act="series" data-k="${nextSeries}">${esc(SERIES[nextSeries].name)}<small>200 Q · 3 h</small></button>` : ""}
+  </div>
+  <div class="card">
+    <div class="row between"><span class="lab">Projected score</span>${delta != null && delta !== 0 ? `<span class="xp ${delta > 0 ? "done" : ""}">${delta > 0 ? "+" : ""}${delta} ${since}</span>` : ""}</div>
+    <div class="row" style="align-items:baseline;gap:6px;margin-top:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200</span></div>
+    <div class="track"><div class="band" style="left:${pct(160)}%;width:${pct(180) - pct(160)}%"></div><div class="fill" style="width:${pct(pj.tot)}%"></div></div>
+    <div class="axis"><span style="left:0">0</span><span style="left:50%">100</span><span style="left:85%;color:var(--ok-ink);font-weight:700">160–180</span><span style="left:100%">200</span></div>
+    ${n < 20 ? `<p class="small muted" style="margin-top:6px">A rough start. It sharpens with every answer.</p>` : ""}
+  </div>
+  <div class="card">
+    <span class="lab">Daily quests</span>
+    ${quests().map(q => `<div class="quest"><span class="qi" style="background:var(--${q.c === "acc" ? "acc-2" : q.c + "-2"});color:var(--${q.c === "acc" ? "acc" : q.c === "gold" ? "gold-ink" : "bad-ink"})">${svg(q.icon)}</span>
+      <div><b>${q.name}</b><div class="mini"><i style="width:${Math.min(100, q.val / q.need * 100)}%;background:var(--${q.c === "acc" ? "acc" : q.c})"></i></div></div>
+      <span class="xp ${t.q[q.id] ? "done" : ""}">${t.q[q.id] ? "Done" : `+${q.xp} XP`}</span></div>`).join("")}
+  </div>
+  <div class="card row" style="flex-wrap:nowrap;gap:12px"><span class="qi" style="background:var(--acc-2);color:var(--acc)">${svg("eye")}</span><div style="flex:1"><b>Eye break in ${eyeIn} min</b><div class="small muted">Every 25 minutes: look 20 feet away for 20 seconds.</div></div><button class="btn sec sm" data-act="eyenow">Now</button></div>
+  ${ph != null ? `<p class="small muted" style="padding-inline:4px">${PHASES[ph].txt}</p>` : ""}
+  <details class="card"><summary>How this app helps you remember</summary><div class="stack small">
+    <p><b>Answering beats rereading.</b> Testing yourself builds memory faster than reading notes (Adesope et al., 2017: g = 0.61).</p>
+    <p><b>Relearning on a schedule.</b> A missed question returns in the same session, then after 1, 3 and 7 days, until you get it right each time (Rawson et al., 2013).</p>
+    <p><b>Sure or not sure.</b> A wrong answer you were sure of is a fact stored wrongly. Fixing it right after feedback works best, so it comes back first (Butterfield &amp; Metcalfe, 2001).</p>
+    <p><b>Explaining your mistake.</b> Saying why you missed it helps the fix stick (Bisra et al., 2018: g = 0.55).</p>
+    <p><b>Mixed units and right difficulty.</b> Sessions mix units (Brunmair &amp; Richter, 2019) and pick questions you get right about 70% of the time, using an Elo/Rasch estimate of your level per unit.</p>
+    <p><b>Points for learning, not time.</b> XP comes only from right answers and units moving up. Rewards for just showing up lower motivation (Deci et al., 1999).</p>
+    <p><b>Sleep and eyes.</b> Steady sleep across weeks predicts grades better than one night (Okano et al., 2019). The 20-20-20 break eases screen strain.</p>
+    <p><b>Your projected score</b> = each unit's questions in the paper × your chance on a typical question, minus ${S.neg} per expected wrong answer. To reach ${S.target} you need about ${Math.round(goalP() * 100)}% of attempted questions right.</p>
+  </div></details>`;
+}
+
+function vPath() {
+  const subj = pathSubj || ranked()[0].t.subject;
+  const units = TOPS_BY[subj] || [];
+  const curId = ranked().find(r => r.t.subject === subj)?.t.id;
+  const pj = project().by[subj];
+  const sides = ["c", "l", "c", "r"];
+  return `${hud()}
+  <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="psub" data-k="${s.k}" aria-pressed="${s.k === subj}">${s.k}</button>`).join("")}</div>
+  <div class="unitband"><div><small>${esc(subj.toUpperCase())} · ${SC[subj].m} MARKS</small><b>${units.length} syllabus units</b></div><span class="tn" style="font-weight:800;white-space:nowrap">${pj.toFixed(0)}/${SC[subj].m}</span></div>
+  <div class="road">${units.map((t, k) => {
+    const st = stars(t.id), o = S.th[t.id] || {}, [lc] = level(t.id);
+    const cls = t.id === curId ? "cur" : st >= 3 ? "s3" : lc === "weak" ? "weak" : "";
+    const p = o.n ? clamp(pTopic(t.id) / goalP(), 0, 1) : 0;
+    const icon = t.id === curId ? "play" : st >= 3 ? "star" : lc === "weak" ? "bang" : "book";
+    return `<div class="lvl ${sides[k % 4] === "c" ? "" : sides[k % 4]}">
+      <button class="node ${cls}" data-act="unit" data-topic="${t.id}" aria-label="${esc(t.name)}">
+        <svg class="pr" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.5" fill="none" stroke="var(--line)" stroke-width="2.4"/><circle cx="18" cy="18" r="16.5" fill="none" stroke="${cls === "weak" ? "var(--bad)" : st >= 3 ? "var(--gold)" : "var(--acc)"}" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="${(103.7 * p).toFixed(1)} 103.7"/></svg>
+        <span class="core">${svg(icon, 26)}</span></button>
+      ${starRow(st)}<span class="t">${esc(t.name)}</span><span class="s">${t.weight} Q in paper${t.id === curId ? " · start here" : o.n ? ` · ${o.c || 0}/${o.n} right` : ""}</span></div>`;
+  }).join("")}
+    <div class="lvl"><button class="node boss" data-act="boss" data-k="${subj}" aria-label="${esc(subj)} boss round"><span class="core">${svg("cup", 30)}</span></button><span class="t">${esc(subj)} boss round</span><span class="s">${SC[subj].m} Q in ${Math.round(SC[subj].m * PACE / 60)} min</span></div>
+  </div>`;
+}
+
+function vQuestion() {
+  const id = pr.qs[pr.i], q = QI[id], ord = pr.ord[pr.i], retry = pr.done ? pr.retry : pr.seen.has(id);
+  const opts = ord.map((oi, di) => {
+    let cls = "", mark = "";
+    if (pr.done) { if (oi === q.a) { cls = "right"; mark = "Correct"; } else if (di === pr.sel) { cls = "wrong"; mark = "Yours"; } }
+    return `<button class="opt ${cls}" data-act="pick" data-i="${di}" aria-pressed="${!pr.done && di === pr.sel}" ${pr.done ? "disabled" : ""}><span class="k">${L[di]}</span><span>${esc(q.o[oi])}</span><span class="m">${mark}</span></button>`;
+  }).join("");
+  return `<div class="qtop"><button class="close" data-act="endpr" aria-label="End session">${svg("x", 18)}</button><div class="qprog"><i style="width:${(pr.i + (pr.done ? 1 : 0)) / pr.qs.length * 100}%"></i></div>${pr.combo >= 2 ? `<span class="combo">${pr.combo}× combo</span>` : `<span class="small muted tn">${pr.i + 1}/${pr.qs.length}</span>`}</div>
+    <div class="tags"><span class="tag">${esc(q.subject)} · ${esc(TOP[q.topic].name)}</span>${q.yrs?.length ? `<span class="tag rep">${esc(yrs(q))}</span>` : ""}${retry ? `<span class="tag">Second try</span>` : ""}</div>
+    ${q.s ? `<p class="small muted" style="margin-top:-6px">${esc(q.s)}</p>` : ""}
+    <p class="stem">${esc(q.q)}</p>
+    <div class="opts" role="group" aria-label="Options">${opts}</div>
+    <p class="small muted" style="text-align:center">${pr.done ? "" : "Choose an answer, then tap how sure you are."}</p>`;
+}
+function fbSheet() {
+  const id = pr.qs[pr.i], q = QI[id], ord = pr.ord[pr.i], ok = ord[pr.sel] === q.a, r = pr.res.find(x => x.id === id) || {}, t = TOP[q.topic];
+  const v = ok ? (pr.retry ? "Right this time" : r.sure ? "Correct" : "Correct, but a guess") : r.sure && !pr.retry ? "Sure, but wrong" : "Not this time";
+  const note = ok ? (r.sure || pr.retry ? "" : "Guessed answers come back tomorrow, so the luck turns into knowledge.") : pr.retry ? "It stays in your review list." : "It comes back at the end of this session." + (r.sure ? " You were sure, so it goes first in tomorrow's review." : "");
+  const anim = pr.anim ? "" : " anim"; pr.anim = true;
+  return `<div class="sheet ${ok ? "good" : "badd"}${anim}" role="dialog" aria-label="Answer feedback">
+    <span class="grab"></span>
+    <div class="v">${v}</div>
+    ${note ? `<p class="small">${note}</p>` : ""}
+    ${q.x ? `<p>${esc(q.x)}</p>` : ""}
+    ${q.trap ? `<div class="note"><b>Common trap:</b> ${esc(q.trap)}</div>` : ""}
+    ${!ok && !pr.retry ? `<div><span class="lab">Why did you miss it?</span><div class="why" style="margin-top:6px">${["Didn't know it", "Mixed up two terms", "Misread", "Rushed", "Calculation slip"].map(w => `<button data-act="why" data-w="${w}" aria-pressed="${pr.why === w}">${w}</button>`).join("")}</div></div>` : ""}
+    ${q.src === "ai" ? `<p class="small muted">Written by Claude for you. If it disagrees with your textbook, trust the textbook.</p>` : q.src === "you" ? `<p class="small muted">From questions you added${q.keySrc === "solved" ? ". The answer was worked out by Claude, not printed on your page; check it with your book" : ""}.</p>` : ""}
+    ${sample ? `<div><button class="btn sec sm" data-act="explain">Explain it differently</button></div>${aiState.explain && aiState.explain.id === id ? `<p class="ai" id="aiOut">${esc(aiState.explain.text)}</p>` : ""}` : ""}
+    <details><summary class="small">Notes: ${esc(t.name)}</summary><ul class="cpts">${(t.concepts || []).map(c => `<li>${noteHtml(c)}</li>`).join("")}</ul></details>
+    <button class="btn ${ok ? "ok" : "bad"}" data-act="next">${pr.i + 1 >= pr.qs.length ? "Finish" : "Continue"}</button>
+  </div>`;
+}
+const noteHtml = c => / \[repeat\]$/.test(c) ? `${esc(c.replace(/ \[repeat\]$/, ""))} <span class="chip shaky">Repeated</span>` : esc(c);
+
+function vSummary() {
+  const r = pr.res, ok = r.filter(x => x.ok).length, sure = r.filter(x => x.sure), sureOk = sure.filter(x => x.ok).length;
+  const conf = r.filter(x => x.sure && !x.ok), after = project().tot, d = after - pr.before;
+  const med = r.length ? r.map(x => x.secs).sort((a, b) => a - b)[Math.floor(r.length / 2)] : 0;
+  const ups = Object.keys(S.stars).filter(k => (S.stars[k] || 0) > (pr.stars0[k] || 0));
+  return `<div style="display:grid;gap:8px;text-align:center;padding-top:20px">
+      <div style="width:84px;height:84px;border-radius:28px;background:var(--gold-2);color:var(--gold);display:grid;place-items:center;justify-self:center">${svg("cup", 44)}</div>
+      <h1>${esc(pr.label)} done</h1><p class="muted">${ok} of ${r.length} right first time${pr.best >= 3 ? ` · best combo ${pr.best}` : ""}</p></div>
+    <div class="tiles"><div class="tile"><span class="lab">XP</span><b style="color:var(--gold-ink)">+${S.xp - pr.xp0}</b></div><div class="tile"><span class="lab">Sure & right</span><b style="color:var(--ok-ink)">${sure.length ? Math.round(sureOk / sure.length * 100) : "–"}%</b></div><div class="tile"><span class="lab">Speed</span><b>${Math.round(med)}s</b></div></div>
+    ${ups.length ? `<div class="card stack"><span class="lab">Units moved up</span>${ups.map(k => `<div class="row between"><span>${esc(TOP[k].name)}</span>${starRow(S.stars[k], 16)}</div>`).join("")}</div>` : ""}
+    <div class="card row between"><div><b>Projected ${Math.round(after)} / 200</b><div class="small muted">${d >= 0 ? "+" : ""}${d.toFixed(1)} this session</div></div><div class="row" style="gap:6px;color:var(--flame);font-weight:800">${svg("flame", 26)}<span class="tn" style="color:var(--ink)">${S.streak.n}</span></div></div>
+    ${conf.length ? `<div class="card stack"><b>${conf.length} confident ${conf.length === 1 ? "mistake" : "mistakes"} found</b><p class="small muted">You were sure, but wrong. They come back first in your next review, when fixing them sticks best.</p></div>` : ""}
+    ${pr.kind === "warmup" ? `<div class="note">Now read the notes for this unit. Trying first makes the reading stick better.</div>` : ""}`;
+}
+
+function vExams() {
+  if (mk && mk.result) return vExamResult();
+  if (mk && mk.pre) return vExamPre();
+  if (mk) return vExamQ();
+  const best = k => { const ms = S.mocks.filter(m => m.series === k); return ms.length ? Math.max(...ms.map(m => m.scaled)) : null; };
+  return `${hud()}<h1>Exams</h1>
+    <p class="small muted" style="margin-top:-6px">Full papers with the official pattern: 200 questions, 3 hours, −${S.neg} per wrong answer, units in their exact syllabus counts. Series 1 holds the most-repeated topics from 2078–2082 papers.</p>
+    ${SERIES.map((s, k) => { const b = best(k), n = S.mocks.filter(m => m.series === k).length; return `<div class="card series"><span class="sno ${n ? "best" : ""}">${k + 1}</span><div><b>${esc(s.name)}</b><div class="small muted">${n ? `best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${n} ${n === 1 ? "try" : "tries"}` : "Not taken yet"}</div></div><button class="btn ${n ? "sec" : ""} sm" data-act="series" data-k="${k}">${n ? "Retake" : "Start"}</button></div>`; }).join("")}
+    ${S.xs.map((x, j) => { const key = "x" + j, ms = S.mocks.filter(m => m.series === key), b = ms.length ? Math.max(...ms.map(m => m.scaled)) : null; return `<div class="card series"><span class="sno ${ms.length ? "best" : ""}">${SERIES.length + j + 1}</span><div><b>${esc(x.name)}</b><div class="small muted">${ms.length ? `best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${ms.length} ${ms.length === 1 ? "try" : "tries"}` : `${x.fresh} of 200 questions new to your papers`}</div></div><button class="btn ${ms.length ? "sec" : ""} sm" data-act="xseries" data-k="${j}">${ms.length ? "Retake" : "Start"}</button></div>`; }).join("")}
+    <button class="btn sec" data-act="makeseries">Make Series ${SERIES.length + S.xs.length + 1}</button>
+    <div class="note"><b>How many papers?</b> No study gives a magic number. What raises scores is a full timed paper about every second day, plus reviewing every mistake right after it (Adesope et al., 2017; Rawson et al., 2013). With ${Math.max(0, daysLeft() ?? 0)} days left that is about ${Math.max(1, Math.ceil(Math.max(0, (daysLeft() ?? 0) - 1) / 2))} more full papers. On other days, use smart sessions and half papers.</div>
+    <span class="lab" style="margin-top:4px">Quick rounds</span>
+    <div class="grid2b"><button class="btn sec" data-act="quick" data-scale="0.1" data-label="Sprint">Sprint · 20 Q</button><button class="btn sec" data-act="quick" data-scale="0.5" data-label="Half paper">Half · 100 Q</button></div>
+    <div class="seg" role="group" aria-label="Subject boss rounds">${SUBJ.map(s => `<button data-act="boss" data-k="${s.k}">${s.k} · ${s.m}</button>`).join("")}</div>
+    <div class="note"><b>Guessing with −${S.neg} marking.</b> A blind guess earns about +0.06 on average. Rule out one option and answering is worth +0.17; rule out two and it's +0.38. So answer almost everything. Leave blank only what you can't narrow at all.</div>
+    ${S.mocks.length ? `<div class="card stack"><span class="lab">Your papers</span><div class="tbl"><table><thead><tr><th>Date</th><th>Paper</th><th class="n">Right</th><th class="n">Wrong</th><th class="n">/200</th></tr></thead><tbody>
+      ${S.mocks.slice().reverse().map(m => `<tr><td>${new Date(m.ts).toLocaleDateString(undefined, {month: "short", day: "numeric"})}</td><td>${esc(m.label)}</td><td class="n">${m.right}</td><td class="n">${m.wrong}</td><td class="n"><b>${Math.round(m.scaled)}</b></td></tr>`).join("")}</tbody></table></div></div>` : ""}`;
+}
+function vExamPre() {
+  return `<div style="padding-top:12px"></div><h1>${esc(mk.label)}</h1>
+    <p class="muted">${mk.qs.length} questions · ${Math.round(mk.dur / 60)} minutes · −${S.neg} per wrong answer</p>
+    <div class="card stack"><span class="lab">Two minutes before you start</span>
+      <p><b>1. Write your worries down.</b> Spend two minutes writing exactly what you're nervous about. In a study, anxious students who did this scored higher (Ramirez &amp; Beilock, 2011).</p>
+      <p><b>2. Read your nerves as energy.</b> A fast heartbeat is your body getting ready to perform. Telling yourself that helped test-takers in another study (Jamieson et al., 2010).</p>
+      <p><b>3. Two passes.</b> First pass: answer everything you know quickly. Second pass: come back to the flagged ones. Budget about 54 seconds a question.</p></div>
+    <div class="grid2b"><button class="btn sec" data-act="mkcancelpre">Not now</button><button class="btn" data-act="mkbegin">Begin paper</button></div>`;
+}
+function omrGrid(cls, act) {
+  let html = "", prev = null;
+  mk.qs.forEach((id, k) => { const s = QI[id].subject; if (s !== prev) { html += `<div class="sec">${esc(s)}</div>`; prev = s; } html += `<button data-act="${act}" data-i="${k}" class="${cls(k)}" aria-label="Question ${k + 1}">${k + 1}</button>`; });
+  return `<div class="omr">${html}</div>`;
+}
+function vExamQ() {
+  const i = mk.i, q = QI[mk.qs[i]], ord = mk.ord[i], nA = Object.keys(mk.ans).length;
+  return `<div class="card ebar"><span class="clock" id="clock">${fmtT(left())}</span><span class="small muted" style="flex:1">${esc(mk.label)} · ${nA}/${mk.qs.length}</span><button class="btn sm" data-act="mksubmit">Submit</button></div>
+    ${mk.confirm ? `<div class="card stack" style="box-shadow:inset 0 0 0 2px var(--acc)"><b>Submit the paper?</b><p class="small">${mk.qs.length - nA} questions are blank. Blank scores 0; wrong scores −${S.neg}. Time left: ${fmtT(left())}.</p><div class="grid2b"><button class="btn sec sm" data-act="mkcancel">Keep going</button><button class="btn sm" data-act="mkconfirm">Submit paper</button></div></div>` : ""}
+    <div class="row between"><b class="tn">Question ${i + 1}</b><span class="tag">${esc(q.subject)}</span></div>
+    <p class="stem">${esc(q.q)}</p>
+    <div class="opts">${ord.map((oi, di) => `<button class="opt" data-act="mkpick" data-i="${di}" aria-pressed="${mk.ans[i] === di}"><span class="k">${L[di]}</span><span>${esc(q.o[oi])}</span><span></span></button>`).join("")}</div>
+    <div class="grid2b"><button class="btn sec sm" data-act="mkflag" aria-pressed="${!!mk.flag[i]}">${mk.flag[i] ? "Flagged" : "Flag for later"}</button>${mk.ans[i] != null ? `<button class="btn sec sm" data-act="mkclear">Clear answer</button>` : "<span></span>"}</div>`;
+}
+function vExamResult() {
+  const r = mk.result;
+  const rows = SUBJ.filter(s => r.by[s.k]).map(s => { const [a, b, c] = r.by[s.k]; return `<tr><td>${esc(s.k)}</td><td class="n">${a}</td><td class="n">${b}</td><td class="n">${c}</td><td class="n"><b>${(a - S.neg * b).toFixed(2)}</b>/${a + b + c}</td></tr>`; }).join("");
+  const wrong = mk.qs.map((id, i) => ({q: QI[id], i})).filter(({q, i}) => q && (mk.ans[i] == null || mk.ord[i][mk.ans[i]] !== q.a));
+  return `<div style="display:grid;gap:6px;text-align:center;padding-top:16px"><span class="lab">${esc(mk.label)}</span><div class="score tn" style="font-size:56px">${Math.round(r.scaled)}<span class="muted" style="font-size:20px"> / 200</span></div><p class="muted small">${r.right} right · ${r.wrong} wrong · ${r.blank} blank · ${Math.round(r.used / 60)} min · +${r.xp} XP</p></div>
+    <div class="card"><div class="tbl"><table><thead><tr><th>Subject</th><th class="n">Right</th><th class="n">Wrong</th><th class="n">Blank</th><th class="n">Marks</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+    ${r.blank ? `<div class="note">You left ${r.blank} blank. With −${S.neg} marking, answering after ruling out one option is worth about +0.17 each, so next time narrow and answer.</div>` : ""}
+    <div class="card stack"><span class="lab">Answer sheet · tap a red one to see it</span>${omrGrid(k => { const q = QI[mk.qs[k]]; return mk.ans[k] == null ? "" : mk.ord[k][mk.ans[k]] === q.a ? "r" : "w"; }, "mkreview")}</div>
+    ${wrong.length ? `<span class="lab">What you missed</span>${wrong.map(({q, i}) => `<div class="card stack" id="mr${i}">
+      <div class="tags"><span class="tag">Q${i + 1} · ${esc(TOP[q.topic].name)}</span>${q.yrs?.length ? `<span class="tag rep">${esc(yrs(q))}</span>` : ""}</div>
+      <p style="font-weight:600">${esc(q.q)}</p>
+      <p class="small"><b style="color:var(--ok-ink)">Answer: ${esc(q.o[q.a])}</b>${mk.ans[i] != null ? `<br><span style="color:var(--bad-ink)">You marked: ${esc(q.o[mk.ord[i][mk.ans[i]]])}</span>` : "<br>Left blank"}</p>
+      ${q.x ? `<p class="small muted">${esc(q.x)}</p>` : ""}</div>`).join("")}` : ""}`;
+}
+
+function vNotes() {
+  const qq = flt.q.trim().toLowerCase();
+  const list = SUBJ.filter(s => !flt.subj || s.k === flt.subj).flatMap(s => (TOPS_BY[s.k] || []).map(t => {
+    const cs = (t.concepts || []).filter(c => !qq || c.toLowerCase().includes(qq) || t.name.toLowerCase().includes(qq));
+    if (!cs.length) return "";
+    return `<details class="card" ${qq ? "open" : ""}><summary><span>${esc(t.name)}</span> <span class="small muted" style="font-weight:600">· ${esc(s.k)} · ${t.weight} Q</span></summary>
+      <div class="stack"><div class="row">${starRow(stars(t.id))}${chip(t.id)}</div><ul class="cpts">${cs.map(c => `<li>${noteHtml(c)}</li>`).join("")}</ul>
+      <div class="grid2b"><button class="btn sec sm" data-act="start" data-kind="warmup" data-topic="${t.id}" data-n="5">Warm-up 5</button><button class="btn sm" data-act="start" data-kind="topic" data-topic="${t.id}">Practise 20</button></div></div></details>`;
+  })).join("");
+  return `${hud()}<h1>Notes</h1>
+    <p class="small muted" style="margin-top:-6px">Key facts and formulas for every syllabus unit. Tip: do the 5-question warm-up first; trying before reading makes the reading stick.</p>
+    <div class="seg">${["", ...SUBJ.map(s => s.k)].map(k => `<button data-act="csub" data-k="${k}" aria-pressed="${flt.subj === k}">${k || "All"}</button>`).join("")}</div>
+    <label class="f">Search<input id="cq" type="search" value="${esc(flt.q)}" placeholder="e.g. Krebs, lens, pH"></label>
+    ${list || `<div class="empty">Nothing matches “${esc(flt.q)}”.</div>`}`;
+}
+
+function vProgress() {
+  const pj = project(), n = answered(), L1 = lvl();
+  const sure = S.log.filter(x => x[3]), sOk = sure.filter(x => x[2]).length, gs = S.log.filter(x => !x[3]), gOk = gs.filter(x => x[2]).length;
+  const secs = S.log.slice(-200).map(x => x[4]).sort((a, b) => a - b), med = secs.length ? secs[Math.floor(secs.length / 2)] : 0;
+  const days = [...Array(14)].map((_, i) => S.days[new Date(Date.now() - (13 - i) * DAY - 4 * 3600e3).toLocaleDateString("en-CA")] || 0);
+  const mx = Math.max(20, ...days);
+  const whys = Object.entries(S.why).sort((a, b) => b[1] - a[1]);
+  const TIP = {"Didn't know it": "Read that unit's notes right after the session, then do a warm-up tomorrow.", "Mixed up two terms": "Make a two-column list of the look-alike terms and test yourself on it.", "Misread": "Slow down on the stem: find the key word (NOT, EXCEPT, maximum) before reading options.", "Rushed": "You have 54 s a question. Use the full time on the ones you can solve.", "Calculation slip": "Write units at every step and check the answer's size makes sense."};
+  const rows = ranked().map(({t, g}) => { const o = S.th[t.id] || {}; return `<tr><td>${esc(t.name)}<div class="small muted">${esc(t.subject)} · ${t.weight} Q</div></td><td class="n">${o.n ? `${o.c || 0}/${o.n}` : "–"}</td><td>${starRow(stars(t.id), 12)}</td><td class="n"><b>${g.toFixed(1)}</b></td></tr>`; }).join("");
+  return `${hud()}<h1>Progress</h1>
+    <div class="card stack"><div class="row between"><div><span class="lab">Level ${L1.n}</span><h2>${L1.name}</h2></div><span class="tn small muted">${S.xp.toLocaleString()} XP</span></div>
+      ${L1.to ? `<div class="mini" style="height:8px"><i style="width:${(S.xp - L1.from) / (L1.to - L1.from) * 100}%;background:var(--gold)"></i></div><p class="small muted">${(L1.to - S.xp).toLocaleString()} XP to ${LEVELS[L1.n][1]}. XP comes from right answers and units moving up.</p>` : `<p class="small muted">Top level reached.</p>`}</div>
+    <div class="card stack"><div class="row between"><span class="lab">Projected score</span><span class="small muted">${n} answers · ${n < 60 ? "rough" : n < 200 ? "fair" : "good"} estimate</span></div>
+      <div class="row" style="align-items:baseline;gap:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200 · target ${S.target}</span></div>
+      ${SUBJ.map(s => `<div class="sbar"><span>${esc(s.k)}</span><div class="mini"><i style="width:${pj.by[s.k] / s.m * 100}%;background:var(--acc)"></i></div><span class="tn" style="text-align:right">${pj.by[s.k].toFixed(1)}/${s.m}</span></div>`).join("")}</div>
+    <div class="card stack"><span class="lab">Badges</span><div class="badges">${BADGES.map(b => `<div class="bdg ${b.ok() ? "" : "off"}"><span>${svg(b.icon, 26)}</span>${b.name}</div>`).join("")}</div></div>
+    ${groupCard()}
+    <div class="card stack"><span class="lab">Sure vs guessing</span>
+      <div class="tiles"><div class="tile"><span class="lab">Sure</span><b>${sure.length ? Math.round(sOk / sure.length * 100) + "%" : "–"}</b></div><div class="tile"><span class="lab">Guess</span><b>${gs.length ? Math.round(gOk / gs.length * 100) + "%" : "–"}</b></div><div class="tile"><span class="lab">Speed</span><b>${med}s</b></div></div>
+      <p class="small muted">Under 90% right when sure means some facts are stored wrongly. The confident-mistake review fixes them.</p></div>
+    ${whys.length ? `<div class="card stack"><span class="lab">Why you miss questions</span>${whys.map(([w, c]) => `<div class="sbar" style="grid-template-columns:9rem 1fr 2rem"><span>${esc(w)}</span><div class="mini"><i style="width:${c / whys[0][1] * 100}%;background:var(--bad)"></i></div><span class="tn" style="text-align:right">${c}</span></div>`).join("")}<div class="note"><b>Try this:</b> ${esc(TIP[whys[0][0]] || "")}</div></div>` : ""}
+    <div class="card stack"><span class="lab">Questions per day · last 14 days</span><div class="bars14" role="img" aria-label="Questions per day">${days.map(v => `<div class="${v ? "" : "z"}" style="height:${Math.max(3, v / mx * 100)}%" title="${v}"></div>`).join("")}</div></div>
+    <details class="card"><summary>All units, most marks to gain first</summary><p class="small muted">Gain = marks added by reaching ${Math.round(goalP() * 100)}% in that unit.</p><div class="tbl"><table><thead><tr><th>Unit</th><th class="n">You</th><th>Stars</th><th class="n">Gain</th></tr></thead><tbody>${rows}</tbody></table></div></details>
+    <div class="card stack"><span class="lab">Settings</span>
+      <label class="f">Look<select id="look" data-set="look"><option value="auto" ${S.look === "auto" ? "selected" : ""}>Calm by day, Calm night after 6 pm</option><option value="calm" ${S.look === "calm" ? "selected" : ""}>Calm always</option><option value="night" ${S.look === "night" ? "selected" : ""}>Calm night always</option></select></label>
+      <div class="grid2b"><label class="f">Exam date<input type="date" id="examDate" data-set="examDate" value="${esc(S.examDate)}"></label>
+      <label class="f">Target<select id="target" data-set="target">${[160, 165, 170, 175, 180].map(v => `<option value="${v}" ${S.target == v ? "selected" : ""}>${v} / 200</option>`).join("")}</select></label></div>
+      <label class="f">Negative marking<select id="neg" data-set="neg">${[0.25, 0].map(v => `<option value="${v}" ${S.neg == v ? "selected" : ""}>${v ? "−" + v + " per wrong answer" : "None"}</option>`).join("")}</select></label>
+      <button class="btn sec" data-act="tab" data-tab="sources">Exam facts, sources and adding questions</button>
+      ${confirmReset ? `<div class="stack"><span class="small">Erase every answer, XP, exam and added question?</span><div class="grid2b"><button class="btn sec sm" data-act="reset0">Keep</button><button class="btn bad sm" data-act="reset2">Erase</button></div></div>` : `<button class="btn sec sm" data-act="reset1" style="justify-self:start">Reset progress</button>`}
+    </div>`;
+}
+
+function groupCard() {
+  if (!db) return `<div class="card stack"><span class="lab">Study group</span><p class="small muted">A weekly XP board with friends. It works when the app is opened in Claude while signed in, and shared with friends from the Share menu.</p></div>`;
+  if (!S.group) return `<div class="card stack"><span class="lab">Study group</span><p class="small">See this week's XP next to friends you've shared the app with. Joining shows your name, weekly XP and streak to them. Nothing else is shared, and you can leave any time.</p><p class="small muted">Friends need Contributor access (Share menu) to appear on the board.</p><button class="btn sec" data-act="joingroup">Join the board</button></div>`;
+  loadGroup();
+  const rows = groupState ? groupState.rows : [];
+  return `<div class="card stack"><div class="row between"><span class="lab">Study group · this week</span><span class="small muted">resets Sunday</span></div>
+    ${groupState?.err ? `<p class="small muted">Couldn't load the board just now.</p>` : !rows.length ? `<p class="small muted">${groupState ? "No one has XP this week yet. Answer a few questions to appear." : "Loading…"}</p>` :
+      rows.map((r, i) => `<div class="row" style="flex-wrap:nowrap;gap:10px;${r.me ? "color:var(--acc);font-weight:800" : ""}"><b class="tn" style="width:22px">${i + 1}</b><span class="qi" style="width:32px;height:32px;border-radius:50%;background:var(--soft);font-size:13px;font-weight:800">${esc((r.me ? "You" : r.name).slice(0, 1))}</span><span style="flex:1">${esc(r.me ? "You" : r.name)}</span><span class="small muted tn">${svg("flame", 14)} ${r.streak || 0}</span><span class="tn" style="min-width:64px;text-align:right">${(r.xp || 0).toLocaleString()} XP</span></div>`).join("")}
+    <button class="btn sec sm" data-act="leavegroup" style="justify-self:start">Leave the board</button></div>`;
+}
+
+function vSources() {
+  const R = RAW.meta;
+  const topOpts = SUBJ.map(s => `<optgroup label="${s.k}">${(TOPS_BY[s.k] || []).map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</optgroup>`).join("");
+  return `<div class="qtop"><button class="close" data-act="tab" data-tab="progress" aria-label="Back">${svg("x", 18)}</button><h2>Sources</h2></div>
+    <div class="card stack"><span class="lab">The exam</span><div class="small">${(R.facts || []).map(f => `<div class="src"><b>${esc(f.k)}</b><span>${esc(f.v)}</span>${f.url ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">Source</a>` : ""}</div>`).join("")}</div></div>
+    <div class="card stack"><span class="lab">Past and model questions</span><div class="small">${(R.sources || []).map(s => `<div class="src"><div class="row between"><b>${esc(s.name)}</b><span class="muted">${esc(s.cost)}</span></div><span class="muted">${esc(s.what)}</span>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url.replace(/^https?:\/\/(www\.)?/, "").slice(0, 48))}</a>` : ""}</div>`).join("")}</div>
+      <p class="small muted">MEC does not publish past papers; the ones online are recalled by students. Pages like Vibrant and Ambition Guru post them free to read, but the wording and solutions belong to them, so this app tests the same repeated concepts in its own words. To practise theirs here, paste them below.</p></div>
+    <div class="card stack"><h2>Add from photos or PDFs</h2>
+      <p class="small muted">Pick screenshots, photos or PDFs of question pages you have. Claude reads them, puts each question in its syllabus unit, and you check the list before anything is added. They stay private to your account.</p>
+      ${sample ? `<label class="btn ${photo?.busy ? "sec" : ""}" style="cursor:pointer" ${photo?.busy ? 'aria-disabled="true"' : ""}>${photo?.busy ? "Reading…" : "Choose photos or PDF"}<input id="photoIn" type="file" accept="image/jpeg,image/png,image/webp,image/gif,application/pdf" multiple hidden ${photo?.busy ? "disabled" : ""}></label>` : `<p class="small">This works when the app is opened in Claude.</p>`}
+      ${photo?.msg ? `<p class="small" aria-live="polite">${esc(photo.msg)}</p>` : ""}
+      ${photo?.busy ? `<button class="btn sec sm" data-act="photostop" style="justify-self:start">Stop</button>` : ""}
+      ${photo?.items?.length && !photo.busy ? `<div class="stack">${photo.items.slice(0, 50).map((it, k) => `<div class="row" style="flex-wrap:nowrap;align-items:flex-start;gap:10px;border-top:1px solid var(--line);padding-top:10px">
+          <span class="small muted tn" style="min-width:22px">${k + 1}</span>
+          <div style="flex:1"><p class="small" style="font-weight:600">${esc(it.q.slice(0, 140))}${it.q.length > 140 ? "…" : ""}</p><p class="small muted">${esc(TOP[it.topic].subject)} · ${esc(TOP[it.topic].name)} · answer: ${esc(it.o[it.a].slice(0, 40))}${it.keySrc === "solved" ? " (worked out by Claude)" : " (from your page)"}</p></div>
+          <button class="btn sec sm" data-act="photodrop" data-k="${k}" aria-label="Remove question ${k + 1}">Remove</button></div>`).join("")}
+          ${photo.items.length > 50 ? `<p class="small muted">…and ${photo.items.length - 50} more.</p>` : ""}
+        <div class="grid2b"><button class="btn sec" data-act="photoclear">Discard</button><button class="btn" data-act="photoadd">Add ${photo.items.length}</button></div></div>` : ""}
+    </div>
+    <div class="card stack"><h2>Add questions</h2><p class="small muted">Paste questions in this shape, with a blank line between them. The explanation line is optional.</p>
+      <pre class="ai">Q: Which organelle is called the powerhouse of the cell?
+A) Ribosome
+B) Mitochondrion
+C) Golgi body
+D) Lysosome
+Ans: B
+Exp: It makes most of the cell's ATP.</pre>
+      <label class="f">Unit<select id="impTopic">${topOpts}</select></label>
+      <label class="f">Questions<textarea id="impText" placeholder="Paste questions here">${esc(importDraft?.text || "")}</textarea></label>
+      ${importDraft?.parsed ? `<p class="small">${importDraft.parsed.out.length} ready${importDraft.parsed.bad.length ? `, ${importDraft.parsed.bad.length} skipped because an option or the “Ans:” line is missing (first: “${esc(importDraft.parsed.bad[0].slice(0, 60))}”)` : ""}.</p>` : ""}
+      <div class="grid2b"><button class="btn sec" data-act="imparse">Check</button><button class="btn" data-act="impadd" ${importDraft?.parsed?.out.length ? "" : "disabled"}>Add ${importDraft?.parsed?.out.length || ""}</button></div>
+      <p class="small muted">${S.custom.filter(q => q.src === "you").length} added by you · ${S.custom.filter(q => q.src === "ai").length} written by Claude.</p></div>
+    ${sample ? `<div class="card stack"><h2>More questions for one unit</h2><p class="small muted">When you have done most of a unit, Claude can write 10 new questions on it, aimed at what you got wrong. They are marked as written by Claude.</p>
+      <label class="f">Unit<select id="genTopic">${topOpts}</select></label>
+      <div class="grid2b">${aiState.gen?.busy ? `<button class="btn sec" data-act="genstop">Stop</button>` : "<span></span>"}<button class="btn" data-act="gen" ${aiState.gen?.busy ? "disabled" : ""}>${aiState.gen?.busy ? "Writing…" : "Write 10"}</button></div>
+      ${aiState.gen?.msg ? `<p class="small">${esc(aiState.gen.msg)}</p>` : ""}</div>` : ""}`;
+}
+
+/* ── overlays: answer sheet, unit sheet, exam answer grid, eye break ── */
+function renderOverlay() {
+  let h = "";
+  if (tab === "practice" && pr && pr.done && !pr.end) h = fbSheet();
+  else if (unitSheet) {
+    const t = TOP[unitSheet], o = S.th[t.id] || {}, nq = QS.filter(q => q.topic === t.id).length, nrep = QS.filter(q => q.topic === t.id && q.rep).length;
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" role="dialog" aria-label="${esc(t.name)}"><span class="grab"></span>
+      <div class="row between"><span class="lab">${esc(t.subject)} · ${t.weight} Q in paper</span>${starRow(stars(t.id), 18)}</div>
+      <h2>${esc(t.name)}</h2>
+      <p class="small muted">${o.n ? `${o.c || 0} of ${o.n} right so far · ${level(t.id)[1]}` : "Not tried yet"} · ${nq} questions here${nrep ? `, ${nrep} on repeated topics` : ""}</p>
+      <button class="btn" data-act="start" data-kind="topic" data-topic="${t.id}">Practise 20</button>
+      <div class="grid2b"><button class="btn sec" data-act="start" data-kind="warmup" data-topic="${t.id}" data-n="5">Warm-up 5</button><button class="btn sec" data-act="unitnotes" data-topic="${t.id}">Read notes</button></div>
+      ${nrep ? `<button class="btn sec" data-act="start" data-kind="repeat" data-topic="${t.id}">Repeated questions only</button>` : ""}
+    </div>`;
+  } else if (mk && mk.sheet && !mk.result) {
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" role="dialog" aria-label="Answer sheet"><span class="grab"></span><div class="row between"><b>Answer sheet</b><span class="small muted">filled = answered · dot = flagged</span></div>${omrGrid(k => `${mk.ans[k] != null ? "a" : ""} ${k === mk.i ? "cur" : ""} ${mk.flag[k] ? "fl" : ""}`, "mkjump")}</div>`;
+  } else if (eyeSheet) {
+    h = `<div class="scrim"></div><div class="sheet anim" role="dialog" aria-label="Eye break" style="text-align:center;align-items:center"><span class="grab"></span>
+      <span class="qi" style="background:var(--acc-2);color:var(--acc);width:64px;height:64px;border-radius:20px">${svg("eye", 30)}</span>
+      <h2>Eye break</h2><p class="muted">Look at something about 20 feet away. Blink slowly. Relax your shoulders.</p>
+      <div class="score tn" id="eyeT">${eyeSheet.left}</div>
+      <button class="btn" data-act="eyedone">${eyeSheet.left > 0 ? "Skip" : "Back to studying"}</button></div>`;
+  }
+  $("#overlay").innerHTML = h;
+}
+function bottomBar() {
+  if (tab === "practice" && pr && !pr.end && !pr.done) { const dis = pr.sel == null ? "disabled" : ""; return `<button class="btn" data-act="sure" ${dis}>I'm sure</button><button class="btn sec" data-act="guess" ${dis}>Not sure</button>`; }
+  if (tab === "practice" && pr && pr.end) return `<button class="btn sec" data-act="home">Done</button><button class="btn" data-act="${pr.kind === "warmup" ? "unitnotes" : "start"}" data-kind="smart" data-topic="${pr.topic || ""}">${pr.kind === "warmup" ? "Read the notes" : "Another 20"}</button>`;
+  if (tab === "exams" && mk && mk.result) return `${mk.result.right + mk.result.blank < mk.qs.length || mk.result.blank ? `<button class="btn sec" data-act="mkdrill">Practise missed</button>` : ""}<button class="btn" data-act="mkdone">Done</button>`;
+  if (tab === "exams" && mk && !mk.result && !mk.pre) return `<button class="btn sec" data-act="mkgo" data-i="${mk.i - 1}" ${mk.i ? "" : "disabled"}>Back</button><button class="btn sec" data-act="mksheet">Sheet</button><button class="btn" data-act="mkgo" data-i="${mk.i + 1}" ${mk.i + 1 < mk.qs.length ? "" : "disabled"}>Next</button>`;
+  return "";
+}
+const TABS = ["home", "path", "exams", "notes", "progress"];
+function render(enter) {
+  const view = $("#view");
+  const V = {home: vHome, path: vPath, exams: vExams, notes: vNotes, progress: vProgress, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome()};
+  view.innerHTML = (V[tab] || vHome)();
+  if (enter) { view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter"); }
+  const bar = bottomBar();
+  $("#abar").innerHTML = bar ? `<div class="abar"><div class="in">${bar}</div></div>` : "";
+  const navTab = tab === "sources" ? "progress" : tab;
+  const k = TABS.indexOf(navTab);
+  $("#tabs").classList.toggle("hide", !!bar || (tab === "exams" && mk && !mk.result) || tab === "practice");
+  if (k > -1) $("#ind").style.transform = `translateX(${k * 100}%)`;
+  document.querySelectorAll("#tabs [data-tab]").forEach(b => b.setAttribute("aria-current", b.dataset.tab === navTab ? "page" : "false"));
+  renderOverlay();
+  if (tab === "sources" && aiState.genTopic) { const s = $("#genTopic"); if (s) s.value = aiState.genTopic; }
+  if (tab === "sources" && importDraft?.topic) { const s = $("#impTopic"); if (s) s.value = importDraft.topic; }
+}
+function go(t) { tab = t; unitSheet = null; render(true); scrollTo(0, 0); haptic(6); }
+let toastT;
+function toast(msg) {
+  let t = $("#toast");
+  if (!t) { t = document.createElement("div"); t.id = "toast"; t.setAttribute("role", "status"); document.body.append(t); }
+  t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => t.hidden = true, 2800);
+}
+
+async function explain() {
+  const q = QI[pr.qs[pr.i]], ord = pr.ord[pr.i], mine = q.o[ord[pr.sel]];
+  aiState.explain = {id: q.id, text: "Thinking…"}; renderOverlay();
+  const prompt = `You tutor a Nepali student for the MECEE-BL (MBBS entrance, NEB class 11-12 level).
+Question: ${q.q}
+Options: ${q.o.map((o, i) => L[i] + ") " + o).join(" | ")}
+Correct answer: ${q.o[q.a]}
+Student chose: ${mine}
+Explain in under 120 words, in simple English: why the correct answer is right${mine !== q.o[q.a] ? ", why the student's choice is wrong" : ""}, and give one short memory hook. Plain text, no markdown.`;
+  try {
+    await sample(prompt, {onText: ({text}) => { aiState.explain.text = text; const el = $("#aiOut"); if (el) el.textContent = text; }});
+  } catch (e) {
+    const gone = e.code === "not_granted" || e.code === "sampling_disabled";
+    aiState.explain.text = gone ? "Explanations from Claude are not available here." : e.code === "rate_limited" ? "Too many requests just now. Try again in a minute." : (e.text || "That did not work. Try again.");
+    if (gone) sample = null;
+    renderOverlay();
+  }
+}
+async function generate() {
+  const tid = $("#genTopic").value, t = TOP[tid];
+  aiState.genTopic = tid;
+  const missed = QS.filter(q => q.topic === tid && S.it[q.id] && !S.it[q.id].ok).slice(0, 8).map(q => "- " + q.q).join("\n");
+  const ctl = new AbortController();
+  aiState.gen = {busy: true, ctl}; render();
+  const prompt = `Write 10 new multiple-choice questions for Nepal's MECEE-BL (MBBS entrance; NEB class 11-12 ${t.subject}), syllabus unit "${t.name}".
+Style: short stems (under 60 words), 4 options, exactly one correct, CEE difficulty. Accuracy matters more than anything: check every key; for numericals compute the answer.
+Key facts of this unit:\n${(t.concepts || []).map(c => "- " + c).join("\n")}
+${missed ? "The student recently got these wrong; test the same ideas with different wording:\n" + missed : ""}
+Reply with only a JSON array of 10 objects: {"q": string, "o": [4 strings], "a": index 0-3 of the correct option, "x": explanation under 50 words, "d": difficulty 1-3}.`;
+  try {
+    const arr = await sample.json(prompt, {signal: ctl.signal, modelTier: "complex", cache: false});
+    const ok = (Array.isArray(arr) ? arr : []).filter(o => o && typeof o.q === "string" && Array.isArray(o.o) && o.o.length === 4 && o.o.every(s => typeof s === "string") && Number.isInteger(o.a) && o.a >= 0 && o.a < 4);
+    const ts = Date.now().toString(36);
+    ok.forEach((o, k) => S.custom.push({id: `ai-${ts}-${k}`, topic: tid, d: [1, 2, 3].includes(o.d) ? o.d : 2, q: o.q, o: o.o, a: o.a, x: String(o.x || ""), src: "ai"}));
+    rebuild(); save(true);
+    aiState.gen = {msg: ok.length ? `Added ${ok.length} questions to ${t.name}.` : "The reply could not be read as questions. Try again."};
+  } catch (e) {
+    const gone = e.code === "not_granted" || e.code === "sampling_disabled";
+    aiState.gen = {msg: e.code === "cancelled" ? "Stopped." : e.code === "rate_limited" ? "Too many requests just now. Try again in a minute." : gone ? "Claude is not available here." : "That did not work. Try again."};
+    if (gone) sample = null;
+  }
+  render();
+}
+/* ── add questions from the student's own photos, screenshots or PDFs: Claude reads the pages, the student reviews, then adds ── */
+let photo = null;
+async function loadPdfJs() {
+  if (window.pdfjsLib) return window.pdfjsLib;
+  await new Promise((res, rej) => { const sc = document.createElement("script"); sc.src = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"; sc.onload = res; sc.onerror = rej; document.head.append(sc); });
+  window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+  return window.pdfjsLib;
+}
+async function pdfPages(file, max) {
+  const lib = await loadPdfJs(), doc = await lib.getDocument({data: await file.arrayBuffer()}).promise, out = [];
+  for (let i = 1; i <= Math.min(doc.numPages, max); i++) {
+    const page = await doc.getPage(i), vp = page.getViewport({scale: 1.6}), c = document.createElement("canvas");
+    c.width = vp.width; c.height = vp.height;
+    await page.render({canvasContext: c.getContext("2d"), viewport: vp}).promise;
+    out.push(await new Promise(r => c.toBlob(r, "image/jpeg", 0.85)));
+  }
+  return {blobs: out, total: doc.numPages};
+}
+const norm = t => String(t).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+async function readPhotos(files) {
+  const MAXP = 30; // ponytail: 30 pages per run keeps one import inside a few minutes; run again for more
+  const lim = sample ? await sample.limits().catch(() => null) : null;
+  if (!lim || !lim.images) { photo = {msg: "Reading photos needs the app opened in Claude, with photo reading allowed."}; render(); return; }
+  const ctl = new AbortController();
+  photo = {busy: true, ctl, msg: "Preparing pages…", items: [], skipped: 0}; render();
+  let blobs = [], dropped = 0;
+  try {
+    for (const f of files) {
+      if (blobs.length >= MAXP) { dropped++; continue; }
+      if (f.type === "application/pdf") { const r = await pdfPages(f, MAXP - blobs.length); blobs.push(...r.blobs); dropped += r.total - r.blobs.length; }
+      else if (/^image\/(jpeg|png|webp|gif)$/.test(f.type)) blobs.push(f);
+      else photo.skipped++;
+    }
+  } catch (e) { photo = {msg: "That PDF could not be opened. Try screenshots of its pages instead."}; render(); return; }
+  if (!blobs.length) { photo = {msg: "No pages to read. Pick JPG, PNG or PDF files."}; render(); return; }
+  const per = Math.max(1, Math.min(lim.images.maxCount || 1, 3));
+  const units = Object.values(TOP).map(t => `${t.id} = ${t.subject}: ${t.name}`).join("\n");
+  const have = new Set(QS.map(q => norm(q.q)));
+  for (let i = 0; i < blobs.length && !ctl.signal.aborted; i += per) {
+    photo.msg = `Reading page ${i + 1}${per > 1 ? "–" + Math.min(i + per, blobs.length) : ""} of ${blobs.length}…`; render();
+    const prompt = `These images are pages of multiple-choice practice questions that a Nepali student is studying for the MECEE-BL (MBBS entrance). The student wants them in their private practice app.
+For every COMPLETE question with four options on these pages, return one object. Copy the question and options as written (fix obvious OCR-style errors only). Skip partial or unreadable questions.
+"unit": the best matching id from this list:
+${units}
+"a": index 0-3 of the correct option. If an answer key or marked answer is printed on the page, use it and set "key":"page". Otherwise solve it yourself carefully and set "key":"solved".
+"x": a short explanation (under 40 words) of why that answer is right.
+Reply with only a JSON array: [{"q": string, "o": [4 strings], "a": number, "unit": string, "key": "page"|"solved", "x": string}]. Reply [] if there are no complete questions.`;
+    try {
+      const arr = await sample.json(prompt, {images: blobs.slice(i, i + per), signal: ctl.signal, cache: false});
+      for (const o of Array.isArray(arr) ? arr : []) {
+        const ok = o && typeof o.q === "string" && o.q.trim() && Array.isArray(o.o) && o.o.length === 4 && o.o.every(v => typeof v === "string" && v.trim()) && Number.isInteger(o.a) && o.a >= 0 && o.a < 4 && TOP[o.unit];
+        if (!ok) { photo.skipped++; continue; }
+        const k = norm(o.q); if (have.has(k)) { photo.dupes = (photo.dupes || 0) + 1; continue; }
+        have.add(k); photo.items.push({q: o.q.trim(), o: o.o.map(v => v.trim()), a: o.a, topic: o.unit, x: String(o.x || ""), keySrc: o.key === "page" ? "page" : "solved"});
+      }
+    } catch (e) {
+      if (e.code === "cancelled") break;
+      if (e.code === "not_granted" || e.code === "sampling_disabled" || e.code === "images_unavailable") { photo.msg = "Photo reading was not allowed, so nothing more was read."; photo.busy = false; render(); return; }
+      if (e.code === "rate_limited") { photo.msg = `Paused: too many requests. ${photo.items.length} questions found so far; add them, then try the rest later.`; photo.busy = false; render(); return; }
+      photo.skipped++;
+    }
+  }
+  photo.busy = false;
+  photo.msg = `${photo.items.length} new ${photo.items.length === 1 ? "question" : "questions"} found on ${blobs.length} ${blobs.length === 1 ? "page" : "pages"}.` + (photo.dupes ? ` ${photo.dupes} already in your bank were left out.` : "") + (photo.skipped ? ` ${photo.skipped} could not be read.` : "") + (dropped ? ` ${dropped} pages over the ${MAXP}-page limit were not read; pick them next.` : "");
+  render();
+}
+
+function parseImport(txt) {
+  const out = [], bad = [];
+  for (const block of txt.split(/\n\s*\n/)) {
+    const lines = block.split("\n").map(s => s.trim()).filter(Boolean);
+    if (!lines.length) continue;
+    const q = [], o = [null, null, null, null]; let a = -1, x = "", m;
+    for (const l of lines) {
+      if ((m = l.match(/^(?:ans(?:wer)?|key|correct)\s*[:.\-)]?\s*\(?([A-Da-d])\)?\b/i))) a = "abcd".indexOf(m[1].toLowerCase());
+      else if ((m = l.match(/^(?:exp(?:lanation)?|sol(?:ution)?)\s*[:.\-]\s*(.*)$/i))) x = m[1];
+      else if ((m = l.match(/^\(?([A-Da-d])[).:]\s*(.+)$/))) o["abcd".indexOf(m[1].toLowerCase())] = m[2];
+      else if (x) x += " " + l;
+      else q.push(l.replace(/^(?:q(?:uestion)?\s*\d*\s*[:.)]|\d+\s*[.)])\s*/i, ""));
+    }
+    if (q.length && o.every(Boolean) && a >= 0) out.push({q: q.join(" "), o, a, x}); else bad.push(lines[0]);
+  }
+  return {out, bad};
+}
+
+let eyeTimer = null;
+function startEye() {
+  eyeSheet = {left: 20}; activeSec = 0; renderOverlay(); clearInterval(eyeTimer);
+  eyeTimer = setInterval(() => { if (!eyeSheet) return clearInterval(eyeTimer); eyeSheet.left--; const el = $("#eyeT"); if (el) el.textContent = Math.max(0, eyeSheet.left); if (eyeSheet.left <= 0) { clearInterval(eyeTimer); haptic(20); renderOverlay(); } }, 1000);
+}
+const ACT = {
+  tab: d => go(d.tab),
+  home: () => { pr = null; go("home"); },
+  start: d => startPractice(d.kind, {topic: d.topic || undefined, subject: d.subject, n: +d.n || 20}),
+  pick: d => { if (pr && !pr.done) { pr.sel = +d.i; haptic(5); render(); } },
+  sure: () => answer(true), guess: () => answer(false), next: nextQ,
+  why: d => { if (pr.why !== d.w) { if (pr.why) S.why[pr.why] = Math.max(0, (S.why[pr.why] || 1) - 1); pr.why = d.w; S.why[d.w] = (S.why[d.w] || 0) + 1; save(); renderOverlay(); } },
+  endpr: () => { if (!pr.res.length) { pr = null; go("home"); return; } pr.end = true; save(); render(); },
+  explain: () => explain(),
+  psub: d => { pathSubj = d.k; render(); },
+  unit: d => { unitSheet = d.topic; haptic(6); renderOverlay(); },
+  unitnotes: d => { const t = TOP[d.topic]; pr = null; unitSheet = null; flt = {subj: t ? t.subject : "", q: t ? t.name : ""}; go("notes"); },
+  closesheet: () => { unitSheet = null; if (mk) mk.sheet = false; renderOverlay(); },
+  boss: d => startExam(buildPaper(1, d.k), `${d.k} boss round`, null),
+  series: d => { const s = SERIES[+d.k]; startExam(s.ids.filter(id => QI[id]), s.name, +d.k); },
+  xseries: d => { const x = S.xs[+d.k]; startExam(x.ids.filter(id => QI[id]), x.name, "x" + d.k); },
+  makeseries: () => { if (mk && !mk.result) { toast("Finish or submit the running exam first."); return; } const j = makeSeries(); render(); toast(`${S.xs[j].name} is ready: ${S.xs[j].fresh} of 200 questions are new to your papers.`); },
+  quick: d => startExam(buildPaper(+d.scale), d.label, null),
+  mkbegin: () => { mk.pre = false; mk.start = Date.now(); saveMock(); render(true); },
+  mkcancelpre: () => { mk = null; localStorage.removeItem(MKEY); render(); },
+  mkpick: d => { mk.ans[mk.i] = +d.i; haptic(5); saveMock(); render(); },
+  mkclear: () => { delete mk.ans[mk.i]; saveMock(); render(); },
+  mkgo: d => { const i = +d.i; if (i >= 0 && i < mk.qs.length) { mk.i = i; saveMock(); render(); scrollTo(0, 0); } },
+  mkjump: d => { mk.sheet = false; ACT.mkgo(d); },
+  mksheet: () => { mk.sheet = true; renderOverlay(); },
+  mkflag: () => { mk.flag[mk.i] = !mk.flag[mk.i]; saveMock(); render(); },
+  mksubmit: () => { mk.confirm = true; render(); scrollTo(0, 0); },
+  mkcancel: () => { mk.confirm = false; render(); },
+  mkconfirm: () => submitExam(),
+  mkdone: () => { mk = null; localStorage.removeItem(MKEY); render(); },
+  mkdrill: () => {
+    const ids = mk.qs.filter((id, i) => mk.ans[i] == null || mk.ord[i][mk.ans[i]] !== QI[id].a);
+    mk = null; localStorage.removeItem(MKEY);
+    // ponytail: the exam already scored these, so they run as feedback-only second tries
+    pr = {kind: "mock", label: "Exam mistakes", qs: ids, ord: ids.map(() => shuffle([0,1,2,3])), i: 0, sel: null, done: false, res: [], seen: new Set(ids), t0: Date.now(), before: project().tot, xp0: S.xp, stars0: {...S.stars}, end: false, combo: 0, best: 0, anim: false};
+    go("practice");
+  },
+  mkreview: d => { const el = document.getElementById("mr" + d.i); if (el) el.scrollIntoView({behavior: "smooth", block: "start"}); else toast("You got this one right."); },
+  csub: d => { flt.subj = d.k; flt.q = ""; render(); },
+  imparse: () => { const text = $("#impText").value; importDraft = {text, topic: $("#impTopic").value, parsed: parseImport(text)}; render(); },
+  impadd: () => {
+    const t = importDraft.topic, ts = Date.now().toString(36);
+    importDraft.parsed.out.forEach((o, k) => S.custom.push({id: `you-${ts}-${k}`, topic: t, d: 2, ...o, src: "you"}));
+    const n = importDraft.parsed.out.length; importDraft = null; rebuild(); save(true); render(); toast(`Added ${n} questions to ${TOP[t].name}.`);
+  },
+  gen: () => generate(),
+  photostop: () => photo?.ctl?.abort(),
+  photodrop: d => { photo.items.splice(+d.k, 1); render(); },
+  photoclear: () => { photo = null; render(); },
+  photoadd: () => {
+    const ts = Date.now().toString(36), n = photo.items.length;
+    photo.items.forEach((it, k) => S.custom.push({id: `you-${ts}-${k}`, topic: it.topic, d: 2, q: it.q, o: it.o, a: it.a, x: it.x, keySrc: it.keySrc, src: "you"}));
+    photo = {msg: `Added ${n} questions. They now appear in smart sessions, unit practice and review.`}; rebuild(); save(true); render(); toast(`Added ${n} questions.`);
+  },
+  genstop: () => aiState.gen?.ctl?.abort(),
+  joingroup: async () => { S.group = true; lastLeague = ""; save(); dirty = true; await flush(); groupState = null; loadGroup(true); render(); toast("You're on this week's board."); },
+  leavegroup: async () => { S.group = false; save(); groupState = null; try { await db.doc(`league/${uid}`).delete(); } catch (e) {} render(); toast("You left the board. Your entry is removed."); },
+  eyenow: () => startEye(),
+  eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
+  reset1: () => { confirmReset = true; render(); },
+  reset0: () => { confirmReset = false; render(); },
+  reset2: () => { const k = {examDate: S.examDate, neg: S.neg, target: S.target, look: S.look}; S = Object.assign(blank(), k); confirmReset = false; pr = null; mk = null; localStorage.removeItem(MKEY); rebuild(); save(true); render(); toast("Progress erased."); }
+};
+document.addEventListener("click", e => {
+  const a = e.target.closest("[data-act]"); if (!a || a.disabled) return;
+  if (a.tagName === "A") e.preventDefault();
+  ACT[a.dataset.act]?.(a.dataset, a);
+  if (xpQueue) showXP();
+});
+document.addEventListener("change", e => {
+  if (e.target.id === "photoIn" && e.target.files?.length) { readPhotos([...e.target.files]); return; }
+  const k = e.target.dataset?.set; if (!k) return;
+  const v = e.target.value;
+  if (k === "examDate") S.examDate = v; else if (k === "target") S.target = clamp(+v || 170, 150, 190); else if (k === "neg") S.neg = +v; else if (k === "look") { S.look = v; applyLook(); }
+  save(); render();
+});
+document.addEventListener("input", e => { if (e.target.id === "cq") { flt.q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#cq"); el.focus(); el.setSelectionRange(pos, pos); } });
+document.addEventListener("keydown", e => {
+  if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key.toLowerCase(), n = "1234".indexOf(k) >= 0 ? "1234".indexOf(k) : "abcd".indexOf(k);
+  if (e.key === "Escape" && (unitSheet || (mk && mk.sheet))) { ACT.closesheet(); return; }
+  if (tab === "practice" && pr && !pr.end) {
+    if (!pr.done && n >= 0) { pr.sel = n; render(); e.preventDefault(); }
+    else if (!pr.done && k === "enter" && pr.sel != null) { answer(true); e.preventDefault(); }
+    else if (!pr.done && k === "g" && pr.sel != null) { answer(false); e.preventDefault(); }
+    else if (pr.done && (k === "n" || k === "enter")) { nextQ(); e.preventDefault(); }
+  } else if (tab === "exams" && mk && !mk.result && !mk.pre) {
+    if (n >= 0) { mk.ans[mk.i] = n; saveMock(); render(); }
+    else if (k === "arrowright" && mk.i + 1 < mk.qs.length) ACT.mkgo({i: mk.i + 1});
+    else if (k === "arrowleft" && mk.i > 0) ACT.mkgo({i: mk.i - 1});
+  }
+});
+if (mk) tab = "exams";
+render(true);
+</script>

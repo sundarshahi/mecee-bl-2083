@@ -1,0 +1,4976 @@
+{
+ "subject": "Zoology",
+ "topics": [
+  {
+   "id": "zoo-human-biology",
+   "name": "Human Biology and Physiology",
+   "weight": 15,
+   "concepts": [
+    "Liver: largest gland, makes bile and urea, stores vitamin A, detoxifies most drugs; Kupffer cells are its macrophages [repeat]",
+    "Peyer's patches = lymphoid tissue of ileum; Brunner's glands = duodenal submucosa [repeat]",
+    "Enterokinase activates trypsinogen; HCl activates pepsinogen; bile emulsifies fat, has no enzyme",
+    "O₂ travels as oxyhaemoglobin (~97%); CO₂ mostly as HCO₃⁻ (~70%) with chloride shift [repeat]",
+    "High altitude → erythropoietin → more RBCs; breathing driven mainly by rising CO₂/H⁺ at medulla [repeat]",
+    "Heart is myogenic: SA node in right atrium is pacemaker; SA → AV → His → Purkinje [repeat]",
+    "Eustachian valve guards inferior vena cava in right atrium; lub = AV valves close, dub = semilunar [repeat]",
+    "Pulse = heart rate; cardiac output = HR × SV ≈ 5 L/min; one cycle at 75/min = 0.8 s [repeat]",
+    "ABO: O universal donor, AB universal recipient; IᴬI° × IᴮIᴮ gives AB or B children [repeat]",
+    "Ultrafiltration driven by glomerular hydrostatic pressure (efferent narrower than afferent); GFR ≈ 125 mL/min ≈ 180 L/day [repeat]",
+    "PCT reabsorbs all glucose; ascending Henle impermeable to water; ADH and aldosterone act on DCT/collecting duct",
+    "Resting potential −70 mV (K⁺ leak, Na⁺–K⁺ pump 3 out/2 in); Na⁺ influx depolarises; synapse uses acetylcholine [repeat]",
+    "Cerebrum: memory, reasoning; cerebellum: balance; hypothalamus: temperature, thirst; medulla: heart and breathing centres [repeat]",
+    "Eye coats: sclera, choroid (pigmented), retina; cones = colour; crista = rotation, macula = static balance [repeat]",
+    "Cushing's = excess cortisol; Addison's = low adrenal cortex; cretinism vs myxoedema; acromegaly vs gigantism [repeat]",
+    "Sertoli cells nourish sperms; Leydig make testosterone; sperm mitochondria in middle piece; ovulation by LH surge [repeat]"
+   ]
+  },
+  {
+   "id": "zoo-diseases-immunology",
+   "name": "Microbial Diseases and Immunology",
+   "weight": 4,
+   "concepts": [
+    "Typhoid: Salmonella typhi, faeco-oral, Widal test [repeat]",
+    "TB: Mycobacterium tuberculosis (Koch); Mantoux test; BCG = live attenuated",
+    "HIV: RNA retrovirus, reverse transcriptase, kills CD4 helper T cells; ELISA; not spread by mosquitoes or touch [repeat]",
+    "Cholera: Vibrio cholerae, rice-water stools; ORS works by Na⁺–glucose cotransport",
+    "Influenza: RNA virus, droplets; yearly vaccine due to H and N antigen changes",
+    "Hepatitis A, E faeco-oral; B, C, D via blood; HBV vaccine is recombinant HBsAg from yeast",
+    "Candidiasis: Candida albicans; after antibiotics, HIV, diabetes",
+    "Innate immunity: skin, mucus, lysozyme, phagocytes; acquired: B (humoral) and T (cell-mediated)",
+    "Antibody = 2 heavy + 2 light chains; IgG crosses placenta, IgA in colostrum, IgE allergy, IgM first/largest",
+    "Vaccine → artificial active; antiserum/antivenom → artificial passive; colostrum → natural passive",
+    "Live attenuated: BCG, MMR, Sabin OPV; inactivated: Salk IPV; toxoid: tetanus, diphtheria",
+    "Benign tumour stays localised; malignant tumour metastasises; oncology = study of tumours [repeat]"
+   ]
+  },
+  {
+   "id": "zoo-medical-applied",
+   "name": "Medical Technology and Applied Biology",
+   "weight": 2,
+   "concepts": [
+    "Autograft (self), isograft (identical twin), allograft (same species), xenograft (other species)",
+    "Rejection is T-cell response to HLA (MHC); cyclosporin A suppresses it",
+    "IVF: fertilisation in lab dish, embryo transferred; ICSI injects one sperm into ovum",
+    "Amniocentesis: amniotic fluid at 15–20 weeks; detects chromosomal disorders like Down syndrome",
+    "Transgenic animal carries foreign gene; Rosie cow (1997) gave milk with human α-lactalbumin",
+    "Lactobacillus: curd; Saccharomyces cerevisiae: beer, wine, bread; Propionibacterium shermanii: Swiss cheese holes",
+    "Secondary sewage treatment: aerobic flocs lower BOD; anaerobic sludge digesters make biogas (methane)",
+    "High BOD = high organic pollution; chlorination kills microbes in drinking water",
+    "Bio-control: Bt (Cry toxin) for insect larvae, Trichoderma for plant fungi, Gambusia for mosquito larvae",
+    "Cyclosporin A comes from the fungus Tolypocladium inflatum"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "zoo-030",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "The dental formula of an adult human is",
+   "o": [
+    "2123/2123",
+    "2102/2102",
+    "2133/2133",
+    "1023/1023"
+   ],
+   "a": 0,
+   "x": "Each half-jaw has 2 incisors, 1 canine, 2 premolars and 3 molars: 8 × 4 = 32 teeth.",
+   "trap": "2102/2102 is the milk-teeth formula of a child.",
+   "s": "Digestive system: alimentary canal and digestive glands"
+  },
+  {
+   "id": "zoo-031",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "Trypsinogen is activated to trypsin by",
+   "o": [
+    "Hydrochloric acid",
+    "Bile salts",
+    "Enterokinase",
+    "Pepsin"
+   ],
+   "a": 2,
+   "x": "Enterokinase (enteropeptidase) from the intestinal mucosa converts inactive trypsinogen to trypsin, which then activates more trypsinogen.",
+   "trap": "HCl activates pepsinogen in the stomach, not trypsinogen.",
+   "s": "Digestive system: physiology of digestion",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-032",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "Castle's intrinsic factor, needed for absorption of vitamin B₁₂, is secreted by",
+   "o": [
+    "Chief (peptic) cells",
+    "Parietal (oxyntic) cells",
+    "Goblet cells",
+    "Paneth cells"
+   ],
+   "a": 1,
+   "x": "Parietal cells of gastric glands secrete HCl and intrinsic factor; lack of intrinsic factor causes pernicious anaemia.",
+   "trap": "Chief cells secrete pepsinogen and rennin, not intrinsic factor.",
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-033",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "Kwashiorkor in children results mainly from deficiency of",
+   "o": [
+    "Protein",
+    "Iron",
+    "Vitamin A",
+    "Iodine"
+   ],
+   "a": 0,
+   "x": "Kwashiorkor is protein deficiency with roughly adequate calories: oedema, swollen belly, skin and hair changes. Deficiency of both protein and calories causes marasmus.",
+   "s": "Digestive system: physiology of digestion"
+  },
+  {
+   "id": "zoo-034",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "Most carbon dioxide (about 70%) is transported in blood as",
+   "o": [
+    "CO₂ dissolved in plasma",
+    "Carbaminohaemoglobin",
+    "Bicarbonate ions",
+    "Carboxyhaemoglobin"
+   ],
+   "a": 2,
+   "x": "Carbonic anhydrase in RBCs forms H₂CO₃, which dissociates into H⁺ and HCO₃⁻. About 70% goes as bicarbonate, 20–25% as carbamino compounds, 7% dissolved.",
+   "trap": "Carboxyhaemoglobin is carbon monoxide bound to Hb, not CO₂.",
+   "s": "Respiratory system: gas exchange and transport",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-035",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "A person has tidal volume 500 mL, inspiratory reserve volume 3000 mL, expiratory reserve volume 1100 mL and residual volume 1200 mL. The vital capacity is",
+   "o": [
+    "3500 mL",
+    "4100 mL",
+    "4600 mL",
+    "5800 mL"
+   ],
+   "a": 2,
+   "x": "VC = TV + IRV + ERV = 500 + 3000 + 1100 = 4600 mL. Adding residual volume gives total lung capacity, 5800 mL.",
+   "trap": "5800 mL is total lung capacity; vital capacity excludes residual volume.",
+   "s": "Respiratory system: respiratory organs"
+  },
+  {
+   "id": "zoo-036",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "The Bohr effect describes",
+   "o": [
+    "increased O₂ affinity of haemoglobin at high pCO₂",
+    "release of CO₂ from haemoglobin when it binds O₂",
+    "movement of chloride ions into RBCs",
+    "decreased O₂ affinity of haemoglobin when pCO₂ rises and pH falls"
+   ],
+   "a": 3,
+   "x": "High pCO₂ and H⁺ in tissues shift the oxygen–haemoglobin dissociation curve to the right, so haemoglobin unloads more oxygen where it is needed.",
+   "trap": "Chloride shift and the Haldane effect are separate CO₂-transport events.",
+   "s": "Respiratory system: gas exchange and transport"
+  },
+  {
+   "id": "zoo-037",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "A person with blood group AB has",
+   "o": [
+    "anti-A and anti-B antibodies but no antigens",
+    "both A and B antigens and no anti-A or anti-B antibodies",
+    "only antigen A and anti-B antibodies",
+    "no antigens and no antibodies"
+   ],
+   "a": 1,
+   "x": "AB red cells carry both A and B antigens, so the plasma has neither anti-A nor anti-B; hence AB is the universal recipient in the ABO system.",
+   "trap": "Group O, not AB, has both antibodies and no antigens.",
+   "s": "Circulatory system: blood group and pressure"
+  },
+  {
+   "id": "zoo-038",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "Erythroblastosis foetalis is most likely when",
+   "o": [
+    "mother is Rh⁺ and foetus is Rh⁻",
+    "mother is Rh⁻ and foetus is Rh⁺, in a second pregnancy",
+    "both mother and foetus are Rh⁻",
+    "mother is Rh⁻ and foetus is Rh⁻, in a first pregnancy"
+   ],
+   "a": 1,
+   "x": "An Rh⁻ mother sensitised by Rh⁺ foetal blood (usually at the first delivery) makes anti-Rh antibodies that cross the placenta in the next Rh⁺ pregnancy and destroy foetal RBCs.",
+   "trap": "The first Rh⁺ pregnancy is usually safe; sensitisation happens at delivery.",
+   "s": "Circulatory system: blood group and pressure"
+  },
+  {
+   "id": "zoo-039",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "In a normal ECG, the QRS complex represents",
+   "o": [
+    "Atrial depolarisation",
+    "Ventricular repolarisation",
+    "Atrial repolarisation only",
+    "Ventricular depolarisation"
+   ],
+   "a": 3,
+   "x": "P wave = atrial depolarisation; QRS complex = ventricular depolarisation (start of ventricular systole); T wave = ventricular repolarisation.",
+   "trap": "The T wave, not QRS, shows ventricular repolarisation.",
+   "s": "Circulatory system: heart, cardiac cycle and output"
+  },
+  {
+   "id": "zoo-040",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "If heart rate is 72 beats/min and stroke volume is 70 mL, the cardiac output is about",
+   "o": [
+    "0.5 L/min",
+    "1.0 L/min",
+    "5.0 L/min",
+    "50 L/min"
+   ],
+   "a": 2,
+   "x": "Cardiac output = heart rate × stroke volume = 72 × 70 = 5040 mL/min ≈ 5.0 L/min.",
+   "s": "Circulatory system: heart, cardiac cycle and output"
+  },
+  {
+   "id": "zoo-041",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "The counter-current mechanism that helps produce concentrated urine operates mainly between",
+   "o": [
+    "Loop of Henle and vasa recta",
+    "Bowman's capsule and glomerulus",
+    "Proximal tubule and afferent arteriole",
+    "Collecting duct and renal pelvis"
+   ],
+   "a": 0,
+   "x": "Opposite flow in the limbs of Henle's loop and in the vasa recta builds and keeps a rising osmotic gradient in the medulla, so water leaves the collecting duct under ADH.",
+   "s": "Excretory system: urine formation"
+  },
+  {
+   "id": "zoo-042",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "In a healthy adult, the glomerular filtration rate (GFR) is about",
+   "o": [
+    "12.5 mL/min",
+    "125 mL/min",
+    "1250 mL/min",
+    "180 mL/min"
+   ],
+   "a": 1,
+   "x": "GFR ≈ 125 mL/min, i.e., 125 × 1440 ≈ 180 litres of filtrate per day, of which about 99% is reabsorbed.",
+   "trap": "180 is litres per day, not mL per minute.",
+   "s": "Excretory system: urine formation"
+  },
+  {
+   "id": "zoo-043",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "A fall in glomerular blood pressure stimulates the juxtaglomerular cells to release",
+   "o": [
+    "Renin",
+    "Aldosterone",
+    "Atrial natriuretic factor",
+    "ADH"
+   ],
+   "a": 0,
+   "x": "Renin converts angiotensinogen to angiotensin I, then ACE forms angiotensin II, which constricts vessels and stimulates aldosterone, restoring pressure and GFR.",
+   "trap": "Aldosterone comes later, from the adrenal cortex, not from JG cells.",
+   "s": "Excretory system: urine formation"
+  },
+  {
+   "id": "zoo-044",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "In each cycle, the Na⁺–K⁺ ATPase pump of a neuron moves",
+   "o": [
+    "2 Na⁺ out and 3 K⁺ in",
+    "3 Na⁺ out and 2 K⁺ in",
+    "3 Na⁺ in and 2 K⁺ out",
+    "1 Na⁺ out and 1 K⁺ in"
+   ],
+   "a": 1,
+   "x": "Using one ATP, the pump expels 3 Na⁺ and brings in 2 K⁺, helping keep the resting potential (about −70 mV, inside negative).",
+   "s": "Nervous system: nerve impulse",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zoo-045",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "Damage to which part of the brain causes loss of balance and muscular coordination?",
+   "o": [
+    "Cerebellum",
+    "Medulla oblongata",
+    "Hypothalamus",
+    "Corpus callosum"
+   ],
+   "a": 0,
+   "x": "The cerebellum coordinates voluntary movements and maintains posture and equilibrium.",
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-046",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "Rhodopsin (visual purple) of rod cells is made of opsin and",
+   "o": [
+    "Retinal, derived from vitamin A",
+    "Iodopsin",
+    "Melanin",
+    "Vitamin D"
+   ],
+   "a": 0,
+   "x": "Rhodopsin = opsin + retinal (vitamin A aldehyde). Vitamin A deficiency lowers rhodopsin and causes night blindness.",
+   "s": "Sense organs: eye"
+  },
+  {
+   "id": "zoo-047",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "The organ of Corti, the receptor for hearing, lies in the",
+   "o": [
+    "Semicircular canals",
+    "Utriculus",
+    "Cochlea",
+    "Middle ear"
+   ],
+   "a": 2,
+   "x": "The organ of Corti sits on the basilar membrane inside the cochlea; semicircular canals and utriculus deal with balance.",
+   "s": "Sense organs: ear"
+  },
+  {
+   "id": "zoo-048",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "Insulin is secreted by",
+   "o": [
+    "α-cells of islets of Langerhans",
+    "δ-cells of islets of Langerhans",
+    "Acinar cells of pancreas",
+    "β-cells of islets of Langerhans"
+   ],
+   "a": 3,
+   "x": "β-cells secrete insulin (lowers blood glucose); α-cells secrete glucagon (raises it); δ-cells secrete somatostatin; acinar cells make digestive enzymes.",
+   "s": "Endocrinology: glands, hormones and disorders"
+  },
+  {
+   "id": "zoo-049",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "Diabetes insipidus is caused by deficiency of",
+   "o": [
+    "Insulin",
+    "Glucagon",
+    "ADH (vasopressin)",
+    "Aldosterone"
+   ],
+   "a": 2,
+   "x": "Without ADH, the DCT and collecting duct reabsorb little water, so large volumes of dilute urine are passed, without glucose.",
+   "trap": "Insulin deficiency causes diabetes mellitus, with sugar in urine.",
+   "s": "Endocrinology: glands, hormones and disorders"
+  },
+  {
+   "id": "zoo-050",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "Exophthalmic goitre (Graves' disease) results from",
+   "o": [
+    "Hyposecretion of thyroxine in children",
+    "Iodine deficiency in diet",
+    "Hyposecretion of parathormone",
+    "Hypersecretion of thyroxine"
+   ],
+   "a": 3,
+   "x": "Graves' disease is hyperthyroidism: high metabolic rate, weight loss, nervousness and protruding eyeballs.",
+   "trap": "Child hypothyroidism is cretinism; iodine deficiency causes simple goitre.",
+   "s": "Endocrinology: glands, hormones and disorders"
+  },
+  {
+   "id": "zoo-051",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "The hormone that raises the blood calcium level is",
+   "o": [
+    "Calcitonin",
+    "Parathormone",
+    "Thyroxine",
+    "Glucagon"
+   ],
+   "a": 1,
+   "x": "Parathormone increases bone resorption, renal Ca²⁺ reabsorption and intestinal Ca²⁺ absorption. Calcitonin from thyroid C-cells lowers blood Ca²⁺.",
+   "trap": "Calcitonin does the opposite: it lowers blood calcium.",
+   "s": "Endocrinology: glands, hormones and disorders"
+  },
+  {
+   "id": "zoo-052",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "During contraction of a skeletal muscle fibre, which part of the sarcomere does NOT change in length?",
+   "o": [
+    "I-band",
+    "H-zone",
+    "A-band",
+    "Sarcomere (Z-line to Z-line)"
+   ],
+   "a": 2,
+   "x": "Actin slides over myosin. The A-band equals the length of the myosin filaments, so it stays constant while the I-band, H-zone and sarcomere shorten.",
+   "trap": "H-zone is chosen often, but it shortens or disappears.",
+   "s": "Muscular tissue (structure, function)"
+  },
+  {
+   "id": "zoo-053",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "In muscle contraction, Ca²⁺ released from the sarcoplasmic reticulum binds to",
+   "o": [
+    "Troponin",
+    "Myosin head",
+    "Tropomyosin",
+    "Actin directly"
+   ],
+   "a": 0,
+   "x": "Ca²⁺ binds troponin, which shifts tropomyosin away from the myosin-binding sites on actin so cross-bridges can form.",
+   "trap": "Tropomyosin moves, but Ca²⁺ binds troponin.",
+   "s": "Muscular tissue (structure, function)"
+  },
+  {
+   "id": "zoo-054",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Floating ribs in humans are the",
+   "o": [
+    "1st and 2nd pairs",
+    "3rd to 7th pairs",
+    "8th, 9th and 10th pairs",
+    "11th and 12th pairs"
+   ],
+   "a": 3,
+   "x": "Ribs 1–7 (true) join the sternum directly; 8–10 (false) join through the 7th costal cartilage; 11–12 are floating, free ventrally.",
+   "trap": "8th to 10th are false (vertebrochondral) ribs, not floating.",
+   "s": "Connective tissue: bone (skeleton)"
+  },
+  {
+   "id": "zoo-055",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "q": "How many sperms and ova are produced from 10 primary spermatocytes and 10 primary oocytes respectively?",
+   "o": [
+    "10 and 10",
+    "40 and 40",
+    "40 and 10",
+    "20 and 10"
+   ],
+   "a": 2,
+   "x": "Each primary spermatocyte gives 4 sperms (10 × 4 = 40); each primary oocyte gives only 1 ovum plus polar bodies (10 × 1 = 10).",
+   "trap": "40 and 40 forgets that polar bodies are not ova.",
+   "s": "Reproductive system: gametogenesis"
+  },
+  {
+   "id": "zoo-056",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "q": "Testosterone is secreted by",
+   "o": [
+    "Sertoli cells",
+    "Leydig (interstitial) cells",
+    "Spermatogonia",
+    "Cells of the epididymis"
+   ],
+   "a": 1,
+   "x": "Leydig cells lying between seminiferous tubules secrete testosterone under the influence of LH.",
+   "trap": "Sertoli cells nourish sperms and secrete inhibin, not testosterone.",
+   "s": "Reproductive system: organs"
+  },
+  {
+   "id": "zoo-057",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "Ovulation in the human menstrual cycle is triggered by a mid-cycle surge of",
+   "o": [
+    "FSH",
+    "Progesterone",
+    "LH",
+    "Oxytocin"
+   ],
+   "a": 2,
+   "x": "A sharp LH surge around day 14 of a 28-day cycle ruptures the Graafian follicle; the remnant becomes the progesterone-secreting corpus luteum.",
+   "trap": "FSH also rises slightly, but LH is the ovulation trigger.",
+   "s": "Reproductive system: ovarian and menstrual cycle"
+  },
+  {
+   "id": "zoo-058",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "The acrosome of a human sperm",
+   "o": [
+    "contains lytic enzymes that help penetrate the egg's coverings",
+    "provides energy for swimming",
+    "carries the genetic material",
+    "forms the axial filament of the tail"
+   ],
+   "a": 0,
+   "x": "The acrosome, formed from the Golgi apparatus, holds hydrolytic enzymes (sperm lysins such as hyaluronidase) that dissolve the egg's coverings.",
+   "trap": "Energy comes from mitochondria of the middle piece.",
+   "s": "Reproductive system: gametogenesis"
+  },
+  {
+   "id": "zoo-059",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "In humans, fertilisation normally takes place in the",
+   "o": [
+    "Uterus",
+    "Cervix",
+    "Ovary",
+    "Ampulla of the fallopian tube"
+   ],
+   "a": 3,
+   "x": "Sperm meet the secondary oocyte in the ampulla (ampullary–isthmic region) of the fallopian tube; the zygote then moves to the uterus for implantation.",
+   "trap": "The uterus is the site of implantation, not fertilisation.",
+   "s": "Reproductive system: organs"
+  },
+  {
+   "id": "zoo-060",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "Which of the following is derived from mesoderm?",
+   "o": [
+    "Heart",
+    "Brain",
+    "Epidermis of skin",
+    "Lining of the gut"
+   ],
+   "a": 0,
+   "x": "Mesoderm forms muscles, heart, blood, kidneys, gonads and dermis. Brain and epidermis are ectodermal; gut lining is endodermal.",
+   "s": "Reproductive system (embryonic development)"
+  },
+  {
+   "id": "zoo-061",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "q": "In the human blastocyst, the inner cell mass gives rise to",
+   "o": [
+    "the embryo",
+    "the trophoblast",
+    "the zona pellucida",
+    "the corona radiata"
+   ],
+   "a": 0,
+   "x": "The inner cell mass (embryoblast) differentiates into the embryo; the outer trophoblast attaches to the endometrium and helps form the placenta.",
+   "s": "Reproductive system (embryonic development)"
+  },
+  {
+   "id": "zoo-062",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "q": "HIV mainly destroys",
+   "o": [
+    "B-lymphocytes",
+    "Helper T-lymphocytes (CD4⁺)",
+    "Red blood cells",
+    "Platelets"
+   ],
+   "a": 1,
+   "x": "HIV, a retrovirus, enters helper T cells through CD4, copies itself with reverse transcriptase and kills them, collapsing immunity (AIDS).",
+   "s": "Diseases: HIV"
+  },
+  {
+   "id": "zoo-063",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "q": "The Widal test is used to diagnose",
+   "o": [
+    "Malaria",
+    "Tuberculosis",
+    "AIDS",
+    "Typhoid"
+   ],
+   "a": 3,
+   "x": "The Widal test detects antibodies against Salmonella typhi antigens in the patient's serum. ELISA is used for HIV.",
+   "s": "Diseases: Typhoid"
+  },
+  {
+   "id": "zoo-064",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "q": "Antibodies received by a newborn through colostrum provide",
+   "o": [
+    "Natural active immunity",
+    "Artificial active immunity",
+    "Artificial passive immunity",
+    "Natural passive immunity"
+   ],
+   "a": 3,
+   "x": "The baby receives ready-made antibodies (mainly IgA) instead of making them, so it is passive; it happens naturally through feeding, so natural passive.",
+   "trap": "Active immunity needs the baby's own antibody production.",
+   "s": "Immunity: innate and acquired"
+  },
+  {
+   "id": "zoo-065",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "q": "The only antibody class that crosses the human placenta is",
+   "o": [
+    "IgA",
+    "IgM",
+    "IgE",
+    "IgG"
+   ],
+   "a": 3,
+   "x": "IgG, the most abundant and a small monomeric antibody, crosses the placenta and protects the foetus.",
+   "trap": "IgA reaches the baby in colostrum, not across the placenta.",
+   "s": "Antigens and antibodies"
+  },
+  {
+   "id": "zoo-066",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "q": "Dengue fever is transmitted by",
+   "o": [
+    "Female Anopheles",
+    "Female Culex",
+    "Aedes aegypti",
+    "Sandfly"
+   ],
+   "a": 2,
+   "x": "Dengue virus is spread by the day-biting Aedes aegypti mosquito; it causes high fever, severe joint pain and a fall in platelet count.",
+   "trap": "Anopheles transmits malaria, not dengue.",
+   "s": "Diseases (vector-borne viral: dengue)"
+  },
+  {
+   "id": "zoo-067",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "q": "The spread of cancer cells from the original tumour to distant parts of the body is called",
+   "o": [
+    "Metastasis",
+    "Metaplasia",
+    "Apoptosis",
+    "Contact inhibition"
+   ],
+   "a": 0,
+   "x": "Malignant cells lose contact inhibition, invade tissues and travel in blood or lymph to form secondary tumours — metastasis.",
+   "trap": "Apoptosis is programmed cell death, not spread.",
+   "s": "Diseases (cancer)"
+  },
+  {
+   "id": "zooA-001",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "The largest gland of the human body is the",
+   "o": [
+    "Pancreas",
+    "Thyroid",
+    "Parotid salivary gland",
+    "Liver"
+   ],
+   "a": 3,
+   "x": "The liver (about 1.5 kg in adults) is the largest gland; it secretes bile and stores glycogen, iron and fat-soluble vitamins."
+  },
+  {
+   "id": "zooA-002",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Kupffer cells, which engulf old blood cells and bacteria, are found in the",
+   "o": [
+    "Pancreas",
+    "Stomach",
+    "Kidney",
+    "Liver"
+   ],
+   "a": 3,
+   "x": "Kupffer cells are fixed macrophages lining the sinusoids of the liver."
+  },
+  {
+   "id": "zooA-003",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Most drugs and toxic substances are detoxified (metabolised) in the human body by the",
+   "o": [
+    "Kidney",
+    "Pancreas",
+    "Spleen",
+    "Liver"
+   ],
+   "a": 3,
+   "x": "Hepatocytes contain drug-metabolising enzymes that convert drugs and toxins into less harmful, water-soluble products, which the kidney then excretes.",
+   "trap": "Kidney excretes the products but does not mainly metabolise drugs.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-004",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Vitamin A is stored mainly in the",
+   "o": [
+    "Kidney",
+    "Liver",
+    "Spleen",
+    "Pancreas"
+   ],
+   "a": 1,
+   "x": "The liver stores fat-soluble vitamins, especially vitamin A (and D, B₁₂, iron); this is why liver oils are rich in vitamin A.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-005",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Peyer's patches are",
+   "o": [
+    "Gastric glands that secrete HCl",
+    "Lymphoid follicles in the wall of the ileum",
+    "Endocrine islets of the pancreas",
+    "Mucous glands in the submucosa of the duodenum"
+   ],
+   "a": 1,
+   "x": "Peyer's patches are aggregates of lymphoid tissue in the ileum; they produce lymphocytes and guard against gut microbes.",
+   "trap": "Mucous glands of duodenal submucosa are Brunner's glands.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-006",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Bile helps in the digestion of fats by",
+   "o": [
+    "Hydrolysing fats into fatty acids",
+    "Activating pepsinogen",
+    "Converting starch into maltose",
+    "Emulsifying fats into tiny droplets"
+   ],
+   "a": 3,
+   "x": "Bile has no digestive enzyme. Its bile salts emulsify fat, increasing surface area for pancreatic lipase.",
+   "trap": "Lipase, not bile, hydrolyses fats."
+  },
+  {
+   "id": "zooA-007",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Brunner's glands are located in the",
+   "o": [
+    "Mucosa of the stomach",
+    "Wall of the ileum",
+    "Wall of the colon",
+    "Submucosa of the duodenum"
+   ],
+   "a": 3,
+   "x": "Brunner's glands lie in the duodenal submucosa and secrete alkaline mucus that protects the duodenum from acidic chyme."
+  },
+  {
+   "id": "zooA-008",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Salivary amylase (ptyalin) converts starch mainly into",
+   "o": [
+    "Maltose",
+    "Glucose",
+    "Sucrose",
+    "Lactose"
+   ],
+   "a": 0,
+   "x": "Ptyalin acts at about pH 6.8 and breaks starch into maltose (and dextrins); maltase later converts maltose to glucose.",
+   "trap": "Glucose forms only later, by maltase in the intestine."
+  },
+  {
+   "id": "zooA-009",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Rennin, present in the gastric juice of infants, acts on",
+   "o": [
+    "Starch",
+    "Caseinogen (milk protein)",
+    "Fats",
+    "Nucleic acids"
+   ],
+   "a": 1,
+   "x": "Rennin coagulates soluble milk protein caseinogen into casein (curdling), so milk stays longer in the stomach for pepsin to act."
+  },
+  {
+   "id": "zooA-010",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Digested fats are absorbed into lymph vessels of the villi called",
+   "o": [
+    "Hepatic portal veins",
+    "Lacteals",
+    "Crypts of Lieberkühn",
+    "Glomerular capillaries"
+   ],
+   "a": 1,
+   "x": "Fatty acids and glycerol are re-formed into fat, packed as chylomicrons and enter the lacteals (lymph), not blood directly."
+  },
+  {
+   "id": "zooA-011",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: physiology of digestion",
+   "q": "The hormone that causes the gall bladder to contract and release bile is",
+   "o": [
+    "Secretin",
+    "Gastrin",
+    "Cholecystokinin (CCK)",
+    "Insulin"
+   ],
+   "a": 2,
+   "x": "Fat and protein in the duodenum release CCK, which contracts the gall bladder and stimulates enzyme-rich pancreatic juice.",
+   "trap": "Secretin mainly stimulates bicarbonate-rich pancreatic juice."
+  },
+  {
+   "id": "zooA-012",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Yellowing of the skin and eyes in jaundice is due to deposition of",
+   "o": [
+    "Haemoglobin",
+    "Urea",
+    "Melanin",
+    "Bilirubin"
+   ],
+   "a": 3,
+   "x": "Bilirubin, a yellow bile pigment from haemoglobin breakdown, accumulates in blood and tissues when the liver or bile flow fails."
+  },
+  {
+   "id": "zooA-013",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "About 97% of the oxygen in blood is transported",
+   "o": [
+    "As oxyhaemoglobin in red blood cells",
+    "Dissolved in plasma",
+    "As bicarbonate ions",
+    "Bound to plasma albumin"
+   ],
+   "a": 0,
+   "x": "Each haemoglobin carries up to 4 O₂ molecules as oxyhaemoglobin; only about 3% of O₂ is dissolved in plasma.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-014",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: regulation of respiration",
+   "q": "The basic rhythm of breathing is set by the respiratory centre located in the",
+   "o": [
+    "Cerebellum",
+    "Medulla oblongata",
+    "Hypothalamus",
+    "Cerebral cortex"
+   ],
+   "a": 1,
+   "x": "The rhythm centre is in the medulla oblongata; the pneumotaxic centre in the pons fine-tunes the rate."
+  },
+  {
+   "id": "zooA-015",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: regulation of respiration",
+   "q": "In a healthy person, the rate of breathing increases mainly in response to a rise in blood",
+   "o": [
+    "O₂ concentration",
+    "Glucose concentration",
+    "CO₂ (and H⁺) concentration",
+    "N₂ concentration"
+   ],
+   "a": 2,
+   "x": "Central chemoreceptors in the medulla respond to rising CO₂ and H⁺; low O₂ becomes the main drive only when it falls very low.",
+   "trap": "A fall, not a rise, in O₂ stimulates breathing."
+  },
+  {
+   "id": "zooA-016",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "A person who stays for some weeks at a high altitude shows",
+   "o": [
+    "A decrease in red blood cell count",
+    "A slower breathing rate",
+    "A decrease in haemoglobin level",
+    "An increase in red blood cell count"
+   ],
+   "a": 3,
+   "x": "Low pO₂ at altitude makes the kidney release erythropoietin, which increases RBC production in bone marrow (polycythaemia), improving O₂ carriage.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-017",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: respiratory organs",
+   "q": "The number of lobes in the right and left human lungs is",
+   "o": [
+    "3 and 2",
+    "2 and 3",
+    "2 and 2",
+    "3 and 3"
+   ],
+   "a": 0,
+   "x": "The right lung has 3 lobes; the left has 2 lobes, leaving space for the heart (cardiac notch).",
+   "trap": "2 and 3 reverses the sides."
+  },
+  {
+   "id": "zooA-018",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: respiratory organs",
+   "q": "Surfactant secreted by alveolar cells",
+   "o": [
+    "Kills bacteria in the alveoli",
+    "Lowers surface tension and prevents alveoli from collapsing",
+    "Carries oxygen across the alveolar wall",
+    "Raises surface tension in the alveoli"
+   ],
+   "a": 1,
+   "x": "Type II alveolar cells secrete surfactant (a phospholipid); its lack in premature babies causes respiratory distress syndrome."
+  },
+  {
+   "id": "zooA-019",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "During CO₂ transport, chloride ions move into red blood cells in exchange for",
+   "o": [
+    "Sodium ions",
+    "Potassium ions",
+    "Bicarbonate ions",
+    "Hydrogen ions"
+   ],
+   "a": 2,
+   "x": "HCO₃⁻ formed inside RBCs diffuses into plasma; Cl⁻ moves in to keep electrical balance. This is the chloride (Hamburger) shift."
+  },
+  {
+   "id": "zooA-020",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "The enzyme in red blood cells that speeds up the reaction CO₂ + H₂O ⇌ H₂CO₃ is",
+   "o": [
+    "Catalase",
+    "Carboxypeptidase",
+    "Lipase",
+    "Carbonic anhydrase"
+   ],
+   "a": 3,
+   "x": "Carbonic anhydrase, a zinc enzyme, makes bicarbonate transport of CO₂ fast in tissues and its release fast in lungs."
+  },
+  {
+   "id": "zooA-021",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: concept of respiratory disorders",
+   "q": "Breakdown of alveolar walls that reduces the surface area for gas exchange, mainly due to smoking, is called",
+   "o": [
+    "Emphysema",
+    "Asthma",
+    "Bronchitis",
+    "Pneumonia"
+   ],
+   "a": 0,
+   "x": "In emphysema alveoli merge into large sacs, so the respiratory surface falls; cigarette smoking is the major cause.",
+   "trap": "Asthma narrows bronchioles; it does not destroy alveolar walls."
+  },
+  {
+   "id": "zooA-022",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: concept of respiratory disorders",
+   "q": "Asthma is characterised by",
+   "o": [
+    "Destruction of alveolar walls",
+    "Spasm and narrowing of the bronchioles, causing wheezing",
+    "Scarring of lungs from silica dust",
+    "Filling of alveoli with pus due to bacteria"
+   ],
+   "a": 1,
+   "x": "Asthma is an allergic inflammation in which bronchiole muscles contract and mucus increases, making breathing (especially expiration) difficult."
+  },
+  {
+   "id": "zooA-023",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "Carbon monoxide is poisonous mainly because it",
+   "o": [
+    "Destroys red blood cells",
+    "Blocks the trachea",
+    "Binds haemoglobin much more strongly than oxygen does",
+    "Makes blood clot inside vessels"
+   ],
+   "a": 2,
+   "x": "CO binds haemoglobin about 200 times more firmly than O₂, forming stable carboxyhaemoglobin, so less O₂ reaches tissues."
+  },
+  {
+   "id": "zooA-024",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: respiratory organs",
+   "q": "A resting person has a tidal volume of 500 mL and breathes 12 times per minute. The pulmonary (minute) ventilation is",
+   "o": [
+    "600 mL/min",
+    "1200 mL/min",
+    "6000 mL/min",
+    "60000 mL/min"
+   ],
+   "a": 2,
+   "x": "Minute ventilation = tidal volume × breathing rate = 500 × 12 = 6000 mL/min (6 L/min)."
+  },
+  {
+   "id": "zooA-025",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: respiratory organs",
+   "q": "During normal inspiration",
+   "o": [
+    "The diaphragm relaxes and becomes dome-shaped",
+    "The internal intercostal muscles contract",
+    "Pressure in the lungs rises above atmospheric pressure",
+    "The diaphragm contracts and flattens"
+   ],
+   "a": 3,
+   "x": "Contraction of the diaphragm and external intercostals enlarges the thoracic cavity; lung pressure falls below atmospheric and air flows in.",
+   "trap": "A relaxed, dome-shaped diaphragm belongs to expiration."
+  },
+  {
+   "id": "zooA-026",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: heartbeat",
+   "q": "The human heart is called myogenic because",
+   "o": [
+    "Its beat is started by a specialised muscle tissue, the SA node",
+    "Its beat is started by the vagus nerve",
+    "Its beat is started by the cardiac centre of the brain",
+    "Its beat is started by adrenaline"
+   ],
+   "a": 0,
+   "x": "Impulses arise in the heart itself, in the SA node (pacemaker). Nerves and hormones only change the rate.",
+   "trap": "The vagus slows the heart; it does not start the beat.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-027",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: heartbeat",
+   "q": "The sino-atrial (SA) node lies in the",
+   "o": [
+    "Interventricular septum",
+    "Wall of the right atrium near the opening of the superior vena cava",
+    "Wall of the left atrium near the pulmonary veins",
+    "Apex of the left ventricle"
+   ],
+   "a": 1,
+   "x": "The SA node sits in the upper right atrial wall near the superior vena cava; the AV node lies near the interatrial septum."
+  },
+  {
+   "id": "zooA-028",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: heart",
+   "q": "The Eustachian valve of the human heart is found",
+   "o": [
+    "At the opening of the coronary sinus",
+    "Between the left atrium and left ventricle",
+    "In the right atrium at the opening of the inferior vena cava",
+    "At the base of the aorta"
+   ],
+   "a": 2,
+   "x": "The Eustachian valve guards the opening of the inferior vena cava into the right atrium; the Thebesian valve guards the coronary sinus.",
+   "trap": "Don't confuse it with the Eustachian tube of the ear.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-029",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: heart",
+   "q": "The bicuspid (mitral) valve is present between the",
+   "o": [
+    "Right atrium and right ventricle",
+    "Right ventricle and pulmonary artery",
+    "Left ventricle and aorta",
+    "Left atrium and left ventricle"
+   ],
+   "a": 3,
+   "x": "The bicuspid valve has two cusps and guards the left atrioventricular opening; the tricuspid guards the right one."
+  },
+  {
+   "id": "zooA-030",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiac cycle",
+   "q": "The first heart sound 'lub' is produced by",
+   "o": [
+    "Closure of the atrioventricular (tricuspid and bicuspid) valves",
+    "Closure of the semilunar valves",
+    "Opening of the atrioventricular valves",
+    "Contraction of the atria"
+   ],
+   "a": 0,
+   "x": "'Lub' marks the start of ventricular systole as AV valves close; 'dub' is closure of the semilunar valves at the start of diastole.",
+   "trap": "Semilunar valve closure gives the second sound, 'dub'."
+  },
+  {
+   "id": "zooA-031",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: heartbeat",
+   "q": "Counting the pulse at the wrist directly gives a person's",
+   "o": [
+    "Blood pressure",
+    "Heart rate",
+    "Stroke volume",
+    "Cardiac output"
+   ],
+   "a": 1,
+   "x": "Each ventricular contraction sends a pressure wave along the arteries; the number of pulses per minute equals the heart rate (about 72/min).",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-032",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiac cycle",
+   "q": "If the heart beats 75 times per minute, the duration of one cardiac cycle is",
+   "o": [
+    "0.6 s",
+    "0.8 s",
+    "1.0 s",
+    "1.2 s"
+   ],
+   "a": 1,
+   "x": "Duration = 60 s ÷ 75 = 0.8 s."
+  },
+  {
+   "id": "zooA-033",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: blood pressure",
+   "q": "In a blood pressure reading of 120/80 mm Hg, 80 represents the",
+   "o": [
+    "Systolic pressure",
+    "Pulse pressure",
+    "Diastolic pressure",
+    "Mean arterial pressure"
+   ],
+   "a": 2,
+   "x": "The upper value (120) is systolic pressure during ventricular contraction; the lower (80) is diastolic pressure during relaxation."
+  },
+  {
+   "id": "zooA-034",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: blood pressure",
+   "q": "A person's blood pressure is 130/85 mm Hg. The pulse pressure is",
+   "o": [
+    "45 mm Hg",
+    "85 mm Hg",
+    "100 mm Hg",
+    "215 mm Hg"
+   ],
+   "a": 0,
+   "x": "Pulse pressure = systolic − diastolic = 130 − 85 = 45 mm Hg.",
+   "trap": "100 mm Hg is the mean arterial pressure (85 + 45/3)."
+  },
+  {
+   "id": "zooA-035",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: arterial and venous system",
+   "q": "The vessels that carry oxygenated blood from the lungs to the heart are the",
+   "o": [
+    "Pulmonary arteries",
+    "Venae cavae",
+    "Coronary sinus",
+    "Pulmonary veins"
+   ],
+   "a": 3,
+   "x": "Four pulmonary veins return oxygenated blood to the left atrium; pulmonary arteries carry deoxygenated blood to the lungs.",
+   "trap": "Pulmonary arteries are arteries carrying deoxygenated blood."
+  },
+  {
+   "id": "zooA-036",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: arterial and venous system",
+   "q": "The hepatic portal vein carries blood from the",
+   "o": [
+    "Intestine to the liver",
+    "Liver to the heart",
+    "Kidney to the liver",
+    "Liver to the intestine"
+   ],
+   "a": 0,
+   "x": "It brings absorbed food-rich blood from the stomach and intestines to the liver for processing before it reaches the heart.",
+   "trap": "Liver to heart is the hepatic vein."
+  },
+  {
+   "id": "zooA-037",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system (blood)",
+   "q": "The most abundant white blood cells, which are actively phagocytic, are",
+   "o": [
+    "Lymphocytes",
+    "Neutrophils",
+    "Eosinophils",
+    "Basophils"
+   ],
+   "a": 1,
+   "x": "Neutrophils form about 60–70% of WBCs and are the first phagocytes to reach infected sites.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-038",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system (blood)",
+   "q": "During blood clotting, thrombin converts",
+   "o": [
+    "Prothrombin into thrombin",
+    "Fibrin into fibrinogen",
+    "Fibrinogen into fibrin",
+    "Plasminogen into plasmin"
+   ],
+   "a": 2,
+   "x": "Thromboplastin with Ca²⁺ turns prothrombin into thrombin; thrombin then converts soluble fibrinogen into insoluble fibrin threads that trap cells.",
+   "trap": "Prothrombin to thrombin is the step before, done by thromboplastin."
+  },
+  {
+   "id": "zooA-039",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system (blood)",
+   "q": "Vitamin K is needed for blood clotting because it is required for",
+   "o": [
+    "Formation of red blood cells",
+    "Absorption of calcium from the gut",
+    "Production of platelets in bone marrow",
+    "Synthesis of prothrombin in the liver"
+   ],
+   "a": 3,
+   "x": "The liver needs vitamin K to make prothrombin and other clotting factors; its deficiency delays clotting."
+  },
+  {
+   "id": "zooA-040",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: blood group and pressure",
+   "q": "A mother of genotype IᴮIᴮ and a father of blood group A (genotype not known) can have children of blood group",
+   "o": [
+    "AB or B only",
+    "A or B only",
+    "A, B, AB or O",
+    "AB only"
+   ],
+   "a": 0,
+   "x": "Father is IᴬIᴬ or IᴬI°. IᴬIᴬ × IᴮIᴮ gives only AB; IᴬI° × IᴮIᴮ gives AB (IᴬIᴮ) or B (IᴮI°). Group A or O is impossible.",
+   "trap": "AB only assumes the father is surely IᴬIᴬ.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooA-041",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: blood group and pressure",
+   "q": "In the ABO system, the universal donor blood group is",
+   "o": [
+    "A",
+    "O",
+    "B",
+    "AB"
+   ],
+   "a": 1,
+   "x": "Group O red cells carry neither A nor B antigen, so they are not agglutinated by recipients' anti-A or anti-B.",
+   "trap": "AB is the universal recipient, not donor.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooA-042",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiovascular disorders",
+   "q": "Deposition of cholesterol plaques in the inner walls of arteries, narrowing them, is called",
+   "o": [
+    "Angina pectoris",
+    "Varicose veins",
+    "Atherosclerosis",
+    "Haemophilia"
+   ],
+   "a": 2,
+   "x": "Atherosclerosis narrows arteries and raises blood pressure; in coronary arteries it can cause angina and heart attack.",
+   "trap": "Angina is the chest pain that results, not the deposit itself."
+  },
+  {
+   "id": "zooA-043",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiovascular disorders",
+   "q": "A heart attack (myocardial infarction) results from",
+   "o": [
+    "Failure of the SA node only",
+    "Leakage of the bicuspid valve",
+    "A rise in blood glucose",
+    "Blockage of a coronary artery so that part of the heart muscle dies"
+   ],
+   "a": 3,
+   "x": "When a coronary artery is blocked (often by a clot on a plaque), the heart muscle it supplies is deprived of O₂ and dies.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-044",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: arterial and venous system",
+   "q": "Compared with blood, lymph has",
+   "o": [
+    "No red blood cells and less protein",
+    "More red blood cells",
+    "No white blood cells",
+    "More platelets and more protein"
+   ],
+   "a": 0,
+   "x": "Lymph is tissue fluid collected by lymph vessels: it has lymphocytes but no RBCs and fewer proteins than plasma."
+  },
+  {
+   "id": "zooA-045",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: cardiac output",
+   "q": "A person's cardiac output is 6 L/min and stroke volume is 80 mL. The heart rate is",
+   "o": [
+    "60 beats/min",
+    "75 beats/min",
+    "80 beats/min",
+    "480 beats/min"
+   ],
+   "a": 1,
+   "x": "Heart rate = cardiac output ÷ stroke volume = 6000 mL ÷ 80 mL = 75 beats/min."
+  },
+  {
+   "id": "zooA-046",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: heartbeat",
+   "q": "The correct order of conduction of the cardiac impulse is",
+   "o": [
+    "AV node → SA node → bundle of His → Purkinje fibres",
+    "SA node → AV node → bundle of His → Purkinje fibres",
+    "SA node → bundle of His → AV node → Purkinje fibres",
+    "Purkinje fibres → bundle of His → AV node → SA node"
+   ],
+   "a": 1,
+   "x": "The impulse starts at the SA node, spreads over the atria to the AV node, then down the bundle of His and Purkinje fibres into ventricular walls."
+  },
+  {
+   "id": "zooA-047",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system (blood)",
+   "q": "Red blood cells live about 120 days, and old ones are mostly destroyed in the",
+   "o": [
+    "Kidney",
+    "Lungs",
+    "Spleen",
+    "Pancreas"
+   ],
+   "a": 2,
+   "x": "The spleen, the 'graveyard of RBCs', removes worn-out red cells; their haemoglobin is broken down to bilirubin."
+  },
+  {
+   "id": "zooA-048",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: urine formation",
+   "q": "Ultrafiltration in the Bowman's capsule is caused mainly by",
+   "o": [
+    "Osmotic pressure of plasma proteins",
+    "Active transport by podocytes",
+    "Action of ADH on the glomerulus",
+    "High hydrostatic (blood) pressure in the glomerulus"
+   ],
+   "a": 3,
+   "x": "Glomerular blood pressure forces water and small solutes through the filtration membrane; plasma protein osmotic pressure opposes filtration.",
+   "trap": "Plasma protein osmotic pressure opposes, not drives, filtration.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-049",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: urine formation",
+   "q": "Blood pressure in the glomerulus stays high mainly because",
+   "o": [
+    "The efferent arteriole is narrower than the afferent arteriole",
+    "The afferent arteriole is narrower than the efferent arteriole",
+    "The glomerulus has no capillaries",
+    "Blood enters the glomerulus from a vein"
+   ],
+   "a": 0,
+   "x": "Blood enters by a wider afferent arteriole and leaves by a narrower efferent arteriole, so pressure builds up (about 60 mm Hg) for filtration."
+  },
+  {
+   "id": "zooA-050",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Excretory system: urine formation",
+   "q": "Glucose in the glomerular filtrate is normally reabsorbed completely in the",
+   "o": [
+    "Distal convoluted tubule",
+    "Proximal convoluted tubule",
+    "Loop of Henle",
+    "Collecting duct"
+   ],
+   "a": 1,
+   "x": "The PCT reabsorbs about 65–70% of filtrate, including all glucose and amino acids, by active transport."
+  },
+  {
+   "id": "zooA-051",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: urine formation",
+   "q": "The ascending limb of the loop of Henle",
+   "o": [
+    "Is permeable to water but not to salts",
+    "Is permeable to both water and salts",
+    "Is impermeable to water but moves NaCl out into the medulla",
+    "Secretes glucose into the filtrate"
+   ],
+   "a": 2,
+   "x": "The descending limb lets water out; the ascending limb pumps out NaCl but keeps water in, so filtrate becomes dilute while the medulla becomes salty.",
+   "trap": "Water-permeable but salt-impermeable describes the descending limb."
+  },
+  {
+   "id": "zooA-052",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: urine formation",
+   "q": "Aldosterone acts on the distal tubule and collecting duct to",
+   "o": [
+    "Increase reabsorption of glucose",
+    "Decrease reabsorption of Na⁺",
+    "Increase secretion of urea",
+    "Increase reabsorption of Na⁺ (and secretion of K⁺)"
+   ],
+   "a": 3,
+   "x": "Aldosterone from the adrenal cortex retains Na⁺ and water and removes K⁺, raising blood volume and pressure."
+  },
+  {
+   "id": "zooA-053",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Excretory system: excretory organs",
+   "q": "In humans, urea is synthesised in the",
+   "o": [
+    "Liver",
+    "Kidney",
+    "Spleen",
+    "Urinary bladder"
+   ],
+   "a": 0,
+   "x": "Liver cells convert ammonia and CO₂ to urea in the ornithine (urea) cycle; kidneys only remove it. Humans are ureotelic.",
+   "trap": "Kidneys excrete urea; they do not make it.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-054",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: concept of renal disorders",
+   "q": "Most kidney stones (renal calculi) are made of",
+   "o": [
+    "Sodium chloride",
+    "Calcium oxalate",
+    "Urea",
+    "Glucose"
+   ],
+   "a": 1,
+   "x": "Most renal stones are crystals of calcium oxalate; they can block urine flow and cause severe pain."
+  },
+  {
+   "id": "zooA-055",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: concept of renal disorders",
+   "q": "In kidney failure, haemodialysis removes from the blood mainly",
+   "o": [
+    "Red blood cells",
+    "Plasma proteins",
+    "Urea and other small waste molecules",
+    "Antibodies"
+   ],
+   "a": 2,
+   "x": "Blood flows past a semipermeable membrane in dialysing fluid; small solutes like urea diffuse out while cells and proteins stay in."
+  },
+  {
+   "id": "zooA-056",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Excretory system: concept of renal disorders",
+   "q": "Presence of glucose in urine (glycosuria) is most commonly a sign of",
+   "o": [
+    "Diabetes insipidus",
+    "Kidney stone",
+    "Jaundice",
+    "Diabetes mellitus"
+   ],
+   "a": 3,
+   "x": "When blood glucose exceeds the renal threshold (about 180 mg/dL) in diabetes mellitus, tubules cannot reabsorb all glucose.",
+   "trap": "Diabetes insipidus gives large volumes of urine without glucose."
+  },
+  {
+   "id": "zooA-057",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Excretory system: excretory organs",
+   "q": "Each human kidney contains about",
+   "o": [
+    "10,000 nephrons",
+    "100,000 nephrons",
+    "1 million nephrons",
+    "100 million nephrons"
+   ],
+   "a": 2,
+   "x": "Each kidney has roughly one million nephrons, its structural and functional units."
+  },
+  {
+   "id": "zooA-058",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: urine formation",
+   "q": "About 180 L of glomerular filtrate forms per day and 1.8 L of urine is passed. The percentage of filtrate reabsorbed is",
+   "o": [
+    "90%",
+    "98%",
+    "99%",
+    "99.9%"
+   ],
+   "a": 2,
+   "x": "Urine = 1.8/180 = 1% of filtrate, so 100 − 1 = 99% is reabsorbed."
+  },
+  {
+   "id": "zooA-059",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: nerve impulse",
+   "q": "The resting membrane potential of a neuron is mainly due to the membrane being, at rest, more permeable to",
+   "o": [
+    "K⁺",
+    "Na⁺",
+    "Ca²⁺",
+    "Glucose"
+   ],
+   "a": 0,
+   "x": "At rest many K⁺ leak channels are open, so K⁺ diffuses out and leaves the inside negative (about −70 mV); Na⁺ channels stay mostly closed.",
+   "trap": "Na⁺ permeability rises only during depolarisation.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-060",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: nerve impulse",
+   "q": "Depolarisation of a neuron during an action potential is caused by",
+   "o": [
+    "Exit of K⁺ from the axon",
+    "Rapid entry of Na⁺ into the axon",
+    "Entry of Cl⁻ into the axon",
+    "Exit of Ca²⁺ from the axon"
+   ],
+   "a": 1,
+   "x": "Voltage-gated Na⁺ channels open, Na⁺ rushes in and the inside becomes positive (about +30 mV). K⁺ exit then repolarises it.",
+   "trap": "K⁺ exit causes repolarisation, not depolarisation."
+  },
+  {
+   "id": "zooA-061",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: nerve impulse",
+   "q": "At a chemical synapse, the nerve impulse passes to the next neuron by",
+   "o": [
+    "Direct flow of electric current through a fused membrane",
+    "Hormones carried in the blood",
+    "A neurotransmitter such as acetylcholine released into the synaptic cleft",
+    "Movement of the axon into the next neuron"
+   ],
+   "a": 2,
+   "x": "The arriving impulse opens Ca²⁺ channels; vesicles release a neurotransmitter that diffuses across the cleft and binds receptors on the next neuron.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-062",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Intelligence, memory, reasoning and voluntary actions are controlled by the",
+   "o": [
+    "Cerebellum",
+    "Medulla oblongata",
+    "Pons",
+    "Cerebral cortex (cerebrum)"
+   ],
+   "a": 3,
+   "x": "The cerebral cortex is the seat of thinking, memory, attention, learning and voluntary movement.",
+   "trap": "Cerebellum coordinates movement but does not do reasoning.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-063",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The thermoregulatory (body temperature) centre of the brain is the",
+   "o": [
+    "Hypothalamus",
+    "Thalamus",
+    "Cerebellum",
+    "Medulla oblongata"
+   ],
+   "a": 0,
+   "x": "The hypothalamus controls body temperature, hunger, thirst and the pituitary gland."
+  },
+  {
+   "id": "zooA-064",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The corpus callosum is a band of nerve fibres that connects the",
+   "o": [
+    "Two cerebellar hemispheres",
+    "Two cerebral hemispheres",
+    "Midbrain and medulla",
+    "Brain and spinal cord"
+   ],
+   "a": 1,
+   "x": "The corpus callosum, the largest commissure, links the left and right cerebral hemispheres."
+  },
+  {
+   "id": "zooA-065",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Humans have",
+   "o": [
+    "10 pairs of cranial nerves and 31 pairs of spinal nerves",
+    "12 pairs of cranial nerves and 33 pairs of spinal nerves",
+    "12 pairs of cranial nerves and 31 pairs of spinal nerves",
+    "10 pairs of cranial nerves and 33 pairs of spinal nerves"
+   ],
+   "a": 2,
+   "x": "Humans (mammals) have 12 pairs of cranial nerves and 31 pairs of spinal nerves.",
+   "trap": "10 cranial pairs is the frog, not humans."
+  },
+  {
+   "id": "zooA-066",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The vagus nerve, which slows the heart and supplies the lungs and gut, is the",
+   "o": [
+    "5th cranial nerve",
+    "7th cranial nerve",
+    "12th cranial nerve",
+    "10th cranial nerve"
+   ],
+   "a": 3,
+   "x": "The vagus (X) is the longest cranial nerve and carries most parasympathetic fibres to thoracic and abdominal organs.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-067",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Stimulation of the sympathetic nervous system causes",
+   "o": [
+    "Increased heart rate and dilation of the pupils",
+    "Constriction of the pupils",
+    "Increased peristalsis of the gut",
+    "Increased flow of watery saliva"
+   ],
+   "a": 0,
+   "x": "The sympathetic system prepares for 'fight or flight': faster heart, dilated pupils and bronchioles, slower digestion.",
+   "trap": "Pupil constriction and peristalsis are parasympathetic effects."
+  },
+  {
+   "id": "zooA-068",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: nerve impulse",
+   "q": "Conduction in a myelinated nerve fibre is fast because the impulse",
+   "o": [
+    "Travels through the myelin sheath itself",
+    "Jumps from one node of Ranvier to the next",
+    "Is carried by blood around the nerve",
+    "Moves only along the dendrites"
+   ],
+   "a": 1,
+   "x": "Myelin insulates the axon, so depolarisation occurs only at nodes of Ranvier; this saltatory conduction is much faster."
+  },
+  {
+   "id": "zooA-069",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The meninges covering the brain, from outside to inside, are",
+   "o": [
+    "Pia mater, arachnoid, dura mater",
+    "Arachnoid, dura mater, pia mater",
+    "Dura mater, arachnoid, pia mater",
+    "Dura mater, pia mater, arachnoid"
+   ],
+   "a": 2,
+   "x": "Tough dura mater lies outermost, then the web-like arachnoid, then the thin vascular pia mater on the brain surface."
+  },
+  {
+   "id": "zooA-070",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Which statement about the medulla oblongata is correct?",
+   "o": [
+    "It controls body temperature and thirst",
+    "It maintains balance and posture",
+    "It is the centre of memory and reasoning",
+    "It contains centres controlling heartbeat, breathing and vomiting"
+   ],
+   "a": 3,
+   "x": "The medulla holds the cardiac, respiratory and vasomotor centres, plus reflex centres for vomiting, coughing and swallowing; damage is often fatal.",
+   "trap": "Temperature and thirst belong to the hypothalamus."
+  },
+  {
+   "id": "zooA-071",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: eye",
+   "q": "The middle, vascular and pigmented coat of the eyeball is the",
+   "o": [
+    "Choroid",
+    "Sclera",
+    "Retina",
+    "Cornea"
+   ],
+   "a": 0,
+   "x": "The eye wall has three coats: outer sclera (cornea in front), middle choroid (blood vessels, pigment), inner retina.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-072",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: ear",
+   "q": "The receptor for rotational (dynamic) balance is the",
+   "o": [
+    "Macula of the utriculus",
+    "Crista in the ampulla of the semicircular canals",
+    "Organ of Corti",
+    "Tympanic membrane"
+   ],
+   "a": 1,
+   "x": "Cristae in the ampullae sense head rotation; maculae of the utriculus and sacculus sense static position and linear movement.",
+   "trap": "Macula detects static balance, not rotation.",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooA-073",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: eye",
+   "q": "The part of the retina that has no rods or cones, where the optic nerve leaves the eye, is the",
+   "o": [
+    "Fovea centralis",
+    "Yellow spot",
+    "Blind spot",
+    "Ciliary body"
+   ],
+   "a": 2,
+   "x": "The blind spot (optic disc) lacks photoreceptors, so no image forms there; the fovea has only cones and gives sharpest vision.",
+   "trap": "Fovea has the most cones, not none."
+  },
+  {
+   "id": "zooA-074",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: eye",
+   "q": "Colour vision in humans depends on",
+   "o": [
+    "Rods",
+    "The blind spot",
+    "The choroid",
+    "Cones"
+   ],
+   "a": 3,
+   "x": "Cones contain iodopsin and work in bright light for colour and detail; rods contain rhodopsin for dim light."
+  },
+  {
+   "id": "zooA-075",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: ear",
+   "q": "The smallest bone in the human body is the",
+   "o": [
+    "Stapes",
+    "Malleus",
+    "Incus",
+    "Vomer"
+   ],
+   "a": 0,
+   "x": "The stapes (stirrup), an ear ossicle about 3 mm long, fits into the oval window of the inner ear."
+  },
+  {
+   "id": "zooA-076",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: ear",
+   "q": "The Eustachian tube connects the",
+   "o": [
+    "External ear to the middle ear",
+    "Middle ear to the pharynx",
+    "Middle ear to the inner ear",
+    "Inner ear to the brain"
+   ],
+   "a": 1,
+   "x": "It equalises air pressure on both sides of the eardrum, which is why ears 'pop' during take-off."
+  },
+  {
+   "id": "zooA-077",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Sense organs: eye",
+   "q": "Myopia (short-sightedness) is due to",
+   "o": [
+    "An elongated eyeball, and is corrected by a convex lens",
+    "A shortened eyeball, and is corrected by a concave lens",
+    "An elongated eyeball, and is corrected by a concave lens",
+    "Loss of lens elasticity with age, and is corrected by a cylindrical lens"
+   ],
+   "a": 2,
+   "x": "In myopia the eyeball is too long, so distant images form in front of the retina; a diverging (concave) lens corrects it.",
+   "trap": "A shortened eyeball causes hypermetropia, corrected by convex lens."
+  },
+  {
+   "id": "zooA-078",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: eye",
+   "q": "Accommodation of the eye for near and far vision is brought about by",
+   "o": [
+    "The iris changing the size of the pupil",
+    "The retina moving forward and backward",
+    "The cornea changing its thickness",
+    "Ciliary muscles changing the curvature of the lens"
+   ],
+   "a": 3,
+   "x": "Ciliary muscles contract to make the lens more convex for near objects and relax to flatten it for distant objects.",
+   "trap": "The iris controls light entry, not focusing."
+  },
+  {
+   "id": "zooA-079",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Moon face, fat on the trunk and high blood sugar due to excess cortisol is called",
+   "o": [
+    "Cushing's syndrome",
+    "Addison's disease",
+    "Acromegaly",
+    "Myxoedema"
+   ],
+   "a": 0,
+   "x": "Cushing's syndrome is hypersecretion of glucocorticoids (cortisol) by the adrenal cortex.",
+   "trap": "Addison's disease is the opposite: too little cortical hormone.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-080",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Addison's disease is caused by",
+   "o": [
+    "Hypersecretion of adrenaline",
+    "Hyposecretion of hormones of the adrenal cortex",
+    "Hyposecretion of thyroxine",
+    "Hypersecretion of growth hormone"
+   ],
+   "a": 1,
+   "x": "Low cortisol and aldosterone cause weakness, low blood pressure, salt loss and bronze pigmentation of skin."
+  },
+  {
+   "id": "zooA-081",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Excess growth hormone after the growth plates have closed (in adults) causes",
+   "o": [
+    "Gigantism",
+    "Dwarfism",
+    "Acromegaly",
+    "Cretinism"
+   ],
+   "a": 2,
+   "x": "In adults, extra GH enlarges bones of the face, hands and feet (acromegaly); in children it causes gigantism.",
+   "trap": "Gigantism happens only when excess GH starts before growth stops."
+  },
+  {
+   "id": "zooA-082",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Hyposecretion of thyroxine in children causes",
+   "o": [
+    "Myxoedema",
+    "Graves' disease",
+    "Acromegaly",
+    "Cretinism"
+   ],
+   "a": 3,
+   "x": "Cretinism: stunted growth and mental retardation in children. Thyroxine deficiency in adults causes myxoedema."
+  },
+  {
+   "id": "zooA-083",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Contraction of the uterus during childbirth and ejection of milk are caused by",
+   "o": [
+    "Oxytocin",
+    "Prolactin",
+    "Progesterone",
+    "Vasopressin"
+   ],
+   "a": 0,
+   "x": "Oxytocin, made in the hypothalamus and released from the posterior pituitary, contracts uterine muscle and milk-gland myoepithelium.",
+   "trap": "Prolactin makes milk; oxytocin ejects it."
+  },
+  {
+   "id": "zooA-084",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "The 'fight or flight' hormone adrenaline is secreted by the",
+   "o": [
+    "Adrenal cortex",
+    "Adrenal medulla",
+    "Thyroid",
+    "Anterior pituitary"
+   ],
+   "a": 1,
+   "x": "The adrenal medulla, stimulated by sympathetic nerves, releases adrenaline in emergencies, raising heart rate and blood glucose."
+  },
+  {
+   "id": "zooA-085",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Melatonin, which regulates the sleep–wake (day–night) cycle, is secreted by the",
+   "o": [
+    "Thymus",
+    "Pituitary gland",
+    "Pineal gland",
+    "Parathyroid gland"
+   ],
+   "a": 2,
+   "x": "The pineal body secretes melatonin mainly in darkness; it influences biological rhythms."
+  },
+  {
+   "id": "zooA-086",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "The thymus gland helps immunity by",
+   "o": [
+    "Producing antibodies directly",
+    "Destroying old red blood cells",
+    "Secreting insulin",
+    "Maturing T-lymphocytes under the influence of thymosin"
+   ],
+   "a": 3,
+   "x": "Thymosin from the thymus helps T-lymphocytes mature; the gland is large in children and shrinks after puberty."
+  },
+  {
+   "id": "zooA-087",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Hormones released from the posterior pituitary are actually synthesised in the",
+   "o": [
+    "Hypothalamus",
+    "Anterior pituitary",
+    "Posterior pituitary itself",
+    "Adrenal cortex"
+   ],
+   "a": 0,
+   "x": "Oxytocin and ADH are made by hypothalamic neurosecretory cells, carried down their axons and stored in the posterior pituitary until release.",
+   "trap": "The posterior pituitary only stores and releases them."
+  },
+  {
+   "id": "zooA-088",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Which hormone lowers the blood glucose level?",
+   "o": [
+    "Glucagon",
+    "Insulin",
+    "Adrenaline",
+    "Cortisol"
+   ],
+   "a": 1,
+   "x": "Insulin increases glucose uptake by cells and its storage as glycogen; glucagon, adrenaline and cortisol all raise blood glucose."
+  },
+  {
+   "id": "zooA-089",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: organs",
+   "q": "Developing sperms in the seminiferous tubules receive nourishment from",
+   "o": [
+    "Leydig cells",
+    "Spermatogonia",
+    "Sertoli cells",
+    "Cells of the vas deferens"
+   ],
+   "a": 2,
+   "x": "Sertoli (sustentacular) cells nourish and support developing sperms and secrete inhibin; Leydig cells secrete testosterone.",
+   "trap": "Leydig cells make testosterone, not nourishment.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-090",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: gametogenesis",
+   "q": "In a sperm, the mitochondria that supply energy for movement of the tail are located in the",
+   "o": [
+    "Head",
+    "Acrosome",
+    "End piece",
+    "Middle piece"
+   ],
+   "a": 3,
+   "x": "The middle piece has a spiral of mitochondria that produce ATP to beat the tail (flagellum), which propels the sperm.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-091",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: gametogenesis",
+   "q": "The number of chromosomes in a human secondary oocyte is",
+   "o": [
+    "23",
+    "46",
+    "69",
+    "92"
+   ],
+   "a": 0,
+   "x": "The first meiotic division halves the number: the secondary oocyte (and first polar body) is haploid with 23 chromosomes.",
+   "trap": "46 is the primary oocyte, before meiosis I is complete."
+  },
+  {
+   "id": "zooA-092",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Reproductive system: gametogenesis",
+   "q": "At ovulation, the human female gamete released from the ovary is",
+   "o": [
+    "A secondary oocyte arrested at metaphase II",
+    "A mature ovum that has completed meiosis II",
+    "A primary oocyte arrested at prophase I",
+    "An oogonium"
+   ],
+   "a": 0,
+   "x": "Meiosis I finishes just before ovulation; the secondary oocyte stays in metaphase II and completes meiosis II only if a sperm enters.",
+   "trap": "Meiosis II completes only after sperm entry."
+  },
+  {
+   "id": "zooA-093",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "After ovulation, the ruptured Graafian follicle becomes the corpus luteum, which mainly secretes",
+   "o": [
+    "FSH",
+    "Progesterone",
+    "LH",
+    "Testosterone"
+   ],
+   "a": 1,
+   "x": "The corpus luteum secretes progesterone (and some oestrogen), which keeps the endometrium ready for implantation."
+  },
+  {
+   "id": "zooA-094",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "Menstruation begins when",
+   "o": [
+    "LH level surges in mid-cycle",
+    "Oestrogen level rises in the follicular phase",
+    "Progesterone level falls as the corpus luteum degenerates",
+    "FSH level rises at the start of the cycle"
+   ],
+   "a": 2,
+   "x": "Without fertilisation the corpus luteum degenerates; falling progesterone causes the endometrium to break down and shed as menstrual flow.",
+   "trap": "The LH surge causes ovulation, not menstruation."
+  },
+  {
+   "id": "zooA-095",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "A woman has a regular menstrual cycle of 32 days. Since the luteal phase lasts about 14 days, ovulation is expected around day",
+   "o": [
+    "14",
+    "16",
+    "18",
+    "32"
+   ],
+   "a": 2,
+   "x": "Ovulation ≈ cycle length − luteal phase = 32 − 14 = day 18.",
+   "trap": "Day 14 is correct only for a 28-day cycle."
+  },
+  {
+   "id": "zooA-096",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "Home pregnancy test kits detect in urine the hormone",
+   "o": [
+    "LH",
+    "FSH",
+    "Prolactin",
+    "hCG (human chorionic gonadotropin)"
+   ],
+   "a": 3,
+   "x": "hCG is made by the trophoblast/placenta soon after implantation; it maintains the corpus luteum in early pregnancy."
+  },
+  {
+   "id": "zooA-097",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: organs",
+   "q": "Sperms are produced in the",
+   "o": [
+    "Seminiferous tubules of the testis",
+    "Epididymis",
+    "Seminal vesicle",
+    "Prostate gland"
+   ],
+   "a": 0,
+   "x": "Spermatogenesis occurs in seminiferous tubules; sperms then mature and are stored in the epididymis.",
+   "trap": "The epididymis stores and matures sperms but does not make them."
+  },
+  {
+   "id": "zooA-098",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "During the follicular phase of the menstrual cycle, oestrogen is secreted mainly by the",
+   "o": [
+    "Corpus luteum",
+    "Growing Graafian follicles",
+    "Anterior pituitary",
+    "Endometrium"
+   ],
+   "a": 1,
+   "x": "Under FSH, growing follicles secrete oestrogen, which rebuilds the endometrium (proliferative phase).",
+   "trap": "The corpus luteum forms only after ovulation."
+  },
+  {
+   "id": "zooA-099",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Reproductive system: gametogenesis",
+   "q": "Spermiogenesis is the",
+   "o": [
+    "Formation of spermatogonia from germ cells",
+    "Meiotic division of primary spermatocytes",
+    "Transformation of spermatids into spermatozoa",
+    "Release of sperms from Sertoli cells"
+   ],
+   "a": 2,
+   "x": "Spermiogenesis is the change of round haploid spermatids into tailed sperms; release from Sertoli cells is spermiation.",
+   "trap": "Release of sperms is spermiation, not spermiogenesis."
+  },
+  {
+   "id": "zooA-100",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Reproductive system: gametogenesis",
+   "q": "How many secondary spermatocytes and spermatids are formed from 25 primary spermatocytes?",
+   "o": [
+    "25 and 50",
+    "50 and 100",
+    "50 and 50",
+    "100 and 100"
+   ],
+   "a": 1,
+   "x": "Each primary spermatocyte forms 2 secondary spermatocytes (meiosis I), which form 4 spermatids (meiosis II): 25 × 2 = 50 and 25 × 4 = 100."
+  },
+  {
+   "id": "zooA-101",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "Ovulation is triggered by a surge of LH, which is secreted by the",
+   "o": [
+    "Posterior pituitary",
+    "Ovary",
+    "Hypothalamus",
+    "Anterior pituitary"
+   ],
+   "a": 3,
+   "x": "LH and FSH are gonadotropins of the anterior pituitary; the hypothalamus releases GnRH which controls them.",
+   "trap": "The hypothalamus makes GnRH, not LH itself."
+  },
+  {
+   "id": "zooA-102",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Typhoid",
+   "q": "Typhoid fever is caused by",
+   "o": [
+    "Salmonella typhi",
+    "Vibrio cholerae",
+    "Mycobacterium tuberculosis",
+    "Shigella dysenteriae"
+   ],
+   "a": 0,
+   "x": "Typhoid is caused by the bacterium Salmonella typhi; it is diagnosed by the Widal test and blood culture.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-103",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Typhoid",
+   "q": "Typhoid spreads mainly through",
+   "o": [
+    "Bite of the female Anopheles mosquito",
+    "Food and water contaminated with faeces of patients or carriers",
+    "Droplets from coughing",
+    "Sexual contact"
+   ],
+   "a": 1,
+   "x": "Typhoid is faeco-orally transmitted; houseflies and healthy carriers help spread it. Safe water and sanitation prevent it."
+  },
+  {
+   "id": "zooA-104",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: TB",
+   "q": "Tuberculosis is caused by",
+   "o": [
+    "Mycobacterium leprae",
+    "Clostridium tetani",
+    "Mycobacterium tuberculosis",
+    "Salmonella typhi"
+   ],
+   "a": 2,
+   "x": "Robert Koch discovered the TB bacillus in 1882; M. leprae causes leprosy.",
+   "trap": "M. leprae is the same genus but causes leprosy."
+  },
+  {
+   "id": "zooA-105",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases: TB",
+   "q": "The BCG vaccine, given at birth to protect against tuberculosis, is a",
+   "o": [
+    "Toxoid",
+    "Killed (inactivated) vaccine",
+    "Recombinant subunit vaccine",
+    "Live attenuated vaccine"
+   ],
+   "a": 3,
+   "x": "BCG (Bacillus Calmette–Guérin) contains live but weakened Mycobacterium bovis."
+  },
+  {
+   "id": "zooA-106",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: TB",
+   "q": "The Mantoux (tuberculin) skin test is used in diagnosing",
+   "o": [
+    "Tuberculosis",
+    "Typhoid",
+    "HIV infection",
+    "Hepatitis B"
+   ],
+   "a": 0,
+   "x": "Tuberculin (PPD) injected into the skin produces a raised hard area in people sensitised to TB bacilli. Sputum is examined for acid-fast bacilli."
+  },
+  {
+   "id": "zooA-107",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: HIV",
+   "q": "HIV is NOT transmitted by",
+   "o": [
+    "Sharing infected needles",
+    "Mosquito bites or shaking hands",
+    "Transfusion of infected blood",
+    "An infected mother to her baby"
+   ],
+   "a": 1,
+   "x": "HIV spreads through unprotected sex, infected blood or needles, and mother to child; it does not spread by insects, touch or sharing food.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-108",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: HIV",
+   "q": "HIV makes DNA from its RNA genome with the enzyme",
+   "o": [
+    "DNA polymerase I",
+    "RNA polymerase",
+    "Reverse transcriptase",
+    "DNA ligase"
+   ],
+   "a": 2,
+   "x": "HIV is a retrovirus; reverse transcriptase copies its RNA into DNA, which integrates into the host cell's DNA."
+  },
+  {
+   "id": "zooA-109",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: HIV",
+   "q": "The usual screening test for HIV infection is",
+   "o": [
+    "Widal test",
+    "Mantoux test",
+    "VDRL test",
+    "ELISA"
+   ],
+   "a": 3,
+   "x": "ELISA detects anti-HIV antibodies; positive results are confirmed by Western blot or PCR. Widal is for typhoid, VDRL for syphilis."
+  },
+  {
+   "id": "zooA-110",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Cholera",
+   "q": "Profuse watery 'rice-water' stools with severe dehydration are typical of",
+   "o": [
+    "Cholera",
+    "Typhoid",
+    "Amoebic dysentery",
+    "Hepatitis A"
+   ],
+   "a": 0,
+   "x": "Cholera toxin of Vibrio cholerae makes the intestine pour out water and salts, causing rice-water stools and rapid dehydration."
+  },
+  {
+   "id": "zooA-111",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Cholera",
+   "q": "Glucose is added to oral rehydration solution (ORS) used in cholera mainly because",
+   "o": [
+    "It kills Vibrio cholerae",
+    "It is co-transported with Na⁺ in the intestine, and water follows",
+    "It neutralises cholera toxin",
+    "It stops the secretion of mucus"
+   ],
+   "a": 1,
+   "x": "Sodium–glucose cotransport in intestinal cells still works in cholera, so glucose pulls Na⁺ and then water into the body.",
+   "trap": "ORS does not kill bacteria; it replaces lost water and salts."
+  },
+  {
+   "id": "zooA-112",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Influenza",
+   "q": "Influenza is caused by",
+   "o": [
+    "A bacterium spread by contaminated water",
+    "A protozoan spread by mosquitoes",
+    "An RNA virus spread by respiratory droplets",
+    "A fungus spread by skin contact"
+   ],
+   "a": 2,
+   "x": "Influenza virus (orthomyxovirus) has a segmented RNA genome and spreads by coughing, sneezing and contact."
+  },
+  {
+   "id": "zooA-113",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Influenza",
+   "q": "A new influenza vaccine is needed almost every year because",
+   "o": [
+    "Influenza vaccines are toxoids that lose potency",
+    "Humans cannot form memory cells against viruses",
+    "The virus becomes resistant to antibiotics",
+    "The virus frequently changes its surface antigens (haemagglutinin and neuraminidase)"
+   ],
+   "a": 3,
+   "x": "Mutations in H and N genes (antigenic drift) produce new strains that old antibodies do not recognise well.",
+   "trap": "Antibiotics never act on viruses."
+  },
+  {
+   "id": "zooA-114",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases: Hepatitis",
+   "q": "Hepatitis A and hepatitis E spread mainly through",
+   "o": [
+    "Faeco-oral route (contaminated food and water)",
+    "Blood transfusion",
+    "Sexual contact",
+    "Mosquito bites"
+   ],
+   "a": 0,
+   "x": "Hepatitis A and E viruses pass out in faeces and infect via contaminated food and water; B, C and D spread by blood and body fluids.",
+   "trap": "Blood transfusion spreads hepatitis B and C, not A or E."
+  },
+  {
+   "id": "zooA-115",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Hepatitis",
+   "q": "Hepatitis B virus is transmitted mainly through",
+   "o": [
+    "Contaminated drinking water",
+    "Infected blood and body fluids",
+    "Houseflies",
+    "Respiratory droplets"
+   ],
+   "a": 1,
+   "x": "HBV spreads through transfusion, shared needles, sex and from mother to baby; it damages the liver and can lead to cirrhosis and cancer."
+  },
+  {
+   "id": "zooA-116",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Hepatitis",
+   "q": "The vaccine against hepatitis B is produced as a",
+   "o": [
+    "Live attenuated hepatitis B virus",
+    "Toxoid of the hepatitis B toxin",
+    "Recombinant vaccine of the viral surface antigen made in yeast",
+    "Killed bacteria"
+   ],
+   "a": 2,
+   "x": "The HBsAg gene is expressed in yeast; the purified surface protein is used as a safe subunit vaccine."
+  },
+  {
+   "id": "zooA-117",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Candidiasis",
+   "q": "Candidiasis (oral thrush) is caused by",
+   "o": [
+    "A virus",
+    "A bacterium",
+    "A protozoan",
+    "Candida albicans, a yeast-like fungus"
+   ],
+   "a": 3,
+   "x": "Candida albicans normally lives harmlessly in the mouth, gut and vagina; it overgrows when immunity or normal flora is reduced."
+  },
+  {
+   "id": "zooA-118",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Candidiasis",
+   "q": "Candidiasis commonly appears after long courses of broad-spectrum antibiotics because",
+   "o": [
+    "Antibiotics kill normal bacteria that keep Candida in check",
+    "Antibiotics are made from Candida",
+    "Antibiotics stimulate fungal reproduction directly",
+    "Antibiotics destroy all antibodies"
+   ],
+   "a": 0,
+   "x": "Normal bacterial flora compete with Candida; when they are killed, the fungus overgrows. It is also common in HIV and diabetes."
+  },
+  {
+   "id": "zooA-119",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Immunity: innate and acquired",
+   "q": "Lysozyme present in tears and saliva is a part of",
+   "o": [
+    "Acquired humoral immunity",
+    "Innate (non-specific) immunity",
+    "Acquired cell-mediated immunity",
+    "Artificial passive immunity"
+   ],
+   "a": 1,
+   "x": "Innate barriers include skin, mucus, stomach acid and lysozyme, which breaks bacterial cell walls; they act on any microbe, without memory.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-120",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Antigens and antibodies",
+   "q": "An antibody molecule (IgG) is made of",
+   "o": [
+    "Two heavy chains only",
+    "One heavy and one light chain",
+    "Two heavy and two light polypeptide chains",
+    "Four heavy chains"
+   ],
+   "a": 2,
+   "x": "Antibodies are Y-shaped, with two identical heavy and two identical light chains linked by disulfide bonds (H₂L₂)."
+  },
+  {
+   "id": "zooA-121",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Antigens and antibodies",
+   "q": "Antibodies are secreted by",
+   "o": [
+    "Helper T-cells",
+    "Neutrophils",
+    "Red blood cells",
+    "Plasma cells"
+   ],
+   "a": 3,
+   "x": "Activated B-lymphocytes divide to form plasma cells, which secrete antibodies, and memory B cells."
+  },
+  {
+   "id": "zooA-122",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Antigens and antibodies",
+   "q": "The antibody class mainly responsible for allergic reactions is",
+   "o": [
+    "IgE",
+    "IgG",
+    "IgM",
+    "IgA"
+   ],
+   "a": 0,
+   "x": "IgE binds mast cells and basophils; on contact with an allergen they release histamine, causing allergy."
+  },
+  {
+   "id": "zooA-123",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Antigens and antibodies",
+   "q": "The largest antibody, which is the first to appear in a primary immune response, is",
+   "o": [
+    "IgG",
+    "IgM",
+    "IgA",
+    "IgD"
+   ],
+   "a": 1,
+   "x": "IgM is a pentamer, the largest antibody, and is produced first; IgG follows and dominates later.",
+   "trap": "IgG dominates later and in secondary responses."
+  },
+  {
+   "id": "zooA-124",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Immunity: innate and acquired",
+   "q": "A booster dose of a vaccine gives a faster and stronger response because of",
+   "o": [
+    "Antibodies received from the mother",
+    "Innate barriers like the skin",
+    "Memory cells formed after the first dose",
+    "Interferon from virus-infected cells"
+   ],
+   "a": 2,
+   "x": "Memory B and T cells from the primary response recognise the antigen quickly, so the secondary response is quicker, larger and longer lasting."
+  },
+  {
+   "id": "zooA-125",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Vaccines: live attenuated, inactivated, toxoid",
+   "q": "The tetanus vaccine (TT) is an example of a",
+   "o": [
+    "Live attenuated vaccine",
+    "Inactivated whole-virus vaccine",
+    "Recombinant subunit vaccine",
+    "Toxoid"
+   ],
+   "a": 3,
+   "x": "A toxoid is a bacterial toxin made harmless (e.g. by formalin) that still induces antitoxin antibodies; tetanus and diphtheria vaccines are toxoids."
+  },
+  {
+   "id": "zooA-126",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Vaccines: live attenuated, inactivated, toxoid",
+   "q": "Which of these vaccines contains live attenuated viruses?",
+   "o": [
+    "MMR (measles, mumps, rubella)",
+    "Tetanus toxoid",
+    "Salk (injected) polio vaccine",
+    "Hepatitis B vaccine"
+   ],
+   "a": 0,
+   "x": "MMR uses weakened live viruses. Salk's IPV is inactivated, tetanus is a toxoid and hepatitis B is a recombinant subunit vaccine.",
+   "trap": "Salk polio vaccine is inactivated; Sabin's oral vaccine is live."
+  },
+  {
+   "id": "zooA-127",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Immunity: innate and acquired",
+   "q": "An injection of anti-snake venom provides",
+   "o": [
+    "Artificial active immunity",
+    "Artificial passive immunity",
+    "Natural active immunity",
+    "Natural passive immunity"
+   ],
+   "a": 1,
+   "x": "Ready-made antibodies (from horses) are injected, so the body does not make them (passive), and it is given medically (artificial).",
+   "trap": "Vaccines give active immunity; antiserum gives passive."
+  },
+  {
+   "id": "zooA-128",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Antigens and antibodies",
+   "q": "The specific part of an antigen that binds to an antibody is called the",
+   "o": [
+    "Paratope",
+    "Hapten",
+    "Epitope (antigenic determinant)",
+    "Fc region"
+   ],
+   "a": 2,
+   "x": "An epitope is the small region of an antigen recognised by the antibody; the paratope is the matching site on the antibody.",
+   "trap": "Paratope is on the antibody, not the antigen."
+  },
+  {
+   "id": "zooA-129",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Immunity: innate and acquired",
+   "q": "Cell-mediated immunity is carried out mainly by",
+   "o": [
+    "B-lymphocytes",
+    "Plasma cells",
+    "Erythrocytes",
+    "T-lymphocytes"
+   ],
+   "a": 3,
+   "x": "T cells act directly: cytotoxic T cells kill infected and cancer cells. B cells and plasma cells give humoral (antibody) immunity."
+  },
+  {
+   "id": "zooA-130",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases (cancer)",
+   "q": "A benign tumour differs from a malignant tumour in that a benign tumour",
+   "o": [
+    "Stays localised and does not spread to other parts",
+    "Spreads to distant organs by metastasis",
+    "Is always caused by viruses",
+    "Grows without any cell division"
+   ],
+   "a": 0,
+   "x": "Benign tumours remain confined; malignant (cancerous) tumours invade nearby tissues and metastasise. Oncology studies tumours (neoplasms).",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-131",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Medical technology: tissue and organ transplantation",
+   "q": "Skin taken from a patient's own thigh to cover a burn on the arm is an",
+   "o": [
+    "Allograft",
+    "Autograft",
+    "Xenograft",
+    "Isograft"
+   ],
+   "a": 1,
+   "x": "Autograft: donor and recipient are the same person, so no rejection. Isograft: identical twin; allograft: another human; xenograft: another species."
+  },
+  {
+   "id": "zooA-132",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Medical technology: tissue and organ transplantation",
+   "q": "After an organ transplant, cyclosporin A is given to",
+   "o": [
+    "Kill bacteria in the new organ",
+    "Increase blood supply to the organ",
+    "Suppress the immune response and prevent rejection",
+    "Dissolve blood clots"
+   ],
+   "a": 2,
+   "x": "Cyclosporin A, obtained from the fungus Tolypocladium inflatum, inhibits T-cell activation and is used as an immunosuppressant."
+  },
+  {
+   "id": "zooA-133",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Medical technology: tissue and organ transplantation",
+   "q": "Before a kidney transplant, donor and recipient are tissue-matched mainly for",
+   "o": [
+    "Haemoglobin type",
+    "Body weight",
+    "Rh factor alone",
+    "HLA (MHC) antigens"
+   ],
+   "a": 3,
+   "x": "Graft rejection is a T-cell response to foreign HLA (MHC) antigens; closer HLA and ABO matching means less rejection."
+  },
+  {
+   "id": "zooA-134",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Medical technology: In-Vitro Fertilization (IVF)",
+   "q": "In in-vitro fertilisation (IVF, 'test-tube baby'), fertilisation takes place",
+   "o": [
+    "Outside the body in a laboratory dish",
+    "Inside the test tube for the whole pregnancy",
+    "In the fallopian tube of the mother",
+    "In the uterus after artificial insemination"
+   ],
+   "a": 0,
+   "x": "Eggs and sperms are joined in the laboratory; the early embryo is then transferred into the mother's uterus or fallopian tube to develop.",
+   "trap": "Only fertilisation and early cleavage occur outside; the pregnancy is in the uterus.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-135",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Medical technology: In-Vitro Fertilization (IVF)",
+   "q": "In ICSI (intracytoplasmic sperm injection), a technique used with IVF,",
+   "o": [
+    "Sperms are placed in the uterus",
+    "A single sperm is injected directly into the ovum",
+    "An embryo is placed in the fallopian tube",
+    "The ovum is injected into the testis"
+   ],
+   "a": 1,
+   "x": "ICSI helps when sperm count or motility is very low: one selected sperm is injected straight into the egg cytoplasm."
+  },
+  {
+   "id": "zooA-136",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Medical technology: amniocentesis",
+   "q": "Amniocentesis is the",
+   "o": [
+    "Removal of the placenta after birth",
+    "Injection of hormones to induce labour",
+    "Withdrawal of a small sample of amniotic fluid to study foetal cells",
+    "Transfer of an embryo into the uterus"
+   ],
+   "a": 2,
+   "x": "A needle draws amniotic fluid (usually at 15–20 weeks); foetal cells in it are cultured and their chromosomes and chemistry studied.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-137",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Medical technology: amniocentesis",
+   "q": "Amniocentesis is used mainly to detect",
+   "o": [
+    "High blood pressure in the mother",
+    "Malaria in the foetus",
+    "Myopia in the foetus",
+    "Chromosomal disorders such as Down syndrome in the foetus"
+   ],
+   "a": 3,
+   "x": "Karyotyping foetal cells reveals aneuploidies like trisomy 21. Its misuse for sex determination is banned."
+  },
+  {
+   "id": "zooA-138",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Medical technology: transgenic animals",
+   "q": "An animal whose genome carries a deliberately introduced foreign gene is called a",
+   "o": [
+    "Transgenic animal",
+    "Clone",
+    "Hybrid",
+    "Polyploid"
+   ],
+   "a": 0,
+   "x": "Transgenic animals (e.g. transgenic cows, mice) express foreign genes; a clone such as Dolly is a genetic copy, not necessarily transgenic.",
+   "trap": "Dolly was a clone, not transgenic."
+  },
+  {
+   "id": "zooA-139",
+   "topic": "zoo-medical-applied",
+   "d": 3,
+   "s": "Medical technology: transgenic animals",
+   "q": "Rosie, the first transgenic cow (1997), produced milk enriched with",
+   "o": [
+    "Human insulin",
+    "Human α-lactalbumin",
+    "Human growth hormone",
+    "Vitamin B₁₂"
+   ],
+   "a": 1,
+   "x": "Rosie's milk contained human α-lactalbumin (about 2.4 g/L), making it nutritionally closer to human milk for babies."
+  },
+  {
+   "id": "zooA-140",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Medical technology: transgenic animals",
+   "q": "Transgenic animals are useful in medicine mainly because they can",
+   "o": [
+    "Replace all vaccines",
+    "Cure every genetic disease directly",
+    "Produce human proteins and serve as models for human diseases",
+    "Make antibiotics unnecessary"
+   ],
+   "a": 2,
+   "x": "Transgenic animals make useful proteins (e.g. α-1-antitrypsin) in milk, act as disease models and test vaccine safety."
+  },
+  {
+   "id": "zooA-141",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Applied microbiology: dairy/beverage microbes",
+   "q": "Milk is converted into curd by",
+   "o": [
+    "Saccharomyces",
+    "Penicillium",
+    "Rhizobium",
+    "Lactobacillus (lactic acid bacteria)"
+   ],
+   "a": 3,
+   "x": "Lactic acid bacteria ferment lactose to lactic acid, which coagulates milk proteins; they also raise vitamin B₁₂ content."
+  },
+  {
+   "id": "zooA-142",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Applied microbiology: dairy/beverage microbes",
+   "q": "Beer and wine are produced by fermentation of sugars using",
+   "o": [
+    "Saccharomyces cerevisiae (yeast)",
+    "Lactobacillus",
+    "Aspergillus niger",
+    "Clostridium"
+   ],
+   "a": 0,
+   "x": "Brewer's yeast ferments sugars anaerobically into ethanol and CO₂."
+  },
+  {
+   "id": "zooA-143",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Applied microbiology: dairy/beverage microbes",
+   "q": "The large holes in Swiss cheese are made by CO₂ released by",
+   "o": [
+    "Lactobacillus",
+    "Propionibacterium shermanii",
+    "Saccharomyces cerevisiae",
+    "Streptococcus pneumoniae"
+   ],
+   "a": 1,
+   "x": "Propionibacterium shermanii ferments lactate, releasing CO₂ bubbles that form the characteristic holes ('eyes')."
+  },
+  {
+   "id": "zooA-144",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Applied microbiology: sewage and drinking water treatment",
+   "q": "In secondary (biological) sewage treatment, organic matter is broken down mainly by",
+   "o": [
+    "Chlorine added to the tanks",
+    "Filtration through sand alone",
+    "Aerobic microbes growing as flocs in aeration tanks",
+    "Sedimentation without microbes"
+   ],
+   "a": 2,
+   "x": "Air is pumped in; aerobic bacteria and fungi form flocs that digest organic matter and lower BOD. Settled sludge goes to anaerobic digesters."
+  },
+  {
+   "id": "zooA-145",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Applied microbiology: sewage and drinking water treatment",
+   "q": "In anaerobic sludge digesters of a sewage plant, bacteria produce",
+   "o": [
+    "Pure oxygen",
+    "Ethanol",
+    "Chlorine",
+    "Biogas, mainly methane"
+   ],
+   "a": 3,
+   "x": "Anaerobic bacteria digest the activated sludge and release a gas mixture of methane, H₂S and CO₂ (biogas), usable as fuel."
+  },
+  {
+   "id": "zooA-146",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Applied microbiology: sewage and drinking water treatment",
+   "q": "A high BOD (biochemical oxygen demand) of a water sample indicates",
+   "o": [
+    "High organic pollution of the water",
+    "Very pure water",
+    "High dissolved oxygen",
+    "Absence of microbes"
+   ],
+   "a": 0,
+   "x": "BOD measures oxygen used by microbes to break down organic matter; more organic waste gives a higher BOD.",
+   "trap": "High BOD means oxygen is being used up, not that it is plentiful."
+  },
+  {
+   "id": "zooA-147",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Applied microbiology: sewage and drinking water treatment",
+   "q": "Chlorination of drinking water is done to",
+   "o": [
+    "Remove hardness",
+    "Kill disease-causing microorganisms",
+    "Add minerals",
+    "Remove suspended mud"
+   ],
+   "a": 1,
+   "x": "Chlorine is a cheap disinfectant that kills bacteria in water; sedimentation and filtration remove mud."
+  },
+  {
+   "id": "zooA-148",
+   "topic": "zoo-medical-applied",
+   "d": 1,
+   "s": "Applied microbiology: bio-control agents",
+   "q": "The fish Gambusia is used as a biological control agent against",
+   "o": [
+    "Aphids",
+    "Rats",
+    "Mosquito larvae",
+    "Weeds"
+   ],
+   "a": 2,
+   "x": "Gambusia (mosquito fish) eats mosquito larvae, reducing malaria and dengue vectors without chemicals."
+  },
+  {
+   "id": "zooA-149",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Applied microbiology: bio-control agents",
+   "q": "Bacillus thuringiensis is used as a bio-pesticide because it produces",
+   "o": [
+    "Antibiotics that kill fungi",
+    "Hormones that make plants grow faster",
+    "Nitrogen compounds that fertilise soil",
+    "Cry proteins that are toxic to insect larvae"
+   ],
+   "a": 3,
+   "x": "Bt makes a crystal (Cry) protoxin that becomes active in the alkaline gut of insect larvae and kills them; it is harmless to humans."
+  },
+  {
+   "id": "zooA-150",
+   "topic": "zoo-medical-applied",
+   "d": 2,
+   "s": "Applied microbiology: bio-control agents",
+   "q": "Trichoderma is used as a bio-control agent against",
+   "o": [
+    "Fungal pathogens of plants",
+    "Mosquito larvae",
+    "Bacterial diseases of humans",
+    "Rodents"
+   ],
+   "a": 0,
+   "x": "Trichoderma, a free-living soil fungus, attacks and suppresses many plant-pathogenic fungi in the root zone."
+  },
+  {
+   "id": "zooA-151",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Mucin, the main substance of mucus secreted by salivary glands and goblet cells, is chemically a",
+   "o": [
+    "Phospholipid",
+    "Glycoprotein",
+    "Unsaturated fatty acid",
+    "Steroid"
+   ],
+   "a": 1,
+   "x": "Mucins are heavily glycosylated proteins; the slimy mucus they form lubricates food and protects the gut lining from acid and enzymes.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-152",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: urine formation",
+   "q": "Humans can pass urine that is hypertonic (more concentrated) than blood mainly because of",
+   "o": [
+    "Cortical nephrons with short loops of Henle",
+    "Reduced secretion of ADH",
+    "Juxtamedullary nephrons with long loops of Henle dipping deep into the medulla",
+    "Eating a high-protein diet"
+   ],
+   "a": 2,
+   "x": "Long loops of juxtamedullary nephrons with the vasa recta build a high osmotic gradient in the medulla (counter-current); ADH then lets water leave the collecting duct.",
+   "trap": "Less ADH makes urine dilute, not concentrated.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-153",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "A person cannot move the jaw muscles used for chewing. The cranial nerve most likely damaged is the",
+   "o": [
+    "Abducens (VI)",
+    "Auditory (VIII)",
+    "Trochlear (IV)",
+    "Trigeminal (V)"
+   ],
+   "a": 3,
+   "x": "The mandibular branch of the trigeminal nerve (a mixed nerve) supplies the muscles of mastication. IV and VI move the eyeball; VIII carries hearing and balance.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-154",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Which group contains only purely sensory cranial nerves?",
+   "o": [
+    "Olfactory (I), optic (II) and auditory (VIII)",
+    "Oculomotor (III), trochlear (IV) and abducens (VI)",
+    "Trigeminal (V), facial (VII) and vagus (X)",
+    "Accessory (XI), hypoglossal (XII) and oculomotor (III)"
+   ],
+   "a": 0,
+   "x": "I, II and VIII carry impulses only towards the brain (smell, sight, hearing and balance); damage to the olfactory nerve or bulb causes loss of smell. III, IV, VI, XI, XII are motor; V, VII, IX, X are mixed.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooA-155",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Which gland is often nicknamed the '4S gland' because its hormones regulate salt, sugar, sex and stress?",
+   "o": [
+    "Pituitary gland",
+    "Adrenal gland",
+    "Thymus",
+    "Thyroid gland"
+   ],
+   "a": 1,
+   "x": "Adrenal cortex: aldosterone (salt), cortisol (sugar), sex corticoids (sex); adrenal medulla: adrenaline (stress). The pituitary is the 'master gland'.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-156",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Which part of the adrenal gland is essential for life, so that its complete removal is fatal?",
+   "o": [
+    "Adrenal medulla",
+    "Posterior pituitary",
+    "Adrenal cortex",
+    "Pineal gland"
+   ],
+   "a": 2,
+   "x": "Without corticoids (aldosterone, cortisol) the body loses Na⁺ and water and cannot hold blood pressure and sugar, so they are called life-saving hormones. Medullary adrenaline is the 'emergency' hormone.",
+   "trap": "Adrenaline is the emergency (fight-or-flight) hormone, but life goes on without the medulla.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-157",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: blood group and pressure",
+   "q": "A substance that, if introduced into the bloodstream, would start coagulation of blood at that site is",
+   "o": [
+    "Heparin",
+    "Sodium citrate",
+    "Plasmin (fibrinolysin)",
+    "Thromboplastin"
+   ],
+   "a": 3,
+   "x": "Thromboplastin (tissue factor) starts the clotting cascade: with Ca²⁺ it turns prothrombin into thrombin, which converts fibrinogen into fibrin. Heparin and citrate prevent clotting; plasmin dissolves clots.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-158",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: organs",
+   "q": "The testes of man lie in the scrotum, outside the abdominal cavity, because",
+   "o": [
+    "Sperm formation needs a temperature about 2–3 °C lower than body temperature",
+    "Sperms mature faster at body temperature",
+    "Testosterone acts only outside the body cavity",
+    "There is no space for them in the abdomen"
+   ],
+   "a": 0,
+   "x": "The scrotum keeps the testes slightly cooler than the body core; testes that fail to descend (cryptorchidism) cannot produce sperms, causing sterility.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-159",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: physiology of digestion",
+   "q": "A breast-fed infant passes yellow stools. The colour comes mainly from",
+   "o": [
+    "Lactose of the milk",
+    "Bile pigments (bilirubin) poured into the gut with bile",
+    "Pancreatic lipase",
+    "Mucus from goblet cells"
+   ],
+   "a": 1,
+   "x": "Bile pigments from haemoglobin breakdown colour the faeces. In infants, with few gut bacteria, bilirubin stays yellow; later bacteria change it to brown stercobilin.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-160",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: urine formation",
+   "q": "When blood glucose is so high that filtered glucose exceeds the tubular transport maximum (Tm),",
+   "o": [
+    "The tubules reabsorb all the extra glucose",
+    "Filtration of glucose stops at the glomerulus",
+    "Reabsorption cannot rise any further and the excess glucose appears in urine",
+    "The loop of Henle secretes the extra glucose back into blood"
+   ],
+   "a": 2,
+   "x": "Glucose carriers of the PCT become saturated at Tm, so reabsorption stays at its maximum; above the renal threshold (about 180 mg/100 mL blood) glucose spills into urine (glycosuria).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-161",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: nerve impulse",
+   "q": "Which of the following is NOT a function of sodium ions in the human body?",
+   "o": [
+    "Producing the action potential of nerve fibres",
+    "Maintaining osmotic pressure of extracellular fluid",
+    "Helping absorption of glucose in the intestine",
+    "Forming the oxygen-binding part of haemoglobin"
+   ],
+   "a": 3,
+   "x": "Na⁺ is the main ECF cation: it controls osmotic balance, its influx depolarises neurons, and Na⁺–glucose co-transport absorbs glucose. Iron, not sodium, binds O₂ in haem.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-162",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: eye",
+   "q": "Intraocular pressure, which is raised in glaucoma, is measured with a",
+   "o": [
+    "Tonometer",
+    "Sphygmomanometer",
+    "Spirometer",
+    "Audiometer"
+   ],
+   "a": 0,
+   "x": "A tonometer measures pressure inside the eyeball. Sphygmomanometer: blood pressure; spirometer: lung volumes; audiometer: hearing.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-163",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases (vector-borne: malaria and dengue)",
+   "q": "Which statement correctly distinguishes malaria from dengue?",
+   "o": [
+    "Both are caused by viruses spread by Culex",
+    "Malaria is caused by a protozoan spread by Anopheles; dengue by a virus spread by Aedes",
+    "Malaria is caused by a virus; dengue by a protozoan",
+    "Dengue is spread by Anopheles; malaria by Aedes"
+   ],
+   "a": 1,
+   "x": "Malaria: Plasmodium (protozoan), female Anopheles, treated with antimalarial drugs. Dengue: dengue virus, Aedes aegypti, no specific antiviral drug.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-164",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases (viral)",
+   "q": "Which pair consists only of viral diseases?",
+   "o": [
+    "Malaria and influenza",
+    "Typhoid and AIDS",
+    "Common cold and herpes",
+    "Tuberculosis and measles"
+   ],
+   "a": 2,
+   "x": "Common cold (rhinovirus) and herpes (herpes simplex virus) are viral. Malaria is protozoan; typhoid and tuberculosis are bacterial.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-165",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases: TB",
+   "q": "Active pulmonary tuberculosis is confirmed by",
+   "o": [
+    "Widal test of blood",
+    "Testing urine for sugar",
+    "ELISA for HIV antibodies",
+    "Microscopic examination of sputum for acid-fast bacilli"
+   ],
+   "a": 3,
+   "x": "Ziehl–Neelsen stained sputum shows Mycobacterium tuberculosis (acid-fast bacilli). The Mantoux test only shows infection or exposure, not active disease.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-166",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Antigens and antibodies",
+   "q": "Identical antibodies produced by a hybridoma (a myeloma cell fused with a B-lymphocyte) are called",
+   "o": [
+    "Monoclonal antibodies",
+    "Polyclonal antibodies",
+    "Autoantibodies",
+    "Antitoxins"
+   ],
+   "a": 0,
+   "x": "One B-cell clone, made immortal by fusion with a myeloma cell, secretes one kind of antibody against one epitope; used in diagnosis (e.g. pregnancy kits) and therapy.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooA-167",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "The opening of the stomach into the duodenum is guarded by the",
+   "o": [
+    "Cardiac sphincter",
+    "Pyloric sphincter",
+    "Ileocaecal valve",
+    "Sphincter of Oddi"
+   ],
+   "a": 1,
+   "x": "The pyloric sphincter controls the passage of chyme from the stomach into the duodenum. The cardiac sphincter guards the oesophagus–stomach junction.",
+   "trap": "Cardiac sphincter is at the upper (oesophageal) end of the stomach."
+  },
+  {
+   "id": "zooA-168",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "The vermiform appendix arises from the",
+   "o": [
+    "Ileum",
+    "Rectum",
+    "Caecum",
+    "Duodenum"
+   ],
+   "a": 2,
+   "x": "The appendix is a narrow blind tube attached to the caecum, the first part of the large intestine; it is vestigial in humans."
+  },
+  {
+   "id": "zooA-169",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "The longest part of the human small intestine is the",
+   "o": [
+    "Duodenum",
+    "Jejunum",
+    "Caecum",
+    "Ileum"
+   ],
+   "a": 3,
+   "x": "Duodenum about 25 cm, jejunum about 2.5 m, ileum about 3.5 m. The caecum belongs to the large intestine."
+  },
+  {
+   "id": "zooA-170",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Human teeth set in sockets of the jaw bones are described as",
+   "o": [
+    "Thecodont",
+    "Acrodont",
+    "Pleurodont",
+    "Monophyodont"
+   ],
+   "a": 0,
+   "x": "Thecodont: each tooth sits in a bony socket. Human teeth are also heterodont (different types) and diphyodont (two sets: milk and permanent).",
+   "trap": "Monophyodont is wrong; humans have two sets of teeth."
+  },
+  {
+   "id": "zooA-171",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "The largest salivary gland of man, which swells in mumps, is the",
+   "o": [
+    "Submandibular gland",
+    "Parotid gland",
+    "Sublingual gland",
+    "Brunner's gland"
+   ],
+   "a": 1,
+   "x": "The parotid lies below and in front of the ear and opens by Stensen's duct; the mumps virus inflames it."
+  },
+  {
+   "id": "zooA-172",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: alimentary canal and digestive glands",
+   "q": "Meissner's (submucosal) nerve plexus of the gut wall lies in the",
+   "o": [
+    "Mucosa",
+    "Serosa",
+    "Submucosa",
+    "Muscularis externa"
+   ],
+   "a": 2,
+   "x": "Meissner's plexus in the submucosa controls glands and local blood flow; Auerbach's (myenteric) plexus lies between the muscle layers of the muscularis.",
+   "trap": "Auerbach's plexus, not Meissner's, lies in the muscularis."
+  },
+  {
+   "id": "zooA-173",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Which enzyme is NOT present in pancreatic juice?",
+   "o": [
+    "Trypsinogen",
+    "Amylopsin (pancreatic amylase)",
+    "Steapsin (pancreatic lipase)",
+    "Pepsin"
+   ],
+   "a": 3,
+   "x": "Pepsin comes from the stomach (as pepsinogen from chief cells). Pancreatic juice has trypsinogen, chymotrypsinogen, amylase, lipase and nucleases."
+  },
+  {
+   "id": "zooA-174",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: physiology of digestion",
+   "q": "The hormone secretin mainly stimulates the pancreas to release",
+   "o": [
+    "A watery juice rich in bicarbonate",
+    "An enzyme-rich juice",
+    "Insulin",
+    "Glucagon"
+   ],
+   "a": 0,
+   "x": "Acid chyme in the duodenum releases secretin; the bicarbonate it calls for neutralises the acid. Cholecystokinin (CCK) calls for enzyme-rich juice and gall bladder contraction.",
+   "trap": "Enzyme-rich pancreatic juice is the action of CCK."
+  },
+  {
+   "id": "zooA-175",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Digestive system: physiology of digestion",
+   "q": "Gastrin, secreted by G-cells of the stomach, mainly",
+   "o": [
+    "Stimulates release of bile",
+    "Stimulates secretion of gastric juice (HCl and pepsinogen)",
+    "Inhibits stomach movements",
+    "Stimulates secretion of saliva"
+   ],
+   "a": 1,
+   "x": "Food in the stomach releases gastrin into blood; it stimulates parietal cells (HCl) and chief cells (pepsinogen) and stomach movements."
+  },
+  {
+   "id": "zooA-176",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Digestive system: physiology of digestion",
+   "q": "A person whose gall bladder has been removed is advised to eat less fatty food at a time, mainly because",
+   "o": [
+    "The liver stops producing bile",
+    "Pancreatic lipase is no longer secreted",
+    "Bile can no longer be stored and released in large amounts when fatty food arrives",
+    "Fat can no longer be absorbed into lacteals"
+   ],
+   "a": 2,
+   "x": "The liver still makes bile, but it now trickles continuously into the duodenum; without the stored reserve a heavy fatty meal is poorly emulsified.",
+   "trap": "The liver, not the gall bladder, makes bile."
+  },
+  {
+   "id": "zooA-177",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: respiratory organs",
+   "q": "During swallowing, food is kept out of the larynx by the",
+   "o": [
+    "Uvula",
+    "Vocal cords",
+    "Thyroid cartilage",
+    "Epiglottis"
+   ],
+   "a": 3,
+   "x": "The leaf-like elastic epiglottis folds over the glottis while swallowing. The soft palate and uvula close the nasopharynx."
+  },
+  {
+   "id": "zooA-178",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: respiratory organs",
+   "q": "Each lung is enclosed in a double membrane with fluid between its layers, called the",
+   "o": [
+    "Pleura",
+    "Pericardium",
+    "Peritoneum",
+    "Meninges"
+   ],
+   "a": 0,
+   "x": "Pleural fluid reduces friction during breathing. The pericardium covers the heart, the peritoneum lines the abdomen and the meninges cover the brain."
+  },
+  {
+   "id": "zooA-179",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: respiratory organs",
+   "q": "Which of the following belongs to the respiratory (gas-exchange) zone rather than the conducting zone?",
+   "o": [
+    "Trachea",
+    "Alveolar sacs",
+    "Primary bronchi",
+    "Terminal bronchioles"
+   ],
+   "a": 1,
+   "x": "The conducting zone (nose to terminal bronchioles) only carries, warms and cleans air. Gas exchange happens in respiratory bronchioles, alveolar ducts, sacs and alveoli."
+  },
+  {
+   "id": "zooA-180",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: respiratory organs",
+   "q": "A person has expiratory reserve volume 1000 mL and residual volume 1200 mL. The functional residual capacity is",
+   "o": [
+    "1200 mL",
+    "1700 mL",
+    "2200 mL",
+    "3200 mL"
+   ],
+   "a": 2,
+   "x": "Functional residual capacity = air left after a normal expiration = ERV + RV = 1000 + 1200 = 2200 mL."
+  },
+  {
+   "id": "zooA-181",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "Although its partial pressure gradient is small, CO₂ diffuses across the alveolar membrane easily because",
+   "o": [
+    "CO₂ is a smaller molecule than O₂",
+    "Haemoglobin actively pumps out CO₂",
+    "The alveolar wall is impermeable to O₂",
+    "CO₂ is about 20–25 times more soluble than O₂"
+   ],
+   "a": 3,
+   "x": "Diffusion depends on solubility as well as the pressure gradient. CO₂ is far more soluble, so a gradient of only about 5 mm Hg is enough."
+  },
+  {
+   "id": "zooA-182",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "One molecule of haemoglobin can carry at most",
+   "o": [
+    "Four molecules of O₂",
+    "One molecule of O₂",
+    "Two molecules of O₂",
+    "Eight molecules of O₂"
+   ],
+   "a": 0,
+   "x": "Haemoglobin has four polypeptide chains, each with one haem group whose Fe²⁺ binds one O₂ molecule."
+  },
+  {
+   "id": "zooA-183",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Respiratory system: gas exchange and transport",
+   "q": "Each gram of haemoglobin binds about 1.34 mL of O₂. Blood with 15 g of haemoglobin per 100 mL, fully saturated, carries about",
+   "o": [
+    "5 mL O₂ per 100 mL",
+    "20 mL O₂ per 100 mL",
+    "13 mL O₂ per 100 mL",
+    "40 mL O₂ per 100 mL"
+   ],
+   "a": 1,
+   "x": "15 × 1.34 = 20.1 ≈ 20 mL O₂ per 100 mL of blood (about 20 volumes per cent)."
+  },
+  {
+   "id": "zooA-184",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: regulation of respiration",
+   "q": "The pneumotaxic centre, which limits inspiration and helps set the breathing rate, is located in the",
+   "o": [
+    "Medulla oblongata",
+    "Cerebellum",
+    "Pons",
+    "Hypothalamus"
+   ],
+   "a": 2,
+   "x": "The pneumotaxic centre in the pons switches off inspiration; the basic rhythm comes from the medullary respiratory centre.",
+   "trap": "Medulla holds the rhythm centre, not the pneumotaxic centre."
+  },
+  {
+   "id": "zooA-185",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Respiratory system: regulation of respiration",
+   "q": "Peripheral chemoreceptors that respond mainly to a fall in blood O₂ are located in the",
+   "o": [
+    "Medulla oblongata",
+    "Walls of the alveoli",
+    "Sino-atrial node",
+    "Carotid and aortic bodies"
+   ],
+   "a": 3,
+   "x": "Carotid bodies (at the carotid fork) and aortic bodies (on the aortic arch) sense low O₂ and send impulses to the respiratory centre. Central chemoreceptors in the medulla sense CO₂/H⁺."
+  },
+  {
+   "id": "zooA-186",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: concept of respiratory disorders",
+   "q": "Silicosis and asbestosis are",
+   "o": [
+    "Occupational lung diseases caused by inhaling mineral dust",
+    "Bacterial infections of the lungs",
+    "Inherited lung disorders",
+    "Allergic reactions to pollen"
+   ],
+   "a": 0,
+   "x": "Long exposure to silica or asbestos dust in mines and factories causes fibrosis of lung tissue, reducing gas exchange."
+  },
+  {
+   "id": "zooA-187",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Respiratory system: concept of respiratory disorders",
+   "q": "Bacterial pneumonia, in which alveoli fill with fluid and mucus, is commonly caused by",
+   "o": [
+    "Vibrio cholerae",
+    "Streptococcus pneumoniae",
+    "Salmonella typhi",
+    "Candida albicans"
+   ],
+   "a": 1,
+   "x": "Streptococcus pneumoniae (pneumococcus) inflames the alveoli; the fluid-filled alveoli reduce gas exchange. It spreads by droplets."
+  },
+  {
+   "id": "zooA-188",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: heart",
+   "q": "The tricuspid valve lies between the",
+   "o": [
+    "Left atrium and left ventricle",
+    "Right ventricle and pulmonary artery",
+    "Right atrium and right ventricle",
+    "Left ventricle and aorta"
+   ],
+   "a": 2,
+   "x": "Tricuspid (three cusps) guards the right atrioventricular opening; the bicuspid (mitral) guards the left. Semilunar valves guard the aorta and pulmonary trunk."
+  },
+  {
+   "id": "zooA-189",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: heart",
+   "q": "The chordae tendineae of the heart",
+   "o": [
+    "Conduct the cardiac impulse to the ventricles",
+    "Close the semilunar valves",
+    "Carry blood to the heart muscle",
+    "Prevent the atrioventricular valve cusps from turning into the atria during ventricular contraction"
+   ],
+   "a": 3,
+   "x": "Papillary muscles pull on these tendinous cords so the tricuspid and bicuspid cusps do not evert when ventricular pressure rises."
+  },
+  {
+   "id": "zooA-190",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiac cycle",
+   "q": "During the cardiac cycle, the semilunar valves open when",
+   "o": [
+    "Ventricular pressure exceeds the pressure in the aorta and pulmonary trunk",
+    "Atrial pressure exceeds ventricular pressure",
+    "The atria begin to contract",
+    "The ventricles begin to relax"
+   ],
+   "a": 0,
+   "x": "In ventricular systole the AV valves close first; when ventricular pressure rises above arterial pressure the semilunar valves open and blood is ejected."
+  },
+  {
+   "id": "zooA-191",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiac cycle",
+   "q": "In a cardiac cycle of 0.8 s, ventricular systole lasts about",
+   "o": [
+    "0.1 s",
+    "0.3 s",
+    "0.4 s",
+    "0.5 s"
+   ],
+   "a": 1,
+   "x": "Typical values: atrial systole 0.1 s, ventricular systole 0.3 s, joint diastole 0.4 s; total 0.8 s at 75 beats/min.",
+   "trap": "0.4 s is the joint (complete) diastole."
+  },
+  {
+   "id": "zooA-192",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: cardiac output",
+   "q": "A heart has end-diastolic volume 120 mL and end-systolic volume 50 mL, and beats 70 times a minute. Its cardiac output is",
+   "o": [
+    "3.5 L/min",
+    "8.4 L/min",
+    "4.9 L/min",
+    "12.0 L/min"
+   ],
+   "a": 2,
+   "x": "Stroke volume = 120 − 50 = 70 mL. Cardiac output = 70 mL × 70/min = 4900 mL/min = 4.9 L/min.",
+   "trap": "8.4 L/min uses 120 mL instead of the stroke volume."
+  },
+  {
+   "id": "zooA-193",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: heartbeat",
+   "q": "An artificial pacemaker is implanted mainly when",
+   "o": [
+    "A heart valve leaks",
+    "A coronary artery is blocked",
+    "The blood group of the patient is rare",
+    "The SA node or conducting system fails to start or conduct impulses properly"
+   ],
+   "a": 3,
+   "x": "A pacemaker gives regular electrical impulses to the heart muscle, replacing a failing SA node or a heart block in the conducting pathway."
+  },
+  {
+   "id": "zooA-194",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: heartbeat",
+   "q": "In a normal ECG, the P wave represents",
+   "o": [
+    "Atrial depolarisation",
+    "Ventricular depolarisation",
+    "Ventricular repolarisation",
+    "Closure of the AV valves"
+   ],
+   "a": 0,
+   "x": "P wave: atrial depolarisation (leads to atrial contraction); QRS: ventricular depolarisation; T wave: ventricular repolarisation.",
+   "trap": "QRS, not P, is ventricular depolarisation."
+  },
+  {
+   "id": "zooA-195",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: arterial and venous system",
+   "q": "The only artery that carries deoxygenated blood in an adult is the",
+   "o": [
+    "Aorta",
+    "Pulmonary artery",
+    "Coronary artery",
+    "Renal artery"
+   ],
+   "a": 1,
+   "x": "Arteries carry blood away from the heart. The pulmonary artery takes deoxygenated blood from the right ventricle to the lungs."
+  },
+  {
+   "id": "zooA-196",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: arterial and venous system",
+   "q": "The coronary sinus, which collects blood from the heart wall, opens into the",
+   "o": [
+    "Left atrium",
+    "Right ventricle",
+    "Right atrium",
+    "Superior vena cava"
+   ],
+   "a": 2,
+   "x": "Coronary veins drain into the coronary sinus, which opens into the right atrium; its opening is guarded by the Thebesian (coronary) valve."
+  },
+  {
+   "id": "zooA-197",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: arterial and venous system",
+   "q": "In a healthy person, the blood with the lowest concentration of urea is found in the",
+   "o": [
+    "Hepatic vein",
+    "Hepatic portal vein",
+    "Pulmonary artery",
+    "Renal vein"
+   ],
+   "a": 3,
+   "x": "Urea made in the liver enters blood through the hepatic vein (highest urea); the kidneys remove it, so blood leaving them in the renal vein has the least.",
+   "trap": "Hepatic vein has the most urea, because the liver makes it."
+  },
+  {
+   "id": "zooA-198",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Circulatory system: blood group and pressure",
+   "q": "A person of blood group A can safely receive blood of group",
+   "o": [
+    "A or O",
+    "A or AB",
+    "B or O",
+    "AB only"
+   ],
+   "a": 0,
+   "x": "Group A plasma has anti-B antibodies, so donated red cells must lack the B antigen: groups A and O."
+  },
+  {
+   "id": "zooA-199",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Circulatory system: blood pressure",
+   "q": "Blood pressure is routinely measured with a sphygmomanometer on the",
+   "o": [
+    "Radial artery at the wrist",
+    "Brachial artery of the upper arm",
+    "Jugular vein of the neck",
+    "Femoral vein of the thigh"
+   ],
+   "a": 1,
+   "x": "The cuff is wrapped round the upper arm and sounds are heard over the brachial artery at heart level.",
+   "trap": "The radial artery is used for counting the pulse, not for BP."
+  },
+  {
+   "id": "zooA-200",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Circulatory system: cardiovascular disorders",
+   "q": "Chest pain that comes on during exertion because heart muscle gets too little oxygen is called",
+   "o": [
+    "Heart block",
+    "Hypotension",
+    "Angina pectoris",
+    "Varicose veins"
+   ],
+   "a": 2,
+   "x": "Narrowed coronary arteries cannot supply enough O₂ when the heart works harder; the pain eases with rest. Complete blockage causes a heart attack."
+  },
+  {
+   "id": "zooA-201",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Excretory system: excretory organs",
+   "q": "The columns of Bertini of the kidney are",
+   "o": [
+    "Collecting ducts that open into the pelvis",
+    "Blood capillaries around the tubules",
+    "Parts of the loop of Henle",
+    "Extensions of cortex between the medullary pyramids"
+   ],
+   "a": 3,
+   "x": "Renal cortex dips between the pyramids of the medulla as columns of Bertini; the pyramids open by papillae into calyces."
+  },
+  {
+   "id": "zooA-202",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: urine formation",
+   "q": "ADH (vasopressin) increases water reabsorption by",
+   "o": [
+    "Making the distal tubule and collecting duct more permeable to water",
+    "Increasing the glomerular filtration rate",
+    "Increasing active transport of glucose in the PCT",
+    "Making the ascending limb permeable to water"
+   ],
+   "a": 0,
+   "x": "ADH inserts water channels (aquaporins) into DCT and collecting duct cells, so water leaves into the hypertonic medulla and urine becomes concentrated."
+  },
+  {
+   "id": "zooA-203",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: urine formation",
+   "q": "In tubular secretion, the tubule cells add to the filtrate substances such as",
+   "o": [
+    "Glucose and amino acids",
+    "H⁺, K⁺ and ammonia",
+    "Plasma proteins",
+    "Red blood cells"
+   ],
+   "a": 1,
+   "x": "Secretion removes extra H⁺ and K⁺ (helping pH and ion balance) and some wastes and drugs. Glucose and amino acids are reabsorbed, not secreted."
+  },
+  {
+   "id": "zooA-204",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Excretory system: urine formation",
+   "q": "Normal glomerular filtrate differs from blood plasma mainly in lacking",
+   "o": [
+    "Glucose",
+    "Urea",
+    "Plasma proteins",
+    "Sodium ions"
+   ],
+   "a": 2,
+   "x": "The filtration membrane holds back blood cells and large proteins; small solutes such as glucose, urea and ions pass freely."
+  },
+  {
+   "id": "zooA-205",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: urine formation",
+   "q": "If the glomerular filtration rate is 120 mL per minute, the volume of filtrate formed in one day is about",
+   "o": [
+    "17 L",
+    "120 L",
+    "1.7 L",
+    "173 L"
+   ],
+   "a": 3,
+   "x": "120 mL/min × 60 × 24 = 172 800 mL ≈ 173 L per day; about 99% of it is reabsorbed."
+  },
+  {
+   "id": "zooA-206",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: urine formation",
+   "q": "When blood volume and pressure rise, the atria release atrial natriuretic factor (ANF), which",
+   "o": [
+    "Increases Na⁺ and water excretion and lowers blood pressure",
+    "Increases Na⁺ reabsorption",
+    "Stimulates renin release",
+    "Constricts the afferent arteriole"
+   ],
+   "a": 0,
+   "x": "ANF opposes the renin–angiotensin–aldosterone system: it dilates vessels and promotes loss of Na⁺ and water in urine."
+  },
+  {
+   "id": "zooA-207",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Excretory system: concept of renal disorders",
+   "q": "Large amounts of albumin in the urine (proteinuria) most likely indicate damage to the",
+   "o": [
+    "Ureter",
+    "Glomerular filtration membrane",
+    "Urinary bladder",
+    "Loop of Henle"
+   ],
+   "a": 1,
+   "x": "Plasma proteins are normally too large to pass the glomerular membrane; damage to it lets albumin into the filtrate."
+  },
+  {
+   "id": "zooA-208",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Excretory system: concept of renal disorders",
+   "q": "Ketone bodies appear in the urine (ketonuria) in",
+   "o": [
+    "Diabetes insipidus",
+    "Kidney stones",
+    "Uncontrolled diabetes mellitus or prolonged starvation",
+    "High-carbohydrate diet"
+   ],
+   "a": 2,
+   "x": "When cells cannot use glucose, fat is broken down rapidly and ketone bodies accumulate in blood and spill into urine."
+  },
+  {
+   "id": "zooA-209",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Cerebrospinal fluid is secreted mainly by the",
+   "o": [
+    "Dura mater",
+    "Arachnoid villi",
+    "Pineal gland",
+    "Choroid plexuses in the ventricles of the brain"
+   ],
+   "a": 3,
+   "x": "Choroid plexuses (vascular folds of pia mater) form CSF; arachnoid villi return it to venous blood. CSF cushions and nourishes the brain.",
+   "trap": "Arachnoid villi absorb CSF; they do not secrete it."
+  },
+  {
+   "id": "zooA-210",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Which effect is produced by stimulation of the parasympathetic nervous system?",
+   "o": [
+    "Increased secretion of saliva and digestive juices",
+    "Dilation of the pupils",
+    "Faster heart rate",
+    "Rise in blood glucose"
+   ],
+   "a": 0,
+   "x": "Parasympathetic ('rest and digest'): slows the heart, constricts pupils and stimulates gut secretions and movements. The other three are sympathetic effects."
+  },
+  {
+   "id": "zooA-211",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The correct path of impulses in a spinal reflex arc is",
+   "o": [
+    "Receptor → motor neuron → spinal cord → sensory neuron → effector",
+    "Receptor → sensory neuron → interneuron in spinal cord → motor neuron → effector",
+    "Effector → sensory neuron → brain → motor neuron → receptor",
+    "Receptor → brain → spinal cord → effector"
+   ],
+   "a": 1,
+   "x": "A reflex arc passes through the spinal cord without needing the brain, so the response (e.g. knee jerk, withdrawal) is quick and involuntary."
+  },
+  {
+   "id": "zooA-212",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "In the spinal cord,",
+   "o": [
+    "Grey matter is outside and white matter inside",
+    "Only white matter is present",
+    "Grey matter is inside (butterfly-shaped) and white matter is outside",
+    "Grey and white matter are evenly mixed"
+   ],
+   "a": 2,
+   "x": "The spinal cord has an inner H-shaped grey matter of cell bodies surrounded by white matter of myelinated tracts, the reverse of the cerebral cortex.",
+   "trap": "Grey outside, white inside is the arrangement in the cerebrum."
+  },
+  {
+   "id": "zooA-213",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "Broca's area, damage to which affects the production of speech, lies in the",
+   "o": [
+    "Occipital lobe",
+    "Temporal lobe",
+    "Cerebellum",
+    "Frontal lobe"
+   ],
+   "a": 3,
+   "x": "Broca's motor speech area is in the frontal lobe (usually left). Occipital lobe: vision; temporal lobe: hearing."
+  },
+  {
+   "id": "zooA-214",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The tree-like branching of white matter called 'arbor vitae' is seen in the",
+   "o": [
+    "Cerebellum",
+    "Cerebrum",
+    "Medulla oblongata",
+    "Spinal cord"
+   ],
+   "a": 0,
+   "x": "In a section of the cerebellum, white matter branches inside the grey cortex like a tree, hence 'tree of life'."
+  },
+  {
+   "id": "zooA-215",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Nervous system: CNS, PNS and autonomic",
+   "q": "The dorsal root of a spinal nerve is cut. The most likely result in the area it supplies is",
+   "o": [
+    "Loss of movement, with sensation intact",
+    "Loss of sensation, with movement still possible",
+    "Loss of both sensation and movement",
+    "No change, since the ventral root takes over"
+   ],
+   "a": 1,
+   "x": "Dorsal roots carry sensory (afferent) fibres into the cord; ventral roots carry motor fibres out. Cutting only the dorsal root removes sensation.",
+   "trap": "Loss of movement follows damage to the ventral root."
+  },
+  {
+   "id": "zooA-216",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: nerve impulse",
+   "q": "Repolarisation of a neuron after an action potential is mainly due to",
+   "o": [
+    "Inflow of Na⁺ ions",
+    "Inflow of Cl⁻ ions",
+    "Outflow of K⁺ ions",
+    "Outflow of Ca²⁺ ions"
+   ],
+   "a": 2,
+   "x": "After Na⁺ channels close, voltage-gated K⁺ channels open and K⁺ leaves, bringing the inside back to negative.",
+   "trap": "Na⁺ inflow causes depolarisation, not repolarisation."
+  },
+  {
+   "id": "zooA-217",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: nerve impulse",
+   "q": "According to the all-or-none law, a stimulus much stronger than threshold produces in a single nerve fibre",
+   "o": [
+    "A larger action potential",
+    "No action potential",
+    "An action potential that travels backwards",
+    "An action potential of the same size as a threshold stimulus"
+   ],
+   "a": 3,
+   "x": "Once threshold is reached the fibre fires fully; a stronger stimulus does not increase the size of the action potential, only the frequency of impulses."
+  },
+  {
+   "id": "zooA-218",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Nervous system: nerve impulse",
+   "q": "Acetylcholine released at a synapse is broken down by the enzyme",
+   "o": [
+    "Acetylcholinesterase",
+    "Monoamine oxidase",
+    "Carbonic anhydrase",
+    "Enterokinase"
+   ],
+   "a": 0,
+   "x": "Acetylcholinesterase in the synaptic cleft splits acetylcholine into acetate and choline, ending the signal so the next impulse can pass."
+  },
+  {
+   "id": "zooA-219",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Nervous system: nerve impulse",
+   "q": "Release of neurotransmitter from the axon terminal is triggered by entry of",
+   "o": [
+    "K⁺ ions",
+    "Ca²⁺ ions",
+    "Cl⁻ ions",
+    "Mg²⁺ ions"
+   ],
+   "a": 1,
+   "x": "The arriving impulse opens voltage-gated Ca²⁺ channels; Ca²⁺ entry makes synaptic vesicles fuse with the membrane and release their contents."
+  },
+  {
+   "id": "zooA-220",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: eye",
+   "q": "Hypermetropia (long-sightedness) is corrected by using a",
+   "o": [
+    "Concave lens",
+    "Cylindrical lens",
+    "Convex lens",
+    "Plane glass"
+   ],
+   "a": 2,
+   "x": "In hypermetropia the eyeball is short, so near images form behind the retina; a converging (convex) lens brings them forward.",
+   "trap": "Concave lens corrects myopia."
+  },
+  {
+   "id": "zooA-221",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: eye",
+   "q": "The fovea centralis (yellow spot) gives the sharpest vision because it has",
+   "o": [
+    "Only rods",
+    "No photoreceptors",
+    "Equal numbers of rods and cones",
+    "Only densely packed cones"
+   ],
+   "a": 3,
+   "x": "The fovea contains closely packed cones each with its own nerve fibre, giving fine detail and colour in bright light. The blind spot has no receptors."
+  },
+  {
+   "id": "zooA-222",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: eye",
+   "q": "The correct path of light through the eye to the retina is",
+   "o": [
+    "Cornea → aqueous humour → lens → vitreous humour",
+    "Lens → cornea → vitreous humour → aqueous humour",
+    "Cornea → vitreous humour → lens → aqueous humour",
+    "Aqueous humour → cornea → lens → vitreous humour"
+   ],
+   "a": 0,
+   "x": "Aqueous humour fills the space between cornea and lens; jelly-like vitreous humour fills the space between lens and retina."
+  },
+  {
+   "id": "zooA-223",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: eye",
+   "q": "Presbyopia, common after about 40 years of age, is due to",
+   "o": [
+    "Elongation of the eyeball",
+    "Loss of elasticity of the lens, so near objects are not focused",
+    "Opacity of the cornea",
+    "Lack of cones in the retina"
+   ],
+   "a": 1,
+   "x": "With age the lens hardens and cannot become rounder for near vision; reading glasses with convex lenses help."
+  },
+  {
+   "id": "zooA-224",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: ear",
+   "q": "The footplate of the stapes fits into the",
+   "o": [
+    "Round window (fenestra rotunda)",
+    "Tympanic membrane",
+    "Oval window (fenestra ovalis)",
+    "Opening of the Eustachian tube"
+   ],
+   "a": 2,
+   "x": "Stapes vibrations at the oval window set the perilymph of the cochlea in motion; the round window bulges out to release the pressure."
+  },
+  {
+   "id": "zooA-225",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Sense organs: ear",
+   "q": "The fluid that fills the membranous labyrinth of the inner ear is",
+   "o": [
+    "Perilymph",
+    "Aqueous humour",
+    "Cerebrospinal fluid",
+    "Endolymph"
+   ],
+   "a": 3,
+   "x": "Endolymph is inside the membranous labyrinth; perilymph lies between the membranous and bony labyrinths.",
+   "trap": "Perilymph surrounds, rather than fills, the membranous labyrinth."
+  },
+  {
+   "id": "zooA-226",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: ear",
+   "q": "The maculae of the utriculus and sacculus detect",
+   "o": [
+    "Position of the head with respect to gravity (static balance)",
+    "Sound vibrations",
+    "Rotation of the head",
+    "Changes in air pressure"
+   ],
+   "a": 0,
+   "x": "Hair cells of the macula carry otoliths (CaCO₃ crystals) that shift with gravity and linear movement. Rotation is detected by cristae; sound by the organ of Corti."
+  },
+  {
+   "id": "zooA-227",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: ear",
+   "q": "The sensory hair cells of the organ of Corti rest on the",
+   "o": [
+    "Tectorial membrane",
+    "Basilar membrane",
+    "Tympanic membrane",
+    "Reissner's membrane"
+   ],
+   "a": 1,
+   "x": "Hair cells sit on the basilar membrane; their hairs touch the overhanging tectorial membrane. Vibration bends the hairs and starts nerve impulses.",
+   "trap": "The tectorial membrane lies over, not under, the hair cells."
+  },
+  {
+   "id": "zooA-228",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Sense organs: ear",
+   "q": "A person's cochlea is damaged but the semicircular canals and vestibule are normal. The person will have",
+   "o": [
+    "Loss of balance with normal hearing",
+    "Loss of both hearing and balance",
+    "Loss of hearing with normal balance",
+    "Normal hearing and normal balance"
+   ],
+   "a": 2,
+   "x": "The cochlea (organ of Corti) serves hearing; the vestibular apparatus (semicircular canals, utriculus, sacculus) serves balance."
+  },
+  {
+   "id": "zooA-229",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Sense organs: ear",
+   "q": "Besides connecting the middle ear with the pharynx, the Eustachian tube",
+   "o": [
+    "Carries sound waves to the cochlea",
+    "Drains endolymph from the inner ear",
+    "Holds the ear ossicles in place",
+    "Equalises air pressure on both sides of the eardrum"
+   ],
+   "a": 3,
+   "x": "Swallowing or yawning opens the tube so middle-ear pressure matches outside air; this is why ears 'pop' in aircraft or on mountain roads."
+  },
+  {
+   "id": "zooA-230",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Glucagon, which raises blood glucose, is secreted by the",
+   "o": [
+    "α-cells of the islets of Langerhans",
+    "β-cells of the islets of Langerhans",
+    "Adrenal medulla",
+    "Acinar cells of the pancreas"
+   ],
+   "a": 0,
+   "x": "α-cells make glucagon (stimulates glycogenolysis in the liver); β-cells make insulin; δ-cells make somatostatin. Acinar cells make digestive enzymes.",
+   "trap": "β-cells secrete insulin, the glucose-lowering hormone."
+  },
+  {
+   "id": "zooA-231",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Calcitonin, which lowers blood calcium, is secreted by the",
+   "o": [
+    "Parathyroid glands",
+    "Parafollicular (C) cells of the thyroid",
+    "Follicular cells of the thyroid",
+    "Adrenal cortex"
+   ],
+   "a": 1,
+   "x": "Calcitonin from thyroid C-cells moves Ca²⁺ into bone; parathormone does the opposite. Follicular cells make thyroxine (T₄) and T₃.",
+   "trap": "Parathyroid hormone raises, not lowers, blood calcium."
+  },
+  {
+   "id": "zooA-232",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Simple (endemic) goitre, common in hilly areas, is caused mainly by",
+   "o": [
+    "Excess iodine in the diet",
+    "Deficiency of vitamin D",
+    "Deficiency of iodine in the diet",
+    "Excess growth hormone"
+   ],
+   "a": 2,
+   "x": "Without iodine little thyroxine is made; high TSH then enlarges the thyroid. Iodised salt prevents it."
+  },
+  {
+   "id": "zooA-233",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Hyposecretion of thyroxine in adults causes",
+   "o": [
+    "Cretinism",
+    "Exophthalmic goitre",
+    "Acromegaly",
+    "Myxoedema"
+   ],
+   "a": 3,
+   "x": "Adult hypothyroidism: low metabolic rate, puffy skin, weight gain, sluggishness. Cretinism is the childhood form; exophthalmic goitre is hyperthyroidism.",
+   "trap": "Cretinism is thyroxine deficiency in children, not adults."
+  },
+  {
+   "id": "zooA-234",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Tetany, with painful muscle spasms due to low blood calcium, results from",
+   "o": [
+    "Hyposecretion of parathormone",
+    "Hypersecretion of parathormone",
+    "Hyposecretion of insulin",
+    "Hypersecretion of thyroxine"
+   ],
+   "a": 0,
+   "x": "Parathormone raises blood Ca²⁺; when it is deficient Ca²⁺ falls and nerves and muscles become over-excitable."
+  },
+  {
+   "id": "zooA-235",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "A child is very short but has normal intelligence and normal body proportions. The most likely cause is",
+   "o": [
+    "Deficiency of thyroxine in childhood",
+    "Deficiency of growth hormone in childhood",
+    "Excess of cortisol",
+    "Excess of growth hormone"
+   ],
+   "a": 1,
+   "x": "Pituitary dwarfism: proportionate short stature with normal mind. Childhood thyroxine deficiency (cretinism) also stunts growth but with mental retardation.",
+   "trap": "Cretinism also causes short stature, but intelligence is impaired."
+  },
+  {
+   "id": "zooA-236",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Which of the following hormones is a steroid?",
+   "o": [
+    "Insulin",
+    "Adrenaline",
+    "Cortisol",
+    "Oxytocin"
+   ],
+   "a": 2,
+   "x": "Cortisol (adrenal cortex) and sex hormones are steroids made from cholesterol. Insulin and oxytocin are peptides; adrenaline is an amine."
+  },
+  {
+   "id": "zooA-237",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "Gonadotropin-releasing hormone (GnRH), which controls FSH and LH release, is secreted by the",
+   "o": [
+    "Anterior pituitary",
+    "Ovary",
+    "Pineal gland",
+    "Hypothalamus"
+   ],
+   "a": 3,
+   "x": "Hypothalamic releasing hormones reach the anterior pituitary through the hypophyseal portal system and control its secretion of tropic hormones."
+  },
+  {
+   "id": "zooA-238",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "After childbirth, milk production (synthesis) by the mammary glands is stimulated by",
+   "o": [
+    "Prolactin",
+    "Oxytocin",
+    "Progesterone",
+    "Relaxin"
+   ],
+   "a": 0,
+   "x": "Prolactin from the anterior pituitary makes the glands produce milk; oxytocin from the posterior pituitary ejects (lets down) the milk.",
+   "trap": "Oxytocin causes milk ejection, not milk production."
+  },
+  {
+   "id": "zooA-239",
+   "topic": "zoo-human-biology",
+   "d": 3,
+   "s": "Endocrinology: glands, hormones and disorders",
+   "q": "A patient passes very large volumes of dilute urine that contains no glucose. The most likely cause is",
+   "o": [
+    "Deficiency of insulin",
+    "Deficiency of ADH",
+    "Excess of aldosterone",
+    "Excess of ADH"
+   ],
+   "a": 1,
+   "x": "Without ADH the collecting ducts stay impermeable to water, so much dilute urine is lost (diabetes insipidus). Insulin deficiency also causes polyuria but with glucose in urine.",
+   "trap": "Insulin deficiency causes polyuria with glycosuria."
+  },
+  {
+   "id": "zooA-240",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: organs",
+   "q": "Sperms are stored and become motile (mature) in the",
+   "o": [
+    "Seminal vesicle",
+    "Prostate gland",
+    "Epididymis",
+    "Urethra"
+   ],
+   "a": 2,
+   "x": "From the seminiferous tubules sperms pass via vasa efferentia to the coiled epididymis, where they are stored and gain motility."
+  },
+  {
+   "id": "zooA-241",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: organs",
+   "q": "The fluid of the seminal vesicles is rich in fructose, which",
+   "o": [
+    "Forms the outer coat of the sperm",
+    "Lubricates the urethra",
+    "Activates the hormone testosterone",
+    "Provides energy for the swimming sperms"
+   ],
+   "a": 3,
+   "x": "Fructose in seminal fluid is the main energy source for sperm motility. The prostate adds a milky fluid; Cowper's glands secrete lubricating mucus."
+  },
+  {
+   "id": "zooA-242",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: organs",
+   "q": "Cowper's (bulbourethral) glands of the male secrete",
+   "o": [
+    "Mucus that lubricates the urethra",
+    "Testosterone",
+    "Fructose for sperms",
+    "Sperms"
+   ],
+   "a": 0,
+   "x": "These paired glands release a clear alkaline mucus into the urethra before ejaculation for lubrication and neutralising traces of urine."
+  },
+  {
+   "id": "zooA-243",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: gametogenesis",
+   "q": "Unlike spermatogenesis, which begins at puberty, oogenesis",
+   "o": [
+    "Begins only after menopause",
+    "Begins before birth, with primary oocytes arrested in prophase I",
+    "Begins at puberty and continues throughout life",
+    "Involves only mitosis"
+   ],
+   "a": 1,
+   "x": "Oogonia multiply in the foetal ovary and enter meiosis; primary oocytes stay in prophase I until puberty, when one completes meiosis I each cycle."
+  },
+  {
+   "id": "zooA-244",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: gametogenesis",
+   "q": "In human oogenesis, meiosis II of the secondary oocyte is completed only",
+   "o": [
+    "Before birth",
+    "At puberty",
+    "After a sperm enters it",
+    "At the time of menstruation"
+   ],
+   "a": 2,
+   "x": "The secondary oocyte is ovulated arrested at metaphase II; sperm entry triggers completion of meiosis II, forming the ovum and the second polar body."
+  },
+  {
+   "id": "zooA-245",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: gametogenesis",
+   "q": "The first polar body is formed when",
+   "o": [
+    "The secondary oocyte completes meiosis II",
+    "The oogonium divides by mitosis",
+    "The zygote divides",
+    "The primary oocyte completes meiosis I"
+   ],
+   "a": 3,
+   "x": "Meiosis I divides the primary oocyte unequally into a large secondary oocyte and a small first polar body."
+  },
+  {
+   "id": "zooA-246",
+   "topic": "zoo-human-biology",
+   "d": 1,
+   "s": "Reproductive system: gametogenesis",
+   "q": "The chromosome numbers in a human primary spermatocyte and a spermatid are respectively",
+   "o": [
+    "46 and 23",
+    "23 and 46",
+    "46 and 46",
+    "23 and 23"
+   ],
+   "a": 0,
+   "x": "Primary spermatocytes are diploid (2n = 46); meiosis I makes haploid secondary spermatocytes (23), and meiosis II gives spermatids (23)."
+  },
+  {
+   "id": "zooA-247",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "The phase of the menstrual cycle in which the endometrium regenerates and thickens under oestrogen is the",
+   "o": [
+    "Secretory (luteal) phase",
+    "Proliferative (follicular) phase",
+    "Menstrual phase",
+    "Ischaemic phase"
+   ],
+   "a": 1,
+   "x": "After menstruation, oestrogen from growing follicles rebuilds the endometrium; after ovulation, progesterone makes it secretory.",
+   "trap": "Secretory phase follows ovulation and depends on progesterone."
+  },
+  {
+   "id": "zooA-248",
+   "topic": "zoo-human-biology",
+   "d": 2,
+   "s": "Reproductive system: ovarian and menstrual cycle",
+   "q": "If fertilisation occurs, the corpus luteum keeps secreting progesterone because it is maintained by",
+   "o": [
+    "FSH from the pituitary",
+    "Oxytocin",
+    "hCG from the developing embryo (trophoblast)",
+    "Prolactin"
+   ],
+   "a": 2,
+   "x": "hCG acts like LH, preventing the corpus luteum from degenerating, so progesterone keeps the endometrium and menstruation stops."
+  },
+  {
+   "id": "zooA-249",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Vaccines: live attenuated, inactivated, toxoid",
+   "q": "The Salk polio vaccine (IPV), given by injection, contains",
+   "o": [
+    "Live attenuated polioviruses",
+    "Polio toxoid",
+    "Antibodies against poliovirus",
+    "Inactivated (killed) polioviruses"
+   ],
+   "a": 3,
+   "x": "Salk's IPV uses formalin-killed virus; Sabin's oral polio vaccine (OPV) uses live attenuated virus.",
+   "trap": "Live attenuated virus is in Sabin's oral vaccine."
+  },
+  {
+   "id": "zooA-250",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Vaccines: live attenuated, inactivated, toxoid",
+   "q": "A toxoid used as a vaccine is",
+   "o": [
+    "A bacterial toxin made harmless but still able to induce antibodies",
+    "A live bacterium with reduced virulence",
+    "Ready-made antibodies against a toxin",
+    "A killed virus"
+   ],
+   "a": 0,
+   "x": "Toxins of tetanus and diphtheria bacteria are treated (e.g. with formalin) to lose toxicity while keeping antigenicity; the body then makes antitoxin antibodies.",
+   "trap": "Ready-made antibodies give passive immunity; that is antitoxin, not toxoid."
+  },
+  {
+   "id": "zooA-251",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Vaccines: live attenuated, inactivated, toxoid",
+   "q": "Live attenuated vaccines are generally avoided in people with severely weakened immunity because",
+   "o": [
+    "Such vaccines contain no antigens",
+    "The weakened microbes may still multiply and cause disease in them",
+    "They act only by passive immunity",
+    "They always cause allergy"
+   ],
+   "a": 1,
+   "x": "Attenuated microbes multiply a little in the body; a normal immune system controls them, but in severe immunodeficiency they can cause the disease. Inactivated and toxoid vaccines are safer there."
+  },
+  {
+   "id": "zooA-252",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Candidiasis",
+   "q": "A condition that favours candidiasis is",
+   "o": [
+    "Regular physical exercise",
+    "A diet rich in vitamin C",
+    "Uncontrolled diabetes mellitus",
+    "Normal gut bacterial flora"
+   ],
+   "a": 2,
+   "x": "High sugar in body fluids, antibiotics, pregnancy and weak immunity (e.g. HIV) allow Candida albicans to overgrow; normal flora keeps it in check."
+  },
+  {
+   "id": "zooA-253",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases: Candidiasis",
+   "q": "Oral or vaginal candidiasis is treated with",
+   "o": [
+    "Penicillin",
+    "Antiretroviral drugs",
+    "Oral rehydration solution",
+    "Antifungal drugs such as nystatin or fluconazole"
+   ],
+   "a": 3,
+   "x": "Candida is a yeast-like fungus, so antibacterial antibiotics do not kill it; they may even make it worse by killing competing bacteria.",
+   "trap": "Penicillin is antibacterial and does not act on fungi."
+  },
+  {
+   "id": "zooA-254",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Cholera",
+   "q": "Vibrio cholerae, the cause of cholera, is a",
+   "o": [
+    "Comma-shaped, Gram-negative bacterium",
+    "Rod-shaped, acid-fast bacterium",
+    "Spherical, Gram-positive bacterium",
+    "RNA virus"
+   ],
+   "a": 0,
+   "x": "Vibrio is curved like a comma and motile by a single flagellum; it spreads through faecally contaminated water and food."
+  },
+  {
+   "id": "zooA-255",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Cholera",
+   "q": "Cholera toxin causes severe watery diarrhoea mainly by",
+   "o": [
+    "Destroying the villi of the small intestine",
+    "Making intestinal cells secrete Cl⁻ and water into the gut lumen",
+    "Blocking the absorption of fats",
+    "Making the colon absorb more water"
+   ],
+   "a": 1,
+   "x": "The toxin raises cAMP in intestinal epithelial cells, which pump out Cl⁻; Na⁺ and water follow, causing rice-water stools. The gut lining stays intact, so ORS works."
+  },
+  {
+   "id": "zooA-256",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Influenza",
+   "q": "The surface spikes of the influenza virus, whose changes produce new strains, are",
+   "o": [
+    "Reverse transcriptase and integrase",
+    "Peptidoglycan and teichoic acid",
+    "Haemagglutinin (H) and neuraminidase (N)",
+    "Capsule and pili"
+   ],
+   "a": 2,
+   "x": "Strain names such as H1N1 refer to these two envelope glycoproteins; antigenic drift and shift change them."
+  },
+  {
+   "id": "zooA-257",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Influenza",
+   "q": "Antibiotics such as penicillin do not cure influenza because",
+   "o": [
+    "Influenza is caused by a fungus",
+    "The influenza bacterium has a thick capsule",
+    "Influenza is not infectious",
+    "Influenza is caused by a virus"
+   ],
+   "a": 3,
+   "x": "Antibiotics act on bacterial structures like cell walls and 70S ribosomes, which viruses lack. They may be given only for secondary bacterial infection."
+  },
+  {
+   "id": "zooA-258",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: Hepatitis",
+   "q": "Hepatitis D virus can cause infection only in a person who is also infected with",
+   "o": [
+    "Hepatitis B virus",
+    "Hepatitis A virus",
+    "Hepatitis E virus",
+    "HIV"
+   ],
+   "a": 0,
+   "x": "HDV is a defective RNA virus that needs the surface antigen (HBsAg) of HBV for its coat; the hepatitis B vaccine therefore also protects against hepatitis D."
+  },
+  {
+   "id": "zooA-259",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Hepatitis",
+   "q": "Among the hepatitis viruses A to E, the one with a DNA genome is",
+   "o": [
+    "Hepatitis A virus",
+    "Hepatitis B virus",
+    "Hepatitis C virus",
+    "Hepatitis E virus"
+   ],
+   "a": 1,
+   "x": "HBV is a partly double-stranded DNA virus; hepatitis A, C, D and E viruses all have RNA genomes."
+  },
+  {
+   "id": "zooA-260",
+   "topic": "zoo-diseases-immunology",
+   "d": 3,
+   "s": "Diseases: Typhoid",
+   "q": "In typhoid, ulceration and sometimes perforation of the intestine occur mainly at the",
+   "o": [
+    "Gastric glands of the stomach",
+    "Brunner's glands of the duodenum",
+    "Peyer's patches of the ileum",
+    "Crypts of the colon"
+   ],
+   "a": 2,
+   "x": "Salmonella typhi invades the lymphoid Peyer's patches of the ileum; their ulceration can bleed or perforate in the third week of illness."
+  },
+  {
+   "id": "zooA-261",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases: Typhoid",
+   "q": "A typhoid 'carrier' is a person who",
+   "o": [
+    "Has typhoid fever with high fever",
+    "Has been vaccinated against typhoid",
+    "Transmits typhoid by mosquito bites",
+    "Harbours Salmonella typhi, often in the gall bladder, and sheds it without being ill"
+   ],
+   "a": 3,
+   "x": "Carriers pass bacteria in faeces for months or years, so they can infect others through food they handle. 'Typhoid Mary' was a famous example."
+  },
+  {
+   "id": "zooA-262",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Diseases: TB",
+   "q": "Pulmonary tuberculosis spreads from person to person mainly through",
+   "o": [
+    "Droplets coughed or sneezed into the air",
+    "Mosquito bites",
+    "Contaminated food only",
+    "Sexual contact"
+   ],
+   "a": 0,
+   "x": "Mycobacterium tuberculosis in sputum droplets is inhaled by others; crowded, poorly ventilated places favour its spread."
+  },
+  {
+   "id": "zooA-263",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Diseases: HIV",
+   "q": "The 'window period' in HIV infection is the time when",
+   "o": [
+    "The patient shows full-blown AIDS",
+    "The virus is present but antibody tests are still negative",
+    "CD4 cells are completely destroyed",
+    "The virus cannot be transmitted"
+   ],
+   "a": 1,
+   "x": "Antibodies take some weeks to appear after infection; in this period an ELISA can be negative though the person is infectious.",
+   "trap": "The person is infectious during the window period."
+  },
+  {
+   "id": "zooA-264",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Immunity: innate and acquired",
+   "q": "Interferons, released by virus-infected cells,",
+   "o": [
+    "Are antibodies made by plasma cells",
+    "Kill bacteria by breaking their cell walls",
+    "Make neighbouring cells resistant to viral multiplication",
+    "Cause blood clotting"
+   ],
+   "a": 2,
+   "x": "Interferons are proteins of innate immunity; they are not virus-specific and act by inducing antiviral proteins in nearby cells.",
+   "trap": "Lysozyme, not interferon, breaks bacterial cell walls."
+  },
+  {
+   "id": "zooA-265",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Immunity: innate and acquired",
+   "q": "Recovery from measles gives lifelong protection. This is",
+   "o": [
+    "Natural passive immunity",
+    "Artificial active immunity",
+    "Artificial passive immunity",
+    "Natural active immunity"
+   ],
+   "a": 3,
+   "x": "The body made its own antibodies and memory cells after a natural infection. Vaccination would be artificial active; maternal antibodies are natural passive."
+  },
+  {
+   "id": "zooA-266",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Antigens and antibodies",
+   "q": "The most abundant antibody class in human blood serum is",
+   "o": [
+    "IgG",
+    "IgM",
+    "IgA",
+    "IgE"
+   ],
+   "a": 0,
+   "x": "IgG makes up about 75–80% of serum antibodies; it is the main antibody of the secondary response and the only one to cross the placenta."
+  },
+  {
+   "id": "zooA-267",
+   "topic": "zoo-diseases-immunology",
+   "d": 1,
+   "s": "Antigens and antibodies",
+   "q": "The antibody found mainly in secretions such as saliva, tears, mucus and milk is",
+   "o": [
+    "IgD",
+    "IgA",
+    "IgE",
+    "IgM"
+   ],
+   "a": 1,
+   "x": "Secretory IgA guards mucosal surfaces; in colostrum it protects the newborn's gut."
+  },
+  {
+   "id": "zooA-268",
+   "topic": "zoo-diseases-immunology",
+   "d": 2,
+   "s": "Antigens and antibodies",
+   "q": "The antigen-binding sites of an antibody molecule are formed by the",
+   "o": [
+    "Constant regions of the heavy chains only",
+    "Disulphide bonds",
+    "Variable regions of the heavy and light chains",
+    "Hinge region"
+   ],
+   "a": 2,
+   "x": "Each arm of the Y has variable parts of one heavy and one light chain; their amino acid sequence differs between antibodies, giving specificity."
+  }
+ ]
+}

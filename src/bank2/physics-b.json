@@ -1,0 +1,5307 @@
+{
+ "subject": "Physics",
+ "topics": [
+  {
+   "id": "phy-electrostatics",
+   "name": "Electrostatics and capacitors",
+   "weight": 4,
+   "concepts": [
+    "Coulomb's law F = kq₁q₂/r², k = 9 × 10⁹ N m² C⁻²; in a medium F becomes F/K",
+    "Charge is quantised: q = ne, e = 1.6 × 10⁻¹⁹ C; rubbing transfers electrons only",
+    "Point charge: E = kq/r², V = kq/r; E is a vector, V is a scalar [repeat]",
+    "Dipole far away: V ∝ 1/r², E ∝ 1/r³ [repeat]",
+    "Gauss's law: total flux through a closed surface = q_enclosed/ε₀; charge at cube centre gives q/6ε₀ per face",
+    "Inside a charged conductor E = 0 and V is constant, equal to the surface value",
+    "Uniform field between plates E = V/d; no work is done along an equipotential surface",
+    "A charge q through p.d. V gains qV; a proton or electron through 1 V gains 1 eV = 1.6 × 10⁻¹⁹ J [repeat]",
+    "Parallel plate C = Kε₀A/d; a dielectric multiplies C by K",
+    "Series 1/C = Σ1/Cᵢ (same charge); parallel C = ΣCᵢ (same voltage)",
+    "n identical capacitors: C_max/C_min = n² (all parallel vs all series) [repeat]",
+    "Energy U = ½CV² = Q²/2C = ½QV; energy density u = ½ε₀E²",
+    "Isolated capacitor + dielectric K: V and U fall by K; battery kept connected: Q and U rise by K",
+    "Sharing charge between identical capacitors loses half the original energy"
+   ]
+  },
+  {
+   "id": "phy-current-magnetism",
+   "name": "Current electricity and magnetism",
+   "weight": 9,
+   "concepts": [
+    "I = neAv_d; for a steady current drift speed is largest where the wire is thinnest [repeat]",
+    "R = ρL/A; stretching a wire n times raises R by n²; ρ depends only on material and temperature",
+    "Series resistors: heat H ∝ R; parallel: H ∝ 1/R [repeat]",
+    "Bulbs in series: the lower-wattage bulb (higher R) glows brighter",
+    "Terminal p.d. V = E − Ir on discharge, E + Ir on charging; maximum power transfer when R = r",
+    "Kirchhoff: junction law = charge conservation, loop law = energy conservation",
+    "Wheatstone balance P/Q = R/S; meter bridge X/R = l/(100 − l); potentiometer E₁/E₂ = l₁/l₂",
+    "Galvanometer → ammeter: small shunt S = G/(n − 1) in parallel; → voltmeter: series R = V/I_g − G",
+    "Seebeck: emf from two junctions at different temperatures; Peltier: reversible heat at a junction; T_inversion = 2T_neutral − T_cold",
+    "AC: I_rms = I₀/√2; half-cycle mean = 2I₀/π; mean/rms = 2√2/π ≈ 0.9 [repeat]",
+    "Inductor: V leads I by 90°; capacitor: I leads V by 90°; power factor cosφ = R/Z [repeat]",
+    "Series LCR resonance f₀ = 1/2π√(LC), Z = R, current maximum; Q = (1/R)√(L/C)",
+    "Bridge rectifier uses 4 diodes; full-wave output frequency = 2 × input frequency [repeat]",
+    "Steel (high retentivity and coercivity) for permanent magnets; soft iron for electromagnets and cores [repeat]",
+    "B: straight wire μ₀I/2πr, coil centre μ₀NI/2r, solenoid μ₀nI; F = BIL sinθ, F = qvB sinθ, r = mv/qB [repeat]",
+    "Faraday ε = −N dΦ/dt; Lenz = energy conservation; L in henry = Wb A⁻¹ = V s A⁻¹; U = ½LI² [repeat]"
+   ]
+  },
+  {
+   "id": "phy-modern",
+   "name": "Modern physics",
+   "weight": 12,
+   "concepts": [
+    "Einstein: hν = φ + KE_max = φ + eV₀; λ(Å) ≈ 12400/E(eV); slope of V₀ vs ν = h/e [repeat]",
+    "Saturation photocurrent ∝ intensity; KE_max and V₀ depend only on frequency [repeat]",
+    "Bohr: Eₙ = −13.6/n² eV, rₙ ∝ n², vₙ ∝ 1/n; lines from level n = n(n − 1)/2; fails for many-electron atoms [repeat]",
+    "Lyman → n = 1 (UV), Balmer → n = 2 (visible), Paschen → n = 3 (IR)",
+    "de Broglie λ = h/p = h/√(2mK); equal λ means equal momentum, lighter particle has more KE [repeat]",
+    "X-rays: λ_min = hc/eV; higher tube voltage → harder X-rays; filament current → intensity; Bragg 2d sinθ = nλ [repeat]",
+    "Nuclear radius R = R₀A^(1/3); nuclear density (~10¹⁷ kg m⁻³) is the same for all nuclei [repeat]",
+    "1 u = 931.5 MeV; BE/nucleon peaks near ⁵⁶Fe; fission of U-235 releases ~200 MeV",
+    "α: A − 4, Z − 2; β⁻: Z + 1 with an antineutrino; γ: no change in A or Z [repeat]",
+    "N = N₀(½)^(t/T); λ = 0.693/T; mean life τ = 1/λ = 1.44T; 1 Bq = 1 decay/s",
+    "Carbon dating uses C-14 (T ≈ 5730 y); Co-60 γ for radiotherapy; equivalent dose in sievert",
+    "Energy gap: insulator (>3 eV) > semiconductor (Si 1.1 eV) > conductor (≈0) [repeat]",
+    "p-type: trivalent dopant (B, Al, Ga, In), holes majority, still neutral; n-type: pentavalent (P, As, Sb) [repeat]",
+    "Barrier potential from immobile ions in the depletion layer: Si ≈ 0.7 V, Ge ≈ 0.3 V [repeat]",
+    "NAND and NOR are universal gates; NAND is 0 only for all inputs 1, NOR is 1 only for all inputs 0 [repeat]",
+    "Proton = uud, neutron = udd; leptons (e, μ, ν) have no quarks; Hubble v = H₀d, age ≈ 1/H₀ [repeat]"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "phy-051",
+   "topic": "phy-electrostatics",
+   "d": 1,
+   "q": "If the distance between two point charges is halved, the force between them becomes",
+   "o": [
+    "2 times",
+    "Half",
+    "4 times",
+    "One-fourth"
+   ],
+   "a": 2,
+   "x": "Coulomb's law: F ∝ 1/r². Halving r gives (1/2)⁻² = 4 times the force.",
+   "s": "Electric charge and electric field",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-052",
+   "topic": "phy-electrostatics",
+   "d": 1,
+   "q": "The electric field inside a charged hollow conducting sphere is",
+   "o": [
+    "Maximum at the centre",
+    "Equal to that at the surface",
+    "Zero",
+    "Inversely proportional to distance from the centre"
+   ],
+   "a": 2,
+   "x": "All the charge resides on the outer surface. By Gauss's law, no charge is enclosed inside, so E = 0 and the potential is constant.",
+   "s": "Electric field strength, potential and potential energy"
+  },
+  {
+   "id": "phy-053",
+   "topic": "phy-electrostatics",
+   "d": 2,
+   "q": "The electric potential at 9 cm from a point charge of 1 nC is (1/4πε₀ = 9 × 10⁹ N m² C⁻²)",
+   "o": [
+    "100 V",
+    "1000 V",
+    "10 V",
+    "1111 V"
+   ],
+   "a": 0,
+   "x": "V = kq/r = 9 × 10⁹ × 10⁻⁹/0.09 = 9/0.09 = 100 V.",
+   "trap": "1111 V comes from using r², the electric field formula.",
+   "s": "Electric field strength, potential and potential energy",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-054",
+   "topic": "phy-electrostatics",
+   "d": 2,
+   "q": "Three capacitors of 6 μF each are connected in series. The equivalent capacitance is",
+   "o": [
+    "2 μF",
+    "18 μF",
+    "6 μF",
+    "3 μF"
+   ],
+   "a": 0,
+   "x": "Series: 1/C = 1/6 + 1/6 + 1/6 = 1/2, so C = 2 μF. In parallel it would be 18 μF.",
+   "trap": "18 μF adds them directly, the parallel rule for capacitors.",
+   "s": "Capacitors",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-055",
+   "topic": "phy-electrostatics",
+   "d": 2,
+   "q": "The energy stored in a 10 μF capacitor charged to 100 V is",
+   "o": [
+    "0.1 J",
+    "0.5 J",
+    "5 J",
+    "0.05 J"
+   ],
+   "a": 3,
+   "x": "U = ½CV² = ½ × 10 × 10⁻⁶ × 100² = 0.05 J.",
+   "trap": "0.1 J forgets the ½.",
+   "s": "Capacitors"
+  },
+  {
+   "id": "phy-056",
+   "topic": "phy-current-magnetism",
+   "d": 3,
+   "q": "A wire of resistance R is stretched uniformly to twice its length. Its new resistance is",
+   "o": [
+    "2R",
+    "4R",
+    "R/2",
+    "R/4"
+   ],
+   "a": 1,
+   "x": "Volume stays constant, so length ×2 and area ÷2. R = ρL/A becomes ρ(2L)/(A/2) = 4R.",
+   "trap": "2R forgets that the cross-section also decreases.",
+   "s": "Electrical quantities",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phy-057",
+   "topic": "phy-current-magnetism",
+   "d": 2,
+   "q": "Resistors of 2 Ω, 3 Ω and 6 Ω are connected in parallel. The equivalent resistance is",
+   "o": [
+    "11 Ω",
+    "2 Ω",
+    "0.5 Ω",
+    "1 Ω"
+   ],
+   "a": 3,
+   "x": "1/R = 1/2 + 1/3 + 1/6 = (3 + 2 + 1)/6 = 1, so R = 1 Ω.",
+   "s": "Electrical circuits"
+  },
+  {
+   "id": "phy-058",
+   "topic": "phy-current-magnetism",
+   "d": 3,
+   "q": "A cell of emf 2 V and internal resistance 0.5 Ω is connected to a 3.5 Ω resistor. The terminal potential difference is",
+   "o": [
+    "2 V",
+    "0.25 V",
+    "1.75 V",
+    "1.5 V"
+   ],
+   "a": 2,
+   "x": "I = E/(R + r) = 2/4 = 0.5 A; V = E − Ir = 2 − 0.25 = 1.75 V.",
+   "trap": "2 V: terminal voltage equals emf only when no current flows.",
+   "s": "Electrical quantities"
+  },
+  {
+   "id": "phy-059",
+   "topic": "phy-current-magnetism",
+   "d": 1,
+   "q": "Kirchhoff's junction (current) law is based on the conservation of",
+   "o": [
+    "Energy",
+    "Momentum",
+    "Mass",
+    "Charge"
+   ],
+   "a": 3,
+   "x": "Charge cannot pile up at a junction, so current in = current out. The loop (voltage) law comes from energy conservation.",
+   "trap": "Energy is the basis of the loop law, not the junction law.",
+   "s": "Electrical circuits"
+  },
+  {
+   "id": "phy-060",
+   "topic": "phy-current-magnetism",
+   "d": 2,
+   "q": "The resistance of the filament of a 100 W, 220 V bulb is",
+   "o": [
+    "2.2 Ω",
+    "220 Ω",
+    "48.4 Ω",
+    "484 Ω"
+   ],
+   "a": 3,
+   "x": "R = V²/P = 220²/100 = 48400/100 = 484 Ω.",
+   "s": "Electrical quantities"
+  },
+  {
+   "id": "phy-061",
+   "topic": "phy-current-magnetism",
+   "d": 1,
+   "q": "A charged particle moves parallel to a uniform magnetic field. The magnetic force on it is",
+   "o": [
+    "Maximum, equal to qvB",
+    "qvB along the field",
+    "Zero",
+    "qvB perpendicular to the field"
+   ],
+   "a": 2,
+   "x": "F = qvB sinθ; with θ = 0°, sinθ = 0, so there is no force and the particle moves undeflected.",
+   "s": "Magnetic field"
+  },
+  {
+   "id": "phy-062",
+   "topic": "phy-current-magnetism",
+   "d": 2,
+   "q": "The magnetic field at the centre of a circular coil carrying a current is B. If the radius is doubled, keeping current and turns the same, the field becomes",
+   "o": [
+    "2B",
+    "B/2",
+    "B/4",
+    "4B"
+   ],
+   "a": 1,
+   "x": "B = μ₀NI/2r, so B ∝ 1/r; doubling r halves B.",
+   "trap": "B/4 wrongly uses the 1/r² dependence of a point charge's field.",
+   "s": "Magnetic field"
+  },
+  {
+   "id": "phy-063",
+   "topic": "phy-current-magnetism",
+   "d": 3,
+   "q": "A proton and an alpha particle enter a uniform magnetic field at right angles with the same speed. The ratio of the radius of the alpha particle's path to that of the proton is",
+   "o": [
+    "1 : 2",
+    "2 : 1",
+    "4 : 1",
+    "1 : 1"
+   ],
+   "a": 1,
+   "x": "r = mv/qB ∝ m/q. Proton: m/e; alpha: 4m/2e = 2(m/e). So r_α : r_p = 2 : 1.",
+   "trap": "4 : 1 uses the mass ratio and forgets the alpha's charge is 2e.",
+   "s": "Magnetic field"
+  },
+  {
+   "id": "phy-064",
+   "topic": "phy-current-magnetism",
+   "d": 1,
+   "q": "Lenz's law is a consequence of the conservation of",
+   "o": [
+    "Energy",
+    "Charge",
+    "Momentum",
+    "Mass"
+   ],
+   "a": 0,
+   "x": "The induced current opposes the change causing it, so work must be done to produce it. Otherwise energy would be created from nothing.",
+   "s": "Electromagnetic induction"
+  },
+  {
+   "id": "phy-065",
+   "topic": "phy-current-magnetism",
+   "d": 2,
+   "q": "A transformer has 100 turns in the primary and 500 turns in the secondary. If the primary voltage is 220 V AC, the secondary voltage is",
+   "o": [
+    "44 V",
+    "220 V",
+    "550 V",
+    "1100 V"
+   ],
+   "a": 3,
+   "x": "Vs/Vp = Ns/Np, so Vs = 220 × 500/100 = 1100 V (step-up).",
+   "trap": "44 V comes from inverting the turns ratio.",
+   "s": "Electromagnetic induction",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-066",
+   "topic": "phy-current-magnetism",
+   "d": 2,
+   "q": "In an AC circuit containing only a pure inductor, the current",
+   "o": [
+    "Lags the voltage by 90°",
+    "Leads the voltage by 90°",
+    "Is in phase with the voltage",
+    "Lags the voltage by 180°"
+   ],
+   "a": 0,
+   "x": "For a pure inductor V = L dI/dt, so current lags voltage by π/2 and the power factor is zero.",
+   "trap": "'Leads by 90°' is true for a pure capacitor.",
+   "s": "Alternating currents",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phy-067",
+   "topic": "phy-modern",
+   "d": 1,
+   "q": "In the photoelectric effect, the maximum kinetic energy of emitted electrons depends on",
+   "o": [
+    "The intensity of incident light",
+    "The time of exposure",
+    "The area of the metal surface",
+    "The frequency of incident light"
+   ],
+   "a": 3,
+   "x": "KE_max = hν − φ. Intensity changes only the number of electrons emitted (photocurrent), not their maximum energy.",
+   "trap": "Intensity raises the photocurrent, not the electron energy.",
+   "s": "Photon",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-068",
+   "topic": "phy-modern",
+   "d": 2,
+   "q": "Light with photon energy 5 eV falls on a metal of work function 2 eV. The stopping potential is",
+   "o": [
+    "7 V",
+    "2.5 V",
+    "3 V",
+    "5 V"
+   ],
+   "a": 2,
+   "x": "eV₀ = hν − φ = 5 − 2 = 3 eV, so V₀ = 3 V.",
+   "s": "Photon",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-069",
+   "topic": "phy-modern",
+   "d": 1,
+   "q": "The energy of the electron in the second orbit (n = 2) of a hydrogen atom is",
+   "o": [
+    "−3.4 eV",
+    "−13.6 eV",
+    "−6.8 eV",
+    "+3.4 eV"
+   ],
+   "a": 0,
+   "x": "Eₙ = −13.6/n² eV = −13.6/4 = −3.4 eV.",
+   "trap": "−6.8 eV divides by n instead of n².",
+   "s": "Wave particle duality"
+  },
+  {
+   "id": "phy-070",
+   "topic": "phy-modern",
+   "d": 2,
+   "q": "The longest-wavelength line of the Balmer series of hydrogen is due to the electron transition",
+   "o": [
+    "n = 3 → n = 2",
+    "n = ∞ → n = 2",
+    "n = 2 → n = 1",
+    "n = 3 → n = 1"
+   ],
+   "a": 0,
+   "x": "Balmer lines end on n = 2. Longest wavelength means smallest energy gap: 3 → 2. The ∞ → 2 transition gives the shortest (series limit).",
+   "trap": "∞ → 2 gives the shortest Balmer wavelength, not the longest.",
+   "s": "Wave particle duality"
+  },
+  {
+   "id": "phy-071",
+   "topic": "phy-modern",
+   "d": 3,
+   "q": "An X-ray tube is operated at 12.4 kV. The minimum wavelength of the X-rays produced is (hc = 12400 eV Å)",
+   "o": [
+    "0.1 Å",
+    "1.0 Å",
+    "10 Å",
+    "12.4 Å"
+   ],
+   "a": 1,
+   "x": "λ_min = hc/eV = 12400 eV Å / 12400 eV = 1.0 Å.",
+   "s": "Wave particle duality"
+  },
+  {
+   "id": "phy-072",
+   "topic": "phy-modern",
+   "d": 2,
+   "q": "A radioactive sample of 80 g has a half-life of 5 days. The mass left undecayed after 15 days is",
+   "o": [
+    "20 g",
+    "5 g",
+    "10 g",
+    "26.7 g"
+   ],
+   "a": 2,
+   "x": "15 days = 3 half-lives: 80 → 40 → 20 → 10 g.",
+   "trap": "20 g stops after two halvings; 26.7 g divides by 3 instead of halving three times.",
+   "s": "Radioactivity"
+  },
+  {
+   "id": "phy-073",
+   "topic": "phy-modern",
+   "d": 1,
+   "q": "When a nucleus emits an alpha particle, its",
+   "o": [
+    "Mass number falls by 2 and atomic number by 4",
+    "Atomic number rises by 1; mass number is unchanged",
+    "Mass number falls by 4 and atomic number by 2",
+    "Mass number and atomic number are both unchanged"
+   ],
+   "a": 2,
+   "x": "An α particle is a helium nucleus (A = 4, Z = 2). β⁻ emission raises Z by 1; γ emission changes neither.",
+   "s": "Radioactivity",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phy-074",
+   "topic": "phy-modern",
+   "d": 1,
+   "q": "Pure silicon doped with phosphorus (a pentavalent impurity) becomes",
+   "o": [
+    "A p-type semiconductor with holes as majority carriers",
+    "An n-type semiconductor with holes as majority carriers",
+    "An insulator",
+    "An n-type semiconductor with electrons as majority carriers"
+   ],
+   "a": 3,
+   "x": "Phosphorus has 5 valence electrons; the fifth becomes a free electron, so electrons are majority carriers (n-type). Trivalent B or Al gives p-type.",
+   "s": "Solid and semiconductor device",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phy-075",
+   "topic": "phy-modern",
+   "d": 2,
+   "q": "The output of a NOR gate is 1 (high) only when",
+   "o": [
+    "Both inputs are 1",
+    "Both inputs are 0",
+    "Exactly one input is 1",
+    "At least one input is 1"
+   ],
+   "a": 1,
+   "x": "NOR = NOT(A + B). A + B = 0 only when A = B = 0, so the output is 1 only then.",
+   "trap": "'Both inputs 1' describes when AND gives 1.",
+   "s": "Solid and semiconductor device"
+  },
+  {
+   "id": "phyB-001",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 1,
+   "q": "Which of these charges can NOT exist on an isolated body? (e = 1.6 × 10⁻¹⁹ C)",
+   "o": [
+    "2.4 × 10⁻¹⁹ C",
+    "3.2 × 10⁻¹⁹ C",
+    "4.8 × 10⁻¹⁹ C",
+    "1.6 × 10⁻¹⁸ C"
+   ],
+   "a": 0,
+   "x": "Charge is quantised: q = ne with n a whole number. 2.4 × 10⁻¹⁹/1.6 × 10⁻¹⁹ = 1.5, not an integer. The others are 2e, 3e and 10e."
+  },
+  {
+   "id": "phyB-002",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 1,
+   "q": "A glass rod rubbed with silk becomes positively charged because it",
+   "o": [
+    "Loses electrons to the silk",
+    "Gains protons from the silk",
+    "Gains electrons from the silk",
+    "Loses protons to the silk"
+   ],
+   "a": 0,
+   "x": "Only electrons move during rubbing; protons are bound in nuclei. Glass gives up electrons, so it is left positive and the silk becomes negative.",
+   "trap": "Protons never transfer by rubbing; only electrons do."
+  },
+  {
+   "id": "phyB-003",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 2,
+   "q": "Two point charges exert a force F on each other in air. If they are placed at the same separation in a medium of dielectric constant 4, the force becomes",
+   "o": [
+    "4F",
+    "F/2",
+    "F/4",
+    "F"
+   ],
+   "a": 2,
+   "x": "In a medium F = q₁q₂/(4πε₀K r²), so the force falls by the factor K = 4."
+  },
+  {
+   "id": "phyB-004",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 2,
+   "q": "A positively charged rod is brought near (not touching) a neutral, insulated metal sphere. The sphere is",
+   "o": [
+    "Repelled from the rod",
+    "Not affected, since it is neutral",
+    "Attracted only if it is earthed",
+    "Attracted towards the rod"
+   ],
+   "a": 3,
+   "x": "Induction puts negative charge on the near side and positive on the far side. The nearer negative charge feels a stronger pull, so there is a net attraction.",
+   "trap": "A neutral body still feels a force because induced charges are at different distances."
+  },
+  {
+   "id": "phyB-005",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 2,
+   "q": "The electric field at 3 m from a point charge of 2 μC is (1/4πε₀ = 9 × 10⁹ N m² C⁻²)",
+   "o": [
+    "6000 N C⁻¹",
+    "667 N C⁻¹",
+    "18000 N C⁻¹",
+    "2000 N C⁻¹"
+   ],
+   "a": 3,
+   "x": "E = kq/r² = 9 × 10⁹ × 2 × 10⁻⁶/3² = 18000/9 = 2000 N C⁻¹.",
+   "trap": "6000 N C⁻¹ divides by r instead of r², which gives potential-like scaling."
+  },
+  {
+   "id": "phyB-006",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 3,
+   "q": "Charges +4 μC and +1 μC are 3 cm apart. The electric field is zero at a point on the line joining them",
+   "o": [
+    "2 cm from the +4 μC charge",
+    "1 cm from the +4 μC charge",
+    "At the midpoint",
+    "Beyond the +1 μC charge, outside the pair"
+   ],
+   "a": 0,
+   "x": "Between like charges: 4/x² = 1/(3 − x)², so 2(3 − x) = x and x = 2 cm from the larger charge. The null point is nearer the smaller charge.",
+   "trap": "1 cm puts the null point near the larger charge; it lies nearer the smaller one."
+  },
+  {
+   "id": "phyB-007",
+   "topic": "phy-electrostatics",
+   "s": "Electric charge and electric field",
+   "d": 1,
+   "q": "The SI unit N C⁻¹ of electric field is equivalent to",
+   "o": [
+    "V m",
+    "C N⁻¹",
+    "J C⁻¹",
+    "V m⁻¹"
+   ],
+   "a": 3,
+   "x": "E = V/d, so N C⁻¹ = V m⁻¹. J C⁻¹ is the volt, the unit of potential."
+  },
+  {
+   "id": "phyB-008",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 1,
+   "q": "Which of the following is a vector quantity?",
+   "o": [
+    "Electric field",
+    "Electric potential",
+    "Electric current",
+    "Electric charge"
+   ],
+   "a": 0,
+   "x": "Electric field has magnitude and direction and adds by vector rules. Current has a direction along the wire but adds as a scalar.",
+   "trap": "Current has direction but does not obey vector addition, so it is a scalar.",
+   "yrs": [
+    2080,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-009",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 2,
+   "q": "At a large distance r from a short electric dipole, the electric potential varies as",
+   "o": [
+    "1/r",
+    "1/r³",
+    "1/r²",
+    "r"
+   ],
+   "a": 2,
+   "x": "Dipole potential V = kp cosθ/r², so V ∝ 1/r². Its field falls faster, as 1/r³.",
+   "trap": "1/r is for a single point charge.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-010",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 3,
+   "q": "At a large distance r from a short electric dipole, the electric field varies as",
+   "o": [
+    "1/r²",
+    "1/r³",
+    "1/r",
+    "1/r⁴"
+   ],
+   "a": 1,
+   "x": "E = −dV/dr and V ∝ 1/r², so E ∝ 1/r³ (both on the axis and on the equator).",
+   "trap": "1/r² is the dipole potential, not its field."
+  },
+  {
+   "id": "phyB-011",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 1,
+   "q": "By Gauss's law, the total electric flux through a closed surface enclosing a charge q is",
+   "o": [
+    "q/ε₀",
+    "qε₀",
+    "ε₀/q",
+    "Zero"
+   ],
+   "a": 0,
+   "x": "Gauss's law: ∮E·dA = q_enclosed/ε₀. It is zero only when the net enclosed charge is zero."
+  },
+  {
+   "id": "phyB-012",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 2,
+   "q": "A point charge q is placed at the centre of a cube. The electric flux through one face of the cube is",
+   "o": [
+    "q/ε₀",
+    "6q/ε₀",
+    "q/6ε₀",
+    "q/3ε₀"
+   ],
+   "a": 2,
+   "x": "Total flux q/ε₀ is shared equally by the six symmetric faces: q/6ε₀ each.",
+   "trap": "q/ε₀ is the flux through the whole cube."
+  },
+  {
+   "id": "phyB-013",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 1,
+   "q": "The work done in moving a charge between two points on an equipotential surface is",
+   "o": [
+    "Zero",
+    "Maximum",
+    "Equal to the charge × field",
+    "Depends on the path taken"
+   ],
+   "a": 0,
+   "x": "W = qΔV and ΔV = 0 on an equipotential surface, so W = 0. Field lines cross equipotentials at right angles."
+  },
+  {
+   "id": "phyB-014",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 3,
+   "q": "The electrostatic potential energy of two charges of +1 μC each kept 10 cm apart in air is (k = 9 × 10⁹ SI units)",
+   "o": [
+    "0.9 J",
+    "0.009 J",
+    "9 J",
+    "0.09 J"
+   ],
+   "a": 3,
+   "x": "U = kq₁q₂/r = 9 × 10⁹ × 10⁻⁶ × 10⁻⁶/0.1 = 0.09 J.",
+   "trap": "0.9 J forgets to convert 10 cm into 0.1 m correctly."
+  },
+  {
+   "id": "phyB-015",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 1,
+   "q": "A proton starting from rest is accelerated through a potential difference of 1 V. Its kinetic energy becomes",
+   "o": [
+    "1 eV",
+    "1 J",
+    "1836 eV",
+    "1/1836 eV"
+   ],
+   "a": 0,
+   "x": "KE = qV = e × 1 V = 1 eV = 1.6 × 10⁻¹⁹ J. The gain depends on charge, not mass, so an electron would also get 1 eV.",
+   "trap": "1836 eV wrongly scales the energy with the proton's mass.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-016",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 2,
+   "q": "A potential difference of 200 V is applied across two parallel plates 2 mm apart. The electric field between them is",
+   "o": [
+    "1 × 10⁵ V m⁻¹",
+    "400 V m⁻¹",
+    "1 × 10³ V m⁻¹",
+    "4 × 10⁵ V m⁻¹"
+   ],
+   "a": 0,
+   "x": "Uniform field E = V/d = 200/(2 × 10⁻³) = 1 × 10⁵ V m⁻¹.",
+   "trap": "400 V m⁻¹ multiplies V by d instead of dividing.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-017",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 2,
+   "q": "Inside a charged hollow conducting sphere, the electric potential is",
+   "o": [
+    "Zero everywhere",
+    "Maximum at the centre",
+    "Constant and equal to the potential at the surface",
+    "Decreasing towards the centre"
+   ],
+   "a": 2,
+   "x": "E = 0 inside, and E = −dV/dr, so V does not change: it stays at the surface value kQ/R.",
+   "trap": "Zero field does not mean zero potential; it means constant potential."
+  },
+  {
+   "id": "phyB-018",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 1,
+   "q": "If the separation between the plates of a parallel plate capacitor is doubled, its capacitance becomes",
+   "o": [
+    "Double",
+    "One-fourth",
+    "Unchanged",
+    "Half"
+   ],
+   "a": 3,
+   "x": "C = ε₀A/d, so C ∝ 1/d. Doubling d halves C."
+  },
+  {
+   "id": "phyB-019",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 1,
+   "q": "The space between the plates of a capacitor of capacitance C is completely filled with a dielectric of dielectric constant K. The new capacitance is",
+   "o": [
+    "C/K",
+    "C",
+    "K²C",
+    "KC"
+   ],
+   "a": 3,
+   "x": "C = Kε₀A/d; the dielectric multiplies capacitance by K.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-020",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 3,
+   "q": "A capacitor is charged and then disconnected from the battery. A dielectric slab of K = 2 is then inserted to fill the gap. The energy stored",
+   "o": [
+    "Becomes double",
+    "Becomes half",
+    "Remains unchanged",
+    "Becomes four times"
+   ],
+   "a": 1,
+   "x": "Charge Q stays fixed when isolated. C doubles, so U = Q²/2C halves (V also halves).",
+   "trap": "Doubling is the result when the battery stays connected (V fixed)."
+  },
+  {
+   "id": "phyB-021",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 3,
+   "q": "Four identical capacitors are connected first to give the maximum and then the minimum possible capacitance. The ratio C_max : C_min is",
+   "o": [
+    "4 : 1",
+    "16 : 1",
+    "8 : 1",
+    "2 : 1"
+   ],
+   "a": 1,
+   "x": "All parallel: 4C. All series: C/4. Ratio = 4C/(C/4) = 16 = n².",
+   "trap": "4 : 1 compares the parallel value with a single capacitor only.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-022",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 2,
+   "q": "Capacitors of 2 μF and 3 μF are connected in parallel across a 10 V supply. The total charge drawn from the supply is",
+   "o": [
+    "12 μC",
+    "25 μC",
+    "50 μC",
+    "5 μC"
+   ],
+   "a": 2,
+   "x": "Parallel: C = 2 + 3 = 5 μF; Q = CV = 5 × 10 = 50 μC.",
+   "trap": "12 μC uses the series value 1.2 μF."
+  },
+  {
+   "id": "phyB-023",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 2,
+   "q": "The energy stored per unit volume in an electric field E in vacuum is",
+   "o": [
+    "½ε₀E²",
+    "ε₀E²",
+    "½ε₀E",
+    "E²/2ε₀"
+   ],
+   "a": 0,
+   "x": "u = U/(Ad) = ½CV²/(Ad) = ½(ε₀A/d)(Ed)²/(Ad) = ½ε₀E²."
+  },
+  {
+   "id": "phyB-024",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 1,
+   "q": "One farad is equal to",
+   "o": [
+    "One coulomb per volt",
+    "One volt per coulomb",
+    "One joule per coulomb",
+    "One coulomb × volt"
+   ],
+   "a": 0,
+   "x": "C = Q/V, so 1 F = 1 C V⁻¹. J C⁻¹ is the volt."
+  },
+  {
+   "id": "phyB-025",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 3,
+   "q": "A 4 μF capacitor charged to 50 V is connected across an identical uncharged 4 μF capacitor. The fraction of the original stored energy lost is",
+   "o": [
+    "One-quarter",
+    "Zero",
+    "One-half",
+    "Three-quarters"
+   ],
+   "a": 2,
+   "x": "Initial U = ½ × 4μ × 50² = 5 mJ. Common V = 25 V; final U = ½ × 8μ × 25² = 2.5 mJ. Half is lost as heat and radiation.",
+   "trap": "Zero assumes charge sharing conserves energy; only charge is conserved."
+  },
+  {
+   "id": "phyB-026",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 1,
+   "q": "The current I in a conductor is related to the drift velocity v_d of free electrons by (n = electron density, A = area)",
+   "o": [
+    "I = neAv_d",
+    "I = nev_d/A",
+    "I = nAv_d/e",
+    "I = neA/v_d"
+   ],
+   "a": 0,
+   "x": "Charge crossing a section per second = (number per volume) × (volume swept per second) × e = n(Av_d)e.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-027",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "A steady current flows through a wire whose cross-section is not uniform. The drift speed of electrons is greatest where the wire is",
+   "o": [
+    "Thickest",
+    "Same everywhere",
+    "Hottest, wherever that is",
+    "Thinnest"
+   ],
+   "a": 3,
+   "x": "Current is the same at every section, so v_d = I/(neA) ∝ 1/A: smallest area, largest drift speed.",
+   "trap": "Students assume drift speed is uniform because the current is.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-028",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 1,
+   "q": "Which of the following does NOT obey Ohm's law?",
+   "o": [
+    "A copper wire at constant temperature",
+    "A nichrome wire at constant temperature",
+    "A manganin resistor",
+    "A p-n junction diode"
+   ],
+   "a": 3,
+   "x": "A diode's I–V graph is non-linear and depends on bias direction. Metallic conductors at constant temperature are ohmic."
+  },
+  {
+   "id": "phyB-029",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "A wire is cut and its length halved. Its resistivity",
+   "o": [
+    "Becomes half",
+    "Becomes double",
+    "Becomes one-fourth",
+    "Remains the same"
+   ],
+   "a": 3,
+   "x": "Resistivity depends only on the material and temperature. Resistance halves (R = ρL/A), resistivity does not.",
+   "trap": "Halving confuses resistivity with resistance.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-030",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 1,
+   "q": "A 1000 W heater runs for 2 hours. The electrical energy used is",
+   "o": [
+    "0.5 units",
+    "2000 units",
+    "2 units (kWh)",
+    "500 units"
+   ],
+   "a": 2,
+   "x": "Energy = power × time = 1 kW × 2 h = 2 kWh = 2 units."
+  },
+  {
+   "id": "phyB-031",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "Resistors of 2 Ω and 4 Ω are connected in series to a battery. The ratio of heat produced in them (2 Ω : 4 Ω) is",
+   "o": [
+    "2 : 1",
+    "1 : 4",
+    "4 : 1",
+    "1 : 2"
+   ],
+   "a": 3,
+   "x": "In series the same current flows, so H = I²Rt ∝ R: 2 : 4 = 1 : 2.",
+   "trap": "2 : 1 is the parallel answer, where H ∝ 1/R.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-032",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "Resistors of 2 Ω and 4 Ω are connected in parallel across a battery. The ratio of heat produced in them (2 Ω : 4 Ω) is",
+   "o": [
+    "1 : 2",
+    "2 : 1",
+    "1 : 4",
+    "4 : 1"
+   ],
+   "a": 1,
+   "x": "In parallel the voltage is the same, so H = V²t/R ∝ 1/R: (1/2) : (1/4) = 2 : 1.",
+   "trap": "1 : 2 is the series answer, where H ∝ R."
+  },
+  {
+   "id": "phyB-033",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 3,
+   "q": "A 100 W and a 60 W bulb, both rated 220 V, are connected in series across 220 V. Which glows brighter?",
+   "o": [
+    "The 60 W bulb",
+    "The 100 W bulb",
+    "Both glow equally",
+    "Neither glows"
+   ],
+   "a": 0,
+   "x": "R = V²/P, so the 60 W bulb has higher resistance. In series the current is common, so P = I²R is larger for the 60 W bulb.",
+   "trap": "The 100 W bulb is brighter only when connected in parallel."
+  },
+  {
+   "id": "phyB-034",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 1,
+   "q": "As the temperature of a pure semiconductor rises, its resistance",
+   "o": [
+    "Increases",
+    "Stays constant",
+    "First increases, then becomes zero",
+    "Decreases"
+   ],
+   "a": 3,
+   "x": "Heat frees more electron–hole pairs, so conductivity rises (negative temperature coefficient). Metals show the opposite.",
+   "trap": "'Increases' is true for metals, not semiconductors."
+  },
+  {
+   "id": "phyB-035",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "A cell of internal resistance r delivers maximum power to an external resistor R when",
+   "o": [
+    "R = 2r",
+    "R is very large",
+    "R = 0",
+    "R = r"
+   ],
+   "a": 3,
+   "x": "Maximum power transfer theorem: P = E²R/(R + r)² is greatest when R = r."
+  },
+  {
+   "id": "phyB-036",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 1,
+   "q": "A current of 2 A flows through a 5 Ω resistor. The power dissipated is",
+   "o": [
+    "20 W",
+    "10 W",
+    "50 W",
+    "2.5 W"
+   ],
+   "a": 0,
+   "x": "P = I²R = 2² × 5 = 20 W.",
+   "trap": "10 W uses P = IR, which is a voltage, not power."
+  },
+  {
+   "id": "phyB-037",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "While a cell of emf E and internal resistance r is being charged by a current I, its terminal voltage is",
+   "o": [
+    "E − Ir",
+    "E + Ir",
+    "E",
+    "Ir"
+   ],
+   "a": 1,
+   "x": "During charging, current enters the positive terminal, so the charger must supply E plus the drop across r: V = E + Ir.",
+   "trap": "E − Ir applies when the cell is discharging."
+  },
+  {
+   "id": "phyB-038",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 3,
+   "q": "A uniform wire of resistance 12 Ω is bent into a circle. The resistance between two diametrically opposite points is",
+   "o": [
+    "6 Ω",
+    "12 Ω",
+    "24 Ω",
+    "3 Ω"
+   ],
+   "a": 3,
+   "x": "Each half is 6 Ω and the two halves are in parallel: 6 × 6/(6 + 6) = 3 Ω.",
+   "trap": "6 Ω takes only one half and forgets the parallel path.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-039",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 3,
+   "q": "Three 3 Ω resistors are all used together in some combination. Which equivalent resistance is NOT possible?",
+   "o": [
+    "3 Ω",
+    "1 Ω",
+    "2 Ω",
+    "4.5 Ω"
+   ],
+   "a": 0,
+   "x": "All parallel 1 Ω; two series in parallel with one: 6 × 3/9 = 2 Ω; two parallel in series with one: 1.5 + 3 = 4.5 Ω; all series 9 Ω. 3 Ω cannot be made."
+  },
+  {
+   "id": "phyB-040",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 1,
+   "q": "Kirchhoff's loop (voltage) law is a statement of the conservation of",
+   "o": [
+    "Charge",
+    "Momentum",
+    "Energy",
+    "Mass"
+   ],
+   "a": 2,
+   "x": "Around a closed loop the sum of emfs equals the sum of IR drops, i.e. the net work on a charge round the loop is zero.",
+   "trap": "Charge conservation is the junction law."
+  },
+  {
+   "id": "phyB-041",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 2,
+   "q": "In a balanced Wheatstone bridge, P = 10 Ω, Q = 20 Ω and R = 15 Ω. The fourth resistance S is",
+   "o": [
+    "30 Ω",
+    "7.5 Ω",
+    "15 Ω",
+    "45 Ω"
+   ],
+   "a": 0,
+   "x": "Balance: P/Q = R/S, so S = RQ/P = 15 × 20/10 = 30 Ω.",
+   "trap": "7.5 Ω inverts the ratio."
+  },
+  {
+   "id": "phyB-042",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 2,
+   "q": "The balance of a Wheatstone bridge is NOT disturbed by changing",
+   "o": [
+    "The emf of the cell",
+    "The resistance in one ratio arm",
+    "The unknown resistance",
+    "The known resistance"
+   ],
+   "a": 0,
+   "x": "The balance condition P/Q = R/S contains only the four arm resistances; the cell emf (and galvanometer) do not appear."
+  },
+  {
+   "id": "phyB-043",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 2,
+   "q": "In a meter bridge, an unknown resistance X is in the left gap and 6 Ω is in the right gap. The null point is 40 cm from the left end. X is",
+   "o": [
+    "9 Ω",
+    "2.4 Ω",
+    "4 Ω",
+    "6 Ω"
+   ],
+   "a": 2,
+   "x": "X/6 = l/(100 − l) = 40/60, so X = 4 Ω.",
+   "trap": "9 Ω uses 60/40, putting the lengths the wrong way round."
+  },
+  {
+   "id": "phyB-044",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 1,
+   "q": "A potentiometer is preferred to a voltmeter for measuring the emf of a cell because at balance it",
+   "o": [
+    "Has a very low resistance",
+    "Draws maximum current from the cell",
+    "Needs no driving battery",
+    "Draws no current from the cell"
+   ],
+   "a": 3,
+   "x": "At the null point no current flows from the cell, so there is no Ir drop and the true emf is measured."
+  },
+  {
+   "id": "phyB-045",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 2,
+   "q": "On a potentiometer, a cell of emf 1.5 V balances at 60 cm. Another cell balances at 80 cm on the same wire. Its emf is",
+   "o": [
+    "1.125 V",
+    "1.2 V",
+    "2.5 V",
+    "2.0 V"
+   ],
+   "a": 3,
+   "x": "E₁/E₂ = l₁/l₂, so E₂ = 1.5 × 80/60 = 2.0 V.",
+   "trap": "1.125 V uses 60/80, the inverse ratio."
+  },
+  {
+   "id": "phyB-046",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 1,
+   "q": "A galvanometer is converted into an ammeter by connecting",
+   "o": [
+    "A low resistance in parallel with it",
+    "A high resistance in series with it",
+    "A low resistance in series with it",
+    "A high resistance in parallel with it"
+   ],
+   "a": 0,
+   "x": "A small shunt in parallel carries most of the current, protecting the galvanometer and lowering total resistance.",
+   "trap": "A high series resistance makes a voltmeter, not an ammeter.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-047",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 3,
+   "q": "A galvanometer of resistance 100 Ω gives full-scale deflection for 1 mA. To use it as a voltmeter of range 10 V, the resistance needed in series is",
+   "o": [
+    "10000 Ω",
+    "10100 Ω",
+    "9900 Ω",
+    "9.9 Ω"
+   ],
+   "a": 2,
+   "x": "Total R = V/I_g = 10/10⁻³ = 10000 Ω; series R = 10000 − 100 = 9900 Ω.",
+   "trap": "10000 Ω forgets to subtract the galvanometer's own 100 Ω."
+  },
+  {
+   "id": "phyB-048",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 3,
+   "q": "A galvanometer of resistance 99 Ω is to be converted into an ammeter that reads 100 times its full-scale current. The shunt required is",
+   "o": [
+    "0.99 Ω",
+    "1 Ω",
+    "99 Ω",
+    "9900 Ω"
+   ],
+   "a": 1,
+   "x": "S = G/(n − 1) = 99/(100 − 1) = 1 Ω.",
+   "trap": "0.99 Ω uses G/n instead of G/(n − 1).",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-049",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 1,
+   "q": "The resistance of an ideal voltmeter is",
+   "o": [
+    "Infinite",
+    "Zero",
+    "Equal to the circuit resistance",
+    "Very small"
+   ],
+   "a": 0,
+   "x": "An ideal voltmeter draws no current from the circuit, so its resistance must be infinite. An ideal ammeter has zero resistance."
+  },
+  {
+   "id": "phyB-050",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 1,
+   "q": "The production of an emf in a circuit of two dissimilar metals whose junctions are kept at different temperatures is called the",
+   "o": [
+    "Peltier effect",
+    "Thomson effect",
+    "Joule effect",
+    "Seebeck effect"
+   ],
+   "a": 3,
+   "x": "Seebeck effect: temperature difference → emf (the thermocouple principle). Peltier is the reverse: current → heat at a junction."
+  },
+  {
+   "id": "phyB-051",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 1,
+   "q": "When a current passes through the junction of two dissimilar metals, heat is absorbed or released at the junction. This is the",
+   "o": [
+    "Peltier effect",
+    "Seebeck effect",
+    "Joule effect",
+    "Hall effect"
+   ],
+   "a": 0,
+   "x": "Peltier effect: heating or cooling at a junction depending on current direction.",
+   "trap": "Joule heating occurs throughout the wire, not just at the junction."
+  },
+  {
+   "id": "phyB-052",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 2,
+   "q": "Compared with Joule heating, the Peltier effect is",
+   "o": [
+    "Proportional to the square of the current",
+    "Present throughout the whole length of the wire",
+    "Reversible: reversing the current turns heating into cooling",
+    "Produced only in semiconductors"
+   ],
+   "a": 2,
+   "x": "Peltier heat ∝ I and changes sign with current direction. Joule heat ∝ I²R and is always produced, so it is irreversible.",
+   "trap": "I² dependence belongs to Joule heating."
+  },
+  {
+   "id": "phyB-053",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 3,
+   "q": "For a thermocouple with the cold junction at 0 °C, the neutral temperature is 270 °C. The temperature of inversion is",
+   "o": [
+    "270 °C",
+    "540 °C",
+    "135 °C",
+    "810 °C"
+   ],
+   "a": 1,
+   "x": "Neutral temperature lies midway: T_n = (T_c + T_i)/2, so T_i = 2 × 270 − 0 = 540 °C.",
+   "trap": "270 °C is the neutral temperature, where the emf is maximum."
+  },
+  {
+   "id": "phyB-054",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "The rms value of the household AC supply is 220 V. Its peak value is about",
+   "o": [
+    "311 V",
+    "220 V",
+    "156 V",
+    "440 V"
+   ],
+   "a": 0,
+   "x": "V₀ = √2 × V_rms = 1.414 × 220 ≈ 311 V.",
+   "trap": "156 V divides by √2 instead of multiplying.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-055",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 3,
+   "q": "For a sinusoidal alternating current, the ratio of its mean value over a half-cycle to its rms value is",
+   "o": [
+    "π/2√2",
+    "1/√2",
+    "2√2/π",
+    "√2"
+   ],
+   "a": 2,
+   "x": "Mean = 2I₀/π, rms = I₀/√2. Ratio = (2I₀/π)/(I₀/√2) = 2√2/π ≈ 0.90.",
+   "trap": "π/2√2 is the inverse ratio (rms/mean).",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-056",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 3,
+   "q": "In a series RC circuit connected to an AC source, the current",
+   "o": [
+    "Lags the voltage by an angle between 0° and 90°",
+    "Is in phase with the voltage",
+    "Leads the voltage by exactly 90°",
+    "Leads the voltage by an angle between 0° and 90°"
+   ],
+   "a": 3,
+   "x": "tanφ = X_C/R. With some resistance the lead is less than 90°; exactly 90° needs a pure capacitor.",
+   "trap": "Lagging current means an inductive (RL) circuit.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-057",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 1,
+   "q": "In a steady DC circuit, a fully charged capacitor behaves as",
+   "o": [
+    "A short circuit",
+    "An open circuit",
+    "A small resistor",
+    "An inductor"
+   ],
+   "a": 1,
+   "x": "X_C = 1/(2πfC) is infinite for f = 0, so no steady current flows through it."
+  },
+  {
+   "id": "phyB-058",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "At resonance in a series LCR circuit",
+   "o": [
+    "The impedance is maximum",
+    "The current is zero",
+    "The impedance is minimum and equal to R",
+    "The voltage leads the current by 90°"
+   ],
+   "a": 2,
+   "x": "At f₀ = 1/(2π√LC), X_L = X_C cancel, so Z = R, current is maximum and power factor is 1.",
+   "trap": "Maximum impedance at resonance is for a parallel LC circuit."
+  },
+  {
+   "id": "phyB-059",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 3,
+   "q": "A series circuit has R = 30 Ω and net reactance 40 Ω. Its power factor is",
+   "o": [
+    "0.8",
+    "0.75",
+    "1.33",
+    "0.6"
+   ],
+   "a": 3,
+   "x": "Z = √(30² + 40²) = 50 Ω; cosφ = R/Z = 30/50 = 0.6.",
+   "trap": "0.8 uses X/Z instead of R/Z."
+  },
+  {
+   "id": "phyB-060",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "The average power consumed over a full cycle by a pure inductor connected to an AC source is",
+   "o": [
+    "V_rms × I_rms",
+    "Zero",
+    "V₀I₀/2",
+    "Maximum at high frequency"
+   ],
+   "a": 1,
+   "x": "Phase difference 90° gives power factor cos 90° = 0. Energy stored in one quarter-cycle is returned in the next (wattless current)."
+  },
+  {
+   "id": "phyB-061",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 3,
+   "q": "The Q-factor of a series LCR circuit increases when",
+   "o": [
+    "The resistance R is increased",
+    "The resistance R is decreased",
+    "The inductance L is decreased",
+    "The capacitance C is increased"
+   ],
+   "a": 1,
+   "x": "Q = (1/R)√(L/C). Smaller R or larger L raises Q; larger C lowers it. High Q means a sharper resonance."
+  },
+  {
+   "id": "phyB-062",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 1,
+   "q": "A full-wave bridge rectifier uses",
+   "o": [
+    "One diode",
+    "Four diodes",
+    "Two diodes",
+    "Three diodes"
+   ],
+   "a": 1,
+   "x": "The bridge has four diodes; two conduct in each half-cycle. A centre-tap full-wave rectifier uses two, a half-wave rectifier one.",
+   "trap": "Two diodes is the centre-tapped type, not the bridge.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-063",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "A full-wave rectifier is fed with 50 Hz AC. The fundamental frequency of the output ripple is",
+   "o": [
+    "100 Hz",
+    "50 Hz",
+    "25 Hz",
+    "200 Hz"
+   ],
+   "a": 0,
+   "x": "Both half-cycles give an output pulse, so there are 2 × 50 = 100 pulses per second.",
+   "trap": "50 Hz is the half-wave rectifier output.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-064",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "The reactance of a 0.1 H inductor at 50 Hz is about",
+   "o": [
+    "5 Ω",
+    "31.4 Ω",
+    "314 Ω",
+    "3.14 Ω"
+   ],
+   "a": 1,
+   "x": "X_L = 2πfL = 2 × 3.14 × 50 × 0.1 = 31.4 Ω.",
+   "trap": "5 Ω forgets the 2π."
+  },
+  {
+   "id": "phyB-065",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 1,
+   "q": "Permanent magnets are made of steel rather than soft iron because steel has",
+   "o": [
+    "Low retentivity and low coercivity",
+    "High permeability and low coercivity",
+    "Low hysteresis loss",
+    "High retentivity and high coercivity"
+   ],
+   "a": 3,
+   "x": "A permanent magnet must keep its magnetism (retentivity) and resist demagnetisation (coercivity); steel's wide hysteresis loop gives both.",
+   "trap": "Low coercivity suits electromagnets, which must lose magnetism easily.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-066",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "Soft iron is preferred for the core of a transformer or electromagnet because it has",
+   "o": [
+    "High retentivity and high coercivity",
+    "High permeability and low coercivity",
+    "Low permeability",
+    "Large hysteresis loss"
+   ],
+   "a": 1,
+   "x": "Soft iron magnetises and demagnetises easily with a thin hysteresis loop, so energy loss per cycle is small.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-067",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 1,
+   "q": "A diamagnetic substance has a magnetic susceptibility that is",
+   "o": [
+    "Small and positive",
+    "Large and positive",
+    "Small and negative",
+    "Exactly zero"
+   ],
+   "a": 2,
+   "x": "Diamagnets are weakly repelled by a magnet: χ is small and negative and μ_r is slightly less than 1.",
+   "trap": "Small and positive describes paramagnets."
+  },
+  {
+   "id": "phyB-068",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "According to Curie's law, the susceptibility of a paramagnetic substance is",
+   "o": [
+    "Directly proportional to its absolute temperature",
+    "Independent of temperature",
+    "Inversely proportional to its absolute temperature",
+    "Negative at all temperatures"
+   ],
+   "a": 2,
+   "x": "χ = C/T: heat disorders the atomic dipoles, so alignment and χ fall as T rises."
+  },
+  {
+   "id": "phyB-069",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "When a ferromagnetic material is heated above its Curie temperature, it becomes",
+   "o": [
+    "Diamagnetic",
+    "More strongly ferromagnetic",
+    "Paramagnetic",
+    "A superconductor"
+   ],
+   "a": 2,
+   "x": "Thermal agitation destroys the domain alignment above the Curie point; the material then behaves as a paramagnet."
+  },
+  {
+   "id": "phyB-070",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "The area enclosed by the hysteresis loop of a ferromagnetic material represents",
+   "o": [
+    "Retentivity of the material",
+    "Coercivity of the material",
+    "Permeability of the material",
+    "Energy lost per unit volume per cycle of magnetisation"
+   ],
+   "a": 3,
+   "x": "Loop area = heat lost per unit volume per cycle. Retentivity and coercivity are intercepts on the axes, not the area."
+  },
+  {
+   "id": "phyB-071",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 1,
+   "q": "Which of the following is diamagnetic?",
+   "o": [
+    "Bismuth",
+    "Aluminium",
+    "Iron",
+    "Nickel"
+   ],
+   "a": 0,
+   "x": "Bismuth (also copper, water) is diamagnetic. Aluminium is paramagnetic; iron and nickel are ferromagnetic."
+  },
+  {
+   "id": "phyB-072",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "A long straight wire carries a current of 10 A. The magnetic field at 10 cm from it is (μ₀ = 4π × 10⁻⁷ T m A⁻¹)",
+   "o": [
+    "2 × 10⁻⁶ T",
+    "2 × 10⁻⁵ T",
+    "6.28 × 10⁻⁵ T",
+    "1 × 10⁻⁵ T"
+   ],
+   "a": 1,
+   "x": "B = μ₀I/(2πr) = 4π × 10⁻⁷ × 10/(2π × 0.1) = 2 × 10⁻⁵ T. Field lines are circles around the wire.",
+   "trap": "6.28 × 10⁻⁵ T uses the coil-centre formula μ₀I/2r.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-073",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "The number of turns per unit length of a long solenoid and the current in it are both doubled. The magnetic field inside becomes",
+   "o": [
+    "Twice",
+    "Four times",
+    "Half",
+    "Unchanged"
+   ],
+   "a": 1,
+   "x": "B = μ₀nI, so doubling n and I gives 2 × 2 = 4 times the field.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-074",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 1,
+   "q": "The magnetic field inside a long current-carrying solenoid is",
+   "o": [
+    "Zero",
+    "Uniform and along its axis",
+    "Circular around the axis",
+    "Strongest near the walls"
+   ],
+   "a": 1,
+   "x": "Inside an ideal long solenoid B = μ₀nI, uniform and parallel to the axis; outside it is nearly zero.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-075",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 1,
+   "q": "Two long parallel wires carry currents in the same direction. They",
+   "o": [
+    "Repel each other",
+    "Attract each other",
+    "Exert no force on each other",
+    "Rotate to become perpendicular"
+   ],
+   "a": 1,
+   "x": "Each wire sits in the other's field; F = BIL gives attraction for like currents and repulsion for opposite currents.",
+   "trap": "Students carry over 'like charges repel' to currents; like currents attract.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-076",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "A 10 cm wire carrying 2 A lies perpendicular to a uniform magnetic field of 0.5 T. The force on it is",
+   "o": [
+    "1 N",
+    "0.01 N",
+    "0.05 N",
+    "0.1 N"
+   ],
+   "a": 3,
+   "x": "F = BIL sin 90° = 0.5 × 2 × 0.1 = 0.1 N.",
+   "trap": "1 N leaves the length in centimetres."
+  },
+  {
+   "id": "phyB-077",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "The magnetic force on a moving charged particle does no work because",
+   "o": [
+    "The force is always parallel to the velocity",
+    "The force is always perpendicular to the velocity",
+    "The force is zero for a moving charge",
+    "The particle's charge is constant"
+   ],
+   "a": 1,
+   "x": "F = qv × B is perpendicular to v, so F·v = 0: speed and kinetic energy stay constant; only direction changes."
+  },
+  {
+   "id": "phyB-078",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 3,
+   "q": "A charged particle moves in a circle in a uniform magnetic field. Its time period does NOT depend on its",
+   "o": [
+    "Mass",
+    "Charge",
+    "Speed",
+    "Magnetic field strength"
+   ],
+   "a": 2,
+   "x": "T = 2πr/v and r = mv/qB give T = 2πm/qB: faster particles move in bigger circles in the same time (the cyclotron principle).",
+   "trap": "Radius depends on speed, but the period does not."
+  },
+  {
+   "id": "phyB-079",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "The Hall effect in a current-carrying slab placed in a magnetic field is used to find",
+   "o": [
+    "The resistivity of the slab only",
+    "The sign and number density of the charge carriers",
+    "The temperature of the slab",
+    "The self-inductance of the slab"
+   ],
+   "a": 1,
+   "x": "The sign of the Hall voltage shows whether carriers are electrons or holes; V_H = BI/(nqt) gives the carrier density n."
+  },
+  {
+   "id": "phyB-080",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "In the Hall effect, the Hall voltage develops in a direction",
+   "o": [
+    "Parallel to the current",
+    "Parallel to the magnetic field",
+    "Opposite to the current",
+    "Perpendicular to both the current and the magnetic field"
+   ],
+   "a": 3,
+   "x": "The magnetic force qv × B pushes carriers sideways, perpendicular to both I and B, building a transverse voltage."
+  },
+  {
+   "id": "phyB-081",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 3,
+   "q": "The torque on a current-carrying rectangular coil in a uniform magnetic field is maximum when the plane of the coil is",
+   "o": [
+    "Perpendicular to the magnetic field",
+    "At 45° to the magnetic field",
+    "At 30° to the magnetic field",
+    "Parallel to the magnetic field"
+   ],
+   "a": 3,
+   "x": "τ = NIAB sinθ, θ between the coil's normal and B. Plane parallel to B means θ = 90°, so torque is maximum.",
+   "trap": "Perpendicular plane gives θ = 0° and zero torque."
+  },
+  {
+   "id": "phyB-082",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 1,
+   "q": "The SI unit of magnetic flux is the",
+   "o": [
+    "Tesla",
+    "Henry",
+    "Weber",
+    "Gauss"
+   ],
+   "a": 2,
+   "x": "Φ = BA, so the unit is T m² = weber (Wb). Tesla is the unit of flux density B.",
+   "trap": "Tesla measures B, not flux.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-083",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "The flux through a 10-turn coil changes from 0.5 Wb to 0.1 Wb in 0.2 s. The average induced emf is",
+   "o": [
+    "2 V",
+    "20 V",
+    "0.8 V",
+    "200 V"
+   ],
+   "a": 1,
+   "x": "ε = NΔΦ/Δt = 10 × 0.4/0.2 = 20 V.",
+   "trap": "2 V forgets to multiply by the 10 turns."
+  },
+  {
+   "id": "phyB-084",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 1,
+   "q": "The henry, the SI unit of self-inductance, is equivalent to",
+   "o": [
+    "Wb A⁻¹",
+    "Wb A",
+    "V A s⁻¹",
+    "Ω s⁻¹"
+   ],
+   "a": 0,
+   "x": "L = Φ/I, so 1 H = 1 Wb A⁻¹ = 1 V s A⁻¹ = 1 Ω s.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-085",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "The energy stored in an inductor of 2 H carrying a current of 3 A is",
+   "o": [
+    "18 J",
+    "6 J",
+    "3 J",
+    "9 J"
+   ],
+   "a": 3,
+   "x": "U = ½LI² = ½ × 2 × 3² = 9 J.",
+   "trap": "18 J forgets the ½."
+  },
+  {
+   "id": "phyB-086",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "The current in a 0.5 H coil changes steadily by 4 A in 0.1 s. The self-induced emf is",
+   "o": [
+    "20 V",
+    "2 V",
+    "0.2 V",
+    "80 V"
+   ],
+   "a": 0,
+   "x": "ε = L ΔI/Δt = 0.5 × 4/0.1 = 20 V.",
+   "trap": "2 V forgets to divide by the time 0.1 s."
+  },
+  {
+   "id": "phyB-087",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 1,
+   "q": "The core of a transformer is laminated in order to reduce",
+   "o": [
+    "Hysteresis loss",
+    "Copper loss",
+    "Eddy current loss",
+    "Flux linkage"
+   ],
+   "a": 2,
+   "x": "Thin insulated sheets break up the large loops of eddy currents induced in the core. Soft iron (not lamination) reduces hysteresis loss.",
+   "trap": "Hysteresis loss is cut by choosing soft iron, not by laminating."
+  },
+  {
+   "id": "phyB-088",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 3,
+   "q": "In an AC generator, the induced emf is maximum when the plane of the rotating coil is",
+   "o": [
+    "Perpendicular to the magnetic field",
+    "At 45° to the magnetic field",
+    "Parallel to the magnetic field",
+    "At any angle, since emf is constant"
+   ],
+   "a": 2,
+   "x": "ε = NBAω sinωt. When the plane is parallel to B the flux is zero but changing fastest, so emf is maximum.",
+   "trap": "Perpendicular plane has maximum flux but zero rate of change."
+  },
+  {
+   "id": "phyB-089",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "A 100-turn coil of area 0.01 m² rotates at 100 rad s⁻¹ in a uniform field of 0.1 T. The peak emf is",
+   "o": [
+    "1 V",
+    "10 V",
+    "100 V",
+    "0.1 V"
+   ],
+   "a": 1,
+   "x": "ε₀ = NBAω = 100 × 0.1 × 0.01 × 100 = 10 V."
+  },
+  {
+   "id": "phyB-090",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "In an ideal step-up transformer, compared with the primary current, the secondary current is",
+   "o": [
+    "Larger",
+    "Smaller",
+    "Equal",
+    "Zero"
+   ],
+   "a": 1,
+   "x": "Power is conserved: V_pI_p = V_sI_s. Raising the voltage lowers the current in the same ratio.",
+   "trap": "Students assume 'step-up' raises everything, current included.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-091",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "The mutual inductance of a pair of coils does NOT depend on",
+   "o": [
+    "The number of turns in the coils",
+    "The current flowing in the coils",
+    "The distance between the coils",
+    "The material of the core"
+   ],
+   "a": 1,
+   "x": "M depends only on geometry (turns, area, separation, orientation) and the core's permeability, not on the current."
+  },
+  {
+   "id": "phyB-092",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 3,
+   "q": "The ratio of the radii of the nuclei ²⁷Al and ⁶⁴Cu is",
+   "o": [
+    "27 : 64",
+    "3 : 4",
+    "9 : 16",
+    "1 : 1"
+   ],
+   "a": 1,
+   "x": "R = R₀A^(1/3): (27)^(1/3) : (64)^(1/3) = 3 : 4.",
+   "trap": "27 : 64 forgets the cube root."
+  },
+  {
+   "id": "phyB-093",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 3,
+   "q": "The ratio of the nuclear densities of ⁵⁶Fe and ²³⁸U is about",
+   "o": [
+    "56 : 238",
+    "1 : 1",
+    "238 : 56",
+    "(56/238)^(1/3)"
+   ],
+   "a": 1,
+   "x": "R³ ∝ A, so volume ∝ A and density = mass/volume ∝ A/A: all nuclei have nearly the same density.",
+   "trap": "Students assume a heavier nucleus is denser.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-094",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "The density of nuclear matter is of the order of",
+   "o": [
+    "10¹⁷ kg m⁻³",
+    "10³ kg m⁻³",
+    "10⁹ kg m⁻³",
+    "10²⁷ kg m⁻³"
+   ],
+   "a": 0,
+   "x": "About 2.3 × 10¹⁷ kg m⁻³, the same for all nuclei, since nuclear volume is proportional to mass number.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-095",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "The energy equivalent of 1 atomic mass unit (1 u) is about",
+   "o": [
+    "9.315 MeV",
+    "1 MeV",
+    "0.511 MeV",
+    "931.5 MeV"
+   ],
+   "a": 3,
+   "x": "E = mc² for 1.66 × 10⁻²⁷ kg gives 931.5 MeV. 0.511 MeV is the rest energy of an electron."
+  },
+  {
+   "id": "phyB-096",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "The mass defect of a nucleus is 0.1 u. Its binding energy is about",
+   "o": [
+    "93.15 MeV",
+    "931.5 MeV",
+    "9.315 MeV",
+    "0.1 MeV"
+   ],
+   "a": 0,
+   "x": "BE = Δm × 931.5 MeV/u = 0.1 × 931.5 = 93.15 MeV."
+  },
+  {
+   "id": "phyB-097",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "The binding energy per nucleon is maximum for nuclei near",
+   "o": [
+    "²³⁸U",
+    "⁴He",
+    "²H",
+    "⁵⁶Fe"
+   ],
+   "a": 3,
+   "x": "The curve peaks near iron (about 8.8 MeV per nucleon). Heavy nuclei gain stability by fission, light ones by fusion.",
+   "trap": "²³⁸U has the largest total binding energy, not the largest per nucleon."
+  },
+  {
+   "id": "phyB-098",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "If 1 g of matter were completely converted into energy, the energy released would be (c = 3 × 10⁸ m s⁻¹)",
+   "o": [
+    "9 × 10¹⁶ J",
+    "3 × 10⁵ J",
+    "9 × 10¹³ J",
+    "9 × 10¹⁰ J"
+   ],
+   "a": 2,
+   "x": "E = mc² = 10⁻³ × (3 × 10⁸)² = 9 × 10¹³ J.",
+   "trap": "9 × 10¹⁶ J uses 1 kg instead of 1 g."
+  },
+  {
+   "id": "phyB-099",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "The energy released in the fission of one ²³⁵U nucleus is about",
+   "o": [
+    "2 MeV",
+    "200 MeV",
+    "20 keV",
+    "2000 MeV"
+   ],
+   "a": 1,
+   "x": "A slow neutron splits ²³⁵U into two medium nuclei plus 2–3 neutrons, releasing about 200 MeV."
+  },
+  {
+   "id": "phyB-100",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "The main source of the Sun's energy is",
+   "o": [
+    "Nuclear fission of uranium",
+    "Chemical burning of hydrogen",
+    "Nuclear fusion of hydrogen into helium",
+    "Gravitational contraction alone"
+   ],
+   "a": 2,
+   "x": "In the core, hydrogen nuclei fuse into helium; the mass defect appears as energy."
+  },
+  {
+   "id": "phyB-101",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "Nuclear fusion requires temperatures of millions of kelvin because",
+   "o": [
+    "Fusion is a chemical reaction",
+    "Neutrons must be slowed down",
+    "The nuclei must first be ionised into electrons",
+    "The nuclei must overcome their electrostatic repulsion"
+   ],
+   "a": 3,
+   "x": "Positive nuclei repel; only very high kinetic energy lets them come within range of the short-range nuclear force."
+  },
+  {
+   "id": "phyB-102",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "In a nuclear reactor, cadmium or boron rods are used to",
+   "o": [
+    "Slow down neutrons as a moderator",
+    "Cool the reactor core",
+    "Shield against γ-rays only",
+    "Absorb neutrons and control the chain reaction"
+   ],
+   "a": 3,
+   "x": "Control rods absorb neutrons. Moderators such as heavy water or graphite slow neutrons without absorbing them.",
+   "trap": "Slowing neutrons is the moderator's job, not the control rods'."
+  },
+  {
+   "id": "phyB-103",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "The force that holds nucleons together in a nucleus is",
+   "o": [
+    "Short-range and nearly independent of charge",
+    "Long-range and inverse-square",
+    "Acting only between protons",
+    "Electrostatic in nature"
+   ],
+   "a": 0,
+   "x": "The strong nuclear force acts only within about 2–3 fm and is the same for p–p, n–n and p–n pairs.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-104",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 1,
+   "q": "Millikan's oil drop experiment established",
+   "o": [
+    "The specific charge e/m of the electron",
+    "That charge is quantised and measured the electronic charge",
+    "The wave nature of the electron",
+    "The existence of the nucleus"
+   ],
+   "a": 1,
+   "x": "Charges on oil drops were always whole multiples of 1.6 × 10⁻¹⁹ C. Thomson measured e/m; Rutherford found the nucleus.",
+   "trap": "e/m was measured by J.J. Thomson, not Millikan."
+  },
+  {
+   "id": "phyB-105",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 1,
+   "q": "J.J. Thomson's experiment with crossed electric and magnetic fields measured the electron's",
+   "o": [
+    "Charge e",
+    "Mass m",
+    "de Broglie wavelength",
+    "Specific charge e/m"
+   ],
+   "a": 3,
+   "x": "Balancing fields gave the speed (v = E/B), and deflection then gave e/m ≈ 1.76 × 10¹¹ C kg⁻¹."
+  },
+  {
+   "id": "phyB-106",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 2,
+   "q": "An electron passes undeflected through crossed fields E = 3 × 10⁴ V m⁻¹ and B = 0.01 T. Its speed is",
+   "o": [
+    "3 × 10² m s⁻¹",
+    "3 × 10⁶ m s⁻¹",
+    "3 × 10⁴ m s⁻¹",
+    "3.3 × 10⁻⁷ m s⁻¹"
+   ],
+   "a": 1,
+   "x": "No deflection when eE = evB, so v = E/B = 3 × 10⁴/0.01 = 3 × 10⁶ m s⁻¹.",
+   "trap": "3 × 10² multiplies E by B instead of dividing.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-107",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 1,
+   "q": "The specific charge (e/m) of an electron is about",
+   "o": [
+    "1.6 × 10⁻¹⁹ C kg⁻¹",
+    "9.1 × 10⁻³¹ C kg⁻¹",
+    "1.76 × 10¹¹ C kg⁻¹",
+    "9.58 × 10⁷ C kg⁻¹"
+   ],
+   "a": 2,
+   "x": "e/m = 1.6 × 10⁻¹⁹/9.1 × 10⁻³¹ ≈ 1.76 × 10¹¹ C kg⁻¹. 9.58 × 10⁷ C kg⁻¹ is the proton's value."
+  },
+  {
+   "id": "phyB-108",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 3,
+   "q": "An oil drop of mass 3.2 × 10⁻¹⁵ kg stays stationary between plates where E = 2 × 10⁵ V m⁻¹. The number of excess electrons on it is (g = 10 m s⁻², e = 1.6 × 10⁻¹⁹ C)",
+   "o": [
+    "2",
+    "1",
+    "4",
+    "10"
+   ],
+   "a": 1,
+   "x": "qE = mg: q = 3.2 × 10⁻¹⁵ × 10/(2 × 10⁵) = 1.6 × 10⁻¹⁹ C = 1e."
+  },
+  {
+   "id": "phyB-109",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 2,
+   "q": "An electron enters a uniform electric field at right angles to the field lines. Its path inside the field is a",
+   "o": [
+    "Circle",
+    "Parabola",
+    "Straight line",
+    "Helix"
+   ],
+   "a": 1,
+   "x": "Constant force along the field and constant velocity across it give a parabola, like a horizontal projectile. A magnetic field gives a circle.",
+   "trap": "A circle is the path in a perpendicular magnetic field."
+  },
+  {
+   "id": "phyB-110",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "In the photoelectric effect, the saturation photocurrent depends on the",
+   "o": [
+    "Frequency of the incident light",
+    "Work function of the metal",
+    "Intensity of the incident light",
+    "Stopping potential"
+   ],
+   "a": 2,
+   "x": "More intense light delivers more photons per second, ejecting more electrons; saturation current ∝ intensity (above threshold).",
+   "trap": "Frequency controls electron energy, not the number of electrons.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-111",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "The rest mass of a photon is",
+   "o": [
+    "Equal to the electron's mass",
+    "hν/c²",
+    "h/λ",
+    "Zero"
+   ],
+   "a": 3,
+   "x": "A photon always moves at c and has no rest mass. Its momentum is h/λ and its energy hν.",
+   "trap": "hν/c² is an effective mass in motion, not rest mass."
+  },
+  {
+   "id": "phyB-112",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 2,
+   "q": "The work function of a metal is 2 eV. Its threshold wavelength is about (hc ≈ 12400 eV Å)",
+   "o": [
+    "3100 Å",
+    "6200 Å",
+    "12400 Å",
+    "24800 Å"
+   ],
+   "a": 1,
+   "x": "λ₀ = hc/φ = 12400/2 = 6200 Å. Longer wavelengths cannot eject electrons.",
+   "trap": "24800 Å multiplies by 2 instead of dividing.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-113",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 3,
+   "q": "Light of wavelength 310 nm falls on a metal of work function 2 eV. The maximum speed of the photoelectrons is about (hc = 1240 eV nm, m_e = 9.1 × 10⁻³¹ kg)",
+   "o": [
+    "1.2 × 10⁶ m s⁻¹",
+    "5.9 × 10⁵ m s⁻¹",
+    "8.4 × 10⁵ m s⁻¹",
+    "8.4 × 10⁶ m s⁻¹"
+   ],
+   "a": 2,
+   "x": "E = 1240/310 = 4 eV; KE = 4 − 2 = 2 eV = 3.2 × 10⁻¹⁹ J; v = √(2KE/m) = √(7.0 × 10¹¹) ≈ 8.4 × 10⁵ m s⁻¹.",
+   "trap": "1.2 × 10⁶ m s⁻¹ forgets to subtract the work function.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-114",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 2,
+   "q": "The slope of the graph of stopping potential V₀ against frequency ν of incident light is",
+   "o": [
+    "e/h",
+    "h",
+    "h/e",
+    "φ/e"
+   ],
+   "a": 2,
+   "x": "eV₀ = hν − φ, so V₀ = (h/e)ν − φ/e: a straight line of slope h/e, the same for every metal."
+  },
+  {
+   "id": "phyB-115",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 2,
+   "q": "Which observation in the photoelectric effect can NOT be explained by the wave theory of light?",
+   "o": [
+    "Existence of a threshold frequency",
+    "Photocurrent increasing with intensity",
+    "Emission of electrons from metal surfaces",
+    "Partial reflection of the light from the metal"
+   ],
+   "a": 0,
+   "x": "Wave theory predicts that any frequency would eject electrons if intense enough. A cut-off frequency needs photons of energy hν."
+  },
+  {
+   "id": "phyB-116",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "The value of Planck's constant is about",
+   "o": [
+    "6.63 × 10⁻³⁴ J s⁻¹",
+    "1.6 × 10⁻¹⁹ J s",
+    "6.63 × 10⁻³⁴ J s",
+    "6.63 × 10³⁴ J s"
+   ],
+   "a": 2,
+   "x": "h = 6.63 × 10⁻³⁴ J s; its unit J s is the same as that of angular momentum.",
+   "trap": "J s⁻¹ is the watt, a unit of power.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-117",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 2,
+   "q": "The energy of a photon of wavelength 6200 Å is about (hc ≈ 12400 eV Å)",
+   "o": [
+    "0.5 eV",
+    "2 eV",
+    "3.1 eV",
+    "4 eV"
+   ],
+   "a": 1,
+   "x": "E = hc/λ = 12400/6200 = 2 eV."
+  },
+  {
+   "id": "phyB-118",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 3,
+   "q": "A lamp emits 3.3 W of light of wavelength 600 nm. The number of photons emitted per second is about (h = 6.6 × 10⁻³⁴ J s)",
+   "o": [
+    "10¹⁷",
+    "10¹⁹",
+    "10²¹",
+    "10¹⁵"
+   ],
+   "a": 1,
+   "x": "Photon energy hc/λ = 6.6 × 10⁻³⁴ × 3 × 10⁸/6 × 10⁻⁷ = 3.3 × 10⁻¹⁹ J; n = 3.3/3.3 × 10⁻¹⁹ = 10¹⁹ s⁻¹."
+  },
+  {
+   "id": "phyB-119",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 1,
+   "q": "The de Broglie wavelength of a material particle is inversely proportional to its",
+   "o": [
+    "Charge",
+    "Momentum",
+    "Velocity squared",
+    "Kinetic energy"
+   ],
+   "a": 1,
+   "x": "λ = h/p = h/mv. It is inversely proportional to √(KE), not to KE.",
+   "trap": "Kinetic energy enters as √K, not K."
+  },
+  {
+   "id": "phyB-120",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "An electron and a proton have the same de Broglie wavelength. They must have the same",
+   "o": [
+    "Speed",
+    "Momentum",
+    "Kinetic energy",
+    "Total energy"
+   ],
+   "a": 1,
+   "x": "λ = h/p, so equal λ means equal p. The lighter electron then moves faster and has more kinetic energy.",
+   "trap": "Equal wavelength does not mean equal speed; masses differ.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-121",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 3,
+   "q": "An electron and a proton have equal de Broglie wavelengths. Which has the greater kinetic energy?",
+   "o": [
+    "The proton, by about 1836 times",
+    "Both have equal kinetic energy",
+    "The proton, by about 43 times",
+    "The electron, by about m_p/m_e ≈ 1836 times"
+   ],
+   "a": 3,
+   "x": "Equal λ means equal p. KE = p²/2m, so KE ∝ 1/m: the lighter electron has about 1836 times more.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-122",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "An electron is accelerated from rest through 100 V. Its de Broglie wavelength is about (λ = 12.27/√V Å)",
+   "o": [
+    "1.227 Å",
+    "12.27 Å",
+    "0.1227 Å",
+    "122.7 Å"
+   ],
+   "a": 0,
+   "x": "λ = 12.27/√100 = 12.27/10 = 1.227 Å.",
+   "trap": "12.27 Å forgets the square root of V."
+  },
+  {
+   "id": "phyB-123",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "According to the uncertainty principle, if the position of a particle is known exactly, the uncertainty in its momentum is",
+   "o": [
+    "Infinite",
+    "Zero",
+    "Equal to h",
+    "Equal to the momentum itself"
+   ],
+   "a": 0,
+   "x": "Δx Δp ≥ h/4π. Δx → 0 forces Δp → ∞."
+  },
+  {
+   "id": "phyB-124",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 1,
+   "q": "Bohr's quantisation condition for an electron in the nth orbit is",
+   "o": [
+    "mvr = nh/2π",
+    "mvr = 2πn/h",
+    "mv = nh/2πr²",
+    "mvr = nh"
+   ],
+   "a": 0,
+   "x": "Only orbits where angular momentum is a whole multiple of h/2π are allowed."
+  },
+  {
+   "id": "phyB-125",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "The radius of the first Bohr orbit of hydrogen is 0.53 Å. The radius of the third orbit is",
+   "o": [
+    "1.59 Å",
+    "0.177 Å",
+    "1.06 Å",
+    "4.77 Å"
+   ],
+   "a": 3,
+   "x": "rₙ = r₁n² = 0.53 × 9 = 4.77 Å.",
+   "trap": "1.59 Å multiplies by n instead of n²."
+  },
+  {
+   "id": "phyB-126",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "As the principal quantum number n increases, the speed of the electron in a Bohr orbit of hydrogen",
+   "o": [
+    "Increases in proportion to n",
+    "Increases in proportion to n²",
+    "Stays constant",
+    "Decreases in proportion to 1/n"
+   ],
+   "a": 3,
+   "x": "vₙ = v₁/n (v₁ ≈ 2.2 × 10⁶ m s⁻¹). Radius grows as n², speed falls as 1/n."
+  },
+  {
+   "id": "phyB-127",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 3,
+   "q": "The energy needed to ionise a hydrogen atom from its first excited state (n = 2) is",
+   "o": [
+    "13.6 eV",
+    "10.2 eV",
+    "3.4 eV",
+    "6.8 eV"
+   ],
+   "a": 2,
+   "x": "E₂ = −13.6/4 = −3.4 eV; removing the electron to E = 0 needs 3.4 eV.",
+   "trap": "13.6 eV is the ionisation energy from the ground state."
+  },
+  {
+   "id": "phyB-128",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 1,
+   "q": "The Lyman series of hydrogen lies in the",
+   "o": [
+    "Visible region",
+    "Ultraviolet region",
+    "Infrared region",
+    "Microwave region"
+   ],
+   "a": 1,
+   "x": "Lyman lines end on n = 1, the largest energy gaps, so they are UV. Balmer (n = 2) is visible; Paschen (n = 3) is infrared."
+  },
+  {
+   "id": "phyB-129",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 3,
+   "q": "Hydrogen atoms are excited to the n = 4 level. The maximum number of spectral lines they can emit on returning to the ground state is",
+   "o": [
+    "4",
+    "3",
+    "10",
+    "6"
+   ],
+   "a": 3,
+   "x": "Number of lines = n(n − 1)/2 = 4 × 3/2 = 6.",
+   "trap": "3 counts only the direct jumps of one atom (4→3→2→1)."
+  },
+  {
+   "id": "phyB-130",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "The energy of the photon emitted when a hydrogen electron falls from n = 2 to n = 1 is",
+   "o": [
+    "10.2 eV",
+    "13.6 eV",
+    "3.4 eV",
+    "12.09 eV"
+   ],
+   "a": 0,
+   "x": "ΔE = 13.6(1 − 1/4) = 10.2 eV, the first Lyman line. 12.09 eV is the 3 → 1 transition."
+  },
+  {
+   "id": "phyB-131",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "A major limitation of Bohr's atomic model is that it",
+   "o": [
+    "Cannot explain the line spectrum of hydrogen",
+    "Cannot give the ionisation energy of hydrogen",
+    "Cannot explain the spectra of atoms with more than one electron",
+    "Cannot explain the stability of the hydrogen atom"
+   ],
+   "a": 2,
+   "x": "Bohr's model works only for hydrogen-like (one-electron) systems; it also fails for fine structure, line intensities and the Zeeman effect.",
+   "trap": "Bohr's model does explain hydrogen's spectrum and stability; that was its success.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-132",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 1,
+   "q": "X-rays are produced when",
+   "o": [
+    "Slow neutrons strike a light target",
+    "Radioactive nuclei emit α-particles",
+    "Fast-moving electrons are suddenly stopped by a heavy metal target",
+    "Electrons move between outer valence orbits"
+   ],
+   "a": 2,
+   "x": "In a Coolidge tube, high-energy electrons strike a target such as tungsten; their deceleration and inner-shell transitions emit X-rays."
+  },
+  {
+   "id": "phyB-133",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "Increasing the accelerating voltage of an X-ray tube makes the X-rays",
+   "o": [
+    "Harder: shorter minimum wavelength and more penetrating",
+    "Softer: longer wavelength and less penetrating",
+    "More intense but with the same wavelengths",
+    "Of longer minimum wavelength"
+   ],
+   "a": 0,
+   "x": "λ_min = hc/eV falls as V rises, so the X-rays carry more energy and penetrate more. Intensity is set by the filament current.",
+   "trap": "Intensity is controlled by the filament current, not the voltage.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-134",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "In a Coolidge X-ray tube, the intensity of the X-rays is controlled by the",
+   "o": [
+    "Accelerating voltage only",
+    "Target material only",
+    "Size of the window",
+    "Filament current"
+   ],
+   "a": 3,
+   "x": "The filament current sets how many electrons are emitted and so how many X-ray photons are produced. The voltage sets their hardness.",
+   "trap": "The voltage controls penetrating power (quality), not quantity.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-135",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 1,
+   "q": "X-rays are NOT deflected by electric or magnetic fields because they",
+   "o": [
+    "Move too fast to be deflected",
+    "Are made of neutrons",
+    "Have very large mass",
+    "Are uncharged electromagnetic waves"
+   ],
+   "a": 3,
+   "x": "X-rays are high-energy photons with no charge, so neither field exerts a force on them.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-136",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "In a Bragg reflection, the first-order maximum occurs at a glancing angle of 30° from crystal planes 2 Å apart. The X-ray wavelength is",
+   "o": [
+    "1 Å",
+    "4 Å",
+    "0.5 Å",
+    "2 Å"
+   ],
+   "a": 3,
+   "x": "2d sinθ = nλ: λ = 2 × 2 × sin30°/1 = 2 Å.",
+   "trap": "1 Å forgets the factor 2 in 2d sinθ.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-137",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "Bones show up clearly in an X-ray image mainly because",
+   "o": [
+    "Bone emits X-rays when irradiated",
+    "X-rays are reflected only by soft tissue",
+    "Bone absorbs X-rays more strongly than soft tissue",
+    "Bone is transparent to X-rays"
+   ],
+   "a": 2,
+   "x": "Absorption rises with atomic number and density; calcium-rich bone absorbs more, casting a light shadow on the film."
+  },
+  {
+   "id": "phyB-138",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 1,
+   "q": "The wave nature of electrons was first confirmed experimentally by",
+   "o": [
+    "Millikan",
+    "J.J. Thomson",
+    "Davisson and Germer",
+    "Rutherford"
+   ],
+   "a": 2,
+   "x": "Davisson and Germer observed diffraction of electrons by a nickel crystal, matching λ = h/p."
+  },
+  {
+   "id": "phyB-139",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "Among α, β and γ radiations, the one with the greatest ionising power is",
+   "o": [
+    "α-particles",
+    "β-particles",
+    "γ-rays",
+    "All are equal"
+   ],
+   "a": 0,
+   "x": "Ionising power: α > β > γ. Penetrating power is the reverse: γ > β > α.",
+   "trap": "γ-rays penetrate most but ionise least."
+  },
+  {
+   "id": "phyB-140",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "When a nucleus emits a γ-ray photon,",
+   "o": [
+    "Its atomic number decreases by 1",
+    "Its mass number decreases by 4",
+    "Its atomic number increases by 1",
+    "Its atomic number and mass number both stay the same"
+   ],
+   "a": 3,
+   "x": "γ emission only releases excess energy from an excited nucleus; the numbers of protons and neutrons are unchanged.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-141",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "In β⁻ decay, the particle emitted together with the electron is",
+   "o": [
+    "A neutrino",
+    "A positron",
+    "A proton",
+    "An antineutrino"
+   ],
+   "a": 3,
+   "x": "n → p + e⁻ + ν̄. The antineutrino carries off the missing energy, explaining the continuous β spectrum. β⁺ decay emits a neutrino.",
+   "trap": "A neutrino goes with β⁺ (positron) decay."
+  },
+  {
+   "id": "phyB-142",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 3,
+   "q": "²³⁸U (Z = 92) decays into ²⁰⁶Pb (Z = 82). The numbers of α and β⁻ particles emitted are",
+   "o": [
+    "6 α and 8 β",
+    "8 α and 8 β",
+    "4 α and 6 β",
+    "8 α and 6 β"
+   ],
+   "a": 3,
+   "x": "α count = (238 − 206)/4 = 8, lowering Z by 16 to 76. To reach 82, six β⁻ decays (each Z + 1) are needed."
+  },
+  {
+   "id": "phyB-143",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "The mean life of a radioactive substance with a half-life of 6.93 days is",
+   "o": [
+    "6.93 days",
+    "4.8 days",
+    "10 days",
+    "3.47 days"
+   ],
+   "a": 2,
+   "x": "τ = T½/0.693 = 6.93/0.693 = 10 days. Mean life is always 1.44 times the half-life.",
+   "trap": "4.8 days multiplies by 0.693 instead of dividing."
+  },
+  {
+   "id": "phyB-144",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "The SI unit of radioactivity is the",
+   "o": [
+    "Curie",
+    "Gray",
+    "Becquerel",
+    "Sievert"
+   ],
+   "a": 2,
+   "x": "1 Bq = 1 disintegration per second. The curie (3.7 × 10¹⁰ Bq) is an older unit; gray and sievert measure dose."
+  },
+  {
+   "id": "phyB-145",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 3,
+   "q": "The fraction of a radioactive sample that has decayed after 4 half-lives is",
+   "o": [
+    "15/16",
+    "1/16",
+    "1/4",
+    "3/4"
+   ],
+   "a": 0,
+   "x": "Remaining = (½)⁴ = 1/16, so decayed = 1 − 1/16 = 15/16.",
+   "trap": "1/16 is the fraction remaining, not decayed."
+  },
+  {
+   "id": "phyB-146",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 3,
+   "q": "The activity of a sample falls from 800 to 100 counts per second in 30 minutes. Its half-life is",
+   "o": [
+    "15 min",
+    "3.75 min",
+    "30 min",
+    "10 min"
+   ],
+   "a": 3,
+   "x": "800 → 400 → 200 → 100 is 3 half-lives in 30 min, so T½ = 10 min.",
+   "trap": "3.75 min divides 30 by the ratio 8 instead of by 3 halvings."
+  },
+  {
+   "id": "phyB-147",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "Radiocarbon dating of ancient wood uses the isotope",
+   "o": [
+    "Carbon-12",
+    "Uranium-238",
+    "Carbon-14",
+    "Cobalt-60"
+   ],
+   "a": 2,
+   "x": "Living things keep a fixed C-14/C-12 ratio; after death C-14 decays (T½ ≈ 5730 years), and the remaining fraction gives the age."
+  },
+  {
+   "id": "phyB-148",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 3,
+   "q": "An ancient wooden sample shows one-quarter of the C-14 activity of fresh wood. Taking T½ = 5730 years, its age is about",
+   "o": [
+    "5730 years",
+    "11460 years",
+    "22920 years",
+    "2865 years"
+   ],
+   "a": 1,
+   "x": "1/4 = (½)², i.e. 2 half-lives = 2 × 5730 = 11460 years.",
+   "trap": "22920 years uses 4 half-lives instead of 2."
+  },
+  {
+   "id": "phyB-149",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "Cobalt-60 is used in medicine mainly as a source of",
+   "o": [
+    "α-particles for thyroid treatment",
+    "X-rays for dental imaging",
+    "γ-rays for radiotherapy of cancer",
+    "β-particles for carbon dating"
+   ],
+   "a": 2,
+   "x": "Co-60 emits penetrating γ-rays used to destroy tumour cells. I-131 is used for thyroid disorders."
+  },
+  {
+   "id": "phyB-150",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "The SI unit of equivalent dose, which accounts for the biological effect of radiation, is the",
+   "o": [
+    "Gray",
+    "Becquerel",
+    "Sievert",
+    "Curie"
+   ],
+   "a": 2,
+   "x": "Gray (J kg⁻¹) measures absorbed dose; multiplying by a radiation weighting factor gives equivalent dose in sieverts.",
+   "trap": "Gray is absorbed dose, without the biological weighting."
+  },
+  {
+   "id": "phyB-151",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "The rate of decay of a radioactive sample depends on",
+   "o": [
+    "The temperature of the sample",
+    "The number of undecayed nuclei present",
+    "The pressure on the sample",
+    "The chemical compound it is in"
+   ],
+   "a": 1,
+   "x": "dN/dt = −λN. Decay is a nuclear process, unaffected by temperature, pressure or chemical state."
+  },
+  {
+   "id": "phyB-152",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "The correct order of forbidden energy gap is",
+   "o": [
+    "Conductor > semiconductor > insulator",
+    "Semiconductor > insulator > conductor",
+    "Insulator > conductor > semiconductor",
+    "Insulator > semiconductor > conductor"
+   ],
+   "a": 3,
+   "x": "Insulators have a wide gap (over about 3 eV), semiconductors a small gap (Si 1.1 eV), and in conductors the bands overlap (gap ≈ 0).",
+   "yrs": [
+    2080,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-153",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "The forbidden energy gap of silicon at room temperature is about",
+   "o": [
+    "0.01 eV",
+    "1.1 eV",
+    "6 eV",
+    "11 eV"
+   ],
+   "a": 1,
+   "x": "Si ≈ 1.1 eV and Ge ≈ 0.7 eV. About 6 eV is typical of an insulator such as diamond.",
+   "yrs": [
+    2080,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-154",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "To make germanium a p-type semiconductor, it should be doped with",
+   "o": [
+    "Arsenic",
+    "Antimony",
+    "Phosphorus",
+    "Indium"
+   ],
+   "a": 3,
+   "x": "Trivalent impurities (B, Al, Ga, In) accept electrons, creating holes. As, Sb and P are pentavalent donors that make n-type.",
+   "trap": "Arsenic, antimony and phosphorus give n-type, not p-type.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-155",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 3,
+   "q": "A p-type semiconductor, taken as a whole, is",
+   "o": [
+    "Positively charged",
+    "Negatively charged",
+    "Electrically neutral",
+    "Positively charged only when heated"
+   ],
+   "a": 2,
+   "x": "Each acceptor atom is itself neutral; the hole and the ionised acceptor balance. Holes are majority carriers, but net charge is zero.",
+   "trap": "Majority holes do not make the crystal positively charged.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-156",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "At absolute zero, a pure (intrinsic) semiconductor behaves as",
+   "o": [
+    "A good conductor",
+    "An insulator",
+    "A superconductor",
+    "An n-type semiconductor"
+   ],
+   "a": 1,
+   "x": "At 0 K no electrons have enough energy to cross the gap; the conduction band is empty, so it cannot conduct."
+  },
+  {
+   "id": "phyB-157",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "In an intrinsic semiconductor, the number of free electrons n_e and holes n_h are related by",
+   "o": [
+    "n_e > n_h",
+    "n_e < n_h",
+    "n_e = n_h",
+    "n_e × n_h = 0"
+   ],
+   "a": 2,
+   "x": "Each electron that crosses the gap leaves exactly one hole behind, so they are created in equal numbers."
+  },
+  {
+   "id": "phyB-158",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "The potential barrier across a p-n junction is due to",
+   "o": [
+    "Immobile ionised donors and acceptors in the depletion layer",
+    "Free electrons collecting on the p-side",
+    "Holes collecting on the n-side",
+    "The external battery"
+   ],
+   "a": 0,
+   "x": "Diffusion of majority carriers across the junction leaves fixed positive donor ions on the n-side and negative acceptor ions on the p-side.",
+   "trap": "The barrier exists even with no battery connected.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-159",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "The barrier potential of a silicon p-n junction diode is about",
+   "o": [
+    "0.7 V",
+    "0.3 V",
+    "7 V",
+    "0.07 V"
+   ],
+   "a": 0,
+   "x": "Silicon about 0.7 V; germanium about 0.3 V.",
+   "trap": "0.3 V is the germanium value.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-160",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "When a p-n junction is forward biased, the depletion layer",
+   "o": [
+    "Becomes thinner",
+    "Becomes wider",
+    "Stays unchanged",
+    "Disappears permanently"
+   ],
+   "a": 0,
+   "x": "The applied voltage opposes the barrier, pushing carriers towards the junction and narrowing the depletion region. Reverse bias widens it."
+  },
+  {
+   "id": "phyB-161",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "A p-n junction diode is forward biased when",
+   "o": [
+    "The p-side is connected to the positive terminal of the battery",
+    "The n-side is connected to the positive terminal",
+    "Both sides are earthed",
+    "The p-side is connected to the negative terminal"
+   ],
+   "a": 0,
+   "x": "Positive to p and negative to n lowers the barrier and lets majority carriers cross the junction.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-162",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "The small current through a reverse-biased p-n junction is due to",
+   "o": [
+    "Majority carriers",
+    "Donor ions",
+    "Minority carriers",
+    "Acceptor ions"
+   ],
+   "a": 2,
+   "x": "Reverse bias blocks majority carriers; thermally generated minority carriers drift across, giving a tiny saturation current.",
+   "trap": "Ions in the depletion layer are fixed and carry no current."
+  },
+  {
+   "id": "phyB-163",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "A half-wave rectifier is fed with 50 Hz AC. The frequency of the output pulses is",
+   "o": [
+    "100 Hz",
+    "50 Hz",
+    "25 Hz",
+    "0 Hz"
+   ],
+   "a": 1,
+   "x": "Only one half of each cycle passes, so there is one pulse per input cycle: 50 Hz. A full-wave rectifier gives 100 Hz.",
+   "trap": "100 Hz is the full-wave value."
+  },
+  {
+   "id": "phyB-164",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "Which logic gate can be used on its own to build every other logic gate?",
+   "o": [
+    "AND",
+    "OR",
+    "NOT",
+    "NAND"
+   ],
+   "a": 3,
+   "x": "NAND (and NOR) are universal gates: NOT, AND and OR can all be made by connecting NAND gates.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-165",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "Which pair are known as universal gates?",
+   "o": [
+    "AND and OR",
+    "NOT and AND",
+    "NAND and NOR",
+    "OR and NOT"
+   ],
+   "a": 2,
+   "x": "Any Boolean function can be built from only NAND gates, or from only NOR gates.",
+   "yrs": [
+    2080
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-166",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "A two-input gate gives output 0 only when both inputs are 1. The gate is",
+   "o": [
+    "NOR",
+    "NAND",
+    "AND",
+    "OR"
+   ],
+   "a": 1,
+   "x": "NAND truth table: 00 → 1, 01 → 1, 10 → 1, 11 → 0. It is AND followed by NOT.",
+   "trap": "AND gives 1, not 0, when both inputs are 1.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-167",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "The output of an OR gate is fed into a NOT gate. The combination acts as a",
+   "o": [
+    "NAND gate",
+    "AND gate",
+    "OR gate",
+    "NOR gate"
+   ],
+   "a": 3,
+   "x": "NOT(A + B) is the NOR function by definition.",
+   "trap": "NAND is AND followed by NOT."
+  },
+  {
+   "id": "phyB-168",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "The Boolean expression for an OR gate with inputs A and B is",
+   "o": [
+    "Y = A · B",
+    "Y = A + B",
+    "Y = Ā",
+    "Y = NOT(A + B)"
+   ],
+   "a": 1,
+   "x": "OR gives 1 when at least one input is 1: Y = A + B. A · B is AND; the complement of A + B is NOR."
+  },
+  {
+   "id": "phyB-169",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "A NOT gate with input A = 1 gives the output",
+   "o": [
+    "1",
+    "0",
+    "Same as the input",
+    "Undefined"
+   ],
+   "a": 1,
+   "x": "A NOT gate inverts: Y = Ā, so 1 → 0 and 0 → 1.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-170",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "The quark composition of a proton is",
+   "o": [
+    "uud",
+    "udd",
+    "uuu",
+    "ddd"
+   ],
+   "a": 0,
+   "x": "Proton = up + up + down: charge 2/3 + 2/3 − 1/3 = +1. Neutron = udd.",
+   "trap": "udd is the neutron.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-171",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "The quark composition of a neutron is",
+   "o": [
+    "uud",
+    "uds",
+    "udd",
+    "uuu"
+   ],
+   "a": 2,
+   "x": "Neutron = up + down + down: 2/3 − 1/3 − 1/3 = 0.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-172",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "Which of the following particles contains no quarks?",
+   "o": [
+    "Antineutrino",
+    "Proton",
+    "Neutron",
+    "Pion"
+   ],
+   "a": 0,
+   "x": "Antineutrinos are leptons, which are fundamental and have no quark content. Protons and neutrons are three-quark baryons; pions are quark–antiquark mesons.",
+   "trap": "Pions are mesons, built from a quark and an antiquark.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-173",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "The charge on an up quark is",
+   "o": [
+    "+2/3 e",
+    "−1/3 e",
+    "+1/3 e",
+    "+e"
+   ],
+   "a": 0,
+   "x": "Up quark +2/3 e, down quark −1/3 e. Quarks carry fractional charges but are never seen alone."
+  },
+  {
+   "id": "phyB-174",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "The antiparticle of the electron is the",
+   "o": [
+    "Proton",
+    "Positron",
+    "Neutron",
+    "Neutrino"
+   ],
+   "a": 1,
+   "x": "The positron has the same mass as the electron but charge +e."
+  },
+  {
+   "id": "phyB-175",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "Leptons such as the electron, muon and neutrinos are particles that",
+   "o": [
+    "Do not feel the strong nuclear force",
+    "Are made of three quarks",
+    "Feel only the strong nuclear force",
+    "Are always heavier than protons"
+   ],
+   "a": 0,
+   "x": "Leptons are fundamental and take part only in weak (and, if charged, electromagnetic) interactions. Hadrons feel the strong force."
+  },
+  {
+   "id": "phyB-176",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "The Higgs boson, discovered at CERN in 2012, is linked to",
+   "o": [
+    "The force that binds quarks",
+    "The mechanism that gives fundamental particles their mass",
+    "The expansion of the universe",
+    "Radioactive α-decay"
+   ],
+   "a": 1,
+   "x": "Particles gain mass by interacting with the Higgs field; the Higgs boson is that field's quantum. Gluons bind quarks."
+  },
+  {
+   "id": "phyB-177",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "Hubble's law states that the speed at which a distant galaxy recedes from us is",
+   "o": [
+    "Inversely proportional to its distance",
+    "Directly proportional to its distance",
+    "Proportional to the square of its distance",
+    "Independent of its distance"
+   ],
+   "a": 1,
+   "x": "v = H₀d: farther galaxies recede faster, showing that the universe is expanding.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-178",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "A galaxy recedes at 1400 km s⁻¹. If the Hubble constant is 70 km s⁻¹ Mpc⁻¹, its distance is",
+   "o": [
+    "0.05 Mpc",
+    "98000 Mpc",
+    "200 Mpc",
+    "20 Mpc"
+   ],
+   "a": 3,
+   "x": "d = v/H₀ = 1400/70 = 20 Mpc.",
+   "trap": "98000 Mpc multiplies v by H₀ instead of dividing.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-179",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 3,
+   "q": "The reciprocal of the Hubble constant (1/H₀) gives an estimate of the",
+   "o": [
+    "Age of the universe",
+    "Radius of a galaxy",
+    "Speed of light",
+    "Mass of the universe"
+   ],
+   "a": 0,
+   "x": "If galaxies have receded at constant speed, d = vt and v = H₀d give t = 1/H₀ ≈ 14 billion years (the Hubble time).",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-180",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "The existence of dark matter is inferred mainly from",
+   "o": [
+    "Its gravitational effects, such as the rotation speeds of galaxies",
+    "The light it emits",
+    "Its absorption of visible light",
+    "Its strong electric charge"
+   ],
+   "a": 0,
+   "x": "Dark matter neither emits nor absorbs light; outer stars orbit galaxies too fast for visible mass alone, revealing extra unseen mass.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-181",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "Strong evidence for the Big Bang theory is the",
+   "o": [
+    "Existence of black holes",
+    "Nuclear fusion in stars",
+    "Cosmic microwave background radiation at about 2.7 K",
+    "Earth's magnetic field"
+   ],
+   "a": 2,
+   "x": "The CMB is the cooled afterglow of the hot early universe; with galactic redshift it supports the Big Bang."
+  },
+  {
+   "id": "phyB-182",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "The redshift of light from distant galaxies indicates that",
+   "o": [
+    "The galaxies are moving away from us",
+    "The galaxies are moving towards us",
+    "The galaxies are getting hotter",
+    "Light slows down in space"
+   ],
+   "a": 0,
+   "x": "A shift to longer wavelengths (Doppler) means recession. Blueshift would mean approach.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-183",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "Nanotechnology deals with structures having sizes of roughly",
+   "o": [
+    "1–100 nm",
+    "1–100 μm",
+    "1–100 mm",
+    "1–100 pm"
+   ],
+   "a": 0,
+   "x": "1 nm = 10⁻⁹ m. At 1–100 nm, materials show new properties due to quantum and surface effects."
+  },
+  {
+   "id": "phyB-184",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "Nanoparticles often behave differently from the bulk material mainly because they have a",
+   "o": [
+    "Very large mass",
+    "Very low density",
+    "Very large surface area to volume ratio",
+    "Higher melting point always"
+   ],
+   "a": 2,
+   "x": "Shrinking size raises the fraction of atoms at the surface, changing reactivity, optical and electrical properties."
+  },
+  {
+   "id": "phyB-185",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "An electron and a positron at rest annihilate each other. The result is",
+   "o": [
+    "One γ-ray photon of 1.02 MeV",
+    "A neutron",
+    "Two γ-ray photons of about 0.511 MeV each",
+    "Two neutrinos of 931 MeV each"
+   ],
+   "a": 2,
+   "x": "Total rest energy 2 × 0.511 MeV appears as two photons moving in opposite directions, conserving momentum.",
+   "trap": "A single photon cannot conserve momentum when the pair starts at rest.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-186",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "A metal wire has a resistance of 5 Ω at 0 °C and a temperature coefficient of resistance of 0.004 °C⁻¹. Its resistance at 50 °C is",
+   "o": [
+    "5.2 Ω",
+    "6 Ω",
+    "7 Ω",
+    "4 Ω"
+   ],
+   "a": 1,
+   "x": "R_t = R₀(1 + αt) = 5(1 + 0.004 × 50) = 5 × 1.2 = 6 Ω. A metal's resistance rises with temperature.",
+   "trap": "4 Ω: subtracting, as if metal resistance fell on heating like a semiconductor's.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-187",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 1,
+   "q": "The capacitance of a parallel plate capacitor does NOT depend on",
+   "o": [
+    "The area of the plates",
+    "The separation of the plates",
+    "The metal the plates are made of",
+    "The dielectric between the plates"
+   ],
+   "a": 2,
+   "x": "C = Kε₀A/d depends only on geometry (A, d) and the medium (K). Any conducting metal gives the same C.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-188",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "A uniform magnetic field of 0.2 T passes through a coil of area 50 cm², making 60° with the normal to the coil. The magnetic flux through the coil is",
+   "o": [
+    "1 × 10⁻³ Wb",
+    "5 × 10⁻⁴ Wb",
+    "8.7 × 10⁻⁴ Wb",
+    "10 Wb"
+   ],
+   "a": 1,
+   "x": "Φ = BA cos θ = 0.2 × 50 × 10⁻⁴ × cos 60° = 0.2 × 0.005 × 0.5 = 5 × 10⁻⁴ Wb.",
+   "trap": "1 × 10⁻³ Wb ignores the angle; 10 Wb forgets cm² → m².",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-189",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "A 10 V battery is connected through a switch to a coil of inductance 2 H and resistance 5 Ω. Just after the switch is closed, the current is",
+   "o": [
+    "Zero",
+    "2 A",
+    "5 A",
+    "4 A"
+   ],
+   "a": 0,
+   "x": "The self-induced emf opposes the sudden rise, so the current starts at zero and grows as I = (E/R)(1 − e^(−Rt/L)) towards E/R = 2 A.",
+   "trap": "2 A is the final steady current, reached only after a long time.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-190",
+   "topic": "phy-electrostatics",
+   "s": "Electric field strength, potential and potential energy",
+   "d": 1,
+   "q": "Moving a charge of 4 C between two points needs 20 J of work. The potential difference between the points is",
+   "o": [
+    "80 V",
+    "0.2 V",
+    "16 V",
+    "5 V"
+   ],
+   "a": 3,
+   "x": "Potential difference is work per unit charge: V = W/q = 20/4 = 5 V.",
+   "trap": "80 V multiplies instead of dividing.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-191",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "A particle of rest mass m₀ moves at 0.6c. According to special relativity, its mass is",
+   "o": [
+    "0.8 m₀",
+    "1.67 m₀",
+    "1.25 m₀",
+    "m₀"
+   ],
+   "a": 2,
+   "x": "m = m₀/√(1 − v²/c²) = m₀/√(1 − 0.36) = m₀/0.8 = 1.25 m₀. Mass increases with speed.",
+   "trap": "0.8 m₀ multiplies by √(1 − v²/c²) instead of dividing.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-192",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "In β⁺ (positron) decay, the daughter nucleus has",
+   "o": [
+    "The same mass number and atomic number one more",
+    "The same mass number and atomic number one less",
+    "Mass number one less and the same atomic number",
+    "The same mass number and the same atomic number"
+   ],
+   "a": 1,
+   "x": "A proton turns into a neutron, emitting a positron and a neutrino: A is unchanged, Z falls by 1.",
+   "trap": "Z + 1 is β⁻ decay, where a neutron becomes a proton.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-193",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "In a nuclear reactor, fission of a ²³⁵U nucleus is started by the absorption of a",
+   "o": [
+    "Slow (thermal) neutron",
+    "Fast proton",
+    "Electron",
+    "Positron"
+   ],
+   "a": 0,
+   "x": "The uncharged neutron is not repelled by the nucleus; ²³⁵U captures slow neutrons most readily, forming unstable ²³⁶U that splits.",
+   "trap": "Protons are repelled by the nucleus's positive charge.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-194",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "The fundamental forces of nature are transmitted by the exchange of particles called",
+   "o": [
+    "Leptons",
+    "Hadrons",
+    "Fermions",
+    "Gauge bosons"
+   ],
+   "a": 3,
+   "x": "Force carriers are bosons: photon (electromagnetic), gluons (strong), W and Z (weak), and the hypothetical graviton. Fermions (quarks, leptons) make up matter.",
+   "trap": "Fermions build matter; they do not carry forces.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-195",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "X-rays of wavelength λ fall on a crystal whose atomic planes are a distance d apart. Bragg reflection can occur only if",
+   "o": [
+    "λ > 2d",
+    "λ ≥ 4d",
+    "λ ≤ 2d",
+    "λ = d exactly"
+   ],
+   "a": 2,
+   "x": "2d sin θ = nλ with sin θ ≤ 1 needs nλ ≤ 2d; the first order needs λ ≤ 2d. This is why X-rays, not visible light, are diffracted by crystals.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-196",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 2,
+   "q": "An electron (e/m = 1.76 × 10¹¹ C kg⁻¹) is placed in a uniform electric field of 100 V m⁻¹. The magnitude of its acceleration is",
+   "o": [
+    "1.76 × 10⁹ m s⁻²",
+    "1.76 × 10¹³ m s⁻²",
+    "1.76 × 10¹¹ m s⁻²",
+    "1.76 × 10¹⁵ m s⁻²"
+   ],
+   "a": 1,
+   "x": "a = F/m = eE/m = (e/m)E = 1.76 × 10¹¹ × 100 = 1.76 × 10¹³ m s⁻².",
+   "trap": "1.76 × 10⁹ divides by E instead of multiplying.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-197",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "A Zener diode used as a voltage regulator is operated in the",
+   "o": [
+    "Reverse breakdown region",
+    "Forward bias region below 0.7 V",
+    "Reverse bias region below breakdown",
+    "Forward bias region above 0.7 V"
+   ],
+   "a": 0,
+   "x": "A heavily doped Zener diode breaks down at a sharp, fixed reverse voltage; the voltage across it then stays almost constant over a wide current range.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-198",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 3,
+   "q": "In the hydrogen spectrum, the ratio of the wavelength of the photon emitted in the n = 3 → 2 transition to that emitted in the n = 2 → 1 transition is",
+   "o": [
+    "5 : 27",
+    "4 : 1",
+    "9 : 4",
+    "27 : 5"
+   ],
+   "a": 3,
+   "x": "1/λ ∝ (1/n₁² − 1/n₂²). For 3 → 2: 1/4 − 1/9 = 5/36; for 2 → 1: 1 − 1/4 = 3/4. λ₃₂/λ₂₁ = (3/4)/(5/36) = 27/5.",
+   "trap": "5 : 27 is the ratio of energies, not wavelengths.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-199",
+   "topic": "phy-electrostatics",
+   "s": "Capacitors",
+   "d": 3,
+   "q": "Identical capacitors of 4 μF, each able to withstand 200 V, are to be combined to give 4 μF that can withstand 600 V. The least number needed is",
+   "o": [
+    "3",
+    "6",
+    "9",
+    "12"
+   ],
+   "a": 2,
+   "x": "600 V needs 3 in series per row (4/3 μF per row). Rows in parallel to reach 4 μF: 4 ÷ (4/3) = 3. Total 3 × 3 = 9.",
+   "trap": "3 meets the voltage but gives only 4/3 μF.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-200",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 2,
+   "q": "A 220 V house circuit is protected by a 5 A fuse. The largest number of 100 W, 220 V bulbs that can be run together in parallel is",
+   "o": [
+    "5",
+    "11",
+    "22",
+    "44"
+   ],
+   "a": 1,
+   "x": "Maximum power = VI = 220 × 5 = 1100 W. 1100/100 = 11 bulbs.",
+   "trap": "5: taking the fuse rating in amperes as the number of bulbs.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-201",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "An electron moves towards the east in a uniform magnetic field directed vertically upward. The magnetic force on it is towards the",
+   "o": [
+    "North",
+    "South",
+    "West",
+    "Vertically downward"
+   ],
+   "a": 0,
+   "x": "F = q(v × B). For a positive charge, east × up = south. The electron is negative, so the force is reversed: north.",
+   "trap": "South: forgetting the electron's negative charge.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-202",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "A nucleus at rest emits an α-particle. Compared with the α-particle, the recoiling daughter nucleus has",
+   "o": [
+    "Equal kinetic energy but less momentum",
+    "More momentum and more kinetic energy",
+    "Zero momentum",
+    "Equal momentum but much less kinetic energy"
+   ],
+   "a": 3,
+   "x": "Momentum conservation: the two move apart with equal and opposite momenta. KE = p²/2m, so the heavier daughter gets far less KE; the α carries most of the energy.",
+   "trap": "Equal KE: momentum, not KE, is shared equally.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-203",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 1,
+   "q": "In Millikan's oil drop experiment, a charged drop stays stationary between the plates when",
+   "o": [
+    "Its charge becomes zero",
+    "The magnetic force on it balances its weight",
+    "The electric force on it balances its weight",
+    "The air pressure above and below it is equal"
+   ],
+   "a": 2,
+   "x": "With the drop at rest (no viscous drag), qE = mg. Knowing E and m gives q, which always came out as a whole multiple of e."
+  },
+  {
+   "id": "phyB-204",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 3,
+   "q": "A charged oil drop is held stationary by a vertical electric field. If the direction of the field is suddenly reversed, the initial acceleration of the drop is",
+   "o": [
+    "g downward",
+    "2g downward",
+    "Zero",
+    "g upward"
+   ],
+   "a": 1,
+   "x": "Before: qE upward = mg. After reversal, qE acts downward too, so net force = 2mg downward and a = 2g (drag is zero at the start).",
+   "trap": "g ignores that the electric force now adds to the weight."
+  },
+  {
+   "id": "phyB-205",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 2,
+   "q": "An electron moves at 1.76 × 10⁶ m s⁻¹ at right angles to a uniform magnetic field of 1 × 10⁻³ T. The radius of its circular path is (e/m = 1.76 × 10¹¹ C kg⁻¹)",
+   "o": [
+    "1 cm",
+    "1 mm",
+    "10 cm",
+    "1 m"
+   ],
+   "a": 0,
+   "x": "r = mv/(eB) = v/[(e/m)B] = 1.76 × 10⁶/(1.76 × 10¹¹ × 10⁻³) = 0.01 m = 1 cm."
+  },
+  {
+   "id": "phyB-206",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 3,
+   "q": "An electron starts from rest and is accelerated through a potential difference of 100 V. Its final speed is about (e/m = 1.76 × 10¹¹ C kg⁻¹)",
+   "o": [
+    "3.5 × 10¹³ m s⁻¹",
+    "1.9 × 10⁶ m s⁻¹",
+    "5.9 × 10⁸ m s⁻¹",
+    "5.9 × 10⁶ m s⁻¹"
+   ],
+   "a": 3,
+   "x": "eV = ½mv², so v = √(2(e/m)V) = √(2 × 1.76 × 10¹¹ × 100) = √(3.52 × 10¹³) ≈ 5.9 × 10⁶ m s⁻¹.",
+   "trap": "3.5 × 10¹³ forgets to take the square root."
+  },
+  {
+   "id": "phyB-207",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 1,
+   "q": "J.J. Thomson found that the specific charge (e/m) of cathode-ray particles",
+   "o": [
+    "Depends on the gas in the tube",
+    "Depends on the metal of the cathode",
+    "Is the same whatever gas or cathode metal is used",
+    "Is equal to that of the hydrogen ion"
+   ],
+   "a": 2,
+   "x": "The same e/m from every gas and cathode showed that these particles (electrons) are a common constituent of all atoms."
+  },
+  {
+   "id": "phyB-208",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 2,
+   "q": "Compared with the specific charge of an electron, the specific charge of a proton is",
+   "o": [
+    "About 1836 times it",
+    "About 1/1836 of it",
+    "Equal to it",
+    "About 1/918 of it"
+   ],
+   "a": 1,
+   "x": "Both carry charge of magnitude e, but m_p ≈ 1836 m_e. So e/m_p is about 1836 times smaller than e/m_e.",
+   "trap": "1836 times reverses the ratio: the lighter electron has the larger e/m."
+  },
+  {
+   "id": "phyB-209",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 1,
+   "q": "An electron enters the space between two charged parallel plates moving parallel to the plates. While between the plates, its velocity component parallel to the plates",
+   "o": [
+    "Remains constant",
+    "Increases uniformly",
+    "Decreases uniformly",
+    "Becomes zero"
+   ],
+   "a": 0,
+   "x": "The electric force is perpendicular to the plates, so there is no acceleration along them. Only the perpendicular component changes, giving a parabolic path."
+  },
+  {
+   "id": "phyB-210",
+   "topic": "phy-modern",
+   "s": "Electron",
+   "d": 2,
+   "q": "An electron enters a uniform magnetic field with its velocity at 30° to the field direction. Its path in the field is a",
+   "o": [
+    "Circle",
+    "Straight line",
+    "Parabola",
+    "Helix"
+   ],
+   "a": 3,
+   "x": "The component v cos 30° along B is unaffected; the component v sin 30° makes it circle about B. Together they give a helix.",
+   "trap": "Circle only when the velocity is exactly perpendicular to B."
+  },
+  {
+   "id": "phyB-211",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "Taking R = R₀A^(1/3) with R₀ = 1.2 fm, the radius of a nucleus of mass number 125 is",
+   "o": [
+    "150 fm",
+    "3.6 fm",
+    "6 fm",
+    "1.2 fm"
+   ],
+   "a": 2,
+   "x": "A^(1/3) = 125^(1/3) = 5, so R = 1.2 × 5 = 6 fm.",
+   "trap": "150 fm multiplies by A instead of A^(1/3)."
+  },
+  {
+   "id": "phyB-212",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "Nuclei having the same number of neutrons but different numbers of protons are called",
+   "o": [
+    "Isotopes",
+    "Isotones",
+    "Isobars",
+    "Isomers"
+   ],
+   "a": 1,
+   "x": "Isotopes: same Z. Isobars: same A. Isotones: same neutron number N = A − Z."
+  },
+  {
+   "id": "phyB-213",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "The number of neutrons in a nucleus of ²³⁵₉₂U is",
+   "o": [
+    "143",
+    "92",
+    "235",
+    "327"
+   ],
+   "a": 0,
+   "x": "N = A − Z = 235 − 92 = 143."
+  },
+  {
+   "id": "phyB-214",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "The binding energy of the ⁴₂He nucleus is about 28 MeV. Its binding energy per nucleon is about",
+   "o": [
+    "14 MeV",
+    "28 MeV",
+    "3.5 MeV",
+    "7 MeV"
+   ],
+   "a": 3,
+   "x": "Divide by the number of nucleons A = 4: 28/4 = 7 MeV.",
+   "trap": "14 MeV divides by the number of protons instead of nucleons."
+  },
+  {
+   "id": "phyB-215",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 3,
+   "q": "Taking m_p = 1.00728 u, m_n = 1.00867 u, the mass of a deuteron = 2.01355 u and 1 u = 931.5 MeV, the binding energy of the deuteron is about",
+   "o": [
+    "1.1 MeV",
+    "22 MeV",
+    "2.2 MeV",
+    "931 MeV"
+   ],
+   "a": 2,
+   "x": "Mass defect = 1.00728 + 1.00867 − 2.01355 = 0.00240 u. BE = 0.0024 × 931.5 ≈ 2.24 MeV.",
+   "trap": "1.1 MeV is the binding energy per nucleon, not the total."
+  },
+  {
+   "id": "phyB-216",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "Per kilogram of fuel, compared with nuclear fission, nuclear fusion of light nuclei releases",
+   "o": [
+    "Less energy",
+    "More energy",
+    "The same energy",
+    "No energy"
+   ],
+   "a": 1,
+   "x": "Fission of ²³⁵U gives about 0.85 MeV per nucleon; fusion of hydrogen isotopes gives several MeV per nucleon, so fusion yields more per unit mass.",
+   "trap": "Per reaction fission gives more (≈200 MeV), but per unit mass fusion wins."
+  },
+  {
+   "id": "phyB-217",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "Energy is released when a heavy nucleus such as ²³⁵U undergoes fission because the fragments",
+   "o": [
+    "Have a higher binding energy per nucleon",
+    "Have a lower binding energy per nucleon",
+    "Have more nucleons in total",
+    "Have a larger total mass"
+   ],
+   "a": 0,
+   "x": "BE per nucleon is about 7.6 MeV for uranium but about 8.5 MeV for mid-mass fragments. The products are more tightly bound, so their total mass is smaller and the difference appears as energy."
+  },
+  {
+   "id": "phyB-218",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 1,
+   "q": "In a thermal nuclear reactor, the moderator (such as heavy water or graphite) is used to",
+   "o": [
+    "Absorb all the neutrons",
+    "Cool the reactor core",
+    "Shield workers from γ-rays",
+    "Slow down fast neutrons"
+   ],
+   "a": 3,
+   "x": "Fission neutrons are fast; ²³⁵U captures slow (thermal) neutrons far better. Light nuclei in the moderator take energy from neutrons by collisions.",
+   "trap": "Absorbing neutrons is the job of the cadmium or boron control rods."
+  },
+  {
+   "id": "phyB-219",
+   "topic": "phy-modern",
+   "s": "Nuclear physics",
+   "d": 2,
+   "q": "A nuclear chain reaction proceeds at a steady rate (critical condition) when the neutron multiplication factor k is",
+   "o": [
+    "Zero",
+    "Less than 1",
+    "Exactly 1",
+    "Greater than 1"
+   ],
+   "a": 2,
+   "x": "k = 1: each fission causes on average one more fission, as in a working reactor. k > 1 grows rapidly (bomb); k < 1 dies out."
+  },
+  {
+   "id": "phyB-220",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "The momentum of a photon of wavelength λ is",
+   "o": [
+    "hλ",
+    "h/λ",
+    "hc/λ",
+    "λ/h"
+   ],
+   "a": 1,
+   "x": "p = E/c = hν/c = h/λ. hc/λ is the photon's energy, not its momentum.",
+   "trap": "hc/λ is the energy of the photon."
+  },
+  {
+   "id": "phyB-221",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "Very intense light of frequency below the threshold frequency falls on a metal surface. Photoelectrons are",
+   "o": [
+    "Not emitted at all",
+    "Emitted with large kinetic energy",
+    "Emitted after a time delay",
+    "Emitted only at low speed"
+   ],
+   "a": 0,
+   "x": "Each photon hν is less than the work function, and one electron absorbs one photon. More photons (intensity) cannot add up their energies."
+  },
+  {
+   "id": "phyB-222",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 2,
+   "q": "The work function of a metal is 4.14 eV. Its threshold frequency is about (h = 6.63 × 10⁻³⁴ J s, 1 eV = 1.6 × 10⁻¹⁹ J)",
+   "o": [
+    "1.0 × 10¹⁴ Hz",
+    "6.2 × 10¹⁴ Hz",
+    "2.5 × 10¹⁵ Hz",
+    "1.0 × 10¹⁵ Hz"
+   ],
+   "a": 3,
+   "x": "ν₀ = φ/h = 4.14 × 1.6 × 10⁻¹⁹/6.63 × 10⁻³⁴ ≈ 1.0 × 10¹⁵ Hz."
+  },
+  {
+   "id": "phyB-223",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "The time lag between light falling on a photosensitive surface and the emission of photoelectrons is",
+   "o": [
+    "About one second",
+    "Longer for faint light",
+    "Practically zero (less than about 10⁻⁹ s)",
+    "Longer for low frequency light"
+   ],
+   "a": 2,
+   "x": "Emission is instantaneous because an electron absorbs a whole photon at once. Wave theory wrongly predicted a delay for faint light.",
+   "trap": "A delay for faint light is the wave-theory prediction, disproved by experiment."
+  },
+  {
+   "id": "phyB-224",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 3,
+   "q": "Light of frequency 2ν₀ and then light of frequency 5ν₀ falls on a metal of threshold frequency ν₀. The ratio of the maximum speeds of the photoelectrons in the two cases is",
+   "o": [
+    "2 : 5",
+    "1 : 2",
+    "1 : 4",
+    "1 : √2"
+   ],
+   "a": 1,
+   "x": "KE_max = h(ν − ν₀): hν₀ and 4hν₀, ratio 1 : 4. Speed ∝ √KE, so the speed ratio is 1 : 2.",
+   "trap": "1 : 4 is the ratio of kinetic energies, not speeds."
+  },
+  {
+   "id": "phyB-225",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 2,
+   "q": "On the graph of stopping potential against frequency of incident light, the intercept on the frequency axis gives the",
+   "o": [
+    "Threshold frequency",
+    "Planck's constant",
+    "Work function in volts",
+    "Maximum kinetic energy"
+   ],
+   "a": 0,
+   "x": "eV₀ = hν − φ. V₀ = 0 when ν = ν₀, so the line cuts the frequency axis at the threshold frequency. The slope is h/e.",
+   "trap": "Planck's constant comes from the slope, not the intercept."
+  },
+  {
+   "id": "phyB-226",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "Einstein's photoelectric equation is (φ = work function)",
+   "o": [
+    "hν = φ − ½mv²max",
+    "hν = ½mv²max − φ",
+    "φ = hν + ½mv²max",
+    "hν = φ + ½mv²max"
+   ],
+   "a": 3,
+   "x": "The photon energy is used to free the electron (φ) and the rest appears as its maximum kinetic energy."
+  },
+  {
+   "id": "phyB-227",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 1,
+   "q": "Photocells used in automatic doors and burglar alarms work on the",
+   "o": [
+    "Seebeck effect",
+    "Hall effect",
+    "Photoelectric effect",
+    "Compton effect"
+   ],
+   "a": 2,
+   "x": "Light falling on the cathode releases electrons and a current flows; interrupting the light beam stops the current and operates a relay."
+  },
+  {
+   "id": "phyB-228",
+   "topic": "phy-modern",
+   "s": "Photon",
+   "d": 3,
+   "q": "A metal has a work function of 2.5 eV. To get photoelectrons with a stopping potential of 1.5 V, the wavelength of light needed is (hc = 12400 eV Å)",
+   "o": [
+    "4960 Å",
+    "3100 Å",
+    "8270 Å",
+    "1550 Å"
+   ],
+   "a": 1,
+   "x": "Photon energy = φ + eV₀ = 2.5 + 1.5 = 4 eV. λ = 12400/4 = 3100 Å.",
+   "trap": "4960 Å uses only the work function."
+  },
+  {
+   "id": "phyB-229",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "If the kinetic energy of a free electron becomes 4 times, its de Broglie wavelength becomes",
+   "o": [
+    "Half",
+    "One-fourth",
+    "Twice",
+    "Four times"
+   ],
+   "a": 0,
+   "x": "λ = h/p = h/√(2mK), so λ ∝ 1/√K. Four times K gives λ/2.",
+   "trap": "One-fourth treats λ as ∝ 1/K instead of 1/√K.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-230",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "The shortest wavelength in the Lyman series of hydrogen is about (R = 1.097 × 10⁷ m⁻¹)",
+   "o": [
+    "1216 Å",
+    "3646 Å",
+    "6563 Å",
+    "912 Å"
+   ],
+   "a": 3,
+   "x": "Series limit: n₂ = ∞ → 1, so 1/λ = R(1/1² − 0) and λ = 1/R ≈ 9.12 × 10⁻⁸ m = 912 Å.",
+   "trap": "1216 Å is the longest Lyman line (2 → 1)."
+  },
+  {
+   "id": "phyB-231",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "The total energy of the electron in a Bohr orbit of hydrogen is −3.4 eV. Its kinetic energy in that orbit is",
+   "o": [
+    "−3.4 eV",
+    "+6.8 eV",
+    "+3.4 eV",
+    "−6.8 eV"
+   ],
+   "a": 2,
+   "x": "In a Bohr orbit KE = −E and PE = 2E. So KE = +3.4 eV and PE = −6.8 eV.",
+   "trap": "−6.8 eV is the potential energy."
+  },
+  {
+   "id": "phyB-232",
+   "topic": "phy-modern",
+   "s": "Wave particle duality",
+   "d": 2,
+   "q": "The characteristic (line) X-ray spectrum of a target is produced when",
+   "o": [
+    "Fast electrons are slowed down by nuclei",
+    "Electrons jump between inner shells of the target atoms",
+    "Valence electrons of the target are excited",
+    "The target nuclei emit γ-rays"
+   ],
+   "a": 1,
+   "x": "An incoming electron knocks out an inner (e.g. K-shell) electron; an outer electron drops into the vacancy, emitting X-rays at wavelengths fixed by the element.",
+   "trap": "Slowing down by nuclei gives the continuous (bremsstrahlung) spectrum."
+  },
+  {
+   "id": "phyB-233",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "The half-life of a radioactive isotope is 693 s. Its decay constant is",
+   "o": [
+    "1 × 10⁻³ s⁻¹",
+    "693 s⁻¹",
+    "1 × 10⁻² s⁻¹",
+    "1.44 × 10³ s⁻¹"
+   ],
+   "a": 0,
+   "x": "λ = 0.693/T½ = 0.693/693 = 1 × 10⁻³ s⁻¹."
+  },
+  {
+   "id": "phyB-234",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "The correct order of penetrating power of radioactive radiations is",
+   "o": [
+    "α > β > γ",
+    "β > γ > α",
+    "α > γ > β",
+    "γ > β > α"
+   ],
+   "a": 3,
+   "x": "Penetrating power is the reverse of ionising power: α is stopped by paper, β by a few mm of aluminium, γ needs thick lead.",
+   "trap": "α > β > γ is the order of ionising power."
+  },
+  {
+   "id": "phyB-235",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 3,
+   "q": "A nucleus emits one α-particle and then two β⁻ particles. The final nucleus is",
+   "o": [
+    "An isobar of the original nucleus",
+    "An isotone of the original nucleus",
+    "An isotope of the original nucleus",
+    "The same nuclide as the original"
+   ],
+   "a": 2,
+   "x": "α: A − 4, Z − 2. Two β⁻: Z + 2, A unchanged. Net: A − 4, Z unchanged, so it is an isotope of the parent."
+  },
+  {
+   "id": "phyB-236",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 1,
+   "q": "One curie (1 Ci), an older unit of activity, equals",
+   "o": [
+    "1 Bq",
+    "3.7 × 10¹⁰ Bq",
+    "6.02 × 10²³ Bq",
+    "3.7 × 10⁷ Bq"
+   ],
+   "a": 1,
+   "x": "1 Ci = 3.7 × 10¹⁰ disintegrations per second, roughly the activity of 1 g of radium. 1 Bq = 1 decay per second."
+  },
+  {
+   "id": "phyB-237",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 2,
+   "q": "Taken into the body (for example by inhaling radon), the radiation that is most harmful to tissue is",
+   "o": [
+    "α-radiation",
+    "γ-radiation",
+    "β-radiation",
+    "Radio waves"
+   ],
+   "a": 0,
+   "x": "Inside the body, α-particles deposit all their energy in a tiny volume of tissue because their ionising power is highest. Outside, skin stops them.",
+   "trap": "γ is the most penetrating, which matters for sources outside the body."
+  },
+  {
+   "id": "phyB-238",
+   "topic": "phy-modern",
+   "s": "Radioactivity",
+   "d": 3,
+   "q": "Two radioactive samples X and Y start with equal numbers of nuclei. Their half-lives are 1 h and 2 h. After 4 h, the ratio of undecayed nuclei X : Y is",
+   "o": [
+    "1 : 2",
+    "4 : 1",
+    "1 : 16",
+    "1 : 4"
+   ],
+   "a": 3,
+   "x": "X: 4 half-lives → N₀/16. Y: 2 half-lives → N₀/4. Ratio (1/16) : (1/4) = 1 : 4.",
+   "trap": "1 : 2 uses the ratio of half-lives directly."
+  },
+  {
+   "id": "phyB-239",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "Arsenic (pentavalent) added to pure silicon acts as a",
+   "o": [
+    "Acceptor impurity, giving a p-type semiconductor",
+    "Donor impurity, giving a p-type semiconductor",
+    "Donor impurity, giving an n-type semiconductor",
+    "Acceptor impurity, giving an n-type semiconductor"
+   ],
+   "a": 2,
+   "x": "Four of arsenic's five valence electrons bond with Si; the fifth is donated as a free electron, so electrons are the majority carriers."
+  },
+  {
+   "id": "phyB-240",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "A two-input AND gate has inputs A = 1 and B = 0. Its output is",
+   "o": [
+    "1",
+    "0",
+    "Equal to A",
+    "Undefined"
+   ],
+   "a": 1,
+   "x": "AND gives 1 only when all inputs are 1 (Y = A·B = 1·0 = 0).",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-241",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 1,
+   "q": "In a metallic conductor, the valence band and the conduction band",
+   "o": [
+    "Overlap",
+    "Are separated by about 1 eV",
+    "Are separated by more than 3 eV",
+    "Are both completely empty"
+   ],
+   "a": 0,
+   "x": "With no forbidden gap, electrons move freely into empty states, so metals conduct at all temperatures. Semiconductors have a small gap, insulators a large one.",
+   "yrs": [
+    2080,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-242",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "When the reverse bias across a p-n junction is increased (below breakdown), the depletion layer",
+   "o": [
+    "Becomes thinner and the barrier falls",
+    "Disappears",
+    "Stays exactly the same",
+    "Becomes wider and the barrier rises"
+   ],
+   "a": 3,
+   "x": "Reverse bias pulls majority carriers away from the junction, exposing more immobile ions. The depletion layer widens and the potential barrier increases.",
+   "trap": "Thinner is what forward bias does."
+  },
+  {
+   "id": "phyB-243",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "Both inputs of a NAND gate are joined together and fed with a single input A. The gate now works as a",
+   "o": [
+    "AND gate",
+    "OR gate",
+    "NOT gate",
+    "NOR gate"
+   ],
+   "a": 2,
+   "x": "Y = (A·A)′ = A′. Input 0 gives 1, input 1 gives 0, which is an inverter.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-244",
+   "topic": "phy-modern",
+   "s": "Solid and semiconductor device",
+   "d": 2,
+   "q": "In a full-wave bridge rectifier, the number of diodes that conduct during each half-cycle of the input is",
+   "o": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "a": 1,
+   "x": "Of the four diodes, one opposite pair conducts in one half-cycle and the other pair in the next, so current flows the same way through the load each time.",
+   "trap": "4 is the total number of diodes, not those conducting at once.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-245",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "Which of these particles is a lepton?",
+   "o": [
+    "Muon",
+    "Proton",
+    "Neutron",
+    "Pion"
+   ],
+   "a": 0,
+   "x": "Leptons (electron, muon, tau and their neutrinos) are fundamental and contain no quarks. Protons and neutrons are baryons; pions are mesons.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-246",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 2,
+   "q": "A baryon made of the quarks u, u and s has a charge of (u = +2/3 e, s = −1/3 e)",
+   "o": [
+    "+2 e",
+    "0",
+    "−1 e",
+    "+1 e"
+   ],
+   "a": 3,
+   "x": "Charge = 2/3 + 2/3 − 1/3 = +1 e. The strange quark has the same charge as the down quark.",
+   "yrs": [
+    2079,
+    2080
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-247",
+   "topic": "phy-modern",
+   "s": "Particle physics and recent trends",
+   "d": 1,
+   "q": "Two galaxies are 50 Mpc and 150 Mpc away from us. By Hubble's law, the ratio of their recession speeds is",
+   "o": [
+    "3 : 1",
+    "1 : 9",
+    "1 : 3",
+    "1 : 1"
+   ],
+   "a": 2,
+   "x": "v = H₀d, so v ∝ d: 50 : 150 = 1 : 3.",
+   "yrs": [
+    2079,
+    2080,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "phyB-248",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 1,
+   "q": "A thermocouple converts",
+   "o": [
+    "Electrical energy into heat only",
+    "Heat energy directly into electrical energy",
+    "Light energy into electrical energy",
+    "Chemical energy into electrical energy"
+   ],
+   "a": 1,
+   "x": "Keeping the two junctions of dissimilar metals at different temperatures produces a thermo-emf (Seebeck effect)."
+  },
+  {
+   "id": "phyB-249",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 2,
+   "q": "As the hot junction of a thermocouple is heated, the thermo-emf is maximum at the",
+   "o": [
+    "Neutral temperature",
+    "Temperature of inversion",
+    "Melting point of either metal",
+    "Temperature of the cold junction"
+   ],
+   "a": 0,
+   "x": "The emf rises with temperature to a maximum at the neutral temperature, then falls, and reverses direction at the temperature of inversion.",
+   "trap": "At inversion the emf is zero, not maximum."
+  },
+  {
+   "id": "phyB-250",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 2,
+   "q": "The neutral temperature of a thermocouple",
+   "o": [
+    "Depends on the cold-junction temperature",
+    "Equals the temperature of inversion",
+    "Is the same for every pair of metals",
+    "Depends only on the two metals, not on the cold-junction temperature"
+   ],
+   "a": 3,
+   "x": "θn is fixed for a given pair of metals. The inversion temperature θi = 2θn − θc does depend on the cold junction.",
+   "trap": "The inversion temperature, not the neutral one, shifts with the cold junction."
+  },
+  {
+   "id": "phyB-251",
+   "topic": "phy-current-magnetism",
+   "s": "Thermoelectric effect",
+   "d": 3,
+   "q": "The thermo-emf of a thermocouple is E = (40θ − 0.04θ²) μV, where θ is the hot-junction temperature in °C with the cold junction at 0 °C. Its neutral temperature is",
+   "o": [
+    "1000 °C",
+    "250 °C",
+    "500 °C",
+    "40 °C"
+   ],
+   "a": 2,
+   "x": "At the neutral temperature dE/dθ = 0: 40 − 0.08θ = 0, so θ = 500 °C. (E = 0 again at 1000 °C, the inversion temperature.)",
+   "trap": "1000 °C is where E becomes zero: the inversion temperature."
+  },
+  {
+   "id": "phyB-252",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 1,
+   "q": "The relative permeability of a diamagnetic substance is",
+   "o": [
+    "Slightly more than 1",
+    "Slightly less than 1",
+    "Much greater than 1",
+    "Exactly zero"
+   ],
+   "a": 1,
+   "x": "μr = 1 + χ and χ is small and negative for diamagnetic materials, so μr is just below 1."
+  },
+  {
+   "id": "phyB-253",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 1,
+   "q": "Magnetic domains, small regions in which atomic magnetic moments are all aligned, exist in",
+   "o": [
+    "Ferromagnetic materials",
+    "Diamagnetic materials",
+    "Paramagnetic materials",
+    "All non-metals"
+   ],
+   "a": 0,
+   "x": "Domains explain the strong magnetisation of iron, cobalt and nickel. An applied field grows favourably aligned domains."
+  },
+  {
+   "id": "phyB-254",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "A material has magnetic susceptibility 999. Its relative permeability is",
+   "o": [
+    "998",
+    "999",
+    "0.001",
+    "1000"
+   ],
+   "a": 3,
+   "x": "μr = 1 + χ = 1 + 999 = 1000."
+  },
+  {
+   "id": "phyB-255",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "A small piece of a paramagnetic substance is placed in a non-uniform magnetic field. It",
+   "o": [
+    "Moves strongly from the stronger to the weaker part",
+    "Moves weakly from the stronger to the weaker part",
+    "Moves weakly from the weaker to the stronger part of the field",
+    "Is not affected"
+   ],
+   "a": 2,
+   "x": "Paramagnets are weakly magnetised along the field and are drawn towards stronger field. Diamagnets are pushed towards weaker field.",
+   "trap": "Moving to the weaker region is diamagnetic behaviour."
+  },
+  {
+   "id": "phyB-256",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "The magnetic susceptibility of which type of material is almost independent of temperature?",
+   "o": [
+    "Paramagnetic",
+    "Diamagnetic",
+    "Ferromagnetic",
+    "All three"
+   ],
+   "a": 1,
+   "x": "Diamagnetism comes from induced orbital currents, which do not depend on thermal agitation. Paramagnetic χ ∝ 1/T; ferromagnetism vanishes above the Curie temperature."
+  },
+  {
+   "id": "phyB-257",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 2,
+   "q": "A paramagnetic salt has susceptibility 1.2 × 10⁻⁵ at 300 K. Its susceptibility at 200 K is",
+   "o": [
+    "1.8 × 10⁻⁵",
+    "0.8 × 10⁻⁵",
+    "1.2 × 10⁻⁵",
+    "2.7 × 10⁻⁵"
+   ],
+   "a": 0,
+   "x": "Curie's law χ ∝ 1/T: χ₂ = 1.2 × 10⁻⁵ × 300/200 = 1.8 × 10⁻⁵.",
+   "trap": "0.8 × 10⁻⁵ takes χ ∝ T."
+  },
+  {
+   "id": "phyB-258",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic properties of materials",
+   "d": 1,
+   "q": "On a hysteresis loop, the reverse magnetising field needed to bring the magnetisation of a material to zero is called its",
+   "o": [
+    "Retentivity",
+    "Susceptibility",
+    "Permeability",
+    "Coercivity"
+   ],
+   "a": 3,
+   "x": "Retentivity is the magnetisation left when H = 0; coercivity is the reverse H needed to remove it.",
+   "trap": "Retentivity is the leftover magnetisation, not the field needed to remove it."
+  },
+  {
+   "id": "phyB-259",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 1,
+   "q": "If the frequency of an AC supply is doubled, the reactance of a capacitor connected to it",
+   "o": [
+    "Is doubled",
+    "Stays the same",
+    "Is halved",
+    "Becomes four times"
+   ],
+   "a": 2,
+   "x": "X_C = 1/(2πfC), so X_C ∝ 1/f. An inductor behaves the opposite way: X_L = 2πfL.",
+   "trap": "Doubling describes an inductor's reactance."
+  },
+  {
+   "id": "phyB-260",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "A series circuit has R = 8 Ω, X_L = 10 Ω and X_C = 4 Ω. Its impedance is",
+   "o": [
+    "22 Ω",
+    "10 Ω",
+    "14 Ω",
+    "6 Ω"
+   ],
+   "a": 1,
+   "x": "Z = √(R² + (X_L − X_C)²) = √(64 + 36) = 10 Ω.",
+   "trap": "22 Ω simply adds all three."
+  },
+  {
+   "id": "phyB-261",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "In a series LC circuit, both L and C are doubled. The resonant frequency becomes",
+   "o": [
+    "Half",
+    "Double",
+    "Four times",
+    "One-fourth"
+   ],
+   "a": 0,
+   "x": "f₀ = 1/(2π√(LC)). LC becomes 4 times, √(LC) doubles, so f₀ halves.",
+   "trap": "One-fourth forgets the square root."
+  },
+  {
+   "id": "phyB-262",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 1,
+   "q": "An AC voltmeter reads 100 V. The peak value of the voltage is about",
+   "o": [
+    "100 V",
+    "70.7 V",
+    "200 V",
+    "141 V"
+   ],
+   "a": 3,
+   "x": "AC meters read rms values. V₀ = √2 × V_rms = 1.414 × 100 ≈ 141 V.",
+   "trap": "70.7 V divides by √2 instead of multiplying.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-263",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "At resonance in a series LCR circuit, the power factor is",
+   "o": [
+    "0, as current lags by 90°",
+    "0.5",
+    "1, as current and voltage are in phase",
+    "0, as current leads by 90°"
+   ],
+   "a": 2,
+   "x": "At resonance X_L = X_C, so Z = R and the phase angle is zero. Power factor cos φ = R/Z = 1."
+  },
+  {
+   "id": "phyB-264",
+   "topic": "phy-current-magnetism",
+   "s": "Alternating currents",
+   "d": 2,
+   "q": "An AC circuit has V_rms = 200 V and I_rms = 5 A, with the current lagging the voltage by 60°. The average power consumed is",
+   "o": [
+    "1000 W",
+    "500 W",
+    "866 W",
+    "0 W"
+   ],
+   "a": 1,
+   "x": "P = V_rms I_rms cos φ = 200 × 5 × cos 60° = 500 W.",
+   "trap": "1000 W ignores the power factor."
+  },
+  {
+   "id": "phyB-265",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 1,
+   "q": "The magnetic field lines around a long straight current-carrying wire are",
+   "o": [
+    "Concentric circles centred on the wire",
+    "Straight lines parallel to the wire",
+    "Straight lines radiating from the wire",
+    "Ellipses along the wire"
+   ],
+   "a": 0,
+   "x": "The lines circle the wire in planes perpendicular to it; their direction is given by the right-hand grip rule."
+  },
+  {
+   "id": "phyB-266",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "A circular coil of 100 turns and radius 10 cm carries a current of 1 A. The magnetic field at its centre is (μ₀ = 4π × 10⁻⁷ T m A⁻¹)",
+   "o": [
+    "6.28 × 10⁻⁶ T",
+    "1.26 × 10⁻³ T",
+    "3.14 × 10⁻⁴ T",
+    "6.28 × 10⁻⁴ T"
+   ],
+   "a": 3,
+   "x": "B = μ₀NI/2r = 4π × 10⁻⁷ × 100 × 1/(2 × 0.1) = 2π × 10⁻⁴ ≈ 6.28 × 10⁻⁴ T.",
+   "trap": "1.26 × 10⁻³ T forgets the 2 in 2r."
+  },
+  {
+   "id": "phyB-267",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "A 0.5 m wire carrying 4 A lies at 30° to a uniform magnetic field of 0.2 T. The magnetic force on it is",
+   "o": [
+    "0.4 N",
+    "0.35 N",
+    "0.2 N",
+    "Zero"
+   ],
+   "a": 2,
+   "x": "F = BIL sin θ = 0.2 × 4 × 0.5 × sin 30° = 0.4 × 0.5 = 0.2 N.",
+   "trap": "0.4 N ignores the angle."
+  },
+  {
+   "id": "phyB-268",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 3,
+   "q": "A proton and a deuteron (same charge, twice the mass) enter a uniform magnetic field at right angles with the same kinetic energy. The ratio of the radii of their paths r_p : r_d is",
+   "o": [
+    "1 : 2",
+    "1 : √2",
+    "2 : 1",
+    "1 : 1"
+   ],
+   "a": 1,
+   "x": "r = mv/qB = √(2mK)/qB. Same K and q, so r ∝ √m: r_p : r_d = 1 : √2.",
+   "trap": "1 : 2 holds for equal speeds, not equal kinetic energies."
+  },
+  {
+   "id": "phyB-269",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "A long solenoid has 1000 turns per metre and carries 2 A. The magnetic field inside it is about (μ₀ = 4π × 10⁻⁷ T m A⁻¹)",
+   "o": [
+    "2.5 × 10⁻³ T",
+    "2.5 × 10⁻⁶ T",
+    "1.3 × 10⁻³ T",
+    "8 × 10⁻³ T"
+   ],
+   "a": 0,
+   "x": "B = μ₀nI = 4π × 10⁻⁷ × 1000 × 2 ≈ 2.51 × 10⁻³ T.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "phyB-270",
+   "topic": "phy-current-magnetism",
+   "s": "Magnetic field",
+   "d": 2,
+   "q": "Two long parallel wires 1 m apart in vacuum each carry a current of 1 A. The force per metre between them is",
+   "o": [
+    "4π × 10⁻⁷ N",
+    "1 N",
+    "2π × 10⁻⁷ N",
+    "2 × 10⁻⁷ N"
+   ],
+   "a": 3,
+   "x": "F/L = μ₀I₁I₂/(2πd) = 4π × 10⁻⁷ × 1 × 1/(2π × 1) = 2 × 10⁻⁷ N. This was the old definition of the ampere.",
+   "trap": "4π × 10⁻⁷ is μ₀ itself, not the force."
+  },
+  {
+   "id": "phyB-271",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 1,
+   "q": "The north pole of a bar magnet is pushed towards a coil. The face of the coil nearer the magnet behaves as a",
+   "o": [
+    "South pole",
+    "Neutral surface",
+    "North pole",
+    "North pole only after the magnet stops"
+   ],
+   "a": 2,
+   "x": "By Lenz's law the induced current opposes the approach, so the near face becomes a north pole and repels the magnet.",
+   "trap": "South pole would attract the magnet and break energy conservation."
+  },
+  {
+   "id": "phyB-272",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 1,
+   "q": "Eddy currents are put to useful work in",
+   "o": [
+    "Laminated transformer cores",
+    "Electromagnetic braking and induction furnaces",
+    "Electrostatic precipitators",
+    "Thermocouples"
+   ],
+   "a": 1,
+   "x": "Eddy currents oppose motion (braking) and heat metal (induction furnace). Laminating a core is done to reduce them, not to use them.",
+   "trap": "Laminations exist to reduce eddy currents."
+  },
+  {
+   "id": "phyB-273",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "A 0.5 m rod moves at 4 m s⁻¹ at right angles to a uniform magnetic field of 0.2 T, with the rod, its velocity and the field mutually perpendicular. The emf induced across its ends is",
+   "o": [
+    "0.4 V",
+    "0.1 V",
+    "4 V",
+    "1.6 V"
+   ],
+   "a": 0,
+   "x": "Motional emf e = Blv = 0.2 × 0.5 × 4 = 0.4 V."
+  },
+  {
+   "id": "phyB-274",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "The mutual inductance of two coils is 0.2 H. If the current in one coil changes steadily by 5 A in 0.1 s, the emf induced in the other is",
+   "o": [
+    "1 V",
+    "0.1 V",
+    "100 V",
+    "10 V"
+   ],
+   "a": 3,
+   "x": "e = M dI/dt = 0.2 × 5/0.1 = 10 V.",
+   "trap": "1 V forgets to divide by the time."
+  },
+  {
+   "id": "phyB-275",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "A long solenoid has its number of turns doubled, keeping its length and area the same. Its self-inductance becomes",
+   "o": [
+    "Twice",
+    "Half",
+    "Four times",
+    "Unchanged"
+   ],
+   "a": 2,
+   "x": "L = μ₀N²A/l, so L ∝ N². Doubling N makes L four times.",
+   "trap": "Twice forgets that N enters squared."
+  },
+  {
+   "id": "phyB-276",
+   "topic": "phy-current-magnetism",
+   "s": "Electromagnetic induction",
+   "d": 2,
+   "q": "To double the energy stored in an inductor, the current through it must be multiplied by",
+   "o": [
+    "2",
+    "√2",
+    "4",
+    "1/√2"
+   ],
+   "a": 1,
+   "x": "U = ½LI², so U ∝ I². Doubling U needs I multiplied by √2.",
+   "trap": "2 would make the energy four times."
+  },
+  {
+   "id": "phyB-277",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 3,
+   "q": "Ten identical resistors are first joined in series and then in parallel. The ratio R_series : R_parallel is",
+   "o": [
+    "100 : 1",
+    "10 : 1",
+    "1 : 100",
+    "1 : 10"
+   ],
+   "a": 0,
+   "x": "Series: 10R. Parallel: R/10. Ratio = 10R ÷ (R/10) = 100.",
+   "trap": "10 : 1 compares only one of the two arrangements with a single resistor."
+  },
+  {
+   "id": "phyB-278",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 1,
+   "q": "At a junction, currents of 3 A and 2 A flow in and 4 A flows out along a third wire. The current in the fourth wire is",
+   "o": [
+    "1 A flowing in",
+    "9 A flowing out",
+    "5 A flowing in",
+    "1 A flowing out"
+   ],
+   "a": 3,
+   "x": "Kirchhoff's junction law: total in = total out. 3 + 2 = 4 + I, so I = 1 A outward."
+  },
+  {
+   "id": "phyB-279",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 2,
+   "q": "The sensitivity of a potentiometer can be increased by",
+   "o": [
+    "Decreasing the length of the wire",
+    "Using a wire of higher resistance per cm, with the same current",
+    "Increasing the length of the wire, keeping the same driving cell",
+    "Increasing the current in the wire"
+   ],
+   "a": 2,
+   "x": "A longer wire lowers the potential gradient (V per cm), so a small emf difference gives a larger shift in balancing length.",
+   "trap": "More current raises the potential gradient and lowers sensitivity."
+  },
+  {
+   "id": "phyB-280",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 3,
+   "q": "On a potentiometer, a cell balances at 100 cm on open circuit. When a 4 Ω resistor is joined across the cell, the balance point moves to 80 cm. The internal resistance of the cell is",
+   "o": [
+    "0.8 Ω",
+    "1 Ω",
+    "5 Ω",
+    "4 Ω"
+   ],
+   "a": 1,
+   "x": "r = R(l₁/l₂ − 1) = 4(100/80 − 1) = 4 × 0.25 = 1 Ω."
+  },
+  {
+   "id": "phyB-281",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical circuits",
+   "d": 2,
+   "q": "A galvanometer is converted into an ammeter with a shunt of resistance S. The resistance of the resulting ammeter is",
+   "o": [
+    "Less than S",
+    "Equal to the galvanometer resistance",
+    "Greater than the galvanometer resistance",
+    "Equal to S"
+   ],
+   "a": 0,
+   "x": "The shunt and the galvanometer are in parallel, and a parallel combination is smaller than its smallest branch, so R_A < S.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "phyB-282",
+   "topic": "phy-current-magnetism",
+   "s": "Electrical quantities",
+   "d": 3,
+   "q": "A copper wire of length L and diameter d has resistance R. A copper wire of length 2L and diameter 2d has resistance",
+   "o": [
+    "R",
+    "2R",
+    "4R",
+    "R/2"
+   ],
+   "a": 3,
+   "x": "R = ρL/A with A ∝ d². Length ×2 doubles R; diameter ×2 makes area ×4, dividing R by 4. Net: R × 2/4 = R/2.",
+   "trap": "R forgets that area goes as diameter squared.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  }
+ ]
+}

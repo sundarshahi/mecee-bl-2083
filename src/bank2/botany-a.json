@@ -1,0 +1,4356 @@
+{
+ "subject": "Botany",
+ "topics": [
+  {
+   "id": "bot-biodiversity",
+   "name": "Biodiversity",
+   "weight": 9,
+   "concepts": [
+    "Two-kingdom: Linnaeus; five-kingdom: Whittaker (1969); three domains (Archaea, Bacteria, Eukarya): Carl Woese",
+    "Hierarchy: Kingdom → Division → Class → Order → Family → Genus → Species [repeat]",
+    "Archaebacteria: no peptidoglycan wall, ether-linked membrane lipids; methanogens, halophiles, thermoacidophiles [repeat]",
+    "Viruses: nucleic acid + capsid; TMV ssRNA, T4 phage dsDNA; viroid = naked RNA; Beijerinck: contagium vivum fluidum",
+    "Cyanobacteria: heterocysts fix N₂; phycobilins shared with red algae; store cyanophycean starch [repeat]",
+    "Rhizopus = black bread mould; Mucor: zygospores; yeast (Ascomycetes) buds and ferments sugar to ethanol + CO₂ [repeat]",
+    "Lichen = alga + fungus; crustose, foliose, fruticose (Usnea); cyphellae for gas exchange; SO₂ indicators [repeat]",
+    "Algae stores: green starch, brown laminarin/mannitol, red floridean starch; agar from Gelidium, algin from brown algae",
+    "Spirogyra: spiral ribbon chloroplast, scalariform/lateral conjugation, zygospore is the only diploid stage",
+    "Bryophytes: gametophyte dominant, sporophyte dependent; Marchantia gemmae; Anthoceros basal meristem [repeat]",
+    "Dryopteris: dictyostele rhizome, reniform indusium, heart-shaped bisexual haploid prothallus [repeat]",
+    "Pinus: monoecious, winged pollen, haploid endosperm; chilgoza from Pinus gerardiana; P. roxburghii needles in 3s [repeat]",
+    "Stem modifications: ginger rhizome, potato tuber, banana sucker; stilt roots from lower nodes of maize [repeat]",
+    "Families: Brassicaceae siliqua + replum, tetradynamous; Fabaceae vexillary, diadelphous; Solanaceae oblique ovary; Liliaceae P3+3 A3+3 G(3) [repeat]",
+    "Spirogyra/Mucor zygospore undergoes meiosis; red algae grow deepest; iodine from kelps; fern antherozoids multiflagellate [repeat]",
+    "Medicinal: Neem azadirachtin, Sarpagandha reserpine (hypertension), Yarsagumba fungus on caterpillar, Tulsi cough, Ginger nausea"
+   ]
+  },
+  {
+   "id": "bot-ecology",
+   "name": "Ecology & Vegetation",
+   "weight": 4,
+   "concepts": [
+    "Pond: phytoplankton producers; littoral zone rooted plants; energy pyramid always upright; 10% law",
+    "Interactions: mutualism (+,+), commensalism (+,0), amensalism (−,0), parasitism (+,−); Cuscuta is a parasite",
+    "Interlinked food chains form a food web [repeat]",
+    "Nitrogen cycle: Rhizobium fixes, Nitrosomonas NH₃→NO₂⁻, Nitrobacter NO₂⁻→NO₃⁻, Pseudomonas denitrifies",
+    "CO₂ is the main anthropogenic greenhouse gas; methane from paddy fields and cattle",
+    "Acid rain: SO₂ and NOₓ; ozone in stratosphere measured in Dobson units; CFC chlorine destroys ozone",
+    "Forest zones of Nepal: Sal in Terai/Siwalik (tropical); Schima–Castanopsis and chir pine subtropical [repeat]",
+    "Invasive aliens in Nepal: Mikania micrantha, Lantana, Parthenium, water hyacinth",
+    "Succession: pioneer → seral stages → climax; abandoned field = secondary succession [repeat]",
+    "Hydrosere: phytoplankton → submerged → floating → reed-swamp → sedge-meadow → woodland → forest [repeat]",
+    "Xerosere pioneer: crustose lichens; xerophytes have sunken stomata; hydrophytes have aerenchyma",
+    "Heliophytes are sun-loving, sciophytes shade-loving [repeat]",
+    "Obligate mutualism (+,+); Gause competitive exclusion; benthos on bottom; velamen in epiphytes; eutrophication lowers dissolved O₂",
+    "Tropical rainforests hold maximum species diversity [repeat]"
+   ]
+  },
+  {
+   "id": "bot-anatomy",
+   "name": "Plant Anatomy",
+   "weight": 3,
+   "concepts": [
+    "Meristems: apical (length), intercalary (grass internode base), lateral (girth)",
+    "Collenchyma: living, corner thickening of cellulose/pectin; sclerenchyma: dead, lignified fibres and sclereids",
+    "Xylem parenchyma is the only living xylem element; companion cells occur only in angiosperms",
+    "Vessels absent in gymnosperms (except Gnetales); tracheids conduct water there",
+    "Bundles: radial (roots), conjoint collateral open (dicot stem), closed (monocot stem) [repeat]",
+    "Bicollateral: Cucurbita; amphicribral (phloem around xylem): ferns; amphivasal: Dracaena [repeat]",
+    "Monocot stem: scattered bundles = atactostele; lysigenous water cavity; dicot stem eustele [repeat]",
+    "Roots: exarch xylem; dicot root di- to tetrarch, monocot root polyarch with large pith",
+    "Casparian strips in endodermis; lateral roots arise endogenously from pericycle",
+    "Dicot leaf dorsiventral (palisade + spongy); grass leaf isobilateral with bulliform cells",
+    "Grass guard cells dumb-bell shaped; Kranz anatomy in C₄ leaves",
+    "Monocots cannot be grafted: no cambium [repeat]; old sieve plates sealed by callose; cork walls suberised; companion cells living"
+   ]
+  },
+  {
+   "id": "bot-applied",
+   "name": "Applied Botany",
+   "weight": 3,
+   "concepts": [
+    "Totipotency: a single cell can form a whole plant; Haberlandt = father of tissue culture",
+    "Explant surface sterilised with sodium hypochlorite/HgCl₂/ethanol; medium autoclaved at 121 °C, 15 psi [repeat]",
+    "High cytokinin: shoots; high auxin: roots; balance: callus",
+    "Meristem culture gives virus-free plants; anther culture gives haploids; protoplast fusion gives somatic hybrids (pomato)",
+    "Cryopreservation of germplasm in liquid nitrogen at −196 °C [repeat]",
+    "Restriction enzymes cut (EcoRI GAATTC), DNA ligase joins; Ti plasmid of Agrobacterium tumefaciens is a vector [repeat]",
+    "PCR uses Taq polymerase; DNA moves to the anode in gel electrophoresis",
+    "Bt cotton: cry gene of Bacillus thuringiensis; Golden rice: β-carotene [repeat]",
+    "Biofertilizers: Rhizobium, Azotobacter, Azolla–Anabaena, mycorrhiza; green manure: Sesbania, sunn hemp",
+    "Heterosis = hybrid vigour; Norman Borlaug led the Green Revolution with semi-dwarf wheat",
+    "Bio-engineering: live plants (grasses, bamboo, shrubs) stabilise slopes and control erosion",
+    "Food security: all people, at all times, access to sufficient, safe, nutritious food; aflatoxin from Aspergillus flavus"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "bot-015",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "The five-kingdom classification was proposed by",
+   "o": [
+    "R.H. Whittaker",
+    "Carolus Linnaeus",
+    "Copeland",
+    "Carl Woese"
+   ],
+   "a": 0,
+   "x": "Whittaker (1969): Monera, Protista, Fungi, Plantae, Animalia.",
+   "trap": "Woese gave the three-domain system.",
+   "s": "General concept of classification: 5-Kingdom system"
+  },
+  {
+   "id": "bot-016",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "An infectious agent made only of a small, naked circular RNA without a protein coat is a",
+   "o": [
+    "Prion",
+    "Bacteriophage",
+    "Viroid",
+    "Virus"
+   ],
+   "a": 2,
+   "x": "Viroids (Diener, 1971) cause plant diseases such as potato spindle tuber; they lack a capsid.",
+   "trap": "Prions are infectious proteins with no nucleic acid.",
+   "s": "Monera & Virus: types of viruses"
+  },
+  {
+   "id": "bot-017",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "The genetic material of tobacco mosaic virus (TMV) is",
+   "o": [
+    "Double-stranded DNA",
+    "Single-stranded RNA",
+    "Single-stranded DNA",
+    "Double-stranded RNA"
+   ],
+   "a": 1,
+   "x": "TMV is a rod-shaped plant virus with ssRNA inside a protein coat.",
+   "s": "Monera & Virus: structure of viruses"
+  },
+  {
+   "id": "bot-018",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "In Nostoc and Anabaena, nitrogen fixation takes place in",
+   "o": [
+    "Akinetes",
+    "Hormogonia",
+    "Vegetative cells",
+    "Heterocysts"
+   ],
+   "a": 3,
+   "x": "Heterocysts are thick-walled cells lacking PS II, so nitrogenase is protected from O₂.",
+   "trap": "Akinetes are resting spores, not N₂-fixing cells.",
+   "s": "General characteristics of Cyanobacteria"
+  },
+  {
+   "id": "bot-019",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Gram-positive bacteria retain the crystal violet stain because they have",
+   "o": [
+    "An outer lipopolysaccharide membrane",
+    "No cell wall",
+    "A cellulose cell wall",
+    "A thick peptidoglycan cell wall"
+   ],
+   "a": 3,
+   "x": "The thick peptidoglycan layer traps the crystal violet–iodine complex during alcohol wash.",
+   "trap": "Outer LPS membrane belongs to Gram-negative bacteria.",
+   "s": "Structure of bacterial cell"
+  },
+  {
+   "id": "bot-020",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Transfer of bacterial DNA from one bacterium to another through a bacteriophage is called",
+   "o": [
+    "Transformation",
+    "Conjugation",
+    "Transduction",
+    "Transposition"
+   ],
+   "a": 2,
+   "x": "In transduction a phage carries host DNA to a new bacterium.",
+   "trap": "Transformation is uptake of free DNA (Griffith).",
+   "s": "Monera: bacteria"
+  },
+  {
+   "id": "bot-021",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "Lichens are good indicators of air pollution by",
+   "o": [
+    "Carbon dioxide",
+    "Nitrogen gas",
+    "Sulphur dioxide",
+    "Water vapour"
+   ],
+   "a": 2,
+   "x": "Lichens are highly sensitive to SO₂ and disappear from polluted areas.",
+   "s": "Introduction and types of lichens"
+  },
+  {
+   "id": "bot-022",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Mycorrhizal fungi mainly benefit the host plant by increasing absorption of",
+   "o": [
+    "Carbon dioxide",
+    "Oxygen",
+    "Phosphorus",
+    "Sodium"
+   ],
+   "a": 2,
+   "x": "Fungal hyphae extend the root's absorbing surface and especially increase phosphate uptake.",
+   "s": "Fungi: economic importance"
+  },
+  {
+   "id": "bot-023",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Scalariform (ladder-like) conjugation is characteristic of",
+   "o": [
+    "Spirogyra",
+    "Chlamydomonas",
+    "Volvox",
+    "Ulothrix"
+   ],
+   "a": 0,
+   "x": "Two Spirogyra filaments join by conjugation tubes, appearing like a ladder.",
+   "s": "Structure & reproduction of Spirogyra"
+  },
+  {
+   "id": "bot-024",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "The brown colour of Phaeophyceae (brown algae) is due to",
+   "o": [
+    "Phycoerythrin",
+    "Fucoxanthin",
+    "Phycocyanin",
+    "Chlorophyll b"
+   ],
+   "a": 1,
+   "x": "Fucoxanthin, a xanthophyll, masks chlorophyll in brown algae.",
+   "trap": "Phycoerythrin gives the red colour of red algae.",
+   "s": "Characteristic features of Phaeophyceae"
+  },
+  {
+   "id": "bot-025",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "The main plant body of a moss (e.g. Funaria) is",
+   "o": [
+    "Diploid sporophyte",
+    "Triploid endosperm",
+    "Diploid protonema",
+    "Haploid gametophyte"
+   ],
+   "a": 3,
+   "x": "In bryophytes the gametophyte (n) is dominant; the sporophyte grows on it.",
+   "trap": "Pteridophytes have a dominant sporophyte, not bryophytes.",
+   "s": "Bryophytes: Bryopsida (Moss)"
+  },
+  {
+   "id": "bot-026",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Heterospory is found in",
+   "o": [
+    "Selaginella",
+    "Dryopteris",
+    "Lycopodium",
+    "Equisetum"
+   ],
+   "a": 0,
+   "x": "Selaginella produces microspores and megaspores; the others are homosporous.",
+   "trap": "Lycopodium is related to Selaginella but is homosporous.",
+   "s": "Characteristic features of Pteridophytes"
+  },
+  {
+   "id": "bot-027",
+   "topic": "bot-biodiversity",
+   "d": 3,
+   "q": "The endosperm of a gymnosperm such as Pinus is",
+   "o": [
+    "Triploid, formed after fertilization",
+    "Haploid, formed before fertilization",
+    "Diploid, formed after fertilization",
+    "Triploid, formed before fertilization"
+   ],
+   "a": 1,
+   "x": "Gymnosperm endosperm is female gametophyte tissue (n); there is no double fertilization.",
+   "trap": "Triploid is the angiosperm endosperm.",
+   "s": "Gymnosperms: reproduction of Pinus"
+  },
+  {
+   "id": "bot-028",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "Vexillary aestivation is characteristic of the family",
+   "o": [
+    "Solanaceae",
+    "Liliaceae",
+    "Brassicaceae",
+    "Fabaceae"
+   ],
+   "a": 3,
+   "x": "Pea flowers have a large standard overlapping two wings, which overlap the keel.",
+   "s": "Families: Fabaceae",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-029",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Tetradynamous stamens are found in",
+   "o": [
+    "Mustard",
+    "Pea",
+    "Potato",
+    "Onion"
+   ],
+   "a": 0,
+   "x": "Brassicaceae (mustard) has 6 stamens: 4 long inner and 2 short outer.",
+   "s": "Families: Brassicaceae",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-030",
+   "topic": "bot-biodiversity",
+   "d": 3,
+   "q": "A bicarpellary, obliquely placed ovary with swollen axile placentae is a feature of",
+   "o": [
+    "Fabaceae",
+    "Liliaceae",
+    "Malvaceae",
+    "Solanaceae"
+   ],
+   "a": 3,
+   "x": "Solanaceae (potato, tomato, Datura) has an oblique bilocular ovary with swollen placentae.",
+   "trap": "Fabaceae has a monocarpellary ovary with marginal placentation.",
+   "s": "Families: Solanaceae"
+  },
+  {
+   "id": "bot-031",
+   "topic": "bot-biodiversity",
+   "d": 2,
+   "q": "Marginal placentation is found in",
+   "o": [
+    "Mustard",
+    "China rose",
+    "Pea",
+    "Dianthus"
+   ],
+   "a": 2,
+   "x": "Monocarpellary pea ovary bears ovules along the ventral suture (margin).",
+   "trap": "Mustard is parietal; China rose axile; Dianthus free central.",
+   "s": "Morphology of flower"
+  },
+  {
+   "id": "bot-032",
+   "topic": "bot-biodiversity",
+   "d": 1,
+   "q": "The edible part of mango is the",
+   "o": [
+    "Endosperm",
+    "Mesocarp",
+    "Thalamus",
+    "Seed coat"
+   ],
+   "a": 1,
+   "x": "Mango is a drupe; its fleshy, juicy mesocarp is eaten.",
+   "trap": "Endosperm is the edible part of coconut.",
+   "s": "Morphology of fruit"
+  },
+  {
+   "id": "bot-033",
+   "topic": "bot-anatomy",
+   "d": 1,
+   "q": "Casparian strips are present in the root",
+   "o": [
+    "Pericycle",
+    "Epidermis",
+    "Endodermis",
+    "Cortex"
+   ],
+   "a": 2,
+   "x": "Suberin bands on radial and inner tangential walls of endodermis block apoplastic flow.",
+   "trap": "Pericycle lies just inside endodermis and is a common confusion.",
+   "s": "T.S. of monocot and dicot root"
+  },
+  {
+   "id": "bot-034",
+   "topic": "bot-anatomy",
+   "d": 1,
+   "q": "Scattered, closed vascular bundles without cambium are characteristic of",
+   "o": [
+    "Dicot stem",
+    "Monocot stem",
+    "Dicot root",
+    "Monocot root"
+   ],
+   "a": 1,
+   "x": "Monocot stems (e.g. maize) have many scattered closed bundles in ground tissue.",
+   "trap": "Roots have radial bundles, not scattered ones.",
+   "s": "Types of vascular bundles; monocot stem",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-035",
+   "topic": "bot-anatomy",
+   "d": 2,
+   "q": "Compared with autumn wood, spring wood has",
+   "o": [
+    "Wider vessels and lower density",
+    "Narrower vessels and higher density",
+    "No vessels",
+    "Darker colour and thicker walls"
+   ],
+   "a": 0,
+   "x": "In spring cambium is very active, forming large, thin-walled vessels; the wood is light and less dense.",
+   "trap": "Narrow, dense vessels describe autumn (late) wood.",
+   "s": "Plant tissues: secondary growth"
+  },
+  {
+   "id": "bot-036",
+   "topic": "bot-anatomy",
+   "d": 2,
+   "q": "Duramen is another name for",
+   "o": [
+    "Sapwood",
+    "Cork",
+    "Heartwood",
+    "Secondary phloem"
+   ],
+   "a": 2,
+   "x": "Duramen (heartwood) is the dark, non-conducting central wood; sapwood is alburnum.",
+   "trap": "Sapwood (alburnum) is the outer, conducting wood.",
+   "s": "Plant tissues: secondary growth"
+  },
+  {
+   "id": "bot-037",
+   "topic": "bot-anatomy",
+   "d": 2,
+   "q": "Periderm consists of",
+   "o": [
+    "Phellem and secondary phloem",
+    "Cork cambium and vascular cambium",
+    "Phellem, phellogen and phelloderm",
+    "Epidermis, cortex and pericycle"
+   ],
+   "a": 2,
+   "x": "Cork cambium (phellogen) forms cork (phellem) outside and phelloderm inside; together they are periderm.",
+   "s": "Plant tissues: secondary growth"
+  },
+  {
+   "id": "bot-061",
+   "topic": "bot-applied",
+   "d": 2,
+   "q": "The Ti plasmid used as a vector for plant genetic engineering is obtained from",
+   "o": [
+    "Agrobacterium rhizogenes",
+    "Agrobacterium tumefaciens",
+    "Bacillus thuringiensis",
+    "Escherichia coli"
+   ],
+   "a": 1,
+   "x": "Ti (tumour-inducing) plasmid of A. tumefaciens causes crown gall; disarmed forms transfer genes into plants.",
+   "trap": "A. rhizogenes carries the Ri plasmid, not Ti.",
+   "s": "Genetic engineering"
+  },
+  {
+   "id": "bot-062",
+   "topic": "bot-applied",
+   "d": 2,
+   "q": "The recognition sequence of the restriction enzyme EcoRI is",
+   "o": [
+    "GGATCC",
+    "AAGCTT",
+    "GAATTC",
+    "GATATC"
+   ],
+   "a": 2,
+   "x": "EcoRI cuts G↓AATTC, leaving sticky ends; GGATCC is BamHI, AAGCTT is HindIII.",
+   "s": "Genetic engineering",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "bot-063",
+   "topic": "bot-applied",
+   "d": 2,
+   "q": "In plant tissue culture, a high cytokinin to auxin ratio in the medium promotes",
+   "o": [
+    "Shoot formation",
+    "Root formation",
+    "Only callus growth",
+    "Embryo death"
+   ],
+   "a": 0,
+   "x": "Skoog and Miller: high cytokinin favours shoots, high auxin favours roots, balanced gives callus.",
+   "trap": "Root formation needs a high auxin ratio.",
+   "s": "Plant tissue culture"
+  },
+  {
+   "id": "bot-064",
+   "topic": "bot-applied",
+   "d": 1,
+   "q": "Virus-free plants are obtained by culturing",
+   "o": [
+    "Shoot apical meristem",
+    "Mature leaf",
+    "Old root",
+    "Phloem tissue"
+   ],
+   "a": 0,
+   "x": "Viruses rarely reach the rapidly dividing apical meristem, which lacks vascular connection.",
+   "s": "Plant tissue culture"
+  },
+  {
+   "id": "bot-065",
+   "topic": "bot-ecology",
+   "d": 1,
+   "q": "Which ecological pyramid is always upright?",
+   "o": [
+    "Pyramid of numbers",
+    "Pyramid of biomass",
+    "Pyramid of energy",
+    "Both numbers and biomass"
+   ],
+   "a": 2,
+   "x": "Energy decreases at every trophic level, so the energy pyramid can never be inverted.",
+   "trap": "Pyramid of biomass is inverted in a pond.",
+   "s": "Ecosystem ecology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "bot-066",
+   "topic": "bot-ecology",
+   "d": 2,
+   "q": "Producers in an ecosystem fix 10,000 J of energy. By the 10% law, the energy available to tertiary consumers is",
+   "o": [
+    "10 J",
+    "100 J",
+    "1000 J",
+    "1 J"
+   ],
+   "a": 0,
+   "x": "10,000 → 1000 (primary) → 100 (secondary) → 10 J (tertiary).",
+   "trap": "100 J stops at secondary consumers.",
+   "s": "Ecosystem ecology"
+  },
+  {
+   "id": "bot-067",
+   "topic": "bot-ecology",
+   "d": 2,
+   "q": "The pioneer community of a xerosere on bare rock is",
+   "o": [
+    "Mosses",
+    "Phytoplankton",
+    "Herbs",
+    "Crustose lichens"
+   ],
+   "a": 3,
+   "x": "Crustose lichens secrete acids that weather rock and start soil formation.",
+   "trap": "Phytoplankton are pioneers of a hydrosere.",
+   "s": "Ecological succession: Xerosere",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "bot-068",
+   "topic": "bot-ecology",
+   "d": 1,
+   "q": "A high biochemical oxygen demand (BOD) of a water body indicates",
+   "o": [
+    "High organic pollution",
+    "Clean, unpolluted water",
+    "High dissolved oxygen",
+    "Absence of microbes"
+   ],
+   "a": 0,
+   "x": "Much organic matter means microbes consume more O₂ to decompose it, raising BOD.",
+   "s": "Ecological imbalances"
+  },
+  {
+   "id": "bot-069",
+   "topic": "bot-ecology",
+   "d": 2,
+   "q": "In a food chain contaminated with DDT, the highest concentration of DDT is found in",
+   "o": [
+    "Producers",
+    "Herbivores",
+    "Zooplankton",
+    "Top carnivores such as fish-eating birds"
+   ],
+   "a": 3,
+   "x": "DDT is not metabolised or excreted, so it accumulates and magnifies at each trophic level (biomagnification).",
+   "s": "Ecological imbalances"
+  },
+  {
+   "id": "bot-070",
+   "topic": "bot-ecology",
+   "d": 1,
+   "q": "Which is an example of in-situ conservation?",
+   "o": [
+    "Seed bank",
+    "Botanical garden",
+    "Chitwan National Park",
+    "Tissue culture lab"
+   ],
+   "a": 2,
+   "x": "In-situ protects species in their natural habitat; the others are ex-situ.",
+   "s": "Vegetation: conservation"
+  },
+  {
+   "id": "botA-001",
+   "topic": "bot-biodiversity",
+   "s": "Binomial nomenclature",
+   "d": 1,
+   "q": "Binomial nomenclature was introduced by",
+   "o": [
+    "R.H. Whittaker",
+    "Carl Woese",
+    "Bentham and Hooker",
+    "Carolus Linnaeus"
+   ],
+   "a": 3,
+   "x": "Linnaeus (Species Plantarum, 1753) gave each species a two-part Latin name: genus + specific epithet.",
+   "trap": "Whittaker gave five kingdoms, not binomials."
+  },
+  {
+   "id": "botA-002",
+   "topic": "bot-biodiversity",
+   "s": "3 Domain system",
+   "d": 1,
+   "q": "The three-domain system of classification was proposed by",
+   "o": [
+    "R.H. Whittaker",
+    "Ernst Haeckel",
+    "Carolus Linnaeus",
+    "Carl Woese"
+   ],
+   "a": 3,
+   "x": "Woese (1990) used rRNA sequences to divide life into Archaea, Bacteria and Eukarya.",
+   "trap": "Whittaker proposed five kingdoms."
+  },
+  {
+   "id": "botA-003",
+   "topic": "bot-biodiversity",
+   "s": "Taxonomic hierarchies",
+   "d": 2,
+   "q": "Which sequence of taxonomic categories is in correct descending order?",
+   "o": [
+    "Division → Order → Class → Family → Genus",
+    "Class → Division → Order → Genus → Family",
+    "Division → Class → Family → Order → Genus",
+    "Division → Class → Order → Family → Genus"
+   ],
+   "a": 3,
+   "x": "Kingdom, Division (Phylum), Class, Order, Family, Genus, Species: each rank contains the ones below it.",
+   "trap": "Swapping order and family is the usual slip.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-004",
+   "topic": "bot-biodiversity",
+   "s": "Taxonomic hierarchies",
+   "d": 2,
+   "q": "The basic unit of classification is",
+   "o": [
+    "Genus",
+    "Family",
+    "Species",
+    "Variety"
+   ],
+   "a": 2,
+   "x": "Species is the lowest obligate rank: a group of similar individuals that can interbreed to give fertile offspring.",
+   "trap": "Genus is the next higher rank, not the basic unit.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-005",
+   "topic": "bot-biodiversity",
+   "s": "2-Kingdom system",
+   "d": 2,
+   "q": "In Linnaeus's two-kingdom classification, bacteria and fungi were placed in",
+   "o": [
+    "Animalia",
+    "Plantae",
+    "Protista",
+    "Monera"
+   ],
+   "a": 1,
+   "x": "The two-kingdom system grouped every organism with a cell wall and no locomotion under Plantae, including bacteria and fungi.",
+   "trap": "Monera and Protista came later (Whittaker, Haeckel)."
+  },
+  {
+   "id": "botA-006",
+   "topic": "bot-biodiversity",
+   "s": "Monera: Archaebacteria",
+   "d": 3,
+   "q": "Archaebacteria differ from eubacteria in having",
+   "o": [
+    "A peptidoglycan cell wall",
+    "Cell walls without peptidoglycan",
+    "A membrane-bound nucleus",
+    "80S ribosomes"
+   ],
+   "a": 1,
+   "x": "Archaebacterial walls lack peptidoglycan (muramic acid) and their membranes have branched, ether-linked lipids, letting them survive extreme habitats.",
+   "trap": "Peptidoglycan is the eubacterial wall polymer.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-007",
+   "topic": "bot-biodiversity",
+   "s": "Monera: Archaebacteria",
+   "d": 1,
+   "q": "Methanogens that produce methane in the guts of cattle and in marshes belong to",
+   "o": [
+    "Archaebacteria",
+    "Cyanobacteria",
+    "Mycoplasma",
+    "Actinomycetes"
+   ],
+   "a": 0,
+   "x": "Methanogens such as Methanobacterium are archaebacteria; they are used in biogas plants.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-008",
+   "topic": "bot-biodiversity",
+   "s": "Types of bacteria",
+   "d": 1,
+   "q": "Comma-shaped bacteria are called",
+   "o": [
+    "Vibrio",
+    "Bacillus",
+    "Coccus",
+    "Spirillum"
+   ],
+   "a": 0,
+   "x": "Vibrio (e.g. Vibrio cholerae) is curved like a comma; bacillus is rod, coccus round, spirillum spiral.",
+   "trap": "Spirillum is the long spiral form."
+  },
+  {
+   "id": "botA-009",
+   "topic": "bot-biodiversity",
+   "s": "Mode of nutrition in bacteria",
+   "d": 2,
+   "q": "Nitrosomonas obtains energy by oxidising ammonia. Its mode of nutrition is",
+   "o": [
+    "Chemoautotrophic",
+    "Photoautotrophic",
+    "Saprophytic",
+    "Parasitic"
+   ],
+   "a": 0,
+   "x": "Chemoautotrophs fix CO₂ using energy released by oxidising inorganic substances such as NH₃, H₂S or Fe²⁺.",
+   "trap": "Photoautotrophs use light, not chemical oxidation."
+  },
+  {
+   "id": "botA-010",
+   "topic": "bot-biodiversity",
+   "s": "Bacterial growth",
+   "d": 2,
+   "q": "In the bacterial growth curve, cells divide at the maximum constant rate during the",
+   "o": [
+    "Lag phase",
+    "Stationary phase",
+    "Log (exponential) phase",
+    "Decline phase"
+   ],
+   "a": 2,
+   "x": "In log phase numbers double every generation; lag is adjustment, stationary is growth = death, decline is net death.",
+   "trap": "Lag phase comes first but has little division."
+  },
+  {
+   "id": "botA-011",
+   "topic": "bot-biodiversity",
+   "s": "Bacterial growth",
+   "d": 3,
+   "q": "A bacterium divides by binary fission every 20 minutes. Starting with one cell, how many cells are present after 2 hours?",
+   "o": [
+    "12",
+    "64",
+    "32",
+    "128"
+   ],
+   "a": 1,
+   "x": "2 h = 120 min = 6 generations; 2⁶ = 64 cells.",
+   "trap": "12 adds instead of doubling; 32 counts only 5 generations.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-012",
+   "topic": "bot-biodiversity",
+   "s": "Types of bacteria",
+   "d": 3,
+   "q": "The smallest free-living organisms, which lack a cell wall, are",
+   "o": [
+    "Viroids",
+    "Rickettsia",
+    "Mycoplasma",
+    "Actinomycetes"
+   ],
+   "a": 2,
+   "x": "Mycoplasma (PPLO) has no cell wall, so it is pleomorphic and resistant to penicillin.",
+   "trap": "Viroids are smaller but are not cells."
+  },
+  {
+   "id": "botA-013",
+   "topic": "bot-biodiversity",
+   "s": "General characteristics of Cyanobacteria",
+   "d": 2,
+   "q": "A pigment group present in both red algae and blue-green algae is",
+   "o": [
+    "Fucoxanthin",
+    "Chlorophyll b",
+    "Phycobilins",
+    "Chlorophyll c"
+   ],
+   "a": 2,
+   "x": "Phycocyanin and phycoerythrin (phycobilins) occur in cyanobacteria and Rhodophyceae.",
+   "trap": "Fucoxanthin is the brown algal pigment.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-014",
+   "topic": "bot-biodiversity",
+   "s": "General characteristics of Cyanobacteria",
+   "d": 2,
+   "q": "The reserve food of blue-green algae is",
+   "o": [
+    "Floridean starch",
+    "Cyanophycean starch",
+    "Laminarin",
+    "Paramylon"
+   ],
+   "a": 1,
+   "x": "Cyanobacteria store glycogen-like cyanophycean starch; floridean starch is red algal, laminarin brown algal.",
+   "trap": "Floridean starch belongs to red algae."
+  },
+  {
+   "id": "botA-015",
+   "topic": "bot-biodiversity",
+   "s": "Characteristics of viruses",
+   "d": 1,
+   "q": "Viruses are called obligate intracellular parasites because they",
+   "o": [
+    "Multiply only inside living host cells",
+    "Lack nucleic acid",
+    "Have a cellulose cell wall",
+    "Make their own ATP"
+   ],
+   "a": 0,
+   "x": "Viruses have no metabolic machinery; they use the host's ribosomes and enzymes to replicate."
+  },
+  {
+   "id": "botA-016",
+   "topic": "bot-biodiversity",
+   "s": "Structure of viruses",
+   "d": 1,
+   "q": "The protein coat that surrounds the nucleic acid of a virus is the",
+   "o": [
+    "Envelope",
+    "Capsule",
+    "Capsid",
+    "Pellicle"
+   ],
+   "a": 2,
+   "x": "The capsid is built of protein subunits called capsomeres; some viruses add a lipid envelope outside it.",
+   "trap": "Envelope is an extra lipid layer, not the protein coat."
+  },
+  {
+   "id": "botA-017",
+   "topic": "bot-biodiversity",
+   "s": "Chemical composition of viruses",
+   "d": 2,
+   "q": "The genetic material of bacteriophage T4 is",
+   "o": [
+    "Single-stranded RNA",
+    "Single-stranded DNA",
+    "Double-stranded DNA",
+    "Double-stranded RNA"
+   ],
+   "a": 2,
+   "x": "T-even phages that infect E. coli carry linear dsDNA inside a polyhedral head.",
+   "trap": "ssRNA is the TMV answer."
+  },
+  {
+   "id": "botA-018",
+   "topic": "bot-biodiversity",
+   "s": "Characteristics of viruses",
+   "d": 3,
+   "q": "The term 'contagium vivum fluidum' (infectious living fluid) for the virus was used by",
+   "o": [
+    "D.J. Ivanowsky",
+    "W.M. Stanley",
+    "M.W. Beijerinck",
+    "Louis Pasteur"
+   ],
+   "a": 2,
+   "x": "Ivanowsky (1892) showed TMV passes bacterial filters; Beijerinck (1898) called it contagium vivum fluidum; Stanley crystallised it (1935).",
+   "trap": "Ivanowsky discovered the filterable agent but did not coin this term."
+  },
+  {
+   "id": "botA-019",
+   "topic": "bot-biodiversity",
+   "s": "Fungi: Phycomycetes",
+   "d": 1,
+   "q": "The common black bread mould is",
+   "o": [
+    "Agaricus",
+    "Rhizopus",
+    "Puccinia",
+    "Penicillium"
+   ],
+   "a": 1,
+   "x": "Rhizopus stolonifer grows on stale bread with black sporangia on stolons and rhizoids.",
+   "trap": "Penicillium is the blue-green mould.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-020",
+   "topic": "bot-biodiversity",
+   "s": "Structure and reproduction of Mucor",
+   "d": 2,
+   "q": "Sexual reproduction in Mucor produces",
+   "o": [
+    "Zygospores",
+    "Ascospores",
+    "Basidiospores",
+    "Conidia"
+   ],
+   "a": 0,
+   "x": "Two compatible gametangia fuse (gametangial copulation) to form a thick-walled zygospore; Mucor is a phycomycete.",
+   "trap": "Conidia are asexual spores."
+  },
+  {
+   "id": "botA-021",
+   "topic": "bot-biodiversity",
+   "s": "Structure and reproduction of yeast",
+   "d": 1,
+   "q": "The common method of asexual reproduction in yeast (Saccharomyces) is",
+   "o": [
+    "Budding",
+    "Zoospore formation",
+    "Conidia formation",
+    "Fragmentation of hyphae"
+   ],
+   "a": 0,
+   "x": "A small outgrowth (bud) forms on the parent cell, receives a daughter nucleus and separates, sometimes forming pseudomycelium."
+  },
+  {
+   "id": "botA-022",
+   "topic": "bot-biodiversity",
+   "s": "Fungi: Ascomycetes",
+   "d": 2,
+   "q": "Yeast belongs to the class",
+   "o": [
+    "Phycomycetes",
+    "Basidiomycetes",
+    "Ascomycetes",
+    "Deuteromycetes"
+   ],
+   "a": 2,
+   "x": "Yeast forms ascospores inside an ascus during sexual reproduction, so it is an ascomycete (sac fungus).",
+   "trap": "Its unicellular body makes students guess Phycomycetes."
+  },
+  {
+   "id": "botA-023",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of fungi",
+   "d": 2,
+   "q": "Production of bread and beer depends on yeast because it",
+   "o": [
+    "Fixes atmospheric nitrogen",
+    "Ferments sugar to ethanol and carbon dioxide",
+    "Produces lactic acid from milk",
+    "Produces penicillin"
+   ],
+   "a": 1,
+   "x": "Zymase of yeast converts glucose to C₂H₅OH + CO₂; alcohol gives beverages, CO₂ makes dough rise.",
+   "trap": "Lactic acid comes from Lactobacillus.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-024",
+   "topic": "bot-biodiversity",
+   "s": "Fungi: Deuteromycetes",
+   "d": 1,
+   "q": "Fungi in which no sexual stage is known are placed in",
+   "o": [
+    "Deuteromycetes",
+    "Ascomycetes",
+    "Basidiomycetes",
+    "Phycomycetes"
+   ],
+   "a": 0,
+   "x": "Deuteromycetes (fungi imperfecti) reproduce only by conidia; e.g. Alternaria, Colletotrichum."
+  },
+  {
+   "id": "botA-025",
+   "topic": "bot-biodiversity",
+   "s": "Fungi: Basidiomycetes",
+   "d": 2,
+   "q": "Spores borne externally on club-shaped basidia are characteristic of",
+   "o": [
+    "Ascomycetes",
+    "Phycomycetes",
+    "Basidiomycetes",
+    "Deuteromycetes"
+   ],
+   "a": 2,
+   "x": "Mushrooms, rusts and smuts bear four basidiospores exogenously on each basidium.",
+   "trap": "Ascomycetes produce spores inside a sac (endogenous)."
+  },
+  {
+   "id": "botA-026",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of fungi",
+   "d": 2,
+   "q": "The cell wall of most true fungi, such as Agaricus, is made mainly of",
+   "o": [
+    "Cellulose",
+    "Chitin",
+    "Peptidoglycan",
+    "Lignin"
+   ],
+   "a": 1,
+   "x": "Fungal walls are chitin (a nitrogen-containing polysaccharide), the same polymer as insect exoskeletons.",
+   "trap": "Cellulose is the green plant wall."
+  },
+  {
+   "id": "botA-027",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of fungi",
+   "d": 1,
+   "q": "Penicillin, the first antibiotic, was discovered by Alexander Fleming from",
+   "o": [
+    "Aspergillus niger",
+    "Streptomyces griseus",
+    "Saccharomyces cerevisiae",
+    "Penicillium notatum"
+   ],
+   "a": 3,
+   "x": "Fleming (1928) saw P. notatum inhibit Staphylococcus colonies.",
+   "trap": "Streptomyces griseus gives streptomycin."
+  },
+  {
+   "id": "botA-028",
+   "topic": "bot-biodiversity",
+   "s": "Introduction and types of lichens",
+   "d": 1,
+   "q": "A lichen is a symbiotic association between",
+   "o": [
+    "A fungus and a higher plant root",
+    "A bacterium and a legume root",
+    "An alga and a moss",
+    "An alga and a fungus"
+   ],
+   "a": 3,
+   "x": "The alga (phycobiont) photosynthesises; the fungus (mycobiont) gives shelter, water and minerals.",
+   "trap": "Fungus + root is mycorrhiza."
+  },
+  {
+   "id": "botA-029",
+   "topic": "bot-biodiversity",
+   "s": "Introduction and types of lichens",
+   "d": 3,
+   "q": "Small pores on the lower surface of some foliose lichens that help in gaseous exchange are",
+   "o": [
+    "Soredia",
+    "Isidia",
+    "Cyphellae",
+    "Rhizinae"
+   ],
+   "a": 2,
+   "x": "Cyphellae (e.g. in Sticta) are breathing pores; soredia and isidia are vegetative propagules; rhizinae anchor.",
+   "trap": "Soredia are propagules, not pores.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-030",
+   "topic": "bot-biodiversity",
+   "s": "Introduction and types of lichens",
+   "d": 2,
+   "q": "Usnea, with an erect or hanging, branched shrub-like thallus, is a",
+   "o": [
+    "Crustose lichen",
+    "Foliose lichen",
+    "Mycorrhiza",
+    "Fruticose lichen"
+   ],
+   "a": 3,
+   "x": "Fruticose lichens are shrubby and attached at one point; crustose are crust-like, foliose are leaf-like.",
+   "trap": "Foliose lichens are flat and leaf-like."
+  },
+  {
+   "id": "botA-031",
+   "topic": "bot-biodiversity",
+   "s": "Structure & reproduction of Spirogyra",
+   "d": 1,
+   "q": "The chloroplast of Spirogyra is",
+   "o": [
+    "Cup-shaped",
+    "Ribbon-shaped and spiral",
+    "Girdle-shaped",
+    "Star-shaped"
+   ],
+   "a": 1,
+   "x": "One or more spiral ribbon chloroplasts with pyrenoids give the 'water silk' its name.",
+   "trap": "Cup-shaped is Chlamydomonas."
+  },
+  {
+   "id": "botA-032",
+   "topic": "bot-biodiversity",
+   "s": "Structure & reproduction of Spirogyra",
+   "d": 3,
+   "q": "Lateral conjugation in Spirogyra takes place between",
+   "o": [
+    "Cells of two different filaments",
+    "Adjacent cells of the same filament",
+    "Two zoospores",
+    "A sperm and an egg"
+   ],
+   "a": 1,
+   "x": "In lateral conjugation, neighbouring cells of one filament fuse through a side passage; scalariform conjugation joins two filaments.",
+   "trap": "Two filaments side by side is scalariform."
+  },
+  {
+   "id": "botA-033",
+   "topic": "bot-biodiversity",
+   "s": "Structure & reproduction of Spirogyra",
+   "d": 3,
+   "q": "The only diploid structure in the life cycle of Spirogyra is the",
+   "o": [
+    "Filament",
+    "Gametangium",
+    "Aplanospore",
+    "Zygospore"
+   ],
+   "a": 3,
+   "x": "The haploid filament forms a 2n zygospore after fusion; it undergoes meiosis on germination (haplontic cycle).",
+   "trap": "The filament is haploid, not diploid.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botA-034",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Rhodophyceae",
+   "d": 2,
+   "q": "The reserve food of red algae is",
+   "o": [
+    "Laminarin",
+    "Mannitol",
+    "Cyanophycean starch",
+    "Floridean starch"
+   ],
+   "a": 3,
+   "x": "Rhodophyceae store floridean starch; Phaeophyceae store laminarin and mannitol.",
+   "trap": "Laminarin and mannitol are brown algal stores."
+  },
+  {
+   "id": "botA-035",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of algae",
+   "d": 1,
+   "q": "Agar used in culture media is obtained from",
+   "o": [
+    "Laminaria",
+    "Chlorella",
+    "Spirogyra",
+    "Gelidium"
+   ],
+   "a": 3,
+   "x": "Agar is a polysaccharide extracted from red algae such as Gelidium and Gracilaria.",
+   "trap": "Laminaria gives algin, not agar.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-036",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of algae",
+   "d": 2,
+   "q": "Algin (alginic acid), used as a thickener in ice cream, is obtained from",
+   "o": [
+    "Red algae",
+    "Green algae",
+    "Brown algae",
+    "Blue-green algae"
+   ],
+   "a": 2,
+   "x": "Alginates come from the walls of brown algae such as Laminaria and Macrocystis.",
+   "trap": "Red algae give agar and carrageenan."
+  },
+  {
+   "id": "botA-037",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Bryophytes",
+   "d": 1,
+   "q": "Bryophytes are called the amphibians of the plant kingdom because they",
+   "o": [
+    "Live on land but need water for fertilisation",
+    "Live only in water",
+    "Have both xylem and phloem",
+    "Reproduce only by seeds"
+   ],
+   "a": 0,
+   "x": "Their flagellated sperms must swim through water to reach the archegonium."
+  },
+  {
+   "id": "botA-038",
+   "topic": "bot-biodiversity",
+   "s": "Bryophytes vs Pteridophytes",
+   "d": 2,
+   "q": "Mosses differ from ferns in having",
+   "o": [
+    "A sporophyte dependent on the gametophyte",
+    "Vascular tissue",
+    "An independent dominant sporophyte",
+    "Roots with root hairs"
+   ],
+   "a": 0,
+   "x": "In mosses the gametophyte is dominant and the sporophyte (foot, seta, capsule) stays attached; ferns have an independent vascular sporophyte.",
+   "trap": "Dominant sporophyte describes ferns.",
+   "yrs": [
+    2078,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botA-039",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Marchantia",
+   "d": 2,
+   "q": "Marchantia reproduces vegetatively by",
+   "o": [
+    "Zoospores",
+    "Conidia",
+    "Bulbils on roots",
+    "Gemmae formed in gemma cups"
+   ],
+   "a": 3,
+   "x": "Cup-shaped gemma cups on the dorsal thallus surface bear multicellular gemmae dispersed by rain drops.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-040",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Marchantia",
+   "d": 2,
+   "q": "In Marchantia, the archegonia are borne on",
+   "o": [
+    "Gemma cups",
+    "Stalked archegoniophores",
+    "Rhizoids",
+    "The capsule"
+   ],
+   "a": 1,
+   "x": "Marchantia is dioecious: female thalli bear umbrella-like archegoniophores, male thalli bear antheridiophores.",
+   "trap": "Gemma cups bear gemmae, not sex organs."
+  },
+  {
+   "id": "botA-041",
+   "topic": "bot-biodiversity",
+   "s": "Anthocerotopsida (Hornworts)",
+   "d": 3,
+   "q": "A bryophyte whose sporophyte keeps growing from a basal intercalary meristem is",
+   "o": [
+    "Marchantia",
+    "Anthoceros",
+    "Funaria",
+    "Riccia"
+   ],
+   "a": 1,
+   "x": "The horn-like sporophyte of Anthoceros has a basal meristem and a central columella, giving continuous growth.",
+   "trap": "Funaria has a fixed foot-seta-capsule sporophyte."
+  },
+  {
+   "id": "botA-042",
+   "topic": "bot-biodiversity",
+   "s": "Bryopsida (Moss)",
+   "d": 2,
+   "q": "On germination, the spore of Funaria first forms a filamentous",
+   "o": [
+    "Prothallus",
+    "Seta",
+    "Protonema",
+    "Rhizome"
+   ],
+   "a": 2,
+   "x": "The green branched protonema bears buds that grow into leafy gametophores.",
+   "trap": "Prothallus is the fern gametophyte."
+  },
+  {
+   "id": "botA-043",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Pteridophytes",
+   "d": 1,
+   "q": "The first vascular land plants without seeds are",
+   "o": [
+    "Bryophytes",
+    "Gymnosperms",
+    "Algae",
+    "Pteridophytes"
+   ],
+   "a": 3,
+   "x": "Pteridophytes (vascular cryptogams) have xylem and phloem but reproduce by spores.",
+   "trap": "Bryophytes lack true vascular tissue."
+  },
+  {
+   "id": "botA-044",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Dryopteris",
+   "d": 2,
+   "q": "In Dryopteris, each sorus is covered by a kidney-shaped",
+   "o": [
+    "Annulus",
+    "Indusium",
+    "Ramentum",
+    "Stomium"
+   ],
+   "a": 1,
+   "x": "The reniform indusium protects young sporangia; the annulus is the ring on the sporangium that aids dehiscence.",
+   "trap": "Annulus is on the sporangium, not over the sorus."
+  },
+  {
+   "id": "botA-045",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Dryopteris",
+   "d": 3,
+   "q": "The prothallus of Dryopteris is",
+   "o": [
+    "Haploid and bisexual",
+    "Diploid and bisexual",
+    "Haploid and unisexual",
+    "Diploid and unisexual"
+   ],
+   "a": 0,
+   "x": "The heart-shaped gametophyte grows from a haploid spore and bears both antheridia and archegonia.",
+   "trap": "Diploid is the sporophyte."
+  },
+  {
+   "id": "botA-046",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Dryopteris",
+   "d": 3,
+   "q": "The stele in the rhizome of the fern Dryopteris is",
+   "o": [
+    "Protostele",
+    "Eustele",
+    "Atactostele",
+    "Dictyostele"
+   ],
+   "a": 3,
+   "x": "Overlapping leaf gaps break the vascular cylinder into a network of meristeles: a dictyostele.",
+   "trap": "Atactostele is the monocot stem stele.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-047",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Gymnosperms",
+   "d": 1,
+   "q": "Gymnosperms are so called because their",
+   "o": [
+    "Seeds lack an embryo",
+    "Sporophyte is dependent",
+    "Ovules are not enclosed in an ovary",
+    "Flowers are brightly coloured"
+   ],
+   "a": 2,
+   "x": "Gymnos = naked: ovules lie exposed on megasporophylls; there is no ovary or fruit."
+  },
+  {
+   "id": "botA-048",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of Gymnosperms",
+   "d": 1,
+   "q": "Edible chilgoza seeds are obtained from",
+   "o": [
+    "Pinus roxburghii",
+    "Pinus gerardiana",
+    "Cycas revoluta",
+    "Abies spectabilis"
+   ],
+   "a": 1,
+   "x": "Chilgoza pine (P. gerardiana) of dry inner Himalaya yields edible seeds.",
+   "trap": "P. roxburghii is chir pine, tapped for resin.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-049",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Pinus",
+   "d": 3,
+   "q": "In Pinus roxburghii (khote salla), each dwarf shoot bears needles in groups of",
+   "o": [
+    "Three",
+    "Two",
+    "Five",
+    "One"
+   ],
+   "a": 0,
+   "x": "Chir pine needles occur in threes; blue pine (P. wallichiana) has five per dwarf shoot.",
+   "trap": "Five belongs to P. wallichiana."
+  },
+  {
+   "id": "botA-050",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Pinus",
+   "d": 2,
+   "q": "The pollen grain of Pinus has two wings, which help in",
+   "o": [
+    "Water dispersal",
+    "Insect pollination",
+    "Wind dispersal",
+    "Germination"
+   ],
+   "a": 2,
+   "x": "The two air sacs make pollen light and buoyant for anemophily."
+  },
+  {
+   "id": "botA-051",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Pinus",
+   "d": 2,
+   "q": "Male and female cones of Pinus develop on the same plant. Pinus is therefore",
+   "o": [
+    "Monoecious",
+    "Dioecious",
+    "Heterothallic",
+    "Polygamous"
+   ],
+   "a": 0,
+   "x": "Monoecious plants bear both sexes on one individual; Cycas, in contrast, is dioecious.",
+   "trap": "Cycas is the dioecious gymnosperm."
+  },
+  {
+   "id": "botA-052",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of Gymnosperms",
+   "d": 1,
+   "q": "Turpentine is obtained from the resin of",
+   "o": [
+    "Cycas",
+    "Ephedra",
+    "Pinus",
+    "Ginkgo"
+   ],
+   "a": 2,
+   "x": "Distilling Pinus resin gives turpentine oil and rosin.",
+   "trap": "Ephedra gives the drug ephedrine."
+  },
+  {
+   "id": "botA-053",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of Gymnosperms",
+   "d": 2,
+   "q": "The drug ephedrine, used to relieve asthma, is obtained from",
+   "o": [
+    "Pinus",
+    "Cycas",
+    "Taxus",
+    "Ephedra"
+   ],
+   "a": 3,
+   "x": "Ephedrine from Ephedra dilates bronchi; Taxus yields the anticancer drug taxol.",
+   "trap": "Taxus gives taxol, an anticancer drug."
+  },
+  {
+   "id": "botA-054",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of stem",
+   "d": 1,
+   "q": "Ginger is an underground stem modification called a",
+   "o": [
+    "Tuber",
+    "Corm",
+    "Rhizome",
+    "Bulb"
+   ],
+   "a": 2,
+   "x": "Ginger grows horizontally with nodes, internodes, scale leaves and buds: a rhizome.",
+   "trap": "Potato is a tuber; onion a bulb.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-055",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of stem",
+   "d": 2,
+   "q": "Banana is propagated vegetatively by",
+   "o": [
+    "Leaf buds",
+    "Stem cuttings",
+    "Root tubers",
+    "Suckers"
+   ],
+   "a": 3,
+   "x": "Lateral shoots (suckers) arising from the underground stem grow into new plants.",
+   "trap": "Root tubers are sweet potato.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-056",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of root",
+   "d": 3,
+   "q": "Stilt roots of maize and sugarcane arise from",
+   "o": [
+    "The radicle",
+    "The pericycle of the primary root",
+    "The lower nodes of the stem",
+    "Leaf margins"
+   ],
+   "a": 2,
+   "x": "They are adventitious roots growing obliquely from basal nodes to support the stem.",
+   "trap": "Radicle forms the tap root, not stilt roots.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-057",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of stem",
+   "d": 3,
+   "q": "A potato is a modified stem, not a root, because it bears",
+   "o": [
+    "Stored starch",
+    "A root cap",
+    "Nodes with axillary buds (eyes)",
+    "Root hairs"
+   ],
+   "a": 2,
+   "x": "The eyes are nodes with buds in the axil of scale leaves, a stem feature.",
+   "trap": "Storing starch happens in roots too."
+  },
+  {
+   "id": "botA-058",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of stem",
+   "d": 2,
+   "q": "The green, needle-like 'leaves' of Asparagus are actually",
+   "o": [
+    "Phyllodes",
+    "Tendrils",
+    "Cladodes (modified stems)",
+    "Scale leaves"
+   ],
+   "a": 2,
+   "x": "Cladodes are short branches of limited growth that photosynthesise; the true leaves are scales.",
+   "trap": "Phyllode is a flattened petiole (Acacia)."
+  },
+  {
+   "id": "botA-059",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of root",
+   "d": 1,
+   "q": "Pneumatophores (breathing roots) are found in",
+   "o": [
+    "Maize",
+    "Carrot",
+    "Banyan",
+    "Mangroves such as Rhizophora"
+   ],
+   "a": 3,
+   "x": "Mangroves in waterlogged saline mud send negatively geotropic roots up for aeration.",
+   "trap": "Banyan has prop roots."
+  },
+  {
+   "id": "botA-060",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of inflorescence",
+   "d": 3,
+   "q": "A cup-like involucre containing a single central female flower surrounded by many male flowers is",
+   "o": [
+    "Hypanthodium",
+    "Verticillaster",
+    "Spadix",
+    "Cyathium"
+   ],
+   "a": 3,
+   "x": "Cyathium is the inflorescence of Euphorbia (poinsettia).",
+   "trap": "Hypanthodium is the fig inflorescence."
+  },
+  {
+   "id": "botA-061",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of inflorescence",
+   "d": 2,
+   "q": "In a racemose inflorescence,",
+   "o": [
+    "The main axis ends in a flower",
+    "Flowers open basipetally",
+    "Only one flower is produced",
+    "The main axis grows indefinitely and flowers open acropetally"
+   ],
+   "a": 3,
+   "x": "Racemose: oldest flowers at the base, youngest at the tip; cymose axis ends in a flower.",
+   "trap": "Ending in a flower is cymose.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-062",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of fruit",
+   "d": 3,
+   "q": "Apple is called a false fruit because its edible part develops from the",
+   "o": [
+    "Ovary wall",
+    "Endosperm",
+    "Thalamus",
+    "Seed coat"
+   ],
+   "a": 2,
+   "x": "A fruit formed mainly from parts other than the ovary is false (pseudocarp); apple's fleshy part is thalamus.",
+   "trap": "Ovary wall forms true fruits."
+  },
+  {
+   "id": "botA-063",
+   "topic": "bot-biodiversity",
+   "s": "Families: Brassicaceae",
+   "d": 2,
+   "q": "Siliqua is the characteristic fruit of",
+   "o": [
+    "Fabaceae",
+    "Solanaceae",
+    "Liliaceae",
+    "Brassicaceae"
+   ],
+   "a": 3,
+   "x": "Siliqua develops from a bicarpellary, syncarpous superior ovary with parietal placentation and a false septum.",
+   "trap": "Fabaceae fruit is a legume (pod).",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-064",
+   "topic": "bot-biodiversity",
+   "s": "Families: Brassicaceae",
+   "d": 3,
+   "q": "The ovary of mustard becomes two-chambered because of a false septum called the",
+   "o": [
+    "Raphe",
+    "Hilum",
+    "Replum",
+    "Funicle"
+   ],
+   "a": 2,
+   "x": "The replum grows between the two parietal placentae of the Brassicaceae ovary.",
+   "trap": "Raphe is the ridge of an anatropous ovule.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botA-065",
+   "topic": "bot-biodiversity",
+   "s": "Families: Fabaceae",
+   "d": 2,
+   "q": "Diadelphous stamens arranged as (9) + 1 are characteristic of",
+   "o": [
+    "Fabaceae",
+    "Solanaceae",
+    "Brassicaceae",
+    "Liliaceae"
+   ],
+   "a": 0,
+   "x": "In pea nine stamens are fused into a tube and the posterior one is free.",
+   "trap": "Brassicaceae has tetradynamous stamens."
+  },
+  {
+   "id": "botA-066",
+   "topic": "bot-biodiversity",
+   "s": "Families: Liliaceae",
+   "d": 3,
+   "q": "The floral formula ⊕ ⚥ P₃₊₃ A₃₊₃ G₍₃₎ represents the family",
+   "o": [
+    "Solanaceae",
+    "Fabaceae",
+    "Brassicaceae",
+    "Liliaceae"
+   ],
+   "a": 3,
+   "x": "Six tepals and six stamens in two whorls of three with a tricarpellary superior ovary: a trimerous monocot family (onion).",
+   "trap": "Solanaceae is pentamerous with G(2).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-067",
+   "topic": "bot-biodiversity",
+   "s": "Families: Solanaceae",
+   "d": 2,
+   "q": "Which plant does NOT belong to Solanaceae?",
+   "o": [
+    "Onion",
+    "Datura",
+    "Brinjal",
+    "Tomato"
+   ],
+   "a": 0,
+   "x": "Onion (Allium cepa) is in Liliaceae; Datura, brinjal and tomato are Solanaceae.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-068",
+   "topic": "bot-biodiversity",
+   "s": "Families: Liliaceae",
+   "d": 1,
+   "q": "Ovary of Liliaceae (e.g. onion) is",
+   "o": [
+    "Monocarpellary with marginal placentation",
+    "Tricarpellary, syncarpous, superior with axile placentation",
+    "Bicarpellary with a replum",
+    "Bicarpellary, oblique with swollen placentae"
+   ],
+   "a": 1,
+   "x": "Liliaceae: G(3), trilocular, superior, axile placentation.",
+   "trap": "Bicarpellary oblique is Solanaceae.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-069",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of Bryophytes",
+   "d": 2,
+   "q": "Sphagnum (peat moss) is used by gardeners as a packing material because it",
+   "o": [
+    "Fixes nitrogen",
+    "Holds a lot of water",
+    "Produces antibiotics",
+    "Is poisonous to insects"
+   ],
+   "a": 1,
+   "x": "Its dead hyaline cells absorb many times their weight of water; it also forms peat fuel."
+  },
+  {
+   "id": "botA-070",
+   "topic": "bot-biodiversity",
+   "s": "Uses of medicinal plants of Nepal",
+   "d": 1,
+   "q": "Azadirachtin, a natural insecticide, is obtained from",
+   "o": [
+    "Tulsi (Ocimum sanctum)",
+    "Neem (Azadirachta indica)",
+    "Ginger (Zingiber officinale)",
+    "Sarpagandha (Rauwolfia serpentina)"
+   ],
+   "a": 1,
+   "x": "Neem seeds and leaves give azadirachtin; neem is also antiseptic and used for skin disease."
+  },
+  {
+   "id": "botA-071",
+   "topic": "bot-biodiversity",
+   "s": "Uses of medicinal plants of Nepal",
+   "d": 2,
+   "q": "Reserpine from the roots of Sarpagandha (Rauwolfia serpentina) is used to treat",
+   "o": [
+    "High blood pressure",
+    "Malaria",
+    "Diabetes",
+    "Tuberculosis"
+   ],
+   "a": 0,
+   "x": "Reserpine lowers blood pressure and acts as a tranquiliser.",
+   "trap": "Malaria drug quinine comes from Cinchona."
+  },
+  {
+   "id": "botA-072",
+   "topic": "bot-biodiversity",
+   "s": "Uses of medicinal plants of Nepal",
+   "d": 2,
+   "q": "Yarsagumba (Ophiocordyceps sinensis) is",
+   "o": [
+    "A moss of alpine meadows",
+    "The root of a Himalayan herb",
+    "A fungus growing on a moth caterpillar",
+    "A lichen on rocks"
+   ],
+   "a": 2,
+   "x": "The fungus infects ghost-moth larvae in the soil and sends up a club-shaped fruiting body; used as a tonic.",
+   "trap": "Its root-like look misleads students."
+  },
+  {
+   "id": "botA-073",
+   "topic": "bot-biodiversity",
+   "s": "Uses of medicinal plants of Nepal",
+   "d": 1,
+   "q": "Leaves of Tulsi (Ocimum sanctum) are traditionally used to treat",
+   "o": [
+    "Fractured bones",
+    "Snake bite paralysis",
+    "Night blindness",
+    "Cough and cold"
+   ],
+   "a": 3,
+   "x": "Tulsi leaf extract is expectorant and antimicrobial, used for cough, cold and fever."
+  },
+  {
+   "id": "botA-074",
+   "topic": "bot-biodiversity",
+   "s": "Uses of medicinal plants of Nepal",
+   "d": 2,
+   "q": "The rhizome of Zingiber officinale is widely used to relieve",
+   "o": [
+    "High blood pressure",
+    "Malaria",
+    "Nausea and indigestion",
+    "Night blindness"
+   ],
+   "a": 2,
+   "x": "Gingerols in ginger are carminative and anti-emetic, easing nausea, indigestion and sore throat.",
+   "trap": "Blood pressure is the Sarpagandha use."
+  },
+  {
+   "id": "botA-075",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of bacteria",
+   "d": 1,
+   "q": "Milk turns into curd because of the bacterium",
+   "o": [
+    "Lactobacillus",
+    "Rhizobium",
+    "Clostridium",
+    "Azotobacter"
+   ],
+   "a": 0,
+   "x": "Lactobacillus ferments lactose to lactic acid, which coagulates milk protein."
+  },
+  {
+   "id": "botA-076",
+   "topic": "bot-ecology",
+   "s": "Pond ecosystem: structural aspects",
+   "d": 1,
+   "q": "In a pond ecosystem, phytoplankton are",
+   "o": [
+    "Primary consumers",
+    "Decomposers",
+    "Producers",
+    "Secondary consumers"
+   ],
+   "a": 2,
+   "x": "Phytoplankton (e.g. diatoms, Volvox) photosynthesise and form the first trophic level.",
+   "trap": "Zooplankton are the primary consumers."
+  },
+  {
+   "id": "botA-077",
+   "topic": "bot-ecology",
+   "s": "Pond ecosystem: structural aspects",
+   "d": 2,
+   "q": "Rooted plants with floating leaves, like the water lily (Nymphaea), grow in the pond's",
+   "o": [
+    "Profundal zone",
+    "Limnetic zone",
+    "Benthic deep zone",
+    "Littoral zone"
+   ],
+   "a": 3,
+   "x": "The shallow, well-lit shore region (littoral) supports rooted vegetation.",
+   "trap": "Limnetic is open water with plankton only."
+  },
+  {
+   "id": "botA-078",
+   "topic": "bot-ecology",
+   "s": "Ecosystem: functional aspects",
+   "d": 3,
+   "q": "By the 10% law, if primary consumers of a grassland receive 2000 J, the energy fixed by producers was about",
+   "o": [
+    "200 J",
+    "2000 J",
+    "200,000 J",
+    "20,000 J"
+   ],
+   "a": 3,
+   "x": "Only ~10% passes up each level, so producers = 2000 × 10 = 20,000 J.",
+   "trap": "200 J is the next level up, not down."
+  },
+  {
+   "id": "botA-079",
+   "topic": "bot-ecology",
+   "s": "Ecosystem: functional aspects",
+   "d": 1,
+   "q": "Many interlinked food chains in an ecosystem together form a",
+   "o": [
+    "Trophic level",
+    "Ecological pyramid",
+    "Biome",
+    "Food web"
+   ],
+   "a": 3,
+   "x": "A food web gives alternative pathways, making the ecosystem more stable.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-080",
+   "topic": "bot-ecology",
+   "s": "Biotic interactions",
+   "d": 2,
+   "q": "An orchid growing on a mango branch, using it only for support, shows",
+   "o": [
+    "Commensalism",
+    "Parasitism",
+    "Mutualism",
+    "Amensalism"
+   ],
+   "a": 0,
+   "x": "Epiphytes benefit and the tree is neither helped nor harmed (+, 0).",
+   "trap": "It is not a parasite: it makes its own food."
+  },
+  {
+   "id": "botA-081",
+   "topic": "bot-ecology",
+   "s": "Biotic interactions",
+   "d": 3,
+   "q": "Penicillium secreting penicillin that kills nearby bacteria is an example of",
+   "o": [
+    "Commensalism",
+    "Amensalism",
+    "Mutualism",
+    "Predation"
+   ],
+   "a": 1,
+   "x": "Amensalism (−, 0): one species is harmed while the other is unaffected; also called antibiosis."
+  },
+  {
+   "id": "botA-082",
+   "topic": "bot-ecology",
+   "s": "Biotic interactions",
+   "d": 1,
+   "q": "Cuscuta (dodder) growing on other plants is a",
+   "o": [
+    "Partial root parasite",
+    "Epiphyte",
+    "Saprophyte",
+    "Total stem parasite"
+   ],
+   "a": 3,
+   "x": "Leafless, yellow Cuscuta lacks chlorophyll and draws food from the host phloem by haustoria.",
+   "trap": "Mistletoe (Loranthus) is the partial parasite."
+  },
+  {
+   "id": "botA-083",
+   "topic": "bot-ecology",
+   "s": "Nitrogen cycle",
+   "d": 2,
+   "q": "Conversion of ammonia to nitrite in the soil is carried out by",
+   "o": [
+    "Nitrosomonas",
+    "Nitrobacter",
+    "Pseudomonas",
+    "Rhizobium"
+   ],
+   "a": 0,
+   "x": "Nitrification step 1: Nitrosomonas oxidises NH₃ to NO₂⁻; step 2: Nitrobacter oxidises NO₂⁻ to NO₃⁻.",
+   "trap": "Nitrobacter does the second step."
+  },
+  {
+   "id": "botA-084",
+   "topic": "bot-ecology",
+   "s": "Nitrogen cycle",
+   "d": 3,
+   "q": "Bacteria that return nitrogen gas to the atmosphere by reducing nitrates are",
+   "o": [
+    "Nitrifying bacteria",
+    "Denitrifying bacteria such as Pseudomonas",
+    "Rhizobium",
+    "Ammonifying bacteria"
+   ],
+   "a": 1,
+   "x": "Denitrification: NO₃⁻ → N₂ under anaerobic conditions by Pseudomonas and Thiobacillus denitrificans."
+  },
+  {
+   "id": "botA-085",
+   "topic": "bot-ecology",
+   "s": "Carbon cycle",
+   "d": 1,
+   "q": "In the carbon cycle, carbon dioxide is removed from the atmosphere mainly by",
+   "o": [
+    "Respiration",
+    "Burning fossil fuels",
+    "Decomposition",
+    "Photosynthesis"
+   ],
+   "a": 3,
+   "x": "Green plants fix CO₂ into sugars; the other three release CO₂."
+  },
+  {
+   "id": "botA-086",
+   "topic": "bot-ecology",
+   "s": "Greenhouse effect",
+   "d": 2,
+   "q": "The gas contributing most to the human-enhanced greenhouse effect is",
+   "o": [
+    "Ozone",
+    "Carbon dioxide",
+    "Nitrogen",
+    "Oxygen"
+   ],
+   "a": 1,
+   "x": "CO₂ from fossil fuels and deforestation is the largest anthropogenic contributor; methane, N₂O and CFCs follow.",
+   "trap": "N₂ and O₂ do not absorb infrared."
+  },
+  {
+   "id": "botA-087",
+   "topic": "bot-ecology",
+   "s": "Greenhouse effect",
+   "d": 2,
+   "q": "A major agricultural source of the greenhouse gas methane is",
+   "o": [
+    "Flooded paddy fields",
+    "Wheat fields",
+    "Orchards",
+    "Tea gardens"
+   ],
+   "a": 0,
+   "x": "Anaerobic methanogens in waterlogged rice fields and cattle guts release CH₄."
+  },
+  {
+   "id": "botA-088",
+   "topic": "bot-ecology",
+   "s": "Ozone layer depletion",
+   "d": 1,
+   "q": "The ozone layer lies in the",
+   "o": [
+    "Stratosphere",
+    "Troposphere",
+    "Mesosphere",
+    "Thermosphere"
+   ],
+   "a": 0,
+   "x": "Ozone is concentrated about 15–35 km up in the stratosphere and absorbs UV-B."
+  },
+  {
+   "id": "botA-089",
+   "topic": "bot-ecology",
+   "s": "Ozone layer depletion",
+   "d": 2,
+   "q": "The main cause of ozone layer depletion is",
+   "o": [
+    "Carbon dioxide from vehicles",
+    "Chlorine released from chlorofluorocarbons",
+    "Sulphur dioxide from industries",
+    "Methane from paddy fields"
+   ],
+   "a": 1,
+   "x": "UV splits CFCs to free Cl atoms; one Cl atom can destroy thousands of O₃ molecules.",
+   "trap": "SO₂ causes acid rain instead."
+  },
+  {
+   "id": "botA-090",
+   "topic": "bot-ecology",
+   "s": "Ozone layer depletion",
+   "d": 2,
+   "q": "Thickness of the ozone layer is measured in",
+   "o": [
+    "Decibels",
+    "Lux",
+    "Dobson units",
+    "Parts per billion of CO₂"
+   ],
+   "a": 2,
+   "x": "1 Dobson unit = 0.01 mm of pure ozone at STP."
+  },
+  {
+   "id": "botA-091",
+   "topic": "bot-ecology",
+   "s": "Acid rain",
+   "d": 2,
+   "q": "Acid rain is mainly caused by atmospheric",
+   "o": [
+    "Carbon monoxide and methane",
+    "Sulphur dioxide and nitrogen oxides",
+    "Ozone and oxygen",
+    "Chlorofluorocarbons"
+   ],
+   "a": 1,
+   "x": "SO₂ and NOₓ dissolve in rain to form H₂SO₄ and HNO₃, giving pH below 5.6."
+  },
+  {
+   "id": "botA-092",
+   "topic": "bot-ecology",
+   "s": "Forest types of Nepal",
+   "d": 1,
+   "q": "Sal (Shorea robusta) forests of Nepal mainly occur in the",
+   "o": [
+    "Alpine zone",
+    "Terai and Siwalik (tropical zone)",
+    "Upper temperate zone",
+    "Trans-Himalayan region"
+   ],
+   "a": 1,
+   "x": "Sal dominates tropical deciduous forests below about 1000 m.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-093",
+   "topic": "bot-ecology",
+   "s": "Forest types of Nepal",
+   "d": 3,
+   "q": "Schima–Castanopsis forest (chilaune–katus) is typical of which zone of Nepal?",
+   "o": [
+    "Subtropical (about 1000–2000 m)",
+    "Tropical (below 1000 m)",
+    "Alpine (above 4000 m)",
+    "Trans-Himalayan"
+   ],
+   "a": 0,
+   "x": "Schima wallichii and Castanopsis dominate the subtropical broad-leaved belt of the mid-hills.",
+   "trap": "Tropical zone is Sal."
+  },
+  {
+   "id": "botA-094",
+   "topic": "bot-ecology",
+   "s": "Vegetation",
+   "d": 2,
+   "q": "The highest species diversity on Earth is found in",
+   "o": [
+    "Temperate deciduous forests",
+    "Taiga",
+    "Tundra",
+    "Tropical rainforests"
+   ],
+   "a": 3,
+   "x": "Warm, wet, stable climate with high productivity supports maximum species richness.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-095",
+   "topic": "bot-ecology",
+   "s": "Biological invasion",
+   "d": 2,
+   "q": "Which invasive alien plant smothers grasslands and forests of Chitwan National Park?",
+   "o": [
+    "Shorea robusta",
+    "Mikania micrantha",
+    "Dalbergia sissoo",
+    "Bombax ceiba"
+   ],
+   "a": 1,
+   "x": "Mikania, a fast-growing climber from tropical America, covers native vegetation; the others are native trees."
+  },
+  {
+   "id": "botA-096",
+   "topic": "bot-ecology",
+   "s": "Biological invasion",
+   "d": 2,
+   "q": "Water hyacinth (Eichhornia crassipes) spreading over lakes such as Phewa is an example of",
+   "o": [
+    "Biomagnification",
+    "Commensalism",
+    "Biological invasion",
+    "Primary succession"
+   ],
+   "a": 2,
+   "x": "An introduced species that spreads aggressively and harms native ecosystems is an invasive alien species.",
+   "trap": "Biomagnification concerns toxins, not species."
+  },
+  {
+   "id": "botA-097",
+   "topic": "bot-ecology",
+   "s": "Ecological succession",
+   "d": 1,
+   "q": "The final, stable community at the end of succession is the",
+   "o": [
+    "Climax community",
+    "Pioneer community",
+    "Seral community",
+    "Ecotone"
+   ],
+   "a": 0,
+   "x": "The climax is in equilibrium with the climate and changes little thereafter.",
+   "trap": "Pioneers are the first colonisers.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-098",
+   "topic": "bot-ecology",
+   "s": "Ecological succession",
+   "d": 2,
+   "q": "Succession on abandoned farmland or a burnt forest is",
+   "o": [
+    "Primary succession",
+    "Secondary succession",
+    "Xerosere",
+    "Hydrosere"
+   ],
+   "a": 1,
+   "x": "Secondary succession starts where soil already exists, so it is faster than primary succession.",
+   "trap": "Primary succession starts on bare rock or new water.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-099",
+   "topic": "bot-ecology",
+   "s": "Hydrosere",
+   "d": 3,
+   "q": "The correct order of stages in a hydrosere is",
+   "o": [
+    "Phytoplankton → submerged → floating → reed-swamp → sedge-meadow → woodland",
+    "Phytoplankton → floating → submerged → sedge-meadow → reed-swamp → woodland",
+    "Submerged → phytoplankton → floating → reed-swamp → woodland → sedge-meadow",
+    "Phytoplankton → submerged → reed-swamp → floating → sedge-meadow → woodland"
+   ],
+   "a": 0,
+   "x": "Water gets shallower stage by stage as dead matter fills the pond, ending in forest.",
+   "trap": "Swapping floating and reed-swamp is the common error.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botA-100",
+   "topic": "bot-ecology",
+   "s": "Ecological adaptation",
+   "d": 2,
+   "q": "Sunken stomata and a thick cuticle are adaptations of",
+   "o": [
+    "Hydrophytes",
+    "Sciophytes",
+    "Xerophytes",
+    "Epiphytes"
+   ],
+   "a": 2,
+   "x": "These features cut transpiration in dry habitats, e.g. Nerium."
+  },
+  {
+   "id": "botA-101",
+   "topic": "bot-ecology",
+   "s": "Ecological adaptation",
+   "d": 2,
+   "q": "Well-developed aerenchyma for buoyancy and aeration is a feature of",
+   "o": [
+    "Xerophytes",
+    "Hydrophytes",
+    "Heliophytes",
+    "Lithophytes"
+   ],
+   "a": 1,
+   "x": "Air-filled spaces keep Hydrilla and lotus afloat and supply O₂ to submerged parts."
+  },
+  {
+   "id": "botA-102",
+   "topic": "bot-ecology",
+   "s": "Ecological adaptation",
+   "d": 1,
+   "q": "Plants that grow best in full sunlight are called",
+   "o": [
+    "Heliophytes",
+    "Sciophytes",
+    "Halophytes",
+    "Hydrophytes"
+   ],
+   "a": 0,
+   "x": "Helios = sun; sciophytes are shade-loving plants.",
+   "trap": "Sciophytes are shade lovers.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-103",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: meristems",
+   "d": 1,
+   "q": "Increase in length at the tips of root and shoot is due to",
+   "o": [
+    "Lateral meristem",
+    "Intercalary meristem",
+    "Apical meristem",
+    "Permanent tissue"
+   ],
+   "a": 2,
+   "x": "Apical meristems at the tips cause primary growth in length; lateral meristems increase girth."
+  },
+  {
+   "id": "botA-104",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: meristems",
+   "d": 2,
+   "q": "Intercalary meristem is found",
+   "o": [
+    "At root tips",
+    "In the cork cambium",
+    "In leaf mesophyll",
+    "At the base of internodes in grasses"
+   ],
+   "a": 3,
+   "x": "It lies between permanent tissues and lets grass stems re-grow after grazing."
+  },
+  {
+   "id": "botA-105",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: simple permanent",
+   "d": 1,
+   "q": "Living cells with cellulose and pectin thickening at the corners, giving support to young dicot stems, are",
+   "o": [
+    "Collenchyma",
+    "Sclerenchyma",
+    "Parenchyma",
+    "Chlorenchyma"
+   ],
+   "a": 0,
+   "x": "Collenchyma forms the hypodermis of dicot stems and gives flexible support.",
+   "trap": "Sclerenchyma is dead and lignified."
+  },
+  {
+   "id": "botA-106",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: simple permanent",
+   "d": 2,
+   "q": "Fibres and sclereids are types of",
+   "o": [
+    "Collenchyma",
+    "Sclerenchyma",
+    "Parenchyma",
+    "Phloem parenchyma"
+   ],
+   "a": 1,
+   "x": "Both are dead cells with thick lignified walls; fibres are long, sclereids short (stone cells of pear)."
+  },
+  {
+   "id": "botA-107",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: complex permanent",
+   "d": 3,
+   "q": "The only living component of xylem is",
+   "o": [
+    "Tracheids",
+    "Xylem parenchyma",
+    "Vessels",
+    "Xylem fibres"
+   ],
+   "a": 1,
+   "x": "Xylem parenchyma stores food and helps radial conduction; tracheids, vessels and fibres are dead at maturity.",
+   "trap": "Vessels conduct water but are dead."
+  },
+  {
+   "id": "botA-108",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: complex permanent",
+   "d": 2,
+   "q": "Companion cells associated with sieve tubes are found in",
+   "o": [
+    "Gymnosperms",
+    "Pteridophytes",
+    "Angiosperms",
+    "Bryophytes"
+   ],
+   "a": 2,
+   "x": "Gymnosperms and pteridophytes have albuminous cells and sieve cells instead."
+  },
+  {
+   "id": "botA-109",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: complex permanent",
+   "d": 3,
+   "q": "Vessels are generally absent in",
+   "o": [
+    "Dicots",
+    "Monocots",
+    "Gnetum",
+    "Gymnosperms"
+   ],
+   "a": 3,
+   "x": "Most gymnosperm xylem has only tracheids; Gnetales are the exception with vessels.",
+   "trap": "Gnetum is the gymnosperm that does have vessels."
+  },
+  {
+   "id": "botA-110",
+   "topic": "bot-anatomy",
+   "s": "Types of vascular bundles",
+   "d": 2,
+   "q": "Conjoint, collateral and open vascular bundles occur in",
+   "o": [
+    "Monocot stem",
+    "Dicot root",
+    "Monocot root",
+    "Dicot stem"
+   ],
+   "a": 3,
+   "x": "Xylem and phloem lie on the same radius with cambium between them, so the bundle is open.",
+   "trap": "Monocot stem bundles are closed.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-111",
+   "topic": "bot-anatomy",
+   "s": "Types of vascular bundles",
+   "d": 3,
+   "q": "Bicollateral vascular bundles, with phloem on both sides of xylem, are found in",
+   "o": [
+    "Maize",
+    "Sunflower root",
+    "Cucurbita",
+    "Fern rhizome"
+   ],
+   "a": 2,
+   "x": "Cucurbitaceae stems show outer phloem, outer cambium, xylem, inner cambium, inner phloem.",
+   "yrs": [
+    2079,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "botA-112",
+   "topic": "bot-anatomy",
+   "s": "Types of vascular bundles",
+   "d": 3,
+   "q": "Concentric (amphicribral) bundles, in which phloem surrounds xylem, are common in",
+   "o": [
+    "Dracaena",
+    "Maize stem",
+    "Sunflower stem",
+    "Ferns"
+   ],
+   "a": 3,
+   "x": "Amphicribral (hadrocentric) bundles occur in ferns; amphivasal (xylem around phloem) in Dracaena and Yucca.",
+   "trap": "Dracaena has the reverse (amphivasal).",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-113",
+   "topic": "bot-anatomy",
+   "s": "Types of vascular bundles",
+   "d": 1,
+   "q": "Radial vascular bundles, with xylem and phloem on different radii, occur in",
+   "o": [
+    "Dicot stems",
+    "Monocot stems",
+    "Roots",
+    "Leaves"
+   ],
+   "a": 2,
+   "x": "In roots xylem and phloem strands alternate; stems and leaves have conjoint bundles.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-114",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot stem",
+   "d": 1,
+   "q": "The stele of a monocot stem, with bundles scattered in ground tissue, is called",
+   "o": [
+    "Eustele",
+    "Atactostele",
+    "Dictyostele",
+    "Protostele"
+   ],
+   "a": 1,
+   "x": "Atacto = irregular; dicot stems have a ring of bundles (eustele).",
+   "trap": "Eustele is the dicot stem ring.",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-115",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot stem",
+   "d": 3,
+   "q": "Vascular bundles with a sclerenchymatous sheath and a lysigenous water cavity are seen in the T.S. of",
+   "o": [
+    "Maize stem",
+    "Sunflower stem",
+    "Pea root",
+    "Mango leaf"
+   ],
+   "a": 0,
+   "x": "Monocot stem bundles are skull-shaped; the protoxylem breaks down to leave a water cavity.",
+   "trap": "Sunflower has open bundles without a cavity."
+  },
+  {
+   "id": "botA-116",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot root",
+   "d": 2,
+   "q": "Polyarch xylem with a large, well-developed pith is a feature of",
+   "o": [
+    "Dicot root",
+    "Monocot root",
+    "Dicot stem",
+    "Monocot leaf"
+   ],
+   "a": 1,
+   "x": "Monocot roots usually have more than six xylem groups and a big pith; dicot roots are di- to tetrarch with little pith."
+  },
+  {
+   "id": "botA-117",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot root",
+   "d": 3,
+   "q": "In roots, protoxylem lies towards the periphery. This condition is",
+   "o": [
+    "Endarch",
+    "Mesarch",
+    "Exarch",
+    "Centrarch"
+   ],
+   "a": 2,
+   "x": "Exarch xylem matures centripetally; stems are endarch.",
+   "trap": "Endarch is the stem condition."
+  },
+  {
+   "id": "botA-118",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot root",
+   "d": 2,
+   "q": "Lateral roots arise from the",
+   "o": [
+    "Epidermis",
+    "Pericycle",
+    "Cortex",
+    "Endodermis"
+   ],
+   "a": 1,
+   "x": "Lateral roots are endogenous: they originate in the pericycle opposite protoxylem and push through the cortex.",
+   "trap": "Endodermis lies just outside the pericycle."
+  },
+  {
+   "id": "botA-119",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot leaf",
+   "d": 2,
+   "q": "Bulliform (motor) cells that help leaves roll in dry weather are found in the upper epidermis of",
+   "o": [
+    "Mango leaves",
+    "Pea leaves",
+    "Grass leaves",
+    "Pine needles"
+   ],
+   "a": 2,
+   "x": "Large thin-walled bulliform cells of monocot (isobilateral) leaves lose water and make the leaf curl."
+  },
+  {
+   "id": "botA-120",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot leaf",
+   "d": 2,
+   "q": "A dorsiventral leaf, with mesophyll differentiated into palisade and spongy tissue, is typical of",
+   "o": [
+    "Grasses such as maize",
+    "Onion",
+    "Pine",
+    "Dicots such as mango"
+   ],
+   "a": 3,
+   "x": "Palisade lies under the upper epidermis; spongy tissue with air spaces lies below. Monocot leaves are isobilateral."
+  },
+  {
+   "id": "botA-121",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: epidermal tissue",
+   "d": 2,
+   "q": "Dumb-bell-shaped guard cells are found in the stomata of",
+   "o": [
+    "Grasses",
+    "Dicots",
+    "Ferns",
+    "Mosses"
+   ],
+   "a": 0,
+   "x": "Grass guard cells are dumb-bell shaped with subsidiary cells; dicots have kidney-shaped guard cells.",
+   "trap": "Kidney-shaped is the dicot type."
+  },
+  {
+   "id": "botA-122",
+   "topic": "bot-anatomy",
+   "s": "Study of monocot and dicot leaf",
+   "d": 3,
+   "q": "Kranz anatomy, in which bundle-sheath cells around veins contain large chloroplasts, is seen in leaves of",
+   "o": [
+    "Maize",
+    "Wheat",
+    "Rice",
+    "Pea"
+   ],
+   "a": 0,
+   "x": "Kranz anatomy marks C₄ plants such as maize, sugarcane and sorghum; wheat, rice and pea are C₃.",
+   "trap": "Wheat and rice are grasses but C₃."
+  },
+  {
+   "id": "botA-123",
+   "topic": "bot-applied",
+   "s": "Concept of plant tissue culture",
+   "d": 1,
+   "q": "The ability of a single plant cell to regenerate a whole plant is called",
+   "o": [
+    "Totipotency",
+    "Pleiotropy",
+    "Polyembryony",
+    "Apomixis"
+   ],
+   "a": 0,
+   "x": "Totipotency, predicted by Haberlandt (1902), is the basis of plant tissue culture."
+  },
+  {
+   "id": "botA-124",
+   "topic": "bot-applied",
+   "s": "Introduction of plant tissue culture",
+   "d": 1,
+   "q": "The father of plant tissue culture is",
+   "o": [
+    "Gottlieb Haberlandt",
+    "F.C. Steward",
+    "Skoog",
+    "Paul Berg"
+   ],
+   "a": 0,
+   "x": "Haberlandt (1902) first tried culturing isolated plant cells; Steward later raised carrot plants from single cells.",
+   "trap": "Paul Berg is linked to recombinant DNA."
+  },
+  {
+   "id": "botA-125",
+   "topic": "bot-applied",
+   "s": "Types of plant tissue culture",
+   "d": 3,
+   "q": "Before inoculation, explants are surface-sterilised using",
+   "o": [
+    "Autoclaving at 121 °C",
+    "Sodium hypochlorite or mercuric chloride solution",
+    "Dry heat in an oven at 160 °C",
+    "Boiling in water for 30 minutes"
+   ],
+   "a": 1,
+   "x": "Living explants are dipped in disinfectant (NaOCl, HgCl₂, 70% ethanol) then rinsed; heat would kill them.",
+   "trap": "Autoclaving is for media and glassware, not tissue.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-126",
+   "topic": "bot-applied",
+   "s": "Types of plant tissue culture",
+   "d": 2,
+   "q": "Culture media in tissue culture are sterilised by autoclaving at",
+   "o": [
+    "100 °C for 2 minutes",
+    "60 °C for 1 hour",
+    "−196 °C overnight",
+    "121 °C and 15 psi for 15–20 minutes"
+   ],
+   "a": 3,
+   "x": "Moist heat under pressure kills spores; −196 °C is cryopreservation.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-127",
+   "topic": "bot-applied",
+   "s": "Types of plant tissue culture",
+   "d": 1,
+   "q": "An unorganised, undifferentiated mass of cells formed in tissue culture is",
+   "o": [
+    "Embryoid",
+    "Explant",
+    "Protoplast",
+    "Callus"
+   ],
+   "a": 3,
+   "x": "Callus forms when auxin and cytokinin are balanced; it can later redifferentiate.",
+   "trap": "Explant is the starting piece of tissue."
+  },
+  {
+   "id": "botA-128",
+   "topic": "bot-applied",
+   "s": "Application of plant tissue culture",
+   "d": 2,
+   "q": "Haploid plants are raised in tissue culture from",
+   "o": [
+    "Shoot meristems",
+    "Anthers or pollen grains",
+    "Leaf mesophyll",
+    "Endosperm"
+   ],
+   "a": 1,
+   "x": "Pollen is haploid, so anther culture gives haploids that can be doubled to homozygous lines.",
+   "trap": "Endosperm culture gives triploids."
+  },
+  {
+   "id": "botA-129",
+   "topic": "bot-applied",
+   "s": "Application of plant tissue culture",
+   "d": 3,
+   "q": "The 'pomato' was produced by",
+   "o": [
+    "Grafting tomato on potato",
+    "Anther culture",
+    "Fusion of protoplasts (somatic hybridisation)",
+    "Seed mutation"
+   ],
+   "a": 2,
+   "x": "Protoplasts are freed by cellulase and pectinase, fused with PEG, and grown into a somatic hybrid.",
+   "trap": "Grafting does not combine genomes.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-130",
+   "topic": "bot-applied",
+   "s": "Application of plant tissue culture",
+   "d": 2,
+   "q": "Plants produced by micropropagation from one parent are",
+   "o": [
+    "Haploid",
+    "Genetically very variable",
+    "Always polyploid",
+    "Genetically identical (clones)"
+   ],
+   "a": 3,
+   "x": "Mitotic multiplication of explants gives true-to-type clones (somaclones), useful for banana, orchids, potato."
+  },
+  {
+   "id": "botA-131",
+   "topic": "bot-applied",
+   "s": "Application of plant tissue culture",
+   "d": 3,
+   "q": "For long-term germplasm storage, cells and embryos are cryopreserved in liquid nitrogen at",
+   "o": [
+    "−20 °C",
+    "−196 °C",
+    "0 °C",
+    "−80 °C"
+   ],
+   "a": 1,
+   "x": "Liquid nitrogen boils at −196 °C, halting all metabolism so tissue can be stored indefinitely.",
+   "trap": "−80 °C is a deep freezer, not liquid nitrogen.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-132",
+   "topic": "bot-applied",
+   "s": "Concept of genetic engineering",
+   "d": 2,
+   "q": "The enzyme that joins DNA fragments in recombinant DNA technology is",
+   "o": [
+    "Restriction endonuclease",
+    "DNA ligase",
+    "DNA polymerase",
+    "Helicase"
+   ],
+   "a": 1,
+   "x": "Ligase (molecular glue) seals phosphodiester bonds; restriction enzymes (molecular scissors) cut.",
+   "trap": "Restriction enzymes cut, they do not join.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-133",
+   "topic": "bot-applied",
+   "s": "Application of genetic engineering",
+   "d": 2,
+   "q": "Bt cotton resists bollworm because it carries the cry gene from",
+   "o": [
+    "Agrobacterium tumefaciens",
+    "Bacillus thuringiensis",
+    "Escherichia coli",
+    "Thermus aquaticus"
+   ],
+   "a": 1,
+   "x": "Cry genes code for Bt toxin, which kills the larvae when they eat the plant.",
+   "trap": "Agrobacterium is the vector, not the toxin source.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-134",
+   "topic": "bot-applied",
+   "s": "Application of genetic engineering",
+   "d": 2,
+   "q": "Golden rice is genetically engineered to contain",
+   "o": [
+    "Vitamin C",
+    "Extra iron only",
+    "Insecticidal protein",
+    "β-carotene (provitamin A)"
+   ],
+   "a": 3,
+   "x": "It fights vitamin A deficiency; its yellow colour comes from β-carotene."
+  },
+  {
+   "id": "botA-135",
+   "topic": "bot-applied",
+   "s": "Concept of genetic engineering",
+   "d": 2,
+   "q": "The heat-stable DNA polymerase used in PCR is obtained from",
+   "o": [
+    "Thermus aquaticus",
+    "Escherichia coli",
+    "Bacillus thuringiensis",
+    "Agrobacterium tumefaciens"
+   ],
+   "a": 0,
+   "x": "Taq polymerase survives the 94 °C denaturation step of each PCR cycle."
+  },
+  {
+   "id": "botA-136",
+   "topic": "bot-applied",
+   "s": "Concept of genetic engineering",
+   "d": 3,
+   "q": "During agarose gel electrophoresis, DNA fragments move towards the",
+   "o": [
+    "Anode, because DNA is negatively charged",
+    "Cathode, because DNA is positive",
+    "Anode, because DNA is positive",
+    "Cathode, because DNA is negative"
+   ],
+   "a": 0,
+   "x": "Phosphate groups make DNA negative, so it migrates to the positive electrode; smaller fragments move farther."
+  },
+  {
+   "id": "botA-137",
+   "topic": "bot-applied",
+   "s": "Biofertilizers",
+   "d": 1,
+   "q": "A biofertilizer that fixes nitrogen in the root nodules of legumes is",
+   "o": [
+    "Azotobacter",
+    "Nitrosomonas",
+    "Rhizobium",
+    "Lactobacillus"
+   ],
+   "a": 2,
+   "x": "Rhizobium lives symbiotically in nodules; Azotobacter is free-living.",
+   "trap": "Azotobacter fixes N₂ but freely in soil."
+  },
+  {
+   "id": "botA-138",
+   "topic": "bot-applied",
+   "s": "Biofertilizers",
+   "d": 2,
+   "q": "Azolla is used as a biofertilizer in paddy fields because it harbours the nitrogen-fixing cyanobacterium",
+   "o": [
+    "Anabaena azollae",
+    "Nostoc commune",
+    "Spirulina",
+    "Oscillatoria"
+   ],
+   "a": 0,
+   "x": "Anabaena lives in leaf cavities of the water fern Azolla and fixes nitrogen for rice.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-139",
+   "topic": "bot-applied",
+   "s": "Green manures",
+   "d": 1,
+   "q": "Green manuring means",
+   "o": [
+    "Ploughing a young leguminous crop into the soil",
+    "Spreading cattle dung",
+    "Adding chemical urea",
+    "Burning crop residues"
+   ],
+   "a": 0,
+   "x": "A crop such as Sesbania or sunn hemp is buried before flowering; it adds organic matter and nitrogen.",
+   "trap": "Cattle dung is farmyard manure."
+  },
+  {
+   "id": "botA-140",
+   "topic": "bot-applied",
+   "s": "Plant breeding",
+   "d": 2,
+   "q": "The superiority of a hybrid over both its parents is called",
+   "o": [
+    "Heterosis",
+    "Inbreeding depression",
+    "Polyploidy",
+    "Mutation"
+   ],
+   "a": 0,
+   "x": "Heterosis (hybrid vigour) is exploited in hybrid maize and rice.",
+   "trap": "Inbreeding depression is the opposite."
+  },
+  {
+   "id": "botA-141",
+   "topic": "bot-applied",
+   "s": "Plant breeding",
+   "d": 2,
+   "q": "The Green Revolution, based on semi-dwarf high-yielding wheat, is associated with",
+   "o": [
+    "Norman Borlaug",
+    "Gregor Mendel",
+    "Hugo de Vries",
+    "Paul Berg"
+   ],
+   "a": 0,
+   "x": "Borlaug developed semi-dwarf, disease-resistant wheat varieties (Nobel Peace Prize 1970)."
+  },
+  {
+   "id": "botA-142",
+   "topic": "bot-applied",
+   "s": "Bio-engineering",
+   "d": 2,
+   "q": "In Nepal, bio-engineering on roadside slopes means",
+   "o": [
+    "Inserting foreign genes into crops",
+    "Spraying chemical pesticides on slopes",
+    "Using live plants such as grasses and bamboo to stabilise slopes",
+    "Building only concrete retaining walls"
+   ],
+   "a": 2,
+   "x": "Roots bind soil and vegetation reduces surface erosion and shallow landslides, often combined with small structures.",
+   "trap": "Gene insertion is genetic engineering."
+  },
+  {
+   "id": "botA-143",
+   "topic": "bot-applied",
+   "s": "Food safety and security",
+   "d": 2,
+   "q": "Aflatoxin, a cancer-causing contaminant of stored maize and groundnut, is produced by",
+   "o": [
+    "Penicillium notatum",
+    "Aspergillus flavus",
+    "Rhizopus stolonifer",
+    "Saccharomyces cerevisiae"
+   ],
+   "a": 1,
+   "x": "Damp storage lets A. flavus grow and secrete aflatoxin, a liver carcinogen; proper drying prevents it."
+  },
+  {
+   "id": "botA-144",
+   "topic": "bot-applied",
+   "s": "Food safety and security",
+   "d": 1,
+   "q": "Food security exists when",
+   "o": [
+    "A country exports most of its grain",
+    "Food is stored in government warehouses",
+    "Only farmers grow enough food",
+    "All people at all times have access to sufficient, safe and nutritious food"
+   ],
+   "a": 3,
+   "x": "FAO definition: availability, access, utilisation and stability of safe, nutritious food for everyone."
+  },
+  {
+   "id": "botA-145",
+   "topic": "bot-anatomy",
+   "s": "Phloem: sieve tubes",
+   "d": 1,
+   "q": "In old or dormant sieve tubes, the sieve pores become plugged by a deposit of",
+   "o": [
+    "Suberin",
+    "Lignin",
+    "Tyloses",
+    "Callose"
+   ],
+   "a": 3,
+   "x": "Callose, a β-1,3-glucan, forms pads on sieve plates of dormant or ageing sieve tubes and blocks translocation.",
+   "trap": "Tyloses plug old xylem vessels, not sieve tubes.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-146",
+   "topic": "bot-anatomy",
+   "s": "Sclerenchyma",
+   "d": 2,
+   "q": "Sclerenchyma fibres are long, pointed cells with",
+   "o": [
+    "Thin cellulose walls and a large central vacuole",
+    "Corner thickenings of pectin and a living protoplast",
+    "Thick lignified walls and a very narrow lumen",
+    "Thin walls with many chloroplasts"
+   ],
+   "a": 2,
+   "x": "Fibres are dead at maturity; heavy lignin deposition leaves only a narrow lumen, giving mechanical strength (jute, hemp).",
+   "trap": "Corner thickening describes collenchyma.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-147",
+   "topic": "bot-ecology",
+   "s": "Population interactions",
+   "d": 1,
+   "q": "An interaction in which both species benefit and neither can survive without the other is",
+   "o": [
+    "Protocooperation",
+    "Commensalism",
+    "Amensalism",
+    "Obligate mutualism"
+   ],
+   "a": 3,
+   "x": "Mutualism (+,+) is obligatory, e.g. the alga and fungus of a lichen; protocooperation is also (+,+) but optional, e.g. sea anemone and hermit crab.",
+   "trap": "Protocooperation also benefits both, but the partners can live apart.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-148",
+   "topic": "bot-ecology",
+   "s": "Aquatic ecosystem",
+   "d": 1,
+   "q": "Organisms that live on or in the bottom sediments of a sea or lake are called",
+   "o": [
+    "Plankton",
+    "Benthos",
+    "Nekton",
+    "Neuston"
+   ],
+   "a": 1,
+   "x": "Benthos live on the bottom; plankton drift with currents; nekton swim actively (fish); neuston live at the surface film.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-149",
+   "topic": "bot-ecology",
+   "s": "Ecological adaptations",
+   "d": 1,
+   "q": "Velamen, a spongy tissue that absorbs moisture from humid air, covers the aerial roots of",
+   "o": [
+    "Epiphytes such as Vanda",
+    "Hydrophytes such as Hydrilla",
+    "Xerophytes such as Opuntia",
+    "Halophytes such as Rhizophora"
+   ],
+   "a": 0,
+   "x": "Epiphytic orchids such as Vanda hang aerial roots whose dead, spongy velamen soaks up rain and moist air.",
+   "trap": "Rhizophora has pneumatophores, not velamen.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-150",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: secondary growth",
+   "d": 2,
+   "q": "Grafting is generally not successful in monocots because they",
+   "o": [
+    "Have parallel venation",
+    "Lack phloem in their stems",
+    "Have fibrous roots",
+    "Lack vascular cambium"
+   ],
+   "a": 3,
+   "x": "A graft unites when the cambia of stock and scion join and form new tissue; monocot bundles are closed (no cambium), so no union forms.",
+   "trap": "Scattered bundles are true of monocots, but the missing cambium is the reason.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botA-151",
+   "topic": "bot-ecology",
+   "s": "Ecological imbalances",
+   "d": 2,
+   "q": "Fertiliser runoff rich in nitrate and phosphate causes algal blooms in a pond and a fall in its dissolved oxygen. This process is",
+   "o": [
+    "Biomagnification",
+    "Eutrophication",
+    "Nitrification",
+    "Denitrification"
+   ],
+   "a": 1,
+   "x": "Nutrient enrichment → algal bloom → dead algae decomposed by aerobic bacteria → dissolved O₂ falls and fish die.",
+   "trap": "Biomagnification is the build-up of toxins like DDT along food chains.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-152",
+   "topic": "bot-biodiversity",
+   "s": "Structure & reproduction of Spirogyra",
+   "d": 2,
+   "q": "On germination, the zygospore of Spirogyra first undergoes",
+   "o": [
+    "Meiosis, so the new filament is haploid",
+    "Mitosis, so the new filament is diploid",
+    "Fragmentation into zoospores",
+    "Fusion with another gamete"
+   ],
+   "a": 0,
+   "x": "The zygospore is the only diploid cell; it divides by meiosis (zygotic meiosis), three nuclei degenerate and the surviving haploid cell grows into a filament.",
+   "trap": "Spirogyra filaments are haploid, so a diploid filament never forms.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "botA-153",
+   "topic": "bot-biodiversity",
+   "s": "Families: Brassicaceae",
+   "d": 2,
+   "q": "Four free petals, each narrowed into a claw and a spreading limb and arranged like a cross, are characteristic of",
+   "o": [
+    "Fabaceae",
+    "Brassicaceae",
+    "Solanaceae",
+    "Liliaceae"
+   ],
+   "a": 1,
+   "x": "The mustard family has a cruciform corolla: four clawed petals in a cross, hence the old name Cruciferae.",
+   "trap": "Fabaceae petals are unequal (standard, wings, keel), not cruciform.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-154",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Rhodophyceae",
+   "d": 2,
+   "q": "Red algae can grow at greater depths in the sea than other algae because",
+   "o": [
+    "They lack chlorophyll and do not need light",
+    "Phycoerythrin absorbs the blue-green light that reaches deep water",
+    "Fucoxanthin absorbs the red light found at depth",
+    "They obtain food as parasites of corals"
+   ],
+   "a": 1,
+   "x": "Red light is absorbed near the surface; phycoerythrin captures the blue-green light that penetrates deep, so red algae live deepest.",
+   "trap": "Fucoxanthin is the brown-algal pigment.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-155",
+   "topic": "bot-anatomy",
+   "s": "Phloem: companion cells",
+   "d": 1,
+   "q": "Which of these cells is living at functional maturity?",
+   "o": [
+    "Companion cell",
+    "Vessel element",
+    "Tracheid",
+    "Cork cell"
+   ],
+   "a": 0,
+   "x": "Companion cells keep a nucleus and dense cytoplasm and support the enucleate sieve tube; vessels, tracheids and cork cells are dead.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-156",
+   "topic": "bot-ecology",
+   "s": "Ecological adaptations",
+   "d": 2,
+   "q": "Flattened green stems (phylloclades) that photosynthesise while the leaves are reduced to spines, as in Opuntia, are an adaptation of",
+   "o": [
+    "Xerophytes",
+    "Hydrophytes",
+    "Epiphytes",
+    "Sciophytes"
+   ],
+   "a": 0,
+   "x": "Reducing leaves cuts water loss by transpiration; the green phylloclade or cladode takes over photosynthesis in dry habitats.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-157",
+   "topic": "bot-biodiversity",
+   "s": "Fungi: reproduction",
+   "d": 2,
+   "q": "In the sexual cycle of fungi, the correct sequence of events is",
+   "o": [
+    "Karyogamy → plasmogamy → meiosis",
+    "Plasmogamy → karyogamy → meiosis",
+    "Meiosis → plasmogamy → karyogamy",
+    "Plasmogamy → meiosis → karyogamy"
+   ],
+   "a": 1,
+   "x": "Cytoplasms fuse first (plasmogamy), then nuclei fuse (karyogamy) to give a diploid zygote nucleus, which undergoes meiosis to form haploid spores.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-158",
+   "topic": "bot-ecology",
+   "s": "Ecosystem: food chain",
+   "d": 1,
+   "q": "A food chain that begins with living green plants eaten by herbivores is a",
+   "o": [
+    "Detritus food chain",
+    "Grazing food chain",
+    "Parasitic food chain",
+    "Saprophytic food chain"
+   ],
+   "a": 1,
+   "x": "Grazing chains start with producers (grass → grasshopper → frog → snake → hawk); detritus chains start with dead organic matter.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-159",
+   "topic": "bot-ecology",
+   "s": "Ecosystem: trophic levels",
+   "d": 1,
+   "q": "Which of the following is NOT a trophic level?",
+   "o": [
+    "Producers",
+    "Herbivores",
+    "Top carnivores",
+    "Food web"
+   ],
+   "a": 3,
+   "x": "A trophic level is one feeding step (producer, herbivore, carnivore). A food web is the whole network of interlinked chains, not a step.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-160",
+   "topic": "bot-biodiversity",
+   "s": "Pteridophytes: Dryopteris",
+   "d": 2,
+   "q": "The antherozoids of a fern such as Dryopteris are",
+   "o": [
+    "Biflagellate",
+    "Non-motile",
+    "Uniflagellate",
+    "Spirally coiled and multiflagellate"
+   ],
+   "a": 3,
+   "x": "Fern antherozoids are coiled with many flagella and swim through water to the archegonium; moss antherozoids are biflagellate.",
+   "trap": "Biflagellate antherozoids belong to mosses.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-161",
+   "topic": "bot-anatomy",
+   "s": "Plant tissues: secondary growth",
+   "d": 1,
+   "q": "Cork (phellem) cells are impermeable to water and gases because their walls are impregnated with",
+   "o": [
+    "Suberin",
+    "Lignin",
+    "Pectin",
+    "Callose"
+   ],
+   "a": 0,
+   "x": "Suberin, a waxy fatty substance, makes cork cells dead and impervious, so bark protects the stem; it also suits bottle stoppers.",
+   "trap": "Lignin hardens xylem and sclerenchyma walls.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-162",
+   "topic": "bot-ecology",
+   "s": "Population interactions",
+   "d": 2,
+   "q": "Two species with exactly the same niche cannot coexist indefinitely. This is",
+   "o": [
+    "Allen's rule",
+    "Gause's competitive exclusion principle",
+    "Dollo's law",
+    "Liebig's law of the minimum"
+   ],
+   "a": 1,
+   "x": "Gause's Paramecium experiments showed the better competitor eliminates the other when their niches fully overlap.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-163",
+   "topic": "bot-biodiversity",
+   "s": "Cryptogams and phanerogams",
+   "d": 1,
+   "q": "Plants that reproduce by spores and never form seeds are grouped as",
+   "o": [
+    "Phanerogams",
+    "Gymnosperms",
+    "Cryptogams",
+    "Angiosperms"
+   ],
+   "a": 2,
+   "x": "Cryptogams (algae, bryophytes, pteridophytes) have hidden reproduction and no seeds; phanerogams (gymnosperms and angiosperms) bear seeds.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-164",
+   "topic": "bot-ecology",
+   "s": "Nitrogen cycle",
+   "d": 1,
+   "q": "Conversion of the organic nitrogen of dead plants and animals into ammonia by decomposers is",
+   "o": [
+    "Nitrification",
+    "Nitrogen fixation",
+    "Denitrification",
+    "Ammonification"
+   ],
+   "a": 3,
+   "x": "Decomposer bacteria and fungi break proteins and urea down to NH₃; nitrifying bacteria then oxidise NH₃ to nitrite and nitrate.",
+   "trap": "Nitrification starts from ammonia; it does not produce it.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-165",
+   "topic": "bot-biodiversity",
+   "s": "Phaeophyceae: economic importance",
+   "d": 1,
+   "q": "Iodine is commercially extracted from",
+   "o": [
+    "Gelidium",
+    "Kelps (brown seaweeds) such as Laminaria",
+    "Spirogyra",
+    "Nostoc"
+   ],
+   "a": 1,
+   "x": "Large brown seaweeds such as Laminaria concentrate iodine from sea water; kelp ash was long the main source of iodine.",
+   "trap": "Gelidium gives agar, not iodine.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-166",
+   "topic": "bot-biodiversity",
+   "s": "Hepaticopsida (Liverworts)",
+   "d": 1,
+   "q": "The rhizoids of a liverwort such as Marchantia are",
+   "o": [
+    "Multicellular with oblique septa",
+    "Multicellular and branched",
+    "Unicellular",
+    "Absent"
+   ],
+   "a": 2,
+   "x": "Liverworts have unicellular rhizoids (smooth-walled and tuberculate); mosses such as Funaria have multicellular rhizoids with oblique septa.",
+   "trap": "Multicellular rhizoids belong to mosses."
+  },
+  {
+   "id": "botA-167",
+   "topic": "bot-biodiversity",
+   "s": "Hepaticopsida (Liverworts)",
+   "d": 2,
+   "q": "Hygroscopic elaters that help in spore dispersal are found in the capsule of",
+   "o": [
+    "Funaria",
+    "Sphagnum",
+    "Marchantia",
+    "Pinus"
+   ],
+   "a": 2,
+   "x": "The sporophyte capsule of Marchantia contains spores mixed with diploid elaters having spiral thickenings; they twist with changes in humidity and scatter spores.",
+   "trap": "Funaria uses peristome teeth, not elaters."
+  },
+  {
+   "id": "botA-168",
+   "topic": "bot-biodiversity",
+   "s": "Bryopsida (Moss)",
+   "d": 2,
+   "q": "In the capsule of Funaria, the gradual release of spores in dry weather is controlled by hygroscopic",
+   "o": [
+    "Peristome teeth",
+    "Elaters",
+    "Gemmae",
+    "Indusia"
+   ],
+   "a": 0,
+   "x": "The peristome is a ring of teeth around the capsule mouth; the teeth bend in and out with humidity, letting spores out only in dry air.",
+   "trap": "Elaters belong to liverworts like Marchantia."
+  },
+  {
+   "id": "botA-169",
+   "topic": "bot-biodiversity",
+   "s": "Anthocerotopsida (Hornworts)",
+   "d": 2,
+   "q": "Mucilage cavities in the thallus of the hornwort Anthoceros usually contain colonies of",
+   "o": [
+    "Anabaena",
+    "Spirulina",
+    "Nostoc",
+    "Oscillatoria"
+   ],
+   "a": 2,
+   "x": "Anthoceros houses the nitrogen-fixing cyanobacterium Nostoc in mucilage-filled cavities on the lower side of its thallus.",
+   "trap": "Anabaena lives in the water fern Azolla."
+  },
+  {
+   "id": "botA-170",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Chlorophyceae",
+   "d": 1,
+   "q": "Both chlorophyll a and chlorophyll b are present in",
+   "o": [
+    "Chlorophyceae",
+    "Phaeophyceae",
+    "Rhodophyceae",
+    "Cyanobacteria"
+   ],
+   "a": 0,
+   "x": "Green algae share chlorophyll a and b with land plants; brown algae have a and c, red algae a and d, and cyanobacteria only a."
+  },
+  {
+   "id": "botA-171",
+   "topic": "bot-biodiversity",
+   "s": "Algae: general introduction",
+   "d": 1,
+   "q": "Chlamydomonas is an example of a",
+   "o": [
+    "Colonial green alga",
+    "Filamentous green alga",
+    "Unicellular motile green alga",
+    "Unicellular red alga"
+   ],
+   "a": 2,
+   "x": "Chlamydomonas is a single biflagellate green cell with a cup-shaped chloroplast; Volvox is colonial and Spirogyra filamentous.",
+   "trap": "Volvox is the colonial one."
+  },
+  {
+   "id": "botA-172",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Phaeophyceae",
+   "d": 2,
+   "q": "The motile zoospores and gametes of brown algae bear",
+   "o": [
+    "Two equal flagella attached at the apex",
+    "A ring of many flagella",
+    "No flagella at all",
+    "Two unequal flagella attached laterally"
+   ],
+   "a": 3,
+   "x": "Phaeophyceae have pear-shaped motile cells with two unequal, laterally inserted flagella; green algae have 2–8 equal apical flagella.",
+   "trap": "Equal apical flagella describe green algae."
+  },
+  {
+   "id": "botA-173",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Rhodophyceae",
+   "d": 1,
+   "q": "Which algal class has no flagellated cells at any stage of its life cycle?",
+   "o": [
+    "Rhodophyceae",
+    "Chlorophyceae",
+    "Phaeophyceae",
+    "Euglenophyceae"
+   ],
+   "a": 0,
+   "x": "Red algae have non-motile spores and gametes; the male gamete (spermatium) is carried passively by water currents."
+  },
+  {
+   "id": "botA-174",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Phycomycetes",
+   "d": 2,
+   "q": "The mycelium of Phycomycetes such as Mucor and Rhizopus is",
+   "o": [
+    "Septate with dikaryotic cells",
+    "Septate with uninucleate cells",
+    "Aseptate and coenocytic",
+    "Absent, as the fungus is unicellular"
+   ],
+   "a": 2,
+   "x": "Phycomycetes have tubular hyphae without cross walls, so many nuclei share one cytoplasm (coenocytic). Septate hyphae occur in higher fungi.",
+   "trap": "Dikaryotic septate hyphae belong to Basidiomycetes."
+  },
+  {
+   "id": "botA-175",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Ascomycetes",
+   "d": 3,
+   "q": "In an ascus of Neurospora, the diploid nucleus undergoes meiosis followed by one mitosis. The number of ascospores formed is",
+   "o": [
+    "4",
+    "2",
+    "8",
+    "16"
+   ],
+   "a": 2,
+   "x": "Meiosis gives 4 haploid nuclei; one mitosis doubles them to 8, each becoming an ascospore arranged in a row inside the ascus.",
+   "trap": "4 stops after meiosis and ignores the mitosis."
+  },
+  {
+   "id": "botA-176",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Basidiomycetes",
+   "d": 1,
+   "q": "The common edible mushroom Agaricus belongs to",
+   "o": [
+    "Ascomycetes",
+    "Phycomycetes",
+    "Basidiomycetes",
+    "Deuteromycetes"
+   ],
+   "a": 2,
+   "x": "Agaricus forms basidiospores on basidia lining the gills of its fruiting body, so it is a basidiomycete.",
+   "trap": "Morels and yeast are the edible ascomycetes."
+  },
+  {
+   "id": "botA-177",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Deuteromycetes",
+   "d": 2,
+   "q": "Alternaria and Colletotrichum, which cause leaf-spot and anthracnose diseases of crops, belong to",
+   "o": [
+    "Deuteromycetes",
+    "Phycomycetes",
+    "Basidiomycetes",
+    "Lichens"
+   ],
+   "a": 0,
+   "x": "Both reproduce only by conidia; no sexual stage is known, so they are placed in Deuteromycetes (fungi imperfecti)."
+  },
+  {
+   "id": "botA-178",
+   "topic": "bot-biodiversity",
+   "s": "Structure and reproduction of Mucor",
+   "d": 2,
+   "q": "Mucor reproduces asexually by",
+   "o": [
+    "Conidia cut off at hyphal tips",
+    "Basidiospores formed on basidia",
+    "Ascospores formed in asci",
+    "Non-motile sporangiospores formed inside sporangia"
+   ],
+   "a": 3,
+   "x": "A sporangiophore of Mucor ends in a round sporangium with a columella; it releases many non-motile sporangiospores that grow into new mycelia.",
+   "trap": "Conidia are the asexual spores of Penicillium and Aspergillus."
+  },
+  {
+   "id": "botA-179",
+   "topic": "bot-biodiversity",
+   "s": "Structure and reproduction of yeast",
+   "d": 2,
+   "q": "Sexual reproduction in yeast produces",
+   "o": [
+    "Zygospores",
+    "Basidiospores",
+    "Ascospores inside an ascus",
+    "Conidia"
+   ],
+   "a": 2,
+   "x": "Two haploid cells fuse; the diploid cell becomes an ascus and forms ascospores by meiosis, so yeast is an ascomycete.",
+   "trap": "Zygospores belong to Mucor and Rhizopus."
+  },
+  {
+   "id": "botA-180",
+   "topic": "bot-biodiversity",
+   "s": "Characteristics, structure, chemical composition of viruses",
+   "d": 2,
+   "q": "The genetic material of most plant viruses is",
+   "o": [
+    "Double-stranded DNA",
+    "Single-stranded RNA",
+    "Single-stranded DNA",
+    "Both DNA and RNA together"
+   ],
+   "a": 1,
+   "x": "Most plant viruses (e.g. TMV) carry ssRNA; bacteriophages usually carry dsDNA. A virus never carries both DNA and RNA.",
+   "trap": "dsDNA is typical of bacteriophages like T4."
+  },
+  {
+   "id": "botA-181",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of virus",
+   "d": 2,
+   "q": "Bacteriophages can be used beneficially to",
+   "o": [
+    "Kill disease-causing bacteria (phage therapy)",
+    "Fix atmospheric nitrogen",
+    "Produce penicillin",
+    "Ferment sugar into alcohol"
+   ],
+   "a": 0,
+   "x": "Phages infect and lyse specific bacteria, so they can be used to destroy pathogenic or antibiotic-resistant bacteria."
+  },
+  {
+   "id": "botA-182",
+   "topic": "bot-biodiversity",
+   "s": "Structure of bacterial cell",
+   "d": 2,
+   "q": "Infoldings of the bacterial plasma membrane that help in respiration and cell-wall formation are",
+   "o": [
+    "Plasmids",
+    "Mesosomes",
+    "Pili",
+    "Cristae"
+   ],
+   "a": 1,
+   "x": "Mesosomes are membrane infoldings that increase surface area for respiratory enzymes and help in DNA replication and septum formation.",
+   "trap": "Cristae are infoldings of mitochondria, which bacteria lack."
+  },
+  {
+   "id": "botA-183",
+   "topic": "bot-biodiversity",
+   "s": "Types of bacteria",
+   "d": 1,
+   "q": "Bacteria with flagella all over the cell surface, such as E. coli and Salmonella, are",
+   "o": [
+    "Monotrichous",
+    "Peritrichous",
+    "Lophotrichous",
+    "Amphitrichous"
+   ],
+   "a": 1,
+   "x": "Peritrichous = flagella all around; monotrichous = one; lophotrichous = a tuft at one end; amphitrichous = at both ends."
+  },
+  {
+   "id": "botA-184",
+   "topic": "bot-biodiversity",
+   "s": "Mode of nutrition in bacteria",
+   "d": 3,
+   "q": "Purple sulphur bacteria make food using light energy and H₂S as the hydrogen donor. Their mode of nutrition is",
+   "o": [
+    "Chemoautotrophic",
+    "Saprophytic",
+    "Photoautotrophic",
+    "Parasitic"
+   ],
+   "a": 2,
+   "x": "Light is the energy source, so they are photoautotrophs; H₂S only replaces water as the electron donor, so no oxygen is released.",
+   "trap": "H₂S suggests chemoautotrophy, but energy comes from light."
+  },
+  {
+   "id": "botA-185",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of bacteria",
+   "d": 1,
+   "q": "The antibiotic streptomycin is obtained from",
+   "o": [
+    "Streptomyces griseus",
+    "Penicillium notatum",
+    "Lactobacillus",
+    "Aspergillus niger"
+   ],
+   "a": 0,
+   "x": "Streptomycin, used against tuberculosis, was isolated by Waksman from the filamentous bacterium (actinomycete) Streptomyces griseus.",
+   "trap": "Penicillium gives penicillin."
+  },
+  {
+   "id": "botA-186",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of blue-green algae",
+   "d": 1,
+   "q": "Which cyanobacterium is grown as a protein-rich food supplement?",
+   "o": [
+    "Anabaena",
+    "Oscillatoria",
+    "Spirulina",
+    "Microcystis"
+   ],
+   "a": 2,
+   "x": "Spirulina is cultivated as single-cell protein, being rich in protein, vitamins and minerals. Microcystis forms toxic water blooms."
+  },
+  {
+   "id": "botA-187",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of pteridophytes",
+   "d": 2,
+   "q": "Much of the world's coal was formed from the buried remains of ancient",
+   "o": [
+    "Bryophytes such as mosses",
+    "Pteridophytes such as giant club mosses and horsetails",
+    "Flowering plants",
+    "Red algae"
+   ],
+   "a": 1,
+   "x": "Tree-sized lycopods (Lepidodendron) and horsetails (Calamites) of the Carboniferous swamp forests were buried and compressed into coal."
+  },
+  {
+   "id": "botA-188",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Pteridophytes",
+   "d": 1,
+   "q": "In pteridophytes, the dominant and independent plant body is the",
+   "o": [
+    "Haploid gametophyte",
+    "Protonema",
+    "Diploid sporophyte",
+    "Diploid gametophyte"
+   ],
+   "a": 2,
+   "x": "The fern plant with roots, stem and leaves is the sporophyte; the gametophyte is a small, short-lived prothallus.",
+   "trap": "The haploid gametophyte dominates in bryophytes, not ferns."
+  },
+  {
+   "id": "botA-189",
+   "topic": "bot-biodiversity",
+   "s": "Characteristic features of Gymnosperms",
+   "d": 2,
+   "q": "Which of the following is absent in gymnosperms?",
+   "o": [
+    "Ovules",
+    "Triple fusion forming a triploid endosperm",
+    "Pollen grains",
+    "Seeds"
+   ],
+   "a": 1,
+   "x": "Gymnosperms bear naked ovules that become seeds and shed pollen, but their endosperm is the haploid female gametophyte formed before fertilisation, so triple fusion never occurs.",
+   "trap": "Naked seeds are the hallmark of gymnosperms."
+  },
+  {
+   "id": "botA-190",
+   "topic": "bot-biodiversity",
+   "s": "Morphological structure and reproduction of Pinus",
+   "d": 2,
+   "q": "The male gametes of Pinus are",
+   "o": [
+    "Non-motile and carried to the egg by a pollen tube",
+    "Multiflagellate and swim to the egg",
+    "Biflagellate and swim to the egg",
+    "Absent, as Pinus reproduces only vegetatively"
+   ],
+   "a": 0,
+   "x": "Pinus shows siphonogamy: the pollen tube delivers non-motile male gametes to the archegonium, so no water is needed.",
+   "trap": "Cycas has motile multiflagellate sperms; Pinus does not."
+  },
+  {
+   "id": "botA-191",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of leaf",
+   "d": 3,
+   "q": "Monocots usually have parallel venation. Which monocot is an exception with reticulate venation?",
+   "o": [
+    "Maize",
+    "Banana",
+    "Onion",
+    "Smilax"
+   ],
+   "a": 3,
+   "x": "Smilax (and Dioscorea) are monocots with net-like venation; banana has pinnate parallel venation and maize and onion have parallel venation.",
+   "trap": "Banana leaves look net-like but are parallel-veined."
+  },
+  {
+   "id": "botA-192",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of leaf",
+   "d": 2,
+   "q": "In garden pea, the terminal leaflets of the compound leaf are modified into",
+   "o": [
+    "Spines",
+    "Phyllodes",
+    "Pitchers",
+    "Tendrils"
+   ],
+   "a": 3,
+   "x": "Pea climbs using leaflet tendrils; its large leafy stipules take over much of the photosynthesis."
+  },
+  {
+   "id": "botA-193",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of leaf",
+   "d": 2,
+   "q": "In Australian Acacia, the flattened green petiole that does the work of the lamina is a",
+   "o": [
+    "Phylloclade",
+    "Cladode",
+    "Stipule",
+    "Phyllode"
+   ],
+   "a": 3,
+   "x": "A phyllode is a leaf-like petiole; the true leaflets fall early. Phylloclades and cladodes are modified stems.",
+   "trap": "Phylloclade sounds similar but is a stem."
+  },
+  {
+   "id": "botA-194",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of inflorescence",
+   "d": 1,
+   "q": "The inflorescence of sunflower is a",
+   "o": [
+    "Capitulum (head)",
+    "Umbel",
+    "Spadix",
+    "Catkin"
+   ],
+   "a": 0,
+   "x": "In a capitulum, many sessile florets (ray and disc) sit on a flattened receptacle surrounded by involucral bracts."
+  },
+  {
+   "id": "botA-195",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of flower",
+   "d": 2,
+   "q": "A flower in which sepals, petals and stamens arise below the ovary is",
+   "o": [
+    "Epigynous, with a superior ovary",
+    "Perigynous, with an inferior ovary",
+    "Epigynous, with an inferior ovary",
+    "Hypogynous, with a superior ovary"
+   ],
+   "a": 3,
+   "x": "When the ovary sits highest on the thalamus and other parts arise beneath it, the flower is hypogynous and the ovary superior (e.g. mustard, brinjal).",
+   "trap": "Epigynous flowers have inferior ovaries, with parts above them."
+  },
+  {
+   "id": "botA-196",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of flower",
+   "d": 2,
+   "q": "Stamens united by their anthers but with free filaments, as in sunflower, are",
+   "o": [
+    "Monadelphous",
+    "Diadelphous",
+    "Syngenesious",
+    "Epipetalous"
+   ],
+   "a": 2,
+   "x": "Syngenesious stamens form an anther tube around the style (Asteraceae). Adelphous terms refer to fused filaments.",
+   "trap": "Monadelphous means filaments fused, as in China rose."
+  },
+  {
+   "id": "botA-197",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of fruit",
+   "d": 3,
+   "q": "Which of the following is an aggregate fruit?",
+   "o": [
+    "Mulberry",
+    "Pineapple",
+    "Mango",
+    "Custard apple"
+   ],
+   "a": 3,
+   "x": "An aggregate fruit develops from the free carpels of one flower (custard apple, strawberry). Mulberry and pineapple are multiple fruits from whole inflorescences; mango is simple.",
+   "trap": "Pineapple and mulberry come from many flowers: multiple fruits."
+  },
+  {
+   "id": "botA-198",
+   "topic": "bot-biodiversity",
+   "s": "Families: Solanaceae",
+   "d": 3,
+   "q": "The floral formula ⊕ ⚥ K₍₅₎ C₍₅₎ A₅ G₍₂₎ (stamens epipetalous) belongs to",
+   "o": [
+    "Brassicaceae",
+    "Fabaceae",
+    "Liliaceae",
+    "Solanaceae"
+   ],
+   "a": 3,
+   "x": "Five united sepals and petals, five epipetalous stamens and a bicarpellary syncarpous ovary fit Solanaceae. Brassicaceae has K₂₊₂ C₄ A₂₊₄; Liliaceae P₃₊₃."
+  },
+  {
+   "id": "botA-199",
+   "topic": "bot-biodiversity",
+   "s": "Families: Fabaceae",
+   "d": 1,
+   "q": "The characteristic fruit of Fabaceae is a",
+   "o": [
+    "Siliqua",
+    "Legume (pod)",
+    "Berry",
+    "Capsule"
+   ],
+   "a": 1,
+   "x": "A legume develops from a monocarpellary ovary and splits along both sutures. Siliqua is the mustard fruit; berry is typical of Solanaceae."
+  },
+  {
+   "id": "botA-200",
+   "topic": "bot-biodiversity",
+   "s": "Morphology of leaf",
+   "d": 2,
+   "q": "The edible part of the onion bulb is mainly its",
+   "o": [
+    "Fleshy scale leaves",
+    "Swollen root",
+    "Swollen stem axis",
+    "Fleshy inflorescence"
+   ],
+   "a": 0,
+   "x": "An onion bulb is a reduced disc-like stem bearing fleshy scale leaves that store food; adventitious roots arise below the disc.",
+   "trap": "The stem is only the small basal disc."
+  },
+  {
+   "id": "botA-201",
+   "topic": "bot-biodiversity",
+   "s": "Economic importance of angiosperms of Nepal",
+   "d": 2,
+   "q": "Traditional Nepali lokta paper is made from the bark fibres of",
+   "o": [
+    "Daphne (lokta)",
+    "Sal",
+    "Chir pine",
+    "Rhododendron"
+   ],
+   "a": 0,
+   "x": "Lokta paper is handmade from the inner bark of Daphne bholua and D. papyracea, shrubs of Nepal's mid-hills."
+  },
+  {
+   "id": "botA-202",
+   "topic": "bot-biodiversity",
+   "s": "Bacterial growth",
+   "d": 3,
+   "q": "In log phase, a culture grows from 1 × 10³ to 1.6 × 10⁴ cells in 2 hours. The generation time is",
+   "o": [
+    "15 minutes",
+    "30 minutes",
+    "40 minutes",
+    "60 minutes"
+   ],
+   "a": 1,
+   "x": "Increase = 16 = 2⁴, so 4 generations in 120 min; generation time = 120/4 = 30 min.",
+   "trap": "Count generations (2⁴ = 16 gives 4), not the 16-fold increase.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-203",
+   "topic": "bot-biodiversity",
+   "s": "Taxonomic hierarchies",
+   "d": 2,
+   "q": "Members of which taxonomic category share the greatest number of common characters?",
+   "o": [
+    "Genus",
+    "Family",
+    "Kingdom",
+    "Species"
+   ],
+   "a": 3,
+   "x": "Moving down the hierarchy from kingdom to species, groups get smaller and members share more characters; species members share the most.",
+   "trap": "Kingdom is the largest, broadest group.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "botA-204",
+   "topic": "bot-biodiversity",
+   "s": "General concept of classification: 5-Kingdom system",
+   "d": 1,
+   "q": "In Whittaker's five-kingdom system, all unicellular eukaryotes are placed in",
+   "o": [
+    "Monera",
+    "Fungi",
+    "Plantae",
+    "Protista"
+   ],
+   "a": 3,
+   "x": "Monera holds prokaryotes; Protista holds unicellular eukaryotes such as Chlamydomonas, Euglena, diatoms and Amoeba.",
+   "trap": "Monera contains only prokaryotes."
+  },
+  {
+   "id": "botA-205",
+   "topic": "bot-biodiversity",
+   "s": "Introduction and types of lichens",
+   "d": 1,
+   "q": "In a lichen, the algal partner is the phycobiont and the fungal partner is the",
+   "o": [
+    "Symbiont",
+    "Mycobiont",
+    "Saprobiont",
+    "Zoobiont"
+   ],
+   "a": 1,
+   "x": "The fungus (mycobiont) gives shelter, water and minerals; the alga (phycobiont) makes food by photosynthesis."
+  },
+  {
+   "id": "botA-206",
+   "topic": "bot-ecology",
+   "s": "Forest ecosystem: structural aspects",
+   "d": 1,
+   "q": "Vertical layering of a forest into canopy, shrub, herb and ground layers is called",
+   "o": [
+    "Succession",
+    "Stratification",
+    "Ecotone",
+    "Biomagnification"
+   ],
+   "a": 1,
+   "x": "Stratification is the vertical arrangement of plants of different heights; it lets each layer use a different light level."
+  },
+  {
+   "id": "botA-207",
+   "topic": "bot-ecology",
+   "s": "Pond ecosystem: functional aspects",
+   "d": 3,
+   "q": "In a pond, the pyramid of biomass is usually inverted because",
+   "o": [
+    "Energy increases at higher trophic levels",
+    "Short-lived phytoplankton have less standing biomass than the consumers feeding on them",
+    "Producers are larger than consumers",
+    "Decomposers are counted as producers"
+   ],
+   "a": 1,
+   "x": "Phytoplankton multiply fast but live briefly, so at any moment their biomass is smaller than that of zooplankton and fish; energy flow still decreases upward.",
+   "trap": "Energy never increases upward; the energy pyramid stays upright."
+  },
+  {
+   "id": "botA-208",
+   "topic": "bot-ecology",
+   "s": "Pond ecosystem: structural aspects",
+   "d": 2,
+   "q": "The deep bottom zone of a pond, where light does not reach and photosynthesis does not occur, is the",
+   "o": [
+    "Profundal zone",
+    "Littoral zone",
+    "Limnetic zone",
+    "Euphotic zone"
+   ],
+   "a": 0,
+   "x": "Littoral is the shallow edge, limnetic the open lit water, and profundal the deep dark zone where only consumers and decomposers live.",
+   "trap": "Limnetic is open water but still lit."
+  },
+  {
+   "id": "botA-209",
+   "topic": "bot-ecology",
+   "s": "Pond ecosystem: structural aspects",
+   "d": 1,
+   "q": "In a pond ecosystem, the primary consumers are mainly",
+   "o": [
+    "Zooplankton",
+    "Phytoplankton",
+    "Large predatory fish",
+    "Decomposer bacteria"
+   ],
+   "a": 0,
+   "x": "Zooplankton (e.g. rotifers, crustaceans) feed directly on phytoplankton, the producers, so they are primary consumers.",
+   "trap": "Phytoplankton are producers."
+  },
+  {
+   "id": "botA-210",
+   "topic": "bot-ecology",
+   "s": "Biotic interactions",
+   "d": 1,
+   "q": "Rhizobium living in the root nodules of legumes shows",
+   "o": [
+    "Parasitism",
+    "Amensalism",
+    "Commensalism",
+    "Mutualism"
+   ],
+   "a": 3,
+   "x": "Rhizobium fixes nitrogen for the plant and gets food and shelter from it: both partners benefit (+,+)."
+  },
+  {
+   "id": "botA-211",
+   "topic": "bot-ecology",
+   "s": "Carbon cycle",
+   "d": 2,
+   "q": "Carbon that stays out of the active carbon cycle for millions of years is stored mainly in",
+   "o": [
+    "Fossil fuels and carbonate rocks",
+    "Green leaves",
+    "Living animals",
+    "Atmospheric CO₂"
+   ],
+   "a": 0,
+   "x": "Coal, petroleum and limestone lock carbon away for geological time; burning fossil fuels returns it rapidly to the air."
+  },
+  {
+   "id": "botA-212",
+   "topic": "bot-ecology",
+   "s": "Nitrogen cycle",
+   "d": 2,
+   "q": "Biological nitrogen fixation converts atmospheric N₂ first into",
+   "o": [
+    "Nitrate",
+    "Nitrite",
+    "Nitrous oxide",
+    "Ammonia"
+   ],
+   "a": 3,
+   "x": "The enzyme nitrogenase reduces N₂ to NH₃; nitrifying bacteria later oxidise ammonia to nitrite and nitrate.",
+   "trap": "Nitrate is formed later by nitrification."
+  },
+  {
+   "id": "botA-213",
+   "topic": "bot-ecology",
+   "s": "Climate change",
+   "d": 1,
+   "q": "A major effect of global warming in Nepal is",
+   "o": [
+    "Thickening of the ozone layer",
+    "Expansion of snow cover",
+    "Faster melting of Himalayan glaciers and risk of glacial lake outburst floods",
+    "A fall in average temperature"
+   ],
+   "a": 2,
+   "x": "Warming retreats glaciers, swells glacial lakes such as Tsho Rolpa and raises the risk of outburst floods downstream."
+  },
+  {
+   "id": "botA-214",
+   "topic": "bot-ecology",
+   "s": "Greenhouse effect",
+   "d": 2,
+   "q": "Molecule for molecule, which of these greenhouse gases has the highest global-warming potential?",
+   "o": [
+    "Carbon dioxide",
+    "Chlorofluorocarbons (CFCs)",
+    "Methane",
+    "Water vapour"
+   ],
+   "a": 1,
+   "x": "CFCs trap thousands of times more heat per molecule than CO₂; CO₂ contributes most overall only because it is far more abundant.",
+   "trap": "CO₂ contributes most in total, not per molecule."
+  },
+  {
+   "id": "botA-215",
+   "topic": "bot-ecology",
+   "s": "Acid rain",
+   "d": 2,
+   "q": "Rain is called acid rain when its pH falls below about",
+   "o": [
+    "7.0",
+    "8.5",
+    "3.0",
+    "5.6"
+   ],
+   "a": 3,
+   "x": "Normal rain is slightly acidic (pH ≈ 5.6) from dissolved CO₂; SO₂ and NOₓ forming H₂SO₄ and HNO₃ push it lower.",
+   "trap": "pH 7 is neutral, but clean rain is already about 5.6."
+  },
+  {
+   "id": "botA-216",
+   "topic": "bot-ecology",
+   "s": "Ozone layer depletion",
+   "d": 2,
+   "q": "Thinning of the ozone layer mainly increases the amount of which radiation reaching the Earth?",
+   "o": [
+    "Infrared",
+    "UV-B",
+    "Visible light",
+    "Microwaves"
+   ],
+   "a": 1,
+   "x": "Stratospheric ozone absorbs UV-B; when it thins, more UV-B reaches the ground and damages DNA, eyes and skin.",
+   "trap": "Infrared is linked to the greenhouse effect, not ozone."
+  },
+  {
+   "id": "botA-217",
+   "topic": "bot-ecology",
+   "s": "Forest types of Nepal",
+   "d": 2,
+   "q": "Forests of Rhododendron and oak (Quercus) are typical of which zone of Nepal?",
+   "o": [
+    "Tropical (below 1000 m)",
+    "Subtropical (1000–2000 m)",
+    "Temperate (about 2000–3000 m)",
+    "Trans-Himalayan desert"
+   ],
+   "a": 2,
+   "x": "Temperate mid-mountain forests are dominated by oak, rhododendron, maple and blue pine; Sal is tropical and Schima–Castanopsis subtropical."
+  },
+  {
+   "id": "botA-218",
+   "topic": "bot-ecology",
+   "s": "Forest types of Nepal",
+   "d": 1,
+   "q": "Above the tree line in the Nepal Himalaya, vegetation is mainly",
+   "o": [
+    "Alpine scrub and meadows",
+    "Sal forest",
+    "Schima–Castanopsis forest",
+    "Tropical evergreen forest"
+   ],
+   "a": 0,
+   "x": "Above about 4000 m, trees give way to dwarf rhododendron and juniper scrub and grassy alpine meadows."
+  },
+  {
+   "id": "botA-219",
+   "topic": "bot-ecology",
+   "s": "Hydrosere",
+   "d": 2,
+   "q": "In a hydrosere, the stage that immediately follows the rooted floating stage (Nymphaea, Trapa) is the",
+   "o": [
+    "Submerged stage",
+    "Sedge-meadow stage",
+    "Woodland stage",
+    "Reed-swamp stage (Typha, Phragmites)"
+   ],
+   "a": 3,
+   "x": "Order: phytoplankton → submerged → rooted floating → reed-swamp → sedge-meadow → woodland → climax forest.",
+   "trap": "Submerged comes before, not after, the floating stage."
+  },
+  {
+   "id": "botA-220",
+   "topic": "bot-ecology",
+   "s": "Ecological succession: Xerosere",
+   "d": 3,
+   "q": "In a xerosere on bare rock, the community that directly replaces the crustose lichens is",
+   "o": [
+    "Mosses",
+    "Foliose lichens",
+    "Herbs",
+    "Shrubs"
+   ],
+   "a": 1,
+   "x": "Rock xerosere: crustose lichens → foliose lichens → mosses → herbs → shrubs → climax forest; each stage adds soil for the next.",
+   "trap": "Mosses come after the foliose lichens.",
+   "yrs": [
+    2079,
+    2081
+   ],
+   "rep": 2
+  }
+ ]
+}

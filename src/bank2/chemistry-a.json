@@ -1,0 +1,5462 @@
+{
+ "subject": "Chemistry",
+ "topics": [
+  {
+   "id": "chem-physical",
+   "name": "Physical Chemistry",
+   "weight": 17,
+   "concepts": [
+    "Oxidation number: sum = charge; O is −2 (except peroxides −1, OF₂ +2), H is +1 (−1 in metal hydrides) [repeat]",
+    "Order = sum of powers in the experimental rate law; may be zero or fractional; molecularity is always a whole number [repeat]",
+    "Graham's law: r ∝ 1/√M, so r(H₂) : r(O₂) = 4 : 1 [repeat]",
+    "Surface tension and viscosity of a liquid decrease as temperature rises; liquids boil at lower temperature at high altitude [repeat]",
+    "Unit cell atoms: corner 1/8, face 1/2, body 1; simple cubic 1, bcc 2, fcc 4 [repeat]",
+    "Number of orbitals in shell n = n²; electrons = 2n²; Aufbau order 3d → 4p → 5s [repeat]",
+    "Le Chatelier: high P favours fewer gas moles; heating favours the endothermic direction; a catalyst never shifts equilibrium [repeat]",
+    "First law: ΔU = q + w (conservation of energy); heat absorbed and work done on the system are positive [repeat]",
+    "Common ion lowers solubility: Mg(OH)₂ is least soluble in NaOH solution [repeat]",
+    "Limiting reagent is used up first; % N in urea = 28/60 × 100 = 46.7% [repeat]",
+    "Redox titration: 2MnO₄⁻ ≡ 5C₂O₄²⁻; KMnO₄ n-factor 5 in acid; ppm = (mass solute/mass solution) × 10⁶ [repeat]",
+    "H₂–O₂ fuel cell: anode H₂ + 2OH⁻ → 2H₂O + 2e⁻; product water [repeat]",
+    "First order: t½ = 0.693/k, independent of initial concentration; 99.9% completion ≈ 10 half-lives",
+    "ΔG = ΔH − TΔS; ΔG° = −2.303RT log K; spontaneous at all T when ΔH < 0 and ΔS > 0",
+    "pH + pOH = 14 at 25 °C; buffer pH = pKa + log[salt]/[acid]; Ksp(AB₂) = 4s³",
+    "α decay: A − 4, Z − 2; β decay: Z + 1; γ: no change; C-14 t½ = 5730 years [repeat]"
+   ]
+  },
+  {
+   "id": "chem-analytical",
+   "name": "Analytical Chemistry",
+   "weight": 3,
+   "concepts": [
+    "Lassaigne's (sodium fusion) extract detects N, S and halogens; N gives Prussian blue, S gives violet with nitroprusside [repeat]",
+    "Baeyer's reagent = cold dilute alkaline KMnO₄; its pink colour is discharged by C=C or C≡C [repeat]",
+    "Terminal alkynes (ethyne) give red ppt with ammoniacal Cu₂Cl₂ and white ppt with ammoniacal AgNO₃; ethene does not [repeat]",
+    "H₂S turns lead acetate paper black (PbS) [repeat]",
+    "Methyl orange: red in acid, yellow in base (range 3.1–4.4); phenolphthalein colourless in acid, pink in base (8.3–10) [repeat]",
+    "Indicator choice: strong acid–weak base → methyl orange; weak acid–strong base → phenolphthalein; weak–weak → none suitable",
+    "Victor Meyer test: 1° alcohol blood red, 2° blue, 3° colourless [repeat]",
+    "Tollens' reagent gives a silver mirror with aldehydes, not ketones; Fehling's is not reduced by benzaldehyde [repeat]",
+    "Lucas test: 3° alcohol turbid at once, 2° in ~5 min, 1° no turbidity at room temperature",
+    "Biuret test → violet (protein); iodine → blue-black (starch); Sudan III → red (fat)",
+    "Cl⁻: white AgCl soluble in NH₄OH; SO₄²⁻: white BaSO₄ insoluble in HCl; NH₄⁺: brown ppt with Nessler's reagent",
+    "Sublimation separates camphor, naphthalene, iodine; vacuum distillation for liquids that decompose at their boiling point",
+    "Paper chromatography: Rf = distance moved by solute / distance moved by solvent (always < 1)",
+    "Iodimetry titrates directly with standard I₂; iodometry titrates liberated I₂ with hypo; starch is the indicator",
+    "KMnO₄ is a self-indicator; EDTA with Eriochrome Black T is used for complexometric (hardness) titration"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "chem-001",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Number of molecules in 4.4 g of CO₂ is",
+   "o": [
+    "6.022×10²³",
+    "1.204×10²³",
+    "6.022×10²²",
+    "3.011×10²²"
+   ],
+   "a": 2,
+   "x": "Moles = 4.4/44 = 0.1; molecules = 0.1 × 6.022×10²³ = 6.022×10²².",
+   "s": "Stoichiometry"
+  },
+  {
+   "id": "chem-002",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Volume occupied by 8 g of O₂ at STP is",
+   "o": [
+    "11.2 L",
+    "22.4 L",
+    "2.8 L",
+    "5.6 L"
+   ],
+   "a": 3,
+   "x": "Moles = 8/32 = 0.25; volume = 0.25 × 22.4 = 5.6 L.",
+   "trap": "11.2 L: taking O₂ molar mass as 16 g.",
+   "s": "Stoichiometry"
+  },
+  {
+   "id": "chem-003",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "4 g of NaOH dissolved in water to make 500 mL solution. Its molarity is",
+   "o": [
+    "0.1 M",
+    "0.2 M",
+    "0.4 M",
+    "0.8 M"
+   ],
+   "a": 1,
+   "x": "Moles = 4/40 = 0.1; M = 0.1/0.5 L = 0.2 M.",
+   "trap": "0.1 M: forgetting to convert 500 mL to 0.5 L.",
+   "s": "Volumetric Analysis"
+  },
+  {
+   "id": "chem-004",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Equivalent weight of KMnO₄ (M = 158) in acidic medium is",
+   "o": [
+    "52.7",
+    "158",
+    "79",
+    "31.6"
+   ],
+   "a": 3,
+   "x": "In acid MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺; n-factor 5, so 158/5 = 31.6.",
+   "trap": "52.7 is for neutral medium (n-factor 3).",
+   "s": "Volumetric Analysis",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chem-005",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "Volume of 0.2 M NaOH needed to neutralise 25 mL of 0.1 M H₂SO₄ is",
+   "o": [
+    "12.5 mL",
+    "25 mL",
+    "50 mL",
+    "6.25 mL"
+   ],
+   "a": 1,
+   "x": "Moles H⁺ = 2 × 0.1 × 25 = 5 mmol; V = 5/0.2 = 25 mL.",
+   "trap": "12.5 mL: forgetting H₂SO₄ is dibasic.",
+   "s": "Volumetric Analysis"
+  },
+  {
+   "id": "chem-006",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "2 g of H₂ reacts with 32 g of O₂ to form water. Mass of water formed is",
+   "o": [
+    "34 g",
+    "36 g",
+    "18 g",
+    "9 g"
+   ],
+   "a": 2,
+   "x": "2H₂ + O₂ → 2H₂O. 1 mol H₂ needs only 0.5 mol O₂, so H₂ is limiting: 1 mol H₂O = 18 g.",
+   "trap": "34 g: simply adding the masses, ignoring excess O₂.",
+   "s": "Stoichiometry",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chem-007",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "A compound contains C 40%, H 6.67%, O 53.33%. Its empirical formula is",
+   "o": [
+    "C₂H₄O",
+    "CHO",
+    "CH₄O",
+    "CH₂O"
+   ],
+   "a": 3,
+   "x": "C 40/12 = 3.33, H 6.67/1 = 6.67, O 53.33/16 = 3.33 → ratio 1:2:1 = CH₂O.",
+   "s": "Basic Concepts in Chemistry"
+  },
+  {
+   "id": "chem-008",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Maximum number of electrons in a subshell with l = 2 is",
+   "o": [
+    "6",
+    "14",
+    "10",
+    "2"
+   ],
+   "a": 2,
+   "x": "Max electrons = 2(2l+1) = 2(5) = 10 (d subshell).",
+   "s": "Atomic Structure"
+  },
+  {
+   "id": "chem-009",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Ground-state electronic configuration of chromium (Z = 24) is",
+   "o": [
+    "[Ar] 3d⁴ 4s²",
+    "[Ar] 3d⁶",
+    "[Ar] 3d³ 4s² 4p¹",
+    "[Ar] 3d⁵ 4s¹"
+   ],
+   "a": 3,
+   "x": "One 4s electron shifts to 3d to give the extra-stable half-filled 3d⁵ set.",
+   "trap": "3d⁴4s²: following the Aufbau order blindly.",
+   "s": "Atomic Structure"
+  },
+  {
+   "id": "chem-010",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Which set of quantum numbers (n, l, m, s) is NOT allowed?",
+   "o": [
+    "3, 2, −2, +½",
+    "2, 2, 0, +½",
+    "2, 1, 0, −½",
+    "4, 0, 0, +½"
+   ],
+   "a": 1,
+   "x": "l can only be 0 to n−1; for n = 2, l cannot be 2.",
+   "s": "Atomic Structure"
+  },
+  {
+   "id": "chem-011",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "Number of radial and angular nodes in a 4d orbital are",
+   "o": [
+    "2 radial, 1 angular",
+    "1 radial, 2 angular",
+    "0 radial, 3 angular",
+    "3 radial, 0 angular"
+   ],
+   "a": 1,
+   "x": "Radial = n − l − 1 = 4 − 2 − 1 = 1; angular = l = 2.",
+   "trap": "2 radial: using n − l instead of n − l − 1.",
+   "s": "Atomic Structure"
+  },
+  {
+   "id": "chem-012",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "If the kinetic energy of an electron is made four times, its de Broglie wavelength becomes",
+   "o": [
+    "double",
+    "one-fourth",
+    "half",
+    "unchanged"
+   ],
+   "a": 2,
+   "x": "λ = h/√(2mK); K × 4 → √4 = 2, so λ becomes half.",
+   "trap": "One-fourth: forgetting the square root.",
+   "s": "Atomic Structure"
+  },
+  {
+   "id": "chem-013",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Which has the highest first ionisation enthalpy?",
+   "o": [
+    "O",
+    "C",
+    "N",
+    "B"
+   ],
+   "a": 2,
+   "x": "N has a stable half-filled 2p³ configuration, so its IE exceeds that of O.",
+   "trap": "O: assuming IE always increases across a period.",
+   "s": "Classification of Elements and Periodicity"
+  },
+  {
+   "id": "chem-014",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Which element has the most negative electron gain enthalpy?",
+   "o": [
+    "F",
+    "Cl",
+    "Br",
+    "O"
+   ],
+   "a": 1,
+   "x": "In small F, added electron faces strong repulsion in the compact 2p shell, so Cl has the most negative value.",
+   "trap": "F: confusing electronegativity with electron gain enthalpy.",
+   "s": "Classification of Elements and Periodicity"
+  },
+  {
+   "id": "chem-015",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Among the isoelectronic ions O²⁻, F⁻, Na⁺ and Mg²⁺, the smallest is",
+   "o": [
+    "Na⁺",
+    "F⁻",
+    "O²⁻",
+    "Mg²⁺"
+   ],
+   "a": 3,
+   "x": "All have 10 electrons; Mg²⁺ has the highest nuclear charge (12), pulling electrons closest.",
+   "s": "Classification of Elements and Periodicity",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chem-016",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "The shape of SF₄ is",
+   "o": [
+    "See-saw",
+    "Tetrahedral",
+    "Square planar",
+    "Trigonal pyramidal"
+   ],
+   "a": 0,
+   "x": "S: 4 bond pairs + 1 lone pair = sp³d; lone pair at equatorial position gives see-saw.",
+   "trap": "Tetrahedral: counting only the four bonds and ignoring the lone pair.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-017",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Hybridisation of Xe in XeF₄ is",
+   "o": [
+    "sp³d²",
+    "sp³d",
+    "sp³",
+    "dsp²"
+   ],
+   "a": 0,
+   "x": "Xe: 4 bond pairs + 2 lone pairs = 6 electron pairs → sp³d², square planar shape.",
+   "trap": "dsp²: square planar shape recalled from complexes like [Ni(CN)₄]²⁻.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-018",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Bond order of O₂⁺ is",
+   "o": [
+    "2.5",
+    "2",
+    "1.5",
+    "3"
+   ],
+   "a": 0,
+   "x": "O₂⁺ has 15 electrons; Nb = 10, Na = 5; bond order = (10 − 5)/2 = 2.5.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-019",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Which molecule is paramagnetic?",
+   "o": [
+    "N₂",
+    "F₂",
+    "CO",
+    "O₂"
+   ],
+   "a": 3,
+   "x": "MOT gives O₂ two unpaired electrons in π* orbitals; the others have all electrons paired.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-020",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Which molecule has zero dipole moment?",
+   "o": [
+    "NH₃",
+    "BF₃",
+    "H₂O",
+    "CHCl₃"
+   ],
+   "a": 1,
+   "x": "BF₃ is trigonal planar and symmetrical, so bond dipoles cancel.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-021",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Which hydrogen halide has the highest boiling point?",
+   "o": [
+    "HCl",
+    "HBr",
+    "HI",
+    "HF"
+   ],
+   "a": 3,
+   "x": "HF molecules are linked by strong intermolecular hydrogen bonds.",
+   "trap": "HI: expecting boiling point to rise with molar mass alone.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-022",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "Which pair has the same hybridisation of the central atom?",
+   "o": [
+    "BF₃ and NH₃",
+    "NH₄⁺ and CH₄",
+    "CO₂ and SO₂",
+    "PCl₅ and IF₅"
+   ],
+   "a": 1,
+   "x": "N in NH₄⁺ and C in CH₄ are both sp³. BF₃ sp² vs NH₃ sp³; CO₂ sp vs SO₂ sp²; PCl₅ sp³d vs IF₅ sp³d².",
+   "trap": "CO₂ and SO₂: similar formula, but SO₂ has a lone pair.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-023",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "According to Fajans' rules, the most covalent chloride is",
+   "o": [
+    "AlCl₃",
+    "NaCl",
+    "MgCl₂",
+    "KCl"
+   ],
+   "a": 0,
+   "x": "Al³⁺ is small with high charge, so it polarises Cl⁻ most strongly.",
+   "s": "Chemical Bonding and Shape of Molecules"
+  },
+  {
+   "id": "chem-024",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Ratio of rates of diffusion of H₂ to O₂ under the same conditions is",
+   "o": [
+    "1 : 4",
+    "16 : 1",
+    "1 : 16",
+    "4 : 1"
+   ],
+   "a": 3,
+   "x": "r ∝ 1/√M: r(H₂)/r(O₂) = √(32/2) = √16 = 4.",
+   "trap": "16 : 1: forgetting the square root.",
+   "s": "States of Matter",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chem-025",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Average kinetic energy of gas molecules is directly proportional to",
+   "o": [
+    "pressure",
+    "absolute temperature",
+    "volume",
+    "molar mass"
+   ],
+   "a": 1,
+   "x": "KE(avg) = (3/2)kT; it depends only on absolute temperature.",
+   "s": "States of Matter"
+  },
+  {
+   "id": "chem-026",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "For N₂(g) + 3H₂(g) ⇌ 2NH₃(g), the relation between Kp and Kc is",
+   "o": [
+    "Kp = Kc(RT)²",
+    "Kp = Kc",
+    "Kp = Kc(RT)⁻¹",
+    "Kp = Kc(RT)⁻²"
+   ],
+   "a": 3,
+   "x": "Δn = 2 − 4 = −2, so Kp = Kc(RT)^Δn = Kc(RT)⁻².",
+   "trap": "Kp = Kc(RT)²: subtracting products from reactants.",
+   "s": "Chemical Equilibrium"
+  },
+  {
+   "id": "chem-027",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "For N₂ + 3H₂ ⇌ 2NH₃ (ΔH negative), the yield of NH₃ increases at",
+   "o": [
+    "low pressure and high temperature",
+    "high pressure and high temperature",
+    "high pressure and low temperature",
+    "low pressure and low temperature"
+   ],
+   "a": 2,
+   "x": "Forward reaction reduces gas moles (favoured by high P) and is exothermic (favoured by low T).",
+   "s": "Chemical Equilibrium",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chem-028",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "pH of 0.005 M Ba(OH)₂ solution is",
+   "o": [
+    "2",
+    "12",
+    "11.7",
+    "13"
+   ],
+   "a": 1,
+   "x": "Ba(OH)₂ gives 2 OH⁻: [OH⁻] = 0.01 M, pOH = 2, pH = 14 − 2 = 12.",
+   "trap": "11.7: forgetting the two OH⁻ per formula unit.",
+   "s": "Ionic Equilibrium"
+  },
+  {
+   "id": "chem-029",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Which mixture acts as a buffer?",
+   "o": [
+    "CH₃COOH + CH₃COONa",
+    "HCl + NaCl",
+    "NaOH + NaCl",
+    "H₂SO₄ + Na₂SO₄"
+   ],
+   "a": 0,
+   "x": "A buffer needs a weak acid with its salt of a strong base; the others contain strong acids/bases.",
+   "s": "Ionic Equilibrium"
+  },
+  {
+   "id": "chem-030",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Which is a Lewis acid?",
+   "o": [
+    "BF₃",
+    "NH₃",
+    "H₂O",
+    "Cl⁻"
+   ],
+   "a": 0,
+   "x": "B in BF₃ has an incomplete octet and accepts an electron pair. The others donate lone pairs (Lewis bases).",
+   "s": "Ionic Equilibrium"
+  },
+  {
+   "id": "chem-031",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "For a sparingly soluble salt AB₂ with solubility s mol/L, Ksp is",
+   "o": [
+    "s²",
+    "2s³",
+    "27s⁴",
+    "4s³"
+   ],
+   "a": 3,
+   "x": "AB₂ → A²⁺ + 2B⁻; Ksp = (s)(2s)² = 4s³.",
+   "trap": "2s³: forgetting to square the 2.",
+   "s": "Ionic Equilibrium"
+  },
+  {
+   "id": "chem-032",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Standard enthalpy of formation is zero for",
+   "o": [
+    "O₂(g)",
+    "O₃(g)",
+    "C(diamond)",
+    "H₂O(l)"
+   ],
+   "a": 0,
+   "x": "ΔH°f is zero only for an element in its most stable standard state; O₂(g) is, while O₃ and diamond are not.",
+   "trap": "C(diamond): graphite, not diamond, is the standard form of carbon.",
+   "s": "Chemical Thermodynamics"
+  },
+  {
+   "id": "chem-033",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "For a reaction ΔH = +40 kJ mol⁻¹ and ΔS = +100 J K⁻¹ mol⁻¹. It becomes spontaneous above",
+   "o": [
+    "40 K",
+    "400 K",
+    "4000 K",
+    "0.4 K"
+   ],
+   "a": 1,
+   "x": "ΔG < 0 when T > ΔH/ΔS = 40000/100 = 400 K.",
+   "trap": "0.4 K: not converting kJ to J.",
+   "s": "Chemical Thermodynamics",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chem-034",
+   "topic": "chem-physical",
+   "d": 1,
+   "q": "Unit of rate constant of a first-order reaction is",
+   "o": [
+    "s⁻¹",
+    "mol L⁻¹ s⁻¹",
+    "L mol⁻¹ s⁻¹",
+    "mol⁻¹ L s"
+   ],
+   "a": 0,
+   "x": "For first order, k = rate/[A] = (mol L⁻¹ s⁻¹)/(mol L⁻¹) = s⁻¹.",
+   "s": "Chemical Kinetics"
+  },
+  {
+   "id": "chem-035",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "A first-order reaction has t½ = 10 min. Fraction of reactant left after 30 min is",
+   "o": [
+    "1/3",
+    "1/6",
+    "1/8",
+    "1/4"
+   ],
+   "a": 2,
+   "x": "30 min = 3 half-lives; fraction left = (½)³ = 1/8.",
+   "s": "Chemical Kinetics"
+  },
+  {
+   "id": "chem-036",
+   "topic": "chem-physical",
+   "d": 3,
+   "q": "Charge needed to deposit 27 g of Al from Al³⁺ is",
+   "o": [
+    "96500 C",
+    "289500 C",
+    "193000 C",
+    "32167 C"
+   ],
+   "a": 1,
+   "x": "27 g = 1 mol Al; Al³⁺ + 3e⁻ → Al needs 3 F = 3 × 96500 = 289500 C.",
+   "trap": "96500 C: forgetting the 3+ charge.",
+   "s": "Electrochemistry"
+  },
+  {
+   "id": "chem-037",
+   "topic": "chem-physical",
+   "d": 2,
+   "q": "Given E°(Cu²⁺/Cu) = +0.34 V and E°(Zn²⁺/Zn) = −0.76 V, E°cell of the Daniell cell is",
+   "o": [
+    "0.42 V",
+    "1.10 V",
+    "−1.10 V",
+    "0.76 V"
+   ],
+   "a": 1,
+   "x": "E°cell = E°cathode − E°anode = 0.34 − (−0.76) = 1.10 V.",
+   "trap": "0.42 V: subtracting magnitudes without signs.",
+   "s": "Electrochemistry"
+  },
+  {
+   "id": "chemA-001",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 2,
+   "q": "Percentage of nitrogen by mass in urea, CO(NH₂)₂, is",
+   "o": [
+    "23.3%",
+    "28.0%",
+    "46.7%",
+    "60.0%"
+   ],
+   "a": 2,
+   "x": "M(urea) = 12 + 16 + 2(14 + 2) = 60; N = 28 g. 28/60 × 100 = 46.7%.",
+   "trap": "23.3%: counting only one N atom.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-002",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 1,
+   "q": "Hydrogen sulphide prepared by any method always contains H and S in the mass ratio 1 : 16. This illustrates the law of",
+   "o": [
+    "multiple proportions",
+    "reciprocal proportions",
+    "constant proportions",
+    "conservation of mass"
+   ],
+   "a": 2,
+   "x": "A pure compound always has the same elements combined in a fixed ratio by mass, whatever its source.",
+   "trap": "Multiple proportions needs two different compounds of the same elements.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-003",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "Carbon forms CO and CO₂. For a fixed mass of carbon, the masses of oxygen combined are in the ratio 1 : 2. This illustrates the law of",
+   "o": [
+    "multiple proportions",
+    "constant proportions",
+    "reciprocal proportions",
+    "gaseous volumes"
+   ],
+   "a": 0,
+   "x": "Two compounds of the same two elements: masses of one element combining with a fixed mass of the other are in a simple whole-number ratio."
+  },
+  {
+   "id": "chemA-004",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 3,
+   "q": "6 g of Mg is burnt in 8 g of O₂ (2Mg + O₂ → 2MgO). After the reaction the vessel contains",
+   "o": [
+    "10 g MgO and 4 g O₂",
+    "14 g MgO only",
+    "10 g MgO and 4 g Mg",
+    "12 g MgO and 2 g O₂"
+   ],
+   "a": 0,
+   "x": "6 g Mg = 0.25 mol needs 0.125 mol O₂ = 4 g. Mg is limiting: MgO = 0.25 × 40 = 10 g; O₂ left = 8 − 4 = 4 g.",
+   "trap": "14 g MgO: adding masses without finding the limiting reagent.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-005",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 1,
+   "q": "One atomic mass unit (amu) is defined as",
+   "o": [
+    "mass of one hydrogen atom",
+    "1/16 of the mass of one oxygen-16 atom",
+    "1/12 of the mass of one carbon-12 atom",
+    "mass of one proton"
+   ],
+   "a": 2,
+   "x": "Since 1961 the reference standard is carbon-12: 1 amu = 1/12 × mass of a ¹²C atom = 1.66 × 10⁻²⁷ kg."
+  },
+  {
+   "id": "chemA-006",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 3,
+   "q": "Number of atoms in 11.2 L of N₂ gas at STP is",
+   "o": [
+    "3.011 × 10²³",
+    "1.204 × 10²⁴",
+    "6.022 × 10²³",
+    "6.022 × 10²²"
+   ],
+   "a": 2,
+   "x": "11.2 L = 0.5 mol N₂ molecules; each has 2 atoms, so atoms = 0.5 × 2 × 6.022 × 10²³ = 6.022 × 10²³.",
+   "trap": "3.011 × 10²³ counts molecules, not atoms."
+  },
+  {
+   "id": "chemA-007",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "Heating 10 g of CaCO₃ should give 4.4 g of CO₂, but only 3.3 g is obtained. The percentage yield is",
+   "o": [
+    "33%",
+    "44%",
+    "133%",
+    "75%"
+   ],
+   "a": 3,
+   "x": "% yield = actual/theoretical × 100 = 3.3/4.4 × 100 = 75%."
+  },
+  {
+   "id": "chemA-008",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 1,
+   "q": "Phosphate radical is trivalent and calcium is bivalent. The formula of calcium phosphate is",
+   "o": [
+    "Ca₃(PO₄)₂",
+    "Ca₂(PO₄)₃",
+    "CaPO₄",
+    "Ca₃PO₄"
+   ],
+   "a": 0,
+   "x": "Cross the valencies: Ca²⁺ and PO₄³⁻ → Ca₃(PO₄)₂ (total charge 6+ and 6−)."
+  },
+  {
+   "id": "chemA-009",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 1,
+   "q": "A compound has empirical formula CH₂O and molar mass 180 g mol⁻¹. Its molecular formula is",
+   "o": [
+    "C₃H₆O₃",
+    "C₂H₄O₂",
+    "C₆H₁₂O₆",
+    "CH₂O"
+   ],
+   "a": 2,
+   "x": "Empirical formula mass = 30; n = 180/30 = 6; molecular formula = (CH₂O)₆ = C₆H₁₂O₆."
+  },
+  {
+   "id": "chemA-010",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Total number of orbitals in the third shell (n = 3) is",
+   "o": [
+    "3",
+    "6",
+    "18",
+    "9"
+   ],
+   "a": 3,
+   "x": "Orbitals in shell n = n² = 3² = 9 (one 3s, three 3p, five 3d).",
+   "trap": "18 is the maximum number of electrons (2n²).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-011",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "According to the (n + l) rule, the subshell filled immediately after 4s is",
+   "o": [
+    "3d",
+    "4p",
+    "4d",
+    "5s"
+   ],
+   "a": 0,
+   "x": "4s has n + l = 4; next lowest are 3d (3 + 2 = 5) and 4p (4 + 1 = 5); with equal n + l, lower n (3d) fills first.",
+   "trap": "4p: assuming the same shell fills before an inner d subshell.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-012",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "Which subshell has the highest energy in a multi-electron atom?",
+   "o": [
+    "4f",
+    "5p",
+    "6s",
+    "5s"
+   ],
+   "a": 0,
+   "x": "n + l: 4f = 7, 6s = 6, 5p = 6, 5s = 5. Highest n + l means highest energy, so 4f."
+  },
+  {
+   "id": "chemA-013",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Rutherford's α-particle scattering experiment showed that",
+   "o": [
+    "electrons move in fixed circular orbits",
+    "the positive charge and mass are concentrated in a tiny nucleus",
+    "the atom is a uniform sphere of positive charge",
+    "electrons have wave nature"
+   ],
+   "a": 1,
+   "x": "Most α-particles passed straight through (atom mostly empty); a few bounced back from a small, dense, positive nucleus.",
+   "trap": "Fixed orbits is Bohr's postulate, not Rutherford's finding."
+  },
+  {
+   "id": "chemA-014",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Energy of the electron in the second Bohr orbit of a hydrogen atom is",
+   "o": [
+    "−13.6 eV",
+    "−6.8 eV",
+    "−3.4 eV",
+    "−1.51 eV"
+   ],
+   "a": 2,
+   "x": "Eₙ = −13.6/n² eV; for n = 2, E = −13.6/4 = −3.4 eV.",
+   "trap": "−6.8 eV: dividing by n instead of n²."
+  },
+  {
+   "id": "chemA-015",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "The spectral series of hydrogen that lies in the visible region is the",
+   "o": [
+    "Lyman series",
+    "Paschen series",
+    "Brackett series",
+    "Balmer series"
+   ],
+   "a": 3,
+   "x": "Balmer lines end at n = 2 and fall in the visible region; Lyman is UV; Paschen and Brackett are infrared."
+  },
+  {
+   "id": "chemA-016",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "Maximum number of spectral lines emitted when an electron in hydrogen falls from n = 4 to the ground state is",
+   "o": [
+    "6",
+    "3",
+    "4",
+    "10"
+   ],
+   "a": 0,
+   "x": "Number of lines = n(n − 1)/2 = 4 × 3/2 = 6.",
+   "trap": "3: counting only direct jumps from each level to ground."
+  },
+  {
+   "id": "chemA-017",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Heisenberg's uncertainty principle states that it is impossible to determine simultaneously and exactly the",
+   "o": [
+    "mass and charge of an electron",
+    "position and momentum of an electron",
+    "energy and charge of an electron",
+    "spin and mass of an electron"
+   ],
+   "a": 1,
+   "x": "Δx · Δp ≥ h/4π; the more precisely position is known, the less precisely momentum is known."
+  },
+  {
+   "id": "chemA-018",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "In nitrogen (1s² 2s² 2p³) the three 2p electrons occupy separate orbitals with parallel spins. This follows",
+   "o": [
+    "Pauli's exclusion principle",
+    "Aufbau principle",
+    "Hund's rule of maximum multiplicity",
+    "Heisenberg's uncertainty principle"
+   ],
+   "a": 2,
+   "x": "Hund's rule: pairing in degenerate orbitals starts only after each orbital has one electron with parallel spin."
+  },
+  {
+   "id": "chemA-019",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "The configuration 1s³ is impossible because it violates",
+   "o": [
+    "Hund's rule",
+    "Aufbau principle",
+    "the (n + l) rule",
+    "Pauli's exclusion principle"
+   ],
+   "a": 3,
+   "x": "An orbital holds at most two electrons with opposite spins; no two electrons can have all four quantum numbers the same."
+  },
+  {
+   "id": "chemA-020",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "Number of unpaired electrons in Fe³⁺ (Z of Fe = 26) is",
+   "o": [
+    "5",
+    "3",
+    "4",
+    "6"
+   ],
+   "a": 0,
+   "x": "Fe = [Ar]3d⁶4s²; Fe³⁺ loses 4s² and one 3d electron → 3d⁵, all five unpaired.",
+   "trap": "4: removing all three electrons from 3d instead of 4s first."
+  },
+  {
+   "id": "chemA-021",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "The tendency of an atom in a molecule to attract the shared pair of electrons towards itself is called",
+   "o": [
+    "electron affinity",
+    "electronegativity",
+    "ionisation energy",
+    "electropositivity"
+   ],
+   "a": 1,
+   "x": "Electronegativity refers to a bonded atom pulling the shared pair; electron affinity is energy released when an isolated gaseous atom gains an electron.",
+   "trap": "Electron affinity: it concerns isolated atoms, not bonded ones.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-022",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "Which atom has the largest atomic radius?",
+   "o": [
+    "Mg",
+    "Al",
+    "Na",
+    "Si"
+   ],
+   "a": 2,
+   "x": "Across period 3 nuclear charge rises while the shell stays the same, so radius decreases: Na > Mg > Al > Si."
+  },
+  {
+   "id": "chemA-023",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "Which species is the largest?",
+   "o": [
+    "Cl",
+    "Cl⁺",
+    "Na⁺",
+    "Cl⁻"
+   ],
+   "a": 3,
+   "x": "Adding an electron increases repulsion and lowers effective nuclear charge per electron, so Cl⁻ > Cl > Cl⁺; Na⁺ has only two shells."
+  },
+  {
+   "id": "chemA-024",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "The modern periodic law states that properties of elements are a periodic function of their",
+   "o": [
+    "atomic number",
+    "atomic mass",
+    "number of neutrons",
+    "equivalent weight"
+   ],
+   "a": 0,
+   "x": "Moseley showed atomic number is the fundamental property; Mendeleev's law used atomic mass.",
+   "trap": "Atomic mass: that is Mendeleev's older law."
+  },
+  {
+   "id": "chemA-025",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "An element has configuration [Ar] 3d¹⁰ 4s² 4p⁵. Its position in the periodic table is",
+   "o": [
+    "period 4, group 7, d-block",
+    "period 4, group 17, p-block",
+    "period 3, group 17, p-block",
+    "period 4, group 15, p-block"
+   ],
+   "a": 1,
+   "x": "Highest n = 4 gives period 4; last electron enters p, and 2 + 5 = 7 valence electrons → group 17 (bromine).",
+   "trap": "Group 7: counting the 7 valence electrons but ignoring the block."
+  },
+  {
+   "id": "chemA-026",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "Which set of species is isoelectronic?",
+   "o": [
+    "Na⁺, K⁺, Rb⁺",
+    "F⁻, Cl⁻, Br⁻",
+    "N³⁻, O²⁻, F⁻",
+    "Na, Mg, Al"
+   ],
+   "a": 2,
+   "x": "N³⁻ (7 + 3), O²⁻ (8 + 2) and F⁻ (9 + 1) each have 10 electrons."
+  },
+  {
+   "id": "chemA-027",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "The second ionisation energy of sodium is much higher than its first because",
+   "o": [
+    "Na⁺ is larger than Na",
+    "the second electron is removed from 3s",
+    "sodium is a metal",
+    "Na⁺ has a stable noble gas (neon) configuration"
+   ],
+   "a": 3,
+   "x": "After losing 3s¹, Na⁺ is 1s²2s²2p⁶; the next electron must come from a complete inner shell close to the nucleus."
+  },
+  {
+   "id": "chemA-028",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "Down a group of the periodic table, metallic character",
+   "o": [
+    "increases",
+    "decreases",
+    "remains the same",
+    "first decreases then increases"
+   ],
+   "a": 0,
+   "x": "Atomic size increases down a group, so ionisation energy falls and atoms lose electrons more easily."
+  },
+  {
+   "id": "chemA-029",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 2,
+   "q": "Molecules of liquid benzene are held together mainly by",
+   "o": [
+    "hydrogen bonds",
+    "van der Waals (London dispersion) forces",
+    "ionic bonds",
+    "coordinate bonds"
+   ],
+   "a": 1,
+   "x": "Benzene is non-polar and has no O–H or N–H bonds, so only weak van der Waals dispersion forces act between its molecules.",
+   "trap": "Hydrogen bonds: benzene has no H on N, O or F.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-030",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 2,
+   "q": "Number of σ and π bonds in ethyne (HC≡CH) is",
+   "o": [
+    "2 σ and 3 π",
+    "3 σ and 1 π",
+    "3 σ and 2 π",
+    "5 σ and 0 π"
+   ],
+   "a": 2,
+   "x": "Two C–H σ bonds plus one σ in C≡C give 3 σ; the triple bond also has 2 π bonds."
+  },
+  {
+   "id": "chemA-031",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 2,
+   "q": "Correct order of bond angle is",
+   "o": [
+    "H₂O > NH₃ > CH₄",
+    "NH₃ > CH₄ > H₂O",
+    "CH₄ = NH₃ = H₂O",
+    "CH₄ > NH₃ > H₂O"
+   ],
+   "a": 3,
+   "x": "All sp³; lone pairs repel more: CH₄ 109.5° (0 lp) > NH₃ 107° (1 lp) > H₂O 104.5° (2 lp)."
+  },
+  {
+   "id": "chemA-032",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "A coordinate (dative) covalent bond is present in",
+   "o": [
+    "NH₄⁺",
+    "CH₄",
+    "H₂O",
+    "NaCl"
+   ],
+   "a": 0,
+   "x": "In NH₄⁺, N donates its lone pair to H⁺, forming a coordinate bond."
+  },
+  {
+   "id": "chemA-033",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Hybridisation of each carbon atom in ethene (C₂H₄) is",
+   "o": [
+    "sp",
+    "sp²",
+    "sp³",
+    "sp³d"
+   ],
+   "a": 1,
+   "x": "Each C forms three σ bonds and one π bond; three σ bonds need sp² hybrid orbitals (planar, 120°)."
+  },
+  {
+   "id": "chemA-034",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "The C–C bond length is shortest in",
+   "o": [
+    "ethane",
+    "ethene",
+    "ethyne",
+    "benzene"
+   ],
+   "a": 2,
+   "x": "Bond length decreases as bond order increases: C≡C (120 pm) < C=C (134 pm) < benzene C–C (139 pm) < C–C (154 pm)."
+  },
+  {
+   "id": "chemA-035",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Ice floats on water because of",
+   "o": [
+    "van der Waals forces",
+    "ionic bonding",
+    "metallic bonding",
+    "hydrogen bonding giving an open cage structure"
+   ],
+   "a": 3,
+   "x": "Hydrogen bonds hold ice molecules in an open tetrahedral network, so ice is less dense than liquid water."
+  },
+  {
+   "id": "chemA-036",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 3,
+   "q": "Shape of ClF₃ according to VSEPR theory is",
+   "o": [
+    "T-shaped",
+    "trigonal planar",
+    "trigonal pyramidal",
+    "see-saw"
+   ],
+   "a": 0,
+   "x": "Cl has 3 bond pairs + 2 lone pairs = 5 pairs (sp³d); both lone pairs take equatorial positions, giving a T shape.",
+   "trap": "Trigonal planar: counting only the 3 bonds."
+  },
+  {
+   "id": "chemA-037",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Metallic bonding is best described as",
+   "o": [
+    "sharing of electron pairs between two atoms",
+    "positive metal ions held in a sea of mobile electrons",
+    "transfer of electrons from metal to non-metal",
+    "attraction between permanent dipoles"
+   ],
+   "a": 1,
+   "x": "Valence electrons are delocalised over the lattice of cations; this explains conductivity and malleability."
+  },
+  {
+   "id": "chemA-038",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 1,
+   "q": "Oxidation number of Cr in K₂Cr₂O₇ is",
+   "o": [
+    "+3",
+    "+7",
+    "+6",
+    "+12"
+   ],
+   "a": 2,
+   "x": "2(+1) + 2x + 7(−2) = 0 → 2x = 12 → x = +6.",
+   "trap": "+12: forgetting to divide by the two Cr atoms.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-039",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "Oxidation number of Cl in HClO₄ is",
+   "o": [
+    "+5",
+    "+1",
+    "−1",
+    "+7"
+   ],
+   "a": 3,
+   "x": "(+1) + x + 4(−2) = 0 → x = +7.",
+   "trap": "+5 is Cl in chlorate (ClO₃⁻).",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-040",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "Oxidation number of oxygen in OF₂ is",
+   "o": [
+    "+2",
+    "−2",
+    "−1",
+    "+1"
+   ],
+   "a": 0,
+   "x": "F is more electronegative and is always −1: x + 2(−1) = 0 → x = +2.",
+   "trap": "−2: applying the usual rule for oxygen blindly.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-041",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 1,
+   "q": "According to the classical concept, reduction is",
+   "o": [
+    "addition of oxygen",
+    "removal of oxygen or addition of hydrogen",
+    "removal of hydrogen",
+    "loss of electrons"
+   ],
+   "a": 1,
+   "x": "Classically, oxidation = addition of O / removal of H; reduction is the reverse (e.g. CuO + H₂ → Cu + H₂O reduces CuO).",
+   "trap": "Loss of electrons is oxidation in the electronic concept.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-042",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "In the reaction Zn + Cu²⁺ → Zn²⁺ + Cu, the oxidising agent is",
+   "o": [
+    "Zn",
+    "Zn²⁺",
+    "Cu²⁺",
+    "Cu"
+   ],
+   "a": 2,
+   "x": "Cu²⁺ gains electrons (is reduced) and so oxidises Zn; Zn is the reducing agent.",
+   "trap": "Zn: it is oxidised, which makes it the reducing agent."
+  },
+  {
+   "id": "chemA-043",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "In acidic medium, one mole of MnO₄⁻ oxidises how many moles of Fe²⁺ to Fe³⁺?",
+   "o": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ],
+   "a": 3,
+   "x": "MnO₄⁻ + 8H⁺ + 5e⁻ → Mn²⁺ + 4H₂O; each Fe²⁺ gives 1 e⁻, so 5 Fe²⁺ per MnO₄⁻.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-044",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 3,
+   "q": "When Cl₂ reacts with cold dilute NaOH to give NaCl and NaOCl, chlorine is",
+   "o": [
+    "both oxidised and reduced",
+    "only oxidised",
+    "only reduced",
+    "neither oxidised nor reduced"
+   ],
+   "a": 0,
+   "x": "Cl goes from 0 to −1 in NaCl (reduced) and 0 to +1 in NaOCl (oxidised): a disproportionation reaction."
+  },
+  {
+   "id": "chemA-045",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "Under the same conditions, the ratio of rates of diffusion of helium to methane is",
+   "o": [
+    "1 : 2",
+    "2 : 1",
+    "4 : 1",
+    "1 : 4"
+   ],
+   "a": 1,
+   "x": "r ∝ 1/√M: r(He)/r(CH₄) = √(16/4) = √4 = 2, so 2 : 1.",
+   "trap": "4 : 1: forgetting the square root.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-046",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 3,
+   "q": "An open flask contains air at 27 °C. It is heated to 327 °C at the same pressure. The fraction of air that escapes is",
+   "o": [
+    "1/4",
+    "3/4",
+    "1/2",
+    "1/3"
+   ],
+   "a": 2,
+   "x": "Same P and V: n ∝ 1/T. n₂/n₁ = 300/600 = 1/2, so half the air remains and half escapes.",
+   "trap": "Using °C: 27/327 gives a wrong ratio; always use kelvin.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-047",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "At constant temperature, if the pressure of a fixed mass of gas is doubled, its volume becomes",
+   "o": [
+    "double",
+    "four times",
+    "unchanged",
+    "half"
+   ],
+   "a": 3,
+   "x": "Boyle's law: PV = constant at constant T, so doubling P halves V."
+  },
+  {
+   "id": "chemA-048",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "A gas at 0 °C is heated to 273 °C at constant pressure. Its volume becomes",
+   "o": [
+    "twice the original",
+    "half the original",
+    "273 times the original",
+    "unchanged"
+   ],
+   "a": 0,
+   "x": "Charles' law: V ∝ T(K). 0 °C = 273 K, 273 °C = 546 K; ratio 546/273 = 2."
+  },
+  {
+   "id": "chemA-049",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Value of the gas constant R in L atm K⁻¹ mol⁻¹ is",
+   "o": [
+    "8.314",
+    "0.0821",
+    "1.987",
+    "62.4"
+   ],
+   "a": 1,
+   "x": "R = 0.0821 L atm K⁻¹ mol⁻¹ = 8.314 J K⁻¹ mol⁻¹ = 1.987 cal K⁻¹ mol⁻¹.",
+   "trap": "8.314 is the value in J K⁻¹ mol⁻¹."
+  },
+  {
+   "id": "chemA-050",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "A real gas behaves most nearly like an ideal gas at",
+   "o": [
+    "low temperature and high pressure",
+    "high temperature and high pressure",
+    "high temperature and low pressure",
+    "low temperature and low pressure"
+   ],
+   "a": 2,
+   "x": "At low P molecules are far apart (own volume negligible); at high T attractions are overcome by kinetic energy."
+  },
+  {
+   "id": "chemA-051",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "In the van der Waals equation, the constant 'a' corrects for",
+   "o": [
+    "the volume of gas molecules",
+    "the mass of molecules",
+    "the temperature of the gas",
+    "intermolecular attractive forces"
+   ],
+   "a": 3,
+   "x": "'a' corrects pressure for attractions (P + an²/V²); 'b' corrects for the finite volume of molecules.",
+   "trap": "Volume of molecules is corrected by 'b'."
+  },
+  {
+   "id": "chemA-052",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "A mixture of 1 mol O₂ and 3 mol N₂ has a total pressure of 8 atm. The partial pressure of O₂ is",
+   "o": [
+    "2 atm",
+    "1 atm",
+    "4 atm",
+    "6 atm"
+   ],
+   "a": 0,
+   "x": "Dalton's law: p(O₂) = mole fraction × P = (1/4) × 8 = 2 atm."
+  },
+  {
+   "id": "chemA-053",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "When the absolute temperature of a gas is raised from 300 K to 1200 K, its rms speed becomes",
+   "o": [
+    "four times",
+    "twice",
+    "half",
+    "unchanged"
+   ],
+   "a": 1,
+   "x": "u(rms) = √(3RT/M) ∝ √T; √(1200/300) = √4 = 2.",
+   "trap": "Four times: forgetting the square root."
+  },
+  {
+   "id": "chemA-054",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "When the temperature of a liquid is raised, its surface tension",
+   "o": [
+    "increases",
+    "remains constant",
+    "decreases",
+    "first increases then decreases"
+   ],
+   "a": 2,
+   "x": "Higher kinetic energy weakens intermolecular attraction at the surface, so surface tension falls (zero at the critical temperature).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-055",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Water boils below 100 °C at the top of a high mountain because",
+   "o": [
+    "the vapour pressure of water is higher there",
+    "gravity is lower there",
+    "air contains less oxygen",
+    "the atmospheric pressure is lower there"
+   ],
+   "a": 3,
+   "x": "A liquid boils when its vapour pressure equals the external pressure; lower outside pressure is reached at a lower temperature.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-056",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Viscosity of a liquid on increasing temperature",
+   "o": [
+    "decreases",
+    "increases",
+    "remains the same",
+    "becomes zero"
+   ],
+   "a": 0,
+   "x": "Heating weakens intermolecular forces in a liquid, so it flows more easily (e.g. hot honey).",
+   "trap": "Increases: that is true for gases, not liquids.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-057",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "A liquid boils at the temperature at which its vapour pressure",
+   "o": [
+    "becomes zero",
+    "equals the external pressure",
+    "equals its surface tension",
+    "is half the atmospheric pressure"
+   ],
+   "a": 1,
+   "x": "At the boiling point, bubbles of vapour can form throughout the liquid because vapour pressure matches the pressure above it."
+  },
+  {
+   "id": "chemA-058",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "A liquid crystal is",
+   "o": [
+    "a supercooled liquid like glass",
+    "an ionic solid dissolved in water",
+    "a state intermediate between crystalline solid and liquid",
+    "a crystal containing water of crystallisation"
+   ],
+   "a": 2,
+   "x": "Liquid crystals flow like liquids but keep some molecular order like crystals; they are used in LCD displays."
+  },
+  {
+   "id": "chemA-059",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "Number of atoms per unit cell in a face-centred cubic (fcc) lattice is",
+   "o": [
+    "1",
+    "2",
+    "6",
+    "4"
+   ],
+   "a": 3,
+   "x": "8 corners × 1/8 = 1, plus 6 faces × 1/2 = 3; total = 4.",
+   "trap": "2 is for body-centred cubic.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-060",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "Number of atoms per unit cell in a body-centred cubic (bcc) lattice is",
+   "o": [
+    "2",
+    "1",
+    "4",
+    "9"
+   ],
+   "a": 0,
+   "x": "8 corners × 1/8 = 1, plus 1 atom at the body centre = 2.",
+   "trap": "9: counting every atom as fully inside the cell.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-061",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Total number of Bravais lattices is",
+   "o": [
+    "7",
+    "14",
+    "12",
+    "32"
+   ],
+   "a": 1,
+   "x": "The 7 crystal systems give 14 Bravais lattices.",
+   "trap": "7 is the number of crystal systems."
+  },
+  {
+   "id": "chemA-062",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "Unit cell parameters a = b = c and α = β = γ = 90° belong to the",
+   "o": [
+    "tetragonal system",
+    "orthorhombic system",
+    "cubic system",
+    "rhombohedral system"
+   ],
+   "a": 2,
+   "x": "Cubic: all edges equal, all angles 90°. Tetragonal has a = b ≠ c; rhombohedral has equal edges but angles ≠ 90°."
+  },
+  {
+   "id": "chemA-063",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Washing soda crystals (Na₂CO₃·10H₂O) lose water of crystallisation on exposure to air and become powdery. This is called",
+   "o": [
+    "deliquescence",
+    "sublimation",
+    "hygroscopy",
+    "efflorescence"
+   ],
+   "a": 3,
+   "x": "Efflorescent salts give up water to the air; deliquescent substances absorb moisture and dissolve.",
+   "trap": "Deliquescence is the opposite: absorbing moisture."
+  },
+  {
+   "id": "chemA-064",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "Which substance is deliquescent?",
+   "o": [
+    "NaOH (solid)",
+    "Na₂CO₃·10H₂O",
+    "CuSO₄·5H₂O",
+    "NaCl (pure)"
+   ],
+   "a": 0,
+   "x": "Solid NaOH absorbs so much moisture from air that it dissolves in it; washing soda is efflorescent."
+  },
+  {
+   "id": "chemA-065",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Which is a covalent (network) crystal?",
+   "o": [
+    "Sodium chloride",
+    "Diamond",
+    "Ice",
+    "Copper"
+   ],
+   "a": 1,
+   "x": "In diamond each C is covalently bonded to four others in a 3-D network; NaCl is ionic, ice molecular, Cu metallic."
+  },
+  {
+   "id": "chemA-066",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Glass is an amorphous solid because it",
+   "o": [
+    "has a definite crystal lattice",
+    "is anisotropic",
+    "has no long-range order and no sharp melting point",
+    "has a sharp melting point"
+   ],
+   "a": 2,
+   "x": "Amorphous solids have short-range order only; they soften over a range of temperature and are isotropic."
+  },
+  {
+   "id": "chemA-067",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Number of molecules of water of crystallisation in blue vitriol is",
+   "o": [
+    "7",
+    "10",
+    "2",
+    "5"
+   ],
+   "a": 3,
+   "x": "Blue vitriol is CuSO₄·5H₂O. (7: green/white vitriol; 10: washing soda.)"
+  },
+  {
+   "id": "chemA-068",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "Increasing the pressure shifts which equilibrium in the forward direction?",
+   "o": [
+    "N₂(g) + 3H₂(g) ⇌ 2NH₃(g)",
+    "PCl₅(g) ⇌ PCl₃(g) + Cl₂(g)",
+    "H₂(g) + I₂(g) ⇌ 2HI(g)",
+    "N₂O₄(g) ⇌ 2NO₂(g)"
+   ],
+   "a": 0,
+   "x": "Higher pressure favours the side with fewer gas moles: 4 → 2 for NH₃. H₂ + I₂ has no change (2 → 2); the others increase gas moles.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-069",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "For the endothermic reaction N₂(g) + O₂(g) ⇌ 2NO(g), raising the temperature",
+   "o": [
+    "shifts equilibrium backward and decreases K",
+    "shifts equilibrium forward and increases K",
+    "has no effect because Δn = 0",
+    "changes the rate but not K"
+   ],
+   "a": 1,
+   "x": "Heat favours the endothermic (forward) direction, so K rises. Δn = 0 only removes the pressure effect, not the temperature effect.",
+   "trap": "No effect: confusing the pressure rule (Δn = 0) with temperature.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-070",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 1,
+   "q": "Adding a catalyst to a system at equilibrium",
+   "o": [
+    "shifts it forward",
+    "shifts it backward",
+    "makes no change in the equilibrium composition",
+    "increases the equilibrium constant"
+   ],
+   "a": 2,
+   "x": "A catalyst speeds forward and backward reactions equally; equilibrium is reached faster but K is unchanged."
+  },
+  {
+   "id": "chemA-071",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 3,
+   "q": "For A ⇌ B, K = 4. The equilibrium constant for 2B ⇌ 2A is",
+   "o": [
+    "1/4",
+    "16",
+    "1/8",
+    "1/16"
+   ],
+   "a": 3,
+   "x": "Reversing gives 1/K = 1/4; doubling the coefficients squares it: (1/4)² = 1/16.",
+   "trap": "1/8: halving instead of squaring."
+  },
+  {
+   "id": "chemA-072",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "If the reaction quotient Q is less than the equilibrium constant K, the reaction",
+   "o": [
+    "proceeds in the forward direction",
+    "proceeds in the backward direction",
+    "is at equilibrium",
+    "stops completely"
+   ],
+   "a": 0,
+   "x": "Q < K means too few products; the reaction moves forward until Q = K."
+  },
+  {
+   "id": "chemA-073",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 3,
+   "q": "Unit of Kc for N₂(g) + 3H₂(g) ⇌ 2NH₃(g) is",
+   "o": [
+    "mol² L⁻²",
+    "L² mol⁻²",
+    "mol L⁻¹",
+    "no unit"
+   ],
+   "a": 1,
+   "x": "Kc = [NH₃]²/([N₂][H₂]³) has (mol L⁻¹)^(2 − 4) = (mol L⁻¹)⁻² = L² mol⁻²."
+  },
+  {
+   "id": "chemA-074",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "A 500 g sample of water contains 0.01 g of Ca²⁺ ions. Concentration of Ca²⁺ in ppm is",
+   "o": [
+    "2 ppm",
+    "200 ppm",
+    "20 ppm",
+    "0.02 ppm"
+   ],
+   "a": 2,
+   "x": "ppm = (mass of solute / mass of solution) × 10⁶ = (0.01/500) × 10⁶ = 20 ppm.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-075",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "Volume of 0.02 M KMnO₄ needed to oxidise 25 mL of 0.1 M oxalic acid in acidic medium is",
+   "o": [
+    "25 mL",
+    "125 mL",
+    "20 mL",
+    "50 mL"
+   ],
+   "a": 3,
+   "x": "2MnO₄⁻ ≡ 5C₂O₄²⁻. Oxalic acid = 2.5 mmol → MnO₄⁻ = 2.5 × 2/5 = 1 mmol; V = 1/0.02 = 50 mL.",
+   "trap": "125 mL: using the 5 : 2 ratio upside down.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-076",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "4 g of NaOH is dissolved in 500 g of water. The molality of the solution is",
+   "o": [
+    "0.2 m",
+    "0.1 m",
+    "0.4 m",
+    "2 m"
+   ],
+   "a": 0,
+   "x": "Moles = 4/40 = 0.1; molality = 0.1 mol / 0.5 kg solvent = 0.2 mol kg⁻¹."
+  },
+  {
+   "id": "chemA-077",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 1,
+   "q": "A solution contains 1 mol of glucose and 9 mol of water. Mole fraction of glucose is",
+   "o": [
+    "0.5",
+    "0.1",
+    "0.9",
+    "1/9"
+   ],
+   "a": 1,
+   "x": "x = 1/(1 + 9) = 0.1.",
+   "trap": "1/9: dividing by moles of water instead of total moles."
+  },
+  {
+   "id": "chemA-078",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 1,
+   "q": "Normality of 0.5 M H₂SO₄ is",
+   "o": [
+    "0.5 N",
+    "0.25 N",
+    "1 N",
+    "2 N"
+   ],
+   "a": 2,
+   "x": "H₂SO₄ is dibasic (n-factor 2): N = M × 2 = 1 N."
+  },
+  {
+   "id": "chemA-079",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "Which can be used as a primary standard substance?",
+   "o": [
+    "NaOH",
+    "KMnO₄",
+    "Concentrated HCl",
+    "Anhydrous Na₂CO₃"
+   ],
+   "a": 3,
+   "x": "A primary standard is pure, stable and non-hygroscopic. NaOH absorbs moisture and CO₂; KMnO₄ decomposes; conc. HCl is volatile.",
+   "trap": "NaOH: common lab base, but it is hygroscopic."
+  },
+  {
+   "id": "chemA-080",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "Mass of oxalic acid crystals (H₂C₂O₄·2H₂O, M = 126) needed to make 250 mL of 0.1 N solution is",
+   "o": [
+    "1.575 g",
+    "3.15 g",
+    "0.7875 g",
+    "6.3 g"
+   ],
+   "a": 0,
+   "x": "Equivalent weight = 126/2 = 63. Equivalents = 0.1 × 0.25 = 0.025; mass = 0.025 × 63 = 1.575 g.",
+   "trap": "3.15 g: using molar mass 126 instead of equivalent weight."
+  },
+  {
+   "id": "chemA-081",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "Molarity of a 10% (w/v) NaOH solution is",
+   "o": [
+    "0.25 M",
+    "2.5 M",
+    "10 M",
+    "4 M"
+   ],
+   "a": 1,
+   "x": "10% w/v = 10 g per 100 mL = 100 g L⁻¹; M = 100/40 = 2.5 M."
+  },
+  {
+   "id": "chemA-082",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "Solubility of AgCl is least in",
+   "o": [
+    "pure water",
+    "0.1 M NaNO₃",
+    "0.1 M NaCl",
+    "0.1 M NH₃"
+   ],
+   "a": 2,
+   "x": "The common ion Cl⁻ from NaCl pushes AgCl ⇌ Ag⁺ + Cl⁻ back. NH₃ dissolves AgCl by forming [Ag(NH₃)₂]⁺.",
+   "trap": "0.1 M NH₃: it actually increases solubility via a complex.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-083",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "According to Ostwald's dilution law, on diluting a weak electrolyte its degree of ionisation",
+   "o": [
+    "decreases",
+    "remains constant",
+    "becomes zero",
+    "increases"
+   ],
+   "a": 3,
+   "x": "α = √(Ka/C); lowering C increases α."
+  },
+  {
+   "id": "chemA-084",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 3,
+   "q": "pH of 10⁻⁸ M HCl solution is about",
+   "o": [
+    "6.98",
+    "8",
+    "7",
+    "6"
+   ],
+   "a": 0,
+   "x": "Water's own 10⁻⁷ M H⁺ cannot be ignored: [H⁺] ≈ 1.05 × 10⁻⁷ M, pH ≈ 6.98 (slightly acidic).",
+   "trap": "8: an acid solution can never have pH above 7."
+  },
+  {
+   "id": "chemA-085",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "pH of 0.001 M HCl is",
+   "o": [
+    "11",
+    "3",
+    "1",
+    "0.001"
+   ],
+   "a": 1,
+   "x": "HCl is fully ionised: [H⁺] = 10⁻³ M, pH = −log 10⁻³ = 3."
+  },
+  {
+   "id": "chemA-086",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "Conjugate base of H₂O is",
+   "o": [
+    "H₃O⁺",
+    "O²⁻",
+    "OH⁻",
+    "H₂O₂"
+   ],
+   "a": 2,
+   "x": "Removing one H⁺ from H₂O gives OH⁻; adding H⁺ gives its conjugate acid H₃O⁺.",
+   "trap": "H₃O⁺ is the conjugate acid.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-087",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "Aqueous solution of which salt is acidic?",
+   "o": [
+    "NaCl",
+    "CH₃COONa",
+    "Na₂CO₃",
+    "NH₄Cl"
+   ],
+   "a": 3,
+   "x": "NH₄Cl is a salt of a strong acid and weak base; NH₄⁺ hydrolyses to give H₃O⁺. CH₃COONa and Na₂CO₃ are basic; NaCl neutral."
+  },
+  {
+   "id": "chemA-088",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "Ksp of AgCl is 1.6 × 10⁻¹⁰. Its solubility in water is about",
+   "o": [
+    "1.26 × 10⁻⁵ mol L⁻¹",
+    "1.6 × 10⁻⁵ mol L⁻¹",
+    "4 × 10⁻⁵ mol L⁻¹",
+    "8 × 10⁻¹¹ mol L⁻¹"
+   ],
+   "a": 0,
+   "x": "Ksp = s² → s = √(1.6 × 10⁻¹⁰) = 1.26 × 10⁻⁵ M.",
+   "trap": "4 × 10⁻⁵: √16 = 4, but the exponent −10 makes it √1.6 × 10⁻⁵."
+  },
+  {
+   "id": "chemA-089",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "A precipitate forms when the ionic product of a sparingly soluble salt",
+   "o": [
+    "equals zero",
+    "exceeds its Ksp",
+    "is less than its Ksp",
+    "equals Kw"
+   ],
+   "a": 1,
+   "x": "Ionic product > Ksp: solution is supersaturated and the salt precipitates; < Ksp: more salt can dissolve."
+  },
+  {
+   "id": "chemA-090",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "A buffer contains equal concentrations of acetic acid (pKa = 4.74) and sodium acetate. Its pH is",
+   "o": [
+    "7.00",
+    "9.26",
+    "4.74",
+    "2.37"
+   ],
+   "a": 2,
+   "x": "Henderson equation: pH = pKa + log([salt]/[acid]) = 4.74 + log 1 = 4.74.",
+   "trap": "9.26 is the pOH (14 − 4.74)."
+  },
+  {
+   "id": "chemA-091",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "A stronger acid has",
+   "o": [
+    "a larger pKa",
+    "a smaller Ka",
+    "a pKa equal to 7",
+    "a smaller pKa"
+   ],
+   "a": 3,
+   "x": "pKa = −log Ka; larger Ka (stronger acid) gives smaller pKa."
+  },
+  {
+   "id": "chemA-092",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 1,
+   "q": "For a reaction with rate = k[A]²[B]^½, the overall order is",
+   "o": [
+    "2.5",
+    "2",
+    "3",
+    "1.5"
+   ],
+   "a": 0,
+   "x": "Overall order = sum of powers in the rate law = 2 + ½ = 2.5.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-093",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "For A → products, doubling [A] makes the rate four times. The order with respect to A is",
+   "o": [
+    "1",
+    "2",
+    "4",
+    "0"
+   ],
+   "a": 1,
+   "x": "Rate ∝ [A]ⁿ: 2ⁿ = 4 → n = 2.",
+   "trap": "4: equating order to the rate factor.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-094",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "A reaction has rate constant k = 2.0 × 10⁻³ L mol⁻¹ s⁻¹. Its order is",
+   "o": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "a": 2,
+   "x": "Unit of k = (mol L⁻¹)^(1−n) s⁻¹; L mol⁻¹ s⁻¹ means 1 − n = −1, so n = 2.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-095",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "Which statement about order and molecularity is correct?",
+   "o": [
+    "Order and molecularity are always equal",
+    "Molecularity is found by experiment and can be zero",
+    "Order can be written directly from the balanced equation",
+    "Order is found by experiment and can be fractional; molecularity is always a whole number"
+   ],
+   "a": 3,
+   "x": "Order comes from the experimental rate law (0, fractional allowed); molecularity counts molecules in an elementary step (1, 2, 3).",
+   "trap": "Writing order from the balanced equation works only for elementary steps.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-096",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "For a zero-order reaction, the half-life is",
+   "o": [
+    "directly proportional to the initial concentration",
+    "independent of the initial concentration",
+    "inversely proportional to the initial concentration",
+    "equal to 0.693/k"
+   ],
+   "a": 0,
+   "x": "Zero order: t½ = [A]₀/2k, so it increases with [A]₀. 0.693/k is for first order.",
+   "trap": "0.693/k is the first-order formula."
+  },
+  {
+   "id": "chemA-097",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 1,
+   "q": "A first-order reaction has k = 0.0693 min⁻¹. Its half-life is",
+   "o": [
+    "0.1 min",
+    "10 min",
+    "1 min",
+    "100 min"
+   ],
+   "a": 1,
+   "x": "t½ = 0.693/k = 0.693/0.0693 = 10 min."
+  },
+  {
+   "id": "chemA-098",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 3,
+   "q": "Time taken for 99.9% completion of a first-order reaction is about",
+   "o": [
+    "3 half-lives",
+    "100 half-lives",
+    "10 half-lives",
+    "1000 half-lives"
+   ],
+   "a": 2,
+   "x": "Fraction left 1/1000 ≈ (½)¹⁰ = 1/1024; n = log 1000/log 2 ≈ 10."
+  },
+  {
+   "id": "chemA-099",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 1,
+   "q": "A catalyst increases the rate of a reaction by",
+   "o": [
+    "increasing the activation energy",
+    "increasing ΔH of the reaction",
+    "shifting the equilibrium forward",
+    "lowering the activation energy"
+   ],
+   "a": 3,
+   "x": "A catalyst provides an alternative path with lower Eₐ, so more molecules have enough energy to react."
+  },
+  {
+   "id": "chemA-100",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 1,
+   "q": "According to collision theory, a collision is effective only when molecules",
+   "o": [
+    "have energy at least equal to the threshold energy and proper orientation",
+    "have the same mass",
+    "collide at any orientation",
+    "move with equal speed"
+   ],
+   "a": 0,
+   "x": "Effective collisions need both enough energy (≥ threshold) and correct orientation to form the activated complex."
+  },
+  {
+   "id": "chemA-101",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 1,
+   "q": "For most reactions, a 10 °C rise in temperature makes the rate about",
+   "o": [
+    "ten times",
+    "two to three times",
+    "half",
+    "unchanged"
+   ],
+   "a": 1,
+   "x": "The temperature coefficient (k at T + 10 / k at T) is usually 2 to 3."
+  },
+  {
+   "id": "chemA-102",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "Which is an example of heterogeneous catalysis?",
+   "o": [
+    "SO₂ oxidised by O₂ with NO gas (lead chamber)",
+    "hydrolysis of ester with dilute acid",
+    "N₂ + 3H₂ → 2NH₃ with solid iron",
+    "decomposition of H₂O₂ by aqueous I⁻"
+   ],
+   "a": 2,
+   "x": "In the Haber process the catalyst (solid Fe) is in a different phase from the gaseous reactants."
+  },
+  {
+   "id": "chemA-103",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 2,
+   "q": "In a hydrogen–oxygen fuel cell with alkaline electrolyte, the reaction at the anode is",
+   "o": [
+    "O₂ + 2H₂O + 4e⁻ → 4OH⁻",
+    "2H₂O → O₂ + 4H⁺ + 4e⁻",
+    "H₂O + e⁻ → ½H₂ + OH⁻",
+    "H₂ + 2OH⁻ → 2H₂O + 2e⁻"
+   ],
+   "a": 3,
+   "x": "Oxidation occurs at the anode: H₂ is oxidised. O₂ is reduced at the cathode. Overall 2H₂ + O₂ → 2H₂O.",
+   "trap": "O₂ reduction: that is the cathode reaction.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-104",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "The standard hydrogen electrode has an electrode potential of",
+   "o": [
+    "0.00 V by convention",
+    "+1.00 V",
+    "−0.76 V",
+    "+0.34 V"
+   ],
+   "a": 0,
+   "x": "SHE (Pt, H₂ at 1 atm, 1 M H⁺) is the reference electrode, assigned zero potential at all temperatures."
+  },
+  {
+   "id": "chemA-105",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "The strongest reducing agent among the following is",
+   "o": [
+    "Cu",
+    "Li",
+    "Ag",
+    "Au"
+   ],
+   "a": 1,
+   "x": "Li has the most negative standard reduction potential (−3.04 V), so it loses electrons most readily.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-106",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 3,
+   "q": "A current of 2 A is passed through CuSO₄ solution for 965 s. Mass of copper deposited is (Cu = 63.5)",
+   "o": [
+    "1.27 g",
+    "0.3175 g",
+    "0.635 g",
+    "6.35 g"
+   ],
+   "a": 2,
+   "x": "Q = 2 × 965 = 1930 C = 0.02 F. Cu²⁺ + 2e⁻ → Cu, so Cu = 0.01 mol = 0.635 g.",
+   "trap": "1.27 g: forgetting Cu²⁺ needs 2 electrons."
+  },
+  {
+   "id": "chemA-107",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "Which is a secondary (rechargeable) cell?",
+   "o": [
+    "Dry (Leclanché) cell",
+    "Mercury cell",
+    "Daniell cell",
+    "Lead storage battery"
+   ],
+   "a": 3,
+   "x": "In the lead storage battery the cell reaction can be reversed by charging; the others are primary cells."
+  },
+  {
+   "id": "chemA-108",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "The calomel electrode contains",
+   "o": [
+    "Hg₂Cl₂",
+    "HgCl₂",
+    "HgO",
+    "AgCl"
+   ],
+   "a": 0,
+   "x": "Calomel is mercurous chloride, Hg₂Cl₂, in contact with Hg and KCl solution. HgCl₂ is corrosive sublimate.",
+   "trap": "HgCl₂ is corrosive sublimate, not calomel."
+  },
+  {
+   "id": "chemA-109",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 3,
+   "q": "On electrolysis of concentrated aqueous NaCl, the products at cathode and anode are",
+   "o": [
+    "Na at cathode, Cl₂ at anode",
+    "H₂ at cathode, Cl₂ at anode",
+    "H₂ at cathode, O₂ at anode",
+    "Na at cathode, O₂ at anode"
+   ],
+   "a": 1,
+   "x": "Water is reduced more easily than Na⁺, giving H₂; in concentrated brine Cl⁻ is oxidised to Cl₂ (NaOH remains).",
+   "trap": "Na at cathode happens only for molten NaCl."
+  },
+  {
+   "id": "chemA-110",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "Copper sulphate solution cannot be stored in a vessel made of",
+   "o": [
+    "silver",
+    "gold",
+    "zinc",
+    "platinum"
+   ],
+   "a": 2,
+   "x": "Zn is above Cu in the electrochemical series and displaces it: Zn + CuSO₄ → ZnSO₄ + Cu."
+  },
+  {
+   "id": "chemA-111",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 2,
+   "q": "When the same charge passes through different electrolytes, masses of substances liberated are proportional to their",
+   "o": [
+    "atomic numbers",
+    "molar volumes",
+    "densities",
+    "equivalent weights"
+   ],
+   "a": 3,
+   "x": "Faraday's second law: w₁/w₂ = E₁/E₂, where E is the equivalent weight."
+  },
+  {
+   "id": "chemA-112",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "The first law of thermodynamics is a statement of",
+   "o": [
+    "conservation of energy",
+    "conservation of mass",
+    "increase of entropy",
+    "conservation of momentum"
+   ],
+   "a": 0,
+   "x": "Energy can be converted from one form to another but the total energy of system and surroundings is constant: ΔU = q + w.",
+   "trap": "Increase of entropy is the second law.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-113",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 2,
+   "q": "A system absorbs 50 J of heat and 20 J of work is done on it. Change in its internal energy is",
+   "o": [
+    "+30 J",
+    "+70 J",
+    "−30 J",
+    "−70 J"
+   ],
+   "a": 1,
+   "x": "Heat in and work done on the system both add energy: ΔU = q + w = 50 + 20 = +70 J.",
+   "trap": "+30 J: treating work done on the system as negative.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-114",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "A sealed, perfectly insulated thermos flask containing tea is an example of",
+   "o": [
+    "an open system",
+    "a closed system",
+    "an isolated system",
+    "a surrounding"
+   ],
+   "a": 2,
+   "x": "An isolated system exchanges neither matter nor energy with its surroundings."
+  },
+  {
+   "id": "chemA-115",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "Which is a state function?",
+   "o": [
+    "Heat",
+    "Work",
+    "Path length",
+    "Enthalpy"
+   ],
+   "a": 3,
+   "x": "State functions depend only on initial and final states (U, H, S, G); heat and work depend on the path."
+  },
+  {
+   "id": "chemA-116",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "Which is an intensive property?",
+   "o": [
+    "Temperature",
+    "Mass",
+    "Volume",
+    "Enthalpy"
+   ],
+   "a": 0,
+   "x": "Intensive properties do not depend on amount of substance (temperature, density, pressure); mass, volume and enthalpy are extensive."
+  },
+  {
+   "id": "chemA-117",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 3,
+   "q": "Given C + O₂ → CO₂, ΔH = −393.5 kJ and CO + ½O₂ → CO₂, ΔH = −283 kJ. ΔH for C + ½O₂ → CO is",
+   "o": [
+    "−676.5 kJ",
+    "−110.5 kJ",
+    "+110.5 kJ",
+    "−283 kJ"
+   ],
+   "a": 1,
+   "x": "Hess's law: subtract the second equation from the first: −393.5 − (−283) = −110.5 kJ.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-118",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 2,
+   "q": "Enthalpy of neutralisation of a strong acid by a strong base is about −57.1 kJ mol⁻¹. For acetic acid with NaOH it is",
+   "o": [
+    "more negative than −57.1 kJ mol⁻¹",
+    "exactly −57.1 kJ mol⁻¹",
+    "less negative than −57.1 kJ mol⁻¹",
+    "positive"
+   ],
+   "a": 2,
+   "x": "Some heat is used to ionise the weak acid, so less heat is released (about −55 kJ mol⁻¹)."
+  },
+  {
+   "id": "chemA-119",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "Entropy of the system increases when",
+   "o": [
+    "water freezes",
+    "steam condenses",
+    "a gas is compressed",
+    "ice melts"
+   ],
+   "a": 3,
+   "x": "Melting changes an ordered solid into a more disordered liquid; the others increase order."
+  },
+  {
+   "id": "chemA-120",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 2,
+   "q": "For a reaction at equilibrium with K > 1, the standard free energy change ΔG° is",
+   "o": [
+    "negative",
+    "positive",
+    "zero",
+    "infinite"
+   ],
+   "a": 0,
+   "x": "ΔG° = −2.303RT log K; if K > 1, log K > 0, so ΔG° < 0.",
+   "trap": "Zero: ΔG (not ΔG°) is zero at equilibrium."
+  },
+  {
+   "id": "chemA-121",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 2,
+   "q": "A reaction is spontaneous at all temperatures when",
+   "o": [
+    "ΔH is positive and ΔS is negative",
+    "ΔH is negative and ΔS is positive",
+    "ΔH and ΔS are both positive",
+    "ΔH and ΔS are both negative"
+   ],
+   "a": 1,
+   "x": "ΔG = ΔH − TΔS is then negative at every temperature.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-122",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "Enthalpy of formation of HCl is −92 kJ mol⁻¹. By Laplace's law, enthalpy of decomposition of HCl into its elements is",
+   "o": [
+    "−92 kJ mol⁻¹",
+    "−184 kJ mol⁻¹",
+    "+92 kJ mol⁻¹",
+    "0 kJ mol⁻¹"
+   ],
+   "a": 2,
+   "x": "Laplace's law: ΔH of decomposition is equal in magnitude and opposite in sign to ΔH of formation."
+  },
+  {
+   "id": "chemA-123",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 2,
+   "q": "Complete the reaction: ¹⁴₇N + ⁴₂He → ¹⁷₈O + ?",
+   "o": [
+    "¹₀n (neutron)",
+    "⁰₋₁e (electron)",
+    "γ-ray",
+    "¹₁H (proton)"
+   ],
+   "a": 3,
+   "x": "Mass: 14 + 4 = 17 + 1; charge: 7 + 2 = 8 + 1. The particle is ¹₁H, a proton (Rutherford, 1919).",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-124",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 2,
+   "q": "Complete the reaction: ⁹₄Be + ⁴₂He → ¹²₆C + ?",
+   "o": [
+    "¹₀n (neutron)",
+    "¹₁H (proton)",
+    "⁰₊₁e (positron)",
+    "²₁H (deuteron)"
+   ],
+   "a": 0,
+   "x": "Mass: 9 + 4 = 12 + 1; charge: 4 + 2 = 6 + 0. The particle is a neutron (Chadwick's discovery).",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-125",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 1,
+   "q": "Emission of a γ-ray from a nucleus",
+   "o": [
+    "decreases atomic number by 2",
+    "changes neither atomic number nor mass number",
+    "increases atomic number by 1",
+    "decreases mass number by 4"
+   ],
+   "a": 1,
+   "x": "γ-rays are high-energy photons with no mass or charge; they only remove excess energy."
+  },
+  {
+   "id": "chemA-126",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 3,
+   "q": "²³⁸₉₂U emits one α-particle and then two β-particles. The final nucleus is",
+   "o": [
+    "²³⁴₉₀Th",
+    "²³⁰₉₀Th",
+    "²³⁴₉₂U",
+    "²³⁴₉₄Pu"
+   ],
+   "a": 2,
+   "x": "α: A − 4, Z − 2 → ²³⁴₉₀Th. Two β: Z + 2 → ²³⁴₉₂U, an isotope of the parent.",
+   "trap": "²³⁴₉₀Th: stopping after the α step."
+  },
+  {
+   "id": "chemA-127",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 2,
+   "q": "Half-life of C-14 is 5730 years. Fraction of C-14 left in a wooden object 11460 years old is",
+   "o": [
+    "1/2",
+    "1/8",
+    "1/16",
+    "1/4"
+   ],
+   "a": 3,
+   "x": "11460/5730 = 2 half-lives; fraction left = (½)² = 1/4."
+  },
+  {
+   "id": "chemA-128",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 1,
+   "q": "A radioisotope has half-life 2 days. From 16 g, the mass left after 6 days is",
+   "o": [
+    "2 g",
+    "4 g",
+    "8 g",
+    "1 g"
+   ],
+   "a": 0,
+   "x": "6 days = 3 half-lives: 16 → 8 → 4 → 2 g."
+  },
+  {
+   "id": "chemA-129",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 1,
+   "q": "The energy of the Sun is produced mainly by",
+   "o": [
+    "nuclear fission of uranium",
+    "nuclear fusion of hydrogen into helium",
+    "combustion of hydrogen",
+    "radioactive decay of carbon"
+   ],
+   "a": 1,
+   "x": "In the Sun's core, hydrogen nuclei fuse to form helium, converting mass into energy (E = mc²)."
+  },
+  {
+   "id": "chemA-130",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Lassaigne's (sodium fusion) extract is prepared to detect",
+   "o": [
+    "functional groups of an organic compound",
+    "unsaturation in an organic compound",
+    "nitrogen, sulphur and halogens in an organic compound",
+    "carbon and hydrogen only"
+   ],
+   "a": 2,
+   "x": "Fusing with Na converts covalently bound N, S and X into ionic NaCN, Na₂S and NaX, which give ordinary ionic tests.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-131",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "In Lassaigne's test, nitrogen is confirmed by the formation of",
+   "o": [
+    "violet colour with sodium nitroprusside",
+    "white precipitate with AgNO₃",
+    "blood-red colour with FeCl₃ only",
+    "Prussian blue"
+   ],
+   "a": 3,
+   "x": "NaCN + FeSO₄ → Na₄[Fe(CN)₆]; with Fe³⁺ it gives Fe₄[Fe(CN)₆]₃, Prussian blue.",
+   "trap": "Violet with nitroprusside is the test for sulphur.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-132",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "In Lassaigne's extract, sulphur gives a violet colour with",
+   "o": [
+    "sodium nitroprusside",
+    "ferrous sulphate",
+    "silver nitrate",
+    "lead nitrate and HNO₃"
+   ],
+   "a": 0,
+   "x": "Na₂S + Na₂[Fe(CN)₅NO] → violet Na₄[Fe(CN)₅NOS]. (S also gives a black PbS ppt with lead acetate.)",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-133",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Baeyer's reagent is",
+   "o": [
+    "acidified K₂Cr₂O₇",
+    "cold, dilute alkaline KMnO₄",
+    "ammoniacal AgNO₃",
+    "bromine in CCl₄"
+   ],
+   "a": 1,
+   "x": "Alkenes and alkynes decolourise the pink colour of cold dilute alkaline KMnO₄ (forming a brown MnO₂ ppt).",
+   "trap": "Ammoniacal AgNO₃ is Tollens' reagent.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-134",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Decolourisation of bromine water by an organic compound indicates",
+   "o": [
+    "an aldehyde group",
+    "a carboxylic acid group",
+    "unsaturation (C=C or C≡C)",
+    "an alcohol group"
+   ],
+   "a": 2,
+   "x": "Br₂ adds across multiple bonds, so its reddish-brown colour disappears."
+  },
+  {
+   "id": "chemA-135",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "A red precipitate with ammoniacal cuprous chloride is given by",
+   "o": [
+    "ethene",
+    "ethane",
+    "benzene",
+    "ethyne"
+   ],
+   "a": 3,
+   "x": "Terminal alkynes have acidic ≡C–H; ethyne forms red copper acetylide. Ethene has no such H.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-136",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Ethene and ethyne can be distinguished by",
+   "o": [
+    "ammoniacal AgNO₃ (white precipitate with ethyne only)",
+    "bromine water",
+    "Baeyer's reagent",
+    "burning in air"
+   ],
+   "a": 0,
+   "x": "Both decolourise bromine water and Baeyer's reagent; only the terminal alkyne gives silver acetylide.",
+   "trap": "Bromine water: both are unsaturated and both decolourise it.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-137",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Hydrogen sulphide gas turns lead acetate paper",
+   "o": [
+    "white",
+    "black",
+    "blue",
+    "yellow"
+   ],
+   "a": 1,
+   "x": "Pb(CH₃COO)₂ + H₂S → PbS (black) + 2CH₃COOH.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-138",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 1,
+   "q": "Colour of methyl orange in an alkaline solution is",
+   "o": [
+    "red",
+    "pink",
+    "yellow",
+    "colourless"
+   ],
+   "a": 2,
+   "x": "Methyl orange is red below pH 3.1 and yellow above 4.4.",
+   "trap": "Pink is phenolphthalein in base.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-139",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "Suitable indicator for titrating acetic acid with NaOH is",
+   "o": [
+    "methyl orange",
+    "methyl red",
+    "no indicator is suitable",
+    "phenolphthalein"
+   ],
+   "a": 3,
+   "x": "Weak acid–strong base: end point pH is above 7 (about 8–9), matching phenolphthalein's range 8.3–10.",
+   "trap": "Methyl orange changes colour too early, in acidic range."
+  },
+  {
+   "id": "chemA-140",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "Suitable indicator for titrating HCl with NH₄OH is",
+   "o": [
+    "methyl orange",
+    "phenolphthalein",
+    "starch",
+    "potassium permanganate"
+   ],
+   "a": 0,
+   "x": "Strong acid–weak base: end point is acidic (pH about 5), within methyl orange's range.",
+   "trap": "Phenolphthalein suits weak acid vs strong base."
+  },
+  {
+   "id": "chemA-141",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "For the titration of acetic acid with ammonium hydroxide",
+   "o": [
+    "phenolphthalein is best",
+    "no simple indicator gives a sharp end point",
+    "methyl orange is best",
+    "starch is used"
+   ],
+   "a": 1,
+   "x": "Weak acid vs weak base gives no steep pH jump at equivalence, so colour change is not sharp."
+  },
+  {
+   "id": "chemA-142",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "In the Victor Meyer test, a primary alcohol gives",
+   "o": [
+    "a blue colour",
+    "no colour",
+    "a blood-red colour",
+    "a white precipitate"
+   ],
+   "a": 2,
+   "x": "1° alcohol → nitrolic acid → blood red; 2° → pseudonitrole → blue; 3° → colourless.",
+   "trap": "Blue is the result for a secondary alcohol.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-143",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Tollens' reagent gives a silver mirror with",
+   "o": [
+    "acetone",
+    "ethanol",
+    "acetic acid",
+    "acetaldehyde"
+   ],
+   "a": 3,
+   "x": "Aldehydes reduce ammoniacal AgNO₃ to metallic silver; ketones like acetone do not.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-144",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Which compound does NOT reduce Fehling's solution?",
+   "o": [
+    "Benzaldehyde",
+    "Acetaldehyde",
+    "Formaldehyde",
+    "Glucose"
+   ],
+   "a": 0,
+   "x": "Aromatic aldehydes give Tollens' test but not Fehling's; aliphatic aldehydes and glucose give a red Cu₂O ppt.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-145",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Ethanol and methanol can be distinguished by",
+   "o": [
+    "Lucas test",
+    "the iodoform test",
+    "sodium metal",
+    "Baeyer's reagent"
+   ],
+   "a": 1,
+   "x": "Ethanol has CH₃CH(OH)– and gives yellow CHI₃ with I₂/NaOH; methanol does not. Both react with Na."
+  },
+  {
+   "id": "chemA-146",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "In the Lucas test, immediate turbidity at room temperature is given by",
+   "o": [
+    "a primary alcohol",
+    "a secondary alcohol",
+    "a tertiary alcohol",
+    "methanol"
+   ],
+   "a": 2,
+   "x": "Lucas reagent (conc. HCl + anhydrous ZnCl₂) forms insoluble alkyl chloride fastest with 3° alcohols (stable carbocation)."
+  },
+  {
+   "id": "chemA-147",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "A violet colour in the biuret test indicates",
+   "o": [
+    "starch",
+    "fat",
+    "glucose",
+    "protein"
+   ],
+   "a": 3,
+   "x": "Peptide bonds form a violet complex with Cu²⁺ in alkaline CuSO₄."
+  },
+  {
+   "id": "chemA-148",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Starch is detected by",
+   "o": [
+    "a blue-black colour with iodine solution",
+    "a violet colour with biuret reagent",
+    "a red colour with Sudan III",
+    "a silver mirror with Tollens' reagent"
+   ],
+   "a": 0,
+   "x": "Iodine fits inside the amylose helix, giving the blue-black colour."
+  },
+  {
+   "id": "chemA-149",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "A white precipitate with AgNO₃ that dissolves in NH₄OH shows the presence of",
+   "o": [
+    "Br⁻",
+    "Cl⁻",
+    "I⁻",
+    "NO₃⁻"
+   ],
+   "a": 1,
+   "x": "AgCl is white and soluble in ammonia; AgBr is pale yellow (partly soluble), AgI yellow (insoluble)."
+  },
+  {
+   "id": "chemA-150",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "A white precipitate with BaCl₂ solution, insoluble in dilute HCl, confirms",
+   "o": [
+    "chloride ion",
+    "carbonate ion",
+    "sulphate ion",
+    "nitrate ion"
+   ],
+   "a": 2,
+   "x": "BaSO₄ is insoluble in acids; BaCO₃ would dissolve in HCl with effervescence.",
+   "trap": "Carbonate: BaCO₃ dissolves in HCl."
+  },
+  {
+   "id": "chemA-151",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Nessler's reagent gives a brown precipitate with",
+   "o": [
+    "Na⁺ ions",
+    "Ca²⁺ ions",
+    "Cl⁻ ions",
+    "NH₄⁺ ions"
+   ],
+   "a": 3,
+   "x": "Nessler's reagent (alkaline K₂HgI₄) gives a brown ppt (iodide of Millon's base) with ammonia/NH₄⁺."
+  },
+  {
+   "id": "chemA-152",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "Brick-red colour in the flame test indicates",
+   "o": [
+    "calcium",
+    "sodium",
+    "potassium",
+    "barium"
+   ],
+   "a": 0,
+   "x": "Ca: brick red; Na: golden yellow; K: lilac; Ba: apple green."
+  },
+  {
+   "id": "chemA-153",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 1,
+   "q": "A mixture of common salt and camphor can be separated by",
+   "o": [
+    "filtration",
+    "sublimation",
+    "evaporation",
+    "paper chromatography"
+   ],
+   "a": 1,
+   "x": "Camphor sublimes on heating and collects on a cool surface; NaCl does not sublime."
+  },
+  {
+   "id": "chemA-154",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "Glycerol, which decomposes at its normal boiling point, is purified by",
+   "o": [
+    "simple distillation",
+    "fractional crystallisation",
+    "vacuum (reduced-pressure) distillation",
+    "sublimation"
+   ],
+   "a": 2,
+   "x": "Lowering the pressure lowers the boiling point, so the liquid distils below its decomposition temperature."
+  },
+  {
+   "id": "chemA-155",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 1,
+   "q": "Two miscible liquids with close boiling points are separated by",
+   "o": [
+    "simple distillation",
+    "filtration",
+    "sublimation",
+    "fractional distillation"
+   ],
+   "a": 3,
+   "x": "A fractionating column gives repeated vaporisation–condensation, separating liquids whose boiling points differ only slightly."
+  },
+  {
+   "id": "chemA-156",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "In paper chromatography, the Rf value of a substance is",
+   "o": [
+    "distance moved by the substance ÷ distance moved by the solvent front",
+    "distance moved by the solvent ÷ distance moved by the substance",
+    "always greater than 1",
+    "the time taken by the solvent to rise"
+   ],
+   "a": 0,
+   "x": "Rf = distance travelled by solute / distance travelled by solvent front, so 0 < Rf < 1."
+  },
+  {
+   "id": "chemA-157",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "Atmolysis is the separation of",
+   "o": [
+    "liquids by boiling point",
+    "gases by their different rates of diffusion",
+    "solids by solubility",
+    "ions by charge"
+   ],
+   "a": 1,
+   "x": "Atmolysis uses Graham's law: lighter gases diffuse faster through a porous partition."
+  },
+  {
+   "id": "chemA-158",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 1,
+   "q": "Fractional crystallisation separates substances that differ in their",
+   "o": [
+    "boiling points",
+    "densities",
+    "solubility in a given solvent",
+    "colours"
+   ],
+   "a": 2,
+   "x": "The less soluble component crystallises first on cooling or concentrating the solution."
+  },
+  {
+   "id": "chemA-159",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 3,
+   "q": "Which statement correctly distinguishes iodometry from iodimetry?",
+   "o": [
+    "Iodometry uses KMnO₄ as indicator; iodimetry uses starch",
+    "Iodimetry titrates liberated I₂ with hypo; iodometry uses standard I₂ directly",
+    "Both use EDTA as titrant",
+    "In iodometry, I₂ liberated by an oxidant is titrated with hypo; in iodimetry, a standard I₂ solution is used directly"
+   ],
+   "a": 3,
+   "x": "Iodometric: oxidant + excess KI → I₂, titrated with Na₂S₂O₃. Iodimetric: reducing agent titrated directly with I₂. Starch is the indicator in both.",
+   "trap": "Swapping the two names is the common error."
+  },
+  {
+   "id": "chemA-160",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 1,
+   "q": "In permanganometric titrations no external indicator is needed because",
+   "o": [
+    "KMnO₄ acts as its own (self) indicator",
+    "the solution is colourless at the end",
+    "starch is always added",
+    "the reaction gives a precipitate"
+   ],
+   "a": 0,
+   "x": "Purple MnO₄⁻ becomes colourless Mn²⁺; the first excess drop gives a permanent pink colour."
+  },
+  {
+   "id": "chemA-161",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "Hardness of water is estimated by complexometric titration with",
+   "o": [
+    "KMnO₄ using starch",
+    "EDTA using Eriochrome Black T",
+    "NaOH using phenolphthalein",
+    "AgNO₃ using K₂CrO₄"
+   ],
+   "a": 1,
+   "x": "EDTA forms stable 1 : 1 complexes with Ca²⁺ and Mg²⁺; EBT changes from wine red to blue at the end point."
+  },
+  {
+   "id": "chemA-162",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 1,
+   "q": "The vapour density of a gas is 32. Its molar mass is",
+   "o": [
+    "16 g mol⁻¹",
+    "32 g mol⁻¹",
+    "64 g mol⁻¹",
+    "128 g mol⁻¹"
+   ],
+   "a": 2,
+   "x": "Molar mass = 2 × vapour density = 2 × 32 = 64 g mol⁻¹ (e.g. SO₂).",
+   "trap": "32: forgetting the factor of 2 (VD is relative to H₂, M = 2).",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-163",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "An ion X²⁺ has the electronic configuration 2, 8, 8. If the mass number of X is 40, the number of neutrons in its nucleus is",
+   "o": [
+    "18",
+    "22",
+    "40",
+    "20"
+   ],
+   "a": 3,
+   "x": "X²⁺ has 18 electrons, so neutral X has 20 electrons and Z = 20. Neutrons = A − Z = 40 − 20 = 20.",
+   "trap": "22: taking Z as the ion's electron count (18).",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-164",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "Which substance can act both as an oxidising agent and as a reducing agent?",
+   "o": [
+    "H₂O₂",
+    "HNO₃",
+    "KMnO₄",
+    "H₂S"
+   ],
+   "a": 0,
+   "x": "O in H₂O₂ is −1, between 0 and −2, so it can be oxidised or reduced (like N +3 in HNO₂, S +4 in SO₂). HNO₃ and KMnO₄ are in highest states; S in H₂S is lowest.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-165",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "In acidic medium, how many moles of H₂S are oxidised to sulphur by 2 moles of KMnO₄?",
+   "o": [
+    "2",
+    "5",
+    "2.5",
+    "10"
+   ],
+   "a": 1,
+   "x": "MnO₄⁻ gains 5 e⁻; H₂S → S loses 2 e⁻. 2 mol KMnO₄ take 10 e⁻ = 5 mol H₂S. (2MnO₄⁻ + 5H₂S + 6H⁺ → 2Mn²⁺ + 5S + 8H₂O)",
+   "trap": "2.5: that is per mole of KMnO₄, not per 2 moles.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-166",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "Commercial sulphuric acid is 98% H₂SO₄ by mass with density 1.84 g mL⁻¹. Its molarity is about",
+   "o": [
+    "9.2 M",
+    "1.84 M",
+    "18.4 M",
+    "36.8 M"
+   ],
+   "a": 2,
+   "x": "1 L has mass 1840 g; H₂SO₄ = 0.98 × 1840 = 1803 g = 1803/98 = 18.4 mol. Molarity = 18.4 M.",
+   "trap": "36.8 M is the normality (n-factor 2), not molarity.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-167",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "In the reaction HF + H₂O ⇌ H₃O⁺ + F⁻, the two Brønsted acids are",
+   "o": [
+    "HF and F⁻",
+    "H₂O and F⁻",
+    "H₂O and H₃O⁺",
+    "HF and H₃O⁺"
+   ],
+   "a": 3,
+   "x": "A Brønsted acid donates H⁺: HF forward, H₃O⁺ in reverse. F⁻ and H₂O are the bases (conjugate pairs HF/F⁻ and H₃O⁺/H₂O).",
+   "trap": "HF and F⁻ is a conjugate pair: one acid, one base.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-168",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "Iron pipes buried in soil are protected by connecting them to a block of magnesium. Here magnesium acts as",
+   "o": [
+    "a sacrificial anode",
+    "a cathode",
+    "a catalyst",
+    "an inert electrode"
+   ],
+   "a": 0,
+   "x": "Mg has a more negative E° than Fe, so Mg is oxidised (anode) instead of iron: cathodic protection. Zinc in galvanising works the same way.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-169",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Before testing Lassaigne's extract for halogens with AgNO₃, it is boiled with dilute HNO₃ in order to",
+   "o": [
+    "make the silver halide more soluble",
+    "decompose NaCN and Na₂S, which would otherwise interfere",
+    "convert halide ions into free halogens",
+    "remove the excess sodium metal as NaNO₃"
+   ],
+   "a": 1,
+   "x": "CN⁻ and S²⁻ would give AgCN (white) and Ag₂S (black) with AgNO₃; boiling with HNO₃ expels them as HCN and H₂S.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-170",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Benedict's solution gives a red precipitate of Cu₂O with",
+   "o": [
+    "sucrose",
+    "acetone",
+    "glucose",
+    "benzaldehyde"
+   ],
+   "a": 2,
+   "x": "Benedict's (Cu²⁺ citrate) is reduced by aliphatic aldehydes and reducing sugars. Sucrose is non-reducing; ketones and aromatic aldehydes do not reduce it.",
+   "trap": "Benzaldehyde: aromatic aldehydes reduce Tollens' but not Benedict's/Fehling's.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-171",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 1,
+   "q": "Number of significant figures in 0.00450 is",
+   "o": [
+    "2",
+    "5",
+    "6",
+    "3"
+   ],
+   "a": 3,
+   "x": "Leading zeros only locate the decimal point and are not significant; the trailing zero after the decimal point is. Significant digits: 4, 5, 0.",
+   "trap": "5 or 6: counting the leading zeros."
+  },
+  {
+   "id": "chemA-172",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 2,
+   "q": "Percentage of water of crystallisation in blue vitriol, CuSO₄·5H₂O (M = 249.5), is about",
+   "o": [
+    "36.1%",
+    "7.2%",
+    "56.4%",
+    "63.9%"
+   ],
+   "a": 0,
+   "x": "Water = 5 × 18 = 90 g per 249.5 g. 90/249.5 × 100 = 36.1%.",
+   "trap": "56.4%: dividing by the anhydrous mass 159.5 instead of 249.5.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-173",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 1,
+   "q": "Avogadro's number is equal to the number of",
+   "o": [
+    "molecules in 1 g of hydrogen gas",
+    "atoms in exactly 12 g of carbon-12",
+    "molecules in 22.4 L of a gas at 25 °C and 1 atm",
+    "electrons that carry a charge of 1 coulomb"
+   ],
+   "a": 1,
+   "x": "One mole is the amount containing as many entities as there are atoms in 12 g of C-12, i.e. 6.022 × 10²³.",
+   "trap": "1 g of H₂ is only 0.5 mol of molecules."
+  },
+  {
+   "id": "chemA-174",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 3,
+   "q": "1 L of a gas at STP weighs 1.25 g. Its vapour density is",
+   "o": [
+    "28",
+    "56",
+    "14",
+    "7"
+   ],
+   "a": 2,
+   "x": "Molar mass = 1.25 × 22.4 = 28 g mol⁻¹. Vapour density = M/2 = 14.",
+   "trap": "28: stopping at molar mass and forgetting VD = M/2.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-175",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 2,
+   "q": "A hydrocarbon contains 80% carbon and 20% hydrogen by mass. Its empirical formula is",
+   "o": [
+    "CH₂",
+    "CH₄",
+    "C₂H₅",
+    "CH₃"
+   ],
+   "a": 3,
+   "x": "Mole ratio C : H = 80/12 : 20/1 = 6.67 : 20 = 1 : 3, so CH₃ (molecular formula could be C₂H₆).",
+   "trap": "CH₄: guessing the simplest hydrocarbon instead of computing the ratio."
+  },
+  {
+   "id": "chemA-176",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 2,
+   "q": "Mass of one mole of electrons (mass of an electron = 9.1 × 10⁻³¹ kg) is about",
+   "o": [
+    "0.55 mg",
+    "0.55 g",
+    "1.008 g",
+    "9.1 × 10⁻³¹ kg"
+   ],
+   "a": 0,
+   "x": "9.1 × 10⁻³¹ kg × 6.022 × 10²³ = 5.5 × 10⁻⁷ kg = 0.55 mg.",
+   "trap": "1.008 g is the mass of a mole of hydrogen atoms, not electrons."
+  },
+  {
+   "id": "chemA-177",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 3,
+   "q": "0.9 g of a metal displaces 1.12 L of H₂ at STP from an acid. The equivalent mass of the metal is",
+   "o": [
+    "18",
+    "9",
+    "4.5",
+    "27"
+   ],
+   "a": 1,
+   "x": "11.2 L H₂ at STP = 1 g H = 1 equivalent. 1.12 L = 0.1 equivalent, so equivalent mass = 0.9/0.1 = 9 (the metal is aluminium).",
+   "trap": "18: using 22.4 L as one equivalent of hydrogen."
+  },
+  {
+   "id": "chemA-178",
+   "topic": "chem-physical",
+   "s": "Basic Concepts in Chemistry",
+   "d": 2,
+   "q": "5.6 L of a gas at STP weighs 11 g. Its molar mass is",
+   "o": [
+    "22 g mol⁻¹",
+    "88 g mol⁻¹",
+    "44 g mol⁻¹",
+    "61.6 g mol⁻¹"
+   ],
+   "a": 2,
+   "x": "5.6 L = 5.6/22.4 = 0.25 mol. M = 11/0.25 = 44 g mol⁻¹ (CO₂ or N₂O)."
+  },
+  {
+   "id": "chemA-179",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 1,
+   "q": "The law of conservation of mass was established by",
+   "o": [
+    "Proust",
+    "Dalton",
+    "Gay-Lussac",
+    "Lavoisier"
+   ],
+   "a": 3,
+   "x": "Lavoisier showed that the total mass of reactants equals the total mass of products in a chemical change."
+  },
+  {
+   "id": "chemA-180",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "Volume of oxygen needed for complete combustion of 10 mL of methane, all volumes at the same T and P, is",
+   "o": [
+    "20 mL",
+    "10 mL",
+    "30 mL",
+    "40 mL"
+   ],
+   "a": 0,
+   "x": "CH₄ + 2O₂ → CO₂ + 2H₂O. By Gay-Lussac's law of combining volumes, 10 mL CH₄ needs 2 × 10 = 20 mL O₂."
+  },
+  {
+   "id": "chemA-181",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "3 mol of H₂ and 2 mol of O₂ are allowed to react to form water. The limiting reagent and the moles of water formed are",
+   "o": [
+    "O₂; 4 mol H₂O",
+    "H₂; 3 mol H₂O",
+    "H₂; 2 mol H₂O",
+    "O₂; 2 mol H₂O"
+   ],
+   "a": 1,
+   "x": "2H₂ + O₂ → 2H₂O. 3 mol H₂ needs only 1.5 mol O₂, so H₂ runs out first; water = 3 mol (0.5 mol O₂ left).",
+   "trap": "O₂; 4 mol: taking water from O₂ without checking which reactant runs out.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-182",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 3,
+   "q": "28 g of N₂ and 9 g of H₂ react to form ammonia (N₂ + 3H₂ → 2NH₃). The maximum mass of NH₃ formed is",
+   "o": [
+    "37 g",
+    "51 g",
+    "34 g",
+    "17 g"
+   ],
+   "a": 2,
+   "x": "N₂ = 1 mol needs 3 mol (6 g) H₂; 4.5 mol H₂ is present, so N₂ is limiting. NH₃ = 2 mol × 17 = 34 g.",
+   "trap": "51 g: using H₂ (4.5 mol) as the limiting reagent.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-183",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "Which sample contains the largest number of atoms?",
+   "o": [
+    "1 g of He",
+    "1 g of O₂",
+    "1 g of CH₄",
+    "1 g of H₂"
+   ],
+   "a": 3,
+   "x": "Moles of atoms: H₂ 1/2 × 2 = 1; He 1/4 = 0.25; O₂ 1/32 × 2 = 0.0625; CH₄ 1/16 × 5 = 0.31. H₂ has the most."
+  },
+  {
+   "id": "chemA-184",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "Volume of CO₂ at STP obtained when 10 g of CaCO₃ reacts completely with excess dilute HCl is",
+   "o": [
+    "2.24 L",
+    "22.4 L",
+    "1.12 L",
+    "4.48 L"
+   ],
+   "a": 0,
+   "x": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂. 10 g CaCO₃ = 0.1 mol → 0.1 mol CO₂ = 0.1 × 22.4 = 2.24 L."
+  },
+  {
+   "id": "chemA-185",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 1,
+   "q": "The law of reciprocal proportions was put forward by",
+   "o": [
+    "Proust",
+    "Richter",
+    "Dalton",
+    "Lavoisier"
+   ],
+   "a": 1,
+   "x": "Richter (1792) stated the law of reciprocal proportions; Proust gave constant proportions and Dalton gave multiple proportions."
+  },
+  {
+   "id": "chemA-186",
+   "topic": "chem-physical",
+   "s": "Stoichiometry",
+   "d": 2,
+   "q": "Ratio of the number of molecules in equal masses of O₂ and SO₂ is",
+   "o": [
+    "1 : 2",
+    "1 : 1",
+    "2 : 1",
+    "1 : 4"
+   ],
+   "a": 2,
+   "x": "Molecules ∝ mass/M. O₂ : SO₂ = (m/32) : (m/64) = 2 : 1.",
+   "trap": "1 : 2: putting molar masses in the ratio directly."
+  },
+  {
+   "id": "chemA-187",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Maximum number of electrons that the shell with n = 4 can hold is",
+   "o": [
+    "16",
+    "18",
+    "8",
+    "32"
+   ],
+   "a": 3,
+   "x": "A shell holds n² orbitals and 2n² electrons: 2 × 4² = 32.",
+   "trap": "16: that is the number of orbitals (n²), not electrons.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-188",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "According to the Aufbau principle, the subshell filled immediately after 4p is",
+   "o": [
+    "5s",
+    "4d",
+    "4f",
+    "5p"
+   ],
+   "a": 0,
+   "x": "(n + l) for 4p = 5 and 5s = 5; with equal (n + l) the lower n fills first, so 4p then 5s. 4d has n + l = 6.",
+   "trap": "4d: assuming all of shell 4 fills before shell 5.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-189",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "Number of neutrons in the ion ³⁷₁₇Cl⁻ is",
+   "o": [
+    "17",
+    "20",
+    "18",
+    "37"
+   ],
+   "a": 1,
+   "x": "Neutrons = A − Z = 37 − 17 = 20. The extra electron changes only the electron count (18).",
+   "trap": "18: counting electrons in the ion instead of neutrons.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-190",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Number of orbitals in an f subshell is",
+   "o": [
+    "5",
+    "14",
+    "7",
+    "3"
+   ],
+   "a": 2,
+   "x": "l = 3 for f, so m = −3 … +3, giving 2l + 1 = 7 orbitals (holding 14 electrons).",
+   "trap": "14: the number of electrons, not orbitals."
+  },
+  {
+   "id": "chemA-191",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 2,
+   "q": "Ratio of the radii of the first and second Bohr orbits of the hydrogen atom is",
+   "o": [
+    "1 : 2",
+    "2 : 1",
+    "4 : 1",
+    "1 : 4"
+   ],
+   "a": 3,
+   "x": "Bohr radius r ∝ n²/Z, so r₁ : r₂ = 1² : 2² = 1 : 4.",
+   "trap": "1 : 2: taking r proportional to n instead of n²."
+  },
+  {
+   "id": "chemA-192",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 3,
+   "q": "Ionisation energy of a hydrogen atom is 13.6 eV. The ionisation energy of He⁺ (Z = 2) from its ground state is",
+   "o": [
+    "54.4 eV",
+    "13.6 eV",
+    "27.2 eV",
+    "6.8 eV"
+   ],
+   "a": 0,
+   "x": "For a one-electron species E = 13.6 Z²/n² eV. He⁺: 13.6 × 4 = 54.4 eV.",
+   "trap": "27.2 eV: multiplying by Z instead of Z²."
+  },
+  {
+   "id": "chemA-193",
+   "topic": "chem-physical",
+   "s": "Atomic Structure",
+   "d": 1,
+   "q": "Isotopes of an element differ in the number of",
+   "o": [
+    "protons",
+    "neutrons",
+    "electrons",
+    "both protons and neutrons"
+   ],
+   "a": 1,
+   "x": "Isotopes have the same atomic number (protons) but different mass numbers because their neutron counts differ."
+  },
+  {
+   "id": "chemA-194",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "The most electronegative element in the periodic table is",
+   "o": [
+    "oxygen",
+    "chlorine",
+    "fluorine",
+    "nitrogen"
+   ],
+   "a": 2,
+   "x": "Fluorine has the highest Pauling electronegativity (4.0): small atom with high effective nuclear charge.",
+   "trap": "Chlorine: it has the most negative electron gain enthalpy, not the highest electronegativity.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-195",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "Among the isoelectronic ions K⁺, Ca²⁺, Cl⁻ and S²⁻, the largest is",
+   "o": [
+    "K⁺",
+    "Ca²⁺",
+    "Cl⁻",
+    "S²⁻"
+   ],
+   "a": 3,
+   "x": "All have 18 electrons. The ion with the fewest protons (S²⁻, Z = 16) holds its electrons least tightly, so it is largest.",
+   "trap": "K⁺: thinking a heavier atom always gives a bigger ion.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-196",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "The first ionisation enthalpy of nitrogen is higher than that of oxygen because",
+   "o": [
+    "nitrogen has a stable, half-filled 2p³ configuration",
+    "oxygen has a smaller nuclear charge than nitrogen",
+    "the oxygen atom is larger than the nitrogen atom",
+    "nitrogen has a completely filled 2p subshell"
+   ],
+   "a": 0,
+   "x": "Removing an electron from the extra-stable half-filled 2p³ of N costs more energy; O (2p⁴) loses a paired electron more easily."
+  },
+  {
+   "id": "chemA-197",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "Which element is a metalloid?",
+   "o": [
+    "Aluminium",
+    "Arsenic",
+    "Phosphorus",
+    "Sulphur"
+   ],
+   "a": 1,
+   "x": "Metalloids (B, Si, Ge, As, Sb, Te) show properties between metals and non-metals. Al is a metal; P and S are non-metals."
+  },
+  {
+   "id": "chemA-198",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "The electron gain enthalpy of fluorine is less negative than that of chlorine because",
+   "o": [
+    "fluorine is less electronegative than chlorine",
+    "fluorine has a larger atomic radius than chlorine",
+    "the small size of F causes strong repulsion between the added electron and its compact 2p electrons",
+    "chlorine has a half-filled 3p subshell"
+   ],
+   "a": 2,
+   "x": "The added electron enters the crowded, small 2p shell of F and is repelled; Cl's larger 3p shell accommodates it more easily."
+  },
+  {
+   "id": "chemA-199",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 2,
+   "q": "The element in period 4 and group 13 of the periodic table has atomic number",
+   "o": [
+    "13",
+    "21",
+    "49",
+    "31"
+   ],
+   "a": 3,
+   "x": "Period 4: K(19), Ca(20), then 3d series Sc–Zn (21–30); group 13 follows as Ga, Z = 31.",
+   "trap": "21: forgetting the ten d-block elements between groups 2 and 13."
+  },
+  {
+   "id": "chemA-200",
+   "topic": "chem-physical",
+   "s": "Classification of Elements and Periodicity",
+   "d": 1,
+   "q": "A diagonal relationship is shown by",
+   "o": [
+    "Li and Mg",
+    "Li and Na",
+    "Be and Mg",
+    "B and Al"
+   ],
+   "a": 0,
+   "x": "Diagonal pairs are Li–Mg, Be–Al, B–Si (similar charge/size ratio). The other pairs are in the same group."
+  },
+  {
+   "id": "chemA-201",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Shape of the ammonia molecule is",
+   "o": [
+    "trigonal planar",
+    "trigonal pyramidal",
+    "tetrahedral",
+    "T-shaped"
+   ],
+   "a": 1,
+   "x": "N has 3 bond pairs and 1 lone pair (sp³). The electron pairs are tetrahedral, but the molecular shape is pyramidal.",
+   "trap": "Tetrahedral: that is the electron-pair geometry, not the shape of the atoms."
+  },
+  {
+   "id": "chemA-202",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 2,
+   "q": "Hybridisation of phosphorus in PCl₅ and the shape of the molecule are",
+   "o": [
+    "sp³d², octahedral",
+    "sp³, tetrahedral",
+    "sp³d, trigonal bipyramidal",
+    "sp³d, square pyramidal"
+   ],
+   "a": 2,
+   "x": "P has 5 bond pairs and no lone pair: five hybrid orbitals (sp³d) pointing to the corners of a trigonal bipyramid."
+  },
+  {
+   "id": "chemA-203",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Bond order of the N₂ molecule is",
+   "o": [
+    "2",
+    "2.5",
+    "1",
+    "3"
+   ],
+   "a": 3,
+   "x": "Bond order = (bonding − antibonding)/2 = (10 − 4)/2 = 3, matching the N≡N triple bond."
+  },
+  {
+   "id": "chemA-204",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Which molecule is linear?",
+   "o": [
+    "CO₂",
+    "H₂O",
+    "SO₂",
+    "O₃"
+   ],
+   "a": 0,
+   "x": "C in CO₂ is sp hybridised with no lone pair, giving 180°. H₂O, SO₂ and O₃ are bent because of lone pairs."
+  },
+  {
+   "id": "chemA-205",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 2,
+   "q": "Number of lone pairs on xenon in XeF₂ and the shape of the molecule are",
+   "o": [
+    "2, bent",
+    "3, linear",
+    "3, bent",
+    "1, linear"
+   ],
+   "a": 1,
+   "x": "Xe has 8 valence electrons: 2 bond pairs + 3 lone pairs (sp³d). The lone pairs sit in the equatorial plane, so F–Xe–F is linear.",
+   "trap": "Bent: assuming lone pairs always bend the molecule, as in water."
+  },
+  {
+   "id": "chemA-206",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 1,
+   "q": "Argon can be liquefied only at a very low temperature because its atoms are held together only by",
+   "o": [
+    "hydrogen bonds",
+    "dipole–dipole forces",
+    "weak London dispersion forces",
+    "metallic bonds"
+   ],
+   "a": 2,
+   "x": "Argon atoms are non-polar; only weak, temporary-dipole (van der Waals) dispersion forces act between them.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-207",
+   "topic": "chem-physical",
+   "s": "Chemical Bonding and Shape of Molecules",
+   "d": 3,
+   "q": "o-Nitrophenol is more volatile (steam volatile) than p-nitrophenol because",
+   "o": [
+    "o-nitrophenol forms intermolecular hydrogen bonds",
+    "p-nitrophenol has a smaller molar mass",
+    "o-nitrophenol is an ionic compound",
+    "o-nitrophenol forms intramolecular hydrogen bonds"
+   ],
+   "a": 3,
+   "x": "In the ortho isomer, –OH bonds to the neighbouring –NO₂ within the molecule, so molecules do not associate; the para isomer associates through intermolecular H-bonds."
+  },
+  {
+   "id": "chemA-208",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "Average oxidation number of sulphur in sodium thiosulphate, Na₂S₂O₃, is",
+   "o": [
+    "+2",
+    "+4",
+    "+6",
+    "−2"
+   ],
+   "a": 0,
+   "x": "2(+1) + 2x + 3(−2) = 0 → 2x = 4 → x = +2.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-209",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 1,
+   "q": "Oxidation number of chlorine in sodium chlorate, NaClO₃, is",
+   "o": [
+    "+3",
+    "+5",
+    "+7",
+    "−1"
+   ],
+   "a": 1,
+   "x": "+1 + x + 3(−2) = 0 → x = +5. (+7 is chlorine in perchlorate, ClO₄⁻.)",
+   "trap": "+7: mixing up chlorate (ClO₃⁻) with perchlorate (ClO₄⁻).",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-210",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 3,
+   "q": "Oxidation number of iron in Fe₃O₄ is",
+   "o": [
+    "+2",
+    "+3",
+    "+8/3",
+    "+4"
+   ],
+   "a": 2,
+   "x": "3x + 4(−2) = 0 → x = +8/3. This is an average: Fe₃O₄ is FeO·Fe₂O₃ with one Fe²⁺ and two Fe³⁺.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-211",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 1,
+   "q": "Oxidation number of hydrogen in sodium hydride, NaH, is",
+   "o": [
+    "+1",
+    "0",
+    "−2",
+    "−1"
+   ],
+   "a": 3,
+   "x": "In metal hydrides hydrogen is bonded to a less electronegative metal, so it takes −1 (Na is +1).",
+   "trap": "+1: applying the usual rule for H without the metal-hydride exception.",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-212",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "Which species can act ONLY as an oxidising agent?",
+   "o": [
+    "HNO₃",
+    "HNO₂",
+    "H₂O₂",
+    "SO₂"
+   ],
+   "a": 0,
+   "x": "N in HNO₃ is +5, its highest oxidation state, so it can only be reduced. HNO₂ (N +3), H₂O₂ (O −1) and SO₂ (S +4) are intermediate and can go both ways.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-213",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 1,
+   "q": "In the reaction CuO + H₂ → Cu + H₂O, the substance that is reduced is",
+   "o": [
+    "H₂",
+    "CuO",
+    "Cu",
+    "H₂O"
+   ],
+   "a": 1,
+   "x": "Classically, reduction is removal of oxygen: CuO loses oxygen to become Cu. H₂ gains oxygen and is oxidised.",
+   "trap": "H₂: it is the reducing agent, which is itself oxidised.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-214",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "Which reaction is a disproportionation reaction?",
+   "o": [
+    "Zn + CuSO₄ → ZnSO₄ + Cu",
+    "CaCO₃ → CaO + CO₂",
+    "2H₂O₂ → 2H₂O + O₂",
+    "NaOH + HCl → NaCl + H₂O"
+   ],
+   "a": 2,
+   "x": "In H₂O₂, oxygen (−1) is simultaneously reduced to −2 (H₂O) and oxidised to 0 (O₂): the same element goes both ways."
+  },
+  {
+   "id": "chemA-215",
+   "topic": "chem-physical",
+   "s": "Redox Reaction",
+   "d": 2,
+   "q": "In acidic medium, Cr₂O₇²⁻ oxidises Fe²⁺ to Fe³⁺ and is itself reduced to Cr³⁺. Moles of Fe²⁺ oxidised by one mole of Cr₂O₇²⁻ are",
+   "o": [
+    "3",
+    "5",
+    "2",
+    "6"
+   ],
+   "a": 3,
+   "x": "Each Cr goes +6 → +3 (gains 3e⁻); two Cr gain 6e⁻. Each Fe²⁺ loses 1e⁻, so 6 Fe²⁺ per Cr₂O₇²⁻.",
+   "trap": "3: counting only one Cr atom."
+  },
+  {
+   "id": "chemA-216",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 3,
+   "q": "An open vessel contains air at 27 °C. It is heated to 127 °C at constant pressure. The fraction of the original air that remains in the vessel is",
+   "o": [
+    "3/4",
+    "1/4",
+    "1/2",
+    "27/127"
+   ],
+   "a": 0,
+   "x": "At fixed P and V, n ∝ 1/T. n₂/n₁ = 300/400 = 3/4 remains (1/4 escapes).",
+   "trap": "1/4: that is the fraction that escapes.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-217",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "A gas diffuses 4 times more slowly than hydrogen under the same conditions. Its molar mass is",
+   "o": [
+    "8 g mol⁻¹",
+    "32 g mol⁻¹",
+    "16 g mol⁻¹",
+    "64 g mol⁻¹"
+   ],
+   "a": 1,
+   "x": "Graham's law: r(H₂)/r = √(M/2) = 4 → M = 16 × 2 = 32 g mol⁻¹.",
+   "trap": "8: forgetting to square the rate ratio.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-218",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "100 mL of O₂ effuses through a pinhole in 20 s. Under the same conditions, 100 mL of H₂ will effuse in",
+   "o": [
+    "80 s",
+    "10 s",
+    "5 s",
+    "1.25 s"
+   ],
+   "a": 2,
+   "x": "Time ∝ √M. t(H₂) = 20 × √(2/32) = 20 × 1/4 = 5 s.",
+   "trap": "80 s: taking time inversely proportional to √M.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-219",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "Dalton's law of partial pressures does NOT apply to a mixture of",
+   "o": [
+    "H₂ and O₂ at room temperature",
+    "N₂ and O₂",
+    "He and Ne",
+    "NH₃ and HCl"
+   ],
+   "a": 3,
+   "x": "The law holds only for non-reacting gases. NH₃ and HCl react at once to form solid NH₄Cl.",
+   "trap": "H₂ and O₂: they do not react at room temperature without a spark."
+  },
+  {
+   "id": "chemA-220",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "A gas can be liquefied by applying pressure alone only when it is",
+   "o": [
+    "below its critical temperature",
+    "above its critical temperature",
+    "at any temperature if the pressure is high enough",
+    "exactly at its boiling point"
+   ],
+   "a": 0,
+   "x": "Above the critical temperature no pressure, however high, can liquefy a gas."
+  },
+  {
+   "id": "chemA-221",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 3,
+   "q": "Equal masses of methane and oxygen are mixed in an empty vessel. The fraction of the total pressure exerted by oxygen is",
+   "o": [
+    "1/2",
+    "1/3",
+    "2/3",
+    "1/4"
+   ],
+   "a": 1,
+   "x": "Moles: O₂ = m/32, CH₄ = m/16 = 2m/32. Mole fraction of O₂ = 1/(1 + 2) = 1/3 = fraction of pressure.",
+   "trap": "1/2: assuming equal masses give equal pressures."
+  },
+  {
+   "id": "chemA-222",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 2,
+   "q": "In a cubic crystal, atoms A occupy the corners and atoms B occupy the face centres. The formula of the compound is",
+   "o": [
+    "A₃B",
+    "AB",
+    "AB₃",
+    "AB₆"
+   ],
+   "a": 2,
+   "x": "A: 8 corners × 1/8 = 1. B: 6 faces × 1/2 = 3. Formula AB₃.",
+   "trap": "AB₆: counting each face-centre atom as wholly inside the cell.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-223",
+   "topic": "chem-physical",
+   "s": "States of Matter",
+   "d": 1,
+   "q": "Coordination number of an atom in a body-centred cubic (bcc) lattice is",
+   "o": [
+    "6",
+    "12",
+    "4",
+    "8"
+   ],
+   "a": 3,
+   "x": "The body-centre atom touches the 8 corner atoms. Simple cubic = 6, fcc = 12."
+  },
+  {
+   "id": "chemA-224",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 1,
+   "q": "For PCl₅(g) ⇌ PCl₃(g) + Cl₂(g), increasing the pressure",
+   "o": [
+    "shifts the equilibrium backward and decreases the dissociation of PCl₅",
+    "shifts the equilibrium forward",
+    "has no effect on the equilibrium",
+    "increases the equilibrium constant"
+   ],
+   "a": 0,
+   "x": "Higher pressure favours the side with fewer gas moles: 1 mol (left) against 2 mol (right).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-225",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "For H₂(g) + I₂(g) ⇌ 2HI(g), increasing the total pressure",
+   "o": [
+    "shifts it forward",
+    "does not shift the equilibrium",
+    "shifts it backward",
+    "doubles the equilibrium constant"
+   ],
+   "a": 1,
+   "x": "Both sides have 2 mol of gas (Δn = 0), so pressure has no effect on the position of equilibrium.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-226",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 3,
+   "q": "An inert gas such as argon is added to an equilibrium mixture of N₂, H₂ and NH₃ at constant volume. The equilibrium",
+   "o": [
+    "shifts forward",
+    "shifts backward",
+    "remains unchanged",
+    "shifts in a direction depending on ΔH"
+   ],
+   "a": 2,
+   "x": "At constant volume the partial pressures (concentrations) of the reacting gases do not change, so Q still equals K.",
+   "trap": "Shifts forward: treating the higher total pressure as if it compressed the reactants."
+  },
+  {
+   "id": "chemA-227",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 1,
+   "q": "Kp equals Kc for a gaseous reaction when",
+   "o": [
+    "Δn(gas) = 1",
+    "ΔH = 0",
+    "T = 273 K",
+    "Δn(gas) = 0"
+   ],
+   "a": 3,
+   "x": "Kp = Kc(RT)^Δn; when Δn = 0, (RT)⁰ = 1, so Kp = Kc (e.g. H₂ + I₂ ⇌ 2HI)."
+  },
+  {
+   "id": "chemA-228",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "For 2SO₂(g) + O₂(g) ⇌ 2SO₃(g), Kc = 100 at a certain temperature. At the same temperature, Kc for SO₃(g) ⇌ SO₂(g) + ½O₂(g) is",
+   "o": [
+    "0.1",
+    "0.01",
+    "10",
+    "50"
+   ],
+   "a": 0,
+   "x": "Reversing gives 1/100; halving the coefficients takes the square root: √(1/100) = 0.1.",
+   "trap": "0.01: reversing the reaction but forgetting to take the square root."
+  },
+  {
+   "id": "chemA-229",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "For H₂ + I₂ ⇌ 2HI in a 1 L flask, the equilibrium amounts are 0.1 mol H₂, 0.1 mol I₂ and 0.8 mol HI. Kc is",
+   "o": [
+    "8",
+    "64",
+    "80",
+    "0.0156"
+   ],
+   "a": 1,
+   "x": "Kc = [HI]²/([H₂][I₂]) = 0.8²/(0.1 × 0.1) = 0.64/0.01 = 64.",
+   "trap": "80: forgetting to square [HI]."
+  },
+  {
+   "id": "chemA-230",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 2,
+   "q": "For ice ⇌ water, increasing the pressure",
+   "o": [
+    "favours freezing of water",
+    "has no effect",
+    "favours melting of ice",
+    "raises the melting point of ice"
+   ],
+   "a": 2,
+   "x": "Water occupies less volume than ice, so higher pressure shifts the equilibrium toward water; the melting point of ice falls.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-231",
+   "topic": "chem-physical",
+   "s": "Chemical Equilibrium",
+   "d": 1,
+   "q": "The equilibrium constant of a given reaction changes when",
+   "o": [
+    "the concentration of a reactant is changed",
+    "the pressure is changed",
+    "a catalyst is added",
+    "the temperature is changed"
+   ],
+   "a": 3,
+   "x": "K depends only on temperature. Changes of concentration or pressure shift the position, not K; a catalyst changes neither."
+  },
+  {
+   "id": "chemA-232",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "Drinking water contains 5 ppm of fluoride. Mass of fluoride in 2 kg of this water is",
+   "o": [
+    "10 mg",
+    "2.5 mg",
+    "1 mg",
+    "10 g"
+   ],
+   "a": 0,
+   "x": "5 ppm = 5 g per 10⁶ g. In 2000 g: 5 × 2000/10⁶ = 0.01 g = 10 mg.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-233",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "Concentrated HCl is 36.5% HCl by mass and has density 1.2 g mL⁻¹. Its molarity is",
+   "o": [
+    "1.2 M",
+    "12 M",
+    "6 M",
+    "10 M"
+   ],
+   "a": 1,
+   "x": "1 L = 1200 g solution; HCl = 0.365 × 1200 = 438 g = 438/36.5 = 12 mol. So 12 M.",
+   "trap": "10 M: ignoring the density (taking 1 L = 1000 g).",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-234",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "Equivalent weight of KMnO₄ (M = 158) when it is reduced to MnO₂ in neutral medium is about",
+   "o": [
+    "31.6",
+    "79",
+    "52.7",
+    "158"
+   ],
+   "a": 2,
+   "x": "Mn goes +7 → +4, gaining 3 electrons: n-factor 3. Equivalent weight = 158/3 = 52.7.",
+   "trap": "31.6: that is in acidic medium (n-factor 5).",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-235",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 3,
+   "q": "Volume of 0.1 M KMnO₄ needed to oxidise 50 mL of 0.5 M FeSO₄ in acidic medium is",
+   "o": [
+    "250 mL",
+    "25 mL",
+    "10 mL",
+    "50 mL"
+   ],
+   "a": 3,
+   "x": "MnO₄⁻ + 5Fe²⁺ → … Fe²⁺ = 0.025 mol, so MnO₄⁻ = 0.005 mol; V = 0.005/0.1 L = 50 mL.",
+   "trap": "250 mL: treating KMnO₄ and Fe²⁺ as reacting 1 : 1.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-236",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "Volume of water to be added to 100 mL of 0.5 M HCl to make it 0.1 M is",
+   "o": [
+    "400 mL",
+    "500 mL",
+    "100 mL",
+    "250 mL"
+   ],
+   "a": 0,
+   "x": "M₁V₁ = M₂V₂: 0.5 × 100 = 0.1 × V₂ → V₂ = 500 mL. Water added = 500 − 100 = 400 mL.",
+   "trap": "500 mL: that is the final volume, not the water added."
+  },
+  {
+   "id": "chemA-237",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 1,
+   "q": "Molality is preferred to molarity for precise work because molality",
+   "o": [
+    "is always numerically larger",
+    "does not change with temperature",
+    "is based on the volume of solution",
+    "does not depend on the mass of solute"
+   ],
+   "a": 1,
+   "x": "Molality uses mass of solvent, which does not change with temperature; molarity uses volume, which expands on heating."
+  },
+  {
+   "id": "chemA-238",
+   "topic": "chem-physical",
+   "s": "Volumetric Analysis",
+   "d": 2,
+   "q": "Normality of 0.3 M H₃PO₄ when it is completely neutralised by NaOH is",
+   "o": [
+    "0.3 N",
+    "0.1 N",
+    "0.9 N",
+    "0.6 N"
+   ],
+   "a": 2,
+   "x": "Complete neutralisation replaces all 3 H⁺ (basicity 3). N = M × n-factor = 0.3 × 3 = 0.9 N."
+  },
+  {
+   "id": "chemA-239",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "When solid NH₄Cl is added to a solution of NH₄OH",
+   "o": [
+    "the ionisation of NH₄OH increases",
+    "the pH of the solution rises",
+    "NH₃ gas is evolved at once",
+    "the ionisation of NH₄OH is suppressed and [OH⁻] decreases"
+   ],
+   "a": 3,
+   "x": "NH₄⁺ is a common ion; it pushes NH₄OH ⇌ NH₄⁺ + OH⁻ backward (common ion effect), lowering [OH⁻] and pH.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-240",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 2,
+   "q": "Which species is amphiprotic (can both donate and accept a proton)?",
+   "o": [
+    "HCO₃⁻",
+    "CO₃²⁻",
+    "NH₄⁺",
+    "Cl⁻"
+   ],
+   "a": 0,
+   "x": "HCO₃⁻ gives H⁺ to form CO₃²⁻ and accepts H⁺ to form H₂CO₃. CO₃²⁻ and Cl⁻ only accept; NH₄⁺ only donates.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-241",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "pH of 0.01 M NaOH solution at 25 °C is",
+   "o": [
+    "2",
+    "12",
+    "10",
+    "13"
+   ],
+   "a": 1,
+   "x": "[OH⁻] = 10⁻² M, so pOH = 2 and pH = 14 − 2 = 12.",
+   "trap": "2: that is the pOH, not the pH."
+  },
+  {
+   "id": "chemA-242",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 3,
+   "q": "Degree of ionisation of 0.1 M acetic acid (Ka = 1.8 × 10⁻⁵) is about",
+   "o": [
+    "0.134%",
+    "13.4%",
+    "1.34%",
+    "1.8%"
+   ],
+   "a": 2,
+   "x": "α = √(Ka/C) = √(1.8 × 10⁻⁴) = 0.0134 = 1.34%."
+  },
+  {
+   "id": "chemA-243",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 3,
+   "q": "Ksp of Mg(OH)₂ is 4 × 10⁻¹². Its solubility in pure water is",
+   "o": [
+    "2 × 10⁻⁶ mol L⁻¹",
+    "1 × 10⁻⁶ mol L⁻¹",
+    "1 × 10⁻³ mol L⁻¹",
+    "1 × 10⁻⁴ mol L⁻¹"
+   ],
+   "a": 3,
+   "x": "Ksp = s(2s)² = 4s³ = 4 × 10⁻¹² → s³ = 10⁻¹² → s = 10⁻⁴ mol L⁻¹.",
+   "trap": "2 × 10⁻⁶: using s = √Ksp, which applies only to AB-type salts."
+  },
+  {
+   "id": "chemA-244",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 3,
+   "q": "When pure water is heated from 25 °C to 60 °C, its pH",
+   "o": [
+    "falls below 7, but the water remains neutral",
+    "falls below 7 and the water becomes acidic",
+    "rises above 7 and the water becomes basic",
+    "stays exactly 7"
+   ],
+   "a": 0,
+   "x": "Ionisation of water is endothermic, so Kw increases with temperature: [H⁺] rises and pH falls, but [H⁺] = [OH⁻] still, so it is neutral.",
+   "trap": "Becomes acidic: equating pH < 7 with acidity at every temperature."
+  },
+  {
+   "id": "chemA-245",
+   "topic": "chem-physical",
+   "s": "Ionic Equilibrium",
+   "d": 1,
+   "q": "An aqueous solution of sodium acetate is",
+   "o": [
+    "acidic",
+    "basic",
+    "neutral",
+    "strongly acidic"
+   ],
+   "a": 1,
+   "x": "Salt of a weak acid and a strong base: CH₃COO⁻ hydrolyses (CH₃COO⁻ + H₂O ⇌ CH₃COOH + OH⁻), so the solution is basic."
+  },
+  {
+   "id": "chemA-246",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "For 2NO + O₂ → 2NO₂, rate = k[NO]²[O₂]. If [NO] is doubled and [O₂] is halved, the rate becomes",
+   "o": [
+    "4 times",
+    "unchanged",
+    "2 times",
+    "8 times"
+   ],
+   "a": 2,
+   "x": "New rate = k(2[NO])²(½[O₂]) = 4 × ½ = 2 times the original.",
+   "trap": "4 times: changing [NO] but ignoring the halving of [O₂].",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "chemA-247",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 1,
+   "q": "Unit of the rate constant of a zero-order reaction is",
+   "o": [
+    "s⁻¹",
+    "L mol⁻¹ s⁻¹",
+    "L² mol⁻² s⁻¹",
+    "mol L⁻¹ s⁻¹"
+   ],
+   "a": 3,
+   "x": "Units of k = (mol L⁻¹)^(1−n) s⁻¹; for n = 0 this is mol L⁻¹ s⁻¹, the same as the unit of rate."
+  },
+  {
+   "id": "chemA-248",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "A first-order reaction has a half-life of 20 min. Time needed for 75% of it to react is",
+   "o": [
+    "40 min",
+    "30 min",
+    "60 min",
+    "15 min"
+   ],
+   "a": 0,
+   "x": "75% reacted = 25% left = (½)², i.e. two half-lives: 2 × 20 = 40 min.",
+   "trap": "30 min: scaling 75% linearly from the half-life."
+  },
+  {
+   "id": "chemA-249",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "According to the Arrhenius equation k = Ae^(−Ea/RT), a plot of ln k against 1/T is a straight line with slope",
+   "o": [
+    "Ea/R",
+    "−Ea/R",
+    "−Ea/2.303R",
+    "ln A"
+   ],
+   "a": 1,
+   "x": "ln k = ln A − (Ea/R)(1/T): slope −Ea/R, intercept ln A. (−Ea/2.303R is the slope for log k.)",
+   "trap": "−Ea/2.303R: that is for log₁₀ k, not ln k."
+  },
+  {
+   "id": "chemA-250",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 2,
+   "q": "For the reaction 2A → B, the rates of change of concentration are related by",
+   "o": [
+    "−d[A]/dt = d[B]/dt",
+    "−2 d[A]/dt = d[B]/dt",
+    "−d[A]/dt = 2 d[B]/dt",
+    "d[A]/dt = 2 d[B]/dt"
+   ],
+   "a": 2,
+   "x": "Rate = −½ d[A]/dt = d[B]/dt, so A disappears twice as fast as B forms: −d[A]/dt = 2 d[B]/dt."
+  },
+  {
+   "id": "chemA-251",
+   "topic": "chem-physical",
+   "s": "Chemical Kinetics",
+   "d": 3,
+   "q": "A first-order reaction has k = 2.303 × 10⁻² s⁻¹. Time taken for the reactant to fall to one-tenth of its initial value is",
+   "o": [
+    "10 s",
+    "30.1 s",
+    "1000 s",
+    "100 s"
+   ],
+   "a": 3,
+   "x": "t = (2.303/k) log(a/(a − x)) = (2.303/0.02303) × log 10 = 100 × 1 = 100 s.",
+   "trap": "30.1 s: that is the half-life, not the time to reach 1/10."
+  },
+  {
+   "id": "chemA-252",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 2,
+   "q": "Standard reduction potentials: Mg²⁺/Mg −2.37 V, Zn²⁺/Zn −0.76 V, Fe²⁺/Fe −0.44 V, Ag⁺/Ag +0.80 V. The strongest oxidising agent among the ions is",
+   "o": [
+    "Ag⁺",
+    "Mg²⁺",
+    "Zn²⁺",
+    "Fe²⁺"
+   ],
+   "a": 0,
+   "x": "The most positive reduction potential means the greatest tendency to be reduced, so Ag⁺ is the strongest oxidant (Mg is the strongest reductant).",
+   "trap": "Mg²⁺: confusing strongest reducing metal (Mg) with strongest oxidising ion.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-253",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "Galvanisation protects iron from rusting by coating it with",
+   "o": [
+    "tin",
+    "zinc",
+    "copper",
+    "lead"
+   ],
+   "a": 1,
+   "x": "Zinc is more reactive than iron, so even if scratched it corrodes first (sacrificial protection). Tin plating is called tinning.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-254",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 2,
+   "q": "In a hydrogen–oxygen fuel cell with an alkaline (KOH) electrolyte, the reaction at the cathode is",
+   "o": [
+    "H₂ + 2OH⁻ → 2H₂O + 2e⁻",
+    "2H₂O → O₂ + 4H⁺ + 4e⁻",
+    "O₂ + 2H₂O + 4e⁻ → 4OH⁻",
+    "O₂ + 4H⁺ + 4e⁻ → 2H₂O"
+   ],
+   "a": 2,
+   "x": "Reduction occurs at the cathode: oxygen takes electrons and, in alkali, forms OH⁻. H₂ is oxidised at the anode; overall product is water.",
+   "trap": "H₂ + 2OH⁻ → 2H₂O + 2e⁻: that is the anode (oxidation).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-255",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "One faraday is the quantity of electric charge carried by",
+   "o": [
+    "one electron",
+    "one ampere flowing for one hour",
+    "one gram of any ion",
+    "one mole of electrons"
+   ],
+   "a": 3,
+   "x": "1 F = N_A × e = 6.022 × 10²³ × 1.6 × 10⁻¹⁹ C ≈ 96500 C."
+  },
+  {
+   "id": "chemA-256",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 3,
+   "q": "Volume of oxygen at STP liberated at the anode when 1 faraday of charge is passed through acidified water is",
+   "o": [
+    "5.6 L",
+    "11.2 L",
+    "22.4 L",
+    "2.8 L"
+   ],
+   "a": 0,
+   "x": "2H₂O → O₂ + 4H⁺ + 4e⁻: 4 F give 1 mol (22.4 L) O₂, so 1 F gives 22.4/4 = 5.6 L.",
+   "trap": "11.2 L: that is the H₂ liberated at the cathode by 1 F."
+  },
+  {
+   "id": "chemA-257",
+   "topic": "chem-physical",
+   "s": "Electrochemistry",
+   "d": 1,
+   "q": "Rusting of iron needs",
+   "o": [
+    "oxygen only",
+    "both oxygen and water",
+    "water only",
+    "carbon dioxide only"
+   ],
+   "a": 1,
+   "x": "Rusting is electrochemical oxidation of iron; iron kept in dry air or in boiled, oxygen-free water does not rust."
+  },
+  {
+   "id": "chemA-258",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 2,
+   "q": "A gas absorbs 10 J of heat and does 30 J of work on the surroundings. The change in its internal energy is",
+   "o": [
+    "+40 J",
+    "+20 J",
+    "−20 J",
+    "−40 J"
+   ],
+   "a": 2,
+   "x": "ΔU = q + w with q = +10 J (absorbed) and w = −30 J (work done by the system). ΔU = 10 − 30 = −20 J.",
+   "trap": "+40 J: adding both without applying the sign convention.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-259",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 3,
+   "q": "Standard enthalpies of formation: CH₄(g) −74.8, CO₂(g) −393.5, H₂O(l) −285.8 kJ mol⁻¹. The enthalpy of combustion of methane is",
+   "o": [
+    "−604.5 kJ mol⁻¹",
+    "−1039.9 kJ mol⁻¹",
+    "+890.3 kJ mol⁻¹",
+    "−890.3 kJ mol⁻¹"
+   ],
+   "a": 3,
+   "x": "CH₄ + 2O₂ → CO₂ + 2H₂O. ΔH = [−393.5 + 2(−285.8)] − (−74.8) = −965.1 + 74.8 = −890.3 kJ mol⁻¹.",
+   "trap": "−604.5: forgetting that two moles of water form.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-260",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 2,
+   "q": "A reaction with ΔH negative and ΔS negative is spontaneous",
+   "o": [
+    "only at low temperatures",
+    "only at high temperatures",
+    "at all temperatures",
+    "at no temperature"
+   ],
+   "a": 0,
+   "x": "ΔG = ΔH − TΔS. With ΔS < 0, −TΔS is positive and grows with T; ΔG stays negative only while T is low.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-261",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 3,
+   "q": "For N₂(g) + 3H₂(g) → 2NH₃(g) at temperature T, ΔH − ΔU equals",
+   "o": [
+    "+2RT",
+    "−2RT",
+    "−RT",
+    "zero"
+   ],
+   "a": 1,
+   "x": "ΔH = ΔU + Δn(gas)RT; Δn = 2 − 4 = −2, so ΔH − ΔU = −2RT.",
+   "trap": "+2RT: taking Δn as reactants minus products."
+  },
+  {
+   "id": "chemA-262",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "SI unit of molar entropy is",
+   "o": [
+    "J mol⁻¹",
+    "K J⁻¹ mol⁻¹",
+    "J K⁻¹ mol⁻¹",
+    "J s⁻¹ mol⁻¹"
+   ],
+   "a": 2,
+   "x": "Entropy change = heat absorbed reversibly/temperature, so its unit is J K⁻¹; per mole, J K⁻¹ mol⁻¹."
+  },
+  {
+   "id": "chemA-263",
+   "topic": "chem-physical",
+   "s": "Chemical Thermodynamics",
+   "d": 1,
+   "q": "The enthalpy of combustion of a substance is always",
+   "o": [
+    "positive",
+    "zero",
+    "positive for gases and negative for solids",
+    "negative"
+   ],
+   "a": 3,
+   "x": "Combustion releases heat (exothermic), so ΔH of combustion is always negative."
+  },
+  {
+   "id": "chemA-264",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 2,
+   "q": "Complete the reaction: ²⁷₁₃Al + ¹₀n → ²⁴₁₁Na + ?",
+   "o": [
+    "⁴₂He (α-particle)",
+    "¹₁H (proton)",
+    "²₁H (deuteron)",
+    "⁰₋₁e (β-particle)"
+   ],
+   "a": 0,
+   "x": "Mass: 27 + 1 = 24 + A → A = 4. Charge: 13 + 0 = 11 + Z → Z = 2. The particle is ⁴₂He.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-265",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 2,
+   "q": "In the fission ²³⁵₉₂U + ¹₀n → ¹⁴¹₅₆Ba + ⁹²₃₆Kr + x ¹₀n, the value of x is",
+   "o": [
+    "2",
+    "3",
+    "1",
+    "4"
+   ],
+   "a": 1,
+   "x": "Mass numbers: 235 + 1 = 141 + 92 + x → x = 3. Atomic numbers balance: 92 = 56 + 36.",
+   "trap": "2: forgetting the incoming neutron on the left side.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-266",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 3,
+   "q": "²³²₉₀Th decays to ²⁰⁸₈₂Pb. The numbers of α- and β-particles emitted are",
+   "o": [
+    "4 α and 6 β",
+    "6 α and 2 β",
+    "6 α and 4 β",
+    "8 α and 4 β"
+   ],
+   "a": 2,
+   "x": "α count = (232 − 208)/4 = 6, lowering Z by 12 to 78. To reach 82, Z must rise by 4: 4 β-particles."
+  },
+  {
+   "id": "chemA-267",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 1,
+   "q": "A β-particle is",
+   "o": [
+    "a helium nucleus",
+    "a high-energy photon",
+    "a fast-moving proton",
+    "a fast-moving electron emitted from the nucleus"
+   ],
+   "a": 3,
+   "x": "β-decay: a neutron changes into a proton and an electron; the electron is ejected as the β-particle."
+  },
+  {
+   "id": "chemA-268",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 1,
+   "q": "The radioisotope commonly used as a γ-ray source in radiotherapy of cancer is",
+   "o": [
+    "cobalt-60",
+    "carbon-14",
+    "uranium-238",
+    "sodium-24"
+   ],
+   "a": 0,
+   "x": "Co-60 emits strong γ-rays used to destroy cancer cells. C-14 is used in dating; Na-24 traces blood flow."
+  },
+  {
+   "id": "chemA-269",
+   "topic": "chem-physical",
+   "s": "Nuclear Chemistry",
+   "d": 2,
+   "q": "When a nucleus emits a positron (⁰₊₁e)",
+   "o": [
+    "its atomic number increases by 1 and its mass number is unchanged",
+    "its atomic number decreases by 1 and its mass number is unchanged",
+    "its atomic number decreases by 2 and its mass number by 4",
+    "both the atomic number and mass number are unchanged"
+   ],
+   "a": 1,
+   "x": "A proton becomes a neutron plus a positron, so Z falls by 1 while A stays the same.",
+   "trap": "Increases by 1: confusing positron emission with β⁻ emission."
+  },
+  {
+   "id": "chemA-270",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "Steam distillation is suitable for purifying",
+   "o": [
+    "glycerol",
+    "ethanol",
+    "aniline",
+    "sodium chloride"
+   ],
+   "a": 2,
+   "x": "Steam distillation suits liquids that are steam-volatile and immiscible with water, like aniline. Glycerol needs vacuum distillation.",
+   "trap": "Glycerol: it decomposes at its boiling point and needs reduced-pressure distillation."
+  },
+  {
+   "id": "chemA-271",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "Differential (solvent) extraction separates a compound because it",
+   "o": [
+    "has a lower boiling point than water",
+    "sublimes on heating",
+    "forms a precipitate with the solvent",
+    "is more soluble in an organic solvent that is immiscible with water"
+   ],
+   "a": 3,
+   "x": "The compound distributes between two immiscible liquids; it passes into the solvent in which it is more soluble, which is then separated in a separating funnel."
+  },
+  {
+   "id": "chemA-272",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "A mixture of chloroform (b.p. 61 °C) and aniline (b.p. 184 °C) is best separated by",
+   "o": [
+    "simple distillation",
+    "fractional distillation",
+    "sublimation",
+    "steam distillation"
+   ],
+   "a": 0,
+   "x": "The boiling points differ widely, so the more volatile chloroform distils off first in a simple distillation.",
+   "trap": "Fractional distillation: needed only when boiling points are close."
+  },
+  {
+   "id": "chemA-273",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 2,
+   "q": "In column (adsorption) chromatography, the stationary phase is usually",
+   "o": [
+    "the eluting solvent",
+    "alumina or silica gel",
+    "a gas such as nitrogen",
+    "filter paper soaked in water"
+   ],
+   "a": 1,
+   "x": "The mixture is adsorbed on a column of alumina or silica gel; components are eluted by the solvent (mobile phase) at different rates."
+  },
+  {
+   "id": "chemA-274",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 1,
+   "q": "In a paper chromatogram the solvent front moved 12 cm and a spot moved 3 cm. The Rf value of the spot is",
+   "o": [
+    "4",
+    "0.75",
+    "0.25",
+    "9"
+   ],
+   "a": 2,
+   "x": "Rf = distance moved by substance/distance moved by solvent = 3/12 = 0.25.",
+   "trap": "4: dividing the solvent distance by the spot distance."
+  },
+  {
+   "id": "chemA-275",
+   "topic": "chem-analytical",
+   "s": "Separation Techniques",
+   "d": 1,
+   "q": "Two immiscible liquids such as oil and water are separated using a",
+   "o": [
+    "fractionating column",
+    "sublimation apparatus",
+    "Kipp's apparatus",
+    "separating funnel"
+   ],
+   "a": 3,
+   "x": "Immiscible liquids form two layers; the lower layer is run off through the tap of a separating funnel."
+  },
+  {
+   "id": "chemA-276",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 3,
+   "q": "Na₂CO₃ solution is titrated with HCl using phenolphthalein. The end point corresponds to",
+   "o": [
+    "conversion of Na₂CO₃ to NaHCO₃",
+    "conversion of Na₂CO₃ to NaCl, CO₂ and H₂O",
+    "complete neutralisation of NaHCO₃",
+    "the first drop of HCl added"
+   ],
+   "a": 0,
+   "x": "Phenolphthalein turns colourless near pH 8.3, when Na₂CO₃ + HCl → NaHCO₃ + NaCl (half neutralisation). Methyl orange marks complete neutralisation.",
+   "trap": "Complete conversion to CO₂: that end point needs methyl orange."
+  },
+  {
+   "id": "chemA-277",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "In the titration of Fe²⁺ with K₂Cr₂O₇, the indicator used is",
+   "o": [
+    "phenolphthalein",
+    "diphenylamine",
+    "starch",
+    "potassium chromate"
+   ],
+   "a": 1,
+   "x": "K₂Cr₂O₇ is not a self-indicator, so an internal redox indicator, diphenylamine (violet-blue at the end point), is used."
+  },
+  {
+   "id": "chemA-278",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "In Mohr's method, chloride ions are titrated with AgNO₃ using",
+   "o": [
+    "methyl orange",
+    "starch",
+    "potassium chromate",
+    "Eriochrome Black T"
+   ],
+   "a": 2,
+   "x": "After all Cl⁻ precipitates as white AgCl, excess Ag⁺ forms red-brown Ag₂CrO₄, marking the end point of this precipitation titration."
+  },
+  {
+   "id": "chemA-279",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 1,
+   "q": "At the equivalence point of a strong acid–strong base titration at 25 °C, the pH of the solution is",
+   "o": [
+    "below 4",
+    "about 9",
+    "above 11",
+    "7"
+   ],
+   "a": 3,
+   "x": "The salt formed (e.g. NaCl) does not hydrolyse, so the solution is neutral, pH 7."
+  },
+  {
+   "id": "chemA-280",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 2,
+   "q": "CaCO₃ in limestone is estimated by adding a known excess of standard HCl and titrating the unused acid with standard NaOH. This is",
+   "o": [
+    "a back titration",
+    "a redox titration",
+    "a precipitation titration",
+    "a complexometric titration"
+   ],
+   "a": 0,
+   "x": "Insoluble or slowly reacting samples are treated with excess reagent; the excess is then titrated, and the difference gives the amount reacted."
+  },
+  {
+   "id": "chemA-281",
+   "topic": "chem-analytical",
+   "s": "Types of Titration",
+   "d": 3,
+   "q": "Methyl orange is NOT suitable for titrating acetic acid with NaOH because",
+   "o": [
+    "it is decolourised by NaOH",
+    "it changes colour (pH 3.1–4.4) well before the equivalence point, which lies near pH 8–9",
+    "it is reduced by acetic acid",
+    "it changes colour only above pH 10"
+   ],
+   "a": 1,
+   "x": "The equivalence point of a weak acid–strong base titration is basic, so phenolphthalein (8.3–10) is used; methyl orange turns too early.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-282",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 1,
+   "q": "In the Victor Meyer test, a secondary alcohol gives",
+   "o": [
+    "a blood-red colour",
+    "no colour",
+    "a blue colour",
+    "a violet colour"
+   ],
+   "a": 2,
+   "x": "Victor Meyer test: primary → blood red, secondary → blue, tertiary → colourless.",
+   "trap": "Blood red: that is the primary alcohol result.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-283",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 2,
+   "q": "Which compound does NOT decolourise Baeyer's reagent?",
+   "o": [
+    "ethene",
+    "ethyne",
+    "propene",
+    "benzene"
+   ],
+   "a": 3,
+   "x": "Baeyer's reagent (cold dilute alkaline KMnO₄) is decolourised by C=C and C≡C; benzene's stable aromatic ring does not react.",
+   "trap": "Treating benzene's ring 'double bonds' as ordinary alkene bonds.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "chemA-284",
+   "topic": "chem-analytical",
+   "s": "Chemical Tests",
+   "d": 3,
+   "q": "Which acid gives a positive Tollens' (silver mirror) test?",
+   "o": [
+    "formic acid",
+    "acetic acid",
+    "benzoic acid",
+    "propanoic acid"
+   ],
+   "a": 0,
+   "x": "Formic acid, H–COOH, contains an aldehyde-like –CHO group and reduces ammoniacal AgNO₃ to silver. Other carboxylic acids do not.",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  }
+ ]
+}

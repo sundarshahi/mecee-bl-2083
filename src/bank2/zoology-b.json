@@ -1,0 +1,4561 @@
+{
+ "subject": "Zoology",
+ "topics": [
+  {
+   "id": "zoo-evolution",
+   "name": "Evolutionary Biology",
+   "weight": 3,
+   "concepts": [
+    "Oparin–Haldane: chemical evolution in a reducing atmosphere (CH₄, NH₃, H₂, H₂O) without free O₂; Oparin's coacervates, Haldane's 'hot dilute soup'",
+    "Miller–Urey (1953): electric discharge through CH₄, NH₃, H₂ and water vapour gave simple amino acids (glycine, alanine)",
+    "First living forms were anaerobic heterotrophs (prokaryotes)",
+    "Homologous organs (same origin, different function) → divergent evolution; analogous organs (same function) → convergent evolution",
+    "Vestigial organs in man: vermiform appendix, nictitating membrane, coccyx, wisdom teeth, ear muscles; atavism = reappearance of ancestral traits (tail, extra nipples)",
+    "Connecting links: Archaeopteryx (reptiles–birds), Platypus (reptiles–mammals), Peripatus (Annelida–Arthropoda)",
+    "Horse evolution: Eohippus → Mesohippus → Merychippus → Pliohippus → Equus (paleontological evidence)",
+    "Haeckel's biogenetic law: ontogeny recapitulates phylogeny; gill pouches in all vertebrate embryos",
+    "Biochemical evidence: Nuttall's precipitin test shows man's serum closest to apes (chimpanzee)",
+    "Lamarck: use and disuse, inheritance of acquired characters (giraffe); disproved by Weismann (tails of mice)",
+    "Darwin: overproduction, struggle for existence (from Malthus), variation, natural selection; 'survival of the fittest' coined by Herbert Spencer",
+    "Neo-Darwinism: mutation, recombination, natural selection, reproductive isolation, genetic drift (Sewall Wright effect)",
+    "Hardy–Weinberg: p + q = 1; p² + 2pq + q² = 1; carriers = 2pq",
+    "Human line: Ramapithecus (fossil at Tinau river, Butwal, Nepal) → Australopithecus → Homo habilis (tool maker) → H. erectus (fire) → H. sapiens"
+   ]
+  },
+  {
+   "id": "zoo-diversity",
+   "name": "Animal Diversity and Classification",
+   "weight": 4,
+   "concepts": [
+    "Protozoa are classified by locomotory organelles: Sarcodina (pseudopodia), Mastigophora (flagella), Ciliata (cilia), Sporozoa (none) [repeat]",
+    "Porifera: ostia in, osculum out; choanocytes; spicules/spongin; archaeocytes are totipotent",
+    "Cnidaria: diploblastic, cnidoblasts (stinging cells); Obelia shows metagenesis; corals build reefs",
+    "Ctenophora: comb plates for swimming",
+    "Platyhelminthes: first triploblastic, bilateral, acoelomate; flame cells for excretion [repeat]",
+    "Aschelminthes: pseudocoelom; Ascaris male smaller with curved tail and penial spicules; hookworm larvae enter through bare feet [repeat]",
+    "Annelida: true metameric segmentation, schizocoelom, nephridia; leech secretes anticoagulant hirudin",
+    "Arthropoda: jointed legs, chitinous exoskeleton, haemocoel, open circulation, Malpighian tubules (insects)",
+    "Mollusca: mantle, shell, radula; organ of Bojanus = kidney (Pila) [repeat]",
+    "Echinodermata: water vascular system, tube feet; larvae bilateral, adults pentaradial; Aristotle's lantern in sea urchin",
+    "Hemichordata Balanoglossus; Urochordata Herdmania (retrogressive metamorphosis); Cephalochordata Amphioxus",
+    "Cyclostomata jawless; Chondrichthyes placoid scales, no operculum; Osteichthyes operculum, swim bladder",
+    "Aves: pneumatic bones, no teeth; Mammalia: hair, mammary glands, diaphragm; platypus lays eggs, kangaroo has a pouch [repeat]"
+   ]
+  },
+  {
+   "id": "zoo-tissues",
+   "name": "Animal Tissues and Histology",
+   "weight": 4,
+   "concepts": [
+    "Epithelium covers and protects; skin epidermis = stratified squamous keratinised [repeat]",
+    "Simple squamous: alveoli, blood vessels, Bowman's capsule; simple cuboidal: PCT, thyroid follicles, gland ducts",
+    "Simple columnar with microvilli: intestine; pseudostratified ciliated columnar: trachea; transitional: urinary bladder",
+    "Goblet cells secrete mucus; sebaceous glands holocrine, mammary apocrine, salivary/sweat merocrine",
+    "Junctions: tight (seal), adhering/desmosome (hold), gap (communication)",
+    "Areolar tissue: fibroblasts, macrophages, mast cells (heparin, histamine); brown fat produces heat",
+    "Tendon: muscle to bone; ligament: bone to bone; collagen = white fibres, elastin = yellow fibres",
+    "Cartilage: hyaline (tracheal rings), elastic (pinna, epiglottis), fibrocartilage (intervertebral discs)",
+    "Compact bone: Haversian systems, osteocytes in lacunae, Volkmann's canals; protein ossein; blood is fluid connective tissue",
+    "Skeletal: striated, voluntary, multinucleate; smooth: unstriated, involuntary, spindle; cardiac: striated, involuntary, branched, intercalated discs",
+    "Red muscle fibres: myoglobin, many mitochondria, slow sustained work",
+    "Neuron: Nissl granules in cyton and dendrites, absent in axon; nodes of Ranvier allow saltatory conduction",
+    "Neuroglia: Schwann cells (PNS myelin), oligodendrocytes (CNS myelin), microglia (phagocytic); bipolar neurons in retina",
+    "Purkinje cells are neurons of the cerebellum; Purkinje fibres are cardiac conducting fibres"
+   ]
+  },
+  {
+   "id": "zoo-selected-animals",
+   "name": "Study of Selected Animals",
+   "weight": 6,
+   "concepts": [
+    "Plasmodium: man = intermediate host (asexual schizogony), female Anopheles = definitive host (sexual phase, sporogony) [repeat]",
+    "Sporozoites → liver cells (pre-erythrocytic) → RBC cycle (ring stage, schizont) → merozoites; gametocytes form in human RBCs",
+    "Fever follows RBC rupture releasing merozoites and haemozoin; vivax 48 h (benign tertian), falciparum malignant tertian, malariae 72 h (quartan)",
+    "In mosquito: exflagellation, fertilisation in stomach → motile ookinete → oocyst on outer stomach wall → sporozoites in salivary glands",
+    "Laveran saw the parasite in human blood (1880); Ronald Ross proved mosquito transmission; hypnozoites cause vivax relapse; Schüffner's dots in vivax",
+    "Pheretima: ~100–120 segments; clitellum 14–16; female pore 14th; male pores 18th; 4 pairs spermathecal pores 5/6–8/9",
+    "Earthworm gut: gizzard 8–9, typhlosole from 26th segment; haemoglobin dissolved in plasma; 4 pairs of hearts (7, 9, 12, 13)",
+    "Earthworm nephridia: septal and pharyngeal open into gut (enteronephric); integumentary open on skin (exonephric) [repeat]",
+    "Earthworm: cutaneous respiration, protandrous hermaphrodite, cocoon, direct development; vermicomposting",
+    "Frog heart: sinus venosus, 2 auricles, 1 ventricle, truncus arteriosus; sinus venosus is pacemaker [repeat]",
+    "Frog respiration: cutaneous (sole route in hibernation), buccopharyngeal, pulmonary by buccal force pump; tadpole uses gills [repeat]",
+    "Male frog: vocal sacs (loud croak) and nuptial pads on first finger [repeat]",
+    "Frog: 9 vertebrae + urostyle, no ribs; columella auris; teeth only on upper jaw; tongue bifid and free behind",
+    "Frog: renal portal system, nucleated oval RBCs, 10 pairs of cranial nerves; male ureter is urinogenital duct; thyroxine drives metamorphosis"
+   ]
+  },
+  {
+   "id": "zoo-environment",
+   "name": "Biota, Environment and Conservation",
+   "weight": 2,
+   "concepts": [
+    "Reflex action is controlled by the spinal cord; taxis = directional movement towards/away from a stimulus (phototaxis)",
+    "Anadromous fish (salmon) swim from sea to river to spawn; catadromous (eel) from river to sea",
+    "High BOD = heavy organic pollution; eutrophication = N and P enrichment → algal bloom",
+    "DDT biomagnifies up the food chain, highest in top carnivores (fish-eating birds, thin eggshells)",
+    "Minamata disease = mercury; acid rain from SO₂ and NOₓ; CFCs deplete ozone",
+    "Volant adaptations: pneumatic bones, keeled sternum (birds); patagium (bats)",
+    "Desert adaptation: kangaroo rat survives on metabolic water; aquatic: streamlined body, fins, lateral line",
+    "Digitigrade = walking on toes (cat, dog); plantigrade = whole sole (man, bear); unguligrade = hooves (horse) [repeat]",
+    "Ramsar Convention (1971) protects wetlands; Koshi Tappu (1987) was Nepal's first Ramsar site",
+    "Biodiversity hotspot concept by Norman Myers; IUCN publishes the Red Data Book (CR, EN, VU categories)",
+    "Nepal: one-horned rhino (Chitwan), wild water buffalo/arna (Koshi Tappu), blackbuck (Khairapur, Bardiya), gharial critically endangered",
+    "In-situ: national parks, reserves, conservation areas; ex-situ: zoos, breeding centres, gene banks"
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "zoo-001",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Which gas was NOT part of the mixture in the Miller–Urey spark-discharge experiment?",
+   "o": [
+    "Methane (CH₄)",
+    "Ammonia (NH₃)",
+    "Hydrogen (H₂)",
+    "Oxygen (O₂)"
+   ],
+   "a": 3,
+   "x": "The mixture copied a reducing primitive atmosphere: CH₄, NH₃, H₂ and water vapour. Free O₂ was absent; it would have oxidised the organic molecules formed.",
+   "s": "Origin of life: Miller–Urey's experiment"
+  },
+  {
+   "id": "zoo-002",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Which pair shows homologous organs?",
+   "o": [
+    "Wing of bat and wing of butterfly",
+    "Forelimb of whale and wing of bat",
+    "Eye of octopus and eye of man",
+    "Wing of bird and wing of housefly"
+   ],
+   "a": 1,
+   "x": "Homologous organs share the same basic plan and origin (pentadactyl limb) but do different jobs — evidence of divergent evolution.",
+   "trap": "Bat and butterfly wings do the same job but have different origins: analogous.",
+   "s": "Evidences of evolution: Anatomical",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-003",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Lamarck's theory of evolution is known as",
+   "o": [
+    "Inheritance of acquired characters",
+    "Natural selection",
+    "Mutation theory",
+    "Theory of pangenesis"
+   ],
+   "a": 0,
+   "x": "Lamarck (1809) proposed use and disuse of organs and inheritance of acquired characters, e.g., the giraffe's long neck. Natural selection is Darwin's theory.",
+   "s": "Theories: Lamarckism"
+  },
+  {
+   "id": "zoo-004",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Hugo de Vries proposed the mutation theory after studying",
+   "o": [
+    "Pisum sativum",
+    "Drosophila melanogaster",
+    "Oenothera lamarckiana",
+    "Neurospora crassa"
+   ],
+   "a": 2,
+   "x": "De Vries saw sudden, heritable new forms in evening primrose (Oenothera lamarckiana) and called such discontinuous changes mutations.",
+   "trap": "Pisum sativum is Mendel's garden pea.",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zoo-005",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "In a population in Hardy–Weinberg equilibrium, 16% of individuals show a recessive trait. What is the frequency of heterozygotes?",
+   "o": [
+    "0.16",
+    "0.24",
+    "0.36",
+    "0.48"
+   ],
+   "a": 3,
+   "x": "q² = 0.16, so q = 0.4 and p = 0.6. Heterozygotes = 2pq = 2 × 0.6 × 0.4 = 0.48.",
+   "trap": "0.24 forgets the 2 in 2pq; 0.36 is p² (homozygous dominant).",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zoo-006",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The stage of Plasmodium that a mosquito injects into human blood is the",
+   "o": [
+    "Merozoite",
+    "Sporozoite",
+    "Gametocyte",
+    "Ookinete"
+   ],
+   "a": 1,
+   "x": "Sporozoites from the mosquito's salivary glands enter human blood and first invade liver cells (pre-erythrocytic cycle).",
+   "trap": "Merozoites infect RBCs but are formed inside the human, not injected.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zoo-007",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The definitive host of Plasmodium vivax is",
+   "o": [
+    "Human",
+    "Male Anopheles mosquito",
+    "Female Anopheles mosquito",
+    "Female Culex mosquito"
+   ],
+   "a": 2,
+   "x": "Gametes of Plasmodium fuse (sexual reproduction) inside the female Anopheles, so it is the definitive host; humans are the intermediate host.",
+   "trap": "Humans show the disease, but only asexual cycles occur in them.",
+   "s": "Plasmodium: life cycle",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-008",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In malaria caused by Plasmodium vivax, chills and fever recur every 48 hours because",
+   "o": [
+    "sporozoites enter liver cells every 48 hours",
+    "infected RBCs burst every 48 hours releasing merozoites and toxins (haemozoin)",
+    "gametocytes are formed every 48 hours",
+    "the mosquito bites every 48 hours"
+   ],
+   "a": 1,
+   "x": "The erythrocytic (Golgi) cycle of P. vivax takes 48 hours; synchronous rupture of RBCs releases merozoites and toxic haemozoin, causing fever — benign tertian malaria.",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zoo-009",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The infective stage of Entamoeba histolytica for humans is the",
+   "o": [
+    "Uninucleate cyst",
+    "Binucleate cyst",
+    "Trophozoite",
+    "Mature four-nucleate cyst"
+   ],
+   "a": 3,
+   "x": "Mature quadrinucleate cysts in contaminated food or water are swallowed and excyst in the intestine. Trophozoites outside the body die and are killed by stomach acid.",
+   "trap": "The trophozoite causes the disease but cannot survive outside the host.",
+   "s": "Diagnostic features and classification: Protozoa"
+  },
+  {
+   "id": "zoo-010",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "During conjugation in Paramecium, the two partners exchange their",
+   "o": [
+    "Migratory pronuclei",
+    "Macronuclei",
+    "Stationary pronuclei",
+    "Food vacuoles"
+   ],
+   "a": 0,
+   "x": "The micronucleus divides meiotically; the surviving nucleus forms a stationary and a migratory pronucleus. Migratory pronuclei are exchanged and fuse with stationary ones; macronuclei degenerate.",
+   "trap": "Macronuclei disintegrate during conjugation; they are not exchanged.",
+   "s": "Diagnostic features and classification: Protozoa"
+  },
+  {
+   "id": "zoo-011",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Choanocytes (collar cells) lining the canal system are characteristic of",
+   "o": [
+    "Porifera",
+    "Cnidaria",
+    "Ctenophora",
+    "Platyhelminthes"
+   ],
+   "a": 0,
+   "x": "Sponges such as Sycon have flagellated collar cells that drive water through ostia and canals and trap food particles.",
+   "s": "Diagnostic features and classification: Porifera"
+  },
+  {
+   "id": "zoo-012",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Alternation of an asexual polyp generation with a sexual medusa generation (metagenesis) is seen in",
+   "o": [
+    "Hydra",
+    "Sycon",
+    "Obelia",
+    "Planaria"
+   ],
+   "a": 2,
+   "x": "Obelia polyps bud off medusae asexually; medusae produce gametes, the zygote forms a planula larva that grows into a new polyp colony.",
+   "trap": "Hydra is a cnidarian but has only the polyp form.",
+   "s": "Diagnostic features and classification: Cnidaria"
+  },
+  {
+   "id": "zoo-013",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Man gets the intestinal tapeworm Taenia solium by eating undercooked pork containing",
+   "o": [
+    "Onchosphere (hexacanth)",
+    "Cysticercus (bladder worm)",
+    "Miracidium",
+    "Redia"
+   ],
+   "a": 1,
+   "x": "Pigs swallow eggs; onchospheres become cysticerci in pig muscle (measly pork). Eating it undercooked releases the cysticercus, which grows into the adult worm in the human intestine.",
+   "trap": "Swallowing eggs causes cysticercosis, not the intestinal tapeworm.",
+   "s": "Diagnostic features and classification: Platyhelminthes"
+  },
+  {
+   "id": "zoo-014",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "The correct sequence of larval stages in the life cycle of Fasciola hepatica is",
+   "o": [
+    "Miracidium → redia → sporocyst → cercaria → metacercaria",
+    "Miracidium → sporocyst → cercaria → redia → metacercaria",
+    "Sporocyst → miracidium → redia → cercaria → metacercaria",
+    "Miracidium → sporocyst → redia → cercaria → metacercaria"
+   ],
+   "a": 3,
+   "x": "Miracidium enters the snail (Lymnaea) and becomes a sporocyst, then rediae, then cercariae; cercariae encyst on grass as metacercariae, which infect sheep.",
+   "s": "Diagnostic features and classification: Platyhelminthes"
+  },
+  {
+   "id": "zoo-015",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Ascaris lumbricoides has a body cavity that is a",
+   "o": [
+    "Pseudocoelom",
+    "Haemocoel",
+    "True schizocoelom",
+    "Enterocoelom"
+   ],
+   "a": 0,
+   "x": "Aschelminthes have a pseudocoel: a cavity between body wall and gut not fully lined by mesoderm (a persistent blastocoel).",
+   "s": "Diagnostic features and classification: Aschelminthes"
+  },
+  {
+   "id": "zoo-016",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The rasping, tongue-like radula used for feeding is found in",
+   "o": [
+    "Starfish",
+    "Earthworm",
+    "Pila (apple snail)",
+    "Cockroach"
+   ],
+   "a": 2,
+   "x": "The radula, a ribbon with chitinous teeth in the buccal cavity, is characteristic of molluscs such as Pila.",
+   "s": "Diagnostic features and classification: Mollusca"
+  },
+  {
+   "id": "zoo-017",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "A water vascular (ambulacral) system with tube feet is characteristic of",
+   "o": [
+    "Sea anemone",
+    "Octopus",
+    "Sponge",
+    "Starfish"
+   ],
+   "a": 3,
+   "x": "Echinoderms such as Asterias (starfish) use the water vascular system for locomotion, food capture and respiration.",
+   "s": "Diagnostic features and classification: Echinodermata",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-018",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Which of the following is NOT a fundamental character of chordates?",
+   "o": [
+    "Notochord",
+    "Dorsal hollow nerve cord",
+    "Pharyngeal gill slits",
+    "Ventral solid double nerve cord"
+   ],
+   "a": 3,
+   "x": "All chordates show a notochord, dorsal tubular nerve cord and pharyngeal gill slits at some stage. A ventral solid nerve cord belongs to non-chordates like earthworm and cockroach.",
+   "s": "Diagnostic features and classification: Chordata"
+  },
+  {
+   "id": "zoo-019",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Among reptiles, a completely four-chambered heart is found in",
+   "o": [
+    "Lizard",
+    "Snake",
+    "Crocodile",
+    "Turtle"
+   ],
+   "a": 2,
+   "x": "Most reptiles have an incompletely divided ventricle; crocodiles have a complete interventricular septum, so the heart has four chambers.",
+   "s": "Diagnostic features and classification: Reptilia"
+  },
+  {
+   "id": "zoo-020",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In Pheretima posthuma (earthworm), the clitellum covers segments",
+   "o": [
+    "10–12",
+    "14–16",
+    "18–20",
+    "5–9"
+   ],
+   "a": 1,
+   "x": "The clitellum, a glandular girdle on segments 14–16, secretes the cocoon. The female pore is on segment 14 and paired male pores on 18.",
+   "trap": "Segment 18 carries the male genital pores, not the clitellum.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zoo-021",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The typhlosole in the intestine of the earthworm",
+   "o": [
+    "increases the absorptive surface area",
+    "secretes digestive enzymes",
+    "grinds soil particles",
+    "stores calcium carbonate"
+   ],
+   "a": 0,
+   "x": "The typhlosole is a median dorsal fold of the intestinal wall projecting into the lumen; it increases the area for absorption of digested food.",
+   "trap": "Grinding is done by the gizzard, not the typhlosole.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zoo-022",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The excretory organs of the cockroach are",
+   "o": [
+    "Nephridia",
+    "Green glands",
+    "Malpighian tubules",
+    "Flame cells"
+   ],
+   "a": 2,
+   "x": "Malpighian tubules at the junction of midgut and hindgut remove nitrogenous wastes and pass uric acid into the gut; the cockroach is uricotelic.",
+   "trap": "Nephridia are excretory organs of earthworm.",
+   "s": "Diagnostic features and classification: Arthropoda"
+  },
+  {
+   "id": "zoo-023",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The heart of the cockroach is a dorsal tube made of",
+   "o": [
+    "4 chambers",
+    "9 chambers",
+    "10 chambers",
+    "13 chambers"
+   ],
+   "a": 3,
+   "x": "The cockroach heart is a 13-chambered tube with paired ostia; haemolymph flows in an open system through the haemocoel.",
+   "s": "Diagnostic features and classification: Arthropoda"
+  },
+  {
+   "id": "zoo-024",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The heart of an adult frog consists of",
+   "o": [
+    "One atrium and one ventricle",
+    "Two atria and one ventricle",
+    "Two atria and two ventricles",
+    "One atrium and two ventricles"
+   ],
+   "a": 1,
+   "x": "The frog heart is three-chambered (two auricles, one ventricle) with an accessory sinus venosus dorsally and truncus arteriosus ventrally.",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-025",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "With respect to nitrogenous waste, the tadpole and the adult frog are respectively",
+   "o": [
+    "Ammonotelic and ureotelic",
+    "Ureotelic and ammonotelic",
+    "Uricotelic and ureotelic",
+    "Ammonotelic and uricotelic"
+   ],
+   "a": 0,
+   "x": "The aquatic tadpole excretes ammonia, easily diluted in water; during metamorphosis the urea cycle develops and the adult frog excretes mainly urea.",
+   "trap": "Reversing the order: the tadpole, not the adult, is ammonotelic.",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zoo-026",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The walls of the lung alveoli are lined by",
+   "o": [
+    "Simple cuboidal epithelium",
+    "Simple squamous epithelium",
+    "Ciliated columnar epithelium",
+    "Stratified squamous epithelium"
+   ],
+   "a": 1,
+   "x": "Thin, flat simple squamous cells allow rapid diffusion of gases; they also line blood vessels and Bowman's capsule.",
+   "trap": "Ciliated epithelium lines the trachea and bronchi, not alveoli.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zoo-027",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Intercalated discs are a feature of",
+   "o": [
+    "Skeletal muscle",
+    "Smooth muscle",
+    "Cardiac muscle",
+    "Nervous tissue"
+   ],
+   "a": 2,
+   "x": "Intercalated discs join branched cardiac fibres; their gap junctions let impulses spread quickly so the heart contracts as one unit.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zoo-028",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Haversian canals surrounded by concentric lamellae are characteristic of",
+   "o": [
+    "Hyaline cartilage",
+    "Compact bone of mammals",
+    "Elastic cartilage",
+    "Areolar tissue"
+   ],
+   "a": 1,
+   "x": "Mammalian compact bone is organised into Haversian systems: a central canal with vessels and nerves, surrounded by lamellae with osteocytes in lacunae.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zoo-029",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The myelin sheath around peripheral nerve fibres is formed by",
+   "o": [
+    "Schwann cells",
+    "Oligodendrocytes",
+    "Astrocytes",
+    "Microglia"
+   ],
+   "a": 0,
+   "x": "In the peripheral nervous system, Schwann cells wrap around axons to form myelin; the gaps between them are nodes of Ranvier.",
+   "trap": "Oligodendrocytes form myelin in the CNS, not in peripheral nerves.",
+   "s": "Nervous tissue",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zoo-068",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "The one-horned rhinoceros in Nepal is mainly conserved in",
+   "o": [
+    "Sagarmatha National Park",
+    "Chitwan National Park",
+    "Shey Phoksundo National Park",
+    "Langtang National Park"
+   ],
+   "a": 1,
+   "x": "Chitwan National Park (1973, a World Heritage Site) holds most of Nepal's one-horned rhinos; smaller populations live in Bardiya and Shuklaphanta.",
+   "s": "Conservation biology: Protected areas"
+  },
+  {
+   "id": "zoo-069",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "In a honeybee colony, drones develop from",
+   "o": [
+    "fertilised eggs fed royal jelly throughout",
+    "fertilised eggs fed royal jelly only for the first few days",
+    "unfertilised eggs (parthenogenesis)",
+    "fertilised eggs that undergo polyembryony"
+   ],
+   "a": 2,
+   "x": "Drones (males) are haploid and develop from unfertilised eggs. Fertilised eggs give females: queens if fed royal jelly throughout, workers otherwise.",
+   "trap": "Royal jelly throughout produces a queen, not a drone.",
+   "s": "Diagnostic features and classification: Arthropoda"
+  },
+  {
+   "id": "zoo-070",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "Which of the following is an example of ex-situ conservation?",
+   "o": [
+    "National park",
+    "Wildlife reserve",
+    "Conservation area",
+    "Zoological garden"
+   ],
+   "a": 3,
+   "x": "Ex-situ conservation protects species outside their natural habitat: zoos, botanical gardens, seed and gene banks. Parks and reserves are in-situ.",
+   "s": "Conservation biology: Biodiversity"
+  },
+  {
+   "id": "zooB-001",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "According to Oparin and Haldane, the primitive atmosphere of the earth was",
+   "o": [
+    "Reducing, without free oxygen",
+    "Oxidising, rich in free oxygen",
+    "Rich in ozone",
+    "Mainly nitrogen and oxygen, as today"
+   ],
+   "a": 0,
+   "x": "Oparin–Haldane proposed a reducing atmosphere of CH₄, NH₃, H₂ and water vapour. With no free O₂, organic molecules formed by chemical evolution were not destroyed by oxidation.",
+   "s": "Origin of life: Oparin-Haldane theory"
+  },
+  {
+   "id": "zooB-002",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Colloidal droplets called coacervates, thought to be forerunners of the first cells, were proposed by",
+   "o": [
+    "A.I. Oparin",
+    "Sidney Fox",
+    "Stanley Miller",
+    "J.B.S. Haldane"
+   ],
+   "a": 0,
+   "x": "Oparin suggested that organic molecules in the primitive sea aggregated into coacervates. Fox made proteinoid microspheres; Haldane described the sea as a hot dilute soup.",
+   "trap": "Sidney Fox is picked, but he made microspheres, not coacervates.",
+   "s": "Origin of life: Oparin-Haldane theory"
+  },
+  {
+   "id": "zooB-003",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "In the Miller–Urey apparatus, the energy for the chemical reactions was supplied mainly by",
+   "o": [
+    "Ultraviolet lamps",
+    "Radioactive isotopes",
+    "Sunlight through the glass flask",
+    "Electric discharge between electrodes"
+   ],
+   "a": 3,
+   "x": "Miller passed electric sparks (copying lightning) through CH₄, NH₃, H₂ and water vapour; boiling water only circulated the vapour.",
+   "s": "Origin of life: Miller–Urey's experiment"
+  },
+  {
+   "id": "zooB-004",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The Miller–Urey experiment produced",
+   "o": [
+    "Simple amino acids such as glycine and alanine",
+    "DNA and RNA molecules",
+    "Living bacterial cells",
+    "Complex proteins such as haemoglobin"
+   ],
+   "a": 0,
+   "x": "After a week of sparking, the condensed liquid contained simple organic compounds, mainly amino acids like glycine and alanine. No nucleic acids or cells formed.",
+   "s": "Origin of life: Miller–Urey's experiment"
+  },
+  {
+   "id": "zooB-005",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "The first living organisms on earth are believed to have been",
+   "o": [
+    "Aerobic photoautotrophs",
+    "Aerobic heterotrophs",
+    "Anaerobic heterotrophs",
+    "Oxygen-using chemoautotrophs"
+   ],
+   "a": 2,
+   "x": "The early atmosphere had no free O₂, and the sea was full of ready-made organic food, so the first prokaryotes were anaerobic heterotrophs. Photosynthesis and O₂ came later.",
+   "s": "Origin of life: Oparin-Haldane theory"
+  },
+  {
+   "id": "zooB-006",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The wings of a butterfly and the wings of a bird are",
+   "o": [
+    "Homologous organs",
+    "Vestigial organs",
+    "Analogous organs",
+    "Atavistic organs"
+   ],
+   "a": 2,
+   "x": "They do the same job (flight) but have different origin and structure: insect wings are cuticle outgrowths, bird wings are modified forelimbs.",
+   "trap": "Same function tempts 'homologous'; homology means same origin.",
+   "s": "Evidences of evolution: Anatomical"
+  },
+  {
+   "id": "zooB-007",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Analogous organs provide evidence for",
+   "o": [
+    "Divergent evolution",
+    "Common ancestry of the organisms",
+    "Atavism",
+    "Convergent evolution"
+   ],
+   "a": 3,
+   "x": "Unrelated groups facing similar demands evolve similar-looking structures independently: convergent evolution. Homologous organs show divergent evolution.",
+   "s": "Evidences of evolution: Anatomical"
+  },
+  {
+   "id": "zooB-008",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Which of the following is a vestigial organ in humans?",
+   "o": [
+    "Nictitating membrane (plica semilunaris) of the eye",
+    "Pancreas",
+    "Patella (knee cap)",
+    "Epiglottis"
+   ],
+   "a": 0,
+   "x": "The plica semilunaris is a functionless remnant of the third eyelid seen in frogs and birds. Pancreas, patella and epiglottis all work.",
+   "s": "Evidences of evolution: Anatomical"
+  },
+  {
+   "id": "zooB-009",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "The sudden appearance of a short tail or extra nipples in a human baby is an example of",
+   "o": [
+    "A vestigial organ",
+    "Atavism",
+    "Analogy",
+    "Adaptive radiation"
+   ],
+   "a": 1,
+   "x": "Atavism (reversion) is the reappearance of an ancestral character that is normally absent. It shows that the genes still exist from our ancestors.",
+   "trap": "Vestigial organs are present in everyone and reduced; atavistic traits appear only occasionally.",
+   "s": "Evidences of evolution: Morphological"
+  },
+  {
+   "id": "zooB-010",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The fossil Archaeopteryx is a connecting link between",
+   "o": [
+    "Fishes and amphibians",
+    "Amphibians and reptiles",
+    "Reptiles and birds",
+    "Birds and mammals"
+   ],
+   "a": 2,
+   "x": "Archaeopteryx had feathers and wings (bird) but also teeth, a long bony tail and clawed fingers (reptile).",
+   "s": "Evidences of evolution: Paleontological"
+  },
+  {
+   "id": "zooB-011",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "Peripatus is a living connecting link between",
+   "o": [
+    "Arthropoda and Mollusca",
+    "Annelida and Mollusca",
+    "Echinodermata and Chordata",
+    "Annelida and Arthropoda"
+   ],
+   "a": 3,
+   "x": "Peripatus has annelid features (segmental nephridia, unjointed legs, soft body) and arthropod features (tracheae, haemocoel, claws).",
+   "s": "Evidences of evolution: Morphological"
+  },
+  {
+   "id": "zooB-012",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "The duck-billed platypus is regarded as a connecting link between",
+   "o": [
+    "Reptiles and mammals",
+    "Birds and mammals",
+    "Amphibians and reptiles",
+    "Fishes and amphibians"
+   ],
+   "a": 0,
+   "x": "Platypus lays eggs and has a cloaca like reptiles, yet has hair and mammary glands like mammals.",
+   "trap": "The duck-like bill tempts 'birds', but egg-laying and cloaca are reptilian features.",
+   "s": "Evidences of evolution: Morphological"
+  },
+  {
+   "id": "zooB-013",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The earliest known ancestor in the evolution of the horse is",
+   "o": [
+    "Merychippus",
+    "Eohippus",
+    "Pliohippus",
+    "Equus"
+   ],
+   "a": 1,
+   "x": "Fossil sequence: Eohippus (dawn horse, 4 toes in front) → Mesohippus → Merychippus → Pliohippus → Equus (single hoof). It is classic paleontological evidence.",
+   "s": "Evidences of evolution: Paleontological"
+  },
+  {
+   "id": "zooB-014",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "'Ontogeny recapitulates phylogeny' (biogenetic law) was stated by",
+   "o": [
+    "Karl Ernst von Baer",
+    "Charles Darwin",
+    "Ernst Haeckel",
+    "August Weismann"
+   ],
+   "a": 2,
+   "x": "Haeckel's recapitulation theory says an embryo passes through stages resembling its ancestors. Von Baer only noted that embryos of related animals look alike.",
+   "trap": "Von Baer studied embryo similarity, but the recapitulation law is Haeckel's.",
+   "s": "Evidences of evolution: Embryological",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-015",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "The presence of pharyngeal gill pouches in the human embryo is",
+   "o": [
+    "Paleontological evidence of evolution",
+    "Biochemical evidence of evolution",
+    "Biogeographical evidence of evolution",
+    "Embryological evidence of evolution"
+   ],
+   "a": 3,
+   "x": "All vertebrate embryos, including man, develop gill pouches, showing descent from a common aquatic ancestor. Evidence from embryos is embryological.",
+   "s": "Evidences of evolution: Embryological",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-016",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "Nuttall's precipitin test on blood serum showed that human serum proteins are most similar to those of the",
+   "o": [
+    "Chimpanzee",
+    "Rhesus monkey",
+    "Lemur",
+    "Dog"
+   ],
+   "a": 0,
+   "x": "The stronger the precipitate formed with anti-human serum, the closer the relationship. Apes such as the chimpanzee gave the strongest reaction: biochemical evidence.",
+   "s": "Evidences of evolution: Biochemical"
+  },
+  {
+   "id": "zooB-017",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Who cut off the tails of mice over many generations and showed that tail-less young never appeared?",
+   "o": [
+    "Hugo de Vries",
+    "August Weismann",
+    "Alfred Russel Wallace",
+    "Thomas Malthus"
+   ],
+   "a": 1,
+   "x": "Weismann's experiment disproved inheritance of acquired characters (Lamarckism). He proposed the germplasm theory: only germ-cell changes are inherited.",
+   "s": "Theories: Lamarckism"
+  },
+  {
+   "id": "zooB-018",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The phrase 'survival of the fittest' was coined by",
+   "o": [
+    "Charles Darwin",
+    "Jean-Baptiste Lamarck",
+    "Herbert Spencer",
+    "Hugo de Vries"
+   ],
+   "a": 2,
+   "x": "Herbert Spencer coined the phrase after reading Darwin; Darwin later used it as an equivalent of natural selection.",
+   "trap": "Darwin is chosen because the idea is his, but the phrase is Spencer's.",
+   "s": "Theories: Darwinism"
+  },
+  {
+   "id": "zooB-019",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Darwin's idea of 'struggle for existence' was inspired by",
+   "o": [
+    "Mendel's laws of inheritance",
+    "De Vries's mutation theory",
+    "Weismann's germplasm theory",
+    "Malthus's essay on population"
+   ],
+   "a": 3,
+   "x": "Malthus argued that populations grow faster than food supply, so many must die. Darwin applied this to all organisms. Mendel and de Vries were unknown to him.",
+   "s": "Theories: Darwinism"
+  },
+  {
+   "id": "zooB-020",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Darwin's observations of finches with different beaks were made on the",
+   "o": [
+    "Galapagos Islands",
+    "Hawaiian Islands",
+    "Andaman Islands",
+    "Island of Madagascar"
+   ],
+   "a": 0,
+   "x": "During the voyage of HMS Beagle, Darwin saw many finch species on the Galapagos, each with a beak suited to its food: adaptive radiation from a common ancestor.",
+   "s": "Theories: Darwinism"
+  },
+  {
+   "id": "zooB-021",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Which of the following is NOT a factor of the modern synthetic theory (Neo-Darwinism)?",
+   "o": [
+    "Gene mutation",
+    "Inheritance of acquired characters",
+    "Genetic recombination",
+    "Reproductive isolation"
+   ],
+   "a": 1,
+   "x": "Neo-Darwinism combines mutation, recombination, natural selection, genetic drift and reproductive isolation. Inheritance of acquired characters is Lamarck's idea and is rejected.",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zooB-022",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "The Sewall Wright effect refers to",
+   "o": [
+    "Gene flow",
+    "Natural selection",
+    "Genetic drift",
+    "Polyploidy"
+   ],
+   "a": 2,
+   "x": "Sewall Wright showed that allele frequencies change by chance in small populations: random genetic drift.",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zooB-023",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "In a population in Hardy–Weinberg equilibrium, the frequency of the recessive allele is 0.3. The frequency of homozygous dominant individuals is",
+   "o": [
+    "0.09",
+    "0.42",
+    "0.49",
+    "0.70"
+   ],
+   "a": 2,
+   "x": "q = 0.3, so p = 1 − 0.3 = 0.7; homozygous dominant = p² = 0.7² = 0.49.",
+   "trap": "0.42 is 2pq, the heterozygotes.",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zooB-024",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "In a Hardy–Weinberg population, 1 in 100 individuals shows a recessive disorder. The frequency of carriers (heterozygotes) is",
+   "o": [
+    "0.81",
+    "0.18",
+    "0.09",
+    "0.01"
+   ],
+   "a": 1,
+   "x": "q² = 1/100 = 0.01, so q = 0.1, p = 0.9; carriers = 2pq = 2 × 0.9 × 0.1 = 0.18.",
+   "trap": "0.01 is q², the affected individuals, not carriers.",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zooB-025",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "In Nepal, a fossil of Ramapithecus was discovered near",
+   "o": [
+    "Koshi river, Chatara",
+    "Tinau river, near Butwal (Palpa–Rupandehi)",
+    "Karnali river, Chisapani",
+    "Bagmati river, Sundarijal"
+   ],
+   "a": 1,
+   "x": "A Ramapithecus jaw/teeth fossil was found in the Siwalik deposits of Tinau river near Butwal. Ramapithecus is considered an early hominid-like ape.",
+   "s": "Human evolution: From Ramapithecus to modern man"
+  },
+  {
+   "id": "zooB-026",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The first human species known to make stone tools ('handy man') is",
+   "o": [
+    "Homo erectus",
+    "Australopithecus",
+    "Homo sapiens neanderthalensis",
+    "Homo habilis"
+   ],
+   "a": 3,
+   "x": "Homo habilis made simple stone tools. Homo erectus was first to use fire; Australopithecus was an upright ape-man with no regular tool-making.",
+   "s": "Human evolution: From Ramapithecus to modern man"
+  },
+  {
+   "id": "zooB-027",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Java man and Peking man belong to the species",
+   "o": [
+    "Homo erectus",
+    "Homo habilis",
+    "Homo sapiens sapiens",
+    "Australopithecus africanus"
+   ],
+   "a": 0,
+   "x": "Java man (Pithecanthropus) and Peking man (Sinanthropus) are both Homo erectus, which walked fully erect and used fire.",
+   "s": "Human evolution: From Ramapithecus to modern man",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-028",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "Which prehistoric man made cave paintings and is regarded as the direct ancestor of modern man?",
+   "o": [
+    "Cro-Magnon man",
+    "Neanderthal man",
+    "Java man",
+    "Australopithecus"
+   ],
+   "a": 0,
+   "x": "Cro-Magnon man was an early Homo sapiens sapiens with modern skull, fine tools and cave art. Neanderthals buried their dead but are a side branch.",
+   "trap": "Neanderthal man is famous, but he is not our direct ancestor.",
+   "s": "Human evolution: From Ramapithecus to modern man"
+  },
+  {
+   "id": "zooB-029",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "The correct sequence in human evolution is",
+   "o": [
+    "Australopithecus → Ramapithecus → Homo habilis → Homo erectus → Homo sapiens",
+    "Ramapithecus → Homo habilis → Australopithecus → Homo erectus → Homo sapiens",
+    "Ramapithecus → Australopithecus → Homo erectus → Homo habilis → Homo sapiens",
+    "Ramapithecus → Australopithecus → Homo habilis → Homo erectus → Homo sapiens"
+   ],
+   "a": 3,
+   "x": "Ramapithecus (ape-like) → Australopithecus (upright ape-man) → Homo habilis (tool maker) → Homo erectus (fire) → Homo sapiens.",
+   "s": "Human evolution: From Ramapithecus to modern man"
+  },
+  {
+   "id": "zooB-030",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The 'southern ape', the first ape-man that walked upright on two legs, is",
+   "o": [
+    "Ramapithecus",
+    "Dryopithecus",
+    "Australopithecus",
+    "Homo erectus"
+   ],
+   "a": 2,
+   "x": "Australopithecus fossils (e.g. Taung child) from southern Africa show bipedal walking with an ape-sized brain.",
+   "s": "Human evolution: From Ramapithecus to modern man"
+  },
+  {
+   "id": "zooB-031",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "According to Hugo de Vries, new species arise by",
+   "o": [
+    "Slow accumulation of small variations",
+    "Use and disuse of organs",
+    "Inheritance of acquired characters",
+    "Sudden large heritable changes (saltation)"
+   ],
+   "a": 3,
+   "x": "De Vries (Oenothera) held that evolution is discontinuous: mutations appear suddenly and can form a new species in one step (saltation).",
+   "s": "Theories: Neo-Darwinism"
+  },
+  {
+   "id": "zooB-032",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Industrial melanism in the peppered moth (Biston betularia) is an example of",
+   "o": [
+    "Inheritance of acquired characters",
+    "Natural selection",
+    "Genetic drift",
+    "Artificial selection"
+   ],
+   "a": 1,
+   "x": "Soot darkened tree trunks, so birds ate the conspicuous light moths and the dark form increased. The environment selected the better-camouflaged variety.",
+   "s": "Theories: Darwinism"
+  },
+  {
+   "id": "zooB-033",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Protozoa are mainly classified on the basis of their",
+   "o": [
+    "Mode of nutrition",
+    "Locomotory organelles",
+    "Habitat",
+    "Excretory organelles"
+   ],
+   "a": 1,
+   "x": "Classes: Sarcodina (pseudopodia), Mastigophora (flagella), Ciliata (cilia) and Sporozoa (no locomotory organelles).",
+   "s": "Diagnostic features and classification: Protozoa",
+   "yrs": [
+    2078,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "zooB-034",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Which class of Protozoa has no locomotory organelles in the adult stage?",
+   "o": [
+    "Sarcodina (Rhizopoda)",
+    "Mastigophora (Flagellata)",
+    "Sporozoa",
+    "Ciliata"
+   ],
+   "a": 2,
+   "x": "Sporozoa such as Plasmodium are all parasites and lack pseudopodia, flagella and cilia in the adult; they spread by spores (sporozoites).",
+   "s": "Diagnostic features and classification: Protozoa",
+   "yrs": [
+    2078,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "zooB-035",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Under the classification of Protozoa, Euglena is placed in",
+   "o": [
+    "Sarcodina",
+    "Sporozoa",
+    "Ciliata",
+    "Mastigophora (Flagellata)"
+   ],
+   "a": 3,
+   "x": "Euglena moves by a long flagellum, so it is a flagellate (Mastigophora).",
+   "s": "Diagnostic features and classification: Protozoa",
+   "yrs": [
+    2078,
+    2081,
+    2082
+   ],
+   "rep": 3
+  },
+  {
+   "id": "zooB-036",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Kala-azar is caused by ____ and spread by ____.",
+   "o": [
+    "Leishmania donovani; sand fly (Phlebotomus)",
+    "Trypanosoma gambiense; tsetse fly",
+    "Plasmodium vivax; female Anopheles",
+    "Entamoeba histolytica; housefly"
+   ],
+   "a": 0,
+   "x": "Leishmania donovani, a flagellate protozoan, causes kala-azar (visceral leishmaniasis) and is carried by the sand fly. Trypanosoma and tsetse fly cause sleeping sickness.",
+   "s": "Diagnostic features and classification: Protozoa"
+  },
+  {
+   "id": "zooB-037",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "In a sponge, water leaves the body through the",
+   "o": [
+    "Ostia",
+    "Osculum",
+    "Choanocytes",
+    "Spongocoel wall pores"
+   ],
+   "a": 1,
+   "x": "Water enters through many small ostia, passes the spongocoel lined by choanocytes, and leaves through the large osculum.",
+   "s": "Diagnostic features and classification: Porifera"
+  },
+  {
+   "id": "zooB-038",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "The totipotent cells of sponges that can form any other cell type are",
+   "o": [
+    "Choanocytes",
+    "Pinacocytes",
+    "Archaeocytes",
+    "Porocytes"
+   ],
+   "a": 2,
+   "x": "Archaeocytes are amoeboid, undifferentiated cells that form gametes, gemmules and other cells and help in regeneration.",
+   "s": "Diagnostic features and classification: Porifera",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-039",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Stinging cells (cnidoblasts) with nematocysts are characteristic of",
+   "o": [
+    "Porifera",
+    "Platyhelminthes",
+    "Annelida",
+    "Cnidaria"
+   ],
+   "a": 3,
+   "x": "Cnidoblasts discharge nematocysts for offence and defence, e.g. in Hydra, Obelia and jellyfish; the phylum is named after them.",
+   "s": "Diagnostic features and classification: Cnidaria"
+  },
+  {
+   "id": "zooB-040",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Animals that swim using eight rows of ciliary comb plates belong to",
+   "o": [
+    "Ctenophora",
+    "Cnidaria",
+    "Porifera",
+    "Echinodermata"
+   ],
+   "a": 0,
+   "x": "Ctenophores (comb jellies, e.g. Pleurobrachia) have 8 rows of comb plates and lack cnidoblasts.",
+   "s": "Diagnostic features and classification: Ctenophora"
+  },
+  {
+   "id": "zooB-041",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Flame cells are the excretory structures of",
+   "o": [
+    "Annelida",
+    "Platyhelminthes",
+    "Arthropoda",
+    "Mollusca"
+   ],
+   "a": 1,
+   "x": "Flame cells (protonephridia) of flatworms like Planaria and Fasciola remove wastes; the beating cilia look like a flickering flame.",
+   "s": "Diagnostic features and classification: Platyhelminthes",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-042",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The first animals to show bilateral symmetry with three germ layers but no body cavity are",
+   "o": [
+    "Cnidaria",
+    "Aschelminthes",
+    "Platyhelminthes",
+    "Annelida"
+   ],
+   "a": 2,
+   "x": "Flatworms are the first triploblastic, bilaterally symmetrical animals and are acoelomate. Cnidaria are diploblastic; Aschelminthes have a pseudocoelom.",
+   "s": "Diagnostic features and classification: Platyhelminthes"
+  },
+  {
+   "id": "zooB-043",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "A male Ascaris differs from the female in having",
+   "o": [
+    "A straight, pointed posterior end",
+    "A larger body size",
+    "A clitellum",
+    "A curved posterior end with penial spicules"
+   ],
+   "a": 3,
+   "x": "Ascaris shows sexual dimorphism: the male is smaller with a ventrally curved tail bearing penial spicules; the female is longer with a straight tail.",
+   "s": "Diagnostic features and classification: Aschelminthes"
+  },
+  {
+   "id": "zooB-044",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Walking barefoot on soil contaminated with human faeces is the usual way of getting infected by",
+   "o": [
+    "Ancylostoma duodenale (hookworm)",
+    "Ascaris lumbricoides",
+    "Taenia solium",
+    "Enterobius vermicularis"
+   ],
+   "a": 0,
+   "x": "Hookworm filariform larvae in soil penetrate the skin of bare feet. Ascaris and Enterobius are swallowed as eggs; Taenia comes from measly pork.",
+   "s": "Diagnostic features and classification: Aschelminthes",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-045",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "True metameric segmentation first appears in",
+   "o": [
+    "Platyhelminthes",
+    "Annelida",
+    "Aschelminthes",
+    "Mollusca"
+   ],
+   "a": 1,
+   "x": "Annelids (earthworm, leech, Nereis) have a body divided internally and externally into similar segments separated by septa.",
+   "s": "Diagnostic features and classification: Annelida"
+  },
+  {
+   "id": "zooB-046",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The anticoagulant hirudin is secreted by",
+   "o": [
+    "Earthworm",
+    "Mosquito",
+    "Leech",
+    "Tapeworm"
+   ],
+   "a": 2,
+   "x": "Salivary glands of the leech (Hirudinaria) secrete hirudin, which stops the host's blood from clotting while it feeds.",
+   "s": "Diagnostic features and classification: Annelida"
+  },
+  {
+   "id": "zooB-047",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The body cavity of arthropods is a",
+   "o": [
+    "Pseudocoelom",
+    "Enterocoelom",
+    "Spongocoel",
+    "Haemocoel"
+   ],
+   "a": 3,
+   "x": "In arthropods the coelom is reduced and the main cavity is filled with blood (haemolymph) from an open circulatory system: haemocoel.",
+   "s": "Diagnostic features and classification: Arthropoda"
+  },
+  {
+   "id": "zooB-048",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The organ of Bojanus, which works as a kidney, is found in",
+   "o": [
+    "Mollusca",
+    "Annelida",
+    "Arthropoda",
+    "Echinodermata"
+   ],
+   "a": 0,
+   "x": "The organ of Bojanus is the excretory organ (kidney) of molluscs such as Pila and Unio.",
+   "s": "Diagnostic features and classification: Mollusca",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-049",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Which of the following is a true fish?",
+   "o": [
+    "Cuttlefish",
+    "Seahorse (Hippocampus)",
+    "Silverfish",
+    "Jellyfish"
+   ],
+   "a": 1,
+   "x": "Seahorse is a bony fish with gills and fins. Cuttlefish is a mollusc, silverfish an insect, jellyfish a cnidarian.",
+   "trap": "Names ending in 'fish' mislead; check the phylum.",
+   "s": "Diagnostic features and classification: Pisces",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-050",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Aristotle's lantern, a chewing apparatus, is found in",
+   "o": [
+    "Starfish",
+    "Sea cucumber",
+    "Sea urchin",
+    "Brittle star"
+   ],
+   "a": 2,
+   "x": "Sea urchins (Echinus) have a five-jawed chewing apparatus called Aristotle's lantern.",
+   "s": "Diagnostic features and classification: Echinodermata"
+  },
+  {
+   "id": "zooB-051",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "Which statement about echinoderms is correct?",
+   "o": [
+    "They live in fresh water as well as the sea",
+    "They have a chitinous exoskeleton",
+    "They are triploblastic acoelomates",
+    "Their larvae are bilaterally symmetrical but adults are pentaradial"
+   ],
+   "a": 3,
+   "x": "Echinoderms are exclusively marine, coelomate (enterocoelous) animals with a calcareous endoskeleton. Bilateral larvae show their descent from bilateral ancestors.",
+   "s": "Diagnostic features and classification: Echinodermata"
+  },
+  {
+   "id": "zooB-052",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Balanoglossus (tongue worm) belongs to",
+   "o": [
+    "Hemichordata",
+    "Urochordata",
+    "Cephalochordata",
+    "Annelida"
+   ],
+   "a": 0,
+   "x": "Balanoglossus has a proboscis, collar and trunk, with a stomochord in the proboscis; it is placed in Hemichordata.",
+   "s": "Diagnostic features and classification: Hemichordata"
+  },
+  {
+   "id": "zooB-053",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "Retrogressive metamorphosis, in which a free-swimming larva with a notochord changes into a sessile adult without it, occurs in",
+   "o": [
+    "Amphioxus",
+    "Herdmania",
+    "Balanoglossus",
+    "Petromyzon"
+   ],
+   "a": 1,
+   "x": "In urochordates like Herdmania the notochord is only in the larval tail; during metamorphosis the larva loses tail, notochord and nerve cord.",
+   "s": "Diagnostic features and classification: Urochordata"
+  },
+  {
+   "id": "zooB-054",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "In which animal does the notochord extend from the head to the tail throughout life?",
+   "o": [
+    "Herdmania",
+    "Scoliodon",
+    "Amphioxus (Branchiostoma)",
+    "Frog"
+   ],
+   "a": 2,
+   "x": "Cephalochordates like Amphioxus keep the notochord along the whole body, even beyond the nerve cord at the front. Vertebrates replace it with a vertebral column.",
+   "s": "Diagnostic features and classification: Cephalochordata"
+  },
+  {
+   "id": "zooB-055",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Jawless vertebrates such as lamprey (Petromyzon) and hagfish (Myxine) belong to",
+   "o": [
+    "Chondrichthyes",
+    "Osteichthyes",
+    "Amphibia",
+    "Cyclostomata"
+   ],
+   "a": 3,
+   "x": "Cyclostomes have a circular sucking mouth without jaws, no paired fins and a cartilaginous skeleton.",
+   "s": "Diagnostic features and classification: Cyclostomata"
+  },
+  {
+   "id": "zooB-056",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Placoid scales are found in",
+   "o": [
+    "Scoliodon (dogfish shark)",
+    "Labeo rohita (rohu)",
+    "Rana (frog)",
+    "Hippocampus (seahorse)"
+   ],
+   "a": 0,
+   "x": "Cartilaginous fishes have tooth-like placoid scales. Bony fishes like rohu have cycloid/ctenoid scales; frogs have no scales.",
+   "s": "Diagnostic features and classification: Chondrichthyes"
+  },
+  {
+   "id": "zooB-057",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "A bony operculum covering the gills and an air (swim) bladder are present in",
+   "o": [
+    "Scoliodon",
+    "Labeo rohita (rohu)",
+    "Petromyzon",
+    "Torpedo (electric ray)"
+   ],
+   "a": 1,
+   "x": "These are features of bony fishes (Osteichthyes). Scoliodon and Torpedo are cartilaginous fishes with naked gill slits and no air bladder.",
+   "s": "Diagnostic features and classification: Osteichthyes"
+  },
+  {
+   "id": "zooB-058",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Pneumatic (air-filled) bones are a characteristic of",
+   "o": [
+    "Reptiles",
+    "Amphibians",
+    "Birds",
+    "Fishes"
+   ],
+   "a": 2,
+   "x": "Hollow bones connected to air sacs make birds light for flight.",
+   "s": "Diagnostic features and classification: Aves"
+  },
+  {
+   "id": "zooB-059",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "A muscular diaphragm separating the thoracic and abdominal cavities is found only in",
+   "o": [
+    "Birds",
+    "Reptiles",
+    "Amphibians",
+    "Mammals"
+   ],
+   "a": 3,
+   "x": "The diaphragm is a diagnostic mammalian feature and helps in breathing.",
+   "s": "Diagnostic features and classification: Mammalia"
+  },
+  {
+   "id": "zooB-060",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Which of the following mammals lays eggs?",
+   "o": [
+    "Duck-billed platypus",
+    "Kangaroo",
+    "Bat",
+    "Whale"
+   ],
+   "a": 0,
+   "x": "Platypus and spiny anteater (Prototheria) are oviparous mammals. Kangaroo, bat and whale give birth to young (viviparous).",
+   "s": "Diagnostic features and classification: Mammalia",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-061",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "A pouch (marsupium) in which the young complete development is found in",
+   "o": [
+    "Duck-billed platypus",
+    "Kangaroo",
+    "Bat",
+    "Whale"
+   ],
+   "a": 1,
+   "x": "Kangaroo is a marsupial (Metatheria): the tiny young crawls into the mother's pouch and feeds on milk there.",
+   "s": "Diagnostic features and classification: Mammalia"
+  },
+  {
+   "id": "zooB-062",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The tissue that covers body surfaces and lines body cavities, mainly for protection, is",
+   "o": [
+    "Connective tissue",
+    "Muscular tissue",
+    "Epithelial tissue",
+    "Nervous tissue"
+   ],
+   "a": 2,
+   "x": "Epithelium forms the outer skin and lines cavities and tubes; it protects, absorbs and secretes. It rests on a basement membrane and has no blood vessels.",
+   "s": "Epithelial tissue",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-063",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The epidermis of human skin is made of",
+   "o": [
+    "Simple squamous epithelium",
+    "Transitional epithelium",
+    "Pseudostratified ciliated columnar epithelium",
+    "Stratified squamous keratinised epithelium"
+   ],
+   "a": 3,
+   "x": "Many layers of flat cells with dead keratin-filled outer cells resist friction, water loss and germs: the main protective epithelium.",
+   "s": "Epithelial tissue",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-064",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The proximal convoluted tubule of the nephron is lined by",
+   "o": [
+    "Simple cuboidal epithelium with brush border",
+    "Simple squamous epithelium",
+    "Transitional epithelium",
+    "Stratified squamous epithelium"
+   ],
+   "a": 0,
+   "x": "PCT cells are cube-shaped with microvilli (brush border) for reabsorption. Bowman's capsule is simple squamous.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-065",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The inner lining of the trachea is",
+   "o": [
+    "Simple cuboidal epithelium",
+    "Pseudostratified ciliated columnar epithelium",
+    "Stratified squamous epithelium",
+    "Transitional epithelium"
+   ],
+   "a": 1,
+   "x": "One layer of columnar cells of different heights looks layered; cilia and goblet-cell mucus trap and sweep out dust.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-066",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The stretchable epithelium lining the urinary bladder is",
+   "o": [
+    "Simple columnar epithelium",
+    "Simple squamous epithelium",
+    "Transitional epithelium",
+    "Ciliated cuboidal epithelium"
+   ],
+   "a": 2,
+   "x": "Transitional epithelium changes from many rounded layers to fewer flattened layers when the bladder fills.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-067",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The inner lining of the small intestine is",
+   "o": [
+    "Stratified squamous epithelium",
+    "Pseudostratified ciliated epithelium",
+    "Simple squamous epithelium",
+    "Simple columnar epithelium with microvilli"
+   ],
+   "a": 3,
+   "x": "Tall columnar cells with microvilli (brush border) increase surface area for absorption; goblet cells among them secrete mucus.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-068",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Goblet cells are unicellular glands that secrete",
+   "o": [
+    "Mucus",
+    "Hydrochloric acid",
+    "Bile",
+    "Insulin"
+   ],
+   "a": 0,
+   "x": "Goblet cells in intestinal and respiratory epithelium secrete mucus for lubrication and protection.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-069",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "Junctions that allow ions and small molecules to pass directly between neighbouring cells are",
+   "o": [
+    "Tight junctions",
+    "Gap junctions",
+    "Desmosomes",
+    "Basement membranes"
+   ],
+   "a": 1,
+   "x": "Gap junctions are protein channels joining the cytoplasm of adjacent cells. Tight junctions seal gaps; desmosomes hold cells together.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-070",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "Sebaceous glands, in which the whole cell breaks down to form the secretion, are",
+   "o": [
+    "Apocrine glands",
+    "Merocrine glands",
+    "Holocrine glands",
+    "Endocrine glands"
+   ],
+   "a": 2,
+   "x": "In holocrine glands the cells fill with secretion and rupture. Mammary glands are apocrine (tip lost); salivary and eccrine sweat glands are merocrine.",
+   "trap": "Mammary glands are apocrine; do not mix the two skin-gland types.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-071",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "In areolar connective tissue, heparin and histamine are secreted by",
+   "o": [
+    "Fibroblasts",
+    "Macrophages",
+    "Adipocytes",
+    "Mast cells"
+   ],
+   "a": 3,
+   "x": "Mast cells release heparin (anticoagulant) and histamine (vasodilation, allergy). Fibroblasts make fibres; macrophages engulf microbes.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-072",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "Brown adipose tissue, abundant in newborns and hibernating animals, is specialised for",
+   "o": [
+    "Producing heat",
+    "Storing calcium",
+    "Producing antibodies",
+    "Conducting impulses"
+   ],
+   "a": 0,
+   "x": "Brown fat cells have many mitochondria that release energy as heat (non-shivering thermogenesis) instead of making ATP.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-073",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Choose the correct pair.",
+   "o": [
+    "Tendon – bone to bone; ligament – muscle to bone",
+    "Tendon – muscle to bone; ligament – bone to bone",
+    "Tendon – muscle to muscle; ligament – bone to muscle",
+    "Tendon – skin to muscle; ligament – muscle to bone"
+   ],
+   "a": 1,
+   "x": "Tendons (dense white fibrous tissue) attach muscles to bones; ligaments (elastic fibrous tissue) join bones at joints.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-074",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The pinna (external ear) is supported by",
+   "o": [
+    "Hyaline cartilage",
+    "White fibrocartilage",
+    "Elastic cartilage",
+    "Bone"
+   ],
+   "a": 2,
+   "x": "Elastic cartilage has many yellow elastic fibres, so the pinna and epiglottis can bend and spring back.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-075",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Intervertebral discs are made of",
+   "o": [
+    "Hyaline cartilage",
+    "Elastic cartilage",
+    "Areolar tissue",
+    "White fibrocartilage"
+   ],
+   "a": 3,
+   "x": "White fibrocartilage, rich in collagen bundles, is tough and acts as a shock absorber between vertebrae and at the pubic symphysis.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-076",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The C-shaped rings of the trachea are made of",
+   "o": [
+    "Hyaline cartilage",
+    "Elastic cartilage",
+    "White fibrocartilage",
+    "Compact bone"
+   ],
+   "a": 0,
+   "x": "Hyaline cartilage, with a clear glassy matrix, keeps the trachea open; it also covers joint surfaces and forms the nose.",
+   "s": "Connective tissue",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-077",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "In mammalian compact bone, the channels connecting Haversian canals with each other are",
+   "o": [
+    "Canaliculi",
+    "Volkmann's canals",
+    "Lacunae",
+    "Medullary cavities"
+   ],
+   "a": 1,
+   "x": "Volkmann's canals run across the bone, linking Haversian canals and the periosteum. Canaliculi are tiny channels joining lacunae.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-078",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The protein of the bone matrix is",
+   "o": [
+    "Chondrin",
+    "Keratin",
+    "Ossein",
+    "Elastin"
+   ],
+   "a": 2,
+   "x": "Bone matrix has ossein (a collagen protein) hardened by calcium phosphate salts. Chondrin is the cartilage matrix.",
+   "trap": "Chondrin is cartilage, not bone.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-079",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Blood is classified as a",
+   "o": [
+    "Fluid epithelial tissue",
+    "Muscular tissue",
+    "Nervous tissue",
+    "Fluid connective tissue"
+   ],
+   "a": 3,
+   "x": "Blood, like other connective tissues, arises from mesoderm and has cells in an extracellular matrix, here the liquid plasma.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-080",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Muscle fibres that are striated, involuntary and branched are",
+   "o": [
+    "Cardiac muscle fibres",
+    "Skeletal muscle fibres",
+    "Smooth muscle fibres",
+    "Myoepithelial cells"
+   ],
+   "a": 0,
+   "x": "Cardiac fibres are striated like skeletal muscle but involuntary like smooth muscle, branched and joined by intercalated discs.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-081",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The muscle found in the walls of the stomach, intestine and blood vessels is",
+   "o": [
+    "Skeletal muscle",
+    "Smooth (unstriated) muscle",
+    "Cardiac muscle",
+    "Striated voluntary muscle"
+   ],
+   "a": 1,
+   "x": "Spindle-shaped, uninucleate, unstriated, involuntary smooth muscle produces slow, sustained contractions such as peristalsis.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-082",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Which muscle fibres are long, unbranched and multinucleate?",
+   "o": [
+    "Smooth muscle fibres",
+    "Cardiac muscle fibres",
+    "Skeletal muscle fibres",
+    "Myoepithelial cells"
+   ],
+   "a": 2,
+   "x": "Each skeletal fibre forms by fusion of many myoblasts, so it is a multinucleate syncytium with peripheral nuclei.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-083",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "Red muscle fibres differ from white fibres in having",
+   "o": [
+    "Less myoglobin, for fast anaerobic bursts",
+    "No mitochondria",
+    "No myofibrils",
+    "More myoglobin and mitochondria, for slow sustained aerobic work"
+   ],
+   "a": 3,
+   "x": "Red fibres store O₂ on myoglobin and respire aerobically, so they resist fatigue (e.g. flight muscles of birds, postural muscles). White fibres work fast but tire quickly.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-084",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Nissl's granules are absent from the",
+   "o": [
+    "Axon",
+    "Cell body (cyton)",
+    "Dendrites",
+    "Perikaryon around the nucleus"
+   ],
+   "a": 0,
+   "x": "Nissl's granules (rough ER with ribosomes) are found in the cyton and dendrites but not in the axon or axon hillock.",
+   "s": "Nervous tissue"
+  },
+  {
+   "id": "zooB-085",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Nerve impulses jump from one node of Ranvier to the next in",
+   "o": [
+    "Non-myelinated nerve fibres",
+    "Myelinated nerve fibres",
+    "Smooth muscle fibres",
+    "Cardiac muscle fibres"
+   ],
+   "a": 1,
+   "x": "Myelin insulates the axon, so depolarisation occurs only at nodes of Ranvier; this saltatory conduction is much faster.",
+   "s": "Nervous tissue"
+  },
+  {
+   "id": "zooB-086",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The neuroglial cells that act as phagocytes in the central nervous system are",
+   "o": [
+    "Astrocytes",
+    "Oligodendrocytes",
+    "Microglia",
+    "Schwann cells"
+   ],
+   "a": 2,
+   "x": "Microglia are small macrophage-like cells that engulf debris and microbes. Oligodendrocytes and Schwann cells make myelin; astrocytes support neurons.",
+   "s": "Nervous tissue"
+  },
+  {
+   "id": "zooB-087",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "Bipolar neurons are found in the",
+   "o": [
+    "Spinal cord ventral horn",
+    "Cerebral cortex motor area",
+    "Dorsal root ganglion",
+    "Retina of the eye"
+   ],
+   "a": 3,
+   "x": "Bipolar neurons, with one dendrite and one axon, occur in the retina and olfactory epithelium. Motor neurons are multipolar; dorsal root ganglion cells are pseudo-unipolar.",
+   "s": "Nervous tissue"
+  },
+  {
+   "id": "zooB-088",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Purkinje cells, large neurons with richly branched dendrites, are found in the",
+   "o": [
+    "Cerebellum",
+    "Heart ventricles",
+    "Kidney cortex",
+    "Liver lobules"
+   ],
+   "a": 0,
+   "x": "Purkinje cells are neurons of the cerebellar cortex. Purkinje fibres of the heart ventricles are modified cardiac muscle fibres.",
+   "trap": "Purkinje fibres (heart) are different from Purkinje cells (cerebellum).",
+   "s": "Nervous tissue"
+  },
+  {
+   "id": "zooB-089",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "In the life cycle of Plasmodium, man acts as the",
+   "o": [
+    "Definitive host",
+    "Intermediate host",
+    "Vector",
+    "Mechanical carrier"
+   ],
+   "a": 1,
+   "x": "Only asexual multiplication (schizogony) occurs in man, so man is the intermediate host. Sexual reproduction occurs in the female Anopheles, the definitive host.",
+   "s": "Plasmodium: life cycle",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-090",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Malignant tertian malaria is caused by",
+   "o": [
+    "Plasmodium vivax",
+    "Plasmodium malariae",
+    "Plasmodium falciparum",
+    "Plasmodium ovale"
+   ],
+   "a": 2,
+   "x": "P. falciparum causes the most dangerous (malignant, cerebral) malaria; infected RBCs stick in brain capillaries. P. vivax causes benign tertian malaria.",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zooB-091",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Quartan malaria, with fever every 72 hours, is caused by",
+   "o": [
+    "Plasmodium vivax",
+    "Plasmodium falciparum",
+    "Plasmodium ovale",
+    "Plasmodium malariae"
+   ],
+   "a": 3,
+   "x": "The erythrocytic cycle of P. malariae takes 72 hours, so fever recurs on the fourth day (quartan).",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zooB-092",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Sporozoites injected by a mosquito first enter the human",
+   "o": [
+    "Liver cells",
+    "Red blood cells",
+    "White blood cells",
+    "Spleen cells"
+   ],
+   "a": 0,
+   "x": "Sporozoites reach the liver within about half an hour and multiply there (pre-erythrocytic schizogony) before merozoites invade RBCs.",
+   "trap": "Students say RBCs, but the RBC stage comes only after the liver stage.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-093",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Haemozoin in the malarial cycle is",
+   "o": [
+    "An infective stage injected by the mosquito",
+    "A toxic pigment formed when the parasite digests haemoglobin",
+    "An enzyme in mosquito saliva",
+    "An antibody made against Plasmodium"
+   ],
+   "a": 1,
+   "x": "The trophozoite digests haemoglobin and leaves haemozoin. It is released with merozoites when RBCs burst and contributes to the chill and fever.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-094",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The early trophozoite of Plasmodium inside an RBC, with a large vacuole pushing the nucleus to one side, is the",
+   "o": [
+    "Schizont",
+    "Gametocyte",
+    "Signet ring stage",
+    "Ookinete"
+   ],
+   "a": 2,
+   "x": "The young trophozoite looks like a signet ring: a ring of cytoplasm with a nucleus as the 'stone'. It grows into a schizont that divides into merozoites.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-095",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Schüffner's dots are seen in red blood cells infected by",
+   "o": [
+    "Plasmodium falciparum",
+    "Plasmodium malariae",
+    "Leishmania donovani",
+    "Plasmodium vivax"
+   ],
+   "a": 3,
+   "x": "Infected RBCs of P. vivax become enlarged and show red Schüffner's dots. Falciparum shows Maurer's clefts and malariae Ziemann's dots.",
+   "s": "Plasmodium: structure and habitat"
+  },
+  {
+   "id": "zooB-096",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The motile, worm-like zygote of Plasmodium formed in the mosquito's stomach is the",
+   "o": [
+    "Ookinete",
+    "Oocyst",
+    "Sporozoite",
+    "Merozoite"
+   ],
+   "a": 0,
+   "x": "After fertilisation in the mosquito's stomach, the zygote elongates into a motile ookinete that bores into the stomach wall and becomes an oocyst.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-097",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In the mosquito, the oocyst of Plasmodium develops on the",
+   "o": [
+    "Salivary glands",
+    "Outer wall of the stomach",
+    "Malpighian tubules",
+    "Inner lining of the proboscis"
+   ],
+   "a": 1,
+   "x": "The ookinete crosses the stomach wall and rounds up as an oocyst under its outer membrane; sporozoites formed inside then travel to the salivary glands.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-098",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Sporozoites of Plasmodium are stored in the mosquito's",
+   "o": [
+    "Stomach",
+    "Haemocoel only",
+    "Salivary glands",
+    "Ovaries"
+   ],
+   "a": 2,
+   "x": "Sporozoites released from the oocyst move through the haemolymph to the salivary glands and are injected when the mosquito bites.",
+   "s": "Plasmodium: life cycle",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-099",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "The asexual multiplication of Plasmodium inside the oocyst in the mosquito is called",
+   "o": [
+    "Schizogony",
+    "Gametogony",
+    "Binary fission",
+    "Sporogony"
+   ],
+   "a": 3,
+   "x": "In man asexual multiplication is schizogony (liver and RBC). In the mosquito, the oocyst nucleus divides repeatedly to form thousands of sporozoites: sporogony.",
+   "s": "Plasmodium: life cycle",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-100",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The malarial parasite was first observed in human blood by",
+   "o": [
+    "Charles Laveran",
+    "Ronald Ross",
+    "Robert Koch",
+    "Louis Pasteur"
+   ],
+   "a": 0,
+   "x": "Laveran saw Plasmodium in a malaria patient's blood in 1880. Ronald Ross later found its stages in the mosquito.",
+   "trap": "Ronald Ross is famous for malaria, but for mosquito transmission.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-101",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Who proved that malaria is transmitted by mosquitoes?",
+   "o": [
+    "Charles Laveran",
+    "Ronald Ross",
+    "Edward Jenner",
+    "Robert Koch"
+   ],
+   "a": 1,
+   "x": "Ronald Ross (1897) found Plasmodium oocysts in the stomach of an Anopheles mosquito and won the Nobel Prize in 1902.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-102",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Relapse of vivax malaria months after apparent cure is due to",
+   "o": [
+    "Gametocytes remaining in blood",
+    "Merozoites hiding in the spleen",
+    "Dormant hypnozoites in liver cells",
+    "Reinfection by the same mosquito only"
+   ],
+   "a": 2,
+   "x": "In P. vivax (and ovale) some sporozoites stay dormant in the liver as hypnozoites; later they wake, release merozoites and cause relapse.",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zooB-103",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Gametocytes of Plasmodium are formed in",
+   "o": [
+    "The mosquito's stomach",
+    "The mosquito's salivary glands",
+    "Human liver cells only",
+    "Human red blood cells"
+   ],
+   "a": 3,
+   "x": "Some merozoites in RBCs develop into male and female gametocytes. They mature only when a female Anopheles sucks them up.",
+   "trap": "Gametes form in the mosquito, but gametocytes form in man.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-104",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Exflagellation, the formation of microgametes from the male gametocyte of Plasmodium, takes place in the",
+   "o": [
+    "Stomach of the mosquito",
+    "Human liver",
+    "Human red blood cells",
+    "Mosquito's salivary glands"
+   ],
+   "a": 0,
+   "x": "The cooler temperature and conditions in the mosquito's stomach trigger the male gametocyte to throw out several flagella-like microgametes.",
+   "s": "Plasmodium: life cycle",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-105",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In Pheretima, septal nephridia discharge their excretory fluid into the",
+   "o": [
+    "Exterior through body-wall pores",
+    "Intestine",
+    "Coelom only",
+    "Blood vessels"
+   ],
+   "a": 1,
+   "x": "Septal nephridia (on septa behind the 15th segment) open into the intestine through septal excretory canals: they are enteronephric, which helps conserve water.",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-106",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Which nephridia of Pheretima open directly to the outside on the body surface (exonephric)?",
+   "o": [
+    "Septal nephridia",
+    "Pharyngeal nephridia",
+    "Integumentary nephridia",
+    "Both septal and pharyngeal nephridia"
+   ],
+   "a": 2,
+   "x": "Tiny integumentary nephridia on the body wall open by nephridiopores on the skin. Septal and pharyngeal nephridia open into the gut (enteronephric).",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-107",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In Pheretima, the single female genital aperture lies on segment",
+   "o": [
+    "13",
+    "18",
+    "16",
+    "14"
+   ],
+   "a": 3,
+   "x": "One median female pore is on the ventral side of the 14th segment, inside the clitellum. Male pores are on the 18th.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-108",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The pair of male genital apertures of Pheretima is on segment",
+   "o": [
+    "18",
+    "14",
+    "16",
+    "8"
+   ],
+   "a": 0,
+   "x": "One pair of male genital pores lies ventrolaterally on the 18th segment, each on a small papilla.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-109",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Spermathecal openings of Pheretima are",
+   "o": [
+    "One pair on the 18th segment",
+    "Four pairs, in the grooves 5/6 to 8/9",
+    "Two pairs on segments 10 and 11",
+    "A single opening on the 14th segment"
+   ],
+   "a": 1,
+   "x": "Four pairs of spermathecal pores lie ventrolaterally in the intersegmental grooves between segments 5/6, 6/7, 7/8 and 8/9.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-110",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The muscular gizzard of Pheretima, which grinds soil and food, lies in segments",
+   "o": [
+    "14–16",
+    "18–19",
+    "8–9",
+    "26–27"
+   ],
+   "a": 2,
+   "x": "The thick-walled gizzard lies behind the oesophagus in segments 8–9. Segments 14–16 form the clitellum; the intestine starts after the stomach.",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-111",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In Pheretima, the typhlosole begins in segment",
+   "o": [
+    "14",
+    "8",
+    "18",
+    "26"
+   ],
+   "a": 3,
+   "x": "The typhlosole is a dorsal fold of the intestine from the 26th segment backwards; it increases absorptive area. Intestinal caeca also arise in segment 26.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-112",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The respiratory pigment of earthworm is",
+   "o": [
+    "Haemoglobin dissolved in plasma",
+    "Haemoglobin inside red blood corpuscles",
+    "Haemocyanin in plasma",
+    "Chlorocruorin in corpuscles"
+   ],
+   "a": 0,
+   "x": "Earthworm blood is red because haemoglobin is dissolved in the plasma; its corpuscles are colourless.",
+   "trap": "Red blood suggests RBCs, but earthworm corpuscles are colourless.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-113",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "The hearts of Pheretima are",
+   "o": [
+    "Two pairs, in segments 12 and 13",
+    "Four pairs, in segments 7, 9, 12 and 13",
+    "Four pairs, in segments 10, 11, 12 and 13",
+    "Eight pairs, in segments 5 to 12"
+   ],
+   "a": 1,
+   "x": "Pheretima has 4 pairs of hearts: lateral hearts in 7 and 9 and lateral-oesophageal hearts in 12 and 13; they pump blood into the ventral vessel.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-114",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In the dorsal blood vessel of the earthworm, blood flows",
+   "o": [
+    "From anterior to posterior",
+    "Both ways alternately",
+    "From posterior to anterior",
+    "Only during locomotion"
+   ],
+   "a": 2,
+   "x": "The dorsal vessel has valves and pumps blood forward; the ventral vessel carries blood backwards. Circulation is closed.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-115",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Gaseous exchange in the earthworm occurs through its",
+   "o": [
+    "Gills",
+    "Lungs",
+    "Tracheae",
+    "Moist body wall (skin)"
+   ],
+   "a": 3,
+   "x": "Earthworms have no respiratory organs; O₂ dissolves in the mucus-moist skin and diffuses into the dense capillary network.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-116",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Although the earthworm is hermaphrodite, cross-fertilisation occurs because it is",
+   "o": [
+    "Protandrous (testes mature before ovaries)",
+    "Protogynous (ovaries mature first)",
+    "Parthenogenetic",
+    "Unisexual in the breeding season"
+   ],
+   "a": 0,
+   "x": "In Pheretima the male organs mature first (protandry), so sperm of one worm must fertilise eggs of another.",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-117",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Testes of Pheretima are",
+   "o": [
+    "One pair, in segment 13",
+    "Two pairs, in segments 10 and 11",
+    "Two pairs, in segments 14 and 15",
+    "Four pairs, in segments 5 to 8"
+   ],
+   "a": 1,
+   "x": "Two pairs of testes lie in testis sacs in segments 10 and 11; one pair of ovaries lies in segment 13.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-118",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Development in the earthworm is",
+   "o": [
+    "Indirect, through a trochophore larva",
+    "Indirect, through a tadpole larva",
+    "Direct, inside a cocoon, with no larval stage",
+    "Direct, with free-swimming young"
+   ],
+   "a": 2,
+   "x": "The clitellum secretes a cocoon in which fertilisation and direct development occur; young worms hatch without a larva.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-119",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Using earthworms to convert organic waste into manure is called",
+   "o": [
+    "Apiculture",
+    "Sericulture",
+    "Pisciculture",
+    "Vermicomposting"
+   ],
+   "a": 3,
+   "x": "Earthworms eat organic matter and release nutrient-rich castings (vermicompost); they also loosen and aerate soil, so they are called friends of farmers.",
+   "s": "Earthworm (Pheretima): economic importance"
+  },
+  {
+   "id": "zooB-120",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In Pheretima, setae are absent from",
+   "o": [
+    "The first segment, last segment and clitellum",
+    "All segments behind the clitellum",
+    "Segments 5 to 9 only",
+    "Every segment"
+   ],
+   "a": 0,
+   "x": "S-shaped setae form a ring in each segment except the first, the last and the clitellar segments 14–16.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-121",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "The cerebral (suprapharyngeal) ganglia of Pheretima lie in segment",
+   "o": [
+    "1",
+    "3",
+    "14",
+    "18"
+   ],
+   "a": 1,
+   "x": "A pair of cerebral ganglia lies dorsal to the pharynx in segment 3 and joins the subpharyngeal ganglia by a nerve ring.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-122",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Which chamber acts as the pacemaker in the frog's heart?",
+   "o": [
+    "Right auricle",
+    "Ventricle",
+    "Sinus venosus",
+    "Truncus arteriosus"
+   ],
+   "a": 2,
+   "x": "The frog heart has a dorsal sinus venosus where the heartbeat starts. In man it is absent as a chamber; its remnant forms the SA node in the right atrium.",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-123",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The loud croaking of the male frog is due to",
+   "o": [
+    "Nuptial pads",
+    "Tympanum",
+    "Eustachian tubes",
+    "Vocal sacs"
+   ],
+   "a": 3,
+   "x": "Male frogs have vocal sacs that act as resonators and amplify the croak during the breeding season. Females lack them.",
+   "s": "Frog (Rana): morphology",
+   "yrs": [
+    2079,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooB-124",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "During hibernation, the frog respires only through its",
+   "o": [
+    "Skin",
+    "Lungs",
+    "Buccopharyngeal lining",
+    "Gills"
+   ],
+   "a": 0,
+   "x": "In hibernation the frog lies inactive in mud, so lung and buccal breathing stop; the moist, vascular skin alone exchanges gases (cutaneous respiration).",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-125",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Air is forced into the lungs of a frog by",
+   "o": [
+    "Contraction of a diaphragm",
+    "Raising the floor of the buccal cavity with the nostrils closed",
+    "Movement of ribs and intercostal muscles",
+    "Contraction of muscles in the lung wall"
+   ],
+   "a": 1,
+   "x": "Frogs have no diaphragm and no ribs. They fill the mouth with air, close the nostrils and lift the buccal floor, pushing air into the lungs (positive pressure).",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-126",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "A young tadpole respires mainly through its",
+   "o": [
+    "Lungs",
+    "Buccal cavity",
+    "Gills",
+    "Tracheae"
+   ],
+   "a": 2,
+   "x": "The aquatic tadpole first has external gills, then internal gills; lungs develop during metamorphosis.",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2078
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-127",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "A frog takes in water mainly",
+   "o": [
+    "By drinking with its mouth",
+    "Through its cloaca only",
+    "Through its gills",
+    "Through its skin"
+   ],
+   "a": 3,
+   "x": "Frogs do not drink water; the permeable skin absorbs it.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-128",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Nuptial (copulatory) pads that help the male frog hold the female in amplexus are on the",
+   "o": [
+    "First finger of the forelimb",
+    "Fifth toe of the hindlimb",
+    "Lower jaw",
+    "Back of the head"
+   ],
+   "a": 0,
+   "x": "In the breeding season the male develops a swollen pad on the first digit of each forelimb to grip the female.",
+   "s": "Frog (Rana): morphology",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-129",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "The single ear ossicle of the frog is",
+   "o": [
+    "Malleus",
+    "Columella auris",
+    "Incus",
+    "Malleus, incus and stapes"
+   ],
+   "a": 1,
+   "x": "Frogs have no external ear; the tympanum passes vibrations through one rod-like ossicle, the columella auris, to the inner ear. Mammals have three ossicles.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-130",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Which statement about the frog's teeth is correct?",
+   "o": [
+    "Teeth are present on both jaws",
+    "Teeth are absent on both jaws",
+    "Teeth are present on the upper jaw but absent on the lower jaw",
+    "Teeth are present only on the lower jaw"
+   ],
+   "a": 2,
+   "x": "Frogs have maxillary and vomerine teeth in the upper jaw only; they hold prey and do not chew.",
+   "s": "Frog (Rana): morphology"
+  },
+  {
+   "id": "zooB-131",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The frog's tongue is",
+   "o": [
+    "Bifid, free in front and attached behind",
+    "Non-bifid, fully attached",
+    "Absent",
+    "Bifid, attached in front and free behind"
+   ],
+   "a": 3,
+   "x": "The sticky bilobed tongue is attached at the front of the lower jaw, so it can be flicked out to catch insects.",
+   "s": "Frog (Rana): morphology"
+  },
+  {
+   "id": "zooB-132",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In the male frog, the duct that carries both urine and sperm is the",
+   "o": [
+    "Ureter (urinogenital duct)",
+    "Vas deferens only",
+    "Bidder's canal",
+    "Urethra"
+   ],
+   "a": 0,
+   "x": "Sperm pass from testes through vasa efferentia into the kidney and then the ureter, so the male ureter is a urinogenital duct opening into the cloaca.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-133",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Fat bodies attached to the gonads of the frog",
+   "o": [
+    "Produce sex hormones",
+    "Store food used during hibernation",
+    "Form red blood cells",
+    "Secrete digestive enzymes"
+   ],
+   "a": 1,
+   "x": "Yellow finger-like fat bodies store fat that is used up during hibernation and gamete formation.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-134",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "Which of the following is present in the frog but absent in man?",
+   "o": [
+    "Hepatic portal system",
+    "Pulmonary veins",
+    "Renal portal system",
+    "Postcaval (inferior vena cava)"
+   ],
+   "a": 2,
+   "x": "In frogs, blood from the hind limbs passes through the kidneys via the renal portal vein. Mammals have no renal portal system; both have a hepatic portal system.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-135",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The vertebral column of the frog consists of",
+   "o": [
+    "12 vertebrae with ribs",
+    "9 vertebrae with ribs",
+    "33 vertebrae and a coccyx",
+    "9 vertebrae and a urostyle, with no ribs"
+   ],
+   "a": 3,
+   "x": "A frog has 9 vertebrae followed by a rod-like urostyle; ribs are absent.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-136",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Red blood cells of the frog are",
+   "o": [
+    "Oval, biconvex and nucleated",
+    "Circular, biconcave and non-nucleated",
+    "Oval and non-nucleated",
+    "Irregular and colourless"
+   ],
+   "a": 0,
+   "x": "Frog RBCs are large, oval and nucleated. Mammalian RBCs are non-nucleated.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-137",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Metamorphosis of a tadpole into a frog is controlled by",
+   "o": [
+    "Insulin",
+    "Thyroxine",
+    "Adrenaline",
+    "Ecdysone"
+   ],
+   "a": 1,
+   "x": "Thyroxine from the thyroid triggers tail resorption, limb growth and lung development; without iodine/thyroxine, tadpoles fail to metamorphose. Ecdysone controls insect moulting.",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-138",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The number of pairs of cranial nerves in the frog is",
+   "o": [
+    "12",
+    "8",
+    "10",
+    "31"
+   ],
+   "a": 2,
+   "x": "Frogs have 10 pairs of cranial nerves; man has 12. 31 pairs is the number of human spinal nerves.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-139",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The winter sleep of the frog is called",
+   "o": [
+    "Aestivation",
+    "Metamorphosis",
+    "Amplexus",
+    "Hibernation"
+   ],
+   "a": 3,
+   "x": "Frogs burrow into mud and become inactive in winter (hibernation); summer sleep is aestivation.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-140",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In the frog, the pulmocutaneous arch supplies blood to the",
+   "o": [
+    "Lungs and skin",
+    "Head and brain",
+    "Body and limbs",
+    "Heart wall only"
+   ],
+   "a": 0,
+   "x": "The truncus arteriosus gives three arches on each side: carotid (head), systemic (body) and pulmocutaneous (lungs and skin, where blood is oxygenated).",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-141",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "Movement of Euglena towards light is an example of",
+   "o": [
+    "Negative phototaxis",
+    "Positive phototaxis",
+    "Positive chemotaxis",
+    "Reflex action"
+   ],
+   "a": 1,
+   "x": "Taxis is directional movement of a whole motile organism in response to a stimulus; towards light is positive phototaxis.",
+   "s": "Animal behavior: Taxis"
+  },
+  {
+   "id": "zooB-142",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "A simple reflex action such as the knee jerk is controlled by the",
+   "o": [
+    "Cerebrum",
+    "Cerebellum",
+    "Spinal cord",
+    "Hypothalamus"
+   ],
+   "a": 2,
+   "x": "In a reflex arc, the impulse passes from receptor to spinal cord to effector without needing the brain, so the response is quick and automatic.",
+   "s": "Animal behavior: Reflex actions"
+  },
+  {
+   "id": "zooB-143",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "Fishes such as salmon that migrate from the sea to rivers to spawn are called",
+   "o": [
+    "Catadromous",
+    "Oceanodromous",
+    "Potamodromous",
+    "Anadromous"
+   ],
+   "a": 3,
+   "x": "Anadromous fishes (salmon, hilsa) breed in fresh water and live in the sea. Catadromous fishes (eel) do the reverse.",
+   "s": "Animal behavior: Migration"
+  },
+  {
+   "id": "zooB-144",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "A high BOD (biochemical oxygen demand) of a water sample indicates",
+   "o": [
+    "Heavy pollution by organic matter",
+    "Very clean water",
+    "Low numbers of microbes",
+    "High dissolved oxygen"
+   ],
+   "a": 0,
+   "x": "BOD is the O₂ microbes need to decompose organic matter. More sewage gives more microbial activity, higher BOD and less dissolved O₂ for fish.",
+   "s": "Environmental pollution: Water pollution"
+  },
+  {
+   "id": "zooB-145",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "Through biomagnification, DDT reaches its highest concentration in",
+   "o": [
+    "Phytoplankton",
+    "Fish-eating birds at the top of the food chain",
+    "Zooplankton",
+    "Water of the lake"
+   ],
+   "a": 1,
+   "x": "DDT is fat-soluble and not excreted, so its concentration increases at each trophic level; top carnivores like fish-eating birds get thin-shelled eggs.",
+   "s": "Pesticides"
+  },
+  {
+   "id": "zooB-146",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "Excess nitrates and phosphates in a lake cause algal blooms. This is called",
+   "o": [
+    "Biomagnification",
+    "Acid rain",
+    "Eutrophication",
+    "Desertification"
+   ],
+   "a": 2,
+   "x": "Nutrient enrichment (from fertiliser runoff and sewage) causes algal blooms; their decay uses up oxygen and kills fish.",
+   "s": "Environmental pollution: Water pollution"
+  },
+  {
+   "id": "zooB-147",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "Minamata disease is caused by poisoning with",
+   "o": [
+    "Cadmium",
+    "Lead",
+    "Arsenic",
+    "Mercury"
+   ],
+   "a": 3,
+   "x": "Methyl mercury from factory waste in Minamata Bay, Japan, accumulated in fish and damaged the nervous system of people who ate them. Cadmium causes itai-itai.",
+   "s": "Environmental pollution: Water pollution"
+  },
+  {
+   "id": "zooB-148",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "Acid rain is mainly caused by",
+   "o": [
+    "Sulphur dioxide and oxides of nitrogen",
+    "Carbon monoxide and methane",
+    "Ozone and oxygen",
+    "Chlorofluorocarbons"
+   ],
+   "a": 0,
+   "x": "SO₂ and NOₓ from burning fossil fuels dissolve in rain to form H₂SO₄ and HNO₃.",
+   "s": "Environmental pollution: Air pollution"
+  },
+  {
+   "id": "zooB-149",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "Depletion of the stratospheric ozone layer is mainly caused by",
+   "o": [
+    "Carbon dioxide",
+    "Chlorofluorocarbons (CFCs)",
+    "Sulphur dioxide",
+    "Water vapour"
+   ],
+   "a": 1,
+   "x": "UV light releases chlorine atoms from CFCs; each chlorine atom destroys many ozone molecules.",
+   "trap": "CO₂ causes global warming, not ozone depletion.",
+   "s": "Environmental pollution: Air pollution"
+  },
+  {
+   "id": "zooB-150",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "The flight membrane of a bat, stretched between elongated fingers, body and hind limbs, is the",
+   "o": [
+    "Pinna",
+    "Keel",
+    "Patagium",
+    "Marsupium"
+   ],
+   "a": 2,
+   "x": "Bats are the only true flying (volant) mammals; the skin fold called the patagium forms the wing.",
+   "s": "Adaptations: Volant"
+  },
+  {
+   "id": "zooB-151",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "Which of the following is NOT an adaptation of birds for flight?",
+   "o": [
+    "Keel on the sternum",
+    "Pneumatic bones",
+    "Absence of urinary bladder",
+    "Heavy, solid bones filled with marrow"
+   ],
+   "a": 3,
+   "x": "Flight needs low weight and strong muscles: hollow air-filled bones, a keel for flight muscles and no urinary bladder all reduce weight.",
+   "s": "Adaptations: Volant"
+  },
+  {
+   "id": "zooB-152",
+   "topic": "zoo-environment",
+   "d": 3,
+   "q": "The desert kangaroo rat can live without drinking water because it",
+   "o": [
+    "Uses metabolic water and excretes very concentrated urine",
+    "Stores water in a hump",
+    "Absorbs water through its skin",
+    "Feeds only on juicy fruits"
+   ],
+   "a": 0,
+   "x": "It obtains water from oxidation of food (metabolic water), has long loops of Henle for concentrated urine and stays in burrows by day.",
+   "s": "Adaptations: Terrestrial"
+  },
+  {
+   "id": "zooB-153",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "The lateral line system of fishes helps them to",
+   "o": [
+    "Breathe in water",
+    "Detect water currents and vibrations",
+    "Excrete ammonia",
+    "Digest food"
+   ],
+   "a": 1,
+   "x": "Lateral line sense organs detect pressure changes and vibrations in water, helping in orientation and avoiding enemies.",
+   "s": "Adaptations: Aquatic"
+  },
+  {
+   "id": "zooB-154",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "Animals such as cats and dogs that walk on their toes are called",
+   "o": [
+    "Plantigrade",
+    "Unguligrade",
+    "Digitigrade",
+    "Volant"
+   ],
+   "a": 2,
+   "x": "Digitigrade animals walk on their digits with the heel raised, which helps fast running. Man and bear are plantigrade; horse and deer (hoofs) are unguligrade.",
+   "s": "Adaptations: Terrestrial",
+   "yrs": [
+    2079
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-155",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "Nepal's first Ramsar site, listed in 1987, is",
+   "o": [
+    "Rara Lake",
+    "Gokyo Lakes",
+    "Ghodaghodi Lake",
+    "Koshi Tappu"
+   ],
+   "a": 3,
+   "x": "Koshi Tappu became Nepal's first wetland of international importance under the Ramsar Convention in 1987.",
+   "s": "Conservation biology: Ramsar sites"
+  },
+  {
+   "id": "zooB-156",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "The Ramsar Convention (1971) is an international treaty for the conservation of",
+   "o": [
+    "Wetlands",
+    "Ozone layer",
+    "Trade in endangered species",
+    "Mountains"
+   ],
+   "a": 0,
+   "x": "Signed at Ramsar, Iran, in 1971, it protects wetlands of international importance, especially as waterbird habitat.",
+   "s": "Conservation biology: Ramsar sites"
+  },
+  {
+   "id": "zooB-157",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "The concept of 'biodiversity hotspots' was introduced by",
+   "o": [
+    "E.O. Wilson",
+    "Norman Myers",
+    "Charles Elton",
+    "Walter G. Rosen"
+   ],
+   "a": 1,
+   "x": "Norman Myers (1988) defined hotspots as regions with very high endemism under severe threat. Nepal is part of the Himalaya hotspot.",
+   "s": "Conservation biology: Hotspots"
+  },
+  {
+   "id": "zooB-158",
+   "topic": "zoo-environment",
+   "d": 1,
+   "q": "The Red Data Book of threatened species is published by",
+   "o": [
+    "UNEP",
+    "WWF",
+    "IUCN",
+    "FAO"
+   ],
+   "a": 2,
+   "x": "The IUCN Red List classifies species as Extinct, Critically Endangered, Endangered, Vulnerable, etc.",
+   "s": "Conservation biology: IUCN categories"
+  },
+  {
+   "id": "zooB-159",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "In the IUCN Red List, the gharial (Gavialis gangeticus) is categorised as",
+   "o": [
+    "Vulnerable",
+    "Least Concern",
+    "Extinct in the Wild",
+    "Critically Endangered"
+   ],
+   "a": 3,
+   "x": "Gharial numbers are very low; Nepal breeds and releases them from the gharial breeding centre in Chitwan.",
+   "s": "Conservation biology: Endangered species of Nepal"
+  },
+  {
+   "id": "zooB-160",
+   "topic": "zoo-environment",
+   "d": 3,
+   "q": "Koshi Tappu in Nepal was established mainly to protect the",
+   "o": [
+    "Wild water buffalo (arna)",
+    "One-horned rhinoceros",
+    "Snow leopard",
+    "Blackbuck"
+   ],
+   "a": 0,
+   "x": "Koshi Tappu, on the Koshi floodplain, protects the last population of wild water buffalo (arna) in Nepal and many waterbirds.",
+   "s": "Conservation biology: Protected areas"
+  },
+  {
+   "id": "zooB-161",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "The blackbuck in Nepal is conserved at",
+   "o": [
+    "Koshi Tappu, Sunsari",
+    "Khairapur, Bardiya",
+    "Sagarmatha, Solukhumbu",
+    "Rara, Mugu"
+   ],
+   "a": 1,
+   "x": "The Blackbuck Conservation Area at Khairapur, Bardiya protects Nepal's only population of blackbuck (krishnasar).",
+   "s": "Conservation biology: Endangered species of Nepal"
+  },
+  {
+   "id": "zooB-162",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Which feature is found in modern man but NOT in apes?",
+   "o": [
+    "Opposable thumbs",
+    "A menstrual cycle",
+    "A prominent chin",
+    "Absence of an external tail"
+   ],
+   "a": 2,
+   "x": "A chin, large brain (about 1350 cc), S-shaped spine and habitual upright walking mark modern man. Apes also have opposable thumbs, menstrual cycles and no tail.",
+   "s": "Human evolution: From Ramapithecus to modern man",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-163",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "According to Darwin, complex organs develop over many generations mainly through",
+   "o": [
+    "Use and disuse of organs during an animal's life",
+    "Inheritance of characters acquired during life",
+    "Direct action of the environment creating needed organs",
+    "Natural selection of small favourable variations among overproduced offspring"
+   ],
+   "a": 3,
+   "x": "Darwin: overproduction → struggle for existence → variations → survival of the fittest → natural selection. Use and disuse and inheritance of acquired characters are Lamarck's ideas.",
+   "trap": "Use and disuse is Lamarckism, not Darwinism.",
+   "s": "Theories: Darwinism",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-164",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Amphids, a pair of small pits on the lips of Ascaris, are",
+   "o": [
+    "Chemoreceptors",
+    "Excretory pores",
+    "Photoreceptors",
+    "Copulatory spicules"
+   ],
+   "a": 0,
+   "x": "Amphids on the lateral lips sense chemicals; phasmids near the tail are also chemosensory. Spicules are male copulatory organs.",
+   "s": "Diagnostic features and classification: Aschelminthes",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-165",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The correct order of canal systems in sponges, from simplest to most complex, is",
+   "o": [
+    "Leucon → Sycon → Ascon",
+    "Ascon → Sycon → Leucon",
+    "Sycon → Ascon → Leucon",
+    "Ascon → Leucon → Sycon"
+   ],
+   "a": 1,
+   "x": "Ascon (e.g. Leucosolenia) has a single spongocoel lined by choanocytes; sycon (Scypha) has radial canals; leucon (Spongilla) has flagellated chambers and is the most complex.",
+   "s": "Diagnostic features and classification: Porifera",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-166",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The coelom of echinoderms such as Asterias, which makes them deuterostomes like chordates, arises from",
+   "o": [
+    "Splitting of mesodermal bands (schizocoelous coelom)",
+    "The persistent blastocoel (pseudocoelom)",
+    "Pouches of the archenteron (enterocoelous coelom)",
+    "Spaces between ectoderm cells"
+   ],
+   "a": 2,
+   "x": "Echinoderms are enterocoelous deuterostomes: the coelom buds off the archenteron and the blastopore becomes the anus. Annelids, arthropods and molluscs are schizocoelous.",
+   "s": "Diagnostic features and classification: Echinodermata",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooB-167",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "In birds, exchange of gases in the lungs takes place in the",
+   "o": [
+    "Air sacs",
+    "Alveoli",
+    "Trachea",
+    "Air capillaries of the parabronchi"
+   ],
+   "a": 3,
+   "x": "Air sacs act only as bellows that keep air flowing one way through the lungs; gases are exchanged in the air capillaries around the parabronchi. Birds have no alveoli.",
+   "trap": "Air sacs move and store air but have no gas exchange.",
+   "s": "Diagnostic features and classification: Aves",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-168",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The pecten, a comb-like vascular structure in the eye that nourishes the retina, is characteristic of",
+   "o": [
+    "Birds",
+    "Fishes",
+    "Amphibians",
+    "Mammals"
+   ],
+   "a": 0,
+   "x": "The pecten projects from the retina into the vitreous humour of birds and supplies nutrients and oxygen to the retina.",
+   "s": "Diagnostic features and classification: Aves",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-169",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Moulting (ecdysis) in insects is mainly brought about by the hormone",
+   "o": [
+    "Juvenile hormone",
+    "Ecdysone",
+    "Thyroxine",
+    "Insulin"
+   ],
+   "a": 1,
+   "x": "Ecdysone from the prothoracic glands starts each moult. Juvenile hormone only decides whether the moult gives another larva or the adult.",
+   "trap": "Juvenile hormone controls the type of moult, not the moult itself.",
+   "s": "Diagnostic features and classification: Arthropoda",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-170",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The larva is bilaterally symmetrical but the adult becomes asymmetrical due to torsion in",
+   "o": [
+    "Bivalvia (e.g. Unio)",
+    "Cephalopoda (e.g. Sepia)",
+    "Gastropoda (e.g. Pila)",
+    "Echinodermata (e.g. Asterias)"
+   ],
+   "a": 2,
+   "x": "During development gastropods undergo torsion (180° twisting of the visceral mass), making the adult asymmetrical. Asterias adults are radially, not asymmetrically, built.",
+   "s": "Diagnostic features and classification: Mollusca",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-171",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Periodic reversal of the direction of blood flow, as the heart's peristaltic wave reverses, is seen in",
+   "o": [
+    "Amphioxus",
+    "Asterias",
+    "Scoliodon",
+    "Herdmania"
+   ],
+   "a": 3,
+   "x": "The tubular heart of the urochordate Herdmania pumps by peristalsis whose direction reverses every few minutes, so blood flow reverses too.",
+   "s": "Diagnostic features and classification: Urochordata",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-172",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Totipotent cells that bring about regeneration in flatworms such as Planaria are",
+   "o": [
+    "Neoblasts",
+    "Archaeocytes",
+    "Interstitial cells",
+    "Flame cells"
+   ],
+   "a": 0,
+   "x": "Neoblasts of Planaria can form any cell type. Archaeocytes are the totipotent cells of sponges, interstitial cells those of Hydra; flame cells are excretory.",
+   "s": "Diagnostic features and classification: Platyhelminthes",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-173",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Electric organs that can give a strong electric shock are found in",
+   "o": [
+    "Scoliodon (dogfish)",
+    "Torpedo (electric ray)",
+    "Hippocampus (sea horse)",
+    "Rhincodon (whale shark)"
+   ],
+   "a": 1,
+   "x": "Torpedo has electric organs made of modified muscle that stun prey and enemies.",
+   "s": "Diagnostic features and classification: Chondrichthyes",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-174",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "A tetraneurous nervous system, with two pedal and two pleuro-visceral nerve cords, is found in primitive members of",
+   "o": [
+    "Annelida",
+    "Arthropoda",
+    "Mollusca",
+    "Platyhelminthes"
+   ],
+   "a": 2,
+   "x": "Primitive molluscs such as chitons have four longitudinal nerve cords (tetraneury). Annelids and arthropods have a ventral double nerve cord with ganglia; flatworms have a ladder-like system.",
+   "s": "Diagnostic features and classification: Mollusca",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-175",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Areolar connective tissue is found",
+   "o": [
+    "In tendons, joining muscle to bone",
+    "In ligaments, joining bone to bone",
+    "In the matrix of bone",
+    "Beneath the skin, joining it to the underlying muscles"
+   ],
+   "a": 3,
+   "x": "Areolar tissue is loose connective tissue that binds skin to muscles and surrounds vessels and nerves; tendons and ligaments are dense regular connective tissue.",
+   "s": "Connective tissue",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-176",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The ectocervix (vaginal part of the cervix), from which a Pap smear is taken, is lined like the vagina by",
+   "o": [
+    "Non-keratinised stratified squamous epithelium",
+    "Keratinised stratified squamous epithelium",
+    "Simple cuboidal epithelium",
+    "Transitional epithelium"
+   ],
+   "a": 0,
+   "x": "Moist surfaces facing wear (vagina, ectocervix, oesophagus, buccal cavity) have non-keratinised stratified squamous epithelium; keratinised type is on skin.",
+   "trap": "Keratinised epithelium is only on dry skin surfaces.",
+   "s": "Epithelial tissue",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-177",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The follicles of the thyroid gland are lined by",
+   "o": [
+    "Stratified squamous epithelium",
+    "Simple cuboidal epithelium",
+    "Pseudostratified columnar epithelium",
+    "Transitional epithelium"
+   ],
+   "a": 1,
+   "x": "Cube-like cells of simple cuboidal epithelium line thyroid follicles, kidney tubules and small gland ducts, for secretion and absorption.",
+   "s": "Epithelial tissue",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-178",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "Which of the following has the least capacity to regenerate in an adult?",
+   "o": [
+    "Liver cells",
+    "Epidermal cells of the skin",
+    "Neurons of the brain",
+    "Bone tissue"
+   ],
+   "a": 2,
+   "x": "Mature neurons cannot divide, so lost neurons are not replaced. Liver, epidermis and bone repair readily.",
+   "s": "Nervous tissue",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-179",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "When the body wall of an earthworm is pricked with a needle, a milky fluid oozes out. This fluid is",
+   "o": [
+    "Haemolymph",
+    "Water absorbed from the soil",
+    "Digestive juice of the intestine",
+    "Coelomic fluid"
+   ],
+   "a": 3,
+   "x": "The coelom is filled with milky coelomic fluid, which also comes out through dorsal pores to keep the skin moist. The earthworm has closed circulation, so no haemolymph.",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-180",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In Pheretima, a pair of intestinal caeca arises from the intestine in segment",
+   "o": [
+    "26",
+    "22",
+    "18",
+    "14"
+   ],
+   "a": 0,
+   "x": "The short conical intestinal caeca arise in segment 26 and extend forward to about segment 22; the typhlosole also begins in segment 26.",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-181",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The fold of mesentery that suspends the stomach of the frog is the",
+   "o": [
+    "Mesorchium",
+    "Mesogaster",
+    "Mesovarium",
+    "Mesorectum"
+   ],
+   "a": 1,
+   "x": "Mesogaster holds the stomach; mesorchium holds the testes, mesovarium the ovaries and mesorectum the rectum.",
+   "s": "Frog (Rana): body systems and physiology",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-182",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The end products of schizogony of Plasmodium, in human liver cells and red blood cells, are",
+   "o": [
+    "Sporozoites",
+    "Gametocytes",
+    "Merozoites",
+    "Ookinetes"
+   ],
+   "a": 2,
+   "x": "A schizont divides by multiple fission into many merozoites, which invade new RBCs. Sporozoites come from sporogony in the mosquito; the ookinete is the motile zygote.",
+   "s": "Plasmodium: life cycle",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-183",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Chloragogen cells of the earthworm are functionally comparable to the vertebrate",
+   "o": [
+    "Kidney",
+    "Lungs",
+    "Heart",
+    "Liver"
+   ],
+   "a": 3,
+   "x": "Chloragogen cells around the intestine store glycogen and fat, deaminate proteins to form ammonia and urea, and detoxify, like the liver.",
+   "s": "Earthworm (Pheretima): body systems and physiology",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-184",
+   "topic": "zoo-environment",
+   "d": 2,
+   "q": "'Two species with identical niches cannot coexist indefinitely in the same place.' This statement is",
+   "o": [
+    "Gause's competitive exclusion principle",
+    "Dollo's law of irreversibility",
+    "Allen's rule",
+    "Bergmann's rule"
+   ],
+   "a": 0,
+   "x": "Gause showed with Paramecium species that the better competitor eliminates the other. Dollo: evolution does not reverse; Allen and Bergmann: body form and size vary with climate.",
+   "s": "Conservation biology: Biodiversity",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-185",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Inside the human body, Plasmodium lives as an intracellular parasite in",
+   "o": [
+    "White blood cells and lymph nodes",
+    "Liver cells and red blood cells",
+    "Nerve cells and the brain only",
+    "Intestinal epithelium"
+   ],
+   "a": 1,
+   "x": "Sporozoites first multiply in hepatocytes (exo-erythrocytic cycle); merozoites then enter RBCs (erythrocytic cycle).",
+   "s": "Plasmodium: structure and habitat"
+  },
+  {
+   "id": "zooB-186",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The sporozoite of Plasmodium is",
+   "o": [
+    "Ring-shaped with a large vacuole",
+    "Oval with many flagella",
+    "Slender, sickle-shaped and uninucleate",
+    "Amoeboid with pseudopodia"
+   ],
+   "a": 2,
+   "x": "The sporozoite is a spindle- or sickle-shaped cell with one central nucleus and an apical complex; it moves by gliding.",
+   "trap": "The ring shape belongs to the early trophozoite in the RBC.",
+   "s": "Plasmodium: structure and habitat"
+  },
+  {
+   "id": "zooB-187",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The apical complex at the front end of sporozoites and merozoites of Plasmodium helps the parasite to",
+   "o": [
+    "Swim in blood plasma",
+    "Digest haemoglobin",
+    "Form gametes",
+    "Penetrate host cells"
+   ],
+   "a": 3,
+   "x": "Secretory organelles of the apical complex (rhoptries, micronemes) release substances that let the parasite enter liver cells and RBCs; it gives the phylum its name, Apicomplexa.",
+   "s": "Plasmodium: structure and habitat"
+  },
+  {
+   "id": "zooB-188",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Plasmodium is called digenetic because it",
+   "o": [
+    "Completes its life cycle in two hosts, man and the female Anopheles",
+    "Reproduces only sexually",
+    "Has two nuclei in each cell",
+    "Causes two kinds of malaria"
+   ],
+   "a": 0,
+   "x": "Asexual schizogony occurs in man; gamete fusion and sporogony occur in the mosquito.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-189",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Fusion of the gametes of Plasmodium in the mosquito's stomach is",
+   "o": [
+    "Isogamy, between identical gametes",
+    "Anisogamy, between a small microgamete and a large macrogamete",
+    "Conjugation, with exchange of nuclei",
+    "Autogamy, within one cell"
+   ],
+   "a": 1,
+   "x": "The active microgamete (from exflagellation) fertilises the larger, passive macrogamete to form a zygote.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-190",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In the life cycle of Plasmodium, the only diploid stage is the",
+   "o": [
+    "Sporozoite",
+    "Merozoite",
+    "Zygote (ookinete)",
+    "Gametocyte"
+   ],
+   "a": 2,
+   "x": "All stages in man and the gametes are haploid. The zygote and ookinete are diploid; meiosis in the young oocyst restores the haploid state.",
+   "trap": "Gametocytes make gametes but are themselves haploid.",
+   "s": "Plasmodium: life cycle"
+  },
+  {
+   "id": "zooB-191",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Plasmodium ovale causes",
+   "o": [
+    "Malignant tertian malaria",
+    "Quartan malaria",
+    "Cerebral malaria",
+    "Mild (benign) tertian malaria"
+   ],
+   "a": 3,
+   "x": "P. ovale, like P. vivax, gives fever every 48 hours and can relapse from hypnozoites; it is milder than falciparum malaria.",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zooB-192",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Cerebral malaria and blackwater fever are complications typical of infection by",
+   "o": [
+    "Plasmodium falciparum",
+    "Plasmodium vivax",
+    "Plasmodium malariae",
+    "Plasmodium ovale"
+   ],
+   "a": 0,
+   "x": "Falciparum-infected RBCs stick to small vessels (blocking brain capillaries) and massive haemolysis can turn the urine dark (blackwater fever).",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zooB-193",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The antimalarial drug quinine is obtained from the bark of",
+   "o": [
+    "Neem",
+    "Cinchona",
+    "Eucalyptus",
+    "Artemisia"
+   ],
+   "a": 1,
+   "x": "Quinine is an alkaloid from Cinchona bark. Artemisinin, another antimalarial, comes from Artemisia annua leaves.",
+   "trap": "Artemisia gives artemisinin, not quinine.",
+   "s": "Plasmodium: malaria types"
+  },
+  {
+   "id": "zooB-194",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "In Pheretima, the fleshy lobe that overhangs the mouth on the first segment is the",
+   "o": [
+    "Peristomium",
+    "Clitellum",
+    "Prostomium",
+    "Pygidium"
+   ],
+   "a": 2,
+   "x": "The first segment, peristomium, bears the mouth; the prostomium above it is a sensory lobe that also helps in burrowing.",
+   "trap": "Peristomium is the first segment itself, not the lobe above the mouth.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-195",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The setae of the earthworm are",
+   "o": [
+    "Sensory hairs for touch",
+    "Openings of nephridia",
+    "Glandular structures that secrete the cocoon",
+    "S-shaped chitinous bristles that help in locomotion"
+   ],
+   "a": 3,
+   "x": "Setae in each segment (except first, last and clitellum) grip the soil as circular and longitudinal muscles contract alternately.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-196",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Dorsal pores of Pheretima begin from the intersegmental groove between segments",
+   "o": [
+    "12 and 13",
+    "1 and 2",
+    "5 and 6",
+    "14 and 15"
+   ],
+   "a": 0,
+   "x": "Mid-dorsal pores are present from the 12/13 groove backwards; coelomic fluid comes out through them to keep the skin moist.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-197",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Genital papillae of Pheretima are present on segments",
+   "o": [
+    "14 and 15",
+    "17 and 19",
+    "5 and 9",
+    "10 and 11"
+   ],
+   "a": 1,
+   "x": "One pair of genital papillae lies on each of segments 17 and 19, near the male genital apertures on segment 18; they help in copulation.",
+   "s": "Earthworm (Pheretima): morphology"
+  },
+  {
+   "id": "zooB-198",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Earthworms are called 'friends of farmers' mainly because they",
+   "o": [
+    "Eat crop-damaging insects",
+    "Fix atmospheric nitrogen",
+    "Burrow, loosen and aerate the soil and mix organic matter into it",
+    "Pollinate crops"
+   ],
+   "a": 2,
+   "x": "Burrowing improves drainage and aeration, and their castings return nutrients from deep soil, raising fertility.",
+   "s": "Earthworm (Pheretima): economic importance"
+  },
+  {
+   "id": "zooB-199",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Vermicast is",
+   "o": [
+    "A disease of earthworms",
+    "The cocoon of the earthworm",
+    "A chemical fertiliser",
+    "Nutrient-rich castings (excreta) of earthworms used as manure"
+   ],
+   "a": 3,
+   "x": "Organic waste passed through the earthworm gut comes out as fine castings rich in N, P, K and microbes.",
+   "s": "Earthworm (Pheretima): economic importance"
+  },
+  {
+   "id": "zooB-200",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "Blood glands of Pheretima, which produce blood cells and haemoglobin, are present in segments",
+   "o": [
+    "4, 5 and 6",
+    "7, 9, 12 and 13",
+    "10 and 11",
+    "26 onwards"
+   ],
+   "a": 0,
+   "x": "Blood glands lie on the dorsal side of the pharynx in segments 4–6. Hearts are in 7, 9, 12 and 13; testes in 10 and 11.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-201",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "The single pair of ovaries of Pheretima lies in segment",
+   "o": [
+    "10",
+    "13",
+    "14",
+    "18"
+   ],
+   "a": 1,
+   "x": "The ovaries hang from the septum between segments 12 and 13; oviducts open by the female pore on segment 14.",
+   "trap": "Segment 14 bears the female pore, not the ovaries.",
+   "s": "Earthworm (Pheretima): body systems and physiology"
+  },
+  {
+   "id": "zooB-202",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The skin of a frog stays moist and slimy because of secretions from its",
+   "o": [
+    "Sweat glands",
+    "Sebaceous glands",
+    "Mucous glands",
+    "Scales"
+   ],
+   "a": 2,
+   "x": "Mucous glands keep the skin moist for cutaneous respiration; frogs have no sweat glands and no scales.",
+   "s": "Frog (Rana): morphology"
+  },
+  {
+   "id": "zooB-203",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "The numbers of digits on the forelimb and hindlimb of the frog are",
+   "o": [
+    "5 and 5",
+    "5 and 4",
+    "3 and 5",
+    "4 and 5"
+   ],
+   "a": 3,
+   "x": "Forelimbs have four digits; hindlimbs have five webbed digits used for swimming and jumping.",
+   "s": "Frog (Rana): morphology"
+  },
+  {
+   "id": "zooB-204",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "Frogs are poikilothermic, which means",
+   "o": [
+    "Their body temperature changes with the temperature of the surroundings",
+    "They keep a constant body temperature",
+    "They have no blood vessels in the skin",
+    "They breathe only through lungs"
+   ],
+   "a": 0,
+   "x": "Cold-blooded frogs cannot regulate body temperature, so they hibernate in winter and aestivate in summer.",
+   "s": "Frog (Rana): morphology"
+  },
+  {
+   "id": "zooB-205",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In the frog, the eye is protected under water by the",
+   "o": [
+    "Tympanic membrane",
+    "Nictitating membrane",
+    "Vocal sac",
+    "Columella"
+   ],
+   "a": 1,
+   "x": "The thin, transparent nictitating membrane moves over the eye when the frog is in water. The tympanum is the eardrum behind the eye.",
+   "s": "Frog (Rana): morphology"
+  },
+  {
+   "id": "zooB-206",
+   "topic": "zoo-selected-animals",
+   "d": 1,
+   "q": "In the frog, the arterial arch that supplies blood to the head is the",
+   "o": [
+    "Systemic arch",
+    "Pulmocutaneous arch",
+    "Carotid arch",
+    "Renal portal vein"
+   ],
+   "a": 2,
+   "x": "The truncus arteriosus divides into carotid (head), systemic (body) and pulmocutaneous (lungs and skin) arches on each side.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-207",
+   "topic": "zoo-selected-animals",
+   "d": 3,
+   "q": "In the male frog, sperms reach the ureter after passing through the vasa efferentia and the",
+   "o": [
+    "Vas deferens",
+    "Seminal vesicle",
+    "Oviduct",
+    "Bidder's canal in the kidney"
+   ],
+   "a": 3,
+   "x": "Vasa efferentia from the testis enter the kidney and join Bidder's canal; from it sperms pass through uriniferous tubules to the ureter (urinogenital duct).",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-208",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In the frog brain, the paired optic lobes belong to the",
+   "o": [
+    "Midbrain",
+    "Forebrain",
+    "Hindbrain",
+    "Spinal cord"
+   ],
+   "a": 0,
+   "x": "The midbrain has two optic lobes concerned with vision. The forebrain has olfactory lobes and cerebral hemispheres; the hindbrain has cerebellum and medulla.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-209",
+   "topic": "zoo-selected-animals",
+   "d": 2,
+   "q": "In the frog, the glottis opens into the",
+   "o": [
+    "Oesophagus",
+    "Laryngo-tracheal chamber",
+    "Eustachian tube",
+    "Cloaca"
+   ],
+   "a": 1,
+   "x": "The glottis on the floor of the buccal cavity leads into a short laryngo-tracheal chamber that opens into the two lungs.",
+   "s": "Frog (Rana): body systems and physiology"
+  },
+  {
+   "id": "zooB-210",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The skin of reptiles is",
+   "o": [
+    "Moist and glandular",
+    "Covered with feathers",
+    "Dry, without glands, and covered with horny epidermal scales",
+    "Covered with placoid scales"
+   ],
+   "a": 2,
+   "x": "Keratinised scales and the lack of glands reduce water loss, letting reptiles live on dry land. Placoid scales belong to cartilaginous fishes.",
+   "s": "Diagnostic features and classification: Reptilia"
+  },
+  {
+   "id": "zooB-211",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "A wall lizard breaks off its tail when caught and later grows a new one. Shedding the tail in this way is",
+   "o": [
+    "Metamorphosis",
+    "Ecdysis",
+    "Metagenesis",
+    "Autotomy"
+   ],
+   "a": 3,
+   "x": "Autotomy is self-amputation of a body part to escape a predator; the lost tail is regenerated. Ecdysis is moulting of the skin.",
+   "s": "Diagnostic features and classification: Reptilia"
+  },
+  {
+   "id": "zooB-212",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Paired lateral flaps called parapodia, used for swimming, are found in",
+   "o": [
+    "Nereis",
+    "Pheretima",
+    "Hirudinaria",
+    "Ascaris"
+   ],
+   "a": 0,
+   "x": "Parapodia are characteristic of marine polychaetes like Nereis. Earthworms have only setae; leeches have neither.",
+   "s": "Diagnostic features and classification: Annelida"
+  },
+  {
+   "id": "zooB-213",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The excretory organs of annelids are",
+   "o": [
+    "Flame cells",
+    "Nephridia",
+    "Malpighian tubules",
+    "Green glands"
+   ],
+   "a": 1,
+   "x": "Segmentally arranged nephridia remove wastes. Flame cells: flatworms; Malpighian tubules: insects; green glands: prawn.",
+   "s": "Diagnostic features and classification: Annelida"
+  },
+  {
+   "id": "zooB-214",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "The non-cellular jelly-like layer between the outer and inner cell layers of Hydra is the",
+   "o": [
+    "Mesoderm",
+    "Mantle",
+    "Mesoglea",
+    "Pseudocoel"
+   ],
+   "a": 2,
+   "x": "Cnidarians are diploblastic: ectoderm and endoderm with mesoglea in between, not a true germ layer.",
+   "trap": "Mesoderm is a true third germ layer, absent in Cnidaria.",
+   "s": "Diagnostic features and classification: Cnidaria"
+  },
+  {
+   "id": "zooB-215",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Coral reefs are built mainly from",
+   "o": [
+    "Shells of molluscs",
+    "Silica spicules of sponges",
+    "Bones of fishes",
+    "The calcium carbonate skeletons of colonial coral polyps"
+   ],
+   "a": 3,
+   "x": "Coral polyps (class Anthozoa) secrete CaCO₃ skeletons that accumulate over thousands of years, e.g. the Great Barrier Reef.",
+   "s": "Diagnostic features and classification: Cnidaria"
+  },
+  {
+   "id": "zooB-216",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "Ctenophores capture prey with special adhesive cells called",
+   "o": [
+    "Colloblasts (lasso cells)",
+    "Cnidoblasts",
+    "Choanocytes",
+    "Flame cells"
+   ],
+   "a": 0,
+   "x": "Ctenophores lack cnidoblasts; sticky colloblasts on their tentacles trap small animals. Choanocytes belong to sponges.",
+   "trap": "Cnidoblasts belong to Cnidaria; ctenophores lack them.",
+   "s": "Diagnostic features and classification: Ctenophora"
+  },
+  {
+   "id": "zooB-217",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The short hollow outgrowth in the proboscis of Balanoglossus, once thought to be a notochord, is the",
+   "o": [
+    "Endostyle",
+    "Stomochord (buccal diverticulum)",
+    "Typhlosole",
+    "Spermatheca"
+   ],
+   "a": 1,
+   "x": "Because the stomochord is not a true notochord, hemichordates are now usually placed among non-chordates.",
+   "s": "Diagnostic features and classification: Hemichordata"
+  },
+  {
+   "id": "zooB-218",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "In urochordates such as Herdmania, the notochord is present",
+   "o": [
+    "Throughout life, from head to tail",
+    "Only in the adult",
+    "Only in the tail of the larva",
+    "In the head of the adult"
+   ],
+   "a": 2,
+   "x": "Hence the name Urochordata (uro = tail). The notochord is lost when the larva undergoes retrogressive metamorphosis.",
+   "s": "Diagnostic features and classification: Urochordata"
+  },
+  {
+   "id": "zooB-219",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "Which feature is ABSENT in cyclostomes such as Petromyzon?",
+   "o": [
+    "Notochord",
+    "Gill pouches",
+    "A circular suctorial mouth",
+    "Paired fins"
+   ],
+   "a": 3,
+   "x": "Cyclostomes are jawless vertebrates with a round sucking mouth, gill pouches and a persistent notochord, but no paired fins and no scales.",
+   "s": "Diagnostic features and classification: Cyclostomata"
+  },
+  {
+   "id": "zooB-220",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "Which pair of features belongs to a cartilaginous fish such as a shark?",
+   "o": [
+    "Placoid scales and no operculum",
+    "Cycloid scales and an operculum",
+    "A swim bladder and a terminal mouth",
+    "Ctenoid scales and a swim bladder"
+   ],
+   "a": 0,
+   "x": "Sharks have placoid scales, a ventral mouth, separate gill slits without an operculum and no swim bladder. Bony fishes have the other features.",
+   "s": "Diagnostic features and classification: Chondrichthyes"
+  },
+  {
+   "id": "zooB-221",
+   "topic": "zoo-diversity",
+   "d": 3,
+   "q": "The heart of a fish",
+   "o": [
+    "Has three chambers with mixed blood",
+    "Has two chambers and carries only deoxygenated blood",
+    "Has four chambers",
+    "Carries only oxygenated blood"
+   ],
+   "a": 1,
+   "x": "One atrium and one ventricle pump venous blood to the gills; oxygenated blood goes from gills to the body without returning to the heart (single circulation).",
+   "s": "Diagnostic features and classification: Pisces"
+  },
+  {
+   "id": "zooB-222",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The lateral line system of fishes detects",
+   "o": [
+    "Light",
+    "Smell",
+    "Vibrations and water currents",
+    "Taste"
+   ],
+   "a": 2,
+   "x": "Neuromasts in the lateral line canal sense water movement and pressure changes, helping fish find prey and avoid obstacles.",
+   "s": "Diagnostic features and classification: Pisces"
+  },
+  {
+   "id": "zooB-223",
+   "topic": "zoo-diversity",
+   "d": 2,
+   "q": "The voice box of birds, located where the trachea divides into bronchi, is the",
+   "o": [
+    "Larynx",
+    "Pecten",
+    "Crop",
+    "Syrinx"
+   ],
+   "a": 3,
+   "x": "Birds produce sound in the syrinx; their larynx has no vocal cords. The pecten is in the eye; the crop stores food.",
+   "trap": "Larynx is the voice box of mammals, not birds.",
+   "s": "Diagnostic features and classification: Aves"
+  },
+  {
+   "id": "zooB-224",
+   "topic": "zoo-diversity",
+   "d": 1,
+   "q": "Two features found only in mammals are",
+   "o": [
+    "Hair and mammary glands",
+    "Four-chambered heart and feathers",
+    "Scales and lungs",
+    "Notochord and gill slits"
+   ],
+   "a": 0,
+   "x": "Hair on the skin and milk-producing mammary glands are unique to mammals. Birds and crocodiles also have four-chambered hearts.",
+   "s": "Diagnostic features and classification: Mammalia"
+  },
+  {
+   "id": "zooB-225",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "A smooth muscle fibre is",
+   "o": [
+    "Cylindrical with many peripheral nuclei",
+    "Spindle-shaped with a single central nucleus",
+    "Branched with intercalated discs",
+    "Striated and voluntary"
+   ],
+   "a": 1,
+   "x": "Smooth fibres are unstriated, involuntary and uninucleate. Multinucleate cylinders are skeletal fibres; intercalated discs are in cardiac muscle.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-226",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The structural and functional unit of a myofibril, between two Z-lines, is the",
+   "o": [
+    "Sarcolemma",
+    "Sarcoplasm",
+    "Sarcomere",
+    "Myoglobin"
+   ],
+   "a": 2,
+   "x": "A sarcomere extends from one Z-line to the next; its shortening causes muscle contraction. Sarcolemma is the cell membrane of the fibre.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-227",
+   "topic": "zoo-tissues",
+   "d": 3,
+   "q": "The I-band of a skeletal muscle sarcomere contains",
+   "o": [
+    "Only thick (myosin) filaments",
+    "Both actin and myosin overlapping throughout",
+    "No filaments at all",
+    "Only thin (actin) filaments"
+   ],
+   "a": 3,
+   "x": "The light I-band has actin only and is bisected by the Z-line; the dark A-band spans the whole length of the myosin filaments.",
+   "s": "Muscular tissue"
+  },
+  {
+   "id": "zooB-228",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Sensory neurons of the dorsal root ganglion are",
+   "o": [
+    "Pseudo-unipolar",
+    "Bipolar",
+    "Multipolar",
+    "Apolar"
+   ],
+   "a": 0,
+   "x": "A single process leaves the cell body and divides into a peripheral and a central branch. Bipolar neurons are in the retina; motor neurons are multipolar.",
+   "s": "Nervous tissue"
+  },
+  {
+   "id": "zooB-229",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The myelin sheath of nerve fibres in the brain and spinal cord is formed by",
+   "o": [
+    "Schwann cells",
+    "Oligodendrocytes",
+    "Microglia",
+    "Astrocytes"
+   ],
+   "a": 1,
+   "x": "In the CNS, oligodendrocytes myelinate axons; Schwann cells do this only in peripheral nerves. Microglia are phagocytes; astrocytes support neurons.",
+   "trap": "Schwann cells form myelin only in the PNS.",
+   "s": "Nervous tissue",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "zooB-230",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The yellow fibres of areolar connective tissue are made of the protein",
+   "o": [
+    "Collagen",
+    "Keratin",
+    "Elastin",
+    "Ossein"
+   ],
+   "a": 2,
+   "x": "Yellow elastic fibres (elastin) are branched and stretchy; white fibres (collagen) are unbranched and tough.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-231",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "Bone cells that dissolve (resorb) bone matrix are",
+   "o": [
+    "Osteoblasts",
+    "Osteocytes",
+    "Chondrocytes",
+    "Osteoclasts"
+   ],
+   "a": 3,
+   "x": "Osteoblasts form new bone, osteocytes are mature cells in lacunae, and osteoclasts break bone down; together they remodel bone.",
+   "trap": "Osteoblasts build bone; they do not resorb it.",
+   "s": "Connective tissue"
+  },
+  {
+   "id": "zooB-232",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The smooth articular surfaces at the ends of long bones in movable joints are covered by",
+   "o": [
+    "Hyaline cartilage",
+    "Elastic cartilage",
+    "White fibrocartilage",
+    "Areolar tissue"
+   ],
+   "a": 0,
+   "x": "Glass-like hyaline cartilage reduces friction at joints. Elastic cartilage supports the pinna; fibrocartilage forms intervertebral discs.",
+   "s": "Connective tissue",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-233",
+   "topic": "zoo-tissues",
+   "d": 1,
+   "q": "The simple squamous epithelium lining the inside of blood vessels and the heart is called",
+   "o": [
+    "Mesothelium",
+    "Endothelium",
+    "Epidermis",
+    "Germinal epithelium"
+   ],
+   "a": 1,
+   "x": "Endothelium is a single layer of flat cells that lets materials pass easily. Mesothelium lines body cavities such as the pleura and peritoneum.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-234",
+   "topic": "zoo-tissues",
+   "d": 2,
+   "q": "The inner lining of the fallopian tube, which moves the ovum towards the uterus, is",
+   "o": [
+    "Stratified squamous epithelium",
+    "Transitional epithelium",
+    "Ciliated columnar epithelium",
+    "Simple squamous epithelium"
+   ],
+   "a": 2,
+   "x": "Beating cilia of the columnar cells, with muscular peristalsis, carry the ovum or embryo along the oviduct.",
+   "s": "Epithelial tissue"
+  },
+  {
+   "id": "zooB-235",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Close similarity in the amino acid sequence of cytochrome c in humans and chimpanzees is an example of",
+   "o": [
+    "Embryological evidence",
+    "Paleontological evidence",
+    "Evidence of acquired characters",
+    "Biochemical evidence of evolution"
+   ],
+   "a": 3,
+   "x": "Similar molecules (proteins, DNA) in related species point to common ancestry; the more closely related, the fewer the differences.",
+   "s": "Evidences of evolution: Biochemical"
+  },
+  {
+   "id": "zooB-236",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "Thyroxine taken from a mammal can bring about metamorphosis in a frog tadpole. This supports",
+   "o": [
+    "Common ancestry, shown by similar hormones in different vertebrates",
+    "Inheritance of acquired characters",
+    "Spontaneous generation",
+    "Special creation of each species"
+   ],
+   "a": 0,
+   "x": "Hormones are chemically alike and act alike across vertebrates, a biochemical (physiological) evidence of evolution.",
+   "s": "Evidences of evolution: Biochemical"
+  },
+  {
+   "id": "zooB-237",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "The age of fossils is commonly found by",
+   "o": [
+    "Counting the number of bones",
+    "Radioactive (radiometric) dating, such as the carbon-14 method",
+    "Measuring the colour of rocks",
+    "Comparing body size with living animals"
+   ],
+   "a": 1,
+   "x": "Unstable isotopes decay at a fixed rate (half-life), so their ratio in a fossil or rock gives its age; C-14 suits remains up to about 50 000 years.",
+   "s": "Evidences of evolution: Paleontological"
+  },
+  {
+   "id": "zooB-238",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Limulus (king crab) is called a 'living fossil' because it",
+   "o": [
+    "Is found only as fossils",
+    "Links annelids with arthropods",
+    "Has remained almost unchanged for hundreds of millions of years",
+    "Lives only in fossil-rich rocks"
+   ],
+   "a": 2,
+   "x": "Living fossils are present-day species closely resembling their ancient fossil ancestors, e.g. Limulus and Latimeria.",
+   "trap": "Peripatus, not Limulus, links annelids and arthropods.",
+   "s": "Evidences of evolution: Paleontological"
+  },
+  {
+   "id": "zooB-239",
+   "topic": "zoo-evolution",
+   "d": 3,
+   "q": "During development, the human heart passes through a two-chambered stage like that of a fish. This observation supports the",
+   "o": [
+    "Mutation theory",
+    "Theory of use and disuse",
+    "Theory of special creation",
+    "Recapitulation theory (biogenetic law)"
+   ],
+   "a": 3,
+   "x": "Haeckel's law: ontogeny recapitulates phylogeny; embryos repeat stages resembling ancestral forms, such as fish-like heart and gill pouches.",
+   "s": "Evidences of evolution: Embryological",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "zooB-240",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "Lamarck explained the long neck of the giraffe by",
+   "o": [
+    "Continuous stretching of the neck to reach leaves, passed on to the offspring",
+    "Natural selection of long-necked variants",
+    "A sudden large mutation",
+    "Isolation of giraffe populations"
+   ],
+   "a": 0,
+   "x": "Lamarck's use and disuse with inheritance of acquired characters. Darwin explained the same feature by natural selection of inborn variations.",
+   "trap": "Natural selection is Darwin's explanation, not Lamarck's.",
+   "s": "Theories: Lamarckism"
+  },
+  {
+   "id": "zooB-241",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Lamarck put forward his theory of evolution in the book",
+   "o": [
+    "Origin of Species (1859)",
+    "Philosophie Zoologique (1809)",
+    "Species Plantarum (1753)",
+    "Essay on the Principle of Population (1798)"
+   ],
+   "a": 1,
+   "x": "Origin of Species is Darwin's, Species Plantarum is Linnaeus's and the population essay is Malthus's.",
+   "s": "Theories: Lamarckism"
+  },
+  {
+   "id": "zooB-242",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "Balanoglossus is regarded as a connecting link between",
+   "o": [
+    "Reptiles and birds",
+    "Annelids and arthropods",
+    "Non-chordates and chordates",
+    "Fishes and amphibians"
+   ],
+   "a": 2,
+   "x": "This hemichordate has pharyngeal gill slits and a hollow dorsal nerve cord (chordate-like) but a tornaria larva like that of echinoderms.",
+   "s": "Evidences of evolution: Morphological"
+  },
+  {
+   "id": "zooB-243",
+   "topic": "zoo-evolution",
+   "d": 1,
+   "q": "J.B.S. Haldane described the primitive ocean, rich in organic molecules, as a",
+   "o": [
+    "Primordial ice sheet",
+    "Coacervate",
+    "Proteinoid microsphere",
+    "Hot dilute soup"
+   ],
+   "a": 3,
+   "x": "Haldane proposed that UV light acting on the reducing atmosphere made organic molecules that collected in the sea, forming a hot dilute soup.",
+   "s": "Origin of life: Oparin-Haldane theory"
+  },
+  {
+   "id": "zooB-244",
+   "topic": "zoo-evolution",
+   "d": 2,
+   "q": "The Miller–Urey experiment gave laboratory support to",
+   "o": [
+    "Abiotic synthesis of organic molecules from simple gases (chemical evolution)",
+    "Spontaneous generation of living cells",
+    "Origin of life from cosmic spores",
+    "Special creation"
+   ],
+   "a": 0,
+   "x": "Amino acids formed from CH₄, NH₃, H₂ and water vapour with electric sparks, as the Oparin–Haldane theory had predicted.",
+   "s": "Origin of life: Miller–Urey's experiment"
+  }
+ ]
+}

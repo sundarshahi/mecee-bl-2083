@@ -1,0 +1,2831 @@
+{
+ "subject": "MAT",
+ "topics": [
+  {
+   "id": "mat-verbal",
+   "name": "Verbal reasoning",
+   "weight": 5,
+   "concepts": [
+    "Direction sense: draw N at top; right turn = clockwise 90°, left turn = anticlockwise 90°.",
+    "Facing south, your left is east; facing west, your right is north.",
+    "Net displacement: cancel opposite moves, then √(a² + b²); 3-4-5 and 6-8-10 triples. [repeat]",
+    "Morning sun is in the east so shadows fall west; evening shadows fall east.",
+    "Analogy: name the exact relation of the first pair (worker : workplace, n : n³) before looking at options.",
+    "Alphabet anchors EJOTY = 5, 10, 15, 20, 25; nth letter from the right = letter 27 − n.",
+    "Opposite letters add to 27: A–Z, B–Y, M–N.",
+    "Coding: compare word and code letter by letter; check shift (+k), reverse, or opposite-letter rule on every letter.",
+    "Sentence codes: a word common to two sentences takes the code common to both.",
+    "Word-sum codes: add letter positions (CAT = 3 + 1 + 20 = 24).",
+    "Odd one out: test the category first (planet, prime, cube, square), then parity and digit sums.",
+    "Dictionary order: compare letter by letter; the first different letter decides.",
+    "Rotated directions: find the turn that maps one given pair, then apply the same turn to the asked direction."
+   ]
+  },
+  {
+   "id": "mat-numerical",
+   "name": "Numerical reasoning",
+   "weight": 5,
+   "concepts": [
+    "Area with % changes x and y: net = x + y + xy/100 (15% and 25% → 44%).",
+    "Successive change: +20% then −20% = 4% decrease, never zero.",
+    "Average: total = average × count; a new item = new total − old total. [repeat]",
+    "Average of consecutive (odd/even) numbers = the middle term.",
+    "Ratio chain A:B and B:C → make B equal: 2:3 and 4:5 → 8:12:15. [repeat]",
+    "Two workers: together = ab/(a + b) days; B alone from A and together: 1/B = 1/T − 1/A. Workers × days is constant. [repeat]",
+    "km/h to m/s multiply by 5/18; 72 km/h = 20 m/s.",
+    "Average speed for equal distances = 2xy/(x + y), not (x + y)/2.",
+    "Profit % is on cost price; SP of n = CP of m → profit (m − n)/n × 100.",
+    "Simple interest = PRT/100.",
+    "Clock angle θ = |30H − 5.5M|; hands coincide 11 times in 12 hours.",
+    "Odd days: ordinary year 1, leap year 2, 100 years 5; day after n days = n mod 7 forward.",
+    "Elapsed time: count to the next full hour, then add hours and minutes. [repeat]",
+    "Missing-number grids: test sum, product, product ± 1, sum of squares on every row.",
+    "Gaining clock (g min per hour): real time passed = clock time passed × 60/(60 + g). [repeat]",
+    "Trains crossing: same direction use speed difference, opposite use the sum; distance = sum of both lengths. [repeat]"
+   ]
+  },
+  {
+   "id": "mat-logical",
+   "name": "Logical sequencing",
+   "weight": 5,
+   "concepts": [
+    "Repeated-pair series (53, 53, 40, 40, 27, 27): each value appears twice and drops by a fixed step.",
+    "Number series: try differences, then ratios, squares/cubes ± 1, primes, n!, ×2 + 1, alternating terms. [repeat]",
+    "Interleaved series: split odd and even positions into two separate series.",
+    "Letter series: convert to positions and treat as a number series.",
+    "Wrong-number series: find the rule from most terms, then the single term that breaks it.",
+    "Meaningful order of words: arrange by natural process (seed → plant → flower → fruit).",
+    "Rank from right = total − rank from left + 1; total = top rank + bottom rank − 1.",
+    "Ordering: write one chain (D > A > B > C > E) before answering.",
+    "Circular seating facing centre: left = clockwise neighbour. [repeat]",
+    "Syllogism: a conclusion follows only if true in every possible Venn diagram.",
+    "'All A are B' converts to 'Some B are A'; 'Some A are B' converts to 'Some B are A'.",
+    "Two 'Some' premises give no definite conclusion about the end terms.",
+    "Statement–conclusion: reject conclusions that add 'only', 'always' or 'all'.",
+    "Blood relations: draw the tree; 'only son of my paternal grandfather' = my father.",
+    "Two sets: n(A ∪ B) = n(A) + n(B) − n(A ∩ B)."
+   ]
+  },
+  {
+   "id": "mat-spatial",
+   "name": "Spatial relation / Abstract reasoning",
+   "weight": 5,
+   "concepts": [
+    "Faces seen together on a die are adjacent, never opposite; a face touching four numbers is opposite the sixth.",
+    "Standard die: opposite faces add to 7; the four side faces add to 21 − (top + bottom).",
+    "n×n×n painted cube: 3 faces 8, 2 faces 12(n − 2), 1 face 6(n − 2)², none (n − 2)³.",
+    "Painted cuboid a×b×c: unpainted = (a − 2)(b − 2)(c − 2); zero if any side is 2 or less.",
+    "Cube into n³ pieces needs at least 3(n − 1) cuts.",
+    "k folds in half → 2ᵏ layers → one punch gives 2ᵏ holes.",
+    "Unfolding: every hole is mirrored across each fold line.",
+    "Cube net, straight line of four: 1st opposite 3rd, 2nd opposite 4th; the two side flaps are opposite each other.",
+    "Staircase net (2-2-2): faces in matching positions of rows 1 and 2 shift; fold it mentally square by square.",
+    "Rectangles in a grid of m × n cells: C(m + 1, 2) × C(n + 1, 2).",
+    "Squares in an n × n grid: 1² + 2² + … + n² (3 × 3 → 14).",
+    "Lines from one vertex to the base: k lines → C(k + 2, 2) triangles.",
+    "Mirror (vertical) keeps A, H, I, M, O, T, U, V, W, X, Y; water image keeps B, C, D, E, H, I, K, O, X.",
+    "Mirror clock: actual time = 11:60 − mirror time."
+   ]
+  }
+ ],
+ "questions": [
+  {
+   "id": "mat-001",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "Doctor : Hospital :: Teacher : ?",
+   "o": [
+    "Student",
+    "Book",
+    "School",
+    "Office"
+   ],
+   "a": 2,
+   "x": "A doctor works in a hospital; a teacher works in a school (worker : workplace).",
+   "trap": "Student — related to teacher, but not the workplace.",
+   "s": "Analogy",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-002",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "3 : 27 :: 5 : ?",
+   "o": [
+    "125",
+    "25",
+    "15",
+    "225"
+   ],
+   "a": 0,
+   "x": "Second term is the cube of the first: 3³ = 27, so 5³ = 125.",
+   "trap": "25 — squaring instead of cubing.",
+   "s": "Analogy"
+  },
+  {
+   "id": "mat-003",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "ACE : BDF :: GIK : ?",
+   "o": [
+    "HIJ",
+    "HJL",
+    "HKM",
+    "GJL"
+   ],
+   "a": 1,
+   "x": "Each letter moves one step forward: A→B, C→D, E→F; so G→H, I→J, K→L.",
+   "s": "Analogy"
+  },
+  {
+   "id": "mat-004",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "Find the odd one out: 121, 144, 169, 182",
+   "o": [
+    "121",
+    "144",
+    "169",
+    "182"
+   ],
+   "a": 3,
+   "x": "121 = 11², 144 = 12², 169 = 13² are perfect squares; 182 is not (13² = 169, 14² = 196).",
+   "s": "Classification (odd one out)"
+  },
+  {
+   "id": "mat-005",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "Find the odd one out: Lion, Tiger, Leopard, Wolf",
+   "o": [
+    "Lion",
+    "Tiger",
+    "Wolf",
+    "Leopard"
+   ],
+   "a": 2,
+   "x": "Lion, tiger and leopard belong to the cat family; the wolf belongs to the dog family.",
+   "s": "Classification (odd one out)"
+  },
+  {
+   "id": "mat-006",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "If COLD is coded as DPME, how is WARM coded?",
+   "o": [
+    "XBSM",
+    "VZQL",
+    "XCSN",
+    "XBSN"
+   ],
+   "a": 3,
+   "x": "Each letter is shifted +1: C→D, O→P, L→M, D→E. So W→X, A→B, R→S, M→N = XBSN.",
+   "trap": "VZQL — shifting backward (−1) instead of forward.",
+   "s": "Coding-decoding"
+  },
+  {
+   "id": "mat-007",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "If MOTHER is written as REHTOM, how is FATHER written?",
+   "o": [
+    "REHTFA",
+    "RFHTAE",
+    "FEHTAR",
+    "REHTAF"
+   ],
+   "a": 3,
+   "x": "The word is simply written in reverse order: FATHER → R-E-H-T-A-F.",
+   "s": "Coding-decoding"
+  },
+  {
+   "id": "mat-008",
+   "topic": "mat-verbal",
+   "d": 2,
+   "q": "If CAT = 24 and BAT = 23, then DOG = ?",
+   "o": [
+    "24",
+    "25",
+    "26",
+    "27"
+   ],
+   "a": 2,
+   "x": "Value = sum of alphabet positions: C3+A1+T20 = 24, B2+A1+T20 = 23. DOG = 4+15+7 = 26.",
+   "trap": "25 — slips on O = 15 (miscounting the alphabet).",
+   "s": "Coding-decoding"
+  },
+  {
+   "id": "mat-009",
+   "topic": "mat-verbal",
+   "d": 2,
+   "q": "In a code language, 'sky is blue' is written 'ta pa ma' and 'blue is colour' is written 'pa ma ra'. What is the code for 'sky'?",
+   "o": [
+    "ta",
+    "pa",
+    "ma",
+    "ra"
+   ],
+   "a": 0,
+   "x": "'blue' and 'is' are common to both sentences, so they take the common codes pa and ma. The remaining word 'sky' = ta.",
+   "trap": "ra — that is the code for 'colour'.",
+   "s": "Coding-decoding"
+  },
+  {
+   "id": "mat-010",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Find the next term: A, C, F, J, O, ?",
+   "o": [
+    "T",
+    "V",
+    "S",
+    "U"
+   ],
+   "a": 3,
+   "x": "Gaps increase by one: +2, +3, +4, +5, so next +6. O (15) + 6 = 21 = U.",
+   "trap": "T — continuing with +5 instead of +6.",
+   "s": "Letter series"
+  },
+  {
+   "id": "mat-011",
+   "topic": "mat-verbal",
+   "d": 2,
+   "q": "Which letter is 7th to the right of the 15th letter from the left of the English alphabet?",
+   "o": [
+    "U",
+    "W",
+    "V",
+    "H"
+   ],
+   "a": 2,
+   "x": "Position 15 + 7 = 22, and the 22nd letter is V.",
+   "trap": "H — counting 7 to the left (15 − 7 = 8).",
+   "s": "Alphabet test"
+  },
+  {
+   "id": "mat-012",
+   "topic": "mat-verbal",
+   "d": 2,
+   "q": "If PENCIL is coded as RGPEKN, how is ERASER coded?",
+   "o": [
+    "GTCUGS",
+    "GTCUGT",
+    "FSBTFS",
+    "CPYQCP"
+   ],
+   "a": 1,
+   "x": "Each letter moves +2: P→R, E→G, N→P, C→E, I→K, L→N. ERASER → G T C U G T.",
+   "trap": "CPYQCP — moving −2 instead of +2.",
+   "s": "Coding-decoding"
+  },
+  {
+   "id": "mat-013",
+   "topic": "mat-verbal",
+   "d": 1,
+   "q": "Ram walks 3 km north, then turns right and walks 4 km. How far is he from the starting point?",
+   "o": [
+    "5 km",
+    "7 km",
+    "1 km",
+    "6 km"
+   ],
+   "a": 0,
+   "x": "The two legs are at right angles: distance = √(3² + 4²) = √25 = 5 km.",
+   "trap": "7 km — adding the path lengths instead of the straight-line distance.",
+   "s": "Direction sense",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat-014",
+   "topic": "mat-verbal",
+   "d": 2,
+   "q": "A man faces north. He turns 90° clockwise, then 180°, then 90° anticlockwise. Which direction does he face now?",
+   "o": [
+    "North",
+    "South",
+    "East",
+    "West"
+   ],
+   "a": 1,
+   "x": "North → 90° clockwise = East → 180° = West → 90° anticlockwise = South.",
+   "s": "Direction sense"
+  },
+  {
+   "id": "mat-015",
+   "topic": "mat-verbal",
+   "d": 3,
+   "q": "Hari walks 5 km south, turns left and walks 3 km, then turns left again and walks 5 km. Where is he now with respect to the starting point?",
+   "o": [
+    "3 km West",
+    "5 km North",
+    "13 km East",
+    "3 km East"
+   ],
+   "a": 3,
+   "x": "Facing south, left is east: 3 km east. Facing east, left is north: 5 km north cancels the 5 km south. Net: 3 km east.",
+   "trap": "3 km West — taking 'left' as west from a south-facing position.",
+   "s": "Direction sense",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat-016",
+   "topic": "mat-verbal",
+   "d": 3,
+   "q": "One morning after sunrise, Sita stands facing a pole. The shadow of the pole falls exactly to her right. Which direction is she facing?",
+   "o": [
+    "North",
+    "East",
+    "South",
+    "West"
+   ],
+   "a": 2,
+   "x": "In the morning the sun is in the east, so shadows fall to the west. Her right side is west, so she faces south.",
+   "trap": "North — confusing which side is west when facing south vs north.",
+   "s": "Direction sense",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-017",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Pointing to a boy, Rita says, 'His mother is the only daughter of my mother.' How is the boy related to Rita?",
+   "o": [
+    "Brother",
+    "Nephew",
+    "Cousin",
+    "Son"
+   ],
+   "a": 3,
+   "x": "The only daughter of Rita's mother is Rita herself. So the boy's mother is Rita: he is her son.",
+   "trap": "Nephew — assuming the 'only daughter' is Rita's sister.",
+   "s": "Blood relations",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-018",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "P is Q's brother. R is P's father. S is R's mother. Q is a girl. How is Q related to S?",
+   "o": [
+    "Granddaughter",
+    "Daughter",
+    "Niece",
+    "Grandmother"
+   ],
+   "a": 0,
+   "x": "P and Q are siblings, so R is also Q's father. S is R's mother, so Q (a girl) is S's granddaughter.",
+   "trap": "Daughter — stopping at R instead of going one generation up.",
+   "s": "Blood relations"
+  },
+  {
+   "id": "mat-019",
+   "topic": "mat-logical",
+   "d": 3,
+   "q": "If 'A + B' means A is the father of B and 'A × B' means A is the brother of B, then in P + Q × R, how is P related to R?",
+   "o": [
+    "Brother",
+    "Uncle",
+    "Grandfather",
+    "Father"
+   ],
+   "a": 3,
+   "x": "P + Q: P is Q's father. Q × R: Q is R's brother, so R is P's child too. P is R's father.",
+   "trap": "Uncle — treating P as related to R through Q's generation.",
+   "s": "Blood relations"
+  },
+  {
+   "id": "mat-020",
+   "topic": "mat-logical",
+   "d": 1,
+   "q": "Find the next term: 2, 6, 12, 20, 30, ?",
+   "o": [
+    "40",
+    "42",
+    "36",
+    "44"
+   ],
+   "a": 1,
+   "x": "Terms are n(n+1): 1×2, 2×3, 3×4, 4×5, 5×6; next 6×7 = 42. (Differences 4, 6, 8, 10, 12.)",
+   "trap": "40 — adding 10 again instead of 12.",
+   "s": "Number series",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat-021",
+   "topic": "mat-logical",
+   "d": 1,
+   "q": "Find the next term: 3, 7, 15, 31, 63, ?",
+   "o": [
+    "125",
+    "127",
+    "126",
+    "128"
+   ],
+   "a": 1,
+   "x": "Each term = previous × 2 + 1: 63 × 2 + 1 = 127.",
+   "trap": "126 — doubling but forgetting the +1.",
+   "s": "Number series",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-022",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Find the wrong number in the series: 2, 3, 5, 7, 11, 14, 17",
+   "o": [
+    "14",
+    "3",
+    "11",
+    "17"
+   ],
+   "a": 0,
+   "x": "The series lists consecutive primes; after 11 comes 13, so 14 is wrong.",
+   "s": "Number series",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-023",
+   "topic": "mat-logical",
+   "d": 3,
+   "q": "Find the next term: 4, 9, 25, 49, 121, ?",
+   "o": [
+    "169",
+    "144",
+    "196",
+    "156"
+   ],
+   "a": 0,
+   "x": "These are squares of consecutive primes: 2², 3², 5², 7², 11²; next 13² = 169.",
+   "trap": "144 — taking 12² (12 is not prime).",
+   "s": "Number series",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-024",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Find the next term: 10, 20, 15, 30, 25, 50, ?",
+   "o": [
+    "55",
+    "40",
+    "45",
+    "100"
+   ],
+   "a": 2,
+   "x": "Alternate steps ×2 and −5: 10→20→15→30→25→50→45.",
+   "trap": "100 — doubling twice in a row.",
+   "s": "Number series",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-025",
+   "topic": "mat-numerical",
+   "d": 3,
+   "q": "In each row, the third number follows the same rule from the first two: (2, 3, 13), (4, 1, 17), (1, 5, 26). Find ? in (3, 5, ?).",
+   "o": [
+    "15",
+    "34",
+    "30",
+    "64"
+   ],
+   "a": 1,
+   "x": "Third = sum of squares: 2²+3² = 13, 4²+1² = 17, 1²+5² = 26. So 3²+5² = 9+25 = 34.",
+   "trap": "15 — multiplying the first two numbers.",
+   "s": "Missing number",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-026",
+   "topic": "mat-numerical",
+   "d": 2,
+   "q": "A price is increased by 20% and then decreased by 20%. What is the net change?",
+   "o": [
+    "4% decrease",
+    "No change",
+    "4% increase",
+    "2% decrease"
+   ],
+   "a": 0,
+   "x": "Net = 1.2 × 0.8 = 0.96, i.e. a 4% decrease. Shortcut: x − y − xy/100 = 20 − 20 − 4 = −4%.",
+   "trap": "No change — +20 and −20 look like they cancel.",
+   "s": "Percentage"
+  },
+  {
+   "id": "mat-027",
+   "topic": "mat-numerical",
+   "d": 1,
+   "q": "The average of 5 numbers is 20. If one number, 40, is removed, what is the average of the remaining numbers?",
+   "o": [
+    "15",
+    "16",
+    "20",
+    "12"
+   ],
+   "a": 0,
+   "x": "Total = 5 × 20 = 100. Remaining total = 100 − 40 = 60; average = 60 ÷ 4 = 15.",
+   "trap": "12 — dividing 60 by 5 instead of 4.",
+   "s": "Average",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat-028",
+   "topic": "mat-numerical",
+   "d": 3,
+   "q": "The present ages of A and B are in the ratio 3 : 5. After 6 years the ratio will be 3 : 4. What is B's present age?",
+   "o": [
+    "15 years",
+    "12 years",
+    "20 years",
+    "10 years"
+   ],
+   "a": 3,
+   "x": "(3x + 6)/(5x + 6) = 3/4 → 12x + 24 = 15x + 18 → x = 2. B = 5 × 2 = 10 years. Check: 12/16 = 3/4.",
+   "s": "Ages"
+  },
+  {
+   "id": "mat-029",
+   "topic": "mat-numerical",
+   "d": 1,
+   "q": "A can finish a job in 10 days and B in 15 days. In how many days can they finish it working together?",
+   "o": [
+    "6 days",
+    "12.5 days",
+    "25 days",
+    "5 days"
+   ],
+   "a": 0,
+   "x": "Together = (10 × 15)/(10 + 15) = 150/25 = 6 days.",
+   "trap": "12.5 days — averaging the two times.",
+   "s": "Time and work",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat-030",
+   "topic": "mat-numerical",
+   "d": 1,
+   "q": "720 is divided in the ratio 4 : 5. What is the larger share?",
+   "o": [
+    "320",
+    "360",
+    "400",
+    "450"
+   ],
+   "a": 2,
+   "x": "Larger share = 720 × 5/9 = 400 (smaller = 320).",
+   "trap": "320 — that is the smaller share.",
+   "s": "Ratio and proportion"
+  },
+  {
+   "id": "mat-031",
+   "topic": "mat-numerical",
+   "d": 2,
+   "q": "What is the angle between the hour and minute hands of a clock at 3:30?",
+   "o": [
+    "75°",
+    "90°",
+    "60°",
+    "82.5°"
+   ],
+   "a": 0,
+   "x": "θ = |30H − 5.5M| = |90 − 165| = 75°.",
+   "trap": "90° — forgetting the hour hand moves halfway towards 4 by 3:30.",
+   "s": "Clock"
+  },
+  {
+   "id": "mat-032",
+   "topic": "mat-numerical",
+   "d": 2,
+   "q": "If 1 January 2025 was a Wednesday, what day of the week was 1 January 2026?",
+   "o": [
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Tuesday"
+   ],
+   "a": 1,
+   "x": "2025 is not a leap year: 365 days = 52 weeks + 1 odd day. Wednesday + 1 = Thursday.",
+   "trap": "Friday — treating 2025 as a leap year (2 odd days).",
+   "s": "Calendar"
+  },
+  {
+   "id": "mat-033",
+   "topic": "mat-numerical",
+   "d": 2,
+   "q": "Today is Monday. What day of the week will it be after 61 days?",
+   "o": [
+    "Friday",
+    "Sunday",
+    "Saturday",
+    "Thursday"
+   ],
+   "a": 2,
+   "x": "61 ÷ 7 leaves remainder 5. Monday + 5 days = Saturday.",
+   "trap": "Sunday — counting the starting day as one of the 5.",
+   "s": "Calendar"
+  },
+  {
+   "id": "mat-034",
+   "topic": "mat-numerical",
+   "d": 3,
+   "q": "The mirror image of a clock shows 4:20. What is the actual time?",
+   "o": [
+    "8:40",
+    "7:40",
+    "7:20",
+    "8:20"
+   ],
+   "a": 1,
+   "x": "Actual time = 11:60 − mirror time = 11:60 − 4:20 = 7:40.",
+   "trap": "8:40 — doing 12 − 4 and 60 − 20 separately without borrowing an hour.",
+   "s": "Clock",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-035",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Statements: All cats are animals. All animals are mortal. Conclusions: I. All cats are mortal. II. Some mortals are cats.",
+   "o": [
+    "Only I follows",
+    "Both I and II follow",
+    "Only II follows",
+    "Neither I nor II follows"
+   ],
+   "a": 1,
+   "x": "Cats ⊂ animals ⊂ mortals, so all cats are mortal (I). Converting 'All cats are mortal' gives 'Some mortals are cats' (II).",
+   "trap": "Only I — forgetting that an 'All' statement gives a 'Some' conclusion by conversion.",
+   "s": "Syllogism"
+  },
+  {
+   "id": "mat-036",
+   "topic": "mat-logical",
+   "d": 3,
+   "q": "Statements: Some pens are books. No book is a chair. Conclusions: I. Some pens are not chairs. II. No pen is a chair.",
+   "o": [
+    "Only II follows",
+    "Both I and II follow",
+    "Neither I nor II follows",
+    "Only I follows"
+   ],
+   "a": 3,
+   "x": "The pens that are books cannot be chairs, so some pens are not chairs (I). Other pens may or may not be chairs, so II is not certain.",
+   "trap": "Both — assuming pens and chairs are fully separate.",
+   "s": "Syllogism"
+  },
+  {
+   "id": "mat-037",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Statements: All roses are flowers. Some flowers are red. Conclusions: I. Some roses are red. II. All flowers are roses.",
+   "o": [
+    "Only I follows",
+    "Only II follows",
+    "Neither I nor II follows",
+    "Both I and II follow"
+   ],
+   "a": 2,
+   "x": "The red flowers may lie outside the roses, so I is not certain. 'All roses are flowers' cannot be reversed to 'All flowers are roses'.",
+   "trap": "Only I — assuming the red flowers must include roses.",
+   "s": "Syllogism"
+  },
+  {
+   "id": "mat-038",
+   "topic": "mat-logical",
+   "d": 1,
+   "q": "Statement: Regular exercise helps to keep the body fit. Conclusions: I. People who want to stay fit can benefit from regular exercise. II. Exercise is the only way to stay fit.",
+   "o": [
+    "Only II follows",
+    "Both I and II follow",
+    "Only I follows",
+    "Neither I nor II follows"
+   ],
+   "a": 2,
+   "x": "I restates the statement. II adds 'only', which the statement never says, so it does not follow.",
+   "trap": "Both — missing the word 'only' in II.",
+   "s": "Statement and conclusion",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-039",
+   "topic": "mat-logical",
+   "d": 1,
+   "q": "In a row of 40 students, Ram is 12th from the left. What is his position from the right?",
+   "o": [
+    "28th",
+    "30th",
+    "29th",
+    "27th"
+   ],
+   "a": 2,
+   "x": "Position from right = total − position from left + 1 = 40 − 12 + 1 = 29.",
+   "trap": "28th — forgetting to add 1.",
+   "s": "Ranking"
+  },
+  {
+   "id": "mat-040",
+   "topic": "mat-logical",
+   "d": 1,
+   "q": "Sita is 9th from the top and 16th from the bottom in her class. How many students are in the class?",
+   "o": [
+    "25",
+    "23",
+    "26",
+    "24"
+   ],
+   "a": 3,
+   "x": "Total = 9 + 16 − 1 = 24 (Sita is counted in both positions).",
+   "trap": "25 — adding without subtracting 1 for Sita.",
+   "s": "Ranking"
+  },
+  {
+   "id": "mat-041",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "A is taller than B. B is taller than C. D is taller than A. E is shorter than C. Who is third tallest?",
+   "o": [
+    "A",
+    "C",
+    "B",
+    "D"
+   ],
+   "a": 2,
+   "x": "Order (tallest to shortest): D > A > B > C > E. Third tallest is B.",
+   "s": "Ordering",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-042",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "P, Q, R, S and T sit in a row facing north. R is in the middle. P is at the extreme left. Q is immediately right of P. T is not at the extreme right. Who sits immediately right of R?",
+   "o": [
+    "S",
+    "T",
+    "Q",
+    "P"
+   ],
+   "a": 1,
+   "x": "Positions left to right: P, Q, R, then T and S. T is not at the right end, so the order is P Q R T S; T is right of R.",
+   "s": "Seating arrangement"
+  },
+  {
+   "id": "mat-043",
+   "topic": "mat-logical",
+   "d": 3,
+   "q": "A, B, C, D, E and F sit around a circular table facing the centre. A is opposite D. B is immediately to the left of A. E is immediately to the right of D. C is not next to A. Who sits immediately to the left of D?",
+   "o": [
+    "F",
+    "B",
+    "E",
+    "C"
+   ],
+   "a": 3,
+   "x": "Going clockwise (each person's left when facing centre): A, B, E, D, then C and F fill the last two seats. C cannot be next to A, so the order is A B E D C F; D's left is C.",
+   "trap": "E — mixing up left and right when facing the centre.",
+   "s": "Seating arrangement",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat-044",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "In a class of 50 students, 30 like tea, 25 like coffee and 10 like both. How many like neither?",
+   "o": [
+    "5",
+    "15",
+    "10",
+    "0"
+   ],
+   "a": 0,
+   "x": "Tea or coffee = 30 + 25 − 10 = 45. Neither = 50 − 45 = 5.",
+   "trap": "0 or 15 — not subtracting the 'both' group exactly once.",
+   "s": "Venn diagram"
+  },
+  {
+   "id": "mat-045",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Which diagram best represents Women, Mothers and Doctors?",
+   "o": [
+    "Three separate circles",
+    "Mothers circle inside Women circle; Doctors circle overlapping both",
+    "Three concentric circles",
+    "Women circle inside Mothers circle; Doctors circle separate"
+   ],
+   "a": 1,
+   "x": "Every mother is a woman, so Mothers ⊂ Women. Some doctors are women and some are mothers, so Doctors overlaps both.",
+   "trap": "Three concentric circles — not all doctors are women.",
+   "s": "Venn diagram"
+  },
+  {
+   "id": "mat-046",
+   "topic": "mat-logical",
+   "d": 2,
+   "q": "Which diagram best represents Mammals, Whales and Fish?",
+   "o": [
+    "Whales circle inside Mammals circle; Fish circle separate",
+    "Three separate circles",
+    "Whales circle overlapping both Mammals and Fish",
+    "Mammals circle inside Fish circle"
+   ],
+   "a": 0,
+   "x": "Whales are mammals, so Whales ⊂ Mammals. Fish are not mammals, so Fish is a separate circle.",
+   "trap": "Whales overlapping Fish — whales live in water but are not fish.",
+   "s": "Venn diagram"
+  },
+  {
+   "id": "mat-047",
+   "topic": "mat-spatial",
+   "d": 2,
+   "q": "Two views of the same die are given. In the first view the visible faces are 1, 2 and 3; in the second view they are 1, 4 and 5. Which number is opposite 1?",
+   "o": [
+    "2",
+    "6",
+    "4",
+    "3"
+   ],
+   "a": 1,
+   "x": "Faces visible together are adjacent. So 2, 3, 4, 5 are all adjacent to 1. The only face left is 6, which must be opposite 1.",
+   "s": "Dice",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat-048",
+   "topic": "mat-spatial",
+   "d": 3,
+   "q": "A cube painted on all faces is cut into 27 equal small cubes. How many small cubes have exactly two painted faces?",
+   "o": [
+    "8",
+    "12",
+    "6",
+    "1"
+   ],
+   "a": 1,
+   "x": "For an n × n × n cut (n = 3): two faces painted = 12(n − 2) = 12. (Corners 8 have three; faces 6 have one; 1 has none.)",
+   "trap": "8 — that is the number of corner cubes (three faces painted).",
+   "s": "Cube cutting and painting"
+  },
+  {
+   "id": "mat-049",
+   "topic": "mat-spatial",
+   "d": 1,
+   "q": "A square sheet of paper is folded in half, then folded in half again. One hole is punched through all layers, away from the folds. How many holes appear when it is unfolded?",
+   "o": [
+    "2",
+    "8",
+    "3",
+    "4"
+   ],
+   "a": 3,
+   "x": "Two folds make 2 × 2 = 4 layers. One punch through 4 layers gives 4 holes.",
+   "trap": "2 — counting only one fold.",
+   "s": "Paper folding and punching"
+  },
+  {
+   "id": "mat-050",
+   "topic": "mat-spatial",
+   "d": 2,
+   "q": "A square is divided by drawing both its diagonals. How many triangles are there in the figure?",
+   "o": [
+    "8",
+    "4",
+    "6",
+    "10"
+   ],
+   "a": 0,
+   "x": "4 small triangles meet at the centre, plus 4 larger triangles, each made by one diagonal splitting the square into halves (2 per diagonal). Total 8.",
+   "trap": "4 — counting only the small triangles.",
+   "s": "Counting figures"
+  },
+  {
+   "id": "mat2-001",
+   "topic": "mat-verbal",
+   "s": "Analogy",
+   "d": 1,
+   "q": "Eye : See :: Ear : ?",
+   "o": [
+    "Sound",
+    "Noise",
+    "Speak",
+    "Hear"
+   ],
+   "a": 3,
+   "x": "An organ is paired with its function: the eye sees, the ear hears.",
+   "trap": "Sound — what the ear receives, not what it does.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-002",
+   "topic": "mat-verbal",
+   "s": "Analogy",
+   "d": 1,
+   "q": "Pen : Write :: Knife : ?",
+   "o": [
+    "Sharp",
+    "Steel",
+    "Cut",
+    "Kitchen"
+   ],
+   "a": 2,
+   "x": "A tool is paired with its use: a pen writes, a knife cuts.",
+   "trap": "Sharp — a property of the knife, not its use.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-003",
+   "topic": "mat-verbal",
+   "s": "Analogy",
+   "d": 2,
+   "q": "4 : 17 :: 6 : ?",
+   "o": [
+    "37",
+    "36",
+    "35",
+    "38"
+   ],
+   "a": 0,
+   "x": "Second term = square of the first + 1: 4² + 1 = 17, so 6² + 1 = 37.",
+   "trap": "36 — squaring but forgetting the +1."
+  },
+  {
+   "id": "mat2-004",
+   "topic": "mat-verbal",
+   "s": "Analogy",
+   "d": 2,
+   "q": "AZ : BY :: CX : ?",
+   "o": [
+    "DV",
+    "DW",
+    "EW",
+    "CW"
+   ],
+   "a": 1,
+   "x": "The first letter moves +1 and the second −1; each pair is an opposite pair adding to 27: D (4) + W (23) = 27."
+  },
+  {
+   "id": "mat2-005",
+   "topic": "mat-verbal",
+   "s": "Analogy",
+   "d": 2,
+   "q": "DOG : GRJ :: CAT : ?",
+   "o": [
+    "FDV",
+    "ECV",
+    "GDW",
+    "FDW"
+   ],
+   "a": 3,
+   "x": "Each letter moves +3: D→G, O→R, G→J. So C→F, A→D, T→W = FDW.",
+   "trap": "FDV — slipping on T + 3 (T→W, not V)."
+  },
+  {
+   "id": "mat2-006",
+   "topic": "mat-verbal",
+   "s": "Classification (odd one out)",
+   "d": 1,
+   "q": "Find the odd one out: Mercury, Venus, Moon, Mars",
+   "o": [
+    "Mercury",
+    "Venus",
+    "Moon",
+    "Mars"
+   ],
+   "a": 2,
+   "x": "Mercury, Venus and Mars are planets; the Moon is a natural satellite of Earth."
+  },
+  {
+   "id": "mat2-007",
+   "topic": "mat-verbal",
+   "s": "Classification (odd one out)",
+   "d": 2,
+   "q": "Find the odd one out: 27, 64, 125, 144",
+   "o": [
+    "144",
+    "27",
+    "64",
+    "125"
+   ],
+   "a": 0,
+   "x": "27 = 3³, 64 = 4³, 125 = 5³ are cubes; 144 = 12² is a square, not a cube.",
+   "trap": "64 — it is also a square (8²), but it is still a cube (4³)."
+  },
+  {
+   "id": "mat2-008",
+   "topic": "mat-verbal",
+   "s": "Classification (odd one out)",
+   "d": 1,
+   "q": "Find the odd one out: 13, 17, 21, 29",
+   "o": [
+    "13",
+    "17",
+    "29",
+    "21"
+   ],
+   "a": 3,
+   "x": "13, 17 and 29 are prime; 21 = 3 × 7 is not."
+  },
+  {
+   "id": "mat2-009",
+   "topic": "mat-verbal",
+   "s": "Classification (odd one out)",
+   "d": 2,
+   "q": "Find the odd one out: ACE, GIK, MOQ, RTW",
+   "o": [
+    "ACE",
+    "RTW",
+    "GIK",
+    "MOQ"
+   ],
+   "a": 1,
+   "x": "ACE, GIK and MOQ skip one letter each time (+2, +2). RTW goes +2 then +3 (T→W).",
+   "trap": "MOQ — looks irregular but M, O, Q are +2, +2."
+  },
+  {
+   "id": "mat2-010",
+   "topic": "mat-verbal",
+   "s": "Coding-decoding",
+   "d": 1,
+   "q": "If BOOK is coded as 2-15-15-11, how is READ coded?",
+   "o": [
+    "18-5-1-5",
+    "17-5-1-4",
+    "18-5-1-4",
+    "18-4-1-4"
+   ],
+   "a": 2,
+   "x": "Each letter is replaced by its alphabet position: R = 18, E = 5, A = 1, D = 4."
+  },
+  {
+   "id": "mat2-011",
+   "topic": "mat-verbal",
+   "s": "Coding-decoding",
+   "d": 3,
+   "q": "If TABLE is coded as GZYOV, how is CHAIR coded?",
+   "o": [
+    "XSZRJ",
+    "XSZRI",
+    "YSZRI",
+    "XTZRI"
+   ],
+   "a": 1,
+   "x": "Each letter is replaced by its opposite (positions add to 27): T↔G, A↔Z, B↔Y, L↔O, E↔V. So C→X, H→S, A→Z, I→R, R→I.",
+   "trap": "XTZRI — taking H (8) → T instead of S (27 − 8 = 19)."
+  },
+  {
+   "id": "mat2-012",
+   "topic": "mat-verbal",
+   "s": "Coding-decoding",
+   "d": 3,
+   "q": "If MANGO is coded as OCPIQ, which word is coded as CRRNG?",
+   "o": [
+    "APPLY",
+    "AQQLE",
+    "APPLE",
+    "EPPLA"
+   ],
+   "a": 2,
+   "x": "The code moves each letter +2 (M→O, A→C). Decode by moving −2: C→A, R→P, R→P, N→L, G→E = APPLE.",
+   "trap": "APPLY — last letter G − 2 is E, not Y."
+  },
+  {
+   "id": "mat2-013",
+   "topic": "mat-verbal",
+   "s": "Coding-decoding",
+   "d": 2,
+   "q": "In a code language, 'pit na sa' means 'red ball game', 'na ko da' means 'ball is round' and 'da sa lo' means 'round red top'. What is the code for 'red'?",
+   "o": [
+    "sa",
+    "na",
+    "da",
+    "pit"
+   ],
+   "a": 0,
+   "x": "'red' is in the 1st and 3rd sentences; the only code common to both is 'sa'. ('na' = ball, 'da' = round.)",
+   "trap": "na — common to sentences 1 and 2, which share 'ball'."
+  },
+  {
+   "id": "mat2-014",
+   "topic": "mat-verbal",
+   "s": "Alphabet test",
+   "d": 1,
+   "q": "Which letter is 10th from the right end of the English alphabet?",
+   "o": [
+    "P",
+    "J",
+    "R",
+    "Q"
+   ],
+   "a": 3,
+   "x": "nth from the right = letter (27 − n): 27 − 10 = 17 = Q.",
+   "trap": "J — that is 10th from the left."
+  },
+  {
+   "id": "mat2-015",
+   "topic": "mat-verbal",
+   "s": "Alphabet test",
+   "d": 3,
+   "q": "If the English alphabet is written in reverse order (Z to A), which letter is 8th to the left of the 20th letter from the left?",
+   "o": [
+    "L",
+    "T",
+    "N",
+    "O"
+   ],
+   "a": 3,
+   "x": "In Z→A order the nth letter from the left is letter (27 − n). 8th to the left of the 20th is the 12th from the left: 27 − 12 = 15 = O.",
+   "trap": "L — the 12th letter of the normal A→Z alphabet."
+  },
+  {
+   "id": "mat2-016",
+   "topic": "mat-verbal",
+   "s": "Dictionary order",
+   "d": 1,
+   "q": "Which word comes third in dictionary order: Bread, Brand, Brake, Brain?",
+   "o": [
+    "Brand",
+    "Brain",
+    "Brake",
+    "Bread"
+   ],
+   "a": 0,
+   "x": "Order: Brain, Brake, Brand, Bread (brai < brak < bran < brea). Third is Brand.",
+   "trap": "Brake — i comes before k, so Brain is first and Brake second."
+  },
+  {
+   "id": "mat2-017",
+   "topic": "mat-verbal",
+   "s": "Direction sense",
+   "d": 2,
+   "q": "Gita walks 40 m north, turns right and walks 30 m, then turns right again and walks 40 m. How far and in which direction is she from her starting point?",
+   "o": [
+    "30 m West",
+    "50 m North-East",
+    "30 m East",
+    "110 m East"
+   ],
+   "a": 2,
+   "x": "North 40, right = east 30, right again = south 40. North and south cancel, leaving 30 m east.",
+   "trap": "30 m West — turning right from north as west.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-018",
+   "topic": "mat-verbal",
+   "s": "Direction sense",
+   "d": 2,
+   "q": "A man walks 6 km east, then turns left and walks 8 km. How far and in which direction is he from the start?",
+   "o": [
+    "14 km North-East",
+    "10 km North-East",
+    "10 km North-West",
+    "10 km South-East"
+   ],
+   "a": 1,
+   "x": "Facing east, left is north: 6 km east and 8 km north. Distance = √(6² + 8²) = 10 km, towards north-east.",
+   "trap": "14 km — adding the two legs instead of using Pythagoras.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-019",
+   "topic": "mat-verbal",
+   "s": "Direction sense",
+   "d": 3,
+   "q": "A girl faces west. She turns 45° clockwise and then 180° anticlockwise. Which direction does she face now?",
+   "o": [
+    "North-West",
+    "South-East",
+    "South-West",
+    "North-East"
+   ],
+   "a": 1,
+   "x": "West + 45° clockwise = north-west. A 180° turn (either way) gives the opposite: south-east.",
+   "trap": "North-West — stopping after the first turn."
+  },
+  {
+   "id": "mat2-020",
+   "topic": "mat-verbal",
+   "s": "Direction sense",
+   "d": 3,
+   "q": "If south-east is called north and north-east is called west, what is west called?",
+   "o": [
+    "North-East",
+    "South-West",
+    "South-East",
+    "North-West"
+   ],
+   "a": 2,
+   "x": "SE → N is a turn of 135° anticlockwise; NE → W confirms it. West turned 135° anticlockwise is south-east.",
+   "trap": "North-East — turning the wrong way (clockwise)."
+  },
+  {
+   "id": "mat2-021",
+   "topic": "mat-verbal",
+   "s": "Direction sense",
+   "d": 2,
+   "q": "At 5 pm on a sunny day, Ravi's shadow falls exactly to his left. Which direction is he facing?",
+   "o": [
+    "South",
+    "North",
+    "East",
+    "West"
+   ],
+   "a": 0,
+   "x": "In the evening the sun is in the west, so shadows fall east. If east is on his left, he is facing south.",
+   "trap": "North — that would put east on his right.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-022",
+   "topic": "mat-numerical",
+   "s": "Percentage",
+   "d": 2,
+   "q": "The length of a rectangle is increased by 10% and its breadth by 20%. By what percentage does its area increase?",
+   "o": [
+    "30%",
+    "22%",
+    "2%",
+    "32%"
+   ],
+   "a": 3,
+   "x": "Net = x + y + xy/100 = 10 + 20 + 2 = 32% (1.1 × 1.2 = 1.32).",
+   "trap": "30% — adding the two percentages and forgetting xy/100."
+  },
+  {
+   "id": "mat2-023",
+   "topic": "mat-numerical",
+   "s": "Percentage",
+   "d": 2,
+   "q": "Each side of a square is increased by 10%. By what percentage does its area increase?",
+   "o": [
+    "10%",
+    "21%",
+    "20%",
+    "11%"
+   ],
+   "a": 1,
+   "x": "Area factor = 1.1² = 1.21, so the area rises by 21%. Shortcut: 10 + 10 + 100/100 = 21.",
+   "trap": "20% — doubling the percentage."
+  },
+  {
+   "id": "mat2-024",
+   "topic": "mat-numerical",
+   "s": "Percentage",
+   "d": 1,
+   "q": "What is 25% of 480?",
+   "o": [
+    "120",
+    "96",
+    "125",
+    "140"
+   ],
+   "a": 0,
+   "x": "25% = ¼; 480 ÷ 4 = 120."
+  },
+  {
+   "id": "mat2-025",
+   "topic": "mat-numerical",
+   "s": "Percentage",
+   "d": 2,
+   "q": "When a number is increased by 25%, it becomes 150. What is the number?",
+   "o": [
+    "112.5",
+    "125",
+    "120",
+    "187.5"
+   ],
+   "a": 2,
+   "x": "Number × 1.25 = 150, so number = 150 ÷ 1.25 = 120.",
+   "trap": "112.5 — taking 25% off 150 instead of dividing by 1.25."
+  },
+  {
+   "id": "mat2-026",
+   "topic": "mat-numerical",
+   "s": "Percentage",
+   "d": 2,
+   "q": "A student must score 40% to pass. She scores 180 marks and fails by 20 marks. What are the maximum marks?",
+   "o": [
+    "450",
+    "400",
+    "550",
+    "500"
+   ],
+   "a": 3,
+   "x": "Pass mark = 180 + 20 = 200 = 40% of maximum. Maximum = 200 ÷ 0.4 = 500.",
+   "trap": "450 — using 180 as the pass mark."
+  },
+  {
+   "id": "mat2-027",
+   "topic": "mat-numerical",
+   "s": "Average",
+   "d": 1,
+   "q": "What is the average of the first 10 natural numbers?",
+   "o": [
+    "5",
+    "6",
+    "55",
+    "5.5"
+   ],
+   "a": 3,
+   "x": "Sum = 10 × 11/2 = 55; average = 55 ÷ 10 = 5.5.",
+   "trap": "55 — that is the sum, not the average.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-028",
+   "topic": "mat-numerical",
+   "s": "Average",
+   "d": 2,
+   "q": "The average of 6 numbers is 15. When a seventh number is added, the average becomes 16. What is the seventh number?",
+   "o": [
+    "16",
+    "22",
+    "21",
+    "1"
+   ],
+   "a": 1,
+   "x": "New total − old total = 7 × 16 − 6 × 15 = 112 − 90 = 22.",
+   "trap": "16 — assuming the new number equals the new average.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-029",
+   "topic": "mat-numerical",
+   "s": "Average",
+   "d": 3,
+   "q": "The average age of 30 students is 15 years. When the teacher's age is included, the average rises by 1 year. What is the teacher's age?",
+   "o": [
+    "31 years",
+    "16 years",
+    "46 years",
+    "45 years"
+   ],
+   "a": 2,
+   "x": "Teacher = 31 × 16 − 30 × 15 = 496 − 450 = 46 years.",
+   "trap": "16 years — taking the new average as the teacher's age.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-030",
+   "topic": "mat-numerical",
+   "s": "Average",
+   "d": 1,
+   "q": "The average of five consecutive odd numbers is 21. What is the largest of them?",
+   "o": [
+    "25",
+    "23",
+    "29",
+    "21"
+   ],
+   "a": 0,
+   "x": "The average of consecutive odd numbers is the middle one: 17, 19, 21, 23, 25. Largest = 25.",
+   "trap": "23 — taking only one step above the middle.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-031",
+   "topic": "mat-numerical",
+   "s": "Average",
+   "d": 1,
+   "q": "The average of A, B and C is 40. The average of A and B is 35. What is C?",
+   "o": [
+    "45",
+    "40",
+    "50",
+    "5"
+   ],
+   "a": 2,
+   "x": "A + B + C = 120 and A + B = 70, so C = 120 − 70 = 50.",
+   "trap": "5 — subtracting the averages (40 − 35).",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-032",
+   "topic": "mat-numerical",
+   "s": "Ratio and proportion",
+   "d": 2,
+   "q": "If A : B = 2 : 3 and B : C = 4 : 5, then A : B : C = ?",
+   "o": [
+    "2 : 3 : 5",
+    "8 : 12 : 15",
+    "8 : 15 : 12",
+    "6 : 12 : 15"
+   ],
+   "a": 1,
+   "x": "Make B equal: A : B = 8 : 12 and B : C = 12 : 15, so A : B : C = 8 : 12 : 15.",
+   "trap": "2 : 3 : 5 — joining the ratios without making B the same.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-033",
+   "topic": "mat-numerical",
+   "s": "Ages",
+   "d": 2,
+   "q": "A father is three times as old as his son. After 10 years he will be twice as old as his son. What is the son's present age?",
+   "o": [
+    "15 years",
+    "20 years",
+    "30 years",
+    "10 years"
+   ],
+   "a": 3,
+   "x": "3x + 10 = 2(x + 10) → x = 10. Son 10, father 30; after 10 years 40 = 2 × 20.",
+   "trap": "30 years — that is the father's age."
+  },
+  {
+   "id": "mat2-034",
+   "topic": "mat-numerical",
+   "s": "Time and work",
+   "d": 2,
+   "q": "A can finish a job in 12 days. A and B together finish it in 8 days. How long would B alone take?",
+   "o": [
+    "24 days",
+    "20 days",
+    "4 days",
+    "16 days"
+   ],
+   "a": 0,
+   "x": "B's rate = 1/8 − 1/12 = 1/24, so B alone takes 24 days.",
+   "trap": "4 days — subtracting the days (12 − 8) instead of the rates.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-035",
+   "topic": "mat-numerical",
+   "s": "Speed, time and distance",
+   "d": 1,
+   "q": "A speed of 72 km/h is equal to how many metres per second?",
+   "o": [
+    "259.2 m/s",
+    "18 m/s",
+    "36 m/s",
+    "20 m/s"
+   ],
+   "a": 3,
+   "x": "Multiply by 5/18: 72 × 5/18 = 20 m/s.",
+   "trap": "259.2 m/s — multiplying by 18/5 instead of 5/18."
+  },
+  {
+   "id": "mat2-036",
+   "topic": "mat-numerical",
+   "s": "Speed, time and distance",
+   "d": 2,
+   "q": "A train 150 m long runs at 54 km/h. How long does it take to pass a pole?",
+   "o": [
+    "10 s",
+    "15 s",
+    "2.8 s",
+    "9 s"
+   ],
+   "a": 0,
+   "x": "54 km/h = 15 m/s. Time = length ÷ speed = 150 ÷ 15 = 10 s.",
+   "trap": "2.8 s — dividing 150 by 54 without converting units."
+  },
+  {
+   "id": "mat2-037",
+   "topic": "mat-numerical",
+   "s": "Speed, time and distance",
+   "d": 2,
+   "q": "A man goes to a town at 40 km/h and returns along the same road at 60 km/h. What is his average speed for the whole journey?",
+   "o": [
+    "50 km/h",
+    "48 km/h",
+    "45 km/h",
+    "52 km/h"
+   ],
+   "a": 1,
+   "x": "For equal distances, average speed = 2xy/(x + y) = 2 × 40 × 60/100 = 48 km/h.",
+   "trap": "50 km/h — the simple average of the two speeds."
+  },
+  {
+   "id": "mat2-038",
+   "topic": "mat-numerical",
+   "s": "Profit and loss",
+   "d": 1,
+   "q": "An article bought for Rs 400 is sold for Rs 460. What is the profit percentage?",
+   "o": [
+    "13%",
+    "12%",
+    "15%",
+    "60%"
+   ],
+   "a": 2,
+   "x": "Profit = 60; profit % = 60/400 × 100 = 15% (always on cost price).",
+   "trap": "13% — dividing by the selling price (60/460)."
+  },
+  {
+   "id": "mat2-039",
+   "topic": "mat-numerical",
+   "s": "Profit and loss",
+   "d": 3,
+   "q": "The selling price of 12 articles equals the cost price of 15 articles. What is the profit percentage?",
+   "o": [
+    "20%",
+    "25%",
+    "30%",
+    "3%"
+   ],
+   "a": 1,
+   "x": "Let each cost Rs 1: SP of 12 = 15, CP of 12 = 12. Profit = 3 on 12 = 25%.",
+   "trap": "20% — dividing the gain of 3 by 15 instead of 12."
+  },
+  {
+   "id": "mat2-040",
+   "topic": "mat-numerical",
+   "s": "Simple interest",
+   "d": 1,
+   "q": "What is the simple interest on Rs 5000 at 8% per annum for 3 years?",
+   "o": [
+    "Rs 400",
+    "Rs 1500",
+    "Rs 1260",
+    "Rs 1200"
+   ],
+   "a": 3,
+   "x": "SI = PRT/100 = 5000 × 8 × 3/100 = Rs 1200.",
+   "trap": "Rs 400 — that is the interest for one year only."
+  },
+  {
+   "id": "mat2-041",
+   "topic": "mat-numerical",
+   "s": "Clock",
+   "d": 1,
+   "q": "What is the angle between the hands of a clock at 4 o'clock?",
+   "o": [
+    "120°",
+    "90°",
+    "100°",
+    "150°"
+   ],
+   "a": 0,
+   "x": "Each hour mark is 30°; at 4:00 the hands are 4 marks apart: 4 × 30 = 120°."
+  },
+  {
+   "id": "mat2-042",
+   "topic": "mat-numerical",
+   "s": "Clock",
+   "d": 2,
+   "q": "What is the angle between the hands of a clock at 2:20?",
+   "o": [
+    "40°",
+    "60°",
+    "50°",
+    "70°"
+   ],
+   "a": 2,
+   "x": "θ = |30H − 5.5M| = |60 − 110| = 50°.",
+   "trap": "60° — ignoring the hour hand's movement past 2."
+  },
+  {
+   "id": "mat2-043",
+   "topic": "mat-numerical",
+   "s": "Clock",
+   "d": 3,
+   "q": "Between 3 and 4 o'clock, at what time do the hands of a clock coincide?",
+   "o": [
+    "15 minutes past 3",
+    "16 minutes past 3",
+    "16 4/11 minutes past 3",
+    "17 3/11 minutes past 3"
+   ],
+   "a": 2,
+   "x": "Coincide when 30H = 5.5M: M = 90/5.5 = 180/11 = 16 4/11 minutes past 3.",
+   "trap": "15 minutes past 3 — the minute hand is on 3 but the hour hand has moved on."
+  },
+  {
+   "id": "mat2-044",
+   "topic": "mat-numerical",
+   "s": "Calendar",
+   "d": 2,
+   "q": "If 15 August 2025 was a Friday, what day of the week is 15 August 2026?",
+   "o": [
+    "Sunday",
+    "Saturday",
+    "Friday",
+    "Thursday"
+   ],
+   "a": 1,
+   "x": "The year in between contains February 2026 (28 days), so it has 365 days = 1 odd day. Friday + 1 = Saturday.",
+   "trap": "Sunday — counting 2 odd days as if a leap February were included."
+  },
+  {
+   "id": "mat2-045",
+   "topic": "mat-numerical",
+   "s": "Calendar",
+   "d": 2,
+   "q": "How many odd days are there in 100 years?",
+   "o": [
+    "5",
+    "1",
+    "2",
+    "4"
+   ],
+   "a": 0,
+   "x": "100 years = 76 ordinary + 24 leap years = 76 + 48 = 124 odd days; 124 mod 7 = 5.",
+   "trap": "1 — treating 100 years like a single ordinary year."
+  },
+  {
+   "id": "mat2-046",
+   "topic": "mat-numerical",
+   "s": "Time calculation",
+   "d": 2,
+   "q": "A bus leaves at 10:45 am and arrives at 2:20 pm the same day. How long is the journey?",
+   "o": [
+    "4 h 35 min",
+    "3 h 25 min",
+    "4 h 25 min",
+    "3 h 35 min"
+   ],
+   "a": 3,
+   "x": "10:45 → 11:00 is 15 min; 11:00 → 2:20 pm is 3 h 20 min. Total 3 h 35 min.",
+   "trap": "4 h 35 min — subtracting 10 from 14 and then adding 15 min.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-047",
+   "topic": "mat-numerical",
+   "s": "Missing number",
+   "d": 2,
+   "q": "In each row the third number follows one rule from the first two: (2, 3, 7), (4, 5, 21), (6, 2, 13). Find ? in (7, 3, ?).",
+   "o": [
+    "22",
+    "21",
+    "10",
+    "24"
+   ],
+   "a": 0,
+   "x": "Third = product + 1: 2×3+1 = 7, 4×5+1 = 21, 6×2+1 = 13. So 7×3+1 = 22.",
+   "trap": "10 — adding the two numbers (works for no row).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-048",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 1,
+   "q": "Find the next number: 70, 70, 61, 61, 52, 52, ?",
+   "o": [
+    "52",
+    "44",
+    "45",
+    "43"
+   ],
+   "a": 3,
+   "x": "Each number is written twice and then drops by 9: 70, 61, 52, so next is 43.",
+   "trap": "52 — thinking the pattern repeats three times.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-049",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 2,
+   "q": "Find the next number: 2, 5, 10, 17, 26, ?",
+   "o": [
+    "35",
+    "37",
+    "36",
+    "39"
+   ],
+   "a": 1,
+   "x": "Terms are n² + 1: 1+1, 4+1, 9+1, 16+1, 25+1; next 36 + 1 = 37. (Differences 3, 5, 7, 9, 11.)",
+   "trap": "36 — taking n² without the +1.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-050",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 1,
+   "q": "Find the next number: 1, 8, 27, 64, ?",
+   "o": [
+    "100",
+    "81",
+    "125",
+    "128"
+   ],
+   "a": 2,
+   "x": "Cubes: 1³, 2³, 3³, 4³; next 5³ = 125.",
+   "trap": "100 — guessing 10² after 64.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-051",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 2,
+   "q": "Find the next number: 5, 11, 23, 47, ?",
+   "o": [
+    "94",
+    "96",
+    "71",
+    "95"
+   ],
+   "a": 3,
+   "x": "Each term = previous × 2 + 1: 47 × 2 + 1 = 95.",
+   "trap": "94 — doubling but forgetting the +1.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-052",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 2,
+   "q": "Find the next number: 120, 99, 80, 63, 48, ?",
+   "o": [
+    "35",
+    "33",
+    "36",
+    "37"
+   ],
+   "a": 0,
+   "x": "Terms are n² − 1 for n = 11, 10, 9, 8, 7; next 6² − 1 = 35. (Differences −21, −19, −17, −15, −13.)",
+   "trap": "36 — taking 6² without the −1.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-053",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 2,
+   "q": "Find the next number: 1, 2, 6, 24, 120, ?",
+   "o": [
+    "240",
+    "720",
+    "600",
+    "840"
+   ],
+   "a": 1,
+   "x": "Multiply by 2, 3, 4, 5, then 6: 120 × 6 = 720 (these are 1!, 2!, 3!, 4!, 5!, 6!).",
+   "trap": "240 — multiplying by 2 again.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-054",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 3,
+   "q": "Find the next number: 3, 4, 6, 8, 12, 16, 24, ?",
+   "o": [
+    "48",
+    "30",
+    "32",
+    "28"
+   ],
+   "a": 2,
+   "x": "Two series alternate, each doubling: 3, 6, 12, 24 and 4, 8, 16, next 32.",
+   "trap": "48 — doubling the last term (24) instead of continuing the second series.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-055",
+   "topic": "mat-logical",
+   "s": "Letter series",
+   "d": 1,
+   "q": "Find the next letter: B, E, H, K, N, ?",
+   "o": [
+    "P",
+    "R",
+    "Q",
+    "O"
+   ],
+   "a": 2,
+   "x": "Each step is +3: 2, 5, 8, 11, 14, so next 17 = Q.",
+   "trap": "P — moving +2 at the last step."
+  },
+  {
+   "id": "mat2-056",
+   "topic": "mat-logical",
+   "s": "Letter series",
+   "d": 2,
+   "q": "Find the next term: AZ, BY, CX, DW, ?",
+   "o": [
+    "EV",
+    "EU",
+    "FV",
+    "EW"
+   ],
+   "a": 0,
+   "x": "First letters move forward (A, B, C, D, E); second letters move backward (Z, Y, X, W, V).",
+   "trap": "EW — moving only the first letter."
+  },
+  {
+   "id": "mat2-057",
+   "topic": "mat-logical",
+   "s": "Letter series",
+   "d": 3,
+   "q": "Find the next letter: Z, X, U, Q, L, ?",
+   "o": [
+    "G",
+    "E",
+    "H",
+    "F"
+   ],
+   "a": 3,
+   "x": "Steps back grow by one: −2, −3, −4, −5, then −6. L (12) − 6 = 6 = F.",
+   "trap": "G — repeating the −5 step."
+  },
+  {
+   "id": "mat2-058",
+   "topic": "mat-logical",
+   "s": "Wrong number in series",
+   "d": 2,
+   "q": "Find the wrong number in the series: 3, 9, 27, 81, 242, 729",
+   "o": [
+    "81",
+    "242",
+    "27",
+    "729"
+   ],
+   "a": 1,
+   "x": "Each term is ×3: 81 × 3 = 243, not 242. (243 × 3 = 729 confirms it.)",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-059",
+   "topic": "mat-logical",
+   "s": "Logical order of words",
+   "d": 1,
+   "q": "Arrange in a meaningful order: 1. Fruit  2. Seed  3. Flower  4. Plant",
+   "o": [
+    "2, 3, 4, 1",
+    "2, 4, 3, 1",
+    "4, 2, 3, 1",
+    "2, 4, 1, 3"
+   ],
+   "a": 1,
+   "x": "Life cycle: Seed → Plant → Flower → Fruit = 2, 4, 3, 1."
+  },
+  {
+   "id": "mat2-060",
+   "topic": "mat-logical",
+   "s": "Logical order of words",
+   "d": 2,
+   "q": "Arrange in a meaningful order: 1. Treatment  2. Illness  3. Recovery  4. Diagnosis  5. Symptoms",
+   "o": [
+    "2, 5, 4, 1, 3",
+    "2, 4, 5, 1, 3",
+    "4, 2, 5, 1, 3",
+    "2, 5, 1, 4, 3"
+   ],
+   "a": 0,
+   "x": "Illness → Symptoms appear → Diagnosis → Treatment → Recovery = 2, 5, 4, 1, 3.",
+   "trap": "2, 4, 5, 1, 3 — a diagnosis is made after symptoms appear."
+  },
+  {
+   "id": "mat2-061",
+   "topic": "mat-logical",
+   "s": "Ranking",
+   "d": 3,
+   "q": "In a row of students, A is 15th from the left and B is 10th from the right. When they swap places, A becomes 20th from the left. How many students are in the row?",
+   "o": [
+    "30",
+    "25",
+    "28",
+    "29"
+   ],
+   "a": 3,
+   "x": "After swapping, A is in B's old seat: 20th from left and 10th from right. Total = 20 + 10 − 1 = 29.",
+   "trap": "30 — adding the ranks without subtracting 1."
+  },
+  {
+   "id": "mat2-062",
+   "topic": "mat-logical",
+   "s": "Blood relations",
+   "d": 2,
+   "q": "Pointing to a girl in a photo, Aman says, 'She is the daughter of the only son of my paternal grandfather.' How is the girl related to Aman?",
+   "o": [
+    "Cousin",
+    "Aunt",
+    "Sister",
+    "Niece"
+   ],
+   "a": 2,
+   "x": "The only son of Aman's paternal grandfather is Aman's father. His daughter is Aman's sister.",
+   "trap": "Cousin — treating the only son as an uncle.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-063",
+   "topic": "mat-logical",
+   "s": "Syllogism",
+   "d": 2,
+   "q": "Statements: All doctors are graduates. No graduate is illiterate. Conclusions: I. No doctor is illiterate. II. Some graduates are doctors.",
+   "o": [
+    "Only I follows",
+    "Both I and II follow",
+    "Only II follows",
+    "Neither I nor II follows"
+   ],
+   "a": 1,
+   "x": "Doctors lie inside graduates, which are outside illiterates, so I follows. 'All doctors are graduates' converts to 'Some graduates are doctors', so II follows.",
+   "trap": "Only I — missing the conversion of an 'All' statement."
+  },
+  {
+   "id": "mat2-064",
+   "topic": "mat-logical",
+   "s": "Syllogism",
+   "d": 2,
+   "q": "Statements: Some birds are pets. Some pets are dogs. Conclusions: I. Some birds are dogs. II. Some dogs are pets.",
+   "o": [
+    "Only I follows",
+    "Both I and II follow",
+    "Only II follows",
+    "Neither I nor II follows"
+   ],
+   "a": 2,
+   "x": "Two 'Some' premises give nothing certain about birds and dogs, so I does not follow. II is the direct conversion of 'Some pets are dogs'.",
+   "trap": "Both — assuming the shared 'pets' must link birds and dogs."
+  },
+  {
+   "id": "mat2-065",
+   "topic": "mat-logical",
+   "s": "Venn diagram",
+   "d": 2,
+   "q": "Which diagram best represents Girls, Students and Singers?",
+   "o": [
+    "Girls circle inside Students circle; Singers separate",
+    "Three separate circles",
+    "Singers inside Girls inside Students",
+    "Three circles, each overlapping the other two"
+   ],
+   "a": 3,
+   "x": "A girl may or may not be a student or a singer, and some students sing; every pair can overlap, and some people can be all three.",
+   "trap": "Singers inside Girls — boys can be singers too."
+  },
+  {
+   "id": "mat2-066",
+   "topic": "mat-logical",
+   "s": "Seating arrangement",
+   "d": 2,
+   "q": "P, Q, R, S and T sit in a row facing north. S is at the right end. Q is second from the left. P is immediately to the right of Q. T is not at the left end. Who sits in the middle?",
+   "o": [
+    "P",
+    "Q",
+    "R",
+    "T"
+   ],
+   "a": 0,
+   "x": "Left to right: Q is 2nd and P 3rd; S is 5th. T cannot be 1st, so T is 4th and R 1st: R Q P T S. Middle = P.",
+   "trap": "T — placing T before checking that P sits right of Q."
+  },
+  {
+   "id": "mat2-067",
+   "topic": "mat-logical",
+   "s": "Ordering",
+   "d": 1,
+   "q": "Ram is older than Shyam. Hari is younger than Shyam. Gopal is older than Ram. Who is the youngest?",
+   "o": [
+    "Shyam",
+    "Ram",
+    "Hari",
+    "Gopal"
+   ],
+   "a": 2,
+   "x": "Order (oldest first): Gopal > Ram > Shyam > Hari. Youngest = Hari.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-068",
+   "topic": "mat-logical",
+   "s": "Statement and conclusion",
+   "d": 1,
+   "q": "Statement: Washing hands with soap reduces the spread of diarrhoea. Conclusions: I. Hand washing is useful in preventing diarrhoea. II. Diarrhoea spreads only through dirty hands.",
+   "o": [
+    "Only II follows",
+    "Both I and II follow",
+    "Neither I nor II follows",
+    "Only I follows"
+   ],
+   "a": 3,
+   "x": "I restates the statement. II adds 'only', which the statement never says.",
+   "trap": "Both — missing the word 'only' in II.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-069",
+   "topic": "mat-spatial",
+   "s": "Dice",
+   "d": 2,
+   "q": "Two views of the same die show the faces 2, 3, 6 together and the faces 2, 4, 1 together. Which number is opposite 2?",
+   "o": [
+    "6",
+    "5",
+    "1",
+    "4"
+   ],
+   "a": 1,
+   "x": "Faces seen together are adjacent. So 3, 6, 4 and 1 all touch 2. The only face left, 5, must be opposite 2.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-070",
+   "topic": "mat-spatial",
+   "s": "Dice",
+   "d": 3,
+   "q": "Three views of the same die show the faces (1, 2, 3), (1, 2, 4) and (1, 3, 5) together. Which number is opposite 3?",
+   "o": [
+    "4",
+    "6",
+    "5",
+    "2"
+   ],
+   "a": 0,
+   "x": "1 touches 2, 3, 4, 5, so 1 is opposite 6. 3 touches 1, 2 and 5, and 6 is already taken, so 3 is opposite 4.",
+   "trap": "6 — 6 never appears with 3, but 6 is already opposite 1.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-071",
+   "topic": "mat-spatial",
+   "s": "Dice",
+   "d": 2,
+   "q": "On a standard die, opposite faces add up to 7. When 3 is on top, what is the sum of the numbers on the four side faces?",
+   "o": [
+    "18",
+    "14",
+    "11",
+    "7"
+   ],
+   "a": 1,
+   "x": "Total of all faces = 21. Top 3 + bottom 4 = 7. Sides = 21 − 7 = 14.",
+   "trap": "18 — subtracting only the top face."
+  },
+  {
+   "id": "mat2-072",
+   "topic": "mat-spatial",
+   "s": "Dice",
+   "d": 1,
+   "q": "On a standard die, opposite faces add up to 7. Which number is opposite 2?",
+   "o": [
+    "4",
+    "6",
+    "3",
+    "5"
+   ],
+   "a": 3,
+   "x": "Opposite pairs are 1–6, 2–5 and 3–4."
+  },
+  {
+   "id": "mat2-073",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 2,
+   "q": "A cube painted on all faces is cut into 64 equal small cubes. How many small cubes have exactly one face painted?",
+   "o": [
+    "8",
+    "16",
+    "24",
+    "32"
+   ],
+   "a": 2,
+   "x": "n = 4: one face painted = 6(n − 2)² = 6 × 4 = 24.",
+   "trap": "8 — that is the number with no face painted (or three faces)."
+  },
+  {
+   "id": "mat2-074",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 2,
+   "q": "A cube painted on all faces is cut into 64 equal small cubes. How many small cubes have no face painted?",
+   "o": [
+    "8",
+    "0",
+    "27",
+    "16"
+   ],
+   "a": 0,
+   "x": "Unpainted cubes form the inner (n − 2)³ block: (4 − 2)³ = 8.",
+   "trap": "27 — using (n − 1)³ instead of (n − 2)³."
+  },
+  {
+   "id": "mat2-075",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 2,
+   "q": "A cube painted on all faces is cut into 125 equal small cubes. How many small cubes have exactly two faces painted?",
+   "o": [
+    "24",
+    "48",
+    "36",
+    "54"
+   ],
+   "a": 2,
+   "x": "n = 5: two faces painted = 12(n − 2) = 12 × 3 = 36 (edge cubes, not corners).",
+   "trap": "24 — using 12(n − 3)."
+  },
+  {
+   "id": "mat2-076",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 1,
+   "q": "A cube painted on all faces is cut into 125 equal small cubes. How many small cubes have three faces painted?",
+   "o": [
+    "12",
+    "6",
+    "27",
+    "8"
+   ],
+   "a": 3,
+   "x": "Only corner cubes have three painted faces, and a cube always has 8 corners, whatever the cut.",
+   "trap": "12 — that is the number of edges."
+  },
+  {
+   "id": "mat2-077",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 3,
+   "q": "A cube has two opposite faces painted red and the other four faces painted blue. It is cut into 27 equal small cubes. How many small cubes have both red and blue paint?",
+   "o": [
+    "16",
+    "8",
+    "12",
+    "24"
+   ],
+   "a": 0,
+   "x": "Each red face is a 3 × 3 layer; all 8 border cubes of that layer also touch a blue face (only the centre does not). 2 × 8 = 16.",
+   "trap": "8 — counting only the corner cubes."
+  },
+  {
+   "id": "mat2-078",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 2,
+   "q": "A cube painted on all faces is cut into 27 equal small cubes. How many small cubes have at least one face painted?",
+   "o": [
+    "27",
+    "26",
+    "20",
+    "18"
+   ],
+   "a": 1,
+   "x": "Only the single centre cube is unpainted: 27 − 1 = 26.",
+   "trap": "20 — adding only corners (8) and edges (12), forgetting the 6 face-centre cubes."
+  },
+  {
+   "id": "mat2-079",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 3,
+   "q": "A cuboid 5 cm × 4 cm × 3 cm is painted on all faces and cut into 1 cm cubes. How many of these cubes have no face painted?",
+   "o": [
+    "0",
+    "12",
+    "24",
+    "6"
+   ],
+   "a": 3,
+   "x": "Unpainted cubes form the inner block (5 − 2)(4 − 2)(3 − 2) = 3 × 2 × 1 = 6.",
+   "trap": "0 — assuming no inner block exists when one side is only 3 cm."
+  },
+  {
+   "id": "mat2-080",
+   "topic": "mat-spatial",
+   "s": "Cube cutting and painting",
+   "d": 2,
+   "q": "What is the minimum number of straight cuts needed to divide a cube into 27 identical smaller cubes?",
+   "o": [
+    "9",
+    "27",
+    "6",
+    "3"
+   ],
+   "a": 2,
+   "x": "Two cuts in each of the three directions: 3 × 2 = 6 cuts give 3 × 3 × 3 = 27 pieces (pieces are not restacked).",
+   "trap": "9 — counting cuts as if each slab were cut separately."
+  },
+  {
+   "id": "mat2-081",
+   "topic": "mat-spatial",
+   "s": "Paper folding and punching",
+   "d": 1,
+   "q": "A sheet of paper is folded in half three times. One hole is punched through all layers, away from the folds. How many holes appear when it is unfolded?",
+   "o": [
+    "3",
+    "8",
+    "6",
+    "4"
+   ],
+   "a": 1,
+   "x": "Each fold doubles the layers: 2³ = 8 layers, so 8 holes.",
+   "trap": "3 — one hole per fold."
+  },
+  {
+   "id": "mat2-082",
+   "topic": "mat-spatial",
+   "s": "Paper folding and punching",
+   "d": 2,
+   "q": "A square sheet is folded in half by bringing its left edge onto its right edge. One hole is punched near the top-right corner of the folded sheet. When unfolded, where are the holes?",
+   "o": [
+    "Two holes, near the top-left and top-right corners",
+    "One hole near the top-right corner",
+    "Two holes, near the top-right and bottom-right corners",
+    "Four holes, one near each corner"
+   ],
+   "a": 0,
+   "x": "The fold line is vertical, so the hole is mirrored left–right: one near the top-right corner and its mirror near the top-left corner.",
+   "trap": "Bottom-right — mirroring across a horizontal line, but the fold was vertical."
+  },
+  {
+   "id": "mat2-083",
+   "topic": "mat-spatial",
+   "s": "Paper folding and punching",
+   "d": 3,
+   "q": "A square sheet is folded in half and then in half again to make a smaller square. One hole is punched at the exact centre of this small square. When unfolded, what do you see?",
+   "o": [
+    "4 holes, one at the centre of each quarter of the sheet",
+    "1 hole at the centre of the sheet",
+    "2 holes on the central fold line",
+    "4 holes, one near each corner of the sheet"
+   ],
+   "a": 0,
+   "x": "Two folds make 4 layers, each a quarter of the sheet. The punch is at the centre of every quarter, so 4 holes appear, one per quarter.",
+   "trap": "1 hole at the centre — the centre of the folded square is not the centre of the sheet."
+  },
+  {
+   "id": "mat2-084",
+   "topic": "mat-spatial",
+   "s": "Counting figures",
+   "d": 2,
+   "q": "A square is divided into 4 equal smaller squares by one vertical and one horizontal line through its centre. How many rectangles (including squares) are there in the figure?",
+   "o": [
+    "4",
+    "5",
+    "9",
+    "8"
+   ],
+   "a": 2,
+   "x": "3 vertical lines and 3 horizontal lines; choose 2 of each: C(3,2) × C(3,2) = 3 × 3 = 9.",
+   "trap": "5 — 4 small squares + the big one, missing the 4 half-rectangles."
+  },
+  {
+   "id": "mat2-085",
+   "topic": "mat-spatial",
+   "s": "Counting figures",
+   "d": 3,
+   "q": "A square is divided into a 3 × 3 grid of 9 equal small squares. How many squares are there in all?",
+   "o": [
+    "9",
+    "14",
+    "10",
+    "13"
+   ],
+   "a": 1,
+   "x": "1 × 1: 9, 2 × 2: 4, 3 × 3: 1. Total 9 + 4 + 1 = 14.",
+   "trap": "10 — forgetting the four 2 × 2 squares."
+  },
+  {
+   "id": "mat2-086",
+   "topic": "mat-spatial",
+   "s": "Counting figures",
+   "d": 2,
+   "q": "A strip is made of 4 small squares in a single row. How many rectangles (including squares) does it contain?",
+   "o": [
+    "4",
+    "7",
+    "8",
+    "10"
+   ],
+   "a": 3,
+   "x": "5 vertical lines; any 2 make a rectangle: C(5,2) = 10 (4 + 3 + 2 + 1).",
+   "trap": "4 — counting only the small squares."
+  },
+  {
+   "id": "mat2-087",
+   "topic": "mat-spatial",
+   "s": "Counting figures",
+   "d": 3,
+   "q": "In a triangle, three straight lines are drawn from the top vertex to the base, dividing the base into 4 parts. How many triangles are there in the figure?",
+   "o": [
+    "4",
+    "10",
+    "7",
+    "8"
+   ],
+   "a": 1,
+   "x": "With the two sides there are 5 lines from the vertex; any 2 of them form a triangle: C(5,2) = 10.",
+   "trap": "4 — counting only the smallest triangles."
+  },
+  {
+   "id": "mat2-088",
+   "topic": "mat-spatial",
+   "s": "Counting figures",
+   "d": 2,
+   "q": "A 3 × 3 × 3 cube is built from 27 unit cubes. A straight tunnel one cube wide is drilled from the centre of the front face to the centre of the back face, removing those cubes. How many unit cubes remain?",
+   "o": [
+    "24",
+    "25",
+    "21",
+    "18"
+   ],
+   "a": 0,
+   "x": "The tunnel removes the 3 cubes in the middle front-to-back line: 27 − 3 = 24.",
+   "trap": "25 — removing only the two face-centre cubes and forgetting the centre cube."
+  },
+  {
+   "id": "mat2-089",
+   "topic": "mat-spatial",
+   "s": "Mirror images",
+   "d": 1,
+   "q": "Which capital letter looks exactly the same in a mirror held vertically beside it?",
+   "o": [
+    "B",
+    "C",
+    "D",
+    "A"
+   ],
+   "a": 3,
+   "x": "A has a vertical line of symmetry, so a side mirror does not change it. B, C and D are symmetric only about a horizontal line.",
+   "trap": "B — it is symmetric, but top-to-bottom, not left-to-right."
+  },
+  {
+   "id": "mat2-090",
+   "topic": "mat-spatial",
+   "s": "Water images",
+   "d": 2,
+   "q": "Which word looks exactly the same in its water image (reflection in a horizontal line below it)?",
+   "o": [
+    "MAT",
+    "CAT",
+    "BOX",
+    "TOP"
+   ],
+   "a": 2,
+   "x": "A water image flips top to bottom without changing letter order. B, O and X are symmetric about a horizontal line; M, A, T and P are not.",
+   "trap": "TOP — O is symmetric, but T and P turn upside down."
+  },
+  {
+   "id": "mat2-091",
+   "topic": "mat-spatial",
+   "s": "Mirror images",
+   "d": 3,
+   "q": "Which word looks exactly the same in a mirror held vertically beside it?",
+   "o": [
+    "BOOK",
+    "DEED",
+    "NOON",
+    "TOOT"
+   ],
+   "a": 3,
+   "x": "A side mirror reverses letter order and flips each letter. TOOT reads the same backwards and T and O are left–right symmetric. N, D, E, B and K are not.",
+   "trap": "NOON — it reads the same backwards, but N flips into a reversed N."
+  },
+  {
+   "id": "mat2-092",
+   "topic": "mat-spatial",
+   "s": "Mirror images (clock)",
+   "d": 2,
+   "q": "The mirror image of a clock shows 9:30. What is the actual time?",
+   "o": [
+    "3:30",
+    "9:30",
+    "2:30",
+    "6:30"
+   ],
+   "a": 2,
+   "x": "Actual = 11:60 − 9:30 = 2:30.",
+   "trap": "3:30 — doing 12 − 9 without borrowing for the minutes.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-093",
+   "topic": "mat-spatial",
+   "s": "Cube net",
+   "d": 2,
+   "q": "A cube net: four squares in a vertical column are labelled P, Q, R, S from top to bottom; square T is attached to the left of Q and square U to the right of Q. When folded into a cube, which face is opposite Q?",
+   "o": [
+    "S",
+    "P",
+    "T",
+    "R"
+   ],
+   "a": 0,
+   "x": "In a straight column of four, alternate squares are opposite: P–R and Q–S. The two side flaps T and U are opposite each other.",
+   "trap": "P — P and Q touch in the net, so they are adjacent."
+  },
+  {
+   "id": "mat2-094",
+   "topic": "mat-spatial",
+   "s": "Cube net",
+   "d": 3,
+   "q": "A cube net: four squares in a row are labelled A, B, C, D from left to right; square E is attached above B and square F is attached below C. When folded, which face is opposite E?",
+   "o": [
+    "D",
+    "F",
+    "A",
+    "C"
+   ],
+   "a": 1,
+   "x": "A–C and B–D are opposite (alternate squares in the row). That leaves E and F as the last pair, so E is opposite F.",
+   "trap": "D — flaps on different squares can still end up opposite."
+  },
+  {
+   "id": "mat2-095",
+   "topic": "mat-spatial",
+   "s": "Cube net",
+   "d": 3,
+   "q": "A staircase cube net: squares A and B side by side in the top row (A on the left); C directly below B with D to the right of C; E directly below D with F to the right of E. When folded, which face is opposite A?",
+   "o": [
+    "D",
+    "C",
+    "E",
+    "F"
+   ],
+   "a": 0,
+   "x": "Take B as the base: A folds up as the left wall, C as the front wall, D (beside C) wraps round as the right wall, E becomes the top and F the back. Left (A) is opposite right (D).",
+   "trap": "C — C is two steps away in the net, but it is adjacent to A on the cube."
+  },
+  {
+   "id": "mat2-096",
+   "topic": "mat-spatial",
+   "s": "Abstract figure series",
+   "d": 3,
+   "q": "An arrow points up in figure 1. In each next figure it turns clockwise, first by 45°, then 90°, then 135°, and so on (45° more each time). In figure 5, which way does the arrow point?",
+   "o": [
+    "Left",
+    "Down",
+    "Right",
+    "Up"
+   ],
+   "a": 2,
+   "x": "Directions: up → up-right (45°) → down-right (+90°) → left (+135°) → right (+180°).",
+   "trap": "Left — stopping at figure 4.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-097",
+   "topic": "mat-spatial",
+   "s": "Abstract figure series",
+   "d": 1,
+   "q": "A figure series: a triangle with 5 dots inside, a square with 4 dots inside, a pentagon with 3 dots inside. What comes next?",
+   "o": [
+    "A hexagon with 3 dots inside",
+    "A hexagon with 2 dots inside",
+    "A pentagon with 2 dots inside",
+    "A heptagon with 2 dots inside"
+   ],
+   "a": 1,
+   "x": "Sides go up by one (3, 4, 5, 6) while dots go down by one (5, 4, 3, 2).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-098",
+   "topic": "mat-numerical",
+   "s": "Time and work",
+   "d": 1,
+   "q": "8 workers can build a wall in 15 days. Working at the same rate, how many days will 12 workers take?",
+   "o": [
+    "22.5 days",
+    "11 days",
+    "12 days",
+    "10 days"
+   ],
+   "a": 3,
+   "x": "Total work = 8 × 15 = 120 worker-days. 12 workers need 120 ÷ 12 = 10 days.",
+   "trap": "22.5 days — treating more workers as more days (direct proportion).",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-099",
+   "topic": "mat-numerical",
+   "s": "Ratio and proportion",
+   "d": 3,
+   "q": "A gets 2/3 of what B gets, and B gets 2/3 of what C gets. Together they get Rs 190. How much does C get?",
+   "o": [
+    "Rs 60",
+    "Rs 40",
+    "Rs 95",
+    "Rs 90"
+   ],
+   "a": 3,
+   "x": "Let C = 9k: B = 6k, A = 4k. 19k = 190, k = 10, so C = Rs 90 (B 60, A 40).",
+   "trap": "Rs 60 — that is B's share.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-100",
+   "topic": "mat-numerical",
+   "s": "Clock",
+   "d": 3,
+   "q": "A clock is set right at 6:00 am. It gains 10 minutes every hour. What is the correct time when this clock shows 1:00 pm the same day?",
+   "o": [
+    "12:00 noon",
+    "11:50 am",
+    "1:00 pm",
+    "1:10 pm"
+   ],
+   "a": 0,
+   "x": "The clock runs 70 min for every 60 real min. Clock time passed = 7 h = 420 min, so real time = 420 × 60/70 = 360 min = 6 h. 6:00 am + 6 h = 12:00 noon.",
+   "trap": "11:50 am — taking off 7 × 10 = 70 min, as if it gained per hour shown.",
+   "yrs": [
+    2081,
+    2082
+   ],
+   "rep": 2
+  },
+  {
+   "id": "mat2-101",
+   "topic": "mat-numerical",
+   "s": "Speed, time and distance",
+   "d": 2,
+   "q": "Two trains, 120 m and 150 m long, run on parallel tracks in the same direction at 72 km/h and 54 km/h. How long does the faster train take to pass the slower one completely?",
+   "o": [
+    "7.7 s",
+    "30 s",
+    "54 s",
+    "24 s"
+   ],
+   "a": 2,
+   "x": "Same direction: relative speed = 72 − 54 = 18 km/h = 5 m/s. Distance = 120 + 150 = 270 m. Time = 270 ÷ 5 = 54 s.",
+   "trap": "7.7 s — adding the speeds, which is only right for opposite directions.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-102",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 2,
+   "q": "Find the next term: 2/3, 5/7, 8/11, 11/15, ?",
+   "o": [
+    "14/18",
+    "14/19",
+    "13/19",
+    "15/19"
+   ],
+   "a": 1,
+   "x": "Numerators rise by 3 (2, 5, 8, 11, 14); denominators rise by 4 (3, 7, 11, 15, 19). Next = 14/19.",
+   "trap": "14/18 — adding 3 to the denominator as well.",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-103",
+   "topic": "mat-logical",
+   "s": "Number series",
+   "d": 2,
+   "q": "Which expression gives the nth term of the series 3, 7, 11, 15, …?",
+   "o": [
+    "4n + 1",
+    "3n + 4",
+    "4n − 1",
+    "n + 2"
+   ],
+   "a": 2,
+   "x": "Common difference 4, so the term is 4n + c. For n = 1: 4 + c = 3, c = −1. Check n = 4: 16 − 1 = 15.",
+   "trap": "4n + 1 — gives 5, 9, 13 (starts one step too high).",
+   "yrs": [
+    2081
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-104",
+   "topic": "mat-logical",
+   "s": "Letter series",
+   "d": 2,
+   "q": "Find the next term: AZ2, BY4, CX8, DW16, ?",
+   "o": [
+    "EV24",
+    "EV32",
+    "EU32",
+    "FV32"
+   ],
+   "a": 1,
+   "x": "First letter moves forward (A→E), second backward (Z→V), and the number doubles (16 × 2 = 32).",
+   "trap": "EV24 — adding 8 instead of doubling.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-105",
+   "topic": "mat-logical",
+   "s": "Ordering",
+   "d": 3,
+   "q": "Five exams — Anatomy, Biochemistry, Chemistry, Physics and Zoology — are held one per day from Monday to Friday. Physics is on Wednesday. Anatomy is on the day after Physics. Zoology is on the day just before Chemistry. Which exam is on Friday?",
+   "o": [
+    "Biochemistry",
+    "Chemistry",
+    "Zoology",
+    "Anatomy"
+   ],
+   "a": 0,
+   "x": "Physics Wednesday, Anatomy Thursday. Zoology–Chemistry need two days in a row, so they take Monday–Tuesday. Friday is left for Biochemistry.",
+   "trap": "Chemistry — placing the Zoology–Chemistry pair on Thursday–Friday, which Anatomy already holds.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-106",
+   "topic": "mat-spatial",
+   "s": "Rotation of figures",
+   "d": 2,
+   "q": "A figure is rotated 90° clockwise and then 180° anticlockwise. Which single rotation gives the same result?",
+   "o": [
+    "90° clockwise",
+    "270° anticlockwise",
+    "180° clockwise",
+    "90° anticlockwise"
+   ],
+   "a": 3,
+   "x": "Net turn = 90° clockwise − 180° = 90° anticlockwise (the same as 270° clockwise).",
+   "trap": "90° clockwise — taking the net turn in the wrong direction (180 − 90 the other way).",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  },
+  {
+   "id": "mat2-107",
+   "topic": "mat-spatial",
+   "s": "Classification of figures (odd one out)",
+   "d": 1,
+   "q": "Find the odd figure: a triangle with 3 dots inside, a square with 4 dots inside, a pentagon with 6 dots inside, a hexagon with 6 dots inside.",
+   "o": [
+    "The pentagon with 6 dots",
+    "The triangle with 3 dots",
+    "The square with 4 dots",
+    "The hexagon with 6 dots"
+   ],
+   "a": 0,
+   "x": "In three figures the number of dots equals the number of sides (3, 4, 6). The pentagon has 5 sides but 6 dots.",
+   "trap": "The hexagon — it shares 6 dots with the pentagon, but its dots match its sides.",
+   "yrs": [
+    2082
+   ],
+   "rep": 1
+  }
+ ]
+}
