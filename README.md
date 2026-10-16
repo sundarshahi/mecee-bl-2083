@@ -21,3 +21,10 @@ cd src && python3 build.py
 ```
 
 This rebuilds `index.html`.
+
+## Install as an app
+
+- **Android / Chrome / Edge:** open the site and tap **Install** on the Home screen card (or the browser's install icon).
+- **iPhone / iPad:** open the site in Safari, tap **Share**, then **Add to Home Screen**.
+
+After the first visit it works offline. New versions download in the background and show the next time you open it.

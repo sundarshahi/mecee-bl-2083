@@ -56,9 +56,18 @@ page = (here / "template.html").read_text().replace("__BANK__", bank)
 head = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
         '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">'
         '<meta name="description" content="Free MECEE-BL (MBBS entrance, Nepal) practice: syllabus-based MCQs, series papers, spaced review and a projected score.">'
+        '<link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#E8ECE7">'
+        '<link rel="icon" type="image/png" href="icons/favicon-32.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">'
+        '<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">'
+        '<meta name="apple-mobile-web-app-title" content="MECEE 2083"><meta name="apple-mobile-web-app-status-bar-style" content="default">'
+        '<script>window.__PWA__ = 1</script>'
         '<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>')
 html = head + page + "</html>\n"
 (here.parent / "index.html").write_text(html)
+# offline worker: a new cache name per build, so phones pick up each new version
+import hashlib
+ver = hashlib.sha1(html.encode()).hexdigest()[:10]
+(here.parent / "sw.js").write_text((here / "sw.template.js").read_text().replace("__VER__", ver))
 for s in subjects:
     c = collections.Counter(q["topic"] for q in s["questions"])
     print(s["subject"], len(s["questions"]), {t: c[t] for t in GRID[s["subject"]]})

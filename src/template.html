@@ -7,7 +7,7 @@
    one muted teal accent, soft gold only for rewards. One 480px column; a floating tab bar; bottom sheets for feedback.
    Calm by day, Calm night from 18:00 to 06:00 (or chosen in Settings). Gentle motion only. */
 :root{
-  --bg:#E8ECE7; --card:#F4F6F2; --ink:#29312E; --muted:#636E69; --line:#D7DDD6; --soft:#E2E7E0;
+  --bg:#E8ECE7; --card:#F4F6F2; --ink:#29312E; --muted:#58635E; --line:#D7DDD6; --soft:#E2E7E0;
   --acc:#3D766F; --acc-2:#DAE8E4; --on-acc:#F4F6F2; --flame:#C27A55;
   --gold:#BF9248; --gold-2:#EFE6D3; --gold-ink:#6E521C;
   --ok:#4C8960; --ok-2:#DFEBE0; --ok-ink:#2E6640; --bad:#B4675C; --bad-2:#F1E2DE; --bad-ink:#8A4238;
@@ -72,6 +72,8 @@ label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
 .ring b small{font-size:11px;color:var(--muted);font-weight:700;margin-top:4px}
 .cta{min-height:66px;border-radius:20px;justify-content:space-between;padding:0 18px;text-align:left;font-size:17px}
 .cta small{display:block;font-size:12px;font-weight:600;opacity:.85}
+.cta .cta-t{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cta.sec .go{background:var(--card)}
 .cta .go{width:36px;height:36px;border-radius:50%;background:rgb(255 255 255/.18);display:grid;place-items:center;flex:none}
 .score{font-size:42px;font-weight:800;line-height:1;letter-spacing:-.02em}
 .track{position:relative;height:10px;border-radius:999px;background:var(--soft);margin-top:12px}
@@ -90,14 +92,14 @@ label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
 .xp.done{color:var(--ok-ink);background:var(--ok-2)}
 .note{border-radius:18px;padding:12px 14px;background:var(--gold-2);color:var(--ink);font-size:14.5px;line-height:1.5}
 .note b{color:var(--gold-ink)}
-.quick{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px}
-.quick .btn{min-height:56px;font-size:14.5px;border-radius:16px;flex-direction:column;gap:0;line-height:1.25}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.quick .btn{min-height:62px;font-size:15px;border-radius:16px;flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;line-height:1.25;text-align:left;padding:0 14px;white-space:nowrap}
 .quick .btn small{font-weight:600;font-size:12px;color:var(--muted)}
 
 /* segmented */
 .seg{display:flex;gap:4px;background:var(--soft);border-radius:14px;padding:4px;overflow-x:auto;scrollbar-width:none}
 .seg::-webkit-scrollbar{display:none}
-.seg button{flex:1;padding:8px 10px;border-radius:10px;font-weight:700;font-size:14px;color:var(--muted);white-space:nowrap;transition:background .2s,color .2s}
+.seg button{flex:1 1 0;min-width:0;padding:8px 6px;border-radius:10px;font-weight:700;font-size:14px;color:var(--muted);white-space:nowrap;transition:background .2s,color .2s}
 .seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
 
 /* path */
@@ -201,8 +203,8 @@ ul.cpts{margin:0;padding-left:1.1rem;display:grid;gap:6px;font-size:15px;line-he
 .bars14 div.z{background:var(--soft)}
 .tbl{overflow-x:auto}
 table{border-collapse:collapse;width:100%;font-size:14px}
-th{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 6px;border-bottom:1.5px solid var(--line);white-space:nowrap}
-td{padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 4px;border-bottom:1.5px solid var(--line);white-space:nowrap}
+td{padding:9px 4px;border-bottom:1px solid var(--line);vertical-align:middle}
 td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
 .chip{display:inline-block;font-size:11.5px;font-weight:800;padding:2px 8px;border-radius:999px;white-space:nowrap}
 .chip.strong{background:var(--ok-2);color:var(--ok-ink)} .chip.shaky{background:var(--gold-2);color:var(--gold-ink)} .chip.weak{background:var(--bad-2);color:var(--bad-ink)} .chip.new{background:var(--soft);color:var(--muted)}
@@ -211,7 +213,7 @@ details summary::-webkit-details-marker{display:none}
 details summary::after{content:"+";float:right;color:var(--muted);font-weight:800}
 details[open] summary::after{content:"–"}
 details[open] summary{margin-bottom:10px}
-.src{display:grid;gap:2px;padding-block:10px;border-top:1px solid var(--line)}
+.src{display:grid;gap:2px;padding-block:10px;border-top:1px solid var(--line);min-width:0;overflow-wrap:anywhere}
 .src:first-child{border-top:0;padding-top:0}
 .empty{padding:22px;text-align:center;border:1.5px dashed var(--line);border-radius:18px;display:grid;gap:8px;justify-items:center}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
@@ -240,6 +242,7 @@ const DAY = 864e5, PACE = 54, L = "ABCD";
 const RAW = JSON.parse(document.getElementById("bank").textContent);
 const SUBJ = [{k:"Physics",m:50},{k:"Chemistry",m:50},{k:"Zoology",m:40},{k:"Botany",m:40},{k:"MAT",m:20}];
 const SC = Object.fromEntries(SUBJ.map(s => [s.k, s]));
+const SHORT = {Physics: "Phy", Chemistry: "Chem", Zoology: "Zoo", Botany: "Bot", MAT: "MAT"};
 const TOP = {}, TOPS_BY = {};
 for (const f of RAW.subjects) {
   const sum = f.topics.reduce((a, t) => a + t.weight, 0) || 1;
@@ -264,6 +267,7 @@ const ICON = {
   book: '<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="none" stroke="currentColor" stroke-width="2"/>',
   lock: '<rect x="6" y="11" width="12" height="9" rx="2" fill="currentColor"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3" stroke="currentColor" stroke-width="2.2" fill="none"/>',
   arrow: '<path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>',
+  install: '<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
   x: '<path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>'
 };
 const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="${size}" aria-hidden="true">${ICON[k]}</svg>`;
@@ -341,8 +345,23 @@ function applyLook() {
   const h = new Date().getHours();
   const night = S.look === "night" || (S.look === "auto" && (h >= 18 || h < 6));
   document.documentElement.dataset.look = night ? "night" : "calm";
+  const tc = document.querySelector('meta[name="theme-color"]'); if (tc) tc.content = night ? "#1A1E1D" : "#E8ECE7";
 }
 applyLook(); setInterval(applyLook, 60e3);
+
+/* ── installable app (website build only): offline worker + install prompt ── */
+let installEvt = null;
+const standalone = matchMedia("(display-mode: standalone)").matches || navigator.standalone === true;
+const isIOS = /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+addEventListener("beforeinstallprompt", e => { e.preventDefault(); installEvt = e; if (tab === "home") render(); });
+addEventListener("appinstalled", () => { installEvt = null; toast("Installed. Open it from your home screen."); if (tab === "home") render(); });
+if (window.__PWA__ && "serviceWorker" in navigator) addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+function installCard() {
+  if (!window.__PWA__ || standalone || S.hideInstall || (!installEvt && !isIOS)) return "";
+  return `<div class="card row" style="flex-wrap:nowrap;gap:12px"><span class="qi" style="background:var(--acc-2);color:var(--acc)">${svg("install")}</span>
+    <div style="flex:1"><b>Install the app</b><div class="small muted">${installEvt ? "Opens from your home screen and works without internet." : "In Safari, tap Share, then “Add to Home Screen”. It then works without internet."}</div></div>
+    ${installEvt ? `<button class="btn sm" data-act="install">Install</button>` : ""}<button class="close" data-act="hideinstall" aria-label="Hide">${svg("x", 16)}</button></div>`;
+}
 
 /* ── psychometrics: Elo-style Rasch estimate per unit and per subject, with a 4-option guessing floor ── */
 const BD = {1:-1, 2:0, 3:1}, PRIOR = -0.6, TYP = 0.3;
@@ -660,6 +679,7 @@ function vHome() {
   const eyeIn = Math.max(1, Math.ceil((25 * 60 - activeSec) / 60));
   return `${hud()}
   <div><p class="muted small">${d == null ? "Set your exam date in Progress" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to MECEE-BL` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
+  ${installCard()}
   ${late ? `<div class="note row" style="flex-wrap:nowrap"><span style="color:var(--gold-ink)">${svg("moon", 22)}</span><span>It's late. Sleep is when today's practice turns into memory. Your streak is safe until 4 am.</span></div>` : ""}
   ${n < 20 ? `<div class="card stack">
     <span class="lab">Start here</span><h2>Placement check</h2>
@@ -667,13 +687,13 @@ function vHome() {
     <button class="btn" data-act="start" data-kind="placement">Start placement check</button></div>` : ""}
   <div class="card hero">
     <div class="ring"><svg viewBox="0 0 36 36"><circle class="trk" cx="18" cy="18" r="15" fill="none" stroke-width="4"/><circle class="val" cx="18" cy="18" r="15" fill="none" stroke-width="4" stroke-linecap="round" stroke-dasharray="94.25" stroke-dashoffset="${(94.25 * (1 - Math.min(1, done / Math.max(goal, 1)))).toFixed(1)}"/></svg><b class="tn">${done}<small>of ${goal}</small></b></div>
-    <div><h3>${goalMet ? "Today's goal done" : "Today's goal"}</h3><p class="small muted" style="margin-top:4px">${goalMet ? "Anything more is a bonus. Rest your eyes between sessions." : `${goal - done} more questions today${S.streak.n ? ` keeps your ${S.streak.n}-day streak` : " starts a streak"}.`}${S.streak.freeze ? ` ${S.streak.freeze} streak ${S.streak.freeze === 1 ? "freeze" : "freezes"} saved.` : ""}</p></div>
+    <div><h3>${goalMet ? "Today's goal done" : "Today's goal"}</h3><p class="small" style="margin-top:4px">${goalMet ? "Anything more is a bonus." : `${goal - done} more to go.`}</p><p class="small muted">${S.streak.n ? `${S.streak.n}-day streak` : "Answer today to start a streak"}${S.streak.freeze ? ` · ${S.streak.freeze} ${S.streak.freeze === 1 ? "freeze" : "freezes"} saved` : ""}</p></div>
   </div>
-  <button class="btn cta" data-act="start" data-kind="smart"><span><small>${n < 20 ? "Or jump in" : "Next up · most marks to gain"}</small>${esc(top.name)} and mixed review</span><span class="go">${svg("arrow")}</span></button>
+  <button class="btn cta ${n < 20 ? "sec" : ""}" data-act="start" data-kind="smart"><span style="min-width:0"><small>${n < 20 ? "Or start a smart session" : "Next up · 20 questions · most marks to gain"}</small><span class="cta-t">${esc(top.name)}</span></span><span class="go">${svg("arrow")}</span></button>
   <div class="quick">
     <button class="btn sec" data-act="start" data-kind="review" ${due ? "" : "disabled"}>Review due<small>${due} waiting</small></button>
-    <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>asked in past papers</small></button>
-    ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Confident mistakes<small>${mis} to fix</small></button>` : ""}
+    <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>from past papers</small></button>
+    ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Fix mistakes<small>${mis} confident ones</small></button>` : ""}
     ${nextSeries >= 0 ? `<button class="btn sec" data-act="series" data-k="${nextSeries}">${esc(SERIES[nextSeries].name)}<small>200 Q · 3 h</small></button>` : ""}
   </div>
   <div class="card">
@@ -710,7 +730,7 @@ function vPath() {
   const pj = project().by[subj];
   const sides = ["c", "l", "c", "r"];
   return `${hud()}
-  <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="psub" data-k="${s.k}" aria-pressed="${s.k === subj}">${s.k}</button>`).join("")}</div>
+  <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="psub" data-k="${s.k}" aria-label="${s.k}" aria-pressed="${s.k === subj}">${s.k === subj ? s.k : SHORT[s.k]}</button>`).join("")}</div>
   <div class="unitband"><div><small>${esc(subj.toUpperCase())} · ${SC[subj].m} MARKS</small><b>${units.length} syllabus units</b></div><span class="tn" style="font-weight:800;white-space:nowrap">${pj.toFixed(0)}/${SC[subj].m}</span></div>
   <div class="road">${units.map((t, k) => {
     const st = stars(t.id), o = S.th[t.id] || {}, [lc] = level(t.id);
@@ -789,7 +809,8 @@ function vExams() {
     <div class="note"><b>How many papers?</b> No study gives a magic number. What raises scores is a full timed paper about every second day, plus reviewing every mistake right after it (Adesope et al., 2017; Rawson et al., 2013). With ${Math.max(0, daysLeft() ?? 0)} days left that is about ${Math.max(1, Math.ceil(Math.max(0, (daysLeft() ?? 0) - 1) / 2))} more full papers. On other days, use smart sessions and half papers.</div>
     <span class="lab" style="margin-top:4px">Quick rounds</span>
     <div class="grid2b"><button class="btn sec" data-act="quick" data-scale="0.1" data-label="Sprint">Sprint · 20 Q</button><button class="btn sec" data-act="quick" data-scale="0.5" data-label="Half paper">Half · 100 Q</button></div>
-    <div class="seg" role="group" aria-label="Subject boss rounds">${SUBJ.map(s => `<button data-act="boss" data-k="${s.k}">${s.k} · ${s.m}</button>`).join("")}</div>
+    <span class="lab" style="margin-top:4px">Subject boss rounds · full subject, timed</span>
+    <div class="seg" role="group" aria-label="Subject boss rounds">${SUBJ.map(s => `<button data-act="boss" data-k="${s.k}" aria-label="${s.k} boss round, ${s.m} questions">${SHORT[s.k]} ${s.m}</button>`).join("")}</div>
     <div class="note"><b>Guessing with −${S.neg} marking.</b> A blind guess earns about +0.06 on average. Rule out one option and answering is worth +0.17; rule out two and it's +0.38. So answer almost everything. Leave blank only what you can't narrow at all.</div>
     ${S.mocks.length ? `<div class="card stack"><span class="lab">Your papers</span><div class="tbl"><table><thead><tr><th>Date</th><th>Paper</th><th class="n">Right</th><th class="n">Wrong</th><th class="n">/200</th></tr></thead><tbody>
       ${S.mocks.slice().reverse().map(m => `<tr><td>${new Date(m.ts).toLocaleDateString(undefined, {month: "short", day: "numeric"})}</td><td>${esc(m.label)}</td><td class="n">${m.right}</td><td class="n">${m.wrong}</td><td class="n"><b>${Math.round(m.scaled)}</b></td></tr>`).join("")}</tbody></table></div></div>` : ""}`;
@@ -819,10 +840,10 @@ function vExamQ() {
 }
 function vExamResult() {
   const r = mk.result;
-  const rows = SUBJ.filter(s => r.by[s.k]).map(s => { const [a, b, c] = r.by[s.k]; return `<tr><td>${esc(s.k)}</td><td class="n">${a}</td><td class="n">${b}</td><td class="n">${c}</td><td class="n"><b>${(a - S.neg * b).toFixed(2)}</b>/${a + b + c}</td></tr>`; }).join("");
+  const rows = SUBJ.filter(s => r.by[s.k]).map(s => { const [a, b, c] = r.by[s.k]; return `<tr><td>${esc(SHORT[s.k])}</td><td class="n">${a}</td><td class="n">${b}</td><td class="n">${c}</td><td class="n"><b>${(a - S.neg * b).toFixed(2)}</b></td></tr>`; }).join("");
   const wrong = mk.qs.map((id, i) => ({q: QI[id], i})).filter(({q, i}) => q && (mk.ans[i] == null || mk.ord[i][mk.ans[i]] !== q.a));
   return `<div style="display:grid;gap:6px;text-align:center;padding-top:16px"><span class="lab">${esc(mk.label)}</span><div class="score tn" style="font-size:56px">${Math.round(r.scaled)}<span class="muted" style="font-size:20px"> / 200</span></div><p class="muted small">${r.right} right · ${r.wrong} wrong · ${r.blank} blank · ${Math.round(r.used / 60)} min · +${r.xp} XP</p></div>
-    <div class="card"><div class="tbl"><table><thead><tr><th>Subject</th><th class="n">Right</th><th class="n">Wrong</th><th class="n">Blank</th><th class="n">Marks</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+    <div class="card"><div class="tbl"><table><thead><tr><th></th><th class="n">Right</th><th class="n">Wrong</th><th class="n">Blank</th><th class="n">Marks</th></tr></thead><tbody>${rows}</tbody></table></div></div>
     ${r.blank ? `<div class="note">You left ${r.blank} blank. With −${S.neg} marking, answering after ruling out one option is worth about +0.17 each, so next time narrow and answer.</div>` : ""}
     <div class="card stack"><span class="lab">Answer sheet · tap a red one to see it</span>${omrGrid(k => { const q = QI[mk.qs[k]]; return mk.ans[k] == null ? "" : mk.ord[k][mk.ans[k]] === q.a ? "r" : "w"; }, "mkreview")}</div>
     ${wrong.length ? `<span class="lab">What you missed</span>${wrong.map(({q, i}) => `<div class="card stack" id="mr${i}">
@@ -843,7 +864,7 @@ function vNotes() {
   })).join("");
   return `${hud()}<h1>Notes</h1>
     <p class="small muted" style="margin-top:-6px">Key facts and formulas for every syllabus unit. Tip: do the 5-question warm-up first; trying before reading makes the reading stick.</p>
-    <div class="seg">${["", ...SUBJ.map(s => s.k)].map(k => `<button data-act="csub" data-k="${k}" aria-pressed="${flt.subj === k}">${k || "All"}</button>`).join("")}</div>
+    <div class="seg" role="group" aria-label="Subject">${["", ...SUBJ.map(s => s.k)].map(k => `<button data-act="csub" data-k="${k}" aria-label="${k || "All subjects"}" aria-pressed="${flt.subj === k}">${k ? SHORT[k] : "All"}</button>`).join("")}</div>
     <label class="f">Search<input id="cq" type="search" value="${esc(flt.q)}" placeholder="e.g. Krebs, lens, pH"></label>
     ${list || `<div class="empty">Nothing matches “${esc(flt.q)}”.</div>`}`;
 }
@@ -1177,6 +1198,8 @@ const ACT = {
   genstop: () => aiState.gen?.ctl?.abort(),
   joingroup: async () => { S.group = true; lastLeague = ""; save(); dirty = true; await flush(); groupState = null; loadGroup(true); render(); toast("You're on this week's board."); },
   leavegroup: async () => { S.group = false; save(); groupState = null; try { await db.doc(`league/${uid}`).delete(); } catch (e) {} render(); toast("You left the board. Your entry is removed."); },
+  install: async () => { if (!installEvt) return; installEvt.prompt(); try { await installEvt.userChoice; } catch (e) {} installEvt = null; render(); },
+  hideinstall: () => { S.hideInstall = true; save(); render(); },
   eyenow: () => startEye(),
   eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
   reset1: () => { confirmReset = true; render(); },
