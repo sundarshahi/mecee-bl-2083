@@ -24,8 +24,9 @@
   --bar:rgba(34,40,38,.97); --shadow:0 1px 2px rgb(0 0 0/.25); --scrim:rgb(0 0 0/.5);
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-html{-webkit-text-size-adjust:100%}
-body{background:var(--bg);color:var(--ink);font:500 17px/1.6 var(--f);padding-inline:16px;padding-block:0 calc(110px + env(safe-area-inset-bottom,0px));transition:background .4s,color .4s}
+html{-webkit-text-size-adjust:100%;overflow-x:hidden;overflow-x:clip}
+/* nothing may make the page wider than the phone: a wider page makes Android zoom the whole app out */
+body{overflow-x:hidden;overflow-x:clip;background:var(--bg);color:var(--ink);font:500 17px/1.6 var(--f);padding-inline:16px;padding-block:0 calc(110px + env(safe-area-inset-bottom,0px));transition:background .4s,color .4s}
 button{font:inherit;color:inherit;cursor:pointer;border:0;background:none}
 a{color:var(--acc)}
 :focus-visible{outline:2.5px solid var(--acc);outline-offset:2px;border-radius:10px}
@@ -49,7 +50,7 @@ main.enter{animation:enter .35s var(--ease)}
 .btn.ok{background:var(--ok);color:var(--on-acc)} .btn.bad{background:var(--bad);color:var(--on-acc)}
 .btn.sm{min-height:40px;font-size:14px;border-radius:12px;width:auto;padding:0 14px}
 .btn[disabled]{opacity:.4;pointer-events:none}
-.grid2b{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.grid2b{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:8px 12px;min-height:46px;width:100%}
 textarea{min-height:170px;font-size:14px;line-height:1.5}
 label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
@@ -92,9 +93,9 @@ label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
 .xp.done{color:var(--ok-ink);background:var(--ok-2)}
 .note{border-radius:18px;padding:12px 14px;background:var(--gold-2);color:var(--ink);font-size:14.5px;line-height:1.5}
 .note b{color:var(--gold-ink)}
-.quick{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.quick .btn{min-height:62px;font-size:15px;border-radius:16px;flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;line-height:1.25;text-align:left;padding:0 14px;white-space:nowrap}
-.quick .btn small{font-weight:600;font-size:12px;color:var(--muted)}
+.quick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.quick .btn{min-width:0;min-height:62px;font-size:15px;border-radius:16px;flex-direction:column;align-items:flex-start;justify-content:center;gap:2px;line-height:1.25;text-align:left;padding:10px 14px;white-space:normal}
+.quick .btn small{display:block;font-weight:600;font-size:12px;color:var(--muted);overflow-wrap:anywhere}
 
 /* segmented */
 .seg{display:flex;gap:4px;background:var(--soft);border-radius:14px;padding:4px;overflow-x:auto;scrollbar-width:none}
@@ -189,12 +190,12 @@ ul.cpts{margin:0;padding-left:1.1rem;display:grid;gap:6px;font-size:15px;line-he
 .sno.best{background:var(--gold-2);color:var(--gold-ink)}
 
 /* progress */
-.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
 .tile{border-radius:18px;padding:12px 8px;text-align:center;background:var(--card);box-shadow:var(--shadow)}
 .tile b{display:block;font-size:23px;font-weight:800;font-variant-numeric:tabular-nums}
 .sbar{display:grid;grid-template-columns:6.2rem 1fr 4.4rem;gap:10px;align-items:center;font-size:14.5px}
 .sbar .mini{margin:0;height:8px}
-.badges{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.badges{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
 .bdg{display:grid;justify-items:center;gap:6px;font-size:12px;font-weight:700;text-align:center;line-height:1.25}
 .bdg span{width:56px;height:56px;border-radius:18px;display:grid;place-items:center;background:var(--gold-2);color:var(--gold-ink)}
 .bdg svg{width:26px;height:26px}
@@ -276,7 +277,7 @@ const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="
 /* ── state: localStorage first, mirrored to the viewer's private db doc when available ── */
 const KEY = "cee150.v1", MKEY = "cee150.mock";
 const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:150, name:"", examName:"MECEE-BL", dailyGoal:0, paperTime:"11:00", setup:false, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
-  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rc:{}, rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
+  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rc:{}, hist:[], rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
 function loadLocal() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {} return blank(); }
 let S = loadLocal();
 S.rem = Object.assign(blank().rem, S.rem || {}); S.remFired = S.remFired || {d: "", ids: []};
@@ -343,6 +344,7 @@ let sample = null;
 (async () => { if (window.claude) { try { sample = await claude.use("sample"); } catch (e) {} if (sample && !mk && !pr) render(); } })();
 
 /* ── keep progress: ask the browser to keep this site's storage (not cleared under storage pressure) ── */
+let discardAsk = false, histOpen = null, histMissedOnly = true;
 let persisted = null, restorePending = null, setupErr = null;
 if (navigator.storage && navigator.storage.persist) navigator.storage.persisted().then(p => p || navigator.storage.persist()).then(p => { persisted = p; }).catch(() => {});
 
@@ -502,6 +504,7 @@ function buildSession(n, f = {}) {
     return interleave(shuffle(ids));
   }
   if (f.kind === "mis") return shuffle(misList().map(q => q.id)).slice(0, n);
+  if (f.kind === "list") return (f.ids || []).filter(id => QI[id]);
   if (f.kind === "repeat") {
     pool = pool.filter(q => q.rep > 0);
     const fresh = pool.filter(q => !S.it[q.id] || !S.it[q.id].ok).sort((a, b) => (b.rep - a.rep) || (Math.random() - 0.5));
@@ -529,8 +532,20 @@ function buildSession(n, f = {}) {
 /* ── practice run ── */
 let pr = null, mk = null, tab = "home", flt = {subj: "", q: ""}, pathSubj = null, importDraft = null, confirmReset = false, aiState = {}, unitSheet = null, eyeSheet = null;
 const LABELS = {smart: "Smart session", review: "Review due", placement: "Placement check", mis: "Confident mistakes", repeat: "Repeated questions", warmup: "Warm-up"};
+function logSession() {
+  if (pr && !pr.logged && pr.res.length) {
+    pr.logged = true;
+    S.hist.push({ts: Date.now(), kind: "practice", label: pr.label, ids: pr.res.map(r => r.id), p: pr.res.map(r => r.pick ?? "-").join(""), k: pr.res.map(r => r.ok ? 1 : 0).join("")});
+  }
+  if (gm && !gm.logged && gm.log?.length) {
+    gm.logged = true;
+    S.hist.push({ts: Date.now(), kind: "mode", label: MODES[gm.kind].name, ids: gm.log.map(x => x.id || ""), p: gm.log.map(x => x.pick ?? "-").join(""), k: gm.log.map(x => x.ok ? 1 : 0).join("")});
+  }
+  if (S.hist.length > 30) S.hist = S.hist.slice(-30);
+}
 function startPractice(kind, opts = {}) {
-  if (mk && !mk.result) { go("exams"); toast("Finish or submit the running exam first."); return; }
+  if (mk && !mk.result && !mk.pausedAt) { toast(`${mk.label} is in progress. Continue or discard it from Home.`); go("home"); return; }
+  if (pr && !pr.end) { pr.end = true; logSession(); }
   const qs = buildSession(opts.n || 20, {kind, ...opts});
   if (!qs.length) { toast(kind === "review" ? "Nothing is due for review right now." : "No new questions left there. Try a smart session."); return; }
   const label = kind === "topic" || kind === "warmup" ? (kind === "warmup" ? "Warm-up · " : "") + TOP[opts.topic]?.name : kind === "subject" ? opts.subject : (LABELS[kind] || "Practice") + (kind === "repeat" && opts.subject ? " · " + opts.subject : "");
@@ -542,7 +557,7 @@ function answer(sure) {
   const id = pr.qs[pr.i], q = QI[id], ok = pr.ord[pr.i][pr.sel] === q.a;
   const retry = pr.seen.has(id);
   const secs = Math.min(300, (Date.now() - pr.t0) / 1000);
-  if (!retry) { record(q, ok, sure, secs); pr.res.push({id, ok, sure, secs}); pr.seen.add(id); save(); }
+  if (!retry) { record(q, ok, sure, secs); pr.res.push({id, ok, sure, secs, pick: pr.ord[pr.i][pr.sel]}); pr.seen.add(id); save(); }
   else if (ok) addXP(2);
   if (!ok && !retry) { pr.qs.push(id); pr.ord.push(shuffle([0,1,2,3])); }
   pr.combo = ok ? pr.combo + 1 : 0; pr.best = Math.max(pr.best, pr.combo);
@@ -553,7 +568,7 @@ function answer(sure) {
 function nextQ() {
   if (!pr) return;
   pr.i++; pr.sel = null; pr.done = false; pr.retry = false; pr.t0 = Date.now();
-  if (pr.i >= pr.qs.length) { pr.end = true; save(); }
+  if (pr.i >= pr.qs.length) { pr.end = true; logSession(); save(); }
   render(); scrollTo(0, 0);
 }
 function showXP() {
@@ -609,17 +624,26 @@ function makeSeries() {
 }
 
 function startExam(qs, label, series) {
-  if (mk && !mk.result) { go("exams"); toast("Finish or submit the running exam first."); return; }
-  pr = null; unitSheet = null;
+  if (mk && !mk.result) { toast(`${mk.label} is still open. Continue or discard it first.`); go("home"); return; }
+  unitSheet = null;
   mk = {label, series, qs, ord: qs.map(() => shuffle([0,1,2,3])), ans: {}, flag: {}, i: 0, start: 0, dur: Math.round(qs.length * PACE), confirm: false, result: null, pre: qs.length >= 100};
   if (!mk.pre) mk.start = Date.now();
   saveMock(); go("exams");
 }
 const saveMock = () => { try { localStorage.setItem(MKEY, JSON.stringify(mk)); } catch (e) {} };
+const PKEY = "cee150.pr", GKEY = "cee150.gm";
+function saveRun() {
+  try {
+    if (pr && !pr.end) localStorage.setItem(PKEY, JSON.stringify({...pr, seen: [...pr.seen]})); else localStorage.removeItem(PKEY);
+    if (gm && gm.step !== "end") localStorage.setItem(GKEY, JSON.stringify(gm)); else localStorage.removeItem(GKEY);
+  } catch (e) {}
+}
 try { const m = JSON.parse(localStorage.getItem(MKEY)); if (m && !m.result && m.qs.every(id => QI[id])) mk = m; } catch (e) {}
-const left = () => mk && mk.start ? Math.max(0, Math.round(mk.dur - (Date.now() - mk.start) / 1000)) : mk ? mk.dur : 0;
+try { const r = JSON.parse(localStorage.getItem(PKEY)); if (r && !r.end && r.qs.every(id => QI[id])) { r.seen = new Set(r.seen); r.done = false; r.sel = null; pr = r; } } catch (e) {}
+const left = () => mk && mk.start ? Math.max(0, Math.round(mk.dur - ((mk.pausedAt || Date.now()) - mk.start) / 1000)) : mk ? mk.dur : 0;
 function submitExam() {
   if (!mk || mk.result) return;
+  if (mk.pausedAt) { mk.start += Date.now() - mk.pausedAt; delete mk.pausedAt; }
   const used = Math.min(mk.dur, (Date.now() - mk.start) / 1000);
   const n = Object.keys(mk.ans).length || 1;
   const by = {}; let right = 0, wrong = 0, blank = 0;
@@ -635,12 +659,14 @@ function submitExam() {
   today().exam++; checkQuests();
   const net = right - S.neg * wrong;
   mk.result = {right, wrong, blank, net, scaled: net / mk.qs.length * 200, by, used, xp: S.xp - xp0};
-  S.mocks.push({ts: Date.now(), label: mk.label, series: mk.series, n: mk.qs.length, right, wrong, blank, net, scaled: mk.result.scaled, mins: Math.round(used / 60), ids: mk.series == null ? mk.qs : undefined});
+  S.mocks.push({ts: Date.now(), label: mk.label, series: mk.series, n: mk.qs.length, right, wrong, blank, net, scaled: mk.result.scaled, mins: Math.round(used / 60), ids: mk.qs,
+    p: mk.qs.map((_, i) => mk.ans[i] == null ? "-" : String(mk.ord[i][mk.ans[i]])).join("")});
   if (S.mocks.length > 40) S.mocks = S.mocks.slice(-40);
+  S.mocks.forEach((m, k) => { if (k < S.mocks.length - 15 && m.p) { delete m.p; if (m.series != null) delete m.ids; } });
   save(); saveMock(); render(); showXP(); scrollTo(0, 0);
 }
 setInterval(() => {
-  if (!mk || mk.result || !mk.start) return;
+  if (!mk || mk.result || !mk.start || mk.pausedAt) return;
   const s = left(), el = $("#clock");
   if (el) { el.textContent = fmtT(s); el.classList.toggle("low", s < 300); }
   if (s <= 0) submitExam();
@@ -831,6 +857,7 @@ const NEGSTEM = /\b(not|except|incorrect|false|wrong|least|untrue)\b/i, LISTSTEM
 const freeRecallable = q => q.src === "bank" && !NEGSTEM.test(q.q) && !LISTSTEM.test(q.q) && q.q.length <= 170 && q.o[q.a].length <= 48 && !/^(both|all|none)\b/i.test(q.o[q.a]);
 const numerical = q => (q.subject === "Physics" || q.subject === "Chemistry") && q.s && /\d/.test(q.q) && /\d/.test(q.o[q.a]);
 let gm = null;
+try { const g = JSON.parse(localStorage.getItem("cee150.gm")); if (g && g.step !== "end" && g.items?.length) { g.step = "ask"; g.hint = false; gm = g; } } catch (e) {}
 const MODES = {
   recall: {name: "Recall Deck", sub: "Answer from memory, then grade yourself"},
   formula: {name: "Which Formula?", sub: "Name the idea, then solve"},
@@ -868,7 +895,8 @@ function closeEnough(a, b) {
   return edits + (a.length - i) + (b.length - j) <= 1;
 }
 function startMode(kind) {
-  if (mk && !mk.result) { go("exams"); toast("Finish or submit the running exam first."); return; }
+  if (mk && !mk.result && !mk.pausedAt) { toast(`${mk.label} is in progress. Continue or discard it from Home.`); go("home"); return; }
+  if (gm && gm.step !== "end") logSession();
   const N = 20, now = Date.now();
   let items = [];
   if (kind === "recall") {
@@ -891,17 +919,18 @@ function startMode(kind) {
     });
   }
   if (!items.length) { toast("Nothing to practise here yet."); return; }
-  pr = null; unitSheet = null;
+  unitSheet = null;
   gm = {kind, items, i: 0, step: "ask", res: [], xp0: S.xp, t0: now, hint: false};
   tab = "game"; render(true); scrollTo(0, 0);
 }
-function gmRecord(q, ok, sure) {
+function gmRecord(q, ok, sure, pick) {
   record(q, ok, sure, Math.min(300, (Date.now() - gm.t0) / 1000));
+  (gm.log ||= []).push({id: q.id, ok, pick});
   gm.res.push(ok); save(); showXP();
 }
 function gmNext() {
   gm.i++; gm.step = "ask"; gm.hint = false; gm.pick = null; gm.t0 = Date.now();
-  if (gm.i >= gm.items.length) gm.step = "end";
+  if (gm.i >= gm.items.length) { gm.step = "end"; logSession(); save(); }
   render(); scrollTo(0, 0);
 }
 function vGame() {
@@ -914,7 +943,7 @@ function vGame() {
       ${gm.kind === "recall" ? `<div class="card"><b>${learned} ${learned === 1 ? "card" : "cards"} learned for good</b><p class="small muted" style="margin-top:4px">A card counts as learned after you recall it on 3 different days. Missed cards come back tomorrow.</p></div>` : ""}`;
   }
   const q = it.q ? QI[it.q] : null;
-  const head = `<div class="qtop"><button class="close" data-act="gmend" aria-label="End">${svg("x", 18)}</button><div class="qprog"><i style="width:${gm.i / gm.items.length * 100}%"></i></div><span class="small muted tn">${gm.i + 1}/${gm.items.length}</span></div>
+  const head = `<div class="qtop"><button class="close" data-act="gmleave" aria-label="Leave for now; your place is saved">${svg("x", 18)}</button><div class="qprog"><i style="width:${gm.i / gm.items.length * 100}%"></i></div><span class="small muted tn">${gm.i + 1}/${gm.items.length}</span></div>
     <div class="tags"><span class="tag">${esc(M.name)}</span><span class="tag">${esc(q ? q.subject + " · " + TOP[q.topic].name : TOP[it.topic].subject + " · " + TOP[it.topic].name)}</span></div>`;
   if (gm.kind === "recall") {
     const c = S.rc[q.id];
@@ -956,7 +985,9 @@ function gmBar() {
 }
 const GM_ACT = {
   mode: d => startMode(d.k),
-  gmend: () => { if (!gm.res.length) { gm = null; go("home"); return; } gm.step = "end"; render(); },
+  gmend: () => { if (!gm.res.length) { gm = null; saveRun(); go("home"); return; } gm.step = "end"; logSession(); save(); tab = "game"; render(); },
+  gmleave: () => { saveRun(); go("home"); toast("Saved. Continue any time from Home."); },
+  resumegm: () => { tab = "game"; render(true); },
   gmhome: () => { gm = null; go("home"); },
   gmnext: () => gmNext(),
   gmshow: () => { gm.step = "reveal"; render(); },
@@ -968,14 +999,14 @@ const GM_ACT = {
     gmRecord(q, g === 2, g === 2); gmNext();
   },
   gmidea: d => { const it = gm.items[gm.i]; gm.idea = +d.k; gm.ideaOk = it.ideas[gm.idea] === QI[it.q].s; gm.step = "solve"; haptic(gm.ideaOk ? 10 : [20, 30, 20]); render(); },
-  gmsolve: d => { const it = gm.items[gm.i], q = QI[it.q]; gm.pick = +d.k; const ok = it.ord[gm.pick] === q.a; gm.step = "done"; gmRecord(q, ok && gm.ideaOk, gm.ideaOk); render(); },
+  gmsolve: d => { const it = gm.items[gm.i], q = QI[it.q]; gm.pick = +d.k; const ok = it.ord[gm.pick] === q.a; gm.step = "done"; gmRecord(q, ok && gm.ideaOk, gm.ideaOk, it.ord[gm.pick]); render(); },
   gmhint: () => { gm.hint = true; render(); setTimeout(() => $("#gapin")?.focus(), 0); },
   gmcheck: () => {
     const it = gm.items[gm.i], typed = ($("#gapin")?.value || "").trim();
     if (!typed) { toast("Type your answer first."); return; }
     const parts = /^[A-Za-z-]+(\/[A-Za-z-]+)+$/.test(it.ans) ? it.ans.split("/") : []; // "A/B" word answers: either word counts; never for numbers like 1/8
     const ok = [it.ans, ...parts].some(a => a && closeEnough(typed, a)); gm.typed = typed; gm.step = "done";
-    gm.res.push(ok); if (ok) addXP(gm.hint ? 3 : 6); const t = today(); if (ok) t.right++; checkQuests(); save(); showXP(); haptic(ok ? 10 : [20, 30, 20]); render();
+    gm.res.push(ok); (gm.log ||= []).push({ok}); if (ok) addXP(gm.hint ? 3 : 6); const t = today(); if (ok) t.right++; checkQuests(); save(); showXP(); haptic(ok ? 10 : [20, 30, 20]); render();
   },
   gmtf: d => {
     const it = gm.items[gm.i], said = d.v === "1";
@@ -983,7 +1014,7 @@ const GM_ACT = {
     if (it.truth) { gm.step = "done"; gmRecord(QI[it.q], true, true); render(); return; }
     gm.step = "fix"; render();
   },
-  gmfix: d => { const it = gm.items[gm.i], q = QI[it.q]; gm.step = "done"; gmRecord(q, +d.k === q.a, true); render(); }
+  gmfix: d => { const it = gm.items[gm.i], q = QI[it.q]; gm.step = "done"; gmRecord(q, +d.k === q.a, true, +d.k); render(); }
 };
 
 /* ── quick tips (from the recalled 2081/2082 papers and test-taking research; textbook answers only) ── */
@@ -1039,6 +1070,74 @@ function vTips() {
     <h2>${esc(T.name)}</h2>${body}`;
 }
 
+/* ── continue where you left off ── */
+function resumeCard(inExams) {
+  const cards = [];
+  if (mk && !mk.result) {
+    const nA = Object.keys(mk.ans).length;
+    cards.push(`<div class="card stack" style="box-shadow:var(--shadow),inset 0 0 0 2px var(--acc)"><span class="lab">${mk.pausedAt ? "Paused exam" : "Exam in progress"}</span>
+      <div class="row between" style="flex-wrap:nowrap"><div style="min-width:0"><b style="font-size:18px">${esc(mk.label)}</b><div class="small muted">${nA} of ${mk.qs.length} answered · ${fmtT(left())} left${mk.pre ? " · not started" : ""}</div></div></div>
+      ${discardAsk ? `<p class="small"><b>Discard ${esc(mk.label)}?</b> Your answers in it are lost.</p><div class="grid2b"><button class="btn sec sm" data-act="mkdiscard0">Keep it</button><button class="btn bad sm" data-act="mkdiscard2">Discard</button></div>`
+        : `<div class="grid2b"><button class="btn sec sm" data-act="mkdiscard1">Discard</button><button class="btn sm" data-act="mkresume">Continue</button></div>`}</div>`);
+  }
+  if (!inExams && pr && !pr.end) cards.push(`<div class="card stack" style="box-shadow:var(--shadow),inset 0 0 0 2px var(--acc)"><span class="lab">Continue where you left off</span>
+      <div><b style="font-size:18px">${esc(pr.label)}</b><div class="small muted">Question ${pr.i + 1} of ${pr.qs.length} · ${pr.res.filter(r => r.ok).length} right so far</div></div>
+      <div class="grid2b"><button class="btn sec sm" data-act="endpr">Finish now</button><button class="btn sm" data-act="resumepr">Continue</button></div></div>`);
+  if (!inExams && gm && gm.step !== "end") cards.push(`<div class="card stack" style="box-shadow:var(--shadow),inset 0 0 0 2px var(--acc)"><span class="lab">Continue where you left off</span>
+      <div><b style="font-size:18px">${esc(MODES[gm.kind].name)}</b><div class="small muted">Item ${Math.min(gm.i + 1, gm.items.length)} of ${gm.items.length} · ${gm.res.filter(Boolean).length} right so far</div></div>
+      <div class="grid2b"><button class="btn sec sm" data-act="gmend">Finish now</button><button class="btn sm" data-act="resumegm">Continue</button></div></div>`);
+  return cards.join("");
+}
+
+/* ── history: every paper and session, reviewable ── */
+const fmtWhen = ts => new Date(ts).toLocaleString(undefined, {weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit"});
+function histEntries() {
+  return [...S.mocks.map((m, i) => ({...m, kind: "paper", src: "m", i})), ...S.hist.map((h, i) => ({...h, src: "h", i}))].sort((a, b) => b.ts - a.ts);
+}
+function histRow(e, src, i) {
+  const right = e.kind === "paper" ? e.right : (e.k || "").split("").filter(c => c === "1").length, n = e.kind === "paper" ? e.n : (e.k || "").length;
+  const score = e.kind === "paper" ? `<b class="tn">${Math.round(e.scaled)}</b><span class="small muted"> /200</span>` : `<b class="tn">${right}/${n}</b>`;
+  const sub = e.kind === "paper" ? `${e.right} right · ${e.wrong} wrong · ${e.blank} blank${e.mins ? ` · ${e.mins} min` : ""}` : `${e.kind === "mode" ? "Study mode" : "Practice"} · ${n} questions`;
+  return `<button class="row" data-act="hist" data-src="${src}" data-i="${i}" style="width:100%;flex-wrap:nowrap;gap:12px;padding-block:10px;border-top:1px solid var(--line);text-align:left">
+    <span class="qi" style="background:var(--${e.kind === "paper" ? "gold-2" : "acc-2"});color:var(--${e.kind === "paper" ? "gold-ink" : "acc"})">${svg(e.kind === "paper" ? "cup" : e.kind === "mode" ? "bolt" : "check")}</span>
+    <span style="flex:1;min-width:0"><b style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.label)}</b><span class="small muted">${fmtWhen(e.ts)} · ${sub}</span></span>
+    <span style="text-align:right;white-space:nowrap">${score}</span></button>`;
+}
+function historyCard() {
+  const es = histEntries();
+  return `<div class="card stack"><div class="row between"><span class="lab">History</span>${es.length ? `<button class="btn sec sm" data-act="tab" data-tab="history">See all ${es.length}</button>` : ""}</div>
+    ${es.length ? es.slice(0, 3).map(e => histRow(e, e.src, e.i)).join("") : `<p class="small muted">Your papers and practice sessions will appear here, with every answer to look back on.</p>`}</div>`;
+}
+function vHistory() {
+  if (histOpen) return vReview();
+  const es = histEntries();
+  return `<div class="qtop"><button class="close" data-act="tab" data-tab="progress" aria-label="Back to Progress">${svg("x", 18)}</button><h2>History</h2></div>
+    ${es.length ? `<div class="card" style="padding-block:6px">${es.map(e => histRow(e, e.src, e.i)).join("")}</div>` : `<div class="empty"><b>Nothing yet</b><span class="small muted">Finish a practice session or a paper and it will be saved here.</span></div>`}`;
+}
+function vReview() {
+  const e = histOpen.src === "m" ? {...S.mocks[histOpen.i], kind: "paper"} : S.hist[histOpen.i];
+  if (!e) { histOpen = null; return vHistory(); }
+  const ids = e.ids || [], picks = e.p || "", oks = e.k || "";
+  const items = ids.map((id, i) => {
+    const q = QI[id], pk = picks[i], pick = pk && pk !== "-" ? +pk : null;
+    const ok = e.kind === "paper" ? (q && pick === q.a) : oks[i] === "1";
+    return {q, i, pick, ok};
+  }).filter(x => x.q);
+  const missed = items.filter(x => !x.ok), shown = histMissedOnly ? missed : items;
+  const head = e.kind === "paper" ? `<div class="score tn" style="font-size:44px">${Math.round(e.scaled)}<span class="muted" style="font-size:18px"> / 200</span></div><p class="small muted">${e.right} right · ${e.wrong} wrong · ${e.blank} blank${e.mins ? ` · ${e.mins} min` : ""}</p>`
+    : `<div class="score tn" style="font-size:44px">${items.filter(x => x.ok).length}<span class="muted" style="font-size:18px"> / ${items.length}</span></div>`;
+  return `<div class="qtop"><button class="close" data-act="histback" aria-label="Back to History">${svg("x", 18)}</button><div style="min-width:0"><h2 style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.label)}</h2><span class="small muted">${fmtWhen(e.ts)}</span></div></div>
+    <div class="card" style="text-align:center">${head}</div>
+    ${items.length ? `<div class="seg" role="group" aria-label="Which questions"><button data-act="histfilter" data-k="1" aria-pressed="${histMissedOnly}">Missed (${missed.length})</button><button data-act="histfilter" data-k="0" aria-pressed="${!histMissedOnly}">All (${items.length})</button></div>
+      ${missed.length ? `<button class="btn" data-act="histdrill">Practise the ${missed.length} missed</button>` : ""}
+      ${shown.map(({q, i, pick, ok}) => `<div class="card stack" style="gap:8px">
+        <div class="row between"><span class="tag">Q${i + 1} · ${esc(TOP[q.topic].name)}</span><span class="chip ${ok ? "strong" : "weak"}">${ok ? "Right" : pick == null && e.kind === "paper" ? "Blank" : "Missed"}</span></div>
+        <p style="font-weight:600">${esc(q.q)}</p>
+        <p class="small"><b style="color:var(--ok-ink)">Answer: ${esc(q.o[q.a])}</b>${!ok && pick != null ? `<br><span style="color:var(--bad-ink)">You chose: ${esc(q.o[pick])}</span>` : ""}</p>
+        ${q.x ? `<details><summary class="small">Why</summary><p class="small muted">${esc(q.x)}</p></details>` : ""}</div>`).join("") || `<div class="empty"><b>No misses here</b></div>`}`
+      : `<div class="empty"><span class="small muted">Only the score was kept for this older entry.</span></div>`}`;
+}
+
 /* ── views ── */
 const chip = tid => { const [c, t] = level(tid); return `<span class="chip ${c}">${t}</span>`; };
 const starRow = (n, size = 14) => `<span class="stars" aria-label="${n} of 3 stars">${[1,2,3].map(i => `<svg viewBox="0 0 24 24" width="${size}" height="${size}"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="${i <= n ? "var(--gold)" : "var(--line)"}"/></svg>`).join("")}</span>`;
@@ -1067,6 +1166,7 @@ function vHome() {
   const eyeIn = Math.max(1, Math.ceil((25 * 60 - activeSec) / 60));
   return `${hud()}
   <div><p class="muted small">${S.name ? esc(S.name) + " · " : ""}${d == null ? "Set your exam date in Settings" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to ${esc(S.examName || "your exam")}` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
+  ${resumeCard()}
   ${installCard()}
   ${late ? `<div class="note row" style="flex-wrap:nowrap"><span style="color:var(--gold-ink)">${svg("moon", 22)}</span><span>It's late. Sleep is when today's practice turns into memory. Your streak is safe until 4 am.</span></div>` : ""}
   ${n < 20 ? `<div class="card stack">
@@ -1079,7 +1179,7 @@ function vHome() {
   </div>
   <button class="btn cta ${n < 20 ? "sec" : ""}" data-act="start" data-kind="smart"><span style="min-width:0"><small>${n < 20 ? "Or start a smart session" : "Next up · 20 questions · most marks to gain"}</small><span class="cta-t">${esc(top.name)}</span></span><span class="go">${svg("arrow")}</span></button>
   <div class="quick">
-    <button class="btn sec" data-act="start" data-kind="review" ${due ? "" : "disabled"}>Review due<small>${due} waiting</small></button>
+    ${due ? `<button class="btn sec" data-act="start" data-kind="review">Review due<small>${due} waiting</small></button>` : ""}
     <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>from past papers</small></button>
     ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Fix mistakes<small>${mis} confident ones</small></button>` : ""}
     <button class="btn sec" data-act="${np.act}" data-k="${np.k}">${esc(np.name)}<small>200 Q · 3 h</small></button>
@@ -1146,7 +1246,7 @@ function vQuestion() {
     if (pr.done) { if (oi === q.a) { cls = "right"; mark = "Correct"; } else if (di === pr.sel) { cls = "wrong"; mark = "Yours"; } }
     return `<button class="opt ${cls}" data-act="pick" data-i="${di}" aria-pressed="${!pr.done && di === pr.sel}" ${pr.done ? "disabled" : ""}><span class="k">${L[di]}</span><span>${esc(q.o[oi])}</span><span class="m">${mark}</span></button>`;
   }).join("");
-  return `<div class="qtop"><button class="close" data-act="endpr" aria-label="End session">${svg("x", 18)}</button><div class="qprog"><i style="width:${(pr.i + (pr.done ? 1 : 0)) / pr.qs.length * 100}%"></i></div>${pr.combo >= 2 ? `<span class="combo">${pr.combo}× combo</span>` : `<span class="small muted tn">${pr.i + 1}/${pr.qs.length}</span>`}</div>
+  return `<div class="qtop"><button class="close" data-act="leave" aria-label="Leave for now; your place is saved">${svg("x", 18)}</button><div class="qprog"><i style="width:${(pr.i + (pr.done ? 1 : 0)) / pr.qs.length * 100}%"></i></div>${pr.combo >= 2 ? `<span class="combo">${pr.combo}× combo</span>` : `<span class="small muted tn">${pr.i + 1}/${pr.qs.length}</span>`}</div>
     <div class="tags"><span class="tag">${esc(q.subject)} · ${esc(TOP[q.topic].name)}</span>${q.yrs?.length ? `<span class="tag rep">${esc(yrs(q))}</span>` : ""}${retry ? `<span class="tag">Second try</span>` : ""}</div>
     ${q.s ? `<p class="small muted" style="margin-top:-6px">${esc(q.s)}</p>` : ""}
     <p class="stem">${esc(q.q)}</p>
@@ -1161,6 +1261,7 @@ function fbSheet() {
   return `<div class="sheet ${ok ? "good" : "badd"}${anim}" role="dialog" aria-label="Answer feedback">
     <span class="grab"></span>
     <div class="v">${v}</div>
+    <p><b>Answer: ${esc(q.o[q.a])}</b>${!ok ? `<br><span class="small">You chose: ${esc(q.o[ord[pr.sel]])}</span>` : ""}</p>
     ${note ? `<p class="small">${note}</p>` : ""}
     ${q.x ? `<p>${esc(q.x)}</p>` : ""}
     ${q.trap ? `<div class="note"><b>Common trap:</b> ${esc(q.trap)}</div>` : ""}
@@ -1191,7 +1292,7 @@ function vSummary() {
 function vExams() {
   if (mk && mk.result) return vExamResult();
   if (mk && mk.pre) return vExamPre();
-  if (mk) return vExamQ();
+  if (mk && !mk.pausedAt) return vExamQ();
   const best = k => { const ms = S.mocks.filter(m => m.series === k); return ms.length ? Math.max(...ms.map(m => m.scaled)) : null; };
   return `${hud()}<h1>Exams</h1>
     <p class="small muted" style="margin-top:-6px">Full papers with the official pattern: 200 questions, 3 hours, −${S.neg} per wrong answer, units in their exact syllabus counts. Series 1 holds the most-repeated topics from 2078–2082 papers.</p>
@@ -1201,7 +1302,7 @@ function vExams() {
         <div class="series"><span class="sno">${esc(np.name.replace(/\D+/g, ""))}</span><div><b>${esc(np.name)}</b><div class="small muted">${np.fresh != null && np.fresh < 200 ? `${np.fresh} of 200 questions are new to you` : "200 questions you haven't had in a paper"} · 3 h</div></div></div>
         <button class="btn" data-act="${np.act}" data-k="${np.k}">Start ${esc(np.name)}</button>
         <p class="small muted">A new paper is ready each time you finish one.</p></div>
-      ${done.length ? `<div class="card stack"><span class="lab">Papers you've taken</span>${done.map(p => { const b = Math.max(...p.tries.map(m => m.scaled)); return `<div class="series"><span class="sno best">${esc(p.name.replace(/\D+/g, ""))}</span><div><b>${esc(p.name)}</b><div class="small muted">best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${p.tries.length} ${p.tries.length === 1 ? "try" : "tries"}</div></div><button class="btn sec sm" data-act="${p.act}" data-k="${p.k}">Retake</button></div>`; }).join("")}</div>` : ""}`;
+      ${resumeCard(true)}${done.length && false ? `<div class="card stack"><span class="lab">Papers you've taken</span>${done.map(p => { const b = Math.max(...p.tries.map(m => m.scaled)); return `<div class="series"><span class="sno best">${esc(p.name.replace(/\D+/g, ""))}</span><div><b>${esc(p.name)}</b><div class="small muted">best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${p.tries.length} ${p.tries.length === 1 ? "try" : "tries"}</div></div><button class="btn sec sm" data-act="${p.act}" data-k="${p.k}">Retake</button></div>`; }).join("")}</div>` : ""}`;
     })()}
     <div class="note"><b>How many papers?</b> No study gives a magic number. What raises scores is a full timed paper about every second day, plus reviewing every mistake right after it (Adesope et al., 2017; Rawson et al., 2013). With ${Math.max(0, daysLeft() ?? 0)} days left that is about ${Math.max(1, Math.ceil(Math.max(0, (daysLeft() ?? 0) - 1) / 2))} more full papers. On other days, use smart sessions and half papers.</div>
     <span class="lab" style="margin-top:4px">Quick rounds</span>
@@ -1209,8 +1310,8 @@ function vExams() {
     <span class="lab" style="margin-top:4px">Subject boss rounds · whole subject at exam pace</span>
     <div class="seg" role="group" aria-label="Subject boss rounds">${SUBJ.map(s => `<button data-act="boss" data-k="${s.k}" aria-label="${s.k} boss round, ${s.m} questions">${SHORT[s.k]}</button>`).join("")}</div>
     <div class="note"><b>Guessing with −${S.neg} marking.</b> A blind guess earns about +0.06 on average. Rule out one option and answering is worth +0.17; rule out two and it's +0.38. So answer almost everything. Leave blank only what you can't narrow at all.</div>
-    ${S.mocks.length ? `<div class="card stack"><span class="lab">Your papers</span><div class="tbl"><table><thead><tr><th>Date</th><th>Paper</th><th class="n">Right</th><th class="n">Wrong</th><th class="n">/200</th></tr></thead><tbody>
-      ${S.mocks.slice().reverse().map(m => `<tr><td>${new Date(m.ts).toLocaleDateString(undefined, {month: "short", day: "numeric"})}</td><td>${esc(m.label)}</td><td class="n">${m.right}</td><td class="n">${m.wrong}</td><td class="n"><b>${Math.round(m.scaled)}</b></td></tr>`).join("")}</tbody></table></div></div>` : ""}`;
+    ${S.mocks.length ? `<div class="card stack"><div class="row between"><span class="lab">Your papers</span><button class="btn sec sm" data-act="tab" data-tab="history">All history</button></div>
+      ${S.mocks.slice().reverse().slice(0, 8).map(m => histRow({...m, kind: "paper"}, "m", S.mocks.indexOf(m))).join("")}</div>` : ""}`;
 }
 function vExamPre() {
   return `<div style="padding-top:12px"></div><h1>${esc(mk.label)}</h1>
@@ -1227,10 +1328,15 @@ function omrGrid(cls, act) {
   return `<div class="omr">${html}</div>`;
 }
 function vExamQ() {
-  const i = mk.i, q = QI[mk.qs[i]], ord = mk.ord[i], nA = Object.keys(mk.ans).length;
-  return `<div class="card ebar"><span class="clock" id="clock">${fmtT(left())}</span><span class="small muted" style="flex:1">${esc(mk.label)} · ${nA}/${mk.qs.length}</span><button class="btn sm" data-act="mksubmit">Submit</button></div>
-    ${mk.confirm ? `<div class="card stack" style="box-shadow:inset 0 0 0 2px var(--acc)"><b>Submit the paper?</b><p class="small">${mk.qs.length - nA} questions are blank. Blank scores 0; wrong scores −${S.neg}. Time left: ${fmtT(left())}.</p><div class="grid2b"><button class="btn sec sm" data-act="mkcancel">Keep going</button><button class="btn sm" data-act="mkconfirm">Submit paper</button></div></div>` : ""}
-    <div class="row between"><b class="tn">Question ${i + 1}</b><span class="tag">${esc(q.subject)}</span></div>
+  const i = mk.i, q = QI[mk.qs[i]], ord = mk.ord[i], nA = Object.keys(mk.ans).length, n = mk.qs.length;
+  return `<div class="card stack" style="gap:10px">
+      <div class="row between" style="flex-wrap:nowrap;align-items:flex-start"><div style="min-width:0"><b style="font-size:18px">${esc(mk.label)}</b><div class="small muted">${n} questions · ${Math.round(mk.dur / 60)} min · −${S.neg} per wrong</div></div><span class="clock" id="clock">${fmtT(left())}</span></div>
+      <div class="mini" style="margin:0"><i style="width:${nA / n * 100}%;background:var(--acc)"></i></div>
+      <div class="row between small"><span>${nA} of ${n} answered</span><span class="muted">${Object.values(mk.flag).filter(Boolean).length} flagged</span></div>
+      <div class="grid2b"><button class="btn sec sm" data-act="mkleave">Leave for now</button><button class="btn sm" data-act="mksubmit">Submit paper</button></div>
+    </div>
+    ${mk.confirm ? `<div class="card stack" style="box-shadow:inset 0 0 0 2px var(--acc)"><b>Submit ${esc(mk.label)}?</b><p class="small">${n - nA} questions are blank. Blank scores 0; wrong scores −${S.neg}. Time left: ${fmtT(left())}.</p><div class="grid2b"><button class="btn sec sm" data-act="mkcancel">Keep going</button><button class="btn sm" data-act="mkconfirm">Submit paper</button></div></div>` : ""}
+    <div class="row between"><b class="tn">Question ${i + 1} of ${n}</b><span class="tag">${esc(q.subject)}</span></div>
     <p class="stem">${esc(q.q)}</p>
     <div class="opts">${ord.map((oi, di) => `<button class="opt" data-act="mkpick" data-i="${di}" aria-pressed="${mk.ans[i] === di}"><span class="k">${L[di]}</span><span>${esc(q.o[oi])}</span><span></span></button>`).join("")}</div>
     <div class="grid2b"><button class="btn sec sm" data-act="mkflag" aria-pressed="${!!mk.flag[i]}">${mk.flag[i] ? "Flagged" : "Flag for later"}</button>${mk.ans[i] != null ? `<button class="btn sec sm" data-act="mkclear">Clear answer</button>` : "<span></span>"}</div>`;
@@ -1239,7 +1345,7 @@ function vExamResult() {
   const r = mk.result;
   const rows = SUBJ.filter(s => r.by[s.k]).map(s => { const [a, b, c] = r.by[s.k]; return `<tr><td>${esc(SHORT[s.k])}</td><td class="n">${a}</td><td class="n">${b}</td><td class="n">${c}</td><td class="n"><b>${(a - S.neg * b).toFixed(2)}</b></td></tr>`; }).join("");
   const wrong = mk.qs.map((id, i) => ({q: QI[id], i})).filter(({q, i}) => q && (mk.ans[i] == null || mk.ord[i][mk.ans[i]] !== q.a));
-  return `<div style="display:grid;gap:6px;text-align:center;padding-top:16px"><span class="lab">${esc(mk.label)}</span><div class="score tn" style="font-size:56px">${Math.round(r.scaled)}<span class="muted" style="font-size:20px"> / 200</span></div><p class="muted small">${r.right} right · ${r.wrong} wrong · ${r.blank} blank · ${Math.round(r.used / 60)} min · +${r.xp} XP</p></div>
+  return `<div style="display:grid;gap:6px;text-align:center;padding-top:16px"><h2>${esc(mk.label)} result</h2><span class="small muted">${new Date().toLocaleString(undefined, {weekday: "short", day: "numeric", month: "short", hour: "numeric", minute: "2-digit"})} · saved in History</span><div class="score tn" style="font-size:56px">${Math.round(r.scaled)}<span class="muted" style="font-size:20px"> / 200</span></div><p class="muted small">${r.right} right · ${r.wrong} wrong · ${r.blank} blank · ${Math.round(r.used / 60)} min · +${r.xp} XP</p></div>
     <div class="card"><div class="tbl"><table><thead><tr><th></th><th class="n">Right</th><th class="n">Wrong</th><th class="n">Blank</th><th class="n">Marks</th></tr></thead><tbody>${rows}</tbody></table></div></div>
     ${r.blank ? `<div class="note">You left ${r.blank} blank. With −${S.neg} marking, answering after ruling out one option is worth about +0.17 each, so next time narrow and answer.</div>` : ""}
     <div class="card stack"><span class="lab">Answer sheet · tap a red one to see it</span>${omrGrid(k => { const q = QI[mk.qs[k]]; return mk.ans[k] == null ? "" : mk.ord[k][mk.ans[k]] === q.a ? "r" : "w"; }, "mkreview")}</div>
@@ -1285,6 +1391,7 @@ function vProgress() {
       <div class="row" style="align-items:baseline;gap:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200 · your goal ${S.target}</span></div>
       ${SUBJ.map(s => `<div class="sbar"><span>${esc(s.k)}</span><div class="mini"><i style="width:${pj.by[s.k] / s.m * 100}%;background:var(--acc)"></i></div><span class="tn" style="text-align:right">${pj.by[s.k].toFixed(1)}/${s.m}</span></div>`).join("")}</div>
     <div class="card stack"><span class="lab">Badges</span><div class="badges">${BADGES.map(b => `<div class="bdg ${b.ok() ? "" : "off"}"><span>${svg(b.icon, 26)}</span>${b.name}</div>`).join("")}</div></div>
+    ${historyCard()}
     ${groupCard()}
     <div class="card stack"><span class="lab">Sure vs guessing</span>
       <div class="tiles"><div class="tile"><span class="lab">Sure</span><b>${sure.length ? Math.round(sOk / sure.length * 100) + "%" : "–"}</b></div><div class="tile"><span class="lab">Guess</span><b>${gs.length ? Math.round(gOk / gs.length * 100) + "%" : "–"}</b></div><div class="tile"><span class="lab">Speed</span><b>${med}s</b></div></div>
@@ -1409,27 +1516,28 @@ function bottomBar() {
   if (tab === "practice" && pr && !pr.end && !pr.done) { const dis = pr.sel == null ? "disabled" : ""; return `<button class="btn" data-act="sure" ${dis}>I'm sure</button><button class="btn sec" data-act="guess" ${dis}>Not sure</button>`; }
   if (tab === "practice" && pr && pr.end) return `<button class="btn sec" data-act="home">Done</button><button class="btn" data-act="${pr.kind === "warmup" ? "unitnotes" : "start"}" data-kind="smart" data-topic="${pr.topic || ""}">${pr.kind === "warmup" ? "Read the notes" : "Another 20"}</button>`;
   if (tab === "exams" && mk && mk.result) return `${mk.result.right + mk.result.blank < mk.qs.length || mk.result.blank ? `<button class="btn sec" data-act="mkdrill">Practise missed</button>` : ""}<button class="btn" data-act="mkdone">Done</button>`;
-  if (tab === "exams" && mk && !mk.result && !mk.pre) return `<button class="btn sec" data-act="mkgo" data-i="${mk.i - 1}" ${mk.i ? "" : "disabled"}>Back</button><button class="btn sec" data-act="mksheet">Sheet</button><button class="btn" data-act="mkgo" data-i="${mk.i + 1}" ${mk.i + 1 < mk.qs.length ? "" : "disabled"}>Next</button>`;
+  if (tab === "exams" && mk && !mk.result && !mk.pre && !mk.pausedAt) return `<button class="btn sec" data-act="mkgo" data-i="${mk.i - 1}" ${mk.i ? "" : "disabled"}>Back</button><button class="btn sec" data-act="mksheet">Sheet</button><button class="btn" data-act="mkgo" data-i="${mk.i + 1}" ${mk.i + 1 < mk.qs.length ? "" : "disabled"}>Next</button>`;
   return "";
 }
 const TABS = ["home", "path", "exams", "notes", "progress"];
 function render(enter) {
   const view = $("#view");
-  const V = {home: vHome, path: vPath, exams: vExams, notes: vNotes, progress: vProgress, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome(), game: () => gm ? vGame() : vHome()};
+  const V = {home: vHome, path: vPath, exams: vExams, notes: vNotes, progress: vProgress, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome(), game: () => gm ? vGame() : vHome(), history: vHistory};
   view.innerHTML = (V[tab] || vHome)();
+  saveRun();
   if (enter) { view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter"); }
   const bar = bottomBar();
   $("#abar").innerHTML = bar ? `<div class="abar"><div class="in">${bar}</div></div>` : "";
-  const navTab = tab === "sources" ? "progress" : tab;
+  const navTab = ["sources", "history"].includes(tab) ? "progress" : tab;
   const k = TABS.indexOf(navTab);
-  $("#tabs").classList.toggle("hide", !!bar || (tab === "exams" && mk && !mk.result) || tab === "practice" || tab === "game");
+  $("#tabs").classList.toggle("hide", !!bar || (tab === "exams" && mk && !mk.result && !mk.pausedAt) || tab === "practice" || tab === "game");
   if (k > -1) $("#ind").style.transform = `translateX(${k * 100}%)`;
   document.querySelectorAll("#tabs [data-tab]").forEach(b => b.setAttribute("aria-current", b.dataset.tab === navTab ? "page" : "false"));
   renderOverlay();
   if (tab === "sources" && aiState.genTopic) { const s = $("#genTopic"); if (s) s.value = aiState.genTopic; }
   if (tab === "sources" && importDraft?.topic) { const s = $("#impTopic"); if (s) s.value = importDraft.topic; }
 }
-function go(t) { tab = t; unitSheet = null; render(true); scrollTo(0, 0); haptic(6); }
+function go(t) { tab = t; unitSheet = null; if (t !== "history") histOpen = null; discardAsk = false; render(true); scrollTo(0, 0); haptic(6); }
 let toastT;
 function toast(msg) {
   let t = $("#toast");
@@ -1577,10 +1685,12 @@ const ACT = {
   tab: d => go(d.tab),
   home: () => { pr = null; go("home"); },
   start: d => startPractice(d.kind, {topic: d.topic || undefined, subject: d.subject, n: +d.n || 20}),
+  leave: () => { saveRun(); go("home"); toast("Saved. Continue any time from Home."); },
   pick: d => { if (pr && !pr.done) { pr.sel = +d.i; haptic(5); render(); } },
   sure: () => answer(true), guess: () => answer(false), next: nextQ,
   why: d => { if (pr.why !== d.w) { if (pr.why) S.why[pr.why] = Math.max(0, (S.why[pr.why] || 1) - 1); pr.why = d.w; S.why[d.w] = (S.why[d.w] || 0) + 1; save(); renderOverlay(); } },
-  endpr: () => { if (!pr.res.length) { pr = null; go("home"); return; } pr.end = true; save(); render(); },
+  endpr: () => { if (!pr.res.length) { pr = null; saveRun(); go("home"); return; } pr.end = true; logSession(); save(); tab = "practice"; render(); },
+  resumepr: () => { tab = "practice"; render(true); },
   explain: () => explain(),
   psub: d => { pathSubj = d.k; render(); },
   unit: d => { unitSheet = d.topic; haptic(6); renderOverlay(); },
@@ -1602,6 +1712,11 @@ const ACT = {
   mkcancel: () => { mk.confirm = false; render(); },
   mkconfirm: () => submitExam(),
   mkdone: () => { mk = null; localStorage.removeItem(MKEY); render(); },
+  mkleave: () => { mk.pausedAt = Date.now(); mk.confirm = false; saveMock(); go("home"); toast(`${mk.label} paused. The timer stops until you continue.`); },
+  mkresume: () => { if (mk.pausedAt) { mk.start += Date.now() - mk.pausedAt; delete mk.pausedAt; saveMock(); } go("exams"); },
+  mkdiscard1: () => { discardAsk = true; render(); },
+  mkdiscard0: () => { discardAsk = false; render(); },
+  mkdiscard2: () => { discardAsk = false; const l = mk.label; mk = null; localStorage.removeItem(MKEY); render(); toast(`${l} discarded.`); },
   mkdrill: () => {
     const ids = mk.qs.filter((id, i) => mk.ans[i] == null || mk.ord[i][mk.ans[i]] !== QI[id].a);
     mk = null; localStorage.removeItem(MKEY);
@@ -1688,6 +1803,15 @@ const ACT = {
       restorePending = {...b.data.state, cloud: {on: true, code, last: b.updated}}; render();
     } catch (e) { toast("Couldn't load that copy. Check your connection."); }
   },
+  hist: d => { histOpen = {src: d.src, i: +d.i}; histMissedOnly = true; tab = "history"; render(true); scrollTo(0, 0); },
+  histback: () => { histOpen = null; render(); scrollTo(0, 0); },
+  histfilter: d => { histMissedOnly = d.k === "1"; render(); },
+  histdrill: () => {
+    const e = histOpen.src === "m" ? {...S.mocks[histOpen.i], kind: "paper"} : S.hist[histOpen.i];
+    const ids = (e.ids || []).filter((id, i) => { const q = QI[id]; if (!q) return false; const pk = (e.p || "")[i]; return e.kind === "paper" ? !(pk && pk !== "-" && +pk === q.a) : (e.k || "")[i] !== "1"; });
+    histOpen = null; startPractice("list", {ids, n: ids.length});
+    if (pr) pr.label = `Missed in ${e.label}`;
+  },
   eyenow: () => startEye(),
   eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
   reset1: () => { confirmReset = true; render(); },
@@ -1741,7 +1865,7 @@ document.addEventListener("keydown", e => {
     else if (k === "arrowleft" && mk.i > 0) ACT.mkgo({i: mk.i - 1});
   }
 });
-if (mk) tab = "exams";
+if (mk && !mk.pausedAt && !mk.result) tab = "exams";
 render(true);
 </script>
 </html>

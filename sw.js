@@ -1,6 +1,6 @@
 // Offline support: serve from cache first, refresh in the background, so the app opens instantly
 // and a new version shows on the next open.
-const CACHE = "mecee-1ad87fee8f";
+const CACHE = "mecee-7613f69fe1";
 const CORE = ["./", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/maskable-512.png", "./icons/apple-touch-icon.png", "./icons/favicon-32.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
