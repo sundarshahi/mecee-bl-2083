@@ -99,7 +99,8 @@ label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
 /* segmented */
 .seg{display:flex;gap:4px;background:var(--soft);border-radius:14px;padding:4px;overflow-x:auto;scrollbar-width:none}
 .seg::-webkit-scrollbar{display:none}
-.seg button{flex:1 1 0;min-width:0;padding:8px 6px;border-radius:10px;font-weight:700;font-size:14px;color:var(--muted);white-space:nowrap;transition:background .2s,color .2s}
+.seg button{flex:1 1 0;min-width:0;overflow:hidden;text-overflow:ellipsis;padding:8px 6px;border-radius:10px;font-weight:700;font-size:14px;color:var(--muted);white-space:nowrap;transition:background .2s,color .2s}
+@media (max-width:360px){.seg button{padding:8px 2px;font-size:13px}}
 .seg button[aria-pressed="true"]{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
 
 /* path */
@@ -341,6 +342,10 @@ document.addEventListener("visibilitychange", () => { if (document.hidden) flush
 let sample = null;
 (async () => { if (window.claude) { try { sample = await claude.use("sample"); } catch (e) {} if (sample && !mk && !pr) render(); } })();
 
+/* ── keep progress: ask the browser to keep this site's storage (not cleared under storage pressure) ── */
+let persisted = null, restorePending = null;
+if (navigator.storage && navigator.storage.persist) navigator.storage.persisted().then(p => p || navigator.storage.persist()).then(p => { persisted = p; }).catch(() => {});
+
 /* ── look: Calm by day, Calm night 18:00–06:00 unless chosen ── */
 function applyLook() {
   const h = new Date().getHours();
@@ -576,6 +581,17 @@ function buildPaper(scale, only) {
 }
 // More series on demand: official count per unit; questions least used in your earlier papers first, repeated topics next.
 // ponytail: ~9 fully fresh papers fit in the bank; after that the least-seen questions return, which doubles as spaced review
+// every paper in order: the 5 fixed series, then generated ones; the first not yet taken is "up next"
+function papers() {
+  const taken = key => S.mocks.filter(m => m.series === key);
+  return [...SERIES.map((s, k) => ({key: k, act: "series", k, name: s.name, n: 200, tries: taken(k)})),
+          ...S.xs.map((x, j) => ({key: "x" + j, act: "xseries", k: j, name: x.name, n: x.ids.length, fresh: x.fresh, tries: taken("x" + j)}))];
+}
+function nextPaper() {
+  let next = papers().find(p => !p.tries.length);
+  if (!next) { makeSeries(); next = papers().find(p => !p.tries.length); }
+  return next;
+}
 function makeSeries() {
   const used = {};
   const papers = [...SERIES.filter((_, k) => S.mocks.some(m => m.series === k)).map(x => x.ids), ...S.xs.map(x => x.ids), ...S.mocks.map(m => m.ids || [])];
@@ -775,7 +791,7 @@ function vHome() {
   const delta = n > 0 && (wk ?? first) != null ? Math.round(pj.tot - (wk ?? first)) : null, since = wk != null ? "this week" : "since you started";
   const pct = x => clamp(x / 200 * 100, 0, 100);
   const goalMet = done >= goal;
-  const nextSeries = SERIES.findIndex((_, k) => !S.mocks.some(m => m.series === k));
+  const np = nextPaper();
   const eyeIn = Math.max(1, Math.ceil((25 * 60 - activeSec) / 60));
   return `${hud()}
   <div><p class="muted small">${d == null ? "Set your exam date in Progress" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to MECEE-BL` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
@@ -794,7 +810,7 @@ function vHome() {
     <button class="btn sec" data-act="start" data-kind="review" ${due ? "" : "disabled"}>Review due<small>${due} waiting</small></button>
     <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>from past papers</small></button>
     ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Fix mistakes<small>${mis} confident ones</small></button>` : ""}
-    ${nextSeries >= 0 ? `<button class="btn sec" data-act="series" data-k="${nextSeries}">${esc(SERIES[nextSeries].name)}<small>200 Q · 3 h</small></button>` : ""}
+    <button class="btn sec" data-act="${np.act}" data-k="${np.k}">${esc(np.name)}<small>200 Q · 3 h</small></button>
   </div>
   <div class="card">
     <div class="row between"><span class="lab">Projected score</span>${delta != null && delta !== 0 ? `<span class="xp ${delta > 0 ? "done" : ""}">${delta > 0 ? "+" : ""}${delta} ${since}</span>` : ""}</div>
@@ -831,7 +847,7 @@ function vPath() {
   const pj = project().by[subj];
   const sides = ["c", "l", "c", "r"];
   return `${hud()}
-  <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="psub" data-k="${s.k}" aria-label="${s.k}" aria-pressed="${s.k === subj}">${s.k === subj ? s.k : SHORT[s.k]}</button>`).join("")}</div>
+  <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="psub" data-k="${s.k}" aria-label="${s.k}" aria-pressed="${s.k === subj}">${SHORT[s.k]}</button>`).join("")}</div>
   <div class="unitband"><div><small>${esc(subj.toUpperCase())} · ${SC[subj].m} MARKS</small><b>${units.length} syllabus units</b></div><span class="tn" style="font-weight:800;white-space:nowrap">${pj.toFixed(0)}/${SC[subj].m}</span></div>
   <div class="road">${units.map((t, k) => {
     const st = stars(t.id), o = S.th[t.id] || {}, [lc] = level(t.id);
@@ -904,14 +920,19 @@ function vExams() {
   const best = k => { const ms = S.mocks.filter(m => m.series === k); return ms.length ? Math.max(...ms.map(m => m.scaled)) : null; };
   return `${hud()}<h1>Exams</h1>
     <p class="small muted" style="margin-top:-6px">Full papers with the official pattern: 200 questions, 3 hours, −${S.neg} per wrong answer, units in their exact syllabus counts. Series 1 holds the most-repeated topics from 2078–2082 papers.</p>
-    ${SERIES.map((s, k) => { const b = best(k), n = S.mocks.filter(m => m.series === k).length; return `<div class="card series"><span class="sno ${n ? "best" : ""}">${k + 1}</span><div><b>${esc(s.name)}</b><div class="small muted">${n ? `best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${n} ${n === 1 ? "try" : "tries"}` : "Not taken yet"}</div></div><button class="btn ${n ? "sec" : ""} sm" data-act="series" data-k="${k}">${n ? "Retake" : "Start"}</button></div>`; }).join("")}
-    ${S.xs.map((x, j) => { const key = "x" + j, ms = S.mocks.filter(m => m.series === key), b = ms.length ? Math.max(...ms.map(m => m.scaled)) : null; return `<div class="card series"><span class="sno ${ms.length ? "best" : ""}">${SERIES.length + j + 1}</span><div><b>${esc(x.name)}</b><div class="small muted">${ms.length ? `best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${ms.length} ${ms.length === 1 ? "try" : "tries"}` : `${x.fresh} of 200 questions new to your papers`}</div></div><button class="btn ${ms.length ? "sec" : ""} sm" data-act="xseries" data-k="${j}">${ms.length ? "Retake" : "Start"}</button></div>`; }).join("")}
-    <button class="btn sec" data-act="makeseries">Make Series ${SERIES.length + S.xs.length + 1}</button>
+    ${(() => {
+      const np = nextPaper(), done = papers().filter(p => p.tries.length);
+      return `<div class="card stack"><span class="lab">Up next</span>
+        <div class="series"><span class="sno">${esc(np.name.replace(/\D+/g, ""))}</span><div><b>${esc(np.name)}</b><div class="small muted">${np.fresh != null && np.fresh < 200 ? `${np.fresh} of 200 questions are new to you` : "200 questions you haven't had in a paper"} · 3 h</div></div></div>
+        <button class="btn" data-act="${np.act}" data-k="${np.k}">Start ${esc(np.name)}</button>
+        <p class="small muted">A new paper is ready each time you finish one.</p></div>
+      ${done.length ? `<div class="card stack"><span class="lab">Papers you've taken</span>${done.map(p => { const b = Math.max(...p.tries.map(m => m.scaled)); return `<div class="series"><span class="sno best">${esc(p.name.replace(/\D+/g, ""))}</span><div><b>${esc(p.name)}</b><div class="small muted">best <b class="tn" style="color:var(--ink)">${Math.round(b)}</b> / 200 · ${p.tries.length} ${p.tries.length === 1 ? "try" : "tries"}</div></div><button class="btn sec sm" data-act="${p.act}" data-k="${p.k}">Retake</button></div>`; }).join("")}</div>` : ""}`;
+    })()}
     <div class="note"><b>How many papers?</b> No study gives a magic number. What raises scores is a full timed paper about every second day, plus reviewing every mistake right after it (Adesope et al., 2017; Rawson et al., 2013). With ${Math.max(0, daysLeft() ?? 0)} days left that is about ${Math.max(1, Math.ceil(Math.max(0, (daysLeft() ?? 0) - 1) / 2))} more full papers. On other days, use smart sessions and half papers.</div>
     <span class="lab" style="margin-top:4px">Quick rounds</span>
     <div class="grid2b"><button class="btn sec" data-act="quick" data-scale="0.1" data-label="Sprint">Sprint · 20 Q</button><button class="btn sec" data-act="quick" data-scale="0.5" data-label="Half paper">Half · 100 Q</button></div>
-    <span class="lab" style="margin-top:4px">Subject boss rounds · full subject, timed</span>
-    <div class="seg" role="group" aria-label="Subject boss rounds">${SUBJ.map(s => `<button data-act="boss" data-k="${s.k}" aria-label="${s.k} boss round, ${s.m} questions">${SHORT[s.k]} ${s.m}</button>`).join("")}</div>
+    <span class="lab" style="margin-top:4px">Subject boss rounds · whole subject at exam pace</span>
+    <div class="seg" role="group" aria-label="Subject boss rounds">${SUBJ.map(s => `<button data-act="boss" data-k="${s.k}" aria-label="${s.k} boss round, ${s.m} questions">${SHORT[s.k]}</button>`).join("")}</div>
     <div class="note"><b>Guessing with −${S.neg} marking.</b> A blind guess earns about +0.06 on average. Rule out one option and answering is worth +0.17; rule out two and it's +0.38. So answer almost everything. Leave blank only what you can't narrow at all.</div>
     ${S.mocks.length ? `<div class="card stack"><span class="lab">Your papers</span><div class="tbl"><table><thead><tr><th>Date</th><th>Paper</th><th class="n">Right</th><th class="n">Wrong</th><th class="n">/200</th></tr></thead><tbody>
       ${S.mocks.slice().reverse().map(m => `<tr><td>${new Date(m.ts).toLocaleDateString(undefined, {month: "short", day: "numeric"})}</td><td>${esc(m.label)}</td><td class="n">${m.right}</td><td class="n">${m.wrong}</td><td class="n"><b>${Math.round(m.scaled)}</b></td></tr>`).join("")}</tbody></table></div></div>` : ""}`;
@@ -993,6 +1014,12 @@ function vProgress() {
     ${whys.length ? `<div class="card stack"><span class="lab">Why you miss questions</span>${whys.map(([w, c]) => `<div class="sbar" style="grid-template-columns:9rem 1fr 2rem"><span>${esc(w)}</span><div class="mini"><i style="width:${c / whys[0][1] * 100}%;background:var(--bad)"></i></div><span class="tn" style="text-align:right">${c}</span></div>`).join("")}<div class="note"><b>Try this:</b> ${esc(TIP[whys[0][0]] || "")}</div></div>` : ""}
     <div class="card stack"><span class="lab">Questions per day · last 14 days</span><div class="bars14" role="img" aria-label="Questions per day">${days.map(v => `<div class="${v ? "" : "z"}" style="height:${Math.max(3, v / mx * 100)}%" title="${v}"></div>`).join("")}</div></div>
     <details class="card"><summary>All units, most marks to gain first</summary><p class="small muted">Gain = marks added by reaching ${Math.round(goalP() * 100)}% in that unit.</p><div class="tbl"><table><thead><tr><th>Unit</th><th class="n">You</th><th>Stars</th><th class="n">Gain</th></tr></thead><tbody>${rows}</tbody></table></div></details>
+    <div class="card stack"><span class="lab">Your progress</span>
+      <p class="small">Saved on this device${db ? " and synced to your Claude account" : ""}${persisted ? ", protected from automatic clean-up" : ""}. ${answered()} answers, ${S.xp.toLocaleString()} XP, ${S.mocks.length} papers.</p>
+      <div class="grid2b"><button class="btn sec" data-act="backup">Save backup</button><label class="btn sec" style="cursor:pointer">Restore backup<input id="restoreIn" type="file" accept=".json,application/json" hidden></label></div>
+      <p class="small muted">Save a backup now and then, and before changing phones or clearing your browser. Restore it on any phone to carry on.</p>
+      ${restorePending ? `<div class="stack"><p class="small"><b>Replace this phone's progress with the backup from ${esc(new Date(restorePending.updated).toLocaleString())}?</b> It has ${Object.values(restorePending.it || {}).reduce((a, i) => a + i.n, 0)} answers.</p><div class="grid2b"><button class="btn sec sm" data-act="restorecancel">Keep this phone's</button><button class="btn sm" data-act="restoreok">Use the backup</button></div></div>` : ""}
+    </div>
     ${reminderCard()}
     <div class="card stack"><span class="lab">Settings</span>
       <label class="f">Look<select id="look" data-set="look"><option value="auto" ${S.look === "auto" ? "selected" : ""}>Calm by day, Calm night after 6 pm</option><option value="calm" ${S.look === "calm" ? "selected" : ""}>Calm always</option><option value="night" ${S.look === "night" ? "selected" : ""}>Calm night always</option></select></label>
@@ -1259,7 +1286,6 @@ const ACT = {
   boss: d => startExam(buildPaper(1, d.k), `${d.k} boss round`, null),
   series: d => { const s = SERIES[+d.k]; startExam(s.ids.filter(id => QI[id]), s.name, +d.k); },
   xseries: d => { const x = S.xs[+d.k]; startExam(x.ids.filter(id => QI[id]), x.name, "x" + d.k); },
-  makeseries: () => { if (mk && !mk.result) { toast("Finish or submit the running exam first."); return; } const j = makeSeries(); render(); toast(`${S.xs[j].name} is ready: ${S.xs[j].fresh} of 200 questions are new to your papers.`); },
   quick: d => startExam(buildPaper(+d.scale), d.label, null),
   mkbegin: () => { mk.pre = false; mk.start = Date.now(); saveMock(); render(true); },
   mkcancelpre: () => { mk = null; localStorage.removeItem(MKEY); render(); },
@@ -1318,6 +1344,21 @@ const ACT = {
   },
   remperm: async () => { const p = await Notification.requestPermission(); if (p === "granted") { S.rem.on = true; save(); notify("Reminders are on", nextAction(), "hello"); } render(); },
   remtoggle: () => { S.rem.on = !S.rem.on; save(); render(); },
+  backup: async () => {
+    const text = JSON.stringify({app: "mecee-bl-2083", v: 1, saved: Date.now(), state: S});
+    const name = `mecee-progress-${dayKey()}.json`;
+    if (!window.__PWA__) {
+      const dl = window.claude ? await claude.use("downloads").catch(() => null) : null;
+      if (!dl) { toast("Saving files isn't available here."); return; }
+      try { await dl.save({filename: name, data: new Blob([text], {type: "application/json"})}); toast("Backup saved."); } catch (e) { toast("The backup was not saved."); }
+      return;
+    }
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], {type: "application/json"})); a.download = name;
+    document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+    toast("Backup saved to your downloads.");
+  },
+  restoreok: () => { const st = restorePending; restorePending = null; S = Object.assign(blank(), st); S.rem = Object.assign(blank().rem, S.rem || {}); rebuild(); applyLook(); save(true); render(); toast("Progress restored."); },
+  restorecancel: () => { restorePending = null; render(); },
   eyenow: () => startEye(),
   eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
   reset1: () => { confirmReset = true; render(); },
@@ -1333,6 +1374,14 @@ document.addEventListener("click", e => {
 document.addEventListener("change", e => {
   if (e.target.dataset?.rem) { S.rem[e.target.dataset.rem] = e.target.checked; save(); render(); return; }
   if (e.target.dataset?.remt) { if (/^\d\d:\d\d$/.test(e.target.value)) { S.rem[e.target.dataset.remt] = e.target.value; save(); render(); } return; }
+  if (e.target.id === "restoreIn" && e.target.files?.[0]) {
+    e.target.files[0].text().then(t => {
+      let b; try { b = JSON.parse(t); } catch (x) {}
+      if (!b || b.app !== "mecee-bl-2083" || !b.state || typeof b.state !== "object") { toast("That file isn't a MECEE-BL backup."); return; }
+      restorePending = b.state; render();
+    });
+    return;
+  }
   if (e.target.id === "photoIn" && e.target.files?.length) { readPhotos([...e.target.files]); return; }
   const k = e.target.dataset?.set; if (!k) return;
   const v = e.target.value;
