@@ -32,3 +32,9 @@ After the first visit it works offline. New versions download in the background 
 ## Reminders
 
 Progress → Reminders builds a study plan up to exam day: morning review, three study blocks, a series exam every second day at 11:00 (the real exam time), water every 2 hours, two movement breaks and a wind-down. **Add all reminders to my calendar** saves them as a calendar file, which works even when the app is closed. While the app is open or recently used it can also send notifications with your next step. No website can ring through silent mode, so set a phone alarm for series exams you must not miss.
+
+## Push reminders and online copy (`worker/`)
+
+A small Cloudflare Worker (`mecee-push`, D1 database `mecee-push`) stores each phone's push address and reminder settings, and every 15 minutes sends the reminders that fell due in that phone's time zone, using the same plan as the app. It also keeps an optional online copy of progress under a secret code chosen by the phone. Turning notifications or the online copy off deletes that row.
+
+Deploy: `cd worker && wrangler d1 execute mecee-push --remote --file schema.sql && wrangler deploy`. The VAPID private key is the Worker secret `VAPID_PRIVATE_JWK`; the public key is in `wrangler.jsonc` and `src/template.html`.

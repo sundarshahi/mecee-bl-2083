@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "mecee-push",
+  "main": "src/index.js",
+  "account_id": "61461fe5b8acecfa23c2bbd5a59bcffb",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "d1_databases": [
+    { "binding": "DB", "database_name": "mecee-push", "database_id": "0bbbc513-a677-4c10-8577-dc3ac1fa7014" }
+  ],
+  // every 15 minutes: send reminders that fell due in the last 15 minutes, in each phone's own time zone
+  "triggers": { "crons": ["*/15 * * * *"] },
+  "vars": {
+    "VAPID_PUBLIC": "BI4gB_JBQ-UOSg5pe2UoPdMfxLoV5jxajoig8J0eir-7v7mevtg45YZo7TGB7tfOJ5TCeK0dmoFVCKjQdb73xDI",
+    "VAPID_SUBJECT": "https://sundarshahi.github.io/mecee-bl-2083/",
+    "ALLOWED_ORIGINS": "https://sundarshahi.github.io,http://localhost:3587"
+  },
+  "observability": { "enabled": true }
+}

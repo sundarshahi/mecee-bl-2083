@@ -293,6 +293,7 @@ let userCap = null, groupState = null, lastLeague = "";
 let db = null, uid = null, syncT = null, syncing = false, dirty = false, customDirty = false;
 function save(custom) {
   S.updated = Date.now();
+  cloudQueue();
   if (S.log.length > 1500) S.log = S.log.slice(-1500); // ponytail: aggregates live in th/it; the raw log only feeds speed + activity
   const d = dayKey(); if (!S.proj[d] && answered() > 0) { S.proj[d] = Math.round(project().tot); const ks = Object.keys(S.proj).sort(); if (ks.length > 30) delete S.proj[ks[0]]; }
   try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
@@ -705,7 +706,7 @@ async function notify(title, body, tag) {
 }
 // ponytail: fires only while the app is open or recently backgrounded; the calendar file is the always-on path
 setInterval(() => {
-  if (!S.rem.on || !("Notification" in window) || Notification.permission !== "granted") return;
+  if (!S.rem.on || S.pushId || !("Notification" in window) || Notification.permission !== "granted") return;
   const d = dayKey(); if (S.remFired.d !== d) S.remFired = {d, ids: []};
   const now = new Date(), nm = now.getHours() * 60 + now.getMinutes();
   for (const r of remPlan(d)) {
@@ -749,6 +750,56 @@ const BOOSTERS = [
   ["20-20-20 for eyes", "Every 20–25 minutes, look 20 feet away for 20 seconds. It eases screen strain."]
 ];
 const booster = () => BOOSTERS[Math.floor(new Date(dayKey()).getTime() / DAY) % BOOSTERS.length];
+/* ── push reminders through the reminder server (arrive even when the app is closed) ── */
+const PUSH = {url: "https://mecee-push.shahithakurisundar4695.workers.dev", key: "BI4gB_JBQ-UOSg5pe2UoPdMfxLoV5jxajoig8J0eir-7v7mevtg45YZo7TGB7tfOJ5TCeK0dmoFVCKjQdb73xDI"};
+const canPush = () => !!window.__PWA__ && "serviceWorker" in navigator && "PushManager" in window && "Notification" in window;
+const unb64 = s => Uint8Array.from(atob(s.replace(/-/g, "+").replace(/_/g, "/") + "===".slice((s.length + 3) % 4)), c => c.charCodeAt(0));
+const remSettings = () => ({...S.rem, examDate: S.examDate, examName: S.examName, paperTime: S.paperTime, tz: Intl.DateTimeFormat().resolvedOptions().timeZone});
+const post = (path, body) => fetch(PUSH.url + path, {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify(body)});
+let pushBusy = false;
+async function pushOn() {
+  if (pushBusy) return; pushBusy = true; render();
+  try {
+    if (Notification.permission !== "granted" && await Notification.requestPermission() !== "granted") { toast("Notifications were not allowed."); return; }
+    const reg = await navigator.serviceWorker.ready;
+    const sub = await reg.pushManager.getSubscription() || await reg.pushManager.subscribe({userVisibleOnly: true, applicationServerKey: unb64(PUSH.key)});
+    const r = await post("/subscribe", {subscription: sub.toJSON(), settings: remSettings()});
+    if (!r.ok) throw new Error("subscribe " + r.status);
+    S.pushId = (await r.json()).id; S.rem.on = true; save();
+    post("/test", {id: S.pushId}).catch(() => {});
+    toast("Reminders are on. A test notification is on its way.");
+  } catch (e) { toast("Couldn't turn on reminders. Check your connection and try again."); }
+  finally { pushBusy = false; render(); }
+}
+async function pushOff() {
+  const id = S.pushId; S.pushId = null; S.rem.on = false; save(); render();
+  try { const reg = await navigator.serviceWorker.ready; const sub = await reg.pushManager.getSubscription(); if (sub) await sub.unsubscribe(); } catch (e) {}
+  if (id) post("/unsubscribe", {id}).catch(() => {});
+  toast("Reminders are off. Your phone was removed from the reminder server.");
+}
+let pushT;
+function pushSync() {
+  if (!S.pushId) return;
+  clearTimeout(pushT);
+  pushT = setTimeout(() => post("/settings", {id: S.pushId, settings: remSettings()}).then(r => { if (r.status === 404) { S.pushId = null; S.rem.on = false; save(); render(); } }).catch(() => {}), 1500);
+}
+
+/* ── online copy of progress under a secret code (optional) ── */
+const newCode = () => b64urlRand(24);
+function b64urlRand(n) { return btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(n)))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, ""); }
+let cloudT, cloudState = "";
+function cloudQueue() { if (!window.__PWA__ || !S.cloud?.on) return; clearTimeout(cloudT); cloudT = setTimeout(cloudUpload, 20e3); }
+async function cloudUpload() {
+  if (!S.cloud?.on) return;
+  const {cloud, pushId, ...rest} = S;
+  try {
+    const r = await fetch(`${PUSH.url}/backup/${S.cloud.code}`, {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify({app: "mecee-bl-2083", v: 1, saved: Date.now(), state: rest})});
+    cloudState = r.ok ? "saved" : r.status === 413 ? "too large" : "failed";
+    if (r.ok) { S.cloud.last = Date.now(); try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+  } catch (e) { cloudState = "offline"; }
+}
+addEventListener("visibilitychange", () => { if (document.hidden && S.cloud?.on) { clearTimeout(cloudT); cloudUpload(); } });
+
 function reminderCard() {
   const R = S.rem, can = !!window.__PWA__ && "Notification" in window, perm = can ? Notification.permission : "unsupported";
   const plan = remPlan(dayKey());
@@ -758,7 +809,11 @@ function reminderCard() {
     <div>${tog("study", "Morning review and study blocks")}${tog("series", `Series exam every second day, ${S.paperTime}`)}${tog("water", "Drink water, every 2 hours")}${tog("move", "Walk for 20 minutes, twice a day")}${tog("sleep", "Wind down and exam-eve reminder")}</div>
     <button class="btn" data-act="ics">Add all reminders to my calendar</button>
     <p class="small muted">Calendar reminders arrive even when the app is closed. ${S.examDate ? `It adds every reminder from tomorrow until ${new Date(S.examDate + "T00:00:00").toDateString().slice(4, 10)}.` : ""} If you change the plan, add it again and delete the old events.</p>
-    ${can ? (perm === "granted" ? `<div class="row between"><span class="small">${R.on ? "App notifications are on" : "App notifications are off"}</span><button class="btn sec sm" data-act="remtoggle">${R.on ? "Turn off" : "Turn on"}</button></div>`
+    ${canPush() ? (isIOS && !standalone ? `<p class="small">On iPhone, notifications need the app installed: in Safari tap Share, then “Add to Home Screen”, open it from there and turn them on.</p>`
+      : perm === "denied" ? `<p class="small muted">Notifications are blocked for this site. Allow them in your browser's site settings, or use the calendar.</p>`
+      : S.pushId ? `<div class="row between"><span class="small"><b>Notifications are on</b><br><span class="muted">They arrive even when the app is closed.</span></span><button class="btn sec sm" data-act="pushoff">Turn off</button></div>`
+      : `<button class="btn sec" data-act="pushon" ${pushBusy ? "disabled" : ""}>${pushBusy ? "Turning on…" : "Send notifications to this phone"}</button><p class="small muted">Arrive even when the app is closed. Turning them off removes this phone from the reminder server.</p>`)
+      : can ? (perm === "granted" ? `<div class="row between"><span class="small">${R.on ? "App notifications are on" : "App notifications are off"}</span><button class="btn sec sm" data-act="remtoggle">${R.on ? "Turn off" : "Turn on"}</button></div>`
       : perm === "denied" ? `<p class="small muted">Notifications are blocked for this site. Allow them in your browser's site settings, or use the calendar.</p>`
       : `<button class="btn sec" data-act="remperm">Also notify me from the app</button>`) + `<p class="small muted">App notifications include your next step, like how many reviews are due. Phones only deliver them while the app has been opened recently.</p>`
       : window.__PWA__ ? "" : `<p class="small muted">App notifications and the calendar file work in the website version: <a href="https://sundarshahi.github.io/mecee-bl-2083/" target="_blank" rel="noopener">sundarshahi.github.io/mecee-bl-2083</a></p>`}
@@ -1018,6 +1073,11 @@ function vProgress() {
       <p class="small">Saved on this device${db ? " and synced to your Claude account" : ""}${persisted ? ", protected from automatic clean-up" : ""}. ${answered()} answers, ${S.xp.toLocaleString()} XP, ${S.mocks.length} papers.</p>
       <div class="grid2b"><button class="btn sec" data-act="backup">Save backup</button><label class="btn sec" style="cursor:pointer">Restore backup<input id="restoreIn" type="file" accept=".json,application/json" hidden></label></div>
       <p class="small muted">Save a backup now and then, and before changing phones or clearing your browser. Restore it on any phone to carry on.</p>
+      ${window.__PWA__ ? (S.cloud?.on ? `<div class="stack rule-top" style="border-top:1px solid var(--line);padding-top:12px"><div class="row between"><span class="small"><b>Online copy is on</b><br><span class="muted">${S.cloud.last ? "Last saved " + new Date(S.cloud.last).toLocaleString() : "Saving…"}${cloudState && cloudState !== "saved" ? " · " + cloudState : ""}</span></span><button class="btn sec sm" data-act="cloudoff">Turn off</button></div>
+          <label class="f">Your secret code (keep it private; use it on another phone)<input id="cloudcode" readonly value="${esc(S.cloud.code)}" onclick="this.select()"></label>
+          <button class="btn sec sm" data-act="copycode" style="justify-self:start">Copy code</button></div>`
+        : `<div class="stack" style="border-top:1px solid var(--line);padding-top:12px"><button class="btn sec" data-act="cloudon">Keep an online copy</button><p class="small muted">Saves your progress to the app's server under a secret code, so a new or reset phone can carry on. Turning it off deletes the copy.</p></div>`)
+        + `<div class="row" style="flex-wrap:nowrap;gap:8px"><input id="restorecode" placeholder="Paste a secret code" style="flex:1" autocomplete="off"><button class="btn sec sm" data-act="cloudrestore">Restore</button></div>` : ""}
       ${restorePending ? `<div class="stack"><p class="small"><b>Replace this phone's progress with the backup from ${esc(new Date(restorePending.updated).toLocaleString())}?</b> It has ${Object.values(restorePending.it || {}).reduce((a, i) => a + i.n, 0)} answers.</p><div class="grid2b"><button class="btn sec sm" data-act="restorecancel">Keep this phone's</button><button class="btn sm" data-act="restoreok">Use the backup</button></div></div>` : ""}
     </div>
     ${reminderCard()}
@@ -1373,7 +1433,7 @@ const ACT = {
     document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
     toast("Backup saved to your downloads.");
   },
-  restoreok: () => { const st = restorePending; restorePending = null; S = Object.assign(blank(), st); S.rem = Object.assign(blank().rem, S.rem || {}); rebuild(); applyLook(); save(true); render(); toast("Progress restored."); },
+  restoreok: () => { const st = restorePending; restorePending = null; const keepPush = S.pushId; S = Object.assign(blank(), st); S.pushId = keepPush || null; S.rem = Object.assign(blank().rem, S.rem || {}); rebuild(); applyLook(); save(true); render(); toast("Progress restored."); },
   restorecancel: () => { restorePending = null; render(); },
   setupsave: () => {
     const v = id => (document.getElementById(id) || {}).value || "";
@@ -1384,7 +1444,22 @@ const ACT = {
     setupErr = null;
     Object.assign(S, {name: v("su-name").trim().slice(0, 30), examName: v("su-exam").trim().slice(0, 30) || "MECEE-BL", examDate: d, target: t,
       dailyGoal: clamp(Math.round(+v("su-daily")) || 0, 0, 1000), paperTime: /^\d\d:\d\d$/.test(v("su-time")) ? v("su-time") : S.paperTime, setup: true});
-    save(); render(); toast(S.name ? `All set, ${S.name}.` : "All set.");
+    save(); pushSync(); render(); toast(S.name ? `All set, ${S.name}.` : "All set.");
+  },
+  pushon: () => pushOn(),
+  pushoff: () => pushOff(),
+  cloudon: async () => { S.cloud = {on: true, code: newCode(), last: 0}; save(); render(); await cloudUpload(); render(); toast(cloudState === "saved" ? "Online copy saved. Keep your code private." : "Couldn't save the online copy yet. It will retry."); },
+  cloudoff: async () => { const code = S.cloud?.code; S.cloud = {on: false}; save(); render(); if (code) fetch(`${PUSH.url}/backup/${code}`, {method: "DELETE"}).catch(() => {}); toast("Online copy turned off and deleted."); },
+  copycode: async () => { try { await navigator.clipboard.writeText(S.cloud.code); toast("Code copied."); } catch (e) { const el = document.getElementById("cloudcode"); el.select(); toast("Select the code and copy it."); } },
+  cloudrestore: async () => {
+    const code = (document.getElementById("restorecode").value || "").trim();
+    if (!/^[A-Za-z0-9_-]{24,64}$/.test(code)) { toast("That doesn't look like a secret code."); return; }
+    try {
+      const r = await fetch(`${PUSH.url}/backup/${code}`);
+      if (r.status === 404) { toast("No online copy found for that code."); return; }
+      const b = await r.json(); if (!b.data || b.data.app !== "mecee-bl-2083") throw 0;
+      restorePending = {...b.data.state, cloud: {on: true, code, last: b.updated}}; render();
+    } catch (e) { toast("Couldn't load that copy. Check your connection."); }
   },
   eyenow: () => startEye(),
   eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
@@ -1399,8 +1474,8 @@ document.addEventListener("click", e => {
   if (xpQueue) showXP();
 });
 document.addEventListener("change", e => {
-  if (e.target.dataset?.rem) { S.rem[e.target.dataset.rem] = e.target.checked; save(); render(); return; }
-  if (e.target.dataset?.remt) { if (/^\d\d:\d\d$/.test(e.target.value)) { S.rem[e.target.dataset.remt] = e.target.value; save(); render(); } return; }
+  if (e.target.dataset?.rem) { S.rem[e.target.dataset.rem] = e.target.checked; save(); pushSync(); render(); return; }
+  if (e.target.dataset?.remt) { if (/^\d\d:\d\d$/.test(e.target.value)) { S.rem[e.target.dataset.remt] = e.target.value; save(); pushSync(); render(); } return; }
   if (e.target.id === "restoreIn" && e.target.files?.[0]) {
     e.target.files[0].text().then(t => {
       let b; try { b = JSON.parse(t); } catch (x) {}
@@ -1419,6 +1494,7 @@ document.addEventListener("change", e => {
   else if (k === "name") S.name = v.trim().slice(0, 30);
   else if (k === "examName") S.examName = v.trim().slice(0, 30) || "MECEE-BL";
   else if (k === "neg") S.neg = +v; else if (k === "look") { S.look = v; applyLook(); }
+  if (["examDate", "paperTime", "examName"].includes(k)) pushSync();
   save(); render();
 });
 document.addEventListener("input", e => { if (e.target.id === "cq") { flt.q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#cq"); el.focus(); el.setSelectionRange(pos, pos); } });

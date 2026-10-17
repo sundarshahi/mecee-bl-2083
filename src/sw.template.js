@@ -29,3 +29,11 @@ self.addEventListener("notificationclick", e => {
     return c ? c.focus() : self.clients.openWindow("./");
   }));
 });
+// reminders sent by the reminder server arrive here, even when the app is closed
+self.addEventListener("push", e => {
+  let d = {};
+  try { d = e.data ? e.data.json() : {}; } catch (x) { d = {body: e.data && e.data.text()}; }
+  e.waitUntil(self.registration.showNotification(d.title || "MECEE-BL", {
+    body: d.body || "", tag: d.tag || "mecee", renotify: true, icon: "icons/icon-192.png", badge: "icons/icon-192.png", vibrate: [180, 80, 180], data: {url: "./"}
+  }));
+});
