@@ -275,11 +275,10 @@ const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="
 
 /* ── state: localStorage first, mirrored to the viewer's private db doc when available ── */
 const KEY = "cee150.v1", MKEY = "cee150.mock";
-const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:170, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
+const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:150, name:"", examName:"MECEE-BL", dailyGoal:0, paperTime:"11:00", setup:false, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
   xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
 function loadLocal() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {} return blank(); }
 let S = loadLocal();
-if (S.target < 160) S.target = 170;
 S.rem = Object.assign(blank().rem, S.rem || {}); S.remFired = S.remFired || {d: "", ids: []};
 let QS = [], QI = {};
 function rebuild() {
@@ -343,7 +342,7 @@ let sample = null;
 (async () => { if (window.claude) { try { sample = await claude.use("sample"); } catch (e) {} if (sample && !mk && !pr) render(); } })();
 
 /* ── keep progress: ask the browser to keep this site's storage (not cleared under storage pressure) ── */
-let persisted = null, restorePending = null;
+let persisted = null, restorePending = null, setupErr = null;
 if (navigator.storage && navigator.storage.persist) navigator.storage.persisted().then(p => p || navigator.storage.persist()).then(p => { persisted = p; }).catch(() => {});
 
 /* ── look: Calm by day, Calm night 18:00–06:00 unless chosen ── */
@@ -458,11 +457,12 @@ function level(tid) {
 /* ── game layer ── */
 const LEVELS = [[0, "Aspirant"], [200, "Learner"], [600, "Reader"], [1200, "Solver"], [2000, "Achiever"], [3000, "Intern"], [4500, "Resident"], [6500, "Registrar"], [9000, "Consultant"], [12000, "Topper"]];
 function lvl() { let i = 0; while (i + 1 < LEVELS.length && S.xp >= LEVELS[i + 1][0]) i++; const next = LEVELS[i + 1]; return {n: i + 1, name: LEVELS[i][1], from: LEVELS[i][0], to: next ? next[0] : null}; }
-function phaseGoal() { const d = daysLeft(), ph = phaseOf(d); return ph == null ? 120 : PHASES[ph].q || 40; }
+function phaseGoalAuto() { const d = daysLeft(), ph = phaseOf(d); return ph == null ? 120 : PHASES[ph].q || 40; }
+function phaseGoal() { return S.dailyGoal > 0 ? S.dailyGoal : phaseGoalAuto(); }
 function quests() {
   const t = today(), fixQuest = misList().length > 0 || t.fixed > 0;
   return [
-    {id: "right", name: "Get 40 right", need: 40, val: t.right, xp: 50, icon: "check", c: "acc"},
+    {id: "right", name: `Get ${Math.max(10, Math.round(phaseGoal() / 3))} right`, need: Math.max(10, Math.round(phaseGoal() / 3)), val: t.right, xp: 50, icon: "check", c: "acc"},
     fixQuest ? {id: "fix", name: "Fix 5 confident mistakes", need: 5, val: t.fixed, xp: 40, icon: "bang", c: "bad"}
              : {id: "rep", name: "20 right on repeated questions", need: 20, val: t.rep, xp: 40, icon: "repeat", c: "bad"},
     {id: "exam", name: "Finish a sprint or exam", need: 1, val: t.exam, xp: 60, icon: "clock", c: "gold"}
@@ -479,8 +479,8 @@ const BADGES = [
   {id: "a500", name: "500 answers", icon: "check", ok: () => answered() >= 500},
   {id: "fix50", name: "50 mistakes fixed", icon: "bang", ok: () => S.fixed >= 50},
   {id: "allu", name: "Every unit tried", icon: "book", ok: () => Object.keys(TOP).every(id => (S.th[id] || {}).n >= 2)},
-  {id: "s150", name: "150 in a paper", icon: "cup", ok: () => S.mocks.some(m => m.n >= 100 && m.scaled >= 150)},
-  {id: "s170", name: "170 in a paper", icon: "cup", ok: () => S.mocks.some(m => m.n >= 100 && m.scaled >= 170)}
+  {id: "paper1", name: "First full paper", icon: "cup", ok: () => S.mocks.some(m => m.n >= 200)},
+  {id: "goal", name: "Your goal in a paper", icon: "cup", ok: () => S.mocks.some(m => m.n >= 100 && m.scaled >= S.target)}
 ];
 
 /* ── session builder: due reviews first, then units ranked by marks-to-gain, items near 70% success, interleaved ── */
@@ -683,9 +683,9 @@ function remPlan(dateStr) {
     add(hm("14:30"), "study2", "Study block", "Another smart session. Mixed units train you to spot what each question needs.");
     add(hm("19:00"), "study3", "Evening block", "Repeated questions or a half paper, then read the notes for what you missed.");
   }
-  if (R.series && d >= 3 && d % 2 === 1) add(hm("10:45"), "series", "Series exam at 11:00", "Sit a full paper 11:00 to 14:00, the real exam time. Set a phone alarm too if your phone is on silent.");
+  if (R.series && d >= 3 && d % 2 === 1) add(hm(S.paperTime) - 15, "series", `Series exam at ${S.paperTime}`, `Sit a full 3-hour paper from ${S.paperTime}. Set a phone alarm too if your phone is on silent.`);
   if (R.water) for (let m = a + 60; m <= z - 60; m += 120) add(m, "water" + m, "Drink a glass of water", "Even mild dehydration lowers attention and memory (Adan, 2012).");
-  if (R.move) { add(hm("10:00"), "move1", "Move for 10 minutes", "A brisk walk or stairs. Short exercise improves attention and memory afterwards (Roig et al., 2013)."); add(hm("16:30"), "move2", "Move for 15 minutes", "Walk, skip or stretch. Then come back for one more session."); }
+  if (R.move) { add(hm("10:00"), "move1", "Walk for 20 minutes", "A brisk walk or stairs. About 20 minutes of exercise improves attention and memory afterwards; very short bursts do not (Chang et al., 2012)."); add(hm("16:30"), "move2", "Walk for 20 minutes", "Walk, skip or climb stairs, then come back for one more session."); }
   if (R.sleep) { add(z, "sleep", "Wind down", "Stop studying now. 7–9 hours of sleep turns today's practice into memory."); if (d === 1) add(hm("20:00"), "eve", "Exam tomorrow", "Pack admit card, pencils and ID. No new chapters. Sleep early."); }
   return out.sort((x, y) => x.min - y.min);
 }
@@ -738,8 +738,8 @@ const BOOSTERS = [
   ["Phone in another room", "Just having your phone on the desk lowers working memory, even face down (Ward et al., 2017)."],
   ["Test, don't reread", "Close the notes and answer from memory. Retrieval builds memory faster than rereading (Adesope et al., 2017)."],
   ["Water before you start", "Mild dehydration (about 2% body water) lowers attention and memory (Adan, 2012)."],
-  ["Walk, then study", "10–20 minutes of brisk exercise improves attention and memory afterwards (Roig et al., 2013)."],
-  ["Same time as the exam", "Do series papers at 11:00, the real exam time, so your focus peaks when it counts."],
+  ["Walk, then study", "About 20 minutes of brisk exercise improves attention afterwards; bursts under 10 minutes do not (Chang et al., 2012)."],
+  ["Same time as the exam", "Sit practice papers at the same time of day as your real exam, so your focus peaks when it counts. Set it in Settings."],
   ["Short nap, not long", "A 10–20 minute nap restores alertness without grogginess (Brooks & Lack, 2006). Keep it before 3 pm."],
   ["Sleep is study", "Steady 7–9 hour sleep over weeks predicts grades (Okano et al., 2019). Don't trade sleep for cramming."],
   ["Explain the mistake", "Saying why you were wrong helps the fix stick (Bisra et al., 2018). Use the why-missed chips."],
@@ -755,7 +755,7 @@ function reminderCard() {
   const tog = (k, label) => `<label class="row" style="flex-wrap:nowrap;justify-content:space-between;gap:10px;padding-block:6px"><span>${label}</span><input type="checkbox" data-rem="${k}" ${R[k] ? "checked" : ""} style="width:22px;min-height:22px;accent-color:var(--acc)"></label>`;
   return `<div class="card stack"><span class="lab">Reminders</span>
     <div class="grid2b"><label class="f">Study from<input type="time" data-remt="from" value="${R.from}"></label><label class="f">Study until<input type="time" data-remt="until" value="${R.until}"></label></div>
-    <div>${tog("study", "Morning review and study blocks")}${tog("series", "Series exam every second day, 11:00")}${tog("water", "Drink water, every 2 hours")}${tog("move", "Move for 10–15 minutes, twice a day")}${tog("sleep", "Wind down and exam-eve reminder")}</div>
+    <div>${tog("study", "Morning review and study blocks")}${tog("series", `Series exam every second day, ${S.paperTime}`)}${tog("water", "Drink water, every 2 hours")}${tog("move", "Walk for 20 minutes, twice a day")}${tog("sleep", "Wind down and exam-eve reminder")}</div>
     <button class="btn" data-act="ics">Add all reminders to my calendar</button>
     <p class="small muted">Calendar reminders arrive even when the app is closed. ${S.examDate ? `It adds every reminder from tomorrow until ${new Date(S.examDate + "T00:00:00").toDateString().slice(4, 10)}.` : ""} If you change the plan, add it again and delete the old events.</p>
     ${can ? (perm === "granted" ? `<div class="row between"><span class="small">${R.on ? "App notifications are on" : "App notifications are off"}</span><button class="btn sec sm" data-act="remtoggle">${R.on ? "Turn off" : "Turn on"}</button></div>`
@@ -794,7 +794,7 @@ function vHome() {
   const np = nextPaper();
   const eyeIn = Math.max(1, Math.ceil((25 * 60 - activeSec) / 60));
   return `${hud()}
-  <div><p class="muted small">${d == null ? "Set your exam date in Progress" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to MECEE-BL` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
+  <div><p class="muted small">${S.name ? esc(S.name) + " · " : ""}${d == null ? "Set your exam date in Settings" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to ${esc(S.examName || "your exam")}` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
   ${installCard()}
   ${late ? `<div class="note row" style="flex-wrap:nowrap"><span style="color:var(--gold-ink)">${svg("moon", 22)}</span><span>It's late. Sleep is when today's practice turns into memory. Your streak is safe until 4 am.</span></div>` : ""}
   ${n < 20 ? `<div class="card stack">
@@ -815,8 +815,8 @@ function vHome() {
   <div class="card">
     <div class="row between"><span class="lab">Projected score</span>${delta != null && delta !== 0 ? `<span class="xp ${delta > 0 ? "done" : ""}">${delta > 0 ? "+" : ""}${delta} ${since}</span>` : ""}</div>
     <div class="row" style="align-items:baseline;gap:6px;margin-top:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200</span></div>
-    <div class="track"><div class="band" style="left:${pct(160)}%;width:${pct(180) - pct(160)}%"></div><div class="fill" style="width:${pct(pj.tot)}%"></div></div>
-    <div class="axis"><span style="left:0">0</span><span style="left:50%">100</span><span style="left:85%;color:var(--ok-ink);font-weight:700">160–180</span><span style="left:100%">200</span></div>
+    <div class="track"><div class="fill" style="width:${pct(pj.tot)}%"></div><div class="band" style="left:calc(${pct(S.target)}% - 2px);width:4px;border-radius:2px;background:var(--ok);border:0"></div></div>
+    <div class="axis"><span style="left:0">0</span><span style="left:${clamp(pct(S.target), 15, 80)}%;color:var(--ok-ink);font-weight:700">Your goal ${S.target}</span><span style="left:100%">200</span></div>
     ${n < 20 ? `<p class="small muted" style="margin-top:6px">A rough start. It sharpens with every answer.</p>` : ""}
   </div>
   <div class="card">
@@ -1004,7 +1004,7 @@ function vProgress() {
     <div class="card stack"><div class="row between"><div><span class="lab">Level ${L1.n}</span><h2>${L1.name}</h2></div><span class="tn small muted">${S.xp.toLocaleString()} XP</span></div>
       ${L1.to ? `<div class="mini" style="height:8px"><i style="width:${(S.xp - L1.from) / (L1.to - L1.from) * 100}%;background:var(--gold)"></i></div><p class="small muted">${(L1.to - S.xp).toLocaleString()} XP to ${LEVELS[L1.n][1]}. XP comes from right answers and units moving up.</p>` : `<p class="small muted">Top level reached.</p>`}</div>
     <div class="card stack"><div class="row between"><span class="lab">Projected score</span><span class="small muted">${n} answers · ${n < 60 ? "rough" : n < 200 ? "fair" : "good"} estimate</span></div>
-      <div class="row" style="align-items:baseline;gap:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200 · target ${S.target}</span></div>
+      <div class="row" style="align-items:baseline;gap:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200 · your goal ${S.target}</span></div>
       ${SUBJ.map(s => `<div class="sbar"><span>${esc(s.k)}</span><div class="mini"><i style="width:${pj.by[s.k] / s.m * 100}%;background:var(--acc)"></i></div><span class="tn" style="text-align:right">${pj.by[s.k].toFixed(1)}/${s.m}</span></div>`).join("")}</div>
     <div class="card stack"><span class="lab">Badges</span><div class="badges">${BADGES.map(b => `<div class="bdg ${b.ok() ? "" : "off"}"><span>${svg(b.icon, 26)}</span>${b.name}</div>`).join("")}</div></div>
     ${groupCard()}
@@ -1023,8 +1023,12 @@ function vProgress() {
     ${reminderCard()}
     <div class="card stack"><span class="lab">Settings</span>
       <label class="f">Look<select id="look" data-set="look"><option value="auto" ${S.look === "auto" ? "selected" : ""}>Calm by day, Calm night after 6 pm</option><option value="calm" ${S.look === "calm" ? "selected" : ""}>Calm always</option><option value="night" ${S.look === "night" ? "selected" : ""}>Calm night always</option></select></label>
+      <div class="grid2b"><label class="f">Your name<input id="set-name" data-set="name" value="${esc(S.name)}" maxlength="30" placeholder="Optional"></label>
+      <label class="f">Exam<input id="set-exam" data-set="examName" value="${esc(S.examName)}" maxlength="30"></label></div>
       <div class="grid2b"><label class="f">Exam date<input type="date" id="examDate" data-set="examDate" value="${esc(S.examDate)}"></label>
-      <label class="f">Target<select id="target" data-set="target">${[160, 165, 170, 175, 180].map(v => `<option value="${v}" ${S.target == v ? "selected" : ""}>${v} / 200</option>`).join("")}</select></label></div>
+      <label class="f">Goal (out of 200)<input type="number" inputmode="numeric" id="target" data-set="target" min="1" max="200" value="${S.target}"></label></div>
+      <div class="grid2b"><label class="f">Questions a day<input type="number" inputmode="numeric" id="set-daily" data-set="dailyGoal" min="0" max="1000" value="${S.dailyGoal || ""}" placeholder="Auto (${phaseGoalAuto()})"></label>
+      <label class="f">Practice paper time<input type="time" id="set-ptime" data-set="paperTime" value="${esc(S.paperTime)}"></label></div>
       <label class="f">Negative marking<select id="neg" data-set="neg">${[0.25, 0].map(v => `<option value="${v}" ${S.neg == v ? "selected" : ""}>${v ? "−" + v + " per wrong answer" : "None"}</option>`).join("")}</select></label>
       <button class="btn sec" data-act="tab" data-tab="sources">Exam facts, sources and adding questions</button>
       ${confirmReset ? `<div class="stack"><span class="small">Erase every answer, XP, exam and added question?</span><div class="grid2b"><button class="btn sec sm" data-act="reset0">Keep</button><button class="btn bad sm" data-act="reset2">Erase</button></div></div>` : `<button class="btn sec sm" data-act="reset1" style="justify-self:start">Reset progress</button>`}
@@ -1096,6 +1100,18 @@ function renderOverlay() {
     </div>`;
   } else if (mk && mk.sheet && !mk.result) {
     h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" role="dialog" aria-label="Answer sheet"><span class="grab"></span><div class="row between"><b>Answer sheet</b><span class="small muted">filled = answered · dot = flagged</span></div>${omrGrid(k => `${mk.ans[k] != null ? "a" : ""} ${k === mk.i ? "cur" : ""} ${mk.flag[k] ? "fl" : ""}`, "mkjump")}</div>`;
+  } else if (!S.setup && (tab === "home" || tab === "progress")) {
+    const e = setupErr || {};
+    h = `<div class="scrim"></div><div class="sheet anim" role="dialog" aria-label="Set up your plan"><span class="grab"></span>
+      <h2>Make it yours</h2><p class="small muted">Your own exam date, goal and pace. Change any of these later in Progress → Settings.</p>
+      <label class="f">Your name <span class="muted">(optional)</span><input id="su-name" value="${esc(S.name)}" maxlength="30" autocomplete="given-name"></label>
+      <label class="f">Exam<input id="su-exam" value="${esc(S.examName)}" maxlength="30"></label>
+      <label class="f">Exam date${e.date ? ` <span style="color:var(--bad-ink)">· ${e.date}</span>` : ""}<input id="su-date" type="date" value="${esc(S.examDate)}"></label>
+      <label class="f">Goal score out of 200${e.target ? ` <span style="color:var(--bad-ink)">· ${e.target}</span>` : ""}<input id="su-target" type="number" inputmode="numeric" min="1" max="200" value="${S.target}"></label>
+      <p class="small muted" style="margin-top:-6px">Unofficial guide: open-merit scholarship seats have recently needed about 140–145.</p>
+      <label class="f">Questions a day <span class="muted">(empty = suggested pace)</span><input id="su-daily" type="number" inputmode="numeric" min="0" max="1000" value="${S.dailyGoal || ""}" placeholder="Suggested: ${phaseGoalAuto()}"></label>
+      <label class="f">Practice paper time <span class="muted">(match your real exam)</span><input id="su-time" type="time" value="${esc(S.paperTime)}"></label>
+      <button class="btn" data-act="setupsave">Save and start</button></div>`;
   } else if (eyeSheet) {
     h = `<div class="scrim"></div><div class="sheet anim" role="dialog" aria-label="Eye break" style="text-align:center;align-items:center"><span class="grab"></span>
       <span class="qi" style="background:var(--acc-2);color:var(--acc);width:64px;height:64px;border-radius:20px">${svg("eye", 30)}</span>
@@ -1359,11 +1375,22 @@ const ACT = {
   },
   restoreok: () => { const st = restorePending; restorePending = null; S = Object.assign(blank(), st); S.rem = Object.assign(blank().rem, S.rem || {}); rebuild(); applyLook(); save(true); render(); toast("Progress restored."); },
   restorecancel: () => { restorePending = null; render(); },
+  setupsave: () => {
+    const v = id => (document.getElementById(id) || {}).value || "";
+    const t = Math.round(+v("su-target")), d = v("su-date"), err = {};
+    if (!(t >= 1 && t <= 200)) err.target = "enter 1 to 200";
+    if (!/^\d{4}-\d\d-\d\d$/.test(d)) err.date = "pick a date";
+    if (Object.keys(err).length) { setupErr = err; renderOverlay(); return; }
+    setupErr = null;
+    Object.assign(S, {name: v("su-name").trim().slice(0, 30), examName: v("su-exam").trim().slice(0, 30) || "MECEE-BL", examDate: d, target: t,
+      dailyGoal: clamp(Math.round(+v("su-daily")) || 0, 0, 1000), paperTime: /^\d\d:\d\d$/.test(v("su-time")) ? v("su-time") : S.paperTime, setup: true});
+    save(); render(); toast(S.name ? `All set, ${S.name}.` : "All set.");
+  },
   eyenow: () => startEye(),
   eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
   reset1: () => { confirmReset = true; render(); },
   reset0: () => { confirmReset = false; render(); },
-  reset2: () => { const k = {examDate: S.examDate, neg: S.neg, target: S.target, look: S.look}; S = Object.assign(blank(), k); confirmReset = false; pr = null; mk = null; localStorage.removeItem(MKEY); rebuild(); save(true); render(); toast("Progress erased."); }
+  reset2: () => { const k = {examDate: S.examDate, neg: S.neg, target: S.target, look: S.look, name: S.name, examName: S.examName, dailyGoal: S.dailyGoal, paperTime: S.paperTime, setup: S.setup, rem: S.rem}; S = Object.assign(blank(), k); confirmReset = false; pr = null; mk = null; localStorage.removeItem(MKEY); rebuild(); save(true); render(); toast("Progress erased."); }
 };
 document.addEventListener("click", e => {
   const a = e.target.closest("[data-act]"); if (!a || a.disabled) return;
@@ -1385,7 +1412,13 @@ document.addEventListener("change", e => {
   if (e.target.id === "photoIn" && e.target.files?.length) { readPhotos([...e.target.files]); return; }
   const k = e.target.dataset?.set; if (!k) return;
   const v = e.target.value;
-  if (k === "examDate") S.examDate = v; else if (k === "target") S.target = clamp(+v || 170, 150, 190); else if (k === "neg") S.neg = +v; else if (k === "look") { S.look = v; applyLook(); }
+  if (k === "examDate") S.examDate = v;
+  else if (k === "target") { const n = Math.round(+v); if (n >= 1 && n <= 200) S.target = n; else { toast("Enter a goal from 1 to 200."); render(); return; } }
+  else if (k === "dailyGoal") S.dailyGoal = clamp(Math.round(+v) || 0, 0, 1000);
+  else if (k === "paperTime") { if (/^\d\d:\d\d$/.test(v)) S.paperTime = v; }
+  else if (k === "name") S.name = v.trim().slice(0, 30);
+  else if (k === "examName") S.examName = v.trim().slice(0, 30) || "MECEE-BL";
+  else if (k === "neg") S.neg = +v; else if (k === "look") { S.look = v; applyLook(); }
   save(); render();
 });
 document.addEventListener("input", e => { if (e.target.id === "cq") { flt.q = e.target.value; const pos = e.target.selectionStart; render(); const el = $("#cq"); el.focus(); el.setSelectionRange(pos, pos); } });
