@@ -51,7 +51,7 @@ main.enter{animation:enter .35s var(--ease)}
 .btn.sm{min-height:40px;font-size:14px;border-radius:12px;width:auto;padding:0 14px}
 .btn[disabled]{opacity:.4;pointer-events:none}
 .grid2b{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:8px 12px;min-height:46px;width:100%}
+input,select,textarea{font:inherit;font-size:16px;color:var(--ink);background:var(--card);border:1.5px solid var(--line);border-radius:12px;padding:8px 12px;min-height:46px;width:100%;min-width:0}
 textarea{min-height:170px;font-size:14px;line-height:1.5}
 label.f{display:grid;gap:4px;font-size:14px;color:var(--muted);font-weight:600}
 .kbd{font-size:11px;border:1px solid currentColor;border-radius:4px;padding:0 4px;opacity:.6}
@@ -218,6 +218,49 @@ details[open] summary{margin-bottom:10px}
 .src{display:grid;gap:2px;padding-block:10px;border-top:1px solid var(--line);min-width:0;overflow-wrap:anywhere}
 .src:first-child{border-top:0;padding-top:0}
 .empty{padding:22px;text-align:center;border:1.5px dashed var(--line);border-radius:18px;display:grid;gap:8px;justify-items:center}
+
+/* native feel: sticky header, slide between screens, press feedback, rows that look tappable */
+html{overscroll-behavior-y:none}
+button,label.btn{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none}
+.hud{position:sticky;top:0;z-index:15;background:var(--bg);margin:calc(-14px - env(safe-area-inset-top,0px)) -16px 0;padding:calc(12px + env(safe-area-inset-top,0px)) 16px 8px;transition:background .4s}
+.hud .ht{font-size:22px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+button.pill{transition:transform .15s var(--ease)}
+.iconbtn{width:38px;height:38px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--card);box-shadow:var(--shadow);color:var(--ink);transition:transform .15s var(--ease)}
+.iconbtn svg{width:20px;height:20px}
+button.pill:active,.iconbtn:active,.close:active{transform:scale(.92)}
+@media (max-width:350px){.hud .pill{padding:0 9px;gap:4px}.hud .ht{font-size:19px}}
+main.sr{animation:sr .3s var(--ease)} main.sl{animation:sl .3s var(--ease)}
+@keyframes sr{from{opacity:0;transform:translateX(32px)}}
+@keyframes sl{from{opacity:0;transform:translateX(-32px)}}
+.tap{display:grid;grid-template-columns:42px minmax(0,1fr) auto;gap:12px;align-items:center;width:100%;text-align:left;padding:10px 8px;margin-inline:-8px;width:calc(100% + 16px);border-radius:14px;transition:background .15s}
+.tap + .tap,.urow + .urow{background-image:linear-gradient(var(--line),var(--line));background-size:calc(100% - 16px) 1px;background-position:8px 0;background-repeat:no-repeat}
+.tap:active,.urow:active{background-color:var(--soft)}
+.tap .end{display:flex;align-items:center;gap:6px;color:var(--muted)}
+.tap .end svg{width:18px;height:18px}
+.tap .end b{color:var(--ink)}
+.tap b{display:block;line-height:1.3}
+.tap.off{cursor:default} .tap.off:active{background-color:transparent}
+.mtile{display:grid;gap:6px;align-content:start;text-align:left;padding:14px;border-radius:20px;background:var(--card);box-shadow:var(--shadow);min-height:118px;min-width:0;transition:transform .15s var(--ease)}
+.mtile:active{transform:scale(.97)}
+.mtile b{font-size:16px;line-height:1.25} .mtile span.s{font-size:12.5px;color:var(--muted);line-height:1.35}
+.mtile .qi{width:38px;height:38px;border-radius:12px;background:var(--acc-2);color:var(--acc)}
+.urow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 10px;align-items:center;width:100%;text-align:left;padding:12px 8px;margin-inline:-8px;width:calc(100% + 16px);border-radius:14px;transition:background .15s}
+.urow .pb{grid-column:1/-1;height:5px;border-radius:9px;background:var(--soft);overflow:hidden}
+.urow .pb i{display:block;height:100%;border-radius:9px;background:var(--acc)}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;text-align:center}
+.cal span{font-size:11px;font-weight:700;color:var(--muted)}
+.cal i{display:grid;place-items:center;aspect-ratio:1;border-radius:10px;background:var(--soft);font-style:normal;font-weight:700;font-size:13px;color:var(--muted)}
+.cal i.on{background:var(--flame);color:var(--on-acc)} .cal i.fz{background:var(--acc-2);color:var(--acc)} .cal i.fut{background:none;opacity:.45} .cal i.now{box-shadow:inset 0 0 0 2px var(--ink)}
+.facts{display:grid;grid-auto-flow:column;grid-auto-columns:100%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.facts::-webkit-scrollbar{display:none}
+.fact{scroll-snap-align:start;display:grid;gap:12px;align-content:space-between;min-height:190px;padding:16px;border-radius:18px;background:var(--soft)}
+.fact p{font-size:17px;line-height:1.55;font-weight:600}
+.fact .btn.sec{background:var(--card);box-shadow:var(--shadow)}
+.fact .btn.sec[aria-pressed="true"]{background:var(--ok-2);color:var(--ok-ink);box-shadow:none}
+.sheet{overscroll-behavior:contain}
+.tchip{position:fixed;left:16px;bottom:calc(94px + env(safe-area-inset-bottom,0px));z-index:21;display:inline-flex;align-items:center;gap:6px;height:40px;padding:0 14px;border-radius:999px;background:var(--ink);color:var(--bg);font-weight:800;font-variant-numeric:tabular-nums;box-shadow:0 6px 18px rgb(0 0 0/.18)}
+.tchip svg{width:18px;height:18px}
+body.has-tmr #toast{bottom:calc(144px + env(safe-area-inset-bottom,0px))}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 </style>
 
@@ -229,7 +272,7 @@ details[open] summary{margin-bottom:10px}
 <nav class="tabs" id="tabs" aria-label="Sections">
   <span class="ind" id="ind"></span>
   <button data-act="tab" data-tab="home"><svg class="ol" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z" fill="currentColor"/></svg>Home</button>
-  <button data-act="tab" data-tab="path"><svg class="ol" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="18" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 18H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5" fill="none" stroke="currentColor" stroke-width="2"/></svg><svg class="fi" viewBox="0 0 24 24"><circle cx="6" cy="18" r="3" fill="currentColor"/><circle cx="18" cy="6" r="3" fill="currentColor"/><path d="M8.5 18H14a3 3 0 0 0 0-6h-4a3 3 0 0 1 0-6h5.5" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>Path</button>
+  <button data-act="tab" data-tab="learn"><svg class="ol" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8l-3-3L5 16z" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>Practice</button>
   <button data-act="tab" data-tab="exams"><svg class="ol" viewBox="0 0 24 24"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v15.5l-3-2-3 2-3-2-3 2V5A1.5 1.5 0 0 1 7 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M7 3.5h10a1.5 1.5 0 0 1 1.5 1.5v15.5l-3-2-3 2-3-2-3 2V5A1.5 1.5 0 0 1 7 3.5z" fill="currentColor"/></svg>Exams</button>
   <button data-act="tab" data-tab="notes"><svg class="ol" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H11v16H5.5A1.5 1.5 0 0 1 4 18.5zM13 4h5.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H13z" fill="currentColor"/></svg>Notes</button>
   <button data-act="tab" data-tab="progress"><svg class="ol" viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><svg class="fi" viewBox="0 0 24 24"><path d="M5 20V10M12 20V4M19 20v-7" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></svg>Progress</button>
@@ -270,14 +313,25 @@ const ICON = {
   lock: '<rect x="6" y="11" width="12" height="9" rx="2" fill="currentColor"/><path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3" stroke="currentColor" stroke-width="2.2" fill="none"/>',
   arrow: '<path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>',
   install: '<path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>',
-  x: '<path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>'
+  x: '<path d="M6 6l12 12M18 6 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>',
+  back: '<path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>',
+  hist: '<path d="M3.5 12a8.5 8.5 0 1 0 2.6-6.1M3.5 4.5v4h4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 8v4.2l2.8 1.8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+  gear: '<circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+  drop: '<path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>',
+  walk: '<circle cx="13" cy="4.5" r="2" fill="currentColor"/><path d="M10 21l2-6 3 3v3M9 12l2-4 4 3 3 1M12 15l-1-5-3 2-1 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
+  cards: '<rect x="3" y="7" width="13" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M8 4h10.5A2.5 2.5 0 0 1 21 6.5V16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+  fx: '<path d="M14 4h-1.5A2.5 2.5 0 0 0 10 6.5V20M7 10h6M14.5 12l5 6M19.5 12l-5 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
+  gap: '<path d="M3 8h5M16 8h5M3 16h18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M10 9.5h4" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="1 2.5"/>',
+  tf: '<path d="M3.5 12.5l3 3 5.5-6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M15 9l5 6M20 9l-5 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>',
+  target: '<circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="12" cy="12" r="3.5" fill="currentColor"/>',
+  sun: '<circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'
 };
 const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="${size}" aria-hidden="true">${ICON[k]}</svg>`;
 
 /* ── state: localStorage first, mirrored to the viewer's private db doc when available ── */
 const KEY = "cee150.v1", MKEY = "cee150.mock";
 const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:150, name:"", examName:"MECEE-BL", dailyGoal:0, paperTime:"11:00", setup:false, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
-  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rc:{}, hist:[], rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
+  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rc:{}, hist:[], nr:{}, water:{d:"", n:0}, bst:"", rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
 function loadLocal() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {} return blank(); }
 let S = loadLocal();
 S.rem = Object.assign(blank().rem, S.rem || {}); S.remFired = S.remFired || {d: "", ids: []};
@@ -397,7 +451,7 @@ function touchStreak() {
   if (st.last === d) return;
   const gap = st.last ? Math.round((new Date(d) - new Date(st.last)) / DAY) : 99;
   if (gap === 1) st.n++;
-  else if (gap === 2 && st.freeze > 0) { st.freeze--; st.n++; toast("A streak freeze saved your streak."); }
+  else if (gap === 2 && st.freeze > 0) { st.freeze--; st.n++; st.fz = [...(st.fz || []), new Date(new Date(d + "T12:00:00").getTime() - DAY).toLocaleDateString("en-CA")].slice(-10); toast("A streak freeze saved your streak."); }
   else st.n = 1;
   st.last = d; st.best = Math.max(st.best, st.n);
   if (st.n % 7 === 0 && st.freeze < 2) { st.freeze++; toast("7 days in a row. You earned a streak freeze."); }
@@ -530,7 +584,7 @@ function buildSession(n, f = {}) {
 }
 
 /* ── practice run ── */
-let pr = null, mk = null, tab = "home", flt = {subj: "", q: ""}, pathSubj = null, importDraft = null, confirmReset = false, aiState = {}, unitSheet = null, eyeSheet = null;
+let pr = null, mk = null, tab = "home", flt = {subj: "", q: ""}, pathSubj = null, importDraft = null, confirmReset = false, aiState = {}, unitSheet = null, eyeSheet = null, noteSheet = null, infoSheet = null, prevTab = "home", lastSheet = "";
 const LABELS = {smart: "Smart session", review: "Review due", placement: "Placement check", mis: "Confident mistakes", repeat: "Repeated questions", warmup: "Warm-up"};
 function logSession() {
   if (pr && !pr.logged && pr.res.length) {
@@ -550,7 +604,7 @@ function startPractice(kind, opts = {}) {
   if (!qs.length) { toast(kind === "review" ? "Nothing is due for review right now." : "No new questions left there. Try a smart session."); return; }
   const label = kind === "topic" || kind === "warmup" ? (kind === "warmup" ? "Warm-up · " : "") + TOP[opts.topic]?.name : kind === "subject" ? opts.subject : (LABELS[kind] || "Practice") + (kind === "repeat" && opts.subject ? " · " + opts.subject : "");
   pr = {kind, label, topic: opts.topic, qs, ord: qs.map(() => shuffle([0,1,2,3])), i: 0, sel: null, done: false, res: [], seen: new Set(), t0: Date.now(), before: project().tot, xp0: S.xp, stars0: {...S.stars}, end: false, combo: 0, best: 0, anim: false};
-  unitSheet = null; tab = "practice"; render(true); scrollTo(0, 0);
+  unitSheet = null; noteSheet = null; infoSheet = null; tab = "practice"; render(true); scrollTo(0, 0);
 }
 function answer(sure) {
   if (!pr || pr.done || pr.sel == null) return;
@@ -859,7 +913,7 @@ const numerical = q => (q.subject === "Physics" || q.subject === "Chemistry") &&
 let gm = null;
 try { const g = JSON.parse(localStorage.getItem("cee150.gm")); if (g && g.step !== "end" && g.items?.length) { g.step = "ask"; g.hint = false; gm = g; } } catch (e) {}
 const MODES = {
-  recall: {name: "Recall Deck", sub: "Answer from memory, then grade yourself"},
+  recall: {name: "Flashcards", sub: "Answer from memory, flip, grade yourself"},
   formula: {name: "Which Formula?", sub: "Name the idea, then solve"},
   gap: {name: "Fill the Gap", sub: "Type the missing key term"},
   tf: {name: "True / False + Fix", sub: "Judge it, then correct it"}
@@ -894,32 +948,32 @@ function closeEnough(a, b) {
   while (i < a.length && j < b.length) { if (a[i] === b[j]) { i++; j++; continue; } if (++edits > 1) return false; if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; } }
   return edits + (a.length - i) + (b.length - j) <= 1;
 }
-function startMode(kind) {
+function startMode(kind, topic) {
   if (mk && !mk.result && !mk.pausedAt) { toast(`${mk.label} is in progress. Continue or discard it from Home.`); go("home"); return; }
   if (gm && gm.step !== "end") logSession();
-  const N = 20, now = Date.now();
+  const N = 20, now = Date.now(), inUnit = q => !topic || q.topic === topic;
   let items = [];
   if (kind === "recall") {
-    const due = QS.filter(q => { const c = S.rc[q.id]; return c && c.d.length < 3 && c.due <= now; });
-    const fresh = weightedPick(QS.filter(q => freeRecallable(q) && !S.rc[q.id]), N);
+    const due = QS.filter(q => { const c = S.rc[q.id]; return inUnit(q) && c && c.d.length < 3 && c.due <= now; });
+    const fresh = weightedPick(QS.filter(q => inUnit(q) && freeRecallable(q) && !S.rc[q.id]), N);
     items = [...due.slice(0, 8), ...fresh].slice(0, N).map(q => ({q: q.id}));
   } else if (kind === "formula") {
-    items = weightedPick(QS.filter(numerical), 15).map(q => {
+    items = weightedPick(QS.filter(q => inUnit(q) && numerical(q)), 15).map(q => {
       const same = [...new Set(QS.filter(x => x.subject === q.subject && x.s && x.s !== q.s).map(x => x.s))];
       const near = shuffle(same.filter(s => QS.some(x => x.s === s && x.topic === q.topic))), far = shuffle(same.filter(s => !near.includes(s)));
       return {q: q.id, ideas: shuffle([q.s, ...[...near, ...far].slice(0, 3)]), ord: shuffle([0, 1, 2, 3])};
     }).filter(it => it.ideas.length === 4);
   } else if (kind === "gap") {
-    const pool = Object.values(TOP).flatMap(t => (t.concepts || []).map(c => makeGap(c, t.id)).filter(Boolean));
+    const pool = Object.values(TOP).filter(t => !topic || t.id === topic).flatMap(t => (t.concepts || []).map(c => makeGap(c, t.id)).filter(Boolean));
     items = weightedPick(pool, N, g => g.topic);
   } else if (kind === "tf") {
-    items = weightedPick(QS.filter(freeRecallable), N).map(q => {
+    items = weightedPick(QS.filter(q => inUnit(q) && freeRecallable(q)), N).map(q => {
       const truth = Math.random() < 0.5, shown = truth ? q.a : shuffle([0, 1, 2, 3].filter(i => i !== q.a))[0];
       return {q: q.id, shown, truth};
     });
   }
-  if (!items.length) { toast("Nothing to practise here yet."); return; }
-  unitSheet = null;
+  if (!items.length || (topic && items.length < 3)) { toast(topic ? "Not enough flashcards for this unit yet. Try Test me." : "Nothing to practise here yet."); return; }
+  unitSheet = null; noteSheet = null; infoSheet = null;
   gm = {kind, items, i: 0, step: "ask", res: [], xp0: S.xp, t0: now, hint: false};
   tab = "game"; render(true); scrollTo(0, 0);
 }
@@ -984,7 +1038,7 @@ function gmBar() {
   return "";
 }
 const GM_ACT = {
-  mode: d => startMode(d.k),
+  mode: d => startMode(d.k, d.topic || undefined),
   gmend: () => { if (!gm.res.length) { gm = null; saveRun(); go("home"); return; } gm.step = "end"; logSession(); save(); tab = "game"; render(); },
   gmleave: () => { saveRun(); go("home"); toast("Saved. Continue any time from Home."); },
   resumegm: () => { tab = "game"; render(true); },
@@ -1094,25 +1148,29 @@ const fmtWhen = ts => new Date(ts).toLocaleString(undefined, {weekday: "short", 
 function histEntries() {
   return [...S.mocks.map((m, i) => ({...m, kind: "paper", src: "m", i})), ...S.hist.map((h, i) => ({...h, src: "h", i}))].sort((a, b) => b.ts - a.ts);
 }
-function histRow(e, src, i) {
+function histRow(e, src, i, timeOnly) {
   const right = e.kind === "paper" ? e.right : (e.k || "").split("").filter(c => c === "1").length, n = e.kind === "paper" ? e.n : (e.k || "").length;
-  const score = e.kind === "paper" ? `<b class="tn">${Math.round(e.scaled)}</b><span class="small muted"> /200</span>` : `<b class="tn">${right}/${n}</b>`;
-  const sub = e.kind === "paper" ? `${e.right} right · ${e.wrong} wrong · ${e.blank} blank${e.mins ? ` · ${e.mins} min` : ""}` : `${e.kind === "mode" ? "Study mode" : "Practice"} · ${n} questions`;
-  return `<button class="row" data-act="hist" data-src="${src}" data-i="${i}" style="width:100%;flex-wrap:nowrap;gap:12px;padding-block:10px;border-top:1px solid var(--line);text-align:left">
-    <span class="qi" style="background:var(--${e.kind === "paper" ? "gold-2" : "acc-2"});color:var(--${e.kind === "paper" ? "gold-ink" : "acc"})">${svg(e.kind === "paper" ? "cup" : e.kind === "mode" ? "bolt" : "check")}</span>
-    <span style="flex:1;min-width:0"><b style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.label)}</b><span class="small muted">${fmtWhen(e.ts)} · ${sub}</span></span>
-    <span style="text-align:right;white-space:nowrap">${score}</span></button>`;
+  const score = e.kind === "paper" ? `<span><b class="tn">${Math.round(e.scaled)}</b><span class="small">/200</span></span>` : `<b class="tn">${right}/${n}</b>`;
+  const sub = e.kind === "paper" ? `${e.right} right · ${e.wrong} wrong` : `${e.kind === "mode" ? "Study mode" : "Practice"} · ${n} ${n === 1 ? "question" : "questions"}`;
+  const when = timeOnly ? new Date(e.ts).toLocaleTimeString(undefined, {hour: "numeric", minute: "2-digit"}) : fmtWhen(e.ts);
+  return `<button class="tap" data-act="hist" data-src="${src}" data-i="${i}">
+    <span class="qi" style="${tint(e.kind === "paper" ? "gold" : "acc")}">${svg(e.kind === "paper" ? "cup" : e.kind === "mode" ? "cards" : "check")}</span>
+    <span><b style="overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(e.label)}</b><span class="small muted">${when} · ${sub}</span></span>
+    <span class="end">${score}${svg("arrow", 18)}</span></button>`;
 }
 function historyCard() {
   const es = histEntries();
-  return `<div class="card stack"><div class="row between"><span class="lab">History</span>${es.length ? `<button class="btn sec sm" data-act="tab" data-tab="history">See all ${es.length}</button>` : ""}</div>
+  return `<div class="card stack" style="gap:6px"><div class="row between"><span class="lab">History</span>${es.length ? `<button class="btn sec sm" data-act="tab" data-tab="history">See all ${es.length}</button>` : ""}</div>
     ${es.length ? es.slice(0, 3).map(e => histRow(e, e.src, e.i)).join("") : `<p class="small muted">Your papers and practice sessions will appear here, with every answer to look back on.</p>`}</div>`;
 }
 function vHistory() {
   if (histOpen) return vReview();
-  const es = histEntries();
-  return `<div class="qtop"><button class="close" data-act="tab" data-tab="progress" aria-label="Back to Progress">${svg("x", 18)}</button><h2>History</h2></div>
-    ${es.length ? `<div class="card" style="padding-block:6px">${es.map(e => histRow(e, e.src, e.i)).join("")}</div>` : `<div class="empty"><b>Nothing yet</b><span class="small muted">Finish a practice session or a paper and it will be saved here.</span></div>`}`;
+  const es = histEntries(), groups = {};
+  es.forEach(e => (groups[dayKey(e.ts)] ||= []).push(e));
+  const name = k => k === dayKey() ? "Today" : k === dayKey(Date.now() - DAY) ? "Yesterday" : new Date(k + "T12:00:00").toLocaleDateString(undefined, {weekday: "long", day: "numeric", month: "short"});
+  return `<div class="qtop"><button class="close" data-act="back" aria-label="Back">${svg("back", 18)}</button><h2>History</h2></div>
+    ${es.length ? Object.entries(groups).map(([k, arr]) => `<span class="lab">${name(k)}</span><div class="card" style="padding-block:4px">${arr.map(e => histRow(e, e.src, e.i, true)).join("")}</div>`).join("")
+      : `<div class="empty"><b>Nothing yet</b><span class="small muted">Finish a practice session, a study mode or a paper and it is saved here, with every answer to look back on.</span><button class="btn sm" data-act="start" data-kind="smart">Start a smart session</button></div>`}`;
 }
 function vReview() {
   const e = histOpen.src === "m" ? {...S.mocks[histOpen.i], kind: "paper"} : S.hist[histOpen.i];
@@ -1149,23 +1207,53 @@ const PHASES = [
   {n: "Revise", q: 80, txt: "Review due questions, confident mistakes and repeated questions. Read notes. No new chapters."},
   {n: "Exam day", q: 0, txt: "Read notes lightly, then rest. In the hall, answer what you know first, then come back for the rest."}
 ];
-const hud = () => `<div class="hud">
-  <div class="brand">MECEE-BL 2083<small>MBBS · 200 Q · 3 h</small></div><span class="grow"></span>
-  <span class="pill tn" title="Days in a row">${svg("flame", 18)}${S.streak.n || 0}</span>
-  <span class="pill tn" title="XP">${svg("bolt", 18)}${S.xp.toLocaleString()}</span></div>`;
+const xpShort = x => x >= 10000 ? (x / 1000).toFixed(1) + "k" : x.toLocaleString();
+const hud = title => `<div class="hud"><h1 class="ht">${esc(title)}</h1>
+  <button class="pill tn" data-act="info" data-k="streak" aria-label="${S.streak.n || 0}-day streak. Open your streak calendar">${svg("flame", 18)}${S.streak.n || 0}</button>
+  <button class="pill tn" data-act="info" data-k="xp" aria-label="${S.xp.toLocaleString()} XP. Open your level">${svg("bolt", 18)}${xpShort(S.xp)}</button>
+  <button class="iconbtn" data-act="tab" data-tab="history" aria-label="History">${svg("hist")}</button></div>`;
+const tint = c => c === "acc" ? "background:var(--acc-2);color:var(--acc)" : `background:var(--${c}-2);color:var(--${c}-ink)`;
+// a full-width row that goes somewhere: icon, title + one line, chevron
+const tapRow = (act, data, icon, c, title, sub, end = "") => `<button class="tap" data-act="${act}" ${data}><span class="qi" style="${tint(c)}">${svg(icon)}</span><span><b>${title}</b><span class="small muted">${sub}</span></span><span class="end">${end}${svg("arrow", 18)}</span></button>`;
+const waterN = () => S.water.d === dayKey() ? S.water.n : 0;
+// every booster does something: a timer, a session, a log, or a setting
+function boostAct(title) {
+  const mis = misList().length;
+  return ({
+    "Phone in another room": {label: "Start a 25-min focus timer", act: "timer", d: {m: 25, l: "Focus"}},
+    "Test, don't reread": {label: "Start a smart session", act: "start", d: {kind: "smart"}},
+    "Water before you start": {label: "Log a glass of water", act: "water", d: {}},
+    "Walk, then study": {label: "Start a 20-min walk timer", act: "timer", d: {m: 20, l: "Walk"}},
+    "Same time as the exam": {label: "Set your paper time", act: "tab", d: {tab: "settings"}},
+    "Short nap, not long": {label: "Start a 20-min nap timer", act: "timer", d: {m: 20, l: "Nap"}},
+    "Sleep is study": {label: "Set a wind-down reminder", act: "tab", d: {tab: "settings"}},
+    "Explain the mistake": mis ? {label: `Fix ${mis} confident ${mis === 1 ? "mistake" : "mistakes"} now`, act: "start", d: {kind: "mis"}} : {label: "Start a smart session", act: "start", d: {kind: "smart"}},
+    "Mix your units": {label: "Start a mixed session", act: "start", d: {kind: "smart"}},
+    "Morning light": {label: "Start a 10-min daylight timer", act: "timer", d: {m: 10, l: "Daylight"}},
+    "Caffeine before noon": {label: "Got it", act: "bstdone", d: {}},
+    "20-20-20 for eyes": {label: "Rest my eyes now", act: "eyenow", d: {}}
+  })[title] || {label: "Got it", act: "bstdone", d: {}};
+}
 
 function vHome() {
-  const d = daysLeft(), ph = phaseOf(d), n = answered(), pj = project(), due = dueList().length, done = S.days[dayKey()] || 0;
-  const goal = phaseGoal(), mis = misList().length, top = ranked()[0].t, t = today();
+  const d = daysLeft(), ph = phaseOf(d), n = answered(), pj = project(), done = S.days[dayKey()] || 0;
+  const goal = phaseGoal(), top = ranked()[0].t, t = today();
   const h = new Date().getHours(), late = h >= 23 || h < 5;
   const wk = S.proj[new Date(Date.now() - 7 * DAY - 4 * 3600e3).toLocaleDateString("en-CA")], first = S.proj[Object.keys(S.proj).sort()[0]];
   const delta = n > 0 && (wk ?? first) != null ? Math.round(pj.tot - (wk ?? first)) : null, since = wk != null ? "this week" : "since you started";
   const pct = x => clamp(x / 200 * 100, 0, 100);
   const goalMet = done >= goal;
-  const np = nextPaper();
   const eyeIn = Math.max(1, Math.ceil((25 * 60 - activeSec) / 60));
-  return `${hud()}
-  <div><p class="muted small">${S.name ? esc(S.name) + " · " : ""}${d == null ? "Set your exam date in Settings" : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to ${esc(S.examName || "your exam")}` : "Exam day"}</p><h1>${ph == null ? "Let's start" : PHASES[ph].n}</h1></div>
+  const B = booster(), BA = boostAct(B[0]), bDone = S.bst === dayKey(), w = waterN();
+  const tmrRow = l => tmr && tmr.l === l ? `<span class="small tn" style="color:var(--acc);font-weight:800">${fmtMS(Math.max(0, Math.round((tmr.end - Date.now()) / 1000)))} left</span>` : "";
+  const others = [
+    ["Phone in another room", tapRow(tmr?.l === "Focus" ? "topen" : "timer", 'data-m="25" data-l="Focus"', "clock", "acc", "Phone in another room", tmr?.l === "Focus" ? "Focus timer running" : "Start a 25-min focus timer", tmrRow("Focus"))],
+    ["Water before you start", `<button class="tap" data-act="water"><span class="qi" style="${tint("acc")}">${svg("drop")}</span><span><b>Drink water</b><span class="small muted">${w} of 8 glasses today · tap to log one</span></span><span class="end"><span class="xp ${w >= 8 ? "done" : ""}" style="font-size:15px">+</span></span></button>`],
+    ["Walk, then study", tapRow(tmr?.l === "Walk" ? "topen" : "timer", 'data-m="20" data-l="Walk"', "walk", "ok", "Walk, then study", tmr?.l === "Walk" ? "Walk timer running" : "Start a 20-min walk timer", tmrRow("Walk"))],
+    ["20-20-20 for eyes", tapRow("eyenow", "", "eye", "acc", "Rest your eyes", `20 seconds now · next break in ${eyeIn} min`)]
+  ].filter(([k]) => k !== B[0]).map(([, html]) => html).join("");
+  return `${hud("Home")}
+  <div><p class="muted small">${S.name ? esc(S.name) + " · " : ""}${d == null ? `<button data-act="tab" data-tab="settings" style="color:var(--acc);font-weight:700;padding:0">Set your exam date</button>` : d > 0 ? `${d} ${d === 1 ? "day" : "days"} to ${esc(S.examName || "your exam")}` : "Exam day"}</p><h2 style="font-size:26px">${ph == null ? "Let's start" : PHASES[ph].n}</h2></div>
   ${resumeCard()}
   ${installCard()}
   ${late ? `<div class="note row" style="flex-wrap:nowrap"><span style="color:var(--gold-ink)">${svg("moon", 22)}</span><span>It's late. Sleep is when today's practice turns into memory. Your streak is safe until 4 am.</span></div>` : ""}
@@ -1178,30 +1266,29 @@ function vHome() {
     <div><h3>${goalMet ? "Today's goal done" : "Today's goal"}</h3><p class="small" style="margin-top:4px">${goalMet ? "Anything more is a bonus." : `${goal - done} more to go.`}</p><p class="small muted">${S.streak.n ? `${S.streak.n}-day streak` : "Answer today to start a streak"}${S.streak.freeze ? ` · ${S.streak.freeze} ${S.streak.freeze === 1 ? "freeze" : "freezes"} saved` : ""}</p></div>
   </div>
   <button class="btn cta ${n < 20 ? "sec" : ""}" data-act="start" data-kind="smart"><span style="min-width:0"><small>${n < 20 ? "Or start a smart session" : "Next up · 20 questions · most marks to gain"}</small><span class="cta-t">${esc(top.name)}</span></span><span class="go">${svg("arrow")}</span></button>
-  <div class="quick">
-    ${due ? `<button class="btn sec" data-act="start" data-kind="review">Review due<small>${due} waiting</small></button>` : ""}
-    <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>from past papers</small></button>
-    ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Fix mistakes<small>${mis} confident ones</small></button>` : ""}
-    <button class="btn sec" data-act="${np.act}" data-k="${np.k}">${esc(np.name)}<small>200 Q · 3 h</small></button>
+  <div class="card" style="padding-bottom:8px">
+    <div class="row between"><span class="lab">Daily quests</span><span class="small muted">tap one to start</span></div>
+    ${quests().map(q => {
+      const fin = !!t.q[q.id];
+      const inner = `<span class="qi" style="${tint(fin ? "ok" : q.c === "gold" ? "gold" : q.c)}">${svg(fin ? "check" : q.icon)}</span>
+        <span><b>${q.name}</b><span class="mini" style="display:block"><i style="width:${Math.min(100, q.val / q.need * 100)}%;background:var(--${fin ? "ok" : q.c === "acc" ? "acc" : q.c})"></i></span><span class="small muted">${fin ? "Done today" : `${Math.min(q.val, q.need)} of ${q.need}`}</span></span>`;
+      return fin ? `<div class="tap off">${inner}<span class="end"><span class="xp done">+${q.xp} XP</span></span></div>`
+        : `<button class="tap" data-act="quest" data-k="${q.id}">${inner}<span class="end"><span class="xp">+${q.xp} XP</span>${svg("arrow", 18)}</span></button>`;
+    }).join("")}
   </div>
-  <div class="card stack"><span class="lab">Study modes</span>
-    <div class="quick">${Object.entries(MODES).map(([k, m]) => `<button class="btn sec" data-act="mode" data-k="${k}">${m.name}<small>${m.sub}</small></button>`).join("")}</div>
+  <div class="card stack" style="gap:10px">
+    <div class="row between"><span class="lab">Study booster</span>${bDone ? `<span class="xp done">Done today</span>` : ""}</div>
+    <div><b>${esc(B[0])}</b><div class="small muted">${esc(B[1])}</div></div>
+    <button class="btn ${bDone ? "sec" : ""}" data-act="boost">${esc(BA.label)}</button>
   </div>
-  <div class="card">
-    <div class="row between"><span class="lab">Projected score</span>${delta != null && delta !== 0 ? `<span class="xp ${delta > 0 ? "done" : ""}">${delta > 0 ? "+" : ""}${delta} ${since}</span>` : ""}</div>
+  <div class="card" style="padding-block:8px"><span class="lab">Quick boosters</span>${others}</div>
+  <button class="card" data-act="tab" data-tab="progress" style="display:block;width:100%;text-align:left">
+    <div class="row between"><span class="lab">Projected score</span><span class="row" style="gap:6px">${delta != null && delta !== 0 ? `<span class="xp ${delta > 0 ? "done" : ""}">${delta > 0 ? "+" : ""}${delta} ${since}</span>` : ""}<span style="color:var(--muted)">${svg("arrow", 18)}</span></span></div>
     <div class="row" style="align-items:baseline;gap:6px;margin-top:6px"><span class="score tn">${Math.round(pj.tot)}</span><span class="muted">/ 200</span></div>
     <div class="track"><div class="fill" style="width:${pct(pj.tot)}%"></div><div class="band" style="left:calc(${pct(S.target)}% - 2px);width:4px;border-radius:2px;background:var(--ok);border:0"></div></div>
     <div class="axis"><span style="left:0">0</span><span style="left:${clamp(pct(S.target), 15, 80)}%;color:var(--ok-ink);font-weight:700">Your goal ${S.target}</span><span style="left:100%">200</span></div>
     ${n < 20 ? `<p class="small muted" style="margin-top:6px">A rough start. It sharpens with every answer.</p>` : ""}
-  </div>
-  <div class="card">
-    <span class="lab">Daily quests</span>
-    ${quests().map(q => `<div class="quest"><span class="qi" style="background:var(--${q.c === "acc" ? "acc-2" : q.c + "-2"});color:var(--${q.c === "acc" ? "acc" : q.c === "gold" ? "gold-ink" : "bad-ink"})">${svg(q.icon)}</span>
-      <div><b>${q.name}</b><div class="mini"><i style="width:${Math.min(100, q.val / q.need * 100)}%;background:var(--${q.c === "acc" ? "acc" : q.c})"></i></div></div>
-      <span class="xp ${t.q[q.id] ? "done" : ""}">${t.q[q.id] ? "Done" : `+${q.xp} XP`}</span></div>`).join("")}
-  </div>
-  <div class="card row" style="flex-wrap:nowrap;gap:12px;align-items:flex-start"><span class="qi" style="background:var(--gold-2);color:var(--gold-ink)">${svg("bolt")}</span><div style="flex:1"><span class="lab">Study booster</span><div><b>${esc(booster()[0])}</b></div><div class="small muted">${esc(booster()[1])}</div></div></div>
-  <div class="card row" style="flex-wrap:nowrap;gap:12px"><span class="qi" style="background:var(--acc-2);color:var(--acc)">${svg("eye")}</span><div style="flex:1"><b>Eye break in ${eyeIn} min</b><div class="small muted">Every 25 minutes: look 20 feet away for 20 seconds.</div></div><button class="btn sec sm" data-act="eyenow">Now</button></div>
+  </button>
   ${ph != null ? `<p class="small muted" style="padding-inline:4px">${PHASES[ph].txt}</p>` : ""}
   <details class="card"><summary>How this app helps you remember</summary><div class="stack small">
     <p><b>Answering beats rereading.</b> Testing yourself builds memory faster than reading notes (Adesope et al., 2017: g = 0.61).</p>
@@ -1215,28 +1302,32 @@ function vHome() {
   </div></details>`;
 }
 
-function vPath() {
-  const subj = pathSubj || ranked()[0].t.subject;
-  const units = TOPS_BY[subj] || [];
-  const curId = ranked().find(r => r.t.subject === subj)?.t.id;
-  const pj = project().by[subj];
-  const sides = ["c", "l", "c", "r"];
-  return `${hud()}
+const MODE_ICON = {recall: "cards", formula: "fx", gap: "gap", tf: "tf"};
+function unitRow(t, act, sub, right, p) {
+  return `<button class="urow" data-act="${act}" data-topic="${t.id}"><span style="min-width:0"><b style="display:block;line-height:1.3">${esc(t.name)}</b><span class="small muted">${sub}</span></span><span style="text-align:right">${right}</span><span class="pb"><i style="width:${Math.round(p * 100)}%"></i></span></button>`;
+}
+function vLearn() {
+  const subj = pathSubj || ranked()[0].t.subject, units = TOPS_BY[subj] || [];
+  const curId = ranked().find(r => r.t.subject === subj)?.t.id, due = dueList().length, mis = misList().length;
+  return `${hud("Practice")}
+  <span class="lab">Study modes</span>
+  <div class="grid2b">${Object.entries(MODES).map(([k, m]) => `<button class="mtile" data-act="mode" data-k="${k}"><span class="qi">${svg(MODE_ICON[k])}</span><b>${m.name}</b><span class="s">${m.sub}</span></button>`).join("")}</div>
+  <span class="lab" style="margin-top:4px">Quick practice</span>
+  <div class="card" style="padding-block:6px">
+    ${tapRow("start", 'data-kind="smart"', "target", "acc", "Smart session", "20 questions from your weakest high-mark units")}
+    ${tapRow("start", 'data-kind="review"', "repeat", "ok", "Review due", due ? `${due} waiting` : "Nothing due right now")}
+    ${mis ? tapRow("start", 'data-kind="mis"', "bang", "bad", "Fix confident mistakes", `${mis} you were sure of but got wrong`) : ""}
+    ${tapRow("start", 'data-kind="repeat"', "star", "gold", "Repeated questions", "Topics asked again and again in past papers")}
+    ${tapRow("start", 'data-kind="placement"', "check", "acc", "Placement check", "One question from each syllabus unit")}
+  </div>
+  <span class="lab" style="margin-top:4px">By unit</span>
   <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="psub" data-k="${s.k}" aria-label="${s.k}" aria-pressed="${s.k === subj}">${SHORT[s.k]}</button>`).join("")}</div>
-  <div class="unitband"><div><small>${esc(subj.toUpperCase())} · ${SC[subj].m} MARKS</small><b>${units.length} syllabus units</b></div><span class="tn" style="font-weight:800;white-space:nowrap">${pj.toFixed(0)}/${SC[subj].m}</span></div>
-  <div class="road">${units.map((t, k) => {
-    const st = stars(t.id), o = S.th[t.id] || {}, [lc] = level(t.id);
-    const cls = t.id === curId ? "cur" : st >= 3 ? "s3" : lc === "weak" ? "weak" : "";
-    const p = o.n ? clamp(pTopic(t.id) / goalP(), 0, 1) : 0;
-    const icon = t.id === curId ? "play" : st >= 3 ? "star" : lc === "weak" ? "bang" : "book";
-    return `<div class="lvl ${sides[k % 4] === "c" ? "" : sides[k % 4]}">
-      <button class="node ${cls}" data-act="unit" data-topic="${t.id}" aria-label="${esc(t.name)}">
-        <svg class="pr" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16.5" fill="none" stroke="var(--line)" stroke-width="2.4"/><circle cx="18" cy="18" r="16.5" fill="none" stroke="${cls === "weak" ? "var(--bad)" : st >= 3 ? "var(--gold)" : "var(--acc)"}" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="${(103.7 * p).toFixed(1)} 103.7"/></svg>
-        <span class="core">${svg(icon, 26)}</span></button>
-      ${starRow(st)}<span class="t">${esc(t.name)}</span><span class="s">${t.weight} Q in paper${t.id === curId ? " · start here" : o.n ? ` · ${o.c || 0}/${o.n} right` : ""}</span></div>`;
-  }).join("")}
-    <div class="lvl"><button class="node boss" data-act="boss" data-k="${subj}" aria-label="${esc(subj)} boss round"><span class="core">${svg("cup", 30)}</span></button><span class="t">${esc(subj)} boss round</span><span class="s">${SC[subj].m} Q in ${Math.round(SC[subj].m * PACE / 60)} min</span></div>
-  </div>`;
+  <div class="card" style="padding-block:4px">${units.map(t => {
+    const o = S.th[t.id] || {};
+    const sub = t.id === curId ? `<span style="color:var(--acc);font-weight:700">Start here</span>` : o.n ? `${o.c || 0} of ${o.n} right · ${level(t.id)[1]}` : "Not tried yet";
+    return unitRow(t, "unit", sub, `<span class="small muted tn" style="display:block">${t.weight} Q</span>${starRow(stars(t.id), 12)}`, o.n ? clamp(pTopic(t.id) / goalP(), 0, 1) : 0);
+  }).join("")}</div>
+  <div class="card" style="padding-block:6px">${tapRow("boss", `data-k="${subj}"`, "cup", "gold", `${esc(subj)} boss round`, `All ${SC[subj].m} questions in ${Math.round(SC[subj].m * PACE / 60)} min, at exam pace`)}</div>`;
 }
 
 function vQuestion() {
@@ -1294,7 +1385,7 @@ function vExams() {
   if (mk && mk.pre) return vExamPre();
   if (mk && !mk.pausedAt) return vExamQ();
   const best = k => { const ms = S.mocks.filter(m => m.series === k); return ms.length ? Math.max(...ms.map(m => m.scaled)) : null; };
-  return `${hud()}<h1>Exams</h1>
+  return `${hud("Exams")}
     <p class="small muted" style="margin-top:-6px">Full papers with the official pattern: 200 questions, 3 hours, −${S.neg} per wrong answer, units in their exact syllabus counts. Series 1 holds the most-repeated topics from 2078–2082 papers.</p>
     ${(() => {
       const np = nextPaper(), done = papers().filter(p => p.tries.length);
@@ -1357,22 +1448,26 @@ function vExamResult() {
 }
 
 function vNotes() {
-  const qq = flt.q.trim().toLowerCase();
-  const list = SUBJ.filter(s => !flt.subj || s.k === flt.subj).flatMap(s => (TOPS_BY[s.k] || []).map(t => {
-    const cs = (t.concepts || []).filter(c => !qq || c.toLowerCase().includes(qq) || t.name.toLowerCase().includes(qq));
-    if (!cs.length) return "";
-    return `<details class="card" ${qq ? "open" : ""}><summary><span>${esc(t.name)}</span> <span class="small muted" style="font-weight:600">· ${esc(s.k)} · ${t.weight} Q</span></summary>
-      <div class="stack"><div class="row">${starRow(stars(t.id))}${chip(t.id)}</div><ul class="cpts">${cs.map(c => `<li>${noteHtml(c)}</li>`).join("")}</ul>
-      <div class="grid2b"><button class="btn sec sm" data-act="start" data-kind="warmup" data-topic="${t.id}" data-n="5">Warm-up 5</button><button class="btn sm" data-act="start" data-kind="topic" data-topic="${t.id}">Practise 20</button></div></div></details>`;
-  })).join("");
-  const top = `${hud()}<h1>Notes</h1>
+  const top = `${hud("Notes")}
     <div class="seg" role="group" aria-label="Notes or tips"><button data-act="notesview" data-k="units" aria-pressed="${notesView === "units"}">Unit notes</button><button data-act="notesview" data-k="tips" aria-pressed="${notesView === "tips"}">Quick tips</button></div>`;
   if (notesView === "tips") return top + vTips();
-  return `${top}
-    <p class="small muted">Key facts and formulas for every syllabus unit. Tip: do the 5-question warm-up first; trying before reading makes the reading stick.</p>
-    <div class="seg" role="group" aria-label="Subject">${["", ...SUBJ.map(s => s.k)].map(k => `<button data-act="csub" data-k="${k}" aria-label="${k || "All subjects"}" aria-pressed="${flt.subj === k}">${k ? SHORT[k] : "All"}</button>`).join("")}</div>
-    <label class="f">Search<input id="cq" type="search" value="${esc(flt.q)}" placeholder="e.g. Krebs, lens, pH"></label>
-    ${list || `<div class="empty">Nothing matches “${esc(flt.q)}”.</div>`}`;
+  const qq = flt.q.trim().toLowerCase(), subj = flt.subj || pathSubj || ranked()[0].t.subject;
+  const search = `<label class="f">Search all notes<input id="cq" type="search" value="${esc(flt.q)}" placeholder="e.g. Krebs, lens, pH" autocomplete="off"></label>`;
+  if (qq) {
+    const hits = SUBJ.flatMap(s => (TOPS_BY[s.k] || []).map(t => {
+      const cs = (t.concepts || []).filter(c => c.toLowerCase().includes(qq) || t.name.toLowerCase().includes(qq));
+      return cs.length ? `<div class="card stack" style="gap:8px"><div class="row between" style="flex-wrap:nowrap"><b style="min-width:0">${esc(t.name)}</b><span class="small muted" style="white-space:nowrap">${SHORT[s.k]} · ${t.weight} Q</span></div>
+        <ul class="cpts">${cs.map(c => `<li>${noteHtml(c)}</li>`).join("")}</ul><button class="btn sec sm" data-act="notes1" data-topic="${t.id}" style="justify-self:start">Open unit</button></div>` : "";
+    })).join("");
+    return `${top}${search}${hits || `<div class="empty"><b>Nothing matches “${esc(flt.q)}”</b><span class="small muted">Try a shorter word, or clear the search to browse by subject.</span></div>`}`;
+  }
+  return `${top}${search}
+    <div class="seg" role="group" aria-label="Subject">${SUBJ.map(s => `<button data-act="csub" data-k="${s.k}" aria-label="${s.k}" aria-pressed="${s.k === subj}">${SHORT[s.k]}</button>`).join("")}</div>
+    <div class="card" style="padding-block:4px">${(TOPS_BY[subj] || []).map(t => {
+      const N = (t.concepts || []).length, k = (S.nr[t.id] || []).length;
+      return unitRow(t, "notes1", `${N} facts · ${k ? `${k} known` : "not read yet"}`, `<span class="small muted tn">${t.weight} Q</span>`, N ? k / N : 0);
+    }).join("")}</div>
+    <p class="small muted" style="padding-inline:4px">Tip: tap Test me before reading. Trying first makes the reading stick.</p>`;
 }
 
 function vProgress() {
@@ -1384,7 +1479,8 @@ function vProgress() {
   const whys = Object.entries(S.why).sort((a, b) => b[1] - a[1]);
   const TIP = {"Didn't know it": "Read that unit's notes right after the session, then do a warm-up tomorrow.", "Mixed up two terms": "Make a two-column list of the look-alike terms and test yourself on it.", "Misread": "Slow down on the stem: find the key word (NOT, EXCEPT, maximum) before reading options.", "Rushed": "You have 54 s a question. Use the full time on the ones you can solve.", "Calculation slip": "Write units at every step and check the answer's size makes sense."};
   const rows = ranked().map(({t, g}) => { const o = S.th[t.id] || {}; return `<tr><td>${esc(t.name)}<div class="small muted">${esc(t.subject)} · ${t.weight} Q</div></td><td class="n">${o.n ? `${o.c || 0}/${o.n}` : "–"}</td><td>${starRow(stars(t.id), 12)}</td><td class="n"><b>${g.toFixed(1)}</b></td></tr>`; }).join("");
-  return `${hud()}<h1>Progress</h1>
+  return `${hud("Progress")}
+    <div class="card" style="padding-block:6px">${tapRow("tab", 'data-tab="settings"', "gear", "acc", "Settings", "Your goal, exam date, reminders and backup")}</div>
     <div class="card stack"><div class="row between"><div><span class="lab">Level ${L1.n}</span><h2>${L1.name}</h2></div><span class="tn small muted">${S.xp.toLocaleString()} XP</span></div>
       ${L1.to ? `<div class="mini" style="height:8px"><i style="width:${(S.xp - L1.from) / (L1.to - L1.from) * 100}%;background:var(--gold)"></i></div><p class="small muted">${(L1.to - S.xp).toLocaleString()} XP to ${LEVELS[L1.n][1]}. XP comes from right answers and units moving up.</p>` : `<p class="small muted">Top level reached.</p>`}</div>
     <div class="card stack"><div class="row between"><span class="lab">Projected score</span><span class="small muted">${n} answers · ${n < 60 ? "rough" : n < 200 ? "fair" : "good"} estimate</span></div>
@@ -1399,6 +1495,24 @@ function vProgress() {
     ${whys.length ? `<div class="card stack"><span class="lab">Why you miss questions</span>${whys.map(([w, c]) => `<div class="sbar" style="grid-template-columns:9rem 1fr 2rem"><span>${esc(w)}</span><div class="mini"><i style="width:${c / whys[0][1] * 100}%;background:var(--bad)"></i></div><span class="tn" style="text-align:right">${c}</span></div>`).join("")}<div class="note"><b>Try this:</b> ${esc(TIP[whys[0][0]] || "")}</div></div>` : ""}
     <div class="card stack"><span class="lab">Questions per day · last 14 days</span><div class="bars14" role="img" aria-label="Questions per day">${days.map(v => `<div class="${v ? "" : "z"}" style="height:${Math.max(3, v / mx * 100)}%" title="${v}"></div>`).join("")}</div></div>
     <details class="card"><summary>All units, most marks to gain first</summary><p class="small muted">Gain = marks added by reaching ${Math.round(goalP() * 100)}% in that unit.</p><div class="tbl"><table><thead><tr><th>Unit</th><th class="n">You</th><th>Stars</th><th class="n">Gain</th></tr></thead><tbody>${rows}</tbody></table></div></details>
+    `;
+}
+
+function vSettings() {
+  return `<div class="qtop"><button class="close" data-act="back" aria-label="Back">${svg("back", 18)}</button><h2>Settings</h2></div>
+    <div class="card stack"><span class="lab">You and your exam</span>
+      <div class="grid2b"><label class="f">Your name<input id="set-name" data-set="name" value="${esc(S.name)}" maxlength="30" placeholder="Optional"></label>
+      <label class="f">Exam<input id="set-exam" data-set="examName" value="${esc(S.examName)}" maxlength="30"></label></div>
+      <div class="grid2b"><label class="f">Exam date<input type="date" id="examDate" data-set="examDate" value="${esc(S.examDate)}"></label>
+      <label class="f">Goal (out of 200)<input type="number" inputmode="numeric" id="target" data-set="target" min="1" max="200" value="${S.target}"></label></div>
+      <div class="grid2b"><label class="f">Questions a day<input type="number" inputmode="numeric" id="set-daily" data-set="dailyGoal" min="0" max="1000" value="${S.dailyGoal || ""}" placeholder="Auto (${phaseGoalAuto()})"></label>
+      <label class="f">Practice paper time<input type="time" id="set-ptime" data-set="paperTime" value="${esc(S.paperTime)}"></label></div>
+      <label class="f">Negative marking<select id="neg" data-set="neg">${[0.25, 0].map(v => `<option value="${v}" ${S.neg == v ? "selected" : ""}>${v ? "−" + v + " per wrong answer" : "None"}</option>`).join("")}</select></label>
+    </div>
+    <div class="card stack">
+      <label class="f">Look<select id="look" data-set="look"><option value="auto" ${S.look === "auto" ? "selected" : ""}>Calm by day, Calm night after 6 pm</option><option value="calm" ${S.look === "calm" ? "selected" : ""}>Calm always</option><option value="night" ${S.look === "night" ? "selected" : ""}>Calm night always</option></select></label>
+    </div>
+    ${reminderCard()}
     <div class="card stack"><span class="lab">Your progress</span>
       <p class="small">Saved on this device${db ? " and synced to your Claude account" : ""}${persisted ? ", protected from automatic clean-up" : ""}. ${answered()} answers, ${S.xp.toLocaleString()} XP, ${S.mocks.length} papers.</p>
       <div class="grid2b"><button class="btn sec" data-act="backup">Save backup</button><label class="btn sec" style="cursor:pointer">Restore backup<input id="restoreIn" type="file" accept=".json,application/json" hidden></label></div>
@@ -1410,17 +1524,8 @@ function vProgress() {
         + `<div class="row" style="flex-wrap:nowrap;gap:8px"><input id="restorecode" placeholder="Paste a secret code" style="flex:1" autocomplete="off"><button class="btn sec sm" data-act="cloudrestore">Restore</button></div>` : ""}
       ${restorePending ? `<div class="stack"><p class="small"><b>Replace this phone's progress with the backup from ${esc(new Date(restorePending.updated).toLocaleString())}?</b> It has ${Object.values(restorePending.it || {}).reduce((a, i) => a + i.n, 0)} answers.</p><div class="grid2b"><button class="btn sec sm" data-act="restorecancel">Keep this phone's</button><button class="btn sm" data-act="restoreok">Use the backup</button></div></div>` : ""}
     </div>
-    ${reminderCard()}
-    <div class="card stack"><span class="lab">Settings</span>
-      <label class="f">Look<select id="look" data-set="look"><option value="auto" ${S.look === "auto" ? "selected" : ""}>Calm by day, Calm night after 6 pm</option><option value="calm" ${S.look === "calm" ? "selected" : ""}>Calm always</option><option value="night" ${S.look === "night" ? "selected" : ""}>Calm night always</option></select></label>
-      <div class="grid2b"><label class="f">Your name<input id="set-name" data-set="name" value="${esc(S.name)}" maxlength="30" placeholder="Optional"></label>
-      <label class="f">Exam<input id="set-exam" data-set="examName" value="${esc(S.examName)}" maxlength="30"></label></div>
-      <div class="grid2b"><label class="f">Exam date<input type="date" id="examDate" data-set="examDate" value="${esc(S.examDate)}"></label>
-      <label class="f">Goal (out of 200)<input type="number" inputmode="numeric" id="target" data-set="target" min="1" max="200" value="${S.target}"></label></div>
-      <div class="grid2b"><label class="f">Questions a day<input type="number" inputmode="numeric" id="set-daily" data-set="dailyGoal" min="0" max="1000" value="${S.dailyGoal || ""}" placeholder="Auto (${phaseGoalAuto()})"></label>
-      <label class="f">Practice paper time<input type="time" id="set-ptime" data-set="paperTime" value="${esc(S.paperTime)}"></label></div>
-      <label class="f">Negative marking<select id="neg" data-set="neg">${[0.25, 0].map(v => `<option value="${v}" ${S.neg == v ? "selected" : ""}>${v ? "−" + v + " per wrong answer" : "None"}</option>`).join("")}</select></label>
-      <button class="btn sec" data-act="tab" data-tab="sources">Exam facts, sources and adding questions</button>
+    <div class="card" style="padding-block:6px">${tapRow("tab", 'data-tab="sources"', "book", "acc", "Exam facts and sources", "Where the questions come from, and adding your own")}</div>
+    <div class="card stack"><span class="lab">Start over</span>
       ${confirmReset ? `<div class="stack"><span class="small">Erase every answer, XP, exam and added question?</span><div class="grid2b"><button class="btn sec sm" data-act="reset0">Keep</button><button class="btn bad sm" data-act="reset2">Erase</button></div></div>` : `<button class="btn sec sm" data-act="reset1" style="justify-self:start">Reset progress</button>`}
     </div>`;
 }
@@ -1439,7 +1544,7 @@ function groupCard() {
 function vSources() {
   const R = RAW.meta;
   const topOpts = SUBJ.map(s => `<optgroup label="${s.k}">${(TOPS_BY[s.k] || []).map(t => `<option value="${t.id}">${esc(t.name)}</option>`).join("")}</optgroup>`).join("");
-  return `<div class="qtop"><button class="close" data-act="tab" data-tab="progress" aria-label="Back">${svg("x", 18)}</button><h2>Sources</h2></div>
+  return `<div class="qtop"><button class="close" data-act="tab" data-tab="settings" data-dir="-1" aria-label="Back to Settings">${svg("back", 18)}</button><h2>Sources</h2></div>
     <div class="card stack"><span class="lab">The exam</span><div class="small">${(R.facts || []).map(f => `<div class="src"><b>${esc(f.k)}</b><span>${esc(f.v)}</span>${f.url ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">Source</a>` : ""}</div>`).join("")}</div></div>
     <div class="card stack"><span class="lab">Past and model questions</span><div class="small">${(R.sources || []).map(s => `<div class="src"><div class="row between"><b>${esc(s.name)}</b><span class="muted">${esc(s.cost)}</span></div><span class="muted">${esc(s.what)}</span>${s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.url.replace(/^https?:\/\/(www\.)?/, "").slice(0, 48))}</a>` : ""}</div>`).join("")}</div>
       <p class="small muted">MEC does not publish past papers; the ones online are recalled by students. Pages like Vibrant and Ambition Guru post them free to read, but the wording and solutions belong to them, so this app tests the same repeated concepts in its own words. To practise theirs here, paste them below.</p></div>
@@ -1480,7 +1585,7 @@ function renderOverlay() {
   if (tab === "practice" && pr && pr.done && !pr.end) h = fbSheet();
   else if (unitSheet) {
     const t = TOP[unitSheet], o = S.th[t.id] || {}, nq = QS.filter(q => q.topic === t.id).length, nrep = QS.filter(q => q.topic === t.id && q.rep).length;
-    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" role="dialog" aria-label="${esc(t.name)}"><span class="grab"></span>
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" data-close="1" role="dialog" aria-label="${esc(t.name)}"><span class="grab"></span>
       <div class="row between"><span class="lab">${esc(t.subject)} · ${t.weight} Q in paper</span>${starRow(stars(t.id), 18)}</div>
       <h2>${esc(t.name)}</h2>
       <p class="small muted">${o.n ? `${o.c || 0} of ${o.n} right so far · ${level(t.id)[1]}` : "Not tried yet"} · ${nq} questions here${nrep ? `, ${nrep} on repeated topics` : ""}</p>
@@ -1488,12 +1593,51 @@ function renderOverlay() {
       <div class="grid2b"><button class="btn sec" data-act="start" data-kind="warmup" data-topic="${t.id}" data-n="5">Warm-up 5</button><button class="btn sec" data-act="unitnotes" data-topic="${t.id}">Read notes</button></div>
       ${nrep ? `<button class="btn sec" data-act="start" data-kind="repeat" data-topic="${t.id}">Repeated questions only</button>` : ""}
     </div>`;
+  } else if (noteSheet) {
+    const t = TOP[noteSheet], cs = t.concepts || [], kn = S.nr[t.id] || [];
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" data-close="1" role="dialog" aria-label="${esc(t.name)} notes"><span class="grab"></span>
+      <div class="row between"><span class="lab">${esc(t.subject)} · ${t.weight} Q in paper</span>${starRow(stars(t.id), 16)}</div>
+      <h2>${esc(t.name)}</h2>
+      <div><div class="row between small"><span id="nkc">${kn.length} of ${cs.length} known</span><span class="muted tn" id="npos">1 / ${cs.length}</span></div><div class="mini"><i id="nkb" style="width:${cs.length ? kn.length / cs.length * 100 : 0}%;background:var(--acc)"></i></div></div>
+      <div class="facts" id="facts" tabindex="0" aria-label="Facts, swipe for the next one">${cs.map((c, i) => `<div class="fact"><p>${noteHtml(c)}</p><button class="btn sec sm" data-act="nknow" data-i="${i}" aria-pressed="${kn.includes(i)}" style="justify-self:start">${kn.includes(i) ? "Known" : "I know this"}</button></div>`).join("")}</div>
+      <p class="small muted">Swipe for the next fact. Mark the ones you know; the rest deserve a second read.</p>
+      <div class="grid2b"><button class="btn sec" data-act="mode" data-k="recall" data-topic="${t.id}">Flashcards</button><button class="btn" data-act="start" data-kind="warmup" data-topic="${t.id}" data-n="5">Test me</button></div>
+    </div>`;
+  } else if (infoSheet === "streak") {
+    const st = S.streak, td = dayKey(), base = new Date(td + "T12:00:00"), end = base.getTime() + (6 - base.getDay()) * DAY, fz = st.fz || [];
+    const cells = [...Array(28)].map((_, i) => { const dt = new Date(end - (27 - i) * DAY), k = dt.toLocaleDateString("en-CA");
+      return `<i class="${k > td ? "fut" : S.days[k] ? "on" : fz.includes(k) ? "fz" : ""}${k === td ? " now" : ""}">${dt.getDate()}</i>`; }).join("");
+    const dot = c => `<i style="display:inline-block;width:12px;height:12px;border-radius:4px;background:var(--${c})"></i>`;
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" data-close="1" role="dialog" aria-label="Streak"><span class="grab"></span>
+      <span class="lab">Streak</span>
+      <div class="row" style="align-items:baseline;gap:8px"><span class="score tn">${st.n || 0}</span><span class="muted">${st.n === 1 ? "day" : "days"} in a row · best ${st.best || 0}</span></div>
+      <p class="small">${S.days[td] ? "Today counts. Come back tomorrow to keep it going." : "Answer one question today to keep your streak."}</p>
+      <div class="cal">${["S", "M", "T", "W", "T", "F", "S"].map(x => `<span>${x}</span>`).join("")}${cells}</div>
+      <div class="row small" style="gap:16px"><span class="row" style="gap:6px">${dot("flame")}Studied</span><span class="row" style="gap:6px">${dot("acc-2")}Freeze used</span></div>
+      <p class="small muted">You have ${st.freeze} streak ${st.freeze === 1 ? "freeze" : "freezes"}. A freeze covers one missed day. You earn one for every 7 days in a row, up to 2.</p>
+      ${S.days[td] ? "" : `<button class="btn" data-act="start" data-kind="smart">Answer now</button>`}</div>`;
+  } else if (infoSheet === "xp") {
+    const L1 = lvl(), wx = S.wk.w === weekKey() ? S.wk.xp : 0;
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" data-close="1" role="dialog" aria-label="Level and XP"><span class="grab"></span>
+      <span class="lab">Level ${L1.n} · ${L1.name}</span>
+      <div class="row" style="align-items:baseline;gap:8px"><span class="score tn">${S.xp.toLocaleString()}</span><span class="muted">XP</span></div>
+      ${L1.to ? `<div class="mini" style="height:8px"><i style="width:${(S.xp - L1.from) / (L1.to - L1.from) * 100}%;background:var(--gold)"></i></div><p class="small muted">${(L1.to - S.xp).toLocaleString()} XP to ${LEVELS[L1.n][1]}</p>` : `<p class="small muted">Top level reached.</p>`}
+      <div class="card" style="background:var(--soft);box-shadow:none"><span class="lab">This week</span><p><b class="tn">${wx.toLocaleString()} XP</b> <span class="small muted">· starts again on Sunday</span></p></div>
+      <div class="stack small" style="gap:4px"><span class="lab">How you earn XP</span><span>Right answer: 10 when sure, 5 when guessing, 4 in an exam</span><span>A unit gains a star: 25</span><span>A daily quest done: 40 to 60</span><span class="muted">Only learning earns XP, never time spent.</span></div>
+      <button class="btn sec" data-act="tab" data-tab="progress">See badges and progress</button></div>`;
+  } else if (tmr && tmrOpen) {
+    const TT = {Focus: "Phone in another room until it ends. Then take 5 minutes off.", Walk: "Walk briskly or take the stairs. Study straight after.", Nap: "Lie down. It ends before deep sleep, so you wake up clear.", Daylight: "Get outside in daylight, then start your first session."};
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" data-close="1" role="dialog" aria-label="${esc(tmr.l)} timer" style="text-align:center"><span class="grab"></span>
+      <span class="lab">${esc(tmr.l)} timer</span>
+      <div class="score tn" id="tmrT" style="font-size:60px">${fmtMS(Math.max(0, Math.round((tmr.end - Date.now()) / 1000)))}</div>
+      <p class="small muted">${esc(TT[tmr.l] || "")}</p>
+      <div class="grid2b"><button class="btn sec" data-act="tstop">Stop timer</button><button class="btn" data-act="closesheet">Keep it running</button></div></div>`;
   } else if (mk && mk.sheet && !mk.result) {
-    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" role="dialog" aria-label="Answer sheet"><span class="grab"></span><div class="row between"><b>Answer sheet</b><span class="small muted">filled = answered · dot = flagged</span></div>${omrGrid(k => `${mk.ans[k] != null ? "a" : ""} ${k === mk.i ? "cur" : ""} ${mk.flag[k] ? "fl" : ""}`, "mkjump")}</div>`;
+    h = `<div class="scrim" data-act="closesheet"></div><div class="sheet anim" data-close="1" role="dialog" aria-label="Answer sheet"><span class="grab"></span><div class="row between"><b>Answer sheet</b><span class="small muted">filled = answered · dot = flagged</span></div>${omrGrid(k => `${mk.ans[k] != null ? "a" : ""} ${k === mk.i ? "cur" : ""} ${mk.flag[k] ? "fl" : ""}`, "mkjump")}</div>`;
   } else if (!S.setup && (tab === "home" || tab === "progress")) {
     const e = setupErr || {};
     h = `<div class="scrim"></div><div class="sheet anim" role="dialog" aria-label="Set up your plan"><span class="grab"></span>
-      <h2>Make it yours</h2><p class="small muted">Your own exam date, goal and pace. Change any of these later in Progress → Settings.</p>
+      <h2>Make it yours</h2><p class="small muted">Your own exam date, goal and pace. Change any of these later in Settings.</p>
       <label class="f">Your name <span class="muted">(optional)</span><input id="su-name" value="${esc(S.name)}" maxlength="30" autocomplete="given-name"></label>
       <label class="f">Exam<input id="su-exam" value="${esc(S.examName)}" maxlength="30"></label>
       <label class="f">Exam date${e.date ? ` <span style="color:var(--bad-ink)">· ${e.date}</span>` : ""}<input id="su-date" type="date" value="${esc(S.examDate)}"></label>
@@ -1509,6 +1653,12 @@ function renderOverlay() {
       <div class="score tn" id="eyeT">${eyeSheet.left}</div>
       <button class="btn" data-act="eyedone">${eyeSheet.left > 0 ? "Skip" : "Back to studying"}</button></div>`;
   }
+  // re-rendering the same sheet must not replay its slide-up
+  const key = h ? (h.match(/role="dialog" aria-label="([^"]*)"/) || [])[1] || "" : "";
+  if (key && key === lastSheet) h = h.replace("sheet anim", "sheet");
+  lastSheet = key;
+  if (tmr && !tmrOpen) h += `<button class="tchip" data-act="topen" aria-label="${esc(tmr.l)} timer">${svg("clock", 18)}<span id="tmrC">${fmtMS(Math.max(0, Math.round((tmr.end - Date.now()) / 1000)))}</span></button>`;
+  document.body.classList.toggle("has-tmr", !!tmr);
   $("#overlay").innerHTML = h;
 }
 function bottomBar() {
@@ -1519,16 +1669,16 @@ function bottomBar() {
   if (tab === "exams" && mk && !mk.result && !mk.pre && !mk.pausedAt) return `<button class="btn sec" data-act="mkgo" data-i="${mk.i - 1}" ${mk.i ? "" : "disabled"}>Back</button><button class="btn sec" data-act="mksheet">Sheet</button><button class="btn" data-act="mkgo" data-i="${mk.i + 1}" ${mk.i + 1 < mk.qs.length ? "" : "disabled"}>Next</button>`;
   return "";
 }
-const TABS = ["home", "path", "exams", "notes", "progress"];
+const TABS = ["home", "learn", "exams", "notes", "progress"];
 function render(enter) {
   const view = $("#view");
-  const V = {home: vHome, path: vPath, exams: vExams, notes: vNotes, progress: vProgress, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome(), game: () => gm ? vGame() : vHome(), history: vHistory};
+  const V = {home: vHome, learn: vLearn, exams: vExams, notes: vNotes, progress: vProgress, settings: vSettings, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome(), game: () => gm ? vGame() : vHome(), history: vHistory};
   view.innerHTML = (V[tab] || vHome)();
   saveRun();
-  if (enter) { view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter"); }
+  if (enter) { view.classList.remove("enter", "sr", "sl"); void view.offsetWidth; view.classList.add(enter === 1 ? "sr" : enter === -1 ? "sl" : "enter"); }
   const bar = bottomBar();
   $("#abar").innerHTML = bar ? `<div class="abar"><div class="in">${bar}</div></div>` : "";
-  const navTab = ["sources", "history"].includes(tab) ? "progress" : tab;
+  const navTab = TABS.includes(tab) ? tab : ["settings", "sources"].includes(tab) ? "progress" : TABS.includes(prevTab) ? prevTab : "home";
   const k = TABS.indexOf(navTab);
   $("#tabs").classList.toggle("hide", !!bar || (tab === "exams" && mk && !mk.result && !mk.pausedAt) || tab === "practice" || tab === "game");
   if (k > -1) $("#ind").style.transform = `translateX(${k * 100}%)`;
@@ -1537,7 +1687,13 @@ function render(enter) {
   if (tab === "sources" && aiState.genTopic) { const s = $("#genTopic"); if (s) s.value = aiState.genTopic; }
   if (tab === "sources" && importDraft?.topic) { const s = $("#impTopic"); if (s) s.value = importDraft.topic; }
 }
-function go(t) { tab = t; unitSheet = null; if (t !== "history") histOpen = null; discardAsk = false; render(true); scrollTo(0, 0); haptic(6); }
+// tabs slide in from the side they sit on; History, Settings and Sources push in from the right and slide back out
+function go(t, dir) {
+  if (TABS.includes(tab)) prevTab = tab;
+  if (dir == null) { const a = TABS.indexOf(tab), b = TABS.indexOf(t); dir = a > -1 && b > -1 ? Math.sign(b - a) : 1; }
+  tab = t; unitSheet = null; noteSheet = null; infoSheet = null; tmrOpen = false; if (t !== "history") histOpen = null; discardAsk = false;
+  render(dir || true); scrollTo(0, 0); haptic(6);
+}
 let toastT;
 function toast(msg) {
   let t = $("#toast");
@@ -1673,6 +1829,20 @@ function parseImport(txt) {
   return {out, bad};
 }
 
+/* ── booster timers: focus, walk, nap, daylight; kept across reloads ── */
+const TKEY = "cee150.tm", fmtMS = s => `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+let tmr = null, tmrOpen = false;
+try { tmr = JSON.parse(localStorage.getItem(TKEY)); } catch (e) {}
+setInterval(() => {
+  if (!tmr) return;
+  const s = Math.max(0, Math.round((tmr.end - Date.now()) / 1000));
+  for (const id of ["tmrC", "tmrT"]) { const el = document.getElementById(id); if (el) el.textContent = fmtMS(s); }
+  if (s) return;
+  const l = tmr.l; tmr = null; tmrOpen = false; try { localStorage.removeItem(TKEY); } catch (e) {}
+  haptic([80, 60, 80]); toast(l === "Focus" ? "Focus block done. Take 5 minutes off." : `${l} timer done. Time to study.`);
+  if ("Notification" in window && Notification.permission === "granted") notify(`${l} timer done`, l === "Focus" ? "Take 5 minutes off, then start another block." : "Time to study.", "timer");
+  if (tab === "home") render(); else renderOverlay();
+}, 1000);
 let eyeTimer = null;
 function startEye() {
   eyeSheet = {left: 20}; activeSec = 0; renderOverlay(); clearInterval(eyeTimer);
@@ -1682,7 +1852,25 @@ const ACT = {
   ...GM_ACT,
   tipstab: d => { tipsTab = d.k; render(); },
   notesview: d => { notesView = d.k; render(); scrollTo(0, 0); },
-  tab: d => go(d.tab),
+  tab: d => go(d.tab, d.dir ? +d.dir : undefined),
+  back: () => go(TABS.includes(prevTab) ? prevTab : "home", -1),
+  info: d => { infoSheet = d.k; haptic(6); renderOverlay(); },
+  quest: d => ({right: () => ACT.start({kind: "smart"}), fix: () => ACT.start({kind: "mis"}), rep: () => ACT.start({kind: "repeat"}), exam: () => ACT.quick({scale: "0.1", label: "Sprint"})})[d.k]?.(),
+  boost: () => { const a = boostAct(booster()[0]); S.bst = dayKey(); save(); ACT[a.act](a.d); if (tab === "home" && a.act !== "start" && a.act !== "tab") render(); },
+  bstdone: () => toast("Noted for today."),
+  water: () => { const d = dayKey(); if (S.water.d !== d) S.water = {d, n: 0}; S.water.n++; save(); haptic(8); toast(S.water.n === 8 ? "8 glasses today. Well done." : `Glass ${S.water.n} of 8 logged.`); if (tab === "home") render(); },
+  timer: d => { tmr = {l: d.l, end: Date.now() + (+d.m) * 60e3}; try { localStorage.setItem(TKEY, JSON.stringify(tmr)); } catch (e) {} tmrOpen = true; haptic(10); if (tab === "home") render(); else renderOverlay(); },
+  topen: () => { tmrOpen = true; renderOverlay(); },
+  tstop: () => { tmr = null; tmrOpen = false; try { localStorage.removeItem(TKEY); } catch (e) {} toast("Timer stopped."); if (tab === "home") render(); else renderOverlay(); },
+  notes1: d => { noteSheet = d.topic; haptic(6); renderOverlay(); },
+  nknow: (d, el) => {
+    const t = noteSheet, i = +d.i, a = S.nr[t] || (S.nr[t] = []), k = a.indexOf(i), on = k < 0, N = (TOP[t].concepts || []).length;
+    if (on) a.push(i); else a.splice(k, 1);
+    save(); haptic(6);
+    el.setAttribute("aria-pressed", on); el.textContent = on ? "Known" : "I know this";
+    $("#nkc").textContent = `${a.length} of ${N} known`; $("#nkb").style.width = `${a.length / N * 100}%`;
+    const f = $("#facts"); if (on && f && i + 1 < N) f.scrollBy({left: f.clientWidth, behavior: "smooth"});
+  },
   home: () => { pr = null; go("home"); },
   start: d => startPractice(d.kind, {topic: d.topic || undefined, subject: d.subject, n: +d.n || 20}),
   leave: () => { saveRun(); go("home"); toast("Saved. Continue any time from Home."); },
@@ -1694,8 +1882,8 @@ const ACT = {
   explain: () => explain(),
   psub: d => { pathSubj = d.k; render(); },
   unit: d => { unitSheet = d.topic; haptic(6); renderOverlay(); },
-  unitnotes: d => { const t = TOP[d.topic]; pr = null; unitSheet = null; flt = {subj: t ? t.subject : "", q: t ? t.name : ""}; go("notes"); },
-  closesheet: () => { unitSheet = null; if (mk) mk.sheet = false; renderOverlay(); },
+  unitnotes: d => { const t = TOP[d.topic]; if (pr && pr.end) pr = null; notesView = "units"; flt = {subj: t ? t.subject : "", q: ""}; go("notes"); if (t) { noteSheet = t.id; renderOverlay(); } },
+  closesheet: () => { const wasNote = noteSheet; unitSheet = null; noteSheet = null; infoSheet = null; tmrOpen = false; if (mk) mk.sheet = false; if (wasNote) render(); else renderOverlay(); },
   boss: d => startExam(buildPaper(1, d.k), `${d.k} boss round`, null),
   series: d => { const s = SERIES[+d.k]; startExam(s.ids.filter(id => QI[id]), s.name, +d.k); },
   xseries: d => { const x = S.xs[+d.k]; startExam(x.ids.filter(id => QI[id]), x.name, "x" + d.k); },
@@ -1824,6 +2012,25 @@ document.addEventListener("click", e => {
   ACT[a.dataset.act]?.(a.dataset, a);
   if (xpQueue) showXP();
 });
+// drag a sheet down to close it (only from its top, and not while swiping facts sideways)
+let sw = null;
+document.addEventListener("touchstart", e => {
+  const sh = e.target.closest(".sheet[data-close]");
+  sw = sh && sh.scrollTop <= 0 ? {sh, x: e.touches[0].clientX, y: e.touches[0].clientY, dy: 0, on: false} : null;
+}, {passive: true});
+document.addEventListener("touchmove", e => {
+  if (!sw) return;
+  const dx = e.touches[0].clientX - sw.x, dy = e.touches[0].clientY - sw.y;
+  if (!sw.on) { if (Math.abs(dx) > 10 || dy < -10) { sw = null; return; } if (dy < 10) return; sw.on = true; sw.sh.style.transition = "none"; }
+  sw.dy = Math.max(0, dy); sw.sh.style.transform = `translate(-50%, ${sw.dy}px)`;
+}, {passive: true});
+document.addEventListener("touchend", () => {
+  if (!sw) return;
+  const {sh, dy, on} = sw; sw = null; if (!on) return;
+  sh.style.transition = "transform .22s var(--ease)";
+  if (dy > 90) { sh.style.transform = "translate(-50%, 100%)"; setTimeout(() => ACT.closesheet(), 200); } else sh.style.transform = "";
+});
+document.addEventListener("scroll", e => { if (e.target.id === "facts") { const f = e.target, el = $("#npos"); if (el) el.textContent = `${Math.round(f.scrollLeft / f.clientWidth) + 1} / ${f.children.length}`; } }, true);
 document.addEventListener("submit", e => { if (e.target.id === "gapform") { e.preventDefault(); ACT.gmcheck(); } });
 document.addEventListener("change", e => {
   if (e.target.dataset?.rem) { S.rem[e.target.dataset.rem] = e.target.checked; save(); pushSync(); render(); return; }
@@ -1853,7 +2060,7 @@ document.addEventListener("input", e => { if (e.target.id === "cq") { flt.q = e.
 document.addEventListener("keydown", e => {
   if (e.target.closest("input,textarea,select") || e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key.toLowerCase(), n = "1234".indexOf(k) >= 0 ? "1234".indexOf(k) : "abcd".indexOf(k);
-  if (e.key === "Escape" && (unitSheet || (mk && mk.sheet))) { ACT.closesheet(); return; }
+  if (e.key === "Escape" && (unitSheet || noteSheet || infoSheet || tmrOpen || (mk && mk.sheet))) { ACT.closesheet(); return; }
   if (tab === "practice" && pr && !pr.end) {
     if (!pr.done && n >= 0) { pr.sel = n; render(); e.preventDefault(); }
     else if (!pr.done && k === "enter" && pr.sel != null) { answer(true); e.preventDefault(); }
