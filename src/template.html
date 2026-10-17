@@ -1302,9 +1302,16 @@ const ACT = {
   leavegroup: async () => { S.group = false; save(); groupState = null; try { await db.doc(`league/${uid}`).delete(); } catch (e) {} render(); toast("You left the board. Your entry is removed."); },
   install: async () => { if (!installEvt) return; installEvt.prompt(); try { await installEvt.userChoice; } catch (e) {} installEvt = null; render(); },
   hideinstall: () => { S.hideInstall = true; save(); render(); },
-  ics: () => {
-    if (!window.__PWA__) { toast("Use the website version to save the calendar file."); return; }
+  ics: async () => {
     const {text, n} = icsFile();
+    if (!window.__PWA__) {
+      // inside Claude, files are handed over through the downloads capability
+      const dl = window.claude ? await claude.use("downloads").catch(() => null) : null;
+      if (!dl) { toast("Saving files isn't available here. Use the website version."); return; }
+      try { await dl.save({filename: "mecee-study-plan.ics", data: new Blob([text], {type: "text/calendar"})}); toast(`Saved ${n} reminders. Open the file to add them to your calendar.`); }
+      catch (e) { toast("The calendar file was not saved."); }
+      return;
+    }
     const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], {type: "text/calendar"})); a.download = "mecee-study-plan.ics";
     document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
     toast(`Calendar file with ${n} reminders saved. Open it to add them.`);
