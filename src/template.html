@@ -276,7 +276,7 @@ const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="
 /* ── state: localStorage first, mirrored to the viewer's private db doc when available ── */
 const KEY = "cee150.v1", MKEY = "cee150.mock";
 const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:150, name:"", examName:"MECEE-BL", dailyGoal:0, paperTime:"11:00", setup:false, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
-  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
+  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rc:{}, rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
 function loadLocal() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {} return blank(); }
 let S = loadLocal();
 S.rem = Object.assign(blank().rem, S.rem || {}); S.remFired = S.remFired || {d: "", ids: []};
@@ -822,6 +822,223 @@ function reminderCard() {
   </div>`;
 }
 
+/* ── study modes: Recall Deck, Which Formula?, Fill the Gap, True/False + Fix ── */
+// Recall Deck: free recall beats recognition; a card is learned after correct recall on 3 separate days (successive relearning, Rawson & Dunlosky 2022)
+// Which Formula?: name the principle before solving; interleaving helps most when topics look alike (Brunmair & Richter 2019)
+// Fill the Gap: generating the term beats reading it (Bertsch et al. 2007)
+// True/False + Fix: correcting false statements adds to the testing effect (Uner, Tekin & Roediger 2022)
+const NEGSTEM = /\b(not|except|incorrect|false|wrong|least|untrue)\b/i, LISTSTEM = /\bfollowing\b|\bstatements?\b|\bwhich one of these\b/i;
+const freeRecallable = q => q.src === "bank" && !NEGSTEM.test(q.q) && !LISTSTEM.test(q.q) && q.q.length <= 170 && q.o[q.a].length <= 48 && !/^(both|all|none)\b/i.test(q.o[q.a]);
+const numerical = q => (q.subject === "Physics" || q.subject === "Chemistry") && q.s && /\d/.test(q.q) && /\d/.test(q.o[q.a]);
+let gm = null;
+const MODES = {
+  recall: {name: "Recall Deck", sub: "Answer from memory, then grade yourself"},
+  formula: {name: "Which Formula?", sub: "Name the idea, then solve"},
+  gap: {name: "Fill the Gap", sub: "Type the missing key term"},
+  tf: {name: "True / False + Fix", sub: "Judge it, then correct it"}
+};
+// questions from the units with the most marks to gain, so every mode works on the weakest areas first
+function weightedPick(pool, n, key = q => q.topic) {
+  const rank = Object.fromEntries(ranked().map((r, i) => [r.t.id, i]));
+  return shuffle(pool.slice()).sort((a, b) => (rank[key(a)] ?? 99) - (rank[key(b)] ?? 99) + (Math.random() - 0.5) * 12).slice(0, n);
+}
+const STOP = new Set("about above after again against because before being below between could doesn during every first other their there these those through under until where which while would should".split(" "));
+function makeGap(text, topic) {
+  const clean = text.replace(/ \[repeat\]$/, "");
+  const toks = clean.split(/(\s+)/);
+  let at = toks.findIndex((t, i) => i > 0 && /\d/.test(t) && /^[\d.,:/%×^⁰¹²³⁴⁵⁶⁷⁸⁹⁻+-]+[a-zA-Zµ°%]*[.,;:)]?$/.test(t));
+  if (at < 0) {
+    let best = -1, len = 0;
+    toks.forEach((t, i) => { const w = t.replace(/[^A-Za-zα-ωΑ-Ω-]/g, ""); if (i > 1 && w.length >= 5 && w.length > len && !STOP.has(w.toLowerCase())) { best = i; len = w.length; } });
+    at = best;
+  }
+  if (at < 0) return null;
+  const tok = toks[at], ans = tok.replace(/^[("'\[]+/, "").replace(/[.,;:)\]'"]+$/, "");
+  if (!ans || ans.length < 2) return null;
+  const k = tok.indexOf(ans);
+  return {text: clean, before: toks.slice(0, at).join("") + tok.slice(0, k), ans, after: tok.slice(k + ans.length) + toks.slice(at + 1).join(""), topic};
+}
+const normAns = s => String(s).toLowerCase().normalize("NFKD").replace(/[^a-z0-9α-ω]/g, "");
+function closeEnough(a, b) {
+  a = normAns(a); b = normAns(b);
+  if (a === b) return true;
+  if (b.length < 6 || Math.abs(a.length - b.length) > 1) return false;
+  let i = 0, j = 0, edits = 0; // one typo allowed on longer words
+  while (i < a.length && j < b.length) { if (a[i] === b[j]) { i++; j++; continue; } if (++edits > 1) return false; if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; } }
+  return edits + (a.length - i) + (b.length - j) <= 1;
+}
+function startMode(kind) {
+  if (mk && !mk.result) { go("exams"); toast("Finish or submit the running exam first."); return; }
+  const N = 20, now = Date.now();
+  let items = [];
+  if (kind === "recall") {
+    const due = QS.filter(q => { const c = S.rc[q.id]; return c && c.d.length < 3 && c.due <= now; });
+    const fresh = weightedPick(QS.filter(q => freeRecallable(q) && !S.rc[q.id]), N);
+    items = [...due.slice(0, 8), ...fresh].slice(0, N).map(q => ({q: q.id}));
+  } else if (kind === "formula") {
+    items = weightedPick(QS.filter(numerical), 15).map(q => {
+      const same = [...new Set(QS.filter(x => x.subject === q.subject && x.s && x.s !== q.s).map(x => x.s))];
+      const near = shuffle(same.filter(s => QS.some(x => x.s === s && x.topic === q.topic))), far = shuffle(same.filter(s => !near.includes(s)));
+      return {q: q.id, ideas: shuffle([q.s, ...[...near, ...far].slice(0, 3)]), ord: shuffle([0, 1, 2, 3])};
+    }).filter(it => it.ideas.length === 4);
+  } else if (kind === "gap") {
+    const pool = Object.values(TOP).flatMap(t => (t.concepts || []).map(c => makeGap(c, t.id)).filter(Boolean));
+    items = weightedPick(pool, N, g => g.topic);
+  } else if (kind === "tf") {
+    items = weightedPick(QS.filter(freeRecallable), N).map(q => {
+      const truth = Math.random() < 0.5, shown = truth ? q.a : shuffle([0, 1, 2, 3].filter(i => i !== q.a))[0];
+      return {q: q.id, shown, truth};
+    });
+  }
+  if (!items.length) { toast("Nothing to practise here yet."); return; }
+  pr = null; unitSheet = null;
+  gm = {kind, items, i: 0, step: "ask", res: [], xp0: S.xp, t0: now, hint: false};
+  tab = "game"; render(true); scrollTo(0, 0);
+}
+function gmRecord(q, ok, sure) {
+  record(q, ok, sure, Math.min(300, (Date.now() - gm.t0) / 1000));
+  gm.res.push(ok); save(); showXP();
+}
+function gmNext() {
+  gm.i++; gm.step = "ask"; gm.hint = false; gm.pick = null; gm.t0 = Date.now();
+  if (gm.i >= gm.items.length) gm.step = "end";
+  render(); scrollTo(0, 0);
+}
+function vGame() {
+  const it = gm.items[gm.i], M = MODES[gm.kind];
+  if (gm.step === "end") {
+    const ok = gm.res.filter(Boolean).length, learned = Object.values(S.rc).filter(c => c.d.length >= 3).length;
+    return `<div style="display:grid;gap:8px;text-align:center;padding-top:20px">
+      <div style="width:84px;height:84px;border-radius:28px;background:var(--gold-2);color:var(--gold);display:grid;place-items:center;justify-self:center">${svg("cup", 44)}</div>
+      <h1>${M.name} done</h1><p class="muted">${ok} of ${gm.res.length} right · +${S.xp - gm.xp0} XP</p></div>
+      ${gm.kind === "recall" ? `<div class="card"><b>${learned} ${learned === 1 ? "card" : "cards"} learned for good</b><p class="small muted" style="margin-top:4px">A card counts as learned after you recall it on 3 different days. Missed cards come back tomorrow.</p></div>` : ""}`;
+  }
+  const q = it.q ? QI[it.q] : null;
+  const head = `<div class="qtop"><button class="close" data-act="gmend" aria-label="End">${svg("x", 18)}</button><div class="qprog"><i style="width:${gm.i / gm.items.length * 100}%"></i></div><span class="small muted tn">${gm.i + 1}/${gm.items.length}</span></div>
+    <div class="tags"><span class="tag">${esc(M.name)}</span><span class="tag">${esc(q ? q.subject + " · " + TOP[q.topic].name : TOP[it.topic].subject + " · " + TOP[it.topic].name)}</span></div>`;
+  if (gm.kind === "recall") {
+    const c = S.rc[q.id];
+    return head + `<div class="card" style="min-height:150px;display:grid;align-content:center;gap:8px;text-align:center"><p class="stem">${esc(q.q)}</p>${gm.step === "ask" ? `<p class="small muted">Answer in your head or out loud, then show the answer.</p>` : ""}</div>
+      ${gm.step !== "ask" ? `<div class="card stack"><p><b>${esc(q.o[q.a])}</b></p>${q.x ? `<p class="small muted">${esc(q.x)}</p>` : ""}</div>` : ""}
+      ${c ? `<p class="small muted" style="text-align:center">Recalled on ${c.d.length} of 3 days so far</p>` : ""}`;
+  }
+  if (gm.kind === "formula") {
+    const ideaDone = gm.step !== "ask";
+    return head + `<div class="card"><p class="stem">${esc(q.q)}</p></div>
+      <p><b>${ideaDone ? "The idea it needs" : "Before solving: which idea does this need?"}</b></p>
+      <div class="opts">${it.ideas.map((s, k) => { const cls = ideaDone ? (s === q.s ? "right" : k === gm.idea ? "wrong" : "") : ""; return `<button class="opt ${cls}" data-act="gmidea" data-k="${k}" ${ideaDone ? "disabled" : ""}><span class="k">${"ABCD"[k]}</span><span>${esc(s)}</span><span></span></button>`; }).join("")}</div>
+      ${ideaDone ? `<p><b>${gm.step === "solve" ? "Now solve it" : "Your answer"}</b></p><div class="opts">${it.ord.map((oi, k) => { const done = gm.step === "done", cls = done ? (oi === q.a ? "right" : k === gm.pick ? "wrong" : "") : ""; return `<button class="opt ${cls}" data-act="gmsolve" data-k="${k}" ${done ? "disabled" : ""}><span class="k">${"ABCD"[k]}</span><span>${esc(q.o[oi])}</span><span></span></button>`; }).join("")}</div>` : ""}
+      ${gm.step === "done" && q.x ? `<div class="card small">${esc(q.x)}</div>` : ""}`;
+  }
+  if (gm.kind === "gap") {
+    const hint = it.ans[0] + it.ans.slice(1).replace(/[^\s]/g, " _").trim();
+    return head + `<div class="card"><p class="stem" style="line-height:1.8">${esc(it.before)}<span style="display:inline-block;min-width:90px;border-bottom:2px solid var(--acc);color:var(--acc);font-weight:800;text-align:center">${gm.step === "ask" ? (gm.hint ? esc(hint) : "&nbsp;") : esc(it.ans)}</span>${esc(it.after)}</p></div>
+      ${gm.step === "ask" ? `<form id="gapform" class="stack" style="gap:8px"><label class="f">Missing term<input id="gapin" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done"></label></form>${gm.hint ? `<p class="small muted">Hint shown: first letter and length.</p>` : ""}`
+        : `<div class="card small ${gm.res[gm.res.length - 1] ? "" : ""}" style="background:var(--${gm.res[gm.res.length - 1] ? "ok" : "bad"}-2);box-shadow:none"><b>${gm.res[gm.res.length - 1] ? "Correct" : "The answer is " + esc(it.ans)}</b>${gm.typed && !gm.res[gm.res.length - 1] ? `<br><span class="muted">You wrote: ${esc(gm.typed)}</span>` : ""}</div>`}`;
+  }
+  if (gm.kind === "tf") {
+    const judged = gm.step !== "ask";
+    return head + `<div class="card stack"><p class="stem">${esc(q.q)}</p><div class="card" style="background:var(--acc-2);box-shadow:none"><span class="lab">Claimed answer</span><p style="font-weight:800;font-size:18px">${esc(q.o[it.shown])}</p></div></div>
+      ${gm.step === "fix" ? `<p><b>It's false. Which is correct?</b></p><div class="opts">${[0, 1, 2, 3].filter(i => i !== it.shown).map(oi => `<button class="opt" data-act="gmfix" data-k="${oi}"><span class="k">${"ABCD"[[0, 1, 2, 3].filter(i => i !== it.shown).indexOf(oi)]}</span><span>${esc(q.o[oi])}</span><span></span></button>`).join("")}</div>` : ""}
+      ${gm.step === "done" ? `<div class="card small" style="background:var(--${gm.res[gm.res.length - 1] ? "ok" : "bad"}-2);box-shadow:none"><b>${gm.res[gm.res.length - 1] ? "Correct" : "Not quite"}</b><br>${it.truth ? "The claim was true." : `The claim was false. The answer is <b>${esc(q.o[q.a])}</b>.`}${q.x ? `<br><span class="muted">${esc(q.x)}</span>` : ""}</div>` : ""}`;
+  }
+  return "";
+}
+function gmBar() {
+  if (!gm) return "";
+  if (gm.step === "end") return `<button class="btn sec" data-act="gmhome">Done</button><button class="btn" data-act="mode" data-k="${gm.kind}">Another round</button>`;
+  if (gm.kind === "recall") return gm.step === "ask" ? `<button class="btn" data-act="gmshow">Show answer</button>`
+    : `<button class="btn sec" data-act="gmgrade" data-g="0">Missed</button><button class="btn sec" data-act="gmgrade" data-g="1">Almost</button><button class="btn" data-act="gmgrade" data-g="2">Got it</button>`;
+  if (gm.kind === "formula") return gm.step === "done" ? `<button class="btn" data-act="gmnext">Next</button>` : "";
+  if (gm.kind === "gap") return gm.step === "ask" ? `<button class="btn sec" data-act="gmhint" ${gm.hint ? "disabled" : ""}>Hint</button><button class="btn" data-act="gmcheck">Check</button>` : `<button class="btn" data-act="gmnext">Next</button>`;
+  if (gm.kind === "tf") return gm.step === "ask" ? `<button class="btn ok" data-act="gmtf" data-v="1">True</button><button class="btn bad" data-act="gmtf" data-v="0">False</button>` : gm.step === "done" ? `<button class="btn" data-act="gmnext">Next</button>` : "";
+  return "";
+}
+const GM_ACT = {
+  mode: d => startMode(d.k),
+  gmend: () => { if (!gm.res.length) { gm = null; go("home"); return; } gm.step = "end"; render(); },
+  gmhome: () => { gm = null; go("home"); },
+  gmnext: () => gmNext(),
+  gmshow: () => { gm.step = "reveal"; render(); },
+  gmgrade: d => {
+    const q = QI[gm.items[gm.i].q], g = +d.g, day = dayKey(), c = S.rc[q.id] || {d: [], due: 0};
+    if (g === 2) { if (!c.d.includes(day)) c.d.push(day); c.due = Date.now() + DAY - 4 * 3600e3; }
+    else { c.due = Date.now() + 10 * 60e3; if (g === 0) gm.items.push({q: q.id}); }
+    S.rc[q.id] = c;
+    gmRecord(q, g === 2, g === 2); gmNext();
+  },
+  gmidea: d => { const it = gm.items[gm.i]; gm.idea = +d.k; gm.ideaOk = it.ideas[gm.idea] === QI[it.q].s; gm.step = "solve"; haptic(gm.ideaOk ? 10 : [20, 30, 20]); render(); },
+  gmsolve: d => { const it = gm.items[gm.i], q = QI[it.q]; gm.pick = +d.k; const ok = it.ord[gm.pick] === q.a; gm.step = "done"; gmRecord(q, ok && gm.ideaOk, gm.ideaOk); render(); },
+  gmhint: () => { gm.hint = true; render(); setTimeout(() => $("#gapin")?.focus(), 0); },
+  gmcheck: () => {
+    const it = gm.items[gm.i], typed = ($("#gapin")?.value || "").trim();
+    if (!typed) { toast("Type your answer first."); return; }
+    const parts = /^[A-Za-z-]+(\/[A-Za-z-]+)+$/.test(it.ans) ? it.ans.split("/") : []; // "A/B" word answers: either word counts; never for numbers like 1/8
+    const ok = [it.ans, ...parts].some(a => a && closeEnough(typed, a)); gm.typed = typed; gm.step = "done";
+    gm.res.push(ok); if (ok) addXP(gm.hint ? 3 : 6); const t = today(); if (ok) t.right++; checkQuests(); save(); showXP(); haptic(ok ? 10 : [20, 30, 20]); render();
+  },
+  gmtf: d => {
+    const it = gm.items[gm.i], said = d.v === "1";
+    if (said !== it.truth) { gm.step = "done"; gmRecord(QI[it.q], false, true); render(); return; }
+    if (it.truth) { gm.step = "done"; gmRecord(QI[it.q], true, true); render(); return; }
+    gm.step = "fix"; render();
+  },
+  gmfix: d => { const it = gm.items[gm.i], q = QI[it.q]; gm.step = "done"; gmRecord(q, +d.k === q.a, true); render(); }
+};
+
+/* ── quick tips (from the recalled 2081/2082 papers and test-taking research; textbook answers only) ── */
+const TIPS = {
+  patterns: {name: "How CEE asks", items: [
+    ["Short stems", "Almost every question is one line: the median 2082 question was 9 words. Read every word."],
+    ["Physics is numericals", "20–28 of the 50 physics questions were 1–2 step numericals with no diagram. Practise fast ratio methods."],
+    ["Chemistry is mostly facts", "About 6 of 50 were numericals: molarity, Graham's law, % composition, n-factor titration, limiting reagent, rate order."],
+    ["Biology", "Mostly recall, plus 6–8 short scenarios (injury → nerve, blocked artery → disease) and about 5 genetics calculations."],
+    ["NOT / EXCEPT", "About 6% of questions. Circle the word before reading the options."],
+    ["How wrong options are made", "Look-alike terms (callose / tylose, protandry / protogyny), unit slips (pF / µF), reversed relations (leads / lags, increases / decreases) and flipped ratios (27:32 / 32:27)."],
+    ["Don't trust recall answer sheets", "The 2082 recall sheet has at least six wrong answers. Revise from textbooks."]
+  ]},
+  elimination: {name: "Elimination", items: [
+    ["Units and dimensions", "Drop any option whose units can't be right."],
+    ["Extreme values", "Try θ = 0° or 90°, mass → ∞, or zero. Wrong formulas break at the limits."],
+    ["Same meaning twice", "If two options say the same thing, both are wrong."],
+    ["Opposites", "If two options are opposites, the answer is often one of them."],
+    ["Both / all options", "One false part makes the whole option false."],
+    ["Absolute words", "“Always”, “never”, “only” usually mark a wrong option (Gettig, 2006)."],
+    ["Recall first", "Think of the definition before reading the options, so look-alike terms can't trap you."],
+    ["Myths", "Picking the longest option doesn't work: in 2082 it was right only 20 times in 101. Answer positions are shuffled, so “always C” is useless. Changing an answer for a real reason helps more often than it hurts (Kruger et al., 2005)."]
+  ]},
+  guess: {name: "Guessing at −0.25", rows: [["Nothing ruled out", "+0.06"], ["One option ruled out", "+0.17"], ["Two options ruled out", "+0.38"]],
+    note: "Expected marks per guess with 4 options. If you're at least 20% sure, answer. Students who leave too many blanks under negative marking lose marks (Baldiga, 2014)."},
+  formulas: {name: "Formulas", groups: [
+    ["Physics", [["Projectile height / range", "H = u²sin²θ/2g · R = u²sin2θ/g"], ["Momentum and KE", "p = √(2mK)"], ["Vertical circle", "ΔKE = 2mgr · v_top ≥ √(gr) · v_bottom ≥ √(5gr)"], ["Gravity at depth d", "g(1 − d/R)"], ["Escape speed", "√2 × orbital speed"], ["Boyle: cut volume x%", "raise pressure 100x/(100−x)%"], ["Expansion", "β = 2α · γ = 3α"], ["Max / min intensity", "((a₁+a₂)/(a₁−a₂))²"], ["Sound speed in air", "≈ 332 + 0.6T m/s"], ["Fringe width", "β = λD/d"], ["Lens power", "P = P₁ + P₂ (f in metres)"], ["Resistance, stretched n times", "n²R"], ["Shunt", "S = I_gG/(I − I_g)"], ["AC", "V_peak = √2 V_rms"], ["Threshold wavelength", "λ₀(Å) = 12400/φ(eV)"], ["de Broglie", "λ = h/√(2mqV); KE × 16 → λ ÷ 4"], ["Nuclear radius", "R ∝ A^(1/3), so density is the same"], ["Decay", "N = N₀(½)^(t/T)"], ["SHM, A to A/2", "T/6"]]],
+    ["Chemistry", [["Molarity from % and density", "M = 10 × % × d / M_w"], ["Normality", "N = M × n-factor"], ["KMnO₄ n-factor", "5 acid · 3 neutral · 1 strongly basic"], ["Titration", "N₁V₁ = N₂V₂"], ["Vapour density", "VD = M/2"], ["pH on 10× dilution", "rises by 1 (strong acid)"], ["Weak acid pH", "½(pKa − log C)"], ["Buffer", "pH = pKa + log(salt/acid)"], ["Spontaneous", "ΔG = ΔH − TΔS < 0"], ["Isocyanide + water", "1° amine + formic acid"], ["Grignard + HCHO / RCHO / ketone", "1° / 2° / 3° alcohol"], ["Lindlar catalyst", "cis-alkene"]]],
+    ["Biology", [["Endosperm ploidy", "female parent + half the male parent's (asked 3 years)"], ["Bicollateral bundles", "cucurbits (asked 3 years)"], ["Protozoa", "grouped by locomotion (asked 3 years)"], ["Na⁺/K⁺ pump", "3 Na⁺ out, 2 K⁺ in"], ["Schwann cells", "only in the PNS"], ["Sensory cranial nerves", "I, II, VIII"], ["Universal donor", "O negative"], ["Monocots can't be grafted", "no vascular cambium"]]],
+    ["MAT", [["Series", "differences, then pairs, n² + n, or two series interleaved"], ["Letter positions", "EJOTY = 5, 10, 15, 20, 25"], ["Directions", "add x and y moves, then Pythagoras; at sunrise shadows fall west"], ["Circular seating facing centre", "left = clockwise"], ["Dice", "two faces not shared between views are opposite"], ["Mirror time", "11:60 − shown time"], ["Work", "workers × days stays constant"], ["Trains passing", "time = (L₁ + L₂) / relative speed"]]]
+  ]},
+  examday: {name: "Exam day", items: [
+    ["First pass", "Answer anything you can in under 40 seconds. Mark the rest."],
+    ["Second pass", "Do the 1–2 step numericals, using ratios."],
+    ["Third pass", "Answer wherever you ruled out at least one option."],
+    ["Change once, for a reason", "Changing for a concrete reason helps; changing twice doesn't (Fischer et al., 2005)."],
+    ["Circle the trap words", "NOT, EXCEPT, LEAST."],
+    ["Physics check", "Units and a limiting case on every answer."],
+    ["MAT on paper", "Write the working; don't solve in your head."],
+    ["Bubble as you go", "Fill each OMR bubble when you answer it."]
+  ]}
+};
+let tipsTab = "patterns", notesView = "units";
+function vTips() {
+  const T = TIPS[tipsTab];
+  const list = arr => `<div class="card stack" style="gap:0">${arr.map(([h, b], i) => `<div style="display:grid;gap:2px;padding-block:10px;${i ? "border-top:1px solid var(--line)" : "padding-top:0"}"><b>${esc(h)}</b><span class="small muted">${esc(b)}</span></div>`).join("")}</div>`;
+  const rows = arr => arr.map(([a, b], i) => `<div style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;padding-block:8px;${i ? "border-top:1px solid var(--line)" : ""}"><span class="small">${esc(a)}</span><b class="small tn" style="text-align:right;max-width:58vw">${esc(b)}</b></div>`).join("");
+  let body = "";
+  if (T.items) body = list(T.items);
+  if (T.rows) body = `<div class="card">${rows(T.rows)}</div><p class="small muted">${esc(T.note)}</p>`;
+  if (T.groups) body = T.groups.map(([g, r]) => `<details class="card" ${g === "Physics" ? "open" : ""}><summary>${esc(g)} <span class="small muted" style="font-weight:600">· ${r.length}</span></summary>${rows(r)}</details>`).join("");
+  return `<div class="seg" role="group" aria-label="Tips">${Object.entries(TIPS).map(([k, v]) => `<button data-act="tipstab" data-k="${k}" aria-pressed="${tipsTab === k}">${({patterns: "Patterns", elimination: "Eliminate", guess: "Guess", formulas: "Formulas", examday: "Exam day"})[k]}</button>`).join("")}</div>
+    <h2>${esc(T.name)}</h2>${body}`;
+}
+
 /* ── views ── */
 const chip = tid => { const [c, t] = level(tid); return `<span class="chip ${c}">${t}</span>`; };
 const starRow = (n, size = 14) => `<span class="stars" aria-label="${n} of 3 stars">${[1,2,3].map(i => `<svg viewBox="0 0 24 24" width="${size}" height="${size}"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="${i <= n ? "var(--gold)" : "var(--line)"}"/></svg>`).join("")}</span>`;
@@ -866,6 +1083,9 @@ function vHome() {
     <button class="btn sec" data-act="start" data-kind="repeat">Repeated Qs<small>from past papers</small></button>
     ${mis ? `<button class="btn sec" data-act="start" data-kind="mis">Fix mistakes<small>${mis} confident ones</small></button>` : ""}
     <button class="btn sec" data-act="${np.act}" data-k="${np.k}">${esc(np.name)}<small>200 Q · 3 h</small></button>
+  </div>
+  <div class="card stack"><span class="lab">Study modes</span>
+    <div class="quick">${Object.entries(MODES).map(([k, m]) => `<button class="btn sec" data-act="mode" data-k="${k}">${m.name}<small>${m.sub}</small></button>`).join("")}</div>
   </div>
   <div class="card">
     <div class="row between"><span class="lab">Projected score</span>${delta != null && delta !== 0 ? `<span class="xp ${delta > 0 ? "done" : ""}">${delta > 0 ? "+" : ""}${delta} ${since}</span>` : ""}</div>
@@ -1039,8 +1259,11 @@ function vNotes() {
       <div class="stack"><div class="row">${starRow(stars(t.id))}${chip(t.id)}</div><ul class="cpts">${cs.map(c => `<li>${noteHtml(c)}</li>`).join("")}</ul>
       <div class="grid2b"><button class="btn sec sm" data-act="start" data-kind="warmup" data-topic="${t.id}" data-n="5">Warm-up 5</button><button class="btn sm" data-act="start" data-kind="topic" data-topic="${t.id}">Practise 20</button></div></div></details>`;
   })).join("");
-  return `${hud()}<h1>Notes</h1>
-    <p class="small muted" style="margin-top:-6px">Key facts and formulas for every syllabus unit. Tip: do the 5-question warm-up first; trying before reading makes the reading stick.</p>
+  const top = `${hud()}<h1>Notes</h1>
+    <div class="seg" role="group" aria-label="Notes or tips"><button data-act="notesview" data-k="units" aria-pressed="${notesView === "units"}">Unit notes</button><button data-act="notesview" data-k="tips" aria-pressed="${notesView === "tips"}">Quick tips</button></div>`;
+  if (notesView === "tips") return top + vTips();
+  return `${top}
+    <p class="small muted">Key facts and formulas for every syllabus unit. Tip: do the 5-question warm-up first; trying before reading makes the reading stick.</p>
     <div class="seg" role="group" aria-label="Subject">${["", ...SUBJ.map(s => s.k)].map(k => `<button data-act="csub" data-k="${k}" aria-label="${k || "All subjects"}" aria-pressed="${flt.subj === k}">${k ? SHORT[k] : "All"}</button>`).join("")}</div>
     <label class="f">Search<input id="cq" type="search" value="${esc(flt.q)}" placeholder="e.g. Krebs, lens, pH"></label>
     ${list || `<div class="empty">Nothing matches “${esc(flt.q)}”.</div>`}`;
@@ -1182,6 +1405,7 @@ function renderOverlay() {
   $("#overlay").innerHTML = h;
 }
 function bottomBar() {
+  if (tab === "game") return gmBar();
   if (tab === "practice" && pr && !pr.end && !pr.done) { const dis = pr.sel == null ? "disabled" : ""; return `<button class="btn" data-act="sure" ${dis}>I'm sure</button><button class="btn sec" data-act="guess" ${dis}>Not sure</button>`; }
   if (tab === "practice" && pr && pr.end) return `<button class="btn sec" data-act="home">Done</button><button class="btn" data-act="${pr.kind === "warmup" ? "unitnotes" : "start"}" data-kind="smart" data-topic="${pr.topic || ""}">${pr.kind === "warmup" ? "Read the notes" : "Another 20"}</button>`;
   if (tab === "exams" && mk && mk.result) return `${mk.result.right + mk.result.blank < mk.qs.length || mk.result.blank ? `<button class="btn sec" data-act="mkdrill">Practise missed</button>` : ""}<button class="btn" data-act="mkdone">Done</button>`;
@@ -1191,14 +1415,14 @@ function bottomBar() {
 const TABS = ["home", "path", "exams", "notes", "progress"];
 function render(enter) {
   const view = $("#view");
-  const V = {home: vHome, path: vPath, exams: vExams, notes: vNotes, progress: vProgress, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome()};
+  const V = {home: vHome, path: vPath, exams: vExams, notes: vNotes, progress: vProgress, sources: vSources, practice: () => pr ? (pr.end ? vSummary() : vQuestion()) : vHome(), game: () => gm ? vGame() : vHome()};
   view.innerHTML = (V[tab] || vHome)();
   if (enter) { view.classList.remove("enter"); void view.offsetWidth; view.classList.add("enter"); }
   const bar = bottomBar();
   $("#abar").innerHTML = bar ? `<div class="abar"><div class="in">${bar}</div></div>` : "";
   const navTab = tab === "sources" ? "progress" : tab;
   const k = TABS.indexOf(navTab);
-  $("#tabs").classList.toggle("hide", !!bar || (tab === "exams" && mk && !mk.result) || tab === "practice");
+  $("#tabs").classList.toggle("hide", !!bar || (tab === "exams" && mk && !mk.result) || tab === "practice" || tab === "game");
   if (k > -1) $("#ind").style.transform = `translateX(${k * 100}%)`;
   document.querySelectorAll("#tabs [data-tab]").forEach(b => b.setAttribute("aria-current", b.dataset.tab === navTab ? "page" : "false"));
   renderOverlay();
@@ -1347,6 +1571,9 @@ function startEye() {
   eyeTimer = setInterval(() => { if (!eyeSheet) return clearInterval(eyeTimer); eyeSheet.left--; const el = $("#eyeT"); if (el) el.textContent = Math.max(0, eyeSheet.left); if (eyeSheet.left <= 0) { clearInterval(eyeTimer); haptic(20); renderOverlay(); } }, 1000);
 }
 const ACT = {
+  ...GM_ACT,
+  tipstab: d => { tipsTab = d.k; render(); },
+  notesview: d => { notesView = d.k; render(); scrollTo(0, 0); },
   tab: d => go(d.tab),
   home: () => { pr = null; go("home"); },
   start: d => startPractice(d.kind, {topic: d.topic || undefined, subject: d.subject, n: +d.n || 20}),
@@ -1473,6 +1700,7 @@ document.addEventListener("click", e => {
   ACT[a.dataset.act]?.(a.dataset, a);
   if (xpQueue) showXP();
 });
+document.addEventListener("submit", e => { if (e.target.id === "gapform") { e.preventDefault(); ACT.gmcheck(); } });
 document.addEventListener("change", e => {
   if (e.target.dataset?.rem) { S.rem[e.target.dataset.rem] = e.target.checked; save(); pushSync(); render(); return; }
   if (e.target.dataset?.remt) { if (/^\d\d:\d\d$/.test(e.target.value)) { S.rem[e.target.dataset.remt] = e.target.value; save(); pushSync(); render(); } return; }
