@@ -28,3 +28,7 @@ This rebuilds `index.html`.
 - **iPhone / iPad:** open the site in Safari, tap **Share**, then **Add to Home Screen**.
 
 After the first visit it works offline. New versions download in the background and show the next time you open it.
+
+## Reminders
+
+Progress → Reminders builds a study plan up to exam day: morning review, three study blocks, a series exam every second day at 11:00 (the real exam time), water every 2 hours, two movement breaks and a wind-down. **Add all reminders to my calendar** saves them as a calendar file, which works even when the app is closed. While the app is open or recently used it can also send notifications with your next step. No website can ring through silent mode, so set a phone alarm for series exams you must not miss.

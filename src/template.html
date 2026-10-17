@@ -275,10 +275,11 @@ const svg = (k, size = 20) => `<svg viewBox="0 0 24 24" width="${size}" height="
 /* ── state: localStorage first, mirrored to the viewer's private db doc when available ── */
 const KEY = "cee150.v1", MKEY = "cee150.mock";
 const blank = () => ({v:1, updated:0, examDate:RAW.meta.examDate || "", neg:RAW.meta.neg ?? 0, target:170, th:{}, it:{}, log:[], mocks:[], days:{}, custom:[],
-  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[]});
+  xp:0, streak:{n:0, last:"", best:0, freeze:1}, t:{}, stars:{}, why:{}, fixed:0, proj:{}, look:"auto", wk:{w:"", xp:0}, group:false, xs:[], rem:{on:false, from:"06:30", until:"21:30", study:true, series:true, water:true, move:true, sleep:true}, remFired:{d:"", ids:[]}});
 function loadLocal() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.v === 1) return Object.assign(blank(), s); } catch (e) {} return blank(); }
 let S = loadLocal();
 if (S.target < 160) S.target = 170;
+S.rem = Object.assign(blank().rem, S.rem || {}); S.remFired = S.remFired || {d: "", ids: []};
 let QS = [], QI = {};
 function rebuild() {
   QS = [];
@@ -651,6 +652,105 @@ async function loadGroup(force) {
   if (tab === "progress") render();
 }
 
+/* ── reminders: an evidence-based daily plan, as live notifications (website) and as a calendar file (always arrives) ── */
+const hm = t => { const [h, m] = t.split(":").map(Number); return h * 60 + m; };
+const fmtHM = m => `${String(Math.floor(m / 60) % 24).padStart(2, "0")}:${String(m % 60).padStart(2, "0")}`;
+function remPlan(dateStr) {
+  const R = S.rem, out = [], a = hm(R.from), z = hm(R.until);
+  const ex = S.examDate, d = ex ? Math.round((new Date(ex) - new Date(dateStr)) / DAY) : 99;
+  const add = (min, id, title, body) => { if (min >= a - 30 && min <= z + 60) out.push({id, min, title, body}); };
+  if (d === 0) { add(a, "examday", "Exam day", "Light notes only. Eat breakfast, take your admit card, reach the hall early. Answer what you know first."); return out; }
+  if (d < 0) return out;
+  if (R.study) {
+    add(a, "review", "Morning review", "Start with Review due and confident mistakes. Fixing yesterday's misses first makes them stick.");
+    add(Math.max(a + 90, hm("08:00")), "study1", "Study block", "A 20-question smart session on your weakest high-mark unit.");
+    add(hm("14:30"), "study2", "Study block", "Another smart session. Mixed units train you to spot what each question needs.");
+    add(hm("19:00"), "study3", "Evening block", "Repeated questions or a half paper, then read the notes for what you missed.");
+  }
+  if (R.series && d >= 3 && d % 2 === 1) add(hm("10:45"), "series", "Series exam at 11:00", "Sit a full paper 11:00 to 14:00, the real exam time. Set a phone alarm too if your phone is on silent.");
+  if (R.water) for (let m = a + 60; m <= z - 60; m += 120) add(m, "water" + m, "Drink a glass of water", "Even mild dehydration lowers attention and memory (Adan, 2012).");
+  if (R.move) { add(hm("10:00"), "move1", "Move for 10 minutes", "A brisk walk or stairs. Short exercise improves attention and memory afterwards (Roig et al., 2013)."); add(hm("16:30"), "move2", "Move for 15 minutes", "Walk, skip or stretch. Then come back for one more session."); }
+  if (R.sleep) { add(z, "sleep", "Wind down", "Stop studying now. 7–9 hours of sleep turns today's practice into memory."); if (d === 1) add(hm("20:00"), "eve", "Exam tomorrow", "Pack admit card, pencils and ID. No new chapters. Sleep early."); }
+  return out.sort((x, y) => x.min - y.min);
+}
+function nextAction() {
+  const due = dueList().length, mis = misList().length, t = today(), q = quests().find(x => !t.q[x.id]);
+  if (due) return `${due} questions are due for review. Clear them first.`;
+  if (mis) return `${mis} confident mistakes to fix.`;
+  if (q) return `Today's quest: ${q.name}.`;
+  return `Next up: ${ranked()[0].t.name}.`;
+}
+async function notify(title, body, tag) {
+  try {
+    const opts = {body, tag, renotify: true, icon: "icons/icon-192.png", badge: "icons/icon-192.png", vibrate: [180, 80, 180], data: {url: "./"}};
+    const reg = "serviceWorker" in navigator ? await navigator.serviceWorker.getRegistration() : null;
+    if (reg) await reg.showNotification(title, opts); else new Notification(title, opts);
+  } catch (e) {}
+}
+// ponytail: fires only while the app is open or recently backgrounded; the calendar file is the always-on path
+setInterval(() => {
+  if (!S.rem.on || !("Notification" in window) || Notification.permission !== "granted") return;
+  const d = dayKey(); if (S.remFired.d !== d) S.remFired = {d, ids: []};
+  const now = new Date(), nm = now.getHours() * 60 + now.getMinutes();
+  for (const r of remPlan(d)) {
+    if (r.min > nm || S.remFired.ids.includes(r.id)) continue;
+    S.remFired.ids.push(r.id);
+    if (nm - r.min <= 10) notify(r.title, r.id.startsWith("study") || r.id === "review" ? `${r.body} ${nextAction()}` : r.body, r.id.replace(/\d+$/, ""));
+  }
+  save();
+}, 30e3);
+function icsFile() {
+  const esc2 = t => t.replace(/[\\,;]/g, m => "\\" + m).replace(/\n/g, "\\n");
+  const stamp = new Date().toISOString().replace(/[-:]/g, "").slice(0, 15) + "Z", lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MECEE-BL 2083//Study reminders//EN", "CALSCALE:GREGORIAN", "X-WR-CALNAME:MECEE study plan"];
+  const start = new Date(dayKey() + "T00:00:00"); start.setDate(start.getDate() + 1);
+  const end = S.examDate ? new Date(S.examDate + "T00:00:00") : new Date(start.getTime() + 14 * DAY);
+  let n = 0;
+  for (let dt = new Date(start); dt <= end; dt.setDate(dt.getDate() + 1)) {
+    const ds = dt.toLocaleDateString("en-CA"), ymd = ds.replace(/-/g, "");
+    for (const r of remPlan(ds)) {
+      const hhmm = fmtHM(r.min).replace(":", "") + "00", long = r.id === "series" ? 195 : r.id.startsWith("study") || r.id === "review" ? 45 : 10;
+      const endM = r.min + long, endS = fmtHM(Math.min(endM, 23 * 60 + 59)).replace(":", "") + "00";
+      lines.push("BEGIN:VEVENT", `UID:${ymd}-${r.id}@mecee-bl-2083`, `DTSTAMP:${stamp}`, `DTSTART:${ymd}T${hhmm}`, `DTEND:${ymd}T${endS}`, `SUMMARY:${esc2(r.title)}`, `DESCRIPTION:${esc2(r.body)}`,
+        "BEGIN:VALARM", "ACTION:DISPLAY", `DESCRIPTION:${esc2(r.title)}`, "TRIGGER:PT0M", "END:VALARM", "END:VEVENT");
+      n++;
+    }
+  }
+  lines.push("END:VCALENDAR");
+  return {text: lines.join("\r\n"), n};
+}
+const BOOSTERS = [
+  ["Phone in another room", "Just having your phone on the desk lowers working memory, even face down (Ward et al., 2017)."],
+  ["Test, don't reread", "Close the notes and answer from memory. Retrieval builds memory faster than rereading (Adesope et al., 2017)."],
+  ["Water before you start", "Mild dehydration (about 2% body water) lowers attention and memory (Adan, 2012)."],
+  ["Walk, then study", "10–20 minutes of brisk exercise improves attention and memory afterwards (Roig et al., 2013)."],
+  ["Same time as the exam", "Do series papers at 11:00, the real exam time, so your focus peaks when it counts."],
+  ["Short nap, not long", "A 10–20 minute nap restores alertness without grogginess (Brooks & Lack, 2006). Keep it before 3 pm."],
+  ["Sleep is study", "Steady 7–9 hour sleep over weeks predicts grades (Okano et al., 2019). Don't trade sleep for cramming."],
+  ["Explain the mistake", "Saying why you were wrong helps the fix stick (Bisra et al., 2018). Use the why-missed chips."],
+  ["Mix your units", "Mixed practice teaches you to recognise which idea a question needs (Brunmair & Richter, 2019)."],
+  ["Morning light", "Get daylight soon after waking. It sets your body clock so you sleep better at night."],
+  ["Caffeine before noon", "Caffeine can disturb sleep even 6 hours later (Drake et al., 2013). Last tea or coffee by early afternoon."],
+  ["20-20-20 for eyes", "Every 20–25 minutes, look 20 feet away for 20 seconds. It eases screen strain."]
+];
+const booster = () => BOOSTERS[Math.floor(new Date(dayKey()).getTime() / DAY) % BOOSTERS.length];
+function reminderCard() {
+  const R = S.rem, can = !!window.__PWA__ && "Notification" in window, perm = can ? Notification.permission : "unsupported";
+  const plan = remPlan(dayKey());
+  const tog = (k, label) => `<label class="row" style="flex-wrap:nowrap;justify-content:space-between;gap:10px;padding-block:6px"><span>${label}</span><input type="checkbox" data-rem="${k}" ${R[k] ? "checked" : ""} style="width:22px;min-height:22px;accent-color:var(--acc)"></label>`;
+  return `<div class="card stack"><span class="lab">Reminders</span>
+    <div class="grid2b"><label class="f">Study from<input type="time" data-remt="from" value="${R.from}"></label><label class="f">Study until<input type="time" data-remt="until" value="${R.until}"></label></div>
+    <div>${tog("study", "Morning review and study blocks")}${tog("series", "Series exam every second day, 11:00")}${tog("water", "Drink water, every 2 hours")}${tog("move", "Move for 10–15 minutes, twice a day")}${tog("sleep", "Wind down and exam-eve reminder")}</div>
+    <button class="btn" data-act="ics">Add all reminders to my calendar</button>
+    <p class="small muted">Calendar reminders arrive even when the app is closed. ${S.examDate ? `It adds every reminder from tomorrow until ${new Date(S.examDate + "T00:00:00").toDateString().slice(4, 10)}.` : ""} If you change the plan, add it again and delete the old events.</p>
+    ${can ? (perm === "granted" ? `<div class="row between"><span class="small">${R.on ? "App notifications are on" : "App notifications are off"}</span><button class="btn sec sm" data-act="remtoggle">${R.on ? "Turn off" : "Turn on"}</button></div>`
+      : perm === "denied" ? `<p class="small muted">Notifications are blocked for this site. Allow them in your browser's site settings, or use the calendar.</p>`
+      : `<button class="btn sec" data-act="remperm">Also notify me from the app</button>`) + `<p class="small muted">App notifications include your next step, like how many reviews are due. Phones only deliver them while the app has been opened recently.</p>`
+      : window.__PWA__ ? "" : `<p class="small muted">App notifications and the calendar file work in the website version: <a href="https://sundarshahi.github.io/mecee-bl-2083/" target="_blank" rel="noopener">sundarshahi.github.io/mecee-bl-2083</a></p>`}
+    <p class="small muted"><b>Silent mode:</b> no app can ring through silent or Do Not Disturb. For a series exam you must not miss, also set an alarm in your phone's Clock app.</p>
+    <details><summary class="small">Today's plan (${plan.length})</summary><div class="stack small" style="gap:6px">${plan.map(r => `<div class="row" style="flex-wrap:nowrap;gap:10px"><b class="tn" style="min-width:44px">${fmtHM(r.min)}</b><span>${esc(r.title)}</span></div>`).join("") || `<p class="muted">Nothing today.</p>`}</div></details>
+  </div>`;
+}
+
 /* ── views ── */
 const chip = tid => { const [c, t] = level(tid); return `<span class="chip ${c}">${t}</span>`; };
 const starRow = (n, size = 14) => `<span class="stars" aria-label="${n} of 3 stars">${[1,2,3].map(i => `<svg viewBox="0 0 24 24" width="${size}" height="${size}"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z" fill="${i <= n ? "var(--gold)" : "var(--line)"}"/></svg>`).join("")}</span>`;
@@ -709,6 +809,7 @@ function vHome() {
       <div><b>${q.name}</b><div class="mini"><i style="width:${Math.min(100, q.val / q.need * 100)}%;background:var(--${q.c === "acc" ? "acc" : q.c})"></i></div></div>
       <span class="xp ${t.q[q.id] ? "done" : ""}">${t.q[q.id] ? "Done" : `+${q.xp} XP`}</span></div>`).join("")}
   </div>
+  <div class="card row" style="flex-wrap:nowrap;gap:12px;align-items:flex-start"><span class="qi" style="background:var(--gold-2);color:var(--gold-ink)">${svg("bolt")}</span><div style="flex:1"><span class="lab">Study booster</span><div><b>${esc(booster()[0])}</b></div><div class="small muted">${esc(booster()[1])}</div></div></div>
   <div class="card row" style="flex-wrap:nowrap;gap:12px"><span class="qi" style="background:var(--acc-2);color:var(--acc)">${svg("eye")}</span><div style="flex:1"><b>Eye break in ${eyeIn} min</b><div class="small muted">Every 25 minutes: look 20 feet away for 20 seconds.</div></div><button class="btn sec sm" data-act="eyenow">Now</button></div>
   ${ph != null ? `<p class="small muted" style="padding-inline:4px">${PHASES[ph].txt}</p>` : ""}
   <details class="card"><summary>How this app helps you remember</summary><div class="stack small">
@@ -892,6 +993,7 @@ function vProgress() {
     ${whys.length ? `<div class="card stack"><span class="lab">Why you miss questions</span>${whys.map(([w, c]) => `<div class="sbar" style="grid-template-columns:9rem 1fr 2rem"><span>${esc(w)}</span><div class="mini"><i style="width:${c / whys[0][1] * 100}%;background:var(--bad)"></i></div><span class="tn" style="text-align:right">${c}</span></div>`).join("")}<div class="note"><b>Try this:</b> ${esc(TIP[whys[0][0]] || "")}</div></div>` : ""}
     <div class="card stack"><span class="lab">Questions per day · last 14 days</span><div class="bars14" role="img" aria-label="Questions per day">${days.map(v => `<div class="${v ? "" : "z"}" style="height:${Math.max(3, v / mx * 100)}%" title="${v}"></div>`).join("")}</div></div>
     <details class="card"><summary>All units, most marks to gain first</summary><p class="small muted">Gain = marks added by reaching ${Math.round(goalP() * 100)}% in that unit.</p><div class="tbl"><table><thead><tr><th>Unit</th><th class="n">You</th><th>Stars</th><th class="n">Gain</th></tr></thead><tbody>${rows}</tbody></table></div></details>
+    ${reminderCard()}
     <div class="card stack"><span class="lab">Settings</span>
       <label class="f">Look<select id="look" data-set="look"><option value="auto" ${S.look === "auto" ? "selected" : ""}>Calm by day, Calm night after 6 pm</option><option value="calm" ${S.look === "calm" ? "selected" : ""}>Calm always</option><option value="night" ${S.look === "night" ? "selected" : ""}>Calm night always</option></select></label>
       <div class="grid2b"><label class="f">Exam date<input type="date" id="examDate" data-set="examDate" value="${esc(S.examDate)}"></label>
@@ -1200,6 +1302,15 @@ const ACT = {
   leavegroup: async () => { S.group = false; save(); groupState = null; try { await db.doc(`league/${uid}`).delete(); } catch (e) {} render(); toast("You left the board. Your entry is removed."); },
   install: async () => { if (!installEvt) return; installEvt.prompt(); try { await installEvt.userChoice; } catch (e) {} installEvt = null; render(); },
   hideinstall: () => { S.hideInstall = true; save(); render(); },
+  ics: () => {
+    if (!window.__PWA__) { toast("Use the website version to save the calendar file."); return; }
+    const {text, n} = icsFile();
+    const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([text], {type: "text/calendar"})); a.download = "mecee-study-plan.ics";
+    document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 2000);
+    toast(`Calendar file with ${n} reminders saved. Open it to add them.`);
+  },
+  remperm: async () => { const p = await Notification.requestPermission(); if (p === "granted") { S.rem.on = true; save(); notify("Reminders are on", nextAction(), "hello"); } render(); },
+  remtoggle: () => { S.rem.on = !S.rem.on; save(); render(); },
   eyenow: () => startEye(),
   eyedone: () => { eyeSheet = null; activeSec = 0; clearInterval(eyeTimer); renderOverlay(); },
   reset1: () => { confirmReset = true; render(); },
@@ -1213,6 +1324,8 @@ document.addEventListener("click", e => {
   if (xpQueue) showXP();
 });
 document.addEventListener("change", e => {
+  if (e.target.dataset?.rem) { S.rem[e.target.dataset.rem] = e.target.checked; save(); render(); return; }
+  if (e.target.dataset?.remt) { if (/^\d\d:\d\d$/.test(e.target.value)) { S.rem[e.target.dataset.remt] = e.target.value; save(); render(); } return; }
   if (e.target.id === "photoIn" && e.target.files?.length) { readPhotos([...e.target.files]); return; }
   const k = e.target.dataset?.set; if (!k) return;
   const v = e.target.value;

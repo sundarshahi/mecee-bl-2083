@@ -1,6 +1,6 @@
 // Offline support: serve from cache first, refresh in the background, so the app opens instantly
 // and a new version shows on the next open.
-const CACHE = "mecee-4a7697768b";
+const CACHE = "mecee-5f97a8e671";
 const CORE = ["./", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./icons/maskable-512.png", "./icons/apple-touch-icon.png", "./icons/favicon-32.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
@@ -19,5 +19,13 @@ self.addEventListener("fetch", e => {
     const hit = await c.match(key);
     const net = fetch(r).then(res => { if (res.ok || res.type === "opaque") c.put(key, res.clone()); return res; }).catch(() => hit || Response.error());
     return hit || net;
+  }));
+});
+// tapping a reminder opens (or focuses) the app
+self.addEventListener("notificationclick", e => {
+  e.notification.close();
+  e.waitUntil(self.clients.matchAll({type: "window", includeUncontrolled: true}).then(cs => {
+    const c = cs.find(x => x.url.startsWith(self.registration.scope));
+    return c ? c.focus() : self.clients.openWindow("./");
   }));
 });
