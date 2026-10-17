@@ -2072,6 +2072,41 @@ document.addEventListener("keydown", e => {
     else if (k === "arrowleft" && mk.i > 0) ACT.mkgo({i: mk.i - 1});
   }
 });
+// one step back: close a panel, leave a sub-screen, save-and-leave a session (exams pause), else go Home
+function backStep() {
+  if (eyeSheet) { ACT.eyedone(); return true; }
+  if (unitSheet || noteSheet || infoSheet || tmrOpen || (mk && mk.sheet)) { ACT.closesheet(); return true; }
+  if (tab === "history" && histOpen) { ACT.histback(); return true; }
+  if (tab === "history" || tab === "settings") { ACT.back(); return true; }
+  if (tab === "sources") { go("settings", -1); return true; }
+  if (tab === "practice" && pr) { pr.end ? ACT.home() : ACT.leave(); return true; }
+  if (tab === "game" && gm) { gm.step === "end" ? ACT.gmhome() : ACT.gmleave(); return true; }
+  if (tab === "exams" && mk && mk.result) { ACT.mkdone(); return true; }
+  if (tab === "exams" && mk && mk.pre) { ACT.mkcancelpre(); return true; }
+  if (tab === "exams" && mk && !mk.pausedAt) { ACT.mkleave(); return true; }
+  if (tab !== "home") { go("home", -1); return true; }
+  return false;
+}
+// the phone's Back button or gesture runs backStep; only at Home with nothing open does it leave the app (website build only)
+if (window.__PWA__) {
+  try { history.replaceState({app: 0}, ""); history.pushState({app: 1}, ""); } catch (e) {}
+  addEventListener("popstate", () => { if (backStep()) { try { history.pushState({app: 1}, ""); } catch (e) {} } else history.back(); });
+}
+// swipe sideways on a screen to move to the next tab; swipe right on History or Settings to go back.
+// ponytail: off during sessions and over anything that scrolls sideways itself (subject buttons, fact cards, tables)
+let hs = null;
+document.addEventListener("touchstart", e => {
+  const t = e.touches[0];
+  hs = e.touches.length === 1 && !e.target.closest(".sheet,.seg,.facts,.tbl,.omr,input,textarea,select,#tabs,#abar") && t.clientX > 24 && t.clientX < innerWidth - 24 ? {x: t.clientX, y: t.clientY, t: Date.now()} : null;
+}, {passive: true});
+document.addEventListener("touchend", e => {
+  if (!hs) return;
+  const t = e.changedTouches[0], dx = t.clientX - hs.x, dy = t.clientY - hs.y, quick = Date.now() - hs.t < 700; hs = null;
+  if (!quick || Math.abs(dx) < 70 || Math.abs(dx) < 2 * Math.abs(dy) || $("#overlay .sheet") || $("#tabs").classList.contains("hide")) return;
+  const k = TABS.indexOf(tab);
+  if (k > -1) { const n = k + (dx < 0 ? 1 : -1); if (n >= 0 && n < TABS.length) go(TABS[n]); }
+  else if (dx > 0 && ["history", "settings", "sources"].includes(tab)) backStep();
+}, {passive: true});
 if (mk && !mk.pausedAt && !mk.result) tab = "exams";
 render(true);
 </script>
